@@ -678,9 +678,13 @@ Method Summary
 Field Detail
 ============
 
+.. _io.realm.Realm.DEFAULT_REALM_NAME:
+
 DEFAULT_REALM_NAME
 ------------------
 
+
+.. _io.realm.Realm.ENCRYPTION_KEY_LENGTH:
 
 ENCRYPTION_KEY_LENGTH
 ---------------------
@@ -691,17 +695,23 @@ The required length for encryption keys used to encrypt Realm data.
 Method Detail
 =============
 
+.. _io.realm.Realm.asFlowable:
+
 asFlowable
 ----------
 
 
 
 
+.. _io.realm.Realm.isEmpty:
+
 isEmpty
 -------
 
 
 
+
+.. _io.realm.Realm.getSchema:
 
 getSchema
 ---------
@@ -711,6 +721,8 @@ Returns the schema for this Realm. The schema is immutable. Any attempt to modif
 The schema can only be modified using **DynamicRealm#getSchema() (?)** or through an migration.
 
 
+.. _io.realm.Realm.init:
+
 init
 ----
 
@@ -719,6 +731,9 @@ Initializes the Realm library and creates a default configuration that is ready 
 A good place is in an **android.app.Application (?)** subclass:
 
 .. code-block:: java
+
+    
+
 
     public class MyApplication extends Application {
       \@Override
@@ -744,6 +759,8 @@ Remember to register it in the ``AndroidManifest.xml`` file:
     </manifest>
     
 
+
+.. _io.realm.Realm.init:
 
 init
 ----
@@ -782,11 +799,15 @@ Remember to register it in the ``AndroidManifest.xml`` file:
     
 
 
+.. _io.realm.Realm.getDefaultInstance:
+
 getDefaultInstance
 ------------------
 
 Realm static constructor that returns the Realm instance defined by the **io.realm.RealmConfiguration (?)** set by **#setDefaultConfiguration(RealmConfiguration) (?)**
 
+
+.. _io.realm.Realm.getInstance:
 
 getInstance
 -----------
@@ -794,11 +815,15 @@ getInstance
 Realm static constructor that returns the Realm instance defined by provided **io.realm.RealmConfiguration (?)**
 
 
+.. _io.realm.Realm.getInstanceAsync:
+
 getInstanceAsync
 ----------------
 
 The creation of the first Realm instance per **RealmConfiguration (?)** in a process can take some time as all initialization code need to run at that point (setting up the Realm, validating schemas and creating initial data). This method places the initialization work in a background thread and deliver the Realm instance to the caller thread asynchronously after the initialization is finished.
 
+
+.. _io.realm.Realm.setDefaultConfiguration:
 
 setDefaultConfiguration
 -----------------------
@@ -806,17 +831,23 @@ setDefaultConfiguration
 Sets the **io.realm.RealmConfiguration (?)** used when calling **#getDefaultInstance() (?)** .
 
 
+.. _io.realm.Realm.getDefaultConfiguration:
+
 getDefaultConfiguration
 -----------------------
 
 Returns the default configuration for **#getDefaultInstance() (?)** .
 
 
+.. _io.realm.Realm.removeDefaultConfiguration:
+
 removeDefaultConfiguration
 --------------------------
 
 Removes the current default configuration (if any). Any further calls to **#getDefaultInstance() (?)** will fail until a new default configuration has been set using **#setDefaultConfiguration(RealmConfiguration) (?)** .
 
+
+.. _io.realm.Realm.createAllFromJson:
 
 createAllFromJson
 -----------------
@@ -828,6 +859,8 @@ JSON properties with unknown properties will be ignored. If a **RealmObject (?)*
 This method currently does not support value list field.
 
 
+.. _io.realm.Realm.createOrUpdateAllFromJson:
+
 createOrUpdateAllFromJson
 -------------------------
 
@@ -835,6 +868,8 @@ Tries to update a list of existing objects identified by their primary key with 
 
 This method currently does not support value list field.
 
+
+.. _io.realm.Realm.createAllFromJson:
 
 createAllFromJson
 -----------------
@@ -844,6 +879,8 @@ Creates a Realm object for each object in a JSON array. This must be done within
 This method currently does not support value list field.
 
 
+.. _io.realm.Realm.createOrUpdateAllFromJson:
+
 createOrUpdateAllFromJson
 -------------------------
 
@@ -851,6 +888,8 @@ Tries to update a list of existing objects identified by their primary key with 
 
 This method currently does not support value list field.
 
+
+.. _io.realm.Realm.createAllFromJson:
 
 createAllFromJson
 -----------------
@@ -862,6 +901,8 @@ This API is only available in API level 11 or later.
 This method currently does not support value list field.
 
 
+.. _io.realm.Realm.createOrUpdateAllFromJson:
+
 createOrUpdateAllFromJson
 -------------------------
 
@@ -872,21 +913,7 @@ This API is only available in API level 11 or later.
 This method currently does not support value list field.
 
 
-createObjectFromJson
---------------------
-
-Creates a Realm object pre-filled with data from a JSON object. This must be done inside a transaction. JSON properties with unknown properties will be ignored. If a **RealmObject (?)** field is not present in the JSON object the **RealmObject (?)** field will be set to the default value for that type.
-
-This method currently does not support value list field.
-
-
-createOrUpdateObjectFromJson
-----------------------------
-
-Tries to update an existing object defined by its primary key with new JSON data. If no existing object could be found a new object will be saved in the Realm. This must happen within a transaction. If updating a **RealmObject (?)** and a field is not found in the JSON object, that field will not be updated. If a new **RealmObject (?)** is created and a field is not found in the JSON object, that field will be assigned the default value for the field type.
-
-This method currently does not support value list field.
-
+.. _io.realm.Realm.createObjectFromJson:
 
 createObjectFromJson
 --------------------
@@ -896,6 +923,8 @@ Creates a Realm object pre-filled with data from a JSON object. This must be don
 This method currently does not support value list field.
 
 
+.. _io.realm.Realm.createOrUpdateObjectFromJson:
+
 createOrUpdateObjectFromJson
 ----------------------------
 
@@ -903,6 +932,28 @@ Tries to update an existing object defined by its primary key with new JSON data
 
 This method currently does not support value list field.
 
+
+.. _io.realm.Realm.createObjectFromJson:
+
+createObjectFromJson
+--------------------
+
+Creates a Realm object pre-filled with data from a JSON object. This must be done inside a transaction. JSON properties with unknown properties will be ignored. If a **RealmObject (?)** field is not present in the JSON object the **RealmObject (?)** field will be set to the default value for that type.
+
+This method currently does not support value list field.
+
+
+.. _io.realm.Realm.createOrUpdateObjectFromJson:
+
+createOrUpdateObjectFromJson
+----------------------------
+
+Tries to update an existing object defined by its primary key with new JSON data. If no existing object could be found a new object will be saved in the Realm. This must happen within a transaction. If updating a **RealmObject (?)** and a field is not found in the JSON object, that field will not be updated. If a new **RealmObject (?)** is created and a field is not found in the JSON object, that field will be assigned the default value for the field type.
+
+This method currently does not support value list field.
+
+
+.. _io.realm.Realm.createObjectFromJson:
 
 createObjectFromJson
 --------------------
@@ -914,6 +965,8 @@ This API is only available in API level 11 or later.
 This method currently does not support value list field.
 
 
+.. _io.realm.Realm.createOrUpdateObjectFromJson:
+
 createOrUpdateObjectFromJson
 ----------------------------
 
@@ -923,6 +976,8 @@ This API is only available in API level 11 or later.
 
 This method currently does not support value list field.
 
+
+.. _io.realm.Realm.createObject:
 
 createObject
 ------------
@@ -932,6 +987,8 @@ Instantiates and adds a new object to the Realm.
 This method is only available for model classes with no @PrimaryKey annotation. If you like to create an object that has a primary key, use **#createObject(Class, Object) (?)** or **#copyToRealm(RealmModel, ImportFlag...) (?)** instead.
 
 
+.. _io.realm.Realm.createObject:
+
 createObject
 ------------
 
@@ -939,6 +996,8 @@ Instantiates and adds a new object to the Realm with the primary key value alrea
 
 If the value violates the primary key constraint, no object will be added and a **RealmException (?)** will be thrown. The default value for primary key provided by the model class will be ignored.
 
+
+.. _io.realm.Realm.createEmbeddedObject:
 
 createEmbeddedObject
 --------------------
@@ -948,6 +1007,8 @@ Instantiates and adds a new embedded object to the Realm.
 This method should only be used to create objects of types marked as embedded.
 
 
+.. _io.realm.Realm.copyToRealm:
+
 copyToRealm
 -----------
 
@@ -955,6 +1016,8 @@ Copies a RealmObject to the Realm instance and returns the copy. Any further cha
 
 Please note, copying an object will copy all field values. Any unset field in this and child objects will be set to their default value if not provided.
 
+
+.. _io.realm.Realm.copyToRealmOrUpdate:
 
 copyToRealmOrUpdate
 -------------------
@@ -964,6 +1027,8 @@ Updates an existing RealmObject that is identified by the same **io.realm.annota
 Please note, copying an object will copy all field values. Any unset field in the object and child objects will be set to their default value if not provided.
 
 
+.. _io.realm.Realm.copyToRealm:
+
 copyToRealm
 -----------
 
@@ -971,6 +1036,8 @@ Copies a collection of RealmObjects to the Realm instance and returns their copy
 
 Please note, copying an object will copy all field values. Any unset field in the objects and child objects will be set to their default value if not provided.
 
+
+.. _io.realm.Realm.insert:
 
 insert
 ------
@@ -991,6 +1058,8 @@ Please note:
 If you want the managed **RealmObject (?)** returned, use **#copyToRealm(Iterable, ImportFlag...) (?)** , otherwise if you have a large number of object this method is generally faster.
 
 
+.. _io.realm.Realm.insert:
+
 insert
 ------
 
@@ -1009,6 +1078,8 @@ Please note:
 
 If you want the managed **RealmObject (?)** returned, use **#copyToRealm(RealmModel, ImportFlag...) (?)** , otherwise if you have a large number of object this method is generally faster.
 
+
+.. _io.realm.Realm.insertOrUpdate:
 
 insertOrUpdate
 --------------
@@ -1029,6 +1100,8 @@ Please note:
 If you want the managed **RealmObject (?)** returned, use **#copyToRealm(Iterable, ImportFlag...) (?)** , otherwise if you have a large number of object this method is generally faster.
 
 
+.. _io.realm.Realm.insertOrUpdate:
+
 insertOrUpdate
 --------------
 
@@ -1048,6 +1121,8 @@ Please note:
 If you want the managed **RealmObject (?)** returned, use **#copyToRealm(RealmModel, ImportFlag...) (?)** , otherwise if you have a large number of object this method is generally faster.
 
 
+.. _io.realm.Realm.copyToRealmOrUpdate:
+
 copyToRealmOrUpdate
 -------------------
 
@@ -1055,6 +1130,8 @@ Updates a list of existing RealmObjects that is identified by their **io.realm.a
 
 Please note, copying an object will copy all field values. Any unset field in the objects and child objects will be set to their default value if not provided.
 
+
+.. _io.realm.Realm.copyFromRealm:
 
 copyFromRealm
 -------------
@@ -1066,6 +1143,8 @@ The copied objects are all detached from Realm and they will no longer be automa
 *WARNING*: Any changes to copied objects can be merged back into Realm using **#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** , but all fields will be overridden, not just those that were changed. This includes references to other objects, and can potentially override changes made by other threads. This behaviour can be modified using **ImportFlag (?)** s.
 
 
+.. _io.realm.Realm.copyFromRealm:
+
 copyFromRealm
 -------------
 
@@ -1075,6 +1154,8 @@ The copied objects are all detached from Realm and they will no longer be automa
 
 *WARNING*: Any changes to copied objects can be merged back into Realm using **#copyToRealmOrUpdate(Iterable, ImportFlag...) (?)** , but all fields will be overridden, not just those that were changed. This includes references to other objects even though they might be ``null`` due to ``maxDepth`` being reached. This can also potentially override changes made by other threads. This behaviour can be modified using **ImportFlag (?)** s.
 
+
+.. _io.realm.Realm.copyFromRealm:
 
 copyFromRealm
 -------------
@@ -1086,6 +1167,8 @@ The copied object(s) are all detached from Realm and they will no longer be auto
 *WARNING*: Any changes to copied objects can be merged back into Realm using **#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** , but all fields will be overridden, not just those that were changed. This includes references to other objects, and can potentially override changes made by other threads. This behaviour can be modified using **ImportFlag (?)** s.
 
 
+.. _io.realm.Realm.copyFromRealm:
+
 copyFromRealm
 -------------
 
@@ -1096,11 +1179,15 @@ The copied object(s) are all detached from Realm and they will no longer be auto
 *WARNING*: Any changes to copied objects can be merged back into Realm using **#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** , but all fields will be overridden, not just those that were changed. This includes references to other objects even though they might be ``null`` due to ``maxDepth`` being reached. This can also potentially override changes made by other threads. This behaviour can be modified using **ImportFlag (?)** s.
 
 
+.. _io.realm.Realm.where:
+
 where
 -----
 
 Returns a typed RealmQuery, which can be used to query for specific objects of this type
 
+
+.. _io.realm.Realm.addChangeListener:
 
 addChangeListener
 -----------------
@@ -1112,17 +1199,23 @@ The listeners will be executed when changes are committed by this or another thr
 Realm instances are per thread singletons and cached, so listeners should be removed manually even if calling **#close() (?)** . Otherwise there is a risk of memory leaks.
 
 
+.. _io.realm.Realm.removeChangeListener:
+
 removeChangeListener
 --------------------
 
 Removes the specified change listener.
 
 
+.. _io.realm.Realm.removeAllChangeListeners:
+
 removeAllChangeListeners
 ------------------------
 
 Removes all user-defined change listeners.
 
+
+.. _io.realm.Realm.executeTransaction:
 
 executeTransaction
 ------------------
@@ -1132,11 +1225,15 @@ Executes a given transaction on the Realm. **#beginTransaction() (?)** and **#co
 Calling this method from the UI thread will throw a **RealmException (?)** . Doing so may result in a drop of frames or even ANRs. We recommend calling this method from a non-UI thread or using **#executeTransactionAsync(Transaction) (?)** instead.
 
 
+.. _io.realm.Realm.executeTransactionAsync:
+
 executeTransactionAsync
 -----------------------
 
 Similar to **#executeTransaction(Transaction) (?)** but runs asynchronously on a worker thread.
 
+
+.. _io.realm.Realm.executeTransactionAsync:
 
 executeTransactionAsync
 -----------------------
@@ -1144,11 +1241,15 @@ executeTransactionAsync
 Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an OnSuccess callback.
 
 
+.. _io.realm.Realm.executeTransactionAsync:
+
 executeTransactionAsync
 -----------------------
 
 Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an OnError callback.
 
+
+.. _io.realm.Realm.executeTransactionAsync:
 
 executeTransactionAsync
 -----------------------
@@ -1156,11 +1257,15 @@ executeTransactionAsync
 Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an OnSuccess and OnError callbacks.
 
 
+.. _io.realm.Realm.delete:
+
 delete
 ------
 
 Deletes all objects of the specified class from the Realm.
 
+
+.. _io.realm.Realm.migrateRealm:
 
 migrateRealm
 ------------
@@ -1168,11 +1273,15 @@ migrateRealm
 Manually triggers the migration associated with a given RealmConfiguration. If Realm is already at the latest version, nothing will happen.
 
 
+.. _io.realm.Realm.migrateRealm:
+
 migrateRealm
 ------------
 
 Manually triggers a migration on a RealmMigration.
 
+
+.. _io.realm.Realm.deleteRealm:
 
 deleteRealm
 -----------
@@ -1183,6 +1292,8 @@ All Realm instances must be closed before calling this method.
 
 WARNING: For synchronized Realm, there is a chance that an internal Realm instance on the background thread is not closed even all the user controlled Realm instances are closed. This will result an ``IllegalStateException`` . See issue https://github.com/realm/realm-java/issues/5416 .
 
+
+.. _io.realm.Realm.compactRealm:
 
 compactRealm
 ------------
@@ -1195,11 +1306,15 @@ The file must be closed before this method is called, otherwise ``false`` will b
 | 
 
 
+.. _io.realm.Realm.freeze:
+
 freeze
 ------
 
 
 
+
+.. _io.realm.Realm.getDefaultModule:
 
 getDefaultModule
 ----------------
@@ -1207,17 +1322,23 @@ getDefaultModule
 Returns the default Realm module. This module contains all Realm classes in the current project, but not those from library or project dependencies. Realm classes in these should be exposed using their own module.
 
 
+.. _io.realm.Realm.getGlobalInstanceCount:
+
 getGlobalInstanceCount
 ----------------------
 
 Returns the current number of open Realm instances across all threads in current process that are using this configuration. This includes both dynamic and normal Realms.
 
 
+.. _io.realm.Realm.getLocalInstanceCount:
+
 getLocalInstanceCount
 ---------------------
 
 Returns the current number of open Realm instances on the thread calling this method. This include both dynamic and normal Realms.
 
+
+.. _io.realm.Realm.getApplicationContext:
 
 getApplicationContext
 ---------------------

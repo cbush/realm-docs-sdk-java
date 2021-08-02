@@ -42,9 +42,13 @@ Method Summary
 Method Detail
 =============
 
+.. _io.realm.Realm.Transaction.Callback.onSuccess:
+
 onSuccess
 ---------
 
+
+.. _io.realm.Realm.Transaction.Callback.onError:
 
 onError
 -------

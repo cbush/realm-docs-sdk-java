@@ -25,6 +25,8 @@ Method Summary
 Method Detail
 =============
 
+.. _io.realm.Realm.Transaction.OnError.onError:
+
 onError
 -------
 

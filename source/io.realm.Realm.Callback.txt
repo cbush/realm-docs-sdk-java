@@ -46,11 +46,15 @@ Method Summary
 Method Detail
 =============
 
+.. _io.realm.Realm.Callback.onSuccess:
+
 onSuccess
 ---------
 
 
 
+
+.. _io.realm.Realm.Callback.onError:
 
 onError
 -------
