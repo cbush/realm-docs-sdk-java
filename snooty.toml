@@ -1,4 +1,4 @@
-name = "realm-java-sdk"
+name = "realm-docs-sdk-java"
 title = "MongoDB Realm Java SDK Reference"
 
 intersphinx = [
