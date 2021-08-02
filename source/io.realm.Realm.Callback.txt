@@ -1,0 +1,61 @@
+io.realm.Realm.Callback
+^^^^^^^^^^^^^^^^^^^^^^^
+
+*Superclass:*
+
+- **<any> (?)**
+
+
+
+
+Constructors
+============
+
+- io.realm.Realm.Callback()
+
+Method Summary
+==============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Method and Description
+   
+   * - public abstract void
+     - :ref:`onSuccess(Realm) <io.realm.Realm.Callback.onSuccess>`
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`onError(Throwable) <io.realm.Realm.Callback.onError>`
+       
+       
+       
+       
+       
+       
+       
+   
+   
+Method Detail
+=============
+
+onSuccess
+---------
+
+
+
+
+onError
+-------
+
+
+
+
+

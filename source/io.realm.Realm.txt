@@ -1,0 +1,1228 @@
+io.realm.Realm
+^^^^^^^^^^^^^^
+
+*Superclass:*
+
+- **BaseRealm (?)**
+
+The Realm class is the storage and transactional manager of your object persistent store. It is in charge of creating instances of your RealmObjects. Objects within a Realm can be queried and read at any time. Creating, modifying, and deleting objects must be done while inside a transaction. See **#executeTransaction(Transaction) (?)**
+
+The transactions ensure that multiple instances (on multiple threads) can access the same objects in a consistent state with full ACID guarantees.
+
+It is important to remember to call the **#close() (?)** method when done with a Realm instance. Failing to do so can lead to **java.lang.OutOfMemoryError (?)** as the native resources cannot be freed.
+
+Realm instances cannot be used across different threads. This means that you have to open an instance on each thread you want to use Realm. Realm instances are cached automatically per thread using reference counting, so as long as the reference count doesn't reach zero, calling **#getInstance(RealmConfiguration) (?)** will just return the cached Realm and should be considered a lightweight operation.
+
+For the UI thread this means that opening and closing Realms should occur in either onCreate/onDestroy or onStart/onStop.
+
+Realm instances coordinate their state across threads using the **android.os.Handler (?)** mechanism. This also means that Realm instances on threads without a **android.os.Looper (?)** cannot receive updates unless **#refresh() (?)** is manually called.
+
+A standard pattern for working with Realm in Android activities can be seen below:
+
+.. code-block:: java
+
+    public class RealmApplication extends Application {
+   
+        \@Override
+        public void onCreate() {
+            super.onCreate();
+   
+            // The Realm file will be located in package's "files" directory.
+            RealmConfiguration realmConfig = new RealmConfiguration.Builder(this).build();
+            Realm.setDefaultConfiguration(realmConfig);
+        }
+    }
+   
+    public class RealmActivity extends Activity {
+   
+      private Realm realm;
+   
+      \@Override
+      protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.layout_main);
+        realm = Realm.getDefaultInstance();
+      }
+   
+      \@Override
+      protected void onDestroy() {
+        super.onDestroy();
+        realm.close();
+      }
+    }
+    
+
+Realm supports String and byte fields containing up to 16 MB.
+
+
+Nested Class Summary
+====================
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Class and Description
+   
+   * - public static interface
+     - io.realm.Realm.Transaction
+   
+   * - public abstract static
+     - io.realm.Realm.Callback
+   
+   
+Field Summary
+=============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Field and Description
+   
+   * - public static final java.lang.String
+       
+       
+     - DEFAULT_REALM_NAME
+       
+       
+   
+   * - public static final int
+       
+       
+     - ENCRYPTION_KEY_LENGTH
+       
+       The required length for encryption keys used to encrypt Realm data.
+   
+   
+Method Summary
+==============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Method and Description
+   
+   * - public <any>
+     - :ref:`asFlowable() <io.realm.Realm.asFlowable>`
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public boolean
+     - :ref:`isEmpty() <io.realm.Realm.isEmpty>`
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public RealmSchema
+     - :ref:`getSchema() <io.realm.Realm.getSchema>`
+       
+       Returns the schema for this Realm.
+       
+       
+       
+       
+       
+   
+   * - public static synchronized void
+     - :ref:`init(Context) <io.realm.Realm.init>`
+       
+       Initializes the Realm library and creates a default configuration that is ready to use.
+       
+       
+       
+       
+       
+   
+   * - public static synchronized void
+     - :ref:`init(Context, String) <io.realm.Realm.init>`
+       
+       Initializes the Realm library and creates a default configuration that is ready to use.
+       
+       
+       
+       
+       
+   
+   * - public static Realm
+     - :ref:`getDefaultInstance() <io.realm.Realm.getDefaultInstance>`
+       
+       Realm static constructor that returns the Realm instance defined by the **io.realm.RealmConfiguration (?)** set by **#setDefaultConfiguration(RealmConfiguration) (?)**
+       
+       
+       
+       
+       
+   
+   * - public static Realm
+     - :ref:`getInstance(RealmConfiguration) <io.realm.Realm.getInstance>`
+       
+       Realm static constructor that returns the Realm instance defined by provided **io.realm.RealmConfiguration (?)**
+       
+       
+       
+       
+       
+   
+   * - public static RealmAsyncTask
+     - :ref:`getInstanceAsync(RealmConfiguration, Realm.Callback) <io.realm.Realm.getInstanceAsync>`
+       
+       The creation of the first Realm instance per **RealmConfiguration (?)** in a process can take some time as all initialization code need to run at that point (setting up the Realm, validating schemas and creating initial data).
+       
+       
+       
+       
+       
+   
+   * - public static void
+     - :ref:`setDefaultConfiguration(RealmConfiguration) <io.realm.Realm.setDefaultConfiguration>`
+       
+       Sets the **io.realm.RealmConfiguration (?)** used when calling **#getDefaultInstance() (?)** .
+       
+       
+       
+       
+       
+   
+   * - public static RealmConfiguration
+     - :ref:`getDefaultConfiguration() <io.realm.Realm.getDefaultConfiguration>`
+       
+       Returns the default configuration for **#getDefaultInstance() (?)** .
+       
+       
+       
+       
+       
+   
+   * - public static void
+     - :ref:`removeDefaultConfiguration() <io.realm.Realm.removeDefaultConfiguration>`
+       
+       Removes the current default configuration (if any).
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`createAllFromJson(java.lang.Class<E>, JSONArray) <io.realm.Realm.createAllFromJson>`
+       
+       Creates a Realm object for each object in a JSON array.
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`createOrUpdateAllFromJson(java.lang.Class<E>, JSONArray) <io.realm.Realm.createOrUpdateAllFromJson>`
+       
+       Tries to update a list of existing objects identified by their primary key with new JSON data.
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`createAllFromJson(java.lang.Class<E>, String) <io.realm.Realm.createAllFromJson>`
+       
+       Creates a Realm object for each object in a JSON array.
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`createOrUpdateAllFromJson(java.lang.Class<E>, String) <io.realm.Realm.createOrUpdateAllFromJson>`
+       
+       Tries to update a list of existing objects identified by their primary key with new JSON data.
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`createAllFromJson(java.lang.Class<E>, InputStream) <io.realm.Realm.createAllFromJson>`
+       
+       Creates a Realm object for each object in a JSON array.
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`createOrUpdateAllFromJson(java.lang.Class<E>, InputStream) <io.realm.Realm.createOrUpdateAllFromJson>`
+       
+       Tries to update a list of existing objects identified by their primary key with new JSON data.
+       
+       
+       
+       
+       
+   
+   * - public E
+     - :ref:`createObjectFromJson(java.lang.Class<E>, JSONObject) <io.realm.Realm.createObjectFromJson>`
+       
+       Creates a Realm object pre-filled with data from a JSON object.
+       
+       
+       
+       
+       
+   
+   * - public E
+     - :ref:`createOrUpdateObjectFromJson(java.lang.Class<E>, JSONObject) <io.realm.Realm.createOrUpdateObjectFromJson>`
+       
+       Tries to update an existing object defined by its primary key with new JSON data.
+       
+       
+       
+       
+       
+   
+   * - public E
+     - :ref:`createObjectFromJson(java.lang.Class<E>, String) <io.realm.Realm.createObjectFromJson>`
+       
+       Creates a Realm object pre-filled with data from a JSON object.
+       
+       
+       
+       
+       
+   
+   * - public E
+     - :ref:`createOrUpdateObjectFromJson(java.lang.Class<E>, String) <io.realm.Realm.createOrUpdateObjectFromJson>`
+       
+       Tries to update an existing object defined by its primary key with new JSON data.
+       
+       
+       
+       
+       
+   
+   * - public E
+     - :ref:`createObjectFromJson(java.lang.Class<E>, InputStream) <io.realm.Realm.createObjectFromJson>`
+       
+       Creates a Realm object pre-filled with data from a JSON object.
+       
+       
+       
+       
+       
+   
+   * - public E
+     - :ref:`createOrUpdateObjectFromJson(java.lang.Class<E>, InputStream) <io.realm.Realm.createOrUpdateObjectFromJson>`
+       
+       Tries to update an existing object defined by its primary key with new JSON data.
+       
+       
+       
+       
+       
+   
+   * - public E
+     - :ref:`createObject(java.lang.Class<E>) <io.realm.Realm.createObject>`
+       
+       Instantiates and adds a new object to the Realm.
+       
+       
+       
+       
+       
+   
+   * - public E
+     - :ref:`createObject(java.lang.Class<E>, Object) <io.realm.Realm.createObject>`
+       
+       Instantiates and adds a new object to the Realm with the primary key value already set.
+       
+       
+       
+       
+       
+   
+   * - public E
+     - :ref:`createEmbeddedObject(java.lang.Class<E>, RealmModel, String) <io.realm.Realm.createEmbeddedObject>`
+       
+       Instantiates and adds a new embedded object to the Realm.
+       
+       
+       
+       
+       
+   
+   * - public E
+     - :ref:`copyToRealm(E, ImportFlag[]) <io.realm.Realm.copyToRealm>`
+       
+       Copies a RealmObject to the Realm instance and returns the copy.
+       
+       
+       
+       
+       
+   
+   * - public E
+     - :ref:`copyToRealmOrUpdate(E, ImportFlag[]) <io.realm.Realm.copyToRealmOrUpdate>`
+       
+       Updates an existing RealmObject that is identified by the same **io.realm.annotations.PrimaryKey (?)** or creates a new copy if no existing object could be found.
+       
+       
+       
+       
+       
+   
+   * - public List
+     - :ref:`copyToRealm(java.lang.Iterable<E>, ImportFlag[]) <io.realm.Realm.copyToRealm>`
+       
+       Copies a collection of RealmObjects to the Realm instance and returns their copy.
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`insert(java.util.Collection<? extends RealmModel>) <io.realm.Realm.insert>`
+       
+       Inserts a list of an unmanaged RealmObjects.
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`insert(RealmModel) <io.realm.Realm.insert>`
+       
+       Inserts an unmanaged RealmObject.
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`insertOrUpdate(java.util.Collection<? extends RealmModel>) <io.realm.Realm.insertOrUpdate>`
+       
+       Inserts or updates a list of unmanaged RealmObjects.
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`insertOrUpdate(RealmModel) <io.realm.Realm.insertOrUpdate>`
+       
+       Inserts or updates an unmanaged RealmObject.
+       
+       
+       
+       
+       
+   
+   * - public List
+     - :ref:`copyToRealmOrUpdate(java.lang.Iterable<E>, ImportFlag[]) <io.realm.Realm.copyToRealmOrUpdate>`
+       
+       Updates a list of existing RealmObjects that is identified by their **io.realm.annotations.PrimaryKey (?)** or creates a new copy if no existing object could be found.
+       
+       
+       
+       
+       
+   
+   * - public List
+     - :ref:`copyFromRealm(java.lang.Iterable<E>) <io.realm.Realm.copyFromRealm>`
+       
+       Makes an unmanaged in-memory copy of already persisted RealmObjects.
+       
+       
+       
+       
+       
+   
+   * - public List
+     - :ref:`copyFromRealm(java.lang.Iterable<E>, int) <io.realm.Realm.copyFromRealm>`
+       
+       Makes an unmanaged in-memory copy of already persisted RealmObjects.
+       
+       
+       
+       
+       
+   
+   * - public E
+     - :ref:`copyFromRealm(E) <io.realm.Realm.copyFromRealm>`
+       
+       Makes an unmanaged in-memory copy of an already persisted **RealmObject (?)** .
+       
+       
+       
+       
+       
+   
+   * - public E
+     - :ref:`copyFromRealm(E, int) <io.realm.Realm.copyFromRealm>`
+       
+       Makes an unmanaged in-memory copy of an already persisted **RealmObject (?)** .
+       
+       
+       
+       
+       
+   
+   * - public <any>
+     - :ref:`where(java.lang.Class<E>) <io.realm.Realm.where>`
+       
+       Returns a typed RealmQuery, which can be used to query for specific objects of this type
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`addChangeListener(<any>) <io.realm.Realm.addChangeListener>`
+       
+       Adds a change listener to the Realm.
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`removeChangeListener(<any>) <io.realm.Realm.removeChangeListener>`
+       
+       Removes the specified change listener.
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`removeAllChangeListeners() <io.realm.Realm.removeAllChangeListeners>`
+       
+       Removes all user-defined change listeners.
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`executeTransaction(Realm.Transaction) <io.realm.Realm.executeTransaction>`
+       
+       Executes a given transaction on the Realm.
+       
+       
+       
+       
+       
+   
+   * - public RealmAsyncTask
+     - :ref:`executeTransactionAsync(Realm.Transaction) <io.realm.Realm.executeTransactionAsync>`
+       
+       Similar to **#executeTransaction(Transaction) (?)** but runs asynchronously on a worker thread.
+       
+       
+       
+       
+       
+   
+   * - public RealmAsyncTask
+     - :ref:`executeTransactionAsync(Realm.Transaction, Realm.Transaction.OnSuccess) <io.realm.Realm.executeTransactionAsync>`
+       
+       Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an OnSuccess callback.
+       
+       
+       
+       
+       
+   
+   * - public RealmAsyncTask
+     - :ref:`executeTransactionAsync(Realm.Transaction, Realm.Transaction.OnError) <io.realm.Realm.executeTransactionAsync>`
+       
+       Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an OnError callback.
+       
+       
+       
+       
+       
+   
+   * - public RealmAsyncTask
+     - :ref:`executeTransactionAsync(Realm.Transaction, Realm.Transaction.OnSuccess, Realm.Transaction.OnError) <io.realm.Realm.executeTransactionAsync>`
+       
+       Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an OnSuccess and OnError callbacks.
+       
+       
+       
+       
+       
+   
+   * - public void
+     - :ref:`delete(java.lang.Class<? extends RealmModel>) <io.realm.Realm.delete>`
+       
+       Deletes all objects of the specified class from the Realm.
+       
+       
+       
+       
+       
+   
+   * - public static void
+     - :ref:`migrateRealm(RealmConfiguration) <io.realm.Realm.migrateRealm>`
+       
+       Manually triggers the migration associated with a given RealmConfiguration.
+       
+       
+       
+       
+       
+   
+   * - public static void
+     - :ref:`migrateRealm(RealmConfiguration, RealmMigration) <io.realm.Realm.migrateRealm>`
+       
+       Manually triggers a migration on a RealmMigration.
+       
+       
+       
+       
+       
+   
+   * - public static boolean
+     - :ref:`deleteRealm(RealmConfiguration) <io.realm.Realm.deleteRealm>`
+       
+       Deletes the Realm file along with the related temporary files specified by the given **RealmConfiguration (?)** from the filesystem.
+       
+       
+       
+       
+       
+   
+   * - public static boolean
+     - :ref:`compactRealm(RealmConfiguration) <io.realm.Realm.compactRealm>`
+       
+       Compacts a Realm file.
+       
+       
+       
+       
+       
+   
+   * - public Realm
+     - :ref:`freeze() <io.realm.Realm.freeze>`
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public static Object
+     - :ref:`getDefaultModule() <io.realm.Realm.getDefaultModule>`
+       
+       Returns the default Realm module.
+       
+       
+       
+       
+       
+   
+   * - public static int
+     - :ref:`getGlobalInstanceCount(RealmConfiguration) <io.realm.Realm.getGlobalInstanceCount>`
+       
+       Returns the current number of open Realm instances across all threads in current process that are using this configuration.
+       
+       
+       
+       
+       
+   
+   * - public static int
+     - :ref:`getLocalInstanceCount(RealmConfiguration) <io.realm.Realm.getLocalInstanceCount>`
+       
+       Returns the current number of open Realm instances on the thread calling this method.
+       
+       
+       
+       
+       
+   
+   * - public static Context
+     - :ref:`getApplicationContext() <io.realm.Realm.getApplicationContext>`
+       
+       Get the application context used when initializing Realm with **Realm#init(Context) (?)** or **Realm#init(Context, String) (?)** .
+       
+       
+       
+       
+       
+   
+   
+Field Detail
+============
+
+DEFAULT_REALM_NAME
+------------------
+
+
+ENCRYPTION_KEY_LENGTH
+---------------------
+
+The required length for encryption keys used to encrypt Realm data.
+
+
+Method Detail
+=============
+
+asFlowable
+----------
+
+
+
+
+isEmpty
+-------
+
+
+
+
+getSchema
+---------
+
+Returns the schema for this Realm. The schema is immutable. Any attempt to modify it will result in an **UnsupportedOperationException (?)** .
+
+The schema can only be modified using **DynamicRealm#getSchema() (?)** or through an migration.
+
+
+init
+----
+
+Initializes the Realm library and creates a default configuration that is ready to use. It is required to call this method before interacting with any other of the Realm API's.
+
+A good place is in an **android.app.Application (?)** subclass:
+
+.. code-block:: java
+
+    public class MyApplication extends Application {
+      \@Override
+      public void onCreate() {
+        super.onCreate();
+        Realm.init(this);
+      }
+    }
+    
+
+Remember to register it in the ``AndroidManifest.xml`` file:
+
+.. code-block:: java
+
+    
+
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="io.realm.example">
+    <application android:name=".MyApplication">
+      // ...
+    </application>
+    </manifest>
+    
+
+
+init
+----
+
+Initializes the Realm library and creates a default configuration that is ready to use. It is required to call this method before interacting with any other of the Realm API's.
+
+A good place is in an **android.app.Application (?)** subclass:
+
+.. code-block:: java
+
+    
+
+
+    public class MyApplication extends Application {
+      \@Override
+      public void onCreate() {
+        super.onCreate();
+        Realm.init(this, "MyApp/" + BuildConfig.VERSION_NAME);
+      }
+    }
+    
+
+Remember to register it in the ``AndroidManifest.xml`` file:
+
+.. code-block:: java
+
+    
+
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="io.realm.example">
+    <application android:name=".MyApplication">
+      // ...
+    </application>
+    </manifest>
+    
+
+
+getDefaultInstance
+------------------
+
+Realm static constructor that returns the Realm instance defined by the **io.realm.RealmConfiguration (?)** set by **#setDefaultConfiguration(RealmConfiguration) (?)**
+
+
+getInstance
+-----------
+
+Realm static constructor that returns the Realm instance defined by provided **io.realm.RealmConfiguration (?)**
+
+
+getInstanceAsync
+----------------
+
+The creation of the first Realm instance per **RealmConfiguration (?)** in a process can take some time as all initialization code need to run at that point (setting up the Realm, validating schemas and creating initial data). This method places the initialization work in a background thread and deliver the Realm instance to the caller thread asynchronously after the initialization is finished.
+
+
+setDefaultConfiguration
+-----------------------
+
+Sets the **io.realm.RealmConfiguration (?)** used when calling **#getDefaultInstance() (?)** .
+
+
+getDefaultConfiguration
+-----------------------
+
+Returns the default configuration for **#getDefaultInstance() (?)** .
+
+
+removeDefaultConfiguration
+--------------------------
+
+Removes the current default configuration (if any). Any further calls to **#getDefaultInstance() (?)** will fail until a new default configuration has been set using **#setDefaultConfiguration(RealmConfiguration) (?)** .
+
+
+createAllFromJson
+-----------------
+
+Creates a Realm object for each object in a JSON array. This must be done within a transaction.
+
+JSON properties with unknown properties will be ignored. If a **RealmObject (?)** field is not present in the JSON object the **RealmObject (?)** field will be set to the default value for that type.
+
+This method currently does not support value list field.
+
+
+createOrUpdateAllFromJson
+-------------------------
+
+Tries to update a list of existing objects identified by their primary key with new JSON data. If an existing object could not be found in the Realm, a new object will be created. This must happen within a transaction. If updating a **RealmObject (?)** and a field is not found in the JSON object, that field will not be updated. If a new **RealmObject (?)** is created and a field is not found in the JSON object, that field will be assigned the default value for the field type.
+
+This method currently does not support value list field.
+
+
+createAllFromJson
+-----------------
+
+Creates a Realm object for each object in a JSON array. This must be done within a transaction. JSON properties with unknown properties will be ignored. If a **RealmObject (?)** field is not present in the JSON object the **RealmObject (?)** field will be set to the default value for that type.
+
+This method currently does not support value list field.
+
+
+createOrUpdateAllFromJson
+-------------------------
+
+Tries to update a list of existing objects identified by their primary key with new JSON data. If an existing object could not be found in the Realm, a new object will be created. This must happen within a transaction. If updating a **RealmObject (?)** and a field is not found in the JSON object, that field will not be updated. If a new **RealmObject (?)** is created and a field is not found in the JSON object, that field will be assigned the default value for the field type.
+
+This method currently does not support value list field.
+
+
+createAllFromJson
+-----------------
+
+Creates a Realm object for each object in a JSON array. This must be done within a transaction. JSON properties with unknown properties will be ignored. If a **RealmObject (?)** field is not present in the JSON object the **RealmObject (?)** field will be set to the default value for that type.
+
+This API is only available in API level 11 or later.
+
+This method currently does not support value list field.
+
+
+createOrUpdateAllFromJson
+-------------------------
+
+Tries to update a list of existing objects identified by their primary key with new JSON data. If an existing object could not be found in the Realm, a new object will be created. This must happen within a transaction. If updating a **RealmObject (?)** and a field is not found in the JSON object, that field will not be updated. If a new **RealmObject (?)** is created and a field is not found in the JSON object, that field will be assigned the default value for the field type.
+
+This API is only available in API level 11 or later.
+
+This method currently does not support value list field.
+
+
+createObjectFromJson
+--------------------
+
+Creates a Realm object pre-filled with data from a JSON object. This must be done inside a transaction. JSON properties with unknown properties will be ignored. If a **RealmObject (?)** field is not present in the JSON object the **RealmObject (?)** field will be set to the default value for that type.
+
+This method currently does not support value list field.
+
+
+createOrUpdateObjectFromJson
+----------------------------
+
+Tries to update an existing object defined by its primary key with new JSON data. If no existing object could be found a new object will be saved in the Realm. This must happen within a transaction. If updating a **RealmObject (?)** and a field is not found in the JSON object, that field will not be updated. If a new **RealmObject (?)** is created and a field is not found in the JSON object, that field will be assigned the default value for the field type.
+
+This method currently does not support value list field.
+
+
+createObjectFromJson
+--------------------
+
+Creates a Realm object pre-filled with data from a JSON object. This must be done inside a transaction. JSON properties with unknown properties will be ignored. If a **RealmObject (?)** field is not present in the JSON object the **RealmObject (?)** field will be set to the default value for that type.
+
+This method currently does not support value list field.
+
+
+createOrUpdateObjectFromJson
+----------------------------
+
+Tries to update an existing object defined by its primary key with new JSON data. If no existing object could be found a new object will be saved in the Realm. This must happen within a transaction. If updating a **RealmObject (?)** and a field is not found in the JSON object, that field will not be updated. If a new **RealmObject (?)** is created and a field is not found in the JSON object, that field will be assigned the default value for the field type.
+
+This method currently does not support value list field.
+
+
+createObjectFromJson
+--------------------
+
+Creates a Realm object pre-filled with data from a JSON object. This must be done inside a transaction. JSON properties with unknown properties will be ignored. If a **RealmObject (?)** field is not present in the JSON object the **RealmObject (?)** field will be set to the default value for that type.
+
+This API is only available in API level 11 or later.
+
+This method currently does not support value list field.
+
+
+createOrUpdateObjectFromJson
+----------------------------
+
+Tries to update an existing object defined by its primary key with new JSON data. If no existing object could be found a new object will be saved in the Realm. This must happen within a transaction. If updating a **RealmObject (?)** and a field is not found in the JSON object, that field will not be updated. If a new **RealmObject (?)** is created and a field is not found in the JSON object, that field will be assigned the default value for the field type.
+
+This API is only available in API level 11 or later.
+
+This method currently does not support value list field.
+
+
+createObject
+------------
+
+Instantiates and adds a new object to the Realm.
+
+This method is only available for model classes with no @PrimaryKey annotation. If you like to create an object that has a primary key, use **#createObject(Class, Object) (?)** or **#copyToRealm(RealmModel, ImportFlag...) (?)** instead.
+
+
+createObject
+------------
+
+Instantiates and adds a new object to the Realm with the primary key value already set.
+
+If the value violates the primary key constraint, no object will be added and a **RealmException (?)** will be thrown. The default value for primary key provided by the model class will be ignored.
+
+
+createEmbeddedObject
+--------------------
+
+Instantiates and adds a new embedded object to the Realm.
+
+This method should only be used to create objects of types marked as embedded.
+
+
+copyToRealm
+-----------
+
+Copies a RealmObject to the Realm instance and returns the copy. Any further changes to the original RealmObject will not be reflected in the Realm copy. This is a deep copy, so all referenced objects will be copied. Objects already in this Realm will be ignored.
+
+Please note, copying an object will copy all field values. Any unset field in this and child objects will be set to their default value if not provided.
+
+
+copyToRealmOrUpdate
+-------------------
+
+Updates an existing RealmObject that is identified by the same **io.realm.annotations.PrimaryKey (?)** or creates a new copy if no existing object could be found. This is a deep copy or update i.e., all referenced objects will be either copied or updated.
+
+Please note, copying an object will copy all field values. Any unset field in the object and child objects will be set to their default value if not provided.
+
+
+copyToRealm
+-----------
+
+Copies a collection of RealmObjects to the Realm instance and returns their copy. Any further changes to the original RealmObjects will not be reflected in the Realm copies. This is a deep copy i.e., all referenced objects will be copied. Objects already in this Realm will be ignored.
+
+Please note, copying an object will copy all field values. Any unset field in the objects and child objects will be set to their default value if not provided.
+
+
+insert
+------
+
+Inserts a list of an unmanaged RealmObjects. This is generally faster than **#copyToRealm(Iterable, ImportFlag...) (?)** since it doesn't return the inserted elements, and performs minimum allocations and checks. After being inserted any changes to the original objects will not be persisted.
+
+Please note:
+
+- We don't check if the provided objects are already managed or not, so inserting a managed object might duplicate it. Duplication will only happen if the object doesn't have a primary key. Objects with primary keys will never get duplicated.
+   
+   
+- We don't create (nor return) a managed
+   
+   
+
+**RealmObject (?)** for each element
+
+If you want the managed **RealmObject (?)** returned, use **#copyToRealm(Iterable, ImportFlag...) (?)** , otherwise if you have a large number of object this method is generally faster.
+
+
+insert
+------
+
+Inserts an unmanaged RealmObject. This is generally faster than **#copyToRealm(RealmModel, ImportFlag...) (?)** since it doesn't return the inserted elements, and performs minimum allocations and checks. After being inserted any changes to the original object will not be persisted.
+
+Please note:
+
+- We don't check if the provided objects are already managed or not, so inserting a managed object might duplicate it. Duplication will only happen if the object doesn't have a primary key. Objects with primary keys will never get duplicated.
+   
+   
+- We don't create (nor return) a managed
+   
+   
+
+**RealmObject (?)** for each element
+
+If you want the managed **RealmObject (?)** returned, use **#copyToRealm(RealmModel, ImportFlag...) (?)** , otherwise if you have a large number of object this method is generally faster.
+
+
+insertOrUpdate
+--------------
+
+Inserts or updates a list of unmanaged RealmObjects. This is generally faster than **#copyToRealmOrUpdate(Iterable, ImportFlag...) (?)** since it doesn't return the inserted elements, and performs minimum allocations and checks. After being inserted any changes to the original objects will not be persisted.
+
+Please note:
+
+- We don't check if the provided objects are already managed or not, so inserting a managed object might duplicate it. Duplication will only happen if the object doesn't have a primary key. Objects with primary keys will never get duplicated.
+   
+   
+- We don't create (nor return) a managed
+   
+   
+
+**RealmObject (?)** for each element
+
+If you want the managed **RealmObject (?)** returned, use **#copyToRealm(Iterable, ImportFlag...) (?)** , otherwise if you have a large number of object this method is generally faster.
+
+
+insertOrUpdate
+--------------
+
+Inserts or updates an unmanaged RealmObject. This is generally faster than **#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** since it doesn't return the inserted elements, and performs minimum allocations and checks. After being inserted any changes to the original object will not be persisted.
+
+Please note:
+
+- We don't check if the provided objects are already managed or not, so inserting a managed object might duplicate it. Duplication will only happen if the object doesn't have a primary key. Objects with primary keys will never get duplicated.
+   
+   
+- We don't create (nor return) a managed
+   
+   
+
+**RealmObject (?)** for each element
+
+If you want the managed **RealmObject (?)** returned, use **#copyToRealm(RealmModel, ImportFlag...) (?)** , otherwise if you have a large number of object this method is generally faster.
+
+
+copyToRealmOrUpdate
+-------------------
+
+Updates a list of existing RealmObjects that is identified by their **io.realm.annotations.PrimaryKey (?)** or creates a new copy if no existing object could be found. This is a deep copy or update i.e., all referenced objects will be either copied or updated.
+
+Please note, copying an object will copy all field values. Any unset field in the objects and child objects will be set to their default value if not provided.
+
+
+copyFromRealm
+-------------
+
+Makes an unmanaged in-memory copy of already persisted RealmObjects. This is a deep copy that will copy all referenced objects.
+
+The copied objects are all detached from Realm and they will no longer be automatically updated. This means that the copied objects might contain data that are no longer consistent with other managed Realm objects.
+
+*WARNING*: Any changes to copied objects can be merged back into Realm using **#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** , but all fields will be overridden, not just those that were changed. This includes references to other objects, and can potentially override changes made by other threads. This behaviour can be modified using **ImportFlag (?)** s.
+
+
+copyFromRealm
+-------------
+
+Makes an unmanaged in-memory copy of already persisted RealmObjects. This is a deep copy that will copy all referenced objects up to the defined depth.
+
+The copied objects are all detached from Realm and they will no longer be automatically updated. This means that the copied objects might contain data that are no longer consistent with other managed Realm objects.
+
+*WARNING*: Any changes to copied objects can be merged back into Realm using **#copyToRealmOrUpdate(Iterable, ImportFlag...) (?)** , but all fields will be overridden, not just those that were changed. This includes references to other objects even though they might be ``null`` due to ``maxDepth`` being reached. This can also potentially override changes made by other threads. This behaviour can be modified using **ImportFlag (?)** s.
+
+
+copyFromRealm
+-------------
+
+Makes an unmanaged in-memory copy of an already persisted **RealmObject (?)** . This is a deep copy that will copy all referenced objects.
+
+The copied object(s) are all detached from Realm and they will no longer be automatically updated. This means that the copied objects might contain data that are no longer consistent with other managed Realm objects.
+
+*WARNING*: Any changes to copied objects can be merged back into Realm using **#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** , but all fields will be overridden, not just those that were changed. This includes references to other objects, and can potentially override changes made by other threads. This behaviour can be modified using **ImportFlag (?)** s.
+
+
+copyFromRealm
+-------------
+
+Makes an unmanaged in-memory copy of an already persisted **RealmObject (?)** . This is a deep copy that will copy all referenced objects up to the defined depth.
+
+The copied object(s) are all detached from Realm and they will no longer be automatically updated. This means that the copied objects might contain data that are no longer consistent with other managed Realm objects.
+
+*WARNING*: Any changes to copied objects can be merged back into Realm using **#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** , but all fields will be overridden, not just those that were changed. This includes references to other objects even though they might be ``null`` due to ``maxDepth`` being reached. This can also potentially override changes made by other threads. This behaviour can be modified using **ImportFlag (?)** s.
+
+
+where
+-----
+
+Returns a typed RealmQuery, which can be used to query for specific objects of this type
+
+
+addChangeListener
+-----------------
+
+Adds a change listener to the Realm.
+
+The listeners will be executed when changes are committed by this or another thread.
+
+Realm instances are per thread singletons and cached, so listeners should be removed manually even if calling **#close() (?)** . Otherwise there is a risk of memory leaks.
+
+
+removeChangeListener
+--------------------
+
+Removes the specified change listener.
+
+
+removeAllChangeListeners
+------------------------
+
+Removes all user-defined change listeners.
+
+
+executeTransaction
+------------------
+
+Executes a given transaction on the Realm. **#beginTransaction() (?)** and **#commitTransaction() (?)** will be called automatically. If any exception is thrown during the transaction **#cancelTransaction() (?)** will be called instead of **#commitTransaction() (?)** .
+
+Calling this method from the UI thread will throw a **RealmException (?)** . Doing so may result in a drop of frames or even ANRs. We recommend calling this method from a non-UI thread or using **#executeTransactionAsync(Transaction) (?)** instead.
+
+
+executeTransactionAsync
+-----------------------
+
+Similar to **#executeTransaction(Transaction) (?)** but runs asynchronously on a worker thread.
+
+
+executeTransactionAsync
+-----------------------
+
+Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an OnSuccess callback.
+
+
+executeTransactionAsync
+-----------------------
+
+Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an OnError callback.
+
+
+executeTransactionAsync
+-----------------------
+
+Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an OnSuccess and OnError callbacks.
+
+
+delete
+------
+
+Deletes all objects of the specified class from the Realm.
+
+
+migrateRealm
+------------
+
+Manually triggers the migration associated with a given RealmConfiguration. If Realm is already at the latest version, nothing will happen.
+
+
+migrateRealm
+------------
+
+Manually triggers a migration on a RealmMigration.
+
+
+deleteRealm
+-----------
+
+Deletes the Realm file along with the related temporary files specified by the given **RealmConfiguration (?)** from the filesystem. Temporary file with ".lock" extension won't be deleted.
+
+All Realm instances must be closed before calling this method.
+
+WARNING: For synchronized Realm, there is a chance that an internal Realm instance on the background thread is not closed even all the user controlled Realm instances are closed. This will result an ``IllegalStateException`` . See issue https://github.com/realm/realm-java/issues/5416 .
+
+
+compactRealm
+------------
+
+Compacts a Realm file. A Realm file usually contain free/unused space. This method removes this free space and the file size is thereby reduced. Objects within the Realm files are untouched.
+
+The file must be closed before this method is called, otherwise ``false`` will be returned. 
+|  The file system should have free space for at least a copy of the Realm file. 
+|  The Realm file is left untouched if any file operation fails. 
+| 
+
+
+freeze
+------
+
+
+
+
+getDefaultModule
+----------------
+
+Returns the default Realm module. This module contains all Realm classes in the current project, but not those from library or project dependencies. Realm classes in these should be exposed using their own module.
+
+
+getGlobalInstanceCount
+----------------------
+
+Returns the current number of open Realm instances across all threads in current process that are using this configuration. This includes both dynamic and normal Realms.
+
+
+getLocalInstanceCount
+---------------------
+
+Returns the current number of open Realm instances on the thread calling this method. This include both dynamic and normal Realms.
+
+
+getApplicationContext
+---------------------
+
+Get the application context used when initializing Realm with **Realm#init(Context) (?)** or **Realm#init(Context, String) (?)** .
+
+
+
