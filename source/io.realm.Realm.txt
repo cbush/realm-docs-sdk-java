@@ -215,7 +215,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`createAllFromJson(java.lang.Class<E>, JSONArray) <io_realm_Realm_createAllFromJson__Class_E___JSONArray__>`
+     - :ref:`createAllFromJson(java.lang.Class\<E>, JSONArray) <io_realm_Realm_createAllFromJson__Class_E___JSONArray__>`
        
        Creates a Realm object for each object in a JSON array.
        
@@ -225,7 +225,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`createOrUpdateAllFromJson(java.lang.Class<E>, JSONArray) <io_realm_Realm_createOrUpdateAllFromJson__Class_E___JSONArray__>`
+     - :ref:`createOrUpdateAllFromJson(java.lang.Class\<E>, JSONArray) <io_realm_Realm_createOrUpdateAllFromJson__Class_E___JSONArray__>`
        
        Tries to update a list of existing objects identified by their primary key with new JSON data.
        
@@ -235,7 +235,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`createAllFromJson(java.lang.Class<E>, String) <io_realm_Realm_createAllFromJson__Class_E___String__>`
+     - :ref:`createAllFromJson(java.lang.Class\<E>, String) <io_realm_Realm_createAllFromJson__Class_E___String__>`
        
        Creates a Realm object for each object in a JSON array.
        
@@ -245,7 +245,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`createOrUpdateAllFromJson(java.lang.Class<E>, String) <io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__>`
+     - :ref:`createOrUpdateAllFromJson(java.lang.Class\<E>, String) <io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__>`
        
        Tries to update a list of existing objects identified by their primary key with new JSON data.
        
@@ -255,7 +255,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`createAllFromJson(java.lang.Class<E>, InputStream) <io_realm_Realm_createAllFromJson__Class_E___InputStream__>`
+     - :ref:`createAllFromJson(java.lang.Class\<E>, InputStream) <io_realm_Realm_createAllFromJson__Class_E___InputStream__>`
        
        Creates a Realm object for each object in a JSON array.
        
@@ -265,7 +265,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`createOrUpdateAllFromJson(java.lang.Class<E>, InputStream) <io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__>`
+     - :ref:`createOrUpdateAllFromJson(java.lang.Class\<E>, InputStream) <io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__>`
        
        Tries to update a list of existing objects identified by their primary key with new JSON data.
        
@@ -275,7 +275,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createObjectFromJson(java.lang.Class<E>, JSONObject) <io_realm_Realm_createObjectFromJson__Class_E___JSONObject__>`
+     - :ref:`createObjectFromJson(java.lang.Class\<E>, JSONObject) <io_realm_Realm_createObjectFromJson__Class_E___JSONObject__>`
        
        Creates a Realm object pre-filled with data from a JSON object.
        
@@ -285,7 +285,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createOrUpdateObjectFromJson(java.lang.Class<E>, JSONObject) <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___JSONObject__>`
+     - :ref:`createOrUpdateObjectFromJson(java.lang.Class\<E>, JSONObject) <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___JSONObject__>`
        
        Tries to update an existing object defined by its primary key with new JSON data.
        
@@ -295,7 +295,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createObjectFromJson(java.lang.Class<E>, String) <io_realm_Realm_createObjectFromJson__Class_E___String__>`
+     - :ref:`createObjectFromJson(java.lang.Class\<E>, String) <io_realm_Realm_createObjectFromJson__Class_E___String__>`
        
        Creates a Realm object pre-filled with data from a JSON object.
        
@@ -305,7 +305,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createOrUpdateObjectFromJson(java.lang.Class<E>, String) <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__>`
+     - :ref:`createOrUpdateObjectFromJson(java.lang.Class\<E>, String) <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__>`
        
        Tries to update an existing object defined by its primary key with new JSON data.
        
@@ -315,7 +315,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createObjectFromJson(java.lang.Class<E>, InputStream) <io_realm_Realm_createObjectFromJson__Class_E___InputStream__>`
+     - :ref:`createObjectFromJson(java.lang.Class\<E>, InputStream) <io_realm_Realm_createObjectFromJson__Class_E___InputStream__>`
        
        Creates a Realm object pre-filled with data from a JSON object.
        
@@ -325,7 +325,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createOrUpdateObjectFromJson(java.lang.Class<E>, InputStream) <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__>`
+     - :ref:`createOrUpdateObjectFromJson(java.lang.Class\<E>, InputStream) <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__>`
        
        Tries to update an existing object defined by its primary key with new JSON data.
        
@@ -335,7 +335,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createObject(java.lang.Class<E>) <io_realm_Realm_createObject__Class_E___>`
+     - :ref:`createObject(java.lang.Class\<E>) <io_realm_Realm_createObject__Class_E___>`
        
        Instantiates and adds a new object to the Realm.
        
@@ -345,7 +345,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createObject(java.lang.Class<E>, Object) <io_realm_Realm_createObject__Class_E___Object__>`
+     - :ref:`createObject(java.lang.Class\<E>, Object) <io_realm_Realm_createObject__Class_E___Object__>`
        
        Instantiates and adds a new object to the Realm with the primary key value already set.
        
@@ -355,7 +355,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createEmbeddedObject(java.lang.Class<E>, RealmModel, String) <io_realm_Realm_createEmbeddedObject__Class_E___RealmModel__String__>`
+     - :ref:`createEmbeddedObject(java.lang.Class\<E>, RealmModel, String) <io_realm_Realm_createEmbeddedObject__Class_E___RealmModel__String__>`
        
        Instantiates and adds a new embedded object to the Realm.
        
@@ -385,7 +385,7 @@ Method Summary
        
    
    * - public List
-     - :ref:`copyToRealm(java.lang.Iterable<E>, ImportFlag[]) <io_realm_Realm_copyToRealm__Iterable_E___ImportFlag_____>`
+     - :ref:`copyToRealm(java.lang.Iterable\<E>, ImportFlag[]) <io_realm_Realm_copyToRealm__Iterable_E___ImportFlag_____>`
        
        Copies a collection of RealmObjects to the Realm instance and returns their copy.
        
@@ -395,7 +395,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`insert(java.util.Collection<? extends RealmModel>) <io_realm_Realm_insert__Collection___extends_RealmModel___>`
+     - :ref:`insert(java.util.Collection\<? extends RealmModel>) <io_realm_Realm_insert__Collection___extends_RealmModel___>`
        
        Inserts a list of an unmanaged RealmObjects.
        
@@ -415,7 +415,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`insertOrUpdate(java.util.Collection<? extends RealmModel>) <io_realm_Realm_insertOrUpdate__Collection___extends_RealmModel___>`
+     - :ref:`insertOrUpdate(java.util.Collection\<? extends RealmModel>) <io_realm_Realm_insertOrUpdate__Collection___extends_RealmModel___>`
        
        Inserts or updates a list of unmanaged RealmObjects.
        
@@ -435,7 +435,7 @@ Method Summary
        
    
    * - public List
-     - :ref:`copyToRealmOrUpdate(java.lang.Iterable<E>, ImportFlag[]) <io_realm_Realm_copyToRealmOrUpdate__Iterable_E___ImportFlag_____>`
+     - :ref:`copyToRealmOrUpdate(java.lang.Iterable\<E>, ImportFlag[]) <io_realm_Realm_copyToRealmOrUpdate__Iterable_E___ImportFlag_____>`
        
        Updates a list of existing RealmObjects that is identified by their **io.realm.annotations.PrimaryKey (?)** or creates a new copy if no existing object could be found.
        
@@ -445,7 +445,7 @@ Method Summary
        
    
    * - public List
-     - :ref:`copyFromRealm(java.lang.Iterable<E>) <io_realm_Realm_copyFromRealm__Iterable_E___>`
+     - :ref:`copyFromRealm(java.lang.Iterable\<E>) <io_realm_Realm_copyFromRealm__Iterable_E___>`
        
        Makes an unmanaged in-memory copy of already persisted RealmObjects.
        
@@ -455,7 +455,7 @@ Method Summary
        
    
    * - public List
-     - :ref:`copyFromRealm(java.lang.Iterable<E>, int) <io_realm_Realm_copyFromRealm__Iterable_E___int__>`
+     - :ref:`copyFromRealm(java.lang.Iterable\<E>, int) <io_realm_Realm_copyFromRealm__Iterable_E___int__>`
        
        Makes an unmanaged in-memory copy of already persisted RealmObjects.
        
@@ -485,7 +485,7 @@ Method Summary
        
    
    * - public <any>
-     - :ref:`where(java.lang.Class<E>) <io_realm_Realm_where__Class_E___>`
+     - :ref:`where(java.lang.Class\<E>) <io_realm_Realm_where__Class_E___>`
        
        Returns a typed RealmQuery, which can be used to query for specific objects of this type
        
@@ -495,7 +495,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`addChangeListener(<any>) <io_realm_Realm_addChangeListener___any___>`
+     - :ref:`addChangeListener(\<any>) <io_realm_Realm_addChangeListener___any___>`
        
        Adds a change listener to the Realm.
        
@@ -505,7 +505,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`removeChangeListener(<any>) <io_realm_Realm_removeChangeListener___any___>`
+     - :ref:`removeChangeListener(\<any>) <io_realm_Realm_removeChangeListener___any___>`
        
        Removes the specified change listener.
        
@@ -575,7 +575,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`delete(java.lang.Class<? extends RealmModel>) <io_realm_Realm_delete__Class___extends_RealmModel___>`
+     - :ref:`delete(java.lang.Class\<? extends RealmModel>) <io_realm_Realm_delete__Class___extends_RealmModel___>`
        
        Deletes all objects of the specified class from the Realm.
        
