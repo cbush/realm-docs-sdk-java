@@ -1,7 +1,0 @@
-source: 'contents'
-title: 'MongoDB Realm Documentation'
-output: 'MongoDB-Realm.tex'
-author: 'MongoDB, Inc.'
-class: 'manual'
-tag: 'guide'
-...
