@@ -4,4 +4,4 @@ Test - Test
 .. toctree::
    :titlesonly:
    
-   io.realm.Realm </io_realm_Realm>
+   io.realm.Realm </io.realm.Realm>
