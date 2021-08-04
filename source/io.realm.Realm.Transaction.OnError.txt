@@ -14,7 +14,7 @@ Method Summary
      - Method and Description
    
    * - public void
-     - :ref:`onError(Throwable) <io.realm.Realm.Transaction.OnError.onError>`
+     - :ref:`onError(Throwable) <io_realm_Realm_Transaction_OnError_onError__Throwable__>`
        
        
        
@@ -25,7 +25,7 @@ Method Summary
 Method Detail
 =============
 
-.. _io.realm.Realm.Transaction.OnError.onError:
+.. _io_realm_Realm_Transaction_OnError_onError__Throwable__:
 
 onError
 -------

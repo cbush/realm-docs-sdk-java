@@ -23,7 +23,7 @@ Method Summary
      - Method and Description
    
    * - public void
-     - :ref:`onSuccess() <io.realm.Realm.Transaction.Callback.onSuccess>`
+     - :ref:`onSuccess() <io_realm_Realm_Transaction_Callback_onSuccess____>`
        
        
        
@@ -31,7 +31,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`onError(Exception) <io.realm.Realm.Transaction.Callback.onError>`
+     - :ref:`onError(Exception) <io_realm_Realm_Transaction_Callback_onError__Exception__>`
        
        
        
@@ -42,13 +42,13 @@ Method Summary
 Method Detail
 =============
 
-.. _io.realm.Realm.Transaction.Callback.onSuccess:
+.. _io_realm_Realm_Transaction_Callback_onSuccess____:
 
 onSuccess
 ---------
 
 
-.. _io.realm.Realm.Transaction.Callback.onError:
+.. _io_realm_Realm_Transaction_Callback_onError__Exception__:
 
 onError
 -------
