@@ -23,7 +23,7 @@ Method Summary
      - Method and Description
    
    * - public abstract void
-     - :ref:`onSuccess(Realm) <io.realm.Realm.Callback.onSuccess>`
+     - :ref:`onSuccess(Realm) <io_realm_Realm_Callback_onSuccess__Realm__>`
        
        
        
@@ -33,7 +33,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`onError(Throwable) <io.realm.Realm.Callback.onError>`
+     - :ref:`onError(Throwable) <io_realm_Realm_Callback_onError__Throwable__>`
        
        
        
@@ -46,7 +46,7 @@ Method Summary
 Method Detail
 =============
 
-.. _io.realm.Realm.Callback.onSuccess:
+.. _io_realm_Realm_Callback_onSuccess__Realm__:
 
 onSuccess
 ---------
@@ -54,7 +54,7 @@ onSuccess
 
 
 
-.. _io.realm.Realm.Callback.onError:
+.. _io_realm_Realm_Callback_onError__Throwable__:
 
 onError
 -------
