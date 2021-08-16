@@ -1,7 +1,21 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
 io.realm.Realm.Transaction.OnError
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _io_realm_Realm_Transaction_OnError:
+
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
 
 Callback invoked to notify the caller thread about error during the transaction. The transaction will be rolled back and the background Realm will be closed before invoking **#onError(Throwable) (?)** .
 
@@ -19,6 +33,13 @@ Method Summary
      - :ref:`onError(Throwable) <io_realm_Realm_Transaction_OnError_onError__Throwable__>`
        
        
+       .. contents:: On this page
+          :local:
+          :backlinks: none
+          :depth: 2
+          :class: singlecol
+       
+       
        
        
        
@@ -31,6 +52,13 @@ Method Detail
 
 onError
 -------
+
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
 
 
 

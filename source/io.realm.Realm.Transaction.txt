@@ -1,7 +1,21 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
 io.realm.Realm.Transaction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _io_realm_Realm_Transaction:
+
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
 
 Encapsulates a Realm transaction.
 
@@ -40,6 +54,13 @@ Method Summary
      - :ref:`execute(Realm) <io_realm_Realm_Transaction_execute__Realm__>`
        
        
+       .. contents:: On this page
+          :local:
+          :backlinks: none
+          :depth: 2
+          :class: singlecol
+       
+       
        
        
        
@@ -52,6 +73,13 @@ Method Detail
 
 execute
 -------
+
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
 
 
 

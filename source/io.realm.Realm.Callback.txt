@@ -1,3 +1,10 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
 io.realm.Realm.Callback
 ^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -6,6 +13,13 @@ io.realm.Realm.Callback
 *Superclass:*
 
 - **<any> (?)**
+
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
 
 
 
@@ -28,6 +42,13 @@ Method Summary
      - :ref:`onSuccess(Realm) <io_realm_Realm_Callback_onSuccess__Realm__>`
        
        
+       .. contents:: On this page
+          :local:
+          :backlinks: none
+          :depth: 2
+          :class: singlecol
+       
+       
        
        
        
@@ -36,6 +57,13 @@ Method Summary
    
    * - public void
      - :ref:`onError(Throwable) <io_realm_Realm_Callback_onError__Throwable__>`
+       
+       
+       .. contents:: On this page
+          :local:
+          :backlinks: none
+          :depth: 2
+          :class: singlecol
        
        
        
@@ -54,12 +82,26 @@ onSuccess
 ---------
 
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+
 
 
 .. _io_realm_Realm_Callback_onError__Throwable__:
 
 onError
 -------
+
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
 
 
 
