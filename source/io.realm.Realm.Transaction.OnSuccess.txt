@@ -1,6 +1,8 @@
 io.realm.Realm.Transaction.OnSuccess
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. _io_realm_Realm_Transaction_OnSuccess:
+
 Callback invoked to notify the caller thread about the success of the transaction.
 
 

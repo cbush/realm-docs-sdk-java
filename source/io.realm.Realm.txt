@@ -1,6 +1,8 @@
 io.realm.Realm
 ^^^^^^^^^^^^^^
 
+.. _io_realm_Realm:
+
 *Superclass:*
 
 - **BaseRealm (?)**

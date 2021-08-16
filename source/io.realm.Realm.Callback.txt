@@ -1,6 +1,8 @@
 io.realm.Realm.Callback
 ^^^^^^^^^^^^^^^^^^^^^^^
 
+.. _io_realm_Realm_Callback:
+
 *Superclass:*
 
 - **<any> (?)**

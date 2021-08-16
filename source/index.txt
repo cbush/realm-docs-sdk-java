@@ -3,70 +3,10 @@
    :hidden:
 
 
-   io.realm.Realm.Callback.onSuccess((Realm)) </io.realm.Realm.Callback#io_realm_Realm_Callback_onSuccess__Realm__>
-   io.realm.Realm.Callback.onError((Throwable)) </io.realm.Realm.Callback#io_realm_Realm_Callback_onError__Throwable__>
-   io.realm.Realm.Transaction.Callback.onSuccess(()) </io.realm.Realm.Transaction.Callback#io_realm_Realm_Transaction_Callback_onSuccess____>
-   io.realm.Realm.Transaction.Callback.onError((Exception)) </io.realm.Realm.Transaction.Callback#io_realm_Realm_Transaction_Callback_onError__Exception__>
-   io.realm.Realm.Transaction.execute((Realm)) </io.realm.Realm.Transaction#io_realm_Realm_Transaction_execute__Realm__>
-   io.realm.Realm.Transaction.OnSuccess.onSuccess(()) </io.realm.Realm.Transaction.OnSuccess#io_realm_Realm_Transaction_OnSuccess_onSuccess____>
-   io.realm.Realm.Transaction.OnError.onError((Throwable)) </io.realm.Realm.Transaction.OnError#io_realm_Realm_Transaction_OnError_onError__Throwable__>
-   io.realm.Realm.DEFAULT_REALM_NAME </io.realm.Realm#io_realm_Realm_DEFAULT_REALM_NAME>
-   io.realm.Realm.ENCRYPTION_KEY_LENGTH </io.realm.Realm#io_realm_Realm_ENCRYPTION_KEY_LENGTH>
-   io.realm.Realm.asFlowable(()) </io.realm.Realm#io_realm_Realm_asFlowable____>
-   io.realm.Realm.isEmpty(()) </io.realm.Realm#io_realm_Realm_isEmpty____>
-   io.realm.Realm.getSchema(()) </io.realm.Realm#io_realm_Realm_getSchema____>
-   io.realm.Realm.init((Context)) </io.realm.Realm#io_realm_Realm_init__Context__>
-   io.realm.Realm.init((Context, String)) </io.realm.Realm#io_realm_Realm_init__Context__String__>
-   io.realm.Realm.getDefaultInstance(()) </io.realm.Realm#io_realm_Realm_getDefaultInstance____>
-   io.realm.Realm.getInstance((RealmConfiguration)) </io.realm.Realm#io_realm_Realm_getInstance__RealmConfiguration__>
-   io.realm.Realm.getInstanceAsync((RealmConfiguration, Realm.Callback)) </io.realm.Realm#io_realm_Realm_getInstanceAsync__RealmConfiguration__Realm_Callback__>
-   io.realm.Realm.setDefaultConfiguration((RealmConfiguration)) </io.realm.Realm#io_realm_Realm_setDefaultConfiguration__RealmConfiguration__>
-   io.realm.Realm.getDefaultConfiguration(()) </io.realm.Realm#io_realm_Realm_getDefaultConfiguration____>
-   io.realm.Realm.removeDefaultConfiguration(()) </io.realm.Realm#io_realm_Realm_removeDefaultConfiguration____>
-   io.realm.Realm.createAllFromJson((Class<E>, JSONArray)) </io.realm.Realm#io_realm_Realm_createAllFromJson__Class_E___JSONArray__>
-   io.realm.Realm.createOrUpdateAllFromJson((Class<E>, JSONArray)) </io.realm.Realm#io_realm_Realm_createOrUpdateAllFromJson__Class_E___JSONArray__>
-   io.realm.Realm.createAllFromJson((Class<E>, String)) </io.realm.Realm#io_realm_Realm_createAllFromJson__Class_E___String__>
-   io.realm.Realm.createOrUpdateAllFromJson((Class<E>, String)) </io.realm.Realm#io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__>
-   io.realm.Realm.createAllFromJson((Class<E>, InputStream)) </io.realm.Realm#io_realm_Realm_createAllFromJson__Class_E___InputStream__>
-   io.realm.Realm.createOrUpdateAllFromJson((Class<E>, InputStream)) </io.realm.Realm#io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__>
-   io.realm.Realm.createObjectFromJson((Class<E>, JSONObject)) </io.realm.Realm#io_realm_Realm_createObjectFromJson__Class_E___JSONObject__>
-   io.realm.Realm.createOrUpdateObjectFromJson((Class<E>, JSONObject)) </io.realm.Realm#io_realm_Realm_createOrUpdateObjectFromJson__Class_E___JSONObject__>
-   io.realm.Realm.createObjectFromJson((Class<E>, String)) </io.realm.Realm#io_realm_Realm_createObjectFromJson__Class_E___String__>
-   io.realm.Realm.createOrUpdateObjectFromJson((Class<E>, String)) </io.realm.Realm#io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__>
-   io.realm.Realm.createObjectFromJson((Class<E>, InputStream)) </io.realm.Realm#io_realm_Realm_createObjectFromJson__Class_E___InputStream__>
-   io.realm.Realm.createOrUpdateObjectFromJson((Class<E>, InputStream)) </io.realm.Realm#io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__>
-   io.realm.Realm.createObject((Class<E>)) </io.realm.Realm#io_realm_Realm_createObject__Class_E___>
-   io.realm.Realm.createObject((Class<E>, Object)) </io.realm.Realm#io_realm_Realm_createObject__Class_E___Object__>
-   io.realm.Realm.createEmbeddedObject((Class<E>, RealmModel, String)) </io.realm.Realm#io_realm_Realm_createEmbeddedObject__Class_E___RealmModel__String__>
-   io.realm.Realm.copyToRealm((E, ImportFlag...)) </io.realm.Realm#io_realm_Realm_copyToRealm__E__ImportFlag_____>
-   io.realm.Realm.copyToRealmOrUpdate((E, ImportFlag...)) </io.realm.Realm#io_realm_Realm_copyToRealmOrUpdate__E__ImportFlag_____>
-   io.realm.Realm.copyToRealm((Iterable<E>, ImportFlag...)) </io.realm.Realm#io_realm_Realm_copyToRealm__Iterable_E___ImportFlag_____>
-   io.realm.Realm.insert((Collection<? extends RealmModel>)) </io.realm.Realm#io_realm_Realm_insert__Collection___extends_RealmModel___>
-   io.realm.Realm.insert((RealmModel)) </io.realm.Realm#io_realm_Realm_insert__RealmModel__>
-   io.realm.Realm.insertOrUpdate((Collection<? extends RealmModel>)) </io.realm.Realm#io_realm_Realm_insertOrUpdate__Collection___extends_RealmModel___>
-   io.realm.Realm.insertOrUpdate((RealmModel)) </io.realm.Realm#io_realm_Realm_insertOrUpdate__RealmModel__>
-   io.realm.Realm.copyToRealmOrUpdate((Iterable<E>, ImportFlag...)) </io.realm.Realm#io_realm_Realm_copyToRealmOrUpdate__Iterable_E___ImportFlag_____>
-   io.realm.Realm.copyFromRealm((Iterable<E>)) </io.realm.Realm#io_realm_Realm_copyFromRealm__Iterable_E___>
-   io.realm.Realm.copyFromRealm((Iterable<E>, int)) </io.realm.Realm#io_realm_Realm_copyFromRealm__Iterable_E___int__>
-   io.realm.Realm.copyFromRealm((E)) </io.realm.Realm#io_realm_Realm_copyFromRealm__E__>
-   io.realm.Realm.copyFromRealm((E, int)) </io.realm.Realm#io_realm_Realm_copyFromRealm__E__int__>
-   io.realm.Realm.where((Class<E>)) </io.realm.Realm#io_realm_Realm_where__Class_E___>
-   io.realm.Realm.addChangeListener((<any>)) </io.realm.Realm#io_realm_Realm_addChangeListener___any___>
-   io.realm.Realm.removeChangeListener((<any>)) </io.realm.Realm#io_realm_Realm_removeChangeListener___any___>
-   io.realm.Realm.removeAllChangeListeners(()) </io.realm.Realm#io_realm_Realm_removeAllChangeListeners____>
-   io.realm.Realm.executeTransaction((Realm.Transaction)) </io.realm.Realm#io_realm_Realm_executeTransaction__Realm_Transaction__>
-   io.realm.Realm.executeTransactionAsync((Realm.Transaction)) </io.realm.Realm#io_realm_Realm_executeTransactionAsync__Realm_Transaction__>
-   io.realm.Realm.executeTransactionAsync((Realm.Transaction, Realm.Transaction.OnSuccess)) </io.realm.Realm#io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__>
-   io.realm.Realm.executeTransactionAsync((Realm.Transaction, Realm.Transaction.OnError)) </io.realm.Realm#io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnError__>
-   io.realm.Realm.executeTransactionAsync((Realm.Transaction, Realm.Transaction.OnSuccess, Realm.Transaction.OnError)) </io.realm.Realm#io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__Realm_Transaction_OnError__>
-   io.realm.Realm.delete((Class<? extends RealmModel>)) </io.realm.Realm#io_realm_Realm_delete__Class___extends_RealmModel___>
-   io.realm.Realm.migrateRealm((RealmConfiguration)) </io.realm.Realm#io_realm_Realm_migrateRealm__RealmConfiguration__>
-   io.realm.Realm.migrateRealm((RealmConfiguration, RealmMigration)) </io.realm.Realm#io_realm_Realm_migrateRealm__RealmConfiguration__RealmMigration__>
-   io.realm.Realm.deleteRealm((RealmConfiguration)) </io.realm.Realm#io_realm_Realm_deleteRealm__RealmConfiguration__>
-   io.realm.Realm.compactRealm((RealmConfiguration)) </io.realm.Realm#io_realm_Realm_compactRealm__RealmConfiguration__>
-   io.realm.Realm.freeze(()) </io.realm.Realm#io_realm_Realm_freeze____>
-   io.realm.Realm.getDefaultModule(()) </io.realm.Realm#io_realm_Realm_getDefaultModule____>
-   io.realm.Realm.getGlobalInstanceCount((RealmConfiguration)) </io.realm.Realm#io_realm_Realm_getGlobalInstanceCount__RealmConfiguration__>
-   io.realm.Realm.getLocalInstanceCount((RealmConfiguration)) </io.realm.Realm#io_realm_Realm_getLocalInstanceCount__RealmConfiguration__>
-   io.realm.Realm.getApplicationContext(()) </io.realm.Realm#io_realm_Realm_getApplicationContext____>
+   io.realm.Realm.Callback </io.realm.Realm.Callback>
+   io.realm.Realm.Transaction.Callback </io.realm.Realm.Transaction.Callback>
+   io.realm.Realm.Transaction </io.realm.Realm.Transaction>
+   io.realm.Realm.Transaction.OnSuccess </io.realm.Realm.Transaction.OnSuccess>
+   io.realm.Realm.Transaction.OnError </io.realm.Realm.Transaction.OnError>
+   io.realm.Realm </io.realm.Realm>
    
