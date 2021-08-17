@@ -74,8 +74,8 @@ Method Detail
 
 .. _io_realm_Realm_Transaction_Callback_onSuccess____:
 
-onSuccess
----------
+:ref:`onSuccess <io_realm_Realm_Transaction_Callback_onSuccess____>` ()
+-----------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -87,8 +87,8 @@ onSuccess
 
 .. _io_realm_Realm_Transaction_Callback_onError__Exception__:
 
-onError
--------
+:ref:`onError <io_realm_Realm_Transaction_Callback_onError__Exception__>` (**Exception (?)** ignore)
+----------------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
