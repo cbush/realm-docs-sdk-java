@@ -778,14 +778,20 @@ Remember to register it in the ``AndroidManifest.xml`` file:
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the Application Context.
+- context - the Application Context.
    
    
    
 
-.. _io_realm_Realm_init__Context__String__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#getDefaultInstance().. _io_realm_Realm_init__Context__String__:
 
 init
 ----
@@ -827,18 +833,24 @@ Remember to register it in the ``AndroidManifest.xml`` file:
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the Application Context.
+- context - the Application Context.
    
    
    
-- @param - optional user defined string that will be sent to the Realm Object Server as part of a ``User-Agent`` header when a session is established. This setting will not be used by non-synchronized Realms.
+- userAgent - optional user defined string that will be sent to the Realm Object Server as part of a ``User-Agent`` header when a session is established. This setting will not be used by non-synchronized Realms.
    
    
    
 
-.. _io_realm_Realm_getDefaultInstance____:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#getDefaultInstance().. _io_realm_Realm_getDefaultInstance____:
 
 getDefaultInstance
 ------------------
@@ -847,6 +859,9 @@ public static :ref:`Realm <io_realm_Realm>` getDefaultInstance ()
 
 Realm static constructor that returns the Realm instance defined by the **io.realm.RealmConfiguration (?)** set by **#setDefaultConfiguration(RealmConfiguration) (?)**
 
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_getInstance__RealmConfiguration__:
 
@@ -859,14 +874,20 @@ Realm static constructor that returns the Realm instance defined by provided **i
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - **RealmConfiguration (?)** used to open the Realm
+- configuration - **RealmConfiguration (?)** used to open the Realm
    
    
    
 
-.. _io_realm_Realm_getInstanceAsync__RealmConfiguration__Realm_Callback__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+RealmConfiguration for details on how to configure a Realm... _io_realm_Realm_getInstanceAsync__RealmConfiguration__Realm_Callback__:
 
 getInstanceAsync
 ----------------
@@ -877,18 +898,24 @@ The creation of the first Realm instance per **RealmConfiguration (?)** in a pro
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - **RealmConfiguration (?)** used to open the Realm.
+- configuration - **RealmConfiguration (?)** used to open the Realm.
    
    
    
-- @param - invoked to return the results.
+- callback - invoked to return the results.
    
    
    
 
-.. _io_realm_Realm_setDefaultConfiguration__RealmConfiguration__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+Callback for more details... _io_realm_Realm_setDefaultConfiguration__RealmConfiguration__:
 
 setDefaultConfiguration
 -----------------------
@@ -899,14 +926,20 @@ Sets the **io.realm.RealmConfiguration (?)** used when calling **#getDefaultInst
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the **io.realm.RealmConfiguration (?)** to use as the default configuration.
+- configuration - the **io.realm.RealmConfiguration (?)** to use as the default configuration.
    
    
    
 
-.. _io_realm_Realm_getDefaultConfiguration____:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+RealmConfiguration for details on how to configure a Realm... _io_realm_Realm_getDefaultConfiguration____:
 
 getDefaultConfiguration
 -----------------------
@@ -941,18 +974,24 @@ This method currently does not support value list field.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - type of Realm objects to create.
+- clazz - type of Realm objects to create.
    
    
    
-- @param - an array where each JSONObject must map to the specified class.
+- json - an array where each JSONObject must map to the specified class.
    
    
    
 
-.. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___JSONArray__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___JSONArray__:
 
 createOrUpdateAllFromJson
 -------------------------
@@ -965,18 +1004,24 @@ This method currently does not support value list field.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - type of **io.realm.RealmObject (?)** to create or update. It must have a primary key defined.
+- clazz - type of **io.realm.RealmObject (?)** to create or update. It must have a primary key defined.
    
    
    
-- @param - array with object data.
+- json - array with object data.
    
    
    
 
-.. _io_realm_Realm_createAllFromJson__Class_E___String__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#createAllFromJson(Class, org.json.JSONArray)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createAllFromJson__Class_E___String__:
 
 createAllFromJson
 -----------------
@@ -989,18 +1034,24 @@ This method currently does not support value list field.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - type of Realm objects to create.
+- clazz - type of Realm objects to create.
    
    
    
-- @param - the JSON array as a String where each object can map to the specified class.
+- json - the JSON array as a String where each object can map to the specified class.
    
    
    
 
-.. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__:
 
 createOrUpdateAllFromJson
 -------------------------
@@ -1013,18 +1064,24 @@ This method currently does not support value list field.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - type of **io.realm.RealmObject (?)** to create or update. It must have a primary key defined.
+- clazz - type of **io.realm.RealmObject (?)** to create or update. It must have a primary key defined.
    
    
    
-- @param - string with an array of JSON objects.
+- json - string with an array of JSON objects.
    
    
    
 
-.. _io_realm_Realm_createAllFromJson__Class_E___InputStream__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#createAllFromJson(Class, String)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createAllFromJson__Class_E___InputStream__:
 
 createAllFromJson
 -----------------
@@ -1039,18 +1096,24 @@ This method currently does not support value list field.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - type of Realm objects created.
+- clazz - type of Realm objects created.
    
    
    
-- @param - the JSON array as a InputStream. All objects in the array must be of the specified class.
+- inputStream - the JSON array as a InputStream. All objects in the array must be of the specified class.
    
    
    
 
-.. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__:
 
 createOrUpdateAllFromJson
 -------------------------
@@ -1065,18 +1128,24 @@ This method currently does not support value list field.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - type of **io.realm.RealmObject (?)** to create or update. It must have a primary key defined.
+- clazz - type of **io.realm.RealmObject (?)** to create or update. It must have a primary key defined.
    
    
    
-- @param - the InputStream with a list of object data in JSON format.
+- in - the InputStream with a list of object data in JSON format.
    
    
    
 
-.. _io_realm_Realm_createObjectFromJson__Class_E___JSONObject__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#createOrUpdateAllFromJson(Class, java.io.InputStream)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createObjectFromJson__Class_E___JSONObject__:
 
 createObjectFromJson
 --------------------
@@ -1089,18 +1158,24 @@ This method currently does not support value list field.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - type of Realm object to create.
+- clazz - type of Realm object to create.
    
    
    
-- @param - the JSONObject with object data.
+- json - the JSONObject with object data.
    
    
    
 
-.. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___JSONObject__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#createOrUpdateObjectFromJson(Class, org.json.JSONObject)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___JSONObject__:
 
 createOrUpdateObjectFromJson
 ----------------------------
@@ -1113,18 +1188,24 @@ This method currently does not support value list field.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - Type of **io.realm.RealmObject (?)** to create or update. It must have a primary key defined.
+- clazz - Type of **io.realm.RealmObject (?)** to create or update. It must have a primary key defined.
    
    
    
-- @param - **org.json.JSONObject (?)** with object data.
+- json - **org.json.JSONObject (?)** with object data.
    
    
    
 
-.. _io_realm_Realm_createObjectFromJson__Class_E___String__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#createObjectFromJson(Class, org.json.JSONObject)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createObjectFromJson__Class_E___String__:
 
 createObjectFromJson
 --------------------
@@ -1137,18 +1218,24 @@ This method currently does not support value list field.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - type of Realm object to create.
+- clazz - type of Realm object to create.
    
    
    
-- @param - the JSON string with object data.
+- json - the JSON string with object data.
    
    
    
 
-.. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__:
 
 createOrUpdateObjectFromJson
 ----------------------------
@@ -1161,18 +1248,24 @@ This method currently does not support value list field.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - type of **io.realm.RealmObject (?)** to create or update. It must have a primary key defined.
+- clazz - type of **io.realm.RealmObject (?)** to create or update. It must have a primary key defined.
    
    
    
-- @param - string with object data in JSON format.
+- json - string with object data in JSON format.
    
    
    
 
-.. _io_realm_Realm_createObjectFromJson__Class_E___InputStream__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#createObjectFromJson(Class, String)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createObjectFromJson__Class_E___InputStream__:
 
 createObjectFromJson
 --------------------
@@ -1187,18 +1280,24 @@ This method currently does not support value list field.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - type of Realm object to create.
+- clazz - type of Realm object to create.
    
    
    
-- @param - the JSON object data as a InputStream.
+- inputStream - the JSON object data as a InputStream.
    
    
    
 
-.. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__:
 
 createOrUpdateObjectFromJson
 ----------------------------
@@ -1213,18 +1312,24 @@ This method currently does not support value list field.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - type of **io.realm.RealmObject (?)** to create or update. It must have a primary key defined.
+- clazz - type of **io.realm.RealmObject (?)** to create or update. It must have a primary key defined.
    
    
    
-- @param - the **InputStream (?)** with object data in JSON format.
+- in - the **InputStream (?)** with object data in JSON format.
    
    
    
 
-.. _io_realm_Realm_createObject__Class_E___:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#createObjectFromJson(Class, java.io.InputStream)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createObject__Class_E___:
 
 createObject
 ------------
@@ -1237,14 +1342,20 @@ This method is only available for model classes with no @PrimaryKey annotation. 
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the Class of the object to create.
+- clazz - the Class of the object to create.
    
    
    
 
-.. _io_realm_Realm_createObject__Class_E___Object__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#createObject(Class, Object).. _io_realm_Realm_createObject__Class_E___Object__:
 
 createObject
 ------------
@@ -1257,16 +1368,19 @@ If the value violates the primary key constraint, no object will be added and a 
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the Class of the object to create.
+- clazz - the Class of the object to create.
    
    
    
-- @param - value for the primary key field.
+- primaryKeyValue - value for the primary key field.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_createEmbeddedObject__Class_E___RealmModel__String__:
 
@@ -1281,22 +1395,28 @@ This method should only be used to create objects of types marked as embedded.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the Class of the object to create. It must be marked with ``\@RealmClass(embedded = true)`` .
+- clazz - the Class of the object to create. It must be marked with ``\@RealmClass(embedded = true)`` .
    
    
    
-- @param - The parent object which should hold a reference to the embedded object.
+- parentObject - The parent object which should hold a reference to the embedded object.
    
    
    
-- @param - the property in the parent class which holds the reference. If the parent property is a list the embedded object will be added to the end of that list.
+- parentProperty - the property in the parent class which holds the reference. If the parent property is a list the embedded object will be added to the end of that list.
    
    
    
 
-.. _io_realm_Realm_copyToRealm__E__ImportFlag_____:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+RealmClass#embedded().. _io_realm_Realm_copyToRealm__E__ImportFlag_____:
 
 copyToRealm
 -----------
@@ -1309,16 +1429,19 @@ Please note, copying an object will copy all field values. Any unset field in th
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the **io.realm.RealmObject (?)** to copy to the Realm.
+- object - the **io.realm.RealmObject (?)** to copy to the Realm.
    
    
    
-- @param - any flag that modifies the behaviour of inserting the data into the Realm.
+- flags - any flag that modifies the behaviour of inserting the data into the Realm.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_copyToRealmOrUpdate__E__ImportFlag_____:
 
@@ -1333,18 +1456,24 @@ Please note, copying an object will copy all field values. Any unset field in th
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - **io.realm.RealmObject (?)** to copy or update.
+- object - **io.realm.RealmObject (?)** to copy or update.
    
    
    
-- @param - any flag that modifies the behaviour of inserting the data into the Realm.
+- flags - any flag that modifies the behaviour of inserting the data into the Realm.
    
    
    
 
-.. _io_realm_Realm_copyToRealm__Iterable_E___ImportFlag_____:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#copyToRealm(RealmModel, ImportFlag...).. _io_realm_Realm_copyToRealm__Iterable_E___ImportFlag_____:
 
 copyToRealm
 -----------
@@ -1357,16 +1486,19 @@ Please note, copying an object will copy all field values. Any unset field in th
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the RealmObjects to copy to the Realm.
+- objects - the RealmObjects to copy to the Realm.
    
    
    
-- @param - any flag that modifies the behaviour of inserting the data into the Realm.
+- flags - any flag that modifies the behaviour of inserting the data into the Realm.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_insert__Collection___extends_RealmModel___:
 
@@ -1392,12 +1524,15 @@ If you want the managed **RealmObject (?)** returned, use **#copyToRealm(Iterabl
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - RealmObjects to insert.
+- objects - RealmObjects to insert.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_insert__RealmModel__:
 
@@ -1423,12 +1558,15 @@ If you want the managed **RealmObject (?)** returned, use **#copyToRealm(RealmMo
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - RealmObjects to insert.
+- object - RealmObjects to insert.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_insertOrUpdate__Collection___extends_RealmModel___:
 
@@ -1454,12 +1592,15 @@ If you want the managed **RealmObject (?)** returned, use **#copyToRealm(Iterabl
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - RealmObjects to insert.
+- objects - RealmObjects to insert.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_insertOrUpdate__RealmModel__:
 
@@ -1485,12 +1626,15 @@ If you want the managed **RealmObject (?)** returned, use **#copyToRealm(RealmMo
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - RealmObjects to insert.
+- object - RealmObjects to insert.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_copyToRealmOrUpdate__Iterable_E___ImportFlag_____:
 
@@ -1505,18 +1649,24 @@ Please note, copying an object will copy all field values. Any unset field in th
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - a list of objects to update or copy into Realm.
+- objects - a list of objects to update or copy into Realm.
    
    
    
-- @param - any flag that modifies the behaviour of inserting the data into the Realm.
+- flags - any flag that modifies the behaviour of inserting the data into the Realm.
    
    
    
 
-.. _io_realm_Realm_copyFromRealm__Iterable_E___:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#copyToRealm(Iterable, ImportFlag...).. _io_realm_Realm_copyFromRealm__Iterable_E___:
 
 copyFromRealm
 -------------
@@ -1530,15 +1680,29 @@ The copied objects are all detached from Realm and they will no longer be automa
 *WARNING*: Any changes to copied objects can be merged back into Realm using **#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** , but all fields will be overridden, not just those that were changed. This includes references to other objects, and can potentially override changes made by other threads. This behaviour can be modified using **ImportFlag (?)** s.
 
 
+Type Parameters
+~~~~~~~~~~~~~~~
+
+- E - type of object.
+   
+   
+   
+
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - RealmObjects to copy.
+- realmObjects - RealmObjects to copy.
    
    
    
 
-.. _io_realm_Realm_copyFromRealm__Iterable_E___int__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#copyToRealmOrUpdate(Iterable, ImportFlag...).. _io_realm_Realm_copyFromRealm__Iterable_E___int__:
 
 copyFromRealm
 -------------
@@ -1552,19 +1716,33 @@ The copied objects are all detached from Realm and they will no longer be automa
 *WARNING*: Any changes to copied objects can be merged back into Realm using **#copyToRealmOrUpdate(Iterable, ImportFlag...) (?)** , but all fields will be overridden, not just those that were changed. This includes references to other objects even though they might be ``null`` due to ``maxDepth`` being reached. This can also potentially override changes made by other threads. This behaviour can be modified using **ImportFlag (?)** s.
 
 
+Type Parameters
+~~~~~~~~~~~~~~~
+
+- E - type of object.
+   
+   
+   
+
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - RealmObjects to copy.
+- realmObjects - RealmObjects to copy.
    
    
    
-- @param - limit of the deep copy. All references after this depth will be ``null`` . Starting depth is ``0`` .
+- maxDepth - limit of the deep copy. All references after this depth will be ``null`` . Starting depth is ``0`` .
    
    
    
 
-.. _io_realm_Realm_copyFromRealm__E__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#copyToRealmOrUpdate(Iterable, ImportFlag...).. _io_realm_Realm_copyFromRealm__E__:
 
 copyFromRealm
 -------------
@@ -1578,15 +1756,29 @@ The copied object(s) are all detached from Realm and they will no longer be auto
 *WARNING*: Any changes to copied objects can be merged back into Realm using **#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** , but all fields will be overridden, not just those that were changed. This includes references to other objects, and can potentially override changes made by other threads. This behaviour can be modified using **ImportFlag (?)** s.
 
 
+Type Parameters
+~~~~~~~~~~~~~~~
+
+- E - type of object.
+   
+   
+   
+
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - **RealmObject (?)** to copy.
+- realmObject - **RealmObject (?)** to copy.
    
    
    
 
-.. _io_realm_Realm_copyFromRealm__E__int__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#copyToRealmOrUpdate(RealmModel, ImportFlag...).. _io_realm_Realm_copyFromRealm__E__int__:
 
 copyFromRealm
 -------------
@@ -1600,19 +1792,33 @@ The copied object(s) are all detached from Realm and they will no longer be auto
 *WARNING*: Any changes to copied objects can be merged back into Realm using **#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** , but all fields will be overridden, not just those that were changed. This includes references to other objects even though they might be ``null`` due to ``maxDepth`` being reached. This can also potentially override changes made by other threads. This behaviour can be modified using **ImportFlag (?)** s.
 
 
+Type Parameters
+~~~~~~~~~~~~~~~
+
+- E - type of object.
+   
+   
+   
+
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - **RealmObject (?)** to copy.
+- realmObject - **RealmObject (?)** to copy.
    
    
    
-- @param - limit of the deep copy. All references after this depth will be ``null`` . Starting depth is ``0`` .
+- maxDepth - limit of the deep copy. All references after this depth will be ``null`` . Starting depth is ``0`` .
    
    
    
 
-.. _io_realm_Realm_where__Class_E___:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+#copyToRealmOrUpdate(RealmModel, ImportFlag...).. _io_realm_Realm_where__Class_E___:
 
 where
 -----
@@ -1623,14 +1829,17 @@ Returns a typed RealmQuery, which can be used to query for specific objects of t
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the class of the object which is to be queried for.
+- clazz - the class of the object which is to be queried for.
    
    
    
 
-.. _io_realm_Realm_addChangeListener___any___:
+Throws
+~~~~~~
+
+io.realm.RealmQuery.. _io_realm_Realm_addChangeListener___any___:
 
 addChangeListener
 -----------------
@@ -1645,14 +1854,20 @@ Realm instances are per thread singletons and cached, so listeners should be rem
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the change listener.
+- listener - the change listener.
    
    
    
 
-.. _io_realm_Realm_removeChangeListener___any___:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+io.realm.RealmChangeListener#removeChangeListener(RealmChangeListener)#removeAllChangeListeners().. _io_realm_Realm_removeChangeListener___any___:
 
 removeChangeListener
 --------------------
@@ -1663,14 +1878,20 @@ Removes the specified change listener.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the change listener to be removed.
+- listener - the change listener to be removed.
    
    
    
 
-.. _io_realm_Realm_removeAllChangeListeners____:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+io.realm.RealmChangeListener.. _io_realm_Realm_removeAllChangeListeners____:
 
 removeAllChangeListeners
 ------------------------
@@ -1680,7 +1901,13 @@ public **void (?)** removeAllChangeListeners ()
 Removes all user-defined change listeners.
 
 
-.. _io_realm_Realm_executeTransaction__Realm_Transaction__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+io.realm.RealmChangeListener.. _io_realm_Realm_executeTransaction__Realm_Transaction__:
 
 executeTransaction
 ------------------
@@ -1693,12 +1920,15 @@ Calling this method from the UI thread will throw a **RealmException (?)** . Doi
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the **io.realm.Realm.Transaction (?)** to execute.
+- transaction - the **io.realm.Realm.Transaction (?)** to execute.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_executeTransactionAsync__Realm_Transaction__:
 
@@ -1711,12 +1941,15 @@ Similar to **#executeTransaction(Transaction) (?)** but runs asynchronously on a
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - **io.realm.Realm.Transaction (?)** to execute.
+- transaction - **io.realm.Realm.Transaction (?)** to execute.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__:
 
@@ -1729,16 +1962,19 @@ Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an O
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - **io.realm.Realm.Transaction (?)** to execute.
+- transaction - **io.realm.Realm.Transaction (?)** to execute.
    
    
    
-- @param - callback invoked when the transaction succeeds.
+- onSuccess - callback invoked when the transaction succeeds.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnError__:
 
@@ -1751,16 +1987,19 @@ Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an O
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - **io.realm.Realm.Transaction (?)** to execute.
+- transaction - **io.realm.Realm.Transaction (?)** to execute.
    
    
    
-- @param - callback invoked when the transaction fails.
+- onError - callback invoked when the transaction fails.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__Realm_Transaction_OnError__:
 
@@ -1773,20 +2012,23 @@ Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an O
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - **io.realm.Realm.Transaction (?)** to execute.
+- transaction - **io.realm.Realm.Transaction (?)** to execute.
    
    
    
-- @param - callback invoked when the transaction succeeds.
+- onSuccess - callback invoked when the transaction succeeds.
    
    
    
-- @param - callback invoked when the transaction fails.
+- onError - callback invoked when the transaction fails.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_delete__Class___extends_RealmModel___:
 
@@ -1799,12 +2041,15 @@ Deletes all objects of the specified class from the Realm.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the class which objects should be removed.
+- clazz - the class which objects should be removed.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_migrateRealm__RealmConfiguration__:
 
@@ -1817,12 +2062,15 @@ Manually triggers the migration associated with a given RealmConfiguration. If R
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - **RealmConfiguration (?)**
+- configuration - **RealmConfiguration (?)**
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_migrateRealm__RealmConfiguration__RealmMigration__:
 
@@ -1835,16 +2083,19 @@ Manually triggers a migration on a RealmMigration.
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the **RealmConfiguration (?)** .
+- configuration - the **RealmConfiguration (?)** .
    
    
    
-- @param - the **RealmMigration (?)** to run on the Realm. This will override any migration set on the configuration.
+- migration - the **RealmMigration (?)** to run on the Realm. This will override any migration set on the configuration.
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_deleteRealm__RealmConfiguration__:
 
@@ -1861,12 +2112,15 @@ WARNING: For synchronized Realm, there is a chance that an internal Realm instan
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - a **RealmConfiguration (?)** .
+- configuration - a **RealmConfiguration (?)** .
    
    
    
+
+Throws
+~~~~~~
 
 .. _io_realm_Realm_compactRealm__RealmConfiguration__:
 
@@ -1884,9 +2138,9 @@ The file must be closed before this method is called, otherwise ``false`` will b
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - a **RealmConfiguration (?)** pointing to a Realm file.
+- configuration - a **RealmConfiguration (?)** pointing to a Realm file.
    
    
    
@@ -1911,7 +2165,13 @@ public static **Object (?)** getDefaultModule ()
 Returns the default Realm module. This module contains all Realm classes in the current project, but not those from library or project dependencies. Realm classes in these should be exposed using their own module.
 
 
-.. _io_realm_Realm_getGlobalInstanceCount__RealmConfiguration__:
+Throws
+~~~~~~
+
+Throws
+~~~~~~
+
+io.realm.RealmConfiguration.Builder#modules(Object, Object...).. _io_realm_Realm_getGlobalInstanceCount__RealmConfiguration__:
 
 getGlobalInstanceCount
 ----------------------
@@ -1922,9 +2182,9 @@ Returns the current number of open Realm instances across all threads in current
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the **io.realm.RealmConfiguration (?)** for the Realm.
+- configuration - the **io.realm.RealmConfiguration (?)** for the Realm.
    
    
    
@@ -1940,9 +2200,9 @@ Returns the current number of open Realm instances on the thread calling this me
 
 
 Parameters
-----------
+~~~~~~~~~~
 
-- @param - the **io.realm.RealmConfiguration (?)** for the Realm.
+- configuration - the **io.realm.RealmConfiguration (?)** for the Realm.
    
    
    
