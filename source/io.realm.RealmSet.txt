@@ -1,0 +1,892 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+io.realm.RealmSet<E>
+^^^^^^^^^^^^^^^^^^^^
+
+.. _io_realm_RealmSet:
+
+*Superclass:*
+
+- **java.lang.Object (?)**
+
+*Implemented interfaces:*
+
+- **java.util.Set (?)**
+- :ref:`io.realm.RealmCollection <io_realm_RealmCollection>`
+
+RealmSet is a collection that contains no duplicate elements.
+
+Similarly to **RealmList (?)** s, a RealmSet can operate in managed and unmanaged modes. In managed mode a RealmSet persists all its contents inside a Realm whereas in unmanaged mode it functions like a **HashSet (?)** .
+
+Managed RealmSets can only be created by Realm and will automatically update its content whenever the underlying Realm is updated. Managed RealmSet can only be accessed using the getter that points to a RealmSet field of a **RealmObject (?)** .
+
+Unmanaged elements in this set can be added to a Realm using the **Realm#copyToRealm(Iterable, ImportFlag...) (?)** method.
+
+**Warning: **the following methods are not supported for classes containing set fields yet:
+
+- 
+
+**Realm#insert(RealmModel) (?)**
+
+**Realm#insert(Collection) (?)**
+
+**Realm#insertOrUpdate(RealmModel) (?)**
+
+**Realm#insertOrUpdate(Collection) (?)**
+
+**Realm#createAllFromJson(Class, String) (?)**
+
+**Realm#createAllFromJson(Class, JSONArray) (?)**
+
+**Realm#createAllFromJson(Class, InputStream) (?)**
+
+**Realm#createObjectFromJson(Class, String) (?)**
+
+**Realm#createObjectFromJson(Class, JSONObject) (?)** }
+
+**Realm#createObjectFromJson(Class, InputStream) (?)** }
+
+**Realm#createOrUpdateAllFromJson(Class, String) (?)**
+
+**Realm#createOrUpdateAllFromJson(Class, JSONArray) (?)**
+
+**Realm#createOrUpdateAllFromJson(Class, InputStream) (?)**
+
+**Realm#createOrUpdateObjectFromJson(Class, String) (?)**
+
+**Realm#createOrUpdateObjectFromJson(Class, JSONObject) (?)**
+
+**Realm#createOrUpdateObjectFromJson(Class, InputStream) (?)**
+
+
+Constructors
+============
+
+- io.realm.RealmSet()
+- io.realm.RealmSet(Collection<E>)
+- io.realm.RealmSet(BaseRealm, OsSet, Class<E>)
+- io.realm.RealmSet(BaseRealm, OsSet, String)
+
+Field Summary
+=============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Field and Description
+   
+   * - protected final io.realm.RealmSet.SetStrategy<E>
+       
+       
+     - setStrategy
+       
+       
+   
+   
+Method Summary
+==============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Method and Description
+   
+   * - public **boolean (?)**
+     - :ref:`isManaged <io_realm_RealmSet_isManaged____>` ()
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`isValid <io_realm_RealmSet_isValid____>` ()
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`isFrozen <io_realm_RealmSet_isFrozen____>` ()
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **int (?)**
+     - :ref:`size <io_realm_RealmSet_size____>` ()
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`isEmpty <io_realm_RealmSet_isEmpty____>` ()
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`contains <io_realm_RealmSet_contains__Object__>` (**Object (?)** o)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **Iterator (?)**
+     - :ref:`iterator <io_realm_RealmSet_iterator____>` ()
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **Object (?)**
+     - :ref:`toArray <io_realm_RealmSet_toArray____>` ()
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **T (?)**
+     - :ref:`toArray <io_realm_RealmSet_toArray__T[]__>` <**T (?)** >(**T[] (?)** a)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`add <io_realm_RealmSet_add__E__>` (**E (?)** e)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`remove <io_realm_RealmSet_remove__Object__>` (**Object (?)** o)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`containsAll <io_realm_RealmSet_containsAll__Collection_____>` (**java.util.Collection<?> (?)** c)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`addAll <io_realm_RealmSet_addAll__Collection___extends_E___>` (**java.util.Collection<? extends E> (?)** c)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`retainAll <io_realm_RealmSet_retainAll__Collection_____>` (**java.util.Collection<?> (?)** c)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`removeAll <io_realm_RealmSet_removeAll__Collection_____>` (**java.util.Collection<?> (?)** c)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **void (?)**
+     - :ref:`clear <io_realm_RealmSet_clear____>` ()
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public :ref:`RealmSet <io_realm_RealmSet>`
+     - :ref:`freeze <io_realm_RealmSet_freeze____>` ()
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **void (?)**
+     - :ref:`addChangeListener <io_realm_RealmSet_addChangeListener__RealmChangeListener_RealmSet_E____>` (:ref:`io.realm.RealmChangeListener\<io.realm.RealmSet\<E>> <io_realm_RealmChangeListener>` listener)
+       
+       Adds a change listener to this **RealmSet (?)** .
+       
+       
+       
+       
+       
+   
+   * - public **void (?)**
+     - :ref:`addChangeListener <io_realm_RealmSet_addChangeListener__SetChangeListener_E___>` (:ref:`io.realm.SetChangeListener\<E> <io_realm_SetChangeListener>` listener)
+       
+       Adds a change listener to this **RealmSet (?)** .
+       
+       
+       
+       
+       
+   
+   * - public **void (?)**
+     - :ref:`removeChangeListener <io_realm_RealmSet_removeChangeListener__RealmChangeListener_RealmSet_E____>` (:ref:`io.realm.RealmChangeListener\<io.realm.RealmSet\<E>> <io_realm_RealmChangeListener>` listener)
+       
+       Removes the specified change listener.
+       
+       
+       
+       
+       
+   
+   * - public **void (?)**
+     - :ref:`removeChangeListener <io_realm_RealmSet_removeChangeListener__SetChangeListener_E___>` (:ref:`io.realm.SetChangeListener\<E> <io_realm_SetChangeListener>` listener)
+       
+       Removes the specified change listener.
+       
+       
+       
+       
+       
+   
+   * - public **void (?)**
+     - :ref:`removeAllChangeListeners <io_realm_RealmSet_removeAllChangeListeners____>` ()
+       
+       Removes all user-defined change listeners.
+       
+       
+       
+       
+       
+   
+   * - public :ref:`RealmQuery <io_realm_RealmQuery>`
+     - :ref:`where <io_realm_RealmSet_where____>` ()
+       
+       Returns a RealmQuery, which can be used to query for specific objects of this class.
+       
+       
+       
+       
+       
+   
+   * - public **Number (?)**
+     - :ref:`min <io_realm_RealmSet_min__String__>` (**String (?)** fieldName)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **Number (?)**
+     - :ref:`max <io_realm_RealmSet_max__String__>` (**String (?)** fieldName)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **Number (?)**
+     - :ref:`sum <io_realm_RealmSet_sum__String__>` (**String (?)** fieldName)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **double (?)**
+     - :ref:`average <io_realm_RealmSet_average__String__>` (**String (?)** fieldName)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **Date (?)**
+     - :ref:`maxDate <io_realm_RealmSet_maxDate__String__>` (**String (?)** fieldName)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **Date (?)**
+     - :ref:`minDate <io_realm_RealmSet_minDate__String__>` (**String (?)** fieldName)
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`deleteAllFromRealm <io_realm_RealmSet_deleteAllFromRealm____>` ()
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`isLoaded <io_realm_RealmSet_isLoaded____>` ()
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`load <io_realm_RealmSet_load____>` ()
+       
+       
+       
+       
+       
+       
+       
+   
+   * - public **String (?)**
+     - :ref:`getValueClassName <io_realm_RealmSet_getValueClassName____>` ()
+       
+       
+       
+       
+       
+   
+   * - public **Class (?)**
+     - :ref:`getValueClass <io_realm_RealmSet_getValueClass____>` ()
+       
+       
+       
+       
+       
+   
+   
+Field Detail
+============
+
+.. _io_realm_RealmSet_setStrategy:
+
+setStrategy
+-----------
+
+
+Method Detail
+=============
+
+.. _io_realm_RealmSet_isManaged____:
+
+isManaged
+---------
+
+public **boolean (?)** isManaged ()
+
+
+
+
+.. _io_realm_RealmSet_isValid____:
+
+isValid
+-------
+
+public **boolean (?)** isValid ()
+
+
+
+
+.. _io_realm_RealmSet_isFrozen____:
+
+isFrozen
+--------
+
+public **boolean (?)** isFrozen ()
+
+
+
+
+.. _io_realm_RealmSet_size____:
+
+size
+----
+
+public **int (?)** size ()
+
+
+
+
+.. _io_realm_RealmSet_isEmpty____:
+
+isEmpty
+-------
+
+public **boolean (?)** isEmpty ()
+
+
+
+
+.. _io_realm_RealmSet_contains__Object__:
+
+contains
+--------
+
+public **boolean (?)** contains (**Object (?)** o)
+
+
+
+
+.. _io_realm_RealmSet_iterator____:
+
+iterator
+--------
+
+public **Iterator (?)** iterator ()
+
+
+
+
+.. _io_realm_RealmSet_toArray____:
+
+toArray
+-------
+
+public **Object (?)** toArray ()
+
+
+
+
+.. _io_realm_RealmSet_toArray__T[]__:
+
+toArray
+-------
+
+public **T (?)** toArray <**T (?)** >(**T[] (?)** a)
+
+
+
+
+.. _io_realm_RealmSet_add__E__:
+
+add
+----
+
+public **boolean (?)** add (**E (?)** e)
+
+
+
+
+.. _io_realm_RealmSet_remove__Object__:
+
+remove
+------
+
+public **boolean (?)** remove (**Object (?)** o)
+
+
+
+
+.. _io_realm_RealmSet_containsAll__Collection_____:
+
+containsAll
+-----------
+
+public **boolean (?)** containsAll (**java.util.Collection<?> (?)** c)
+
+
+
+
+.. _io_realm_RealmSet_addAll__Collection___extends_E___:
+
+addAll
+------
+
+public **boolean (?)** addAll (**java.util.Collection<? extends E> (?)** c)
+
+
+
+
+.. _io_realm_RealmSet_retainAll__Collection_____:
+
+retainAll
+---------
+
+public **boolean (?)** retainAll (**java.util.Collection<?> (?)** c)
+
+
+
+
+.. _io_realm_RealmSet_removeAll__Collection_____:
+
+removeAll
+---------
+
+public **boolean (?)** removeAll (**java.util.Collection<?> (?)** c)
+
+
+
+
+.. _io_realm_RealmSet_clear____:
+
+clear
+-----
+
+public **void (?)** clear ()
+
+
+
+
+.. _io_realm_RealmSet_freeze____:
+
+freeze
+------
+
+public :ref:`RealmSet <io_realm_RealmSet>` freeze ()
+
+
+
+
+.. _io_realm_RealmSet_addChangeListener__RealmChangeListener_RealmSet_E____:
+
+addChangeListener
+-----------------
+
+public **void (?)** addChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmSet\<E>> <io_realm_RealmChangeListener>` listener)
+
+Adds a change listener to this **RealmSet (?)** .
+
+Registering a change listener will not prevent the underlying RealmSet from being garbage collected. If the RealmSet is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
+
+.. code-block:: java
+
+    
+
+
+    public class MyActivity extends Activity {
+   
+        private RealmSet<Dog> dogs; // Strong reference to keep listeners alive
+   
+        \@Override
+        protected void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          dogs = realm.where(Person.class).findFirst().getDogs();
+          dogs.addChangeListener(new RealmChangeListener<RealmSet<Dog>>() {
+              \@Override
+              public void onChange(RealmSet<Dog> map) {
+                  // React to change
+              }
+          });
+        }
+    }
+    
+
+
+Parameters
+~~~~~~~~~~
+
+- listener - the listener to be notified.
+   
+   
+   
+
+Throws
+~~~~~~
+
+.. _io_realm_RealmSet_addChangeListener__SetChangeListener_E___:
+
+addChangeListener
+-----------------
+
+public **void (?)** addChangeListener (:ref:`io.realm.SetChangeListener\<E> <io_realm_SetChangeListener>` listener)
+
+Adds a change listener to this **RealmSet (?)** .
+
+Registering a change listener will not prevent the underlying RealmSet from being garbage collected. If the RealmSet is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
+
+.. code-block:: java
+
+    
+
+
+    public class MyActivity extends Activity {
+   
+        private RealmSet<Dog> dogs; // Strong reference to keep listeners alive
+   
+        \@Override
+        protected void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          dogs = realm.where(Person.class).findFirst().getDogs();
+          dogs.addChangeListener(new SetChangeListener<Dog>() {
+              \@Override
+              public void onChange(RealmSet<Dog> set, SetChangeSet changeSet) {
+                  // React to change
+              }
+          });
+        }
+    }
+    
+
+
+Parameters
+~~~~~~~~~~
+
+- listener - the listener to be notified.
+   
+   
+   
+
+Throws
+~~~~~~
+
+.. _io_realm_RealmSet_removeChangeListener__RealmChangeListener_RealmSet_E____:
+
+removeChangeListener
+--------------------
+
+public **void (?)** removeChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmSet\<E>> <io_realm_RealmChangeListener>` listener)
+
+Removes the specified change listener.
+
+
+Parameters
+~~~~~~~~~~
+
+- listener - the change listener to be removed.
+   
+   
+   
+
+Throws
+~~~~~~
+
+.. _io_realm_RealmSet_removeChangeListener__SetChangeListener_E___:
+
+removeChangeListener
+--------------------
+
+public **void (?)** removeChangeListener (:ref:`io.realm.SetChangeListener\<E> <io_realm_SetChangeListener>` listener)
+
+Removes the specified change listener.
+
+
+Parameters
+~~~~~~~~~~
+
+- listener - the change listener to be removed.
+   
+   
+   
+
+Throws
+~~~~~~
+
+.. _io_realm_RealmSet_removeAllChangeListeners____:
+
+removeAllChangeListeners
+------------------------
+
+public **void (?)** removeAllChangeListeners ()
+
+Removes all user-defined change listeners.
+
+
+Throws
+~~~~~~
+
+See Also
+~~~~~~~~
+
+io.realm.RealmChangeListener.. _io_realm_RealmSet_where____:
+
+where
+-----
+
+public :ref:`RealmQuery <io_realm_RealmQuery>` where ()
+
+Returns a RealmQuery, which can be used to query for specific objects of this class.
+
+
+Throws
+~~~~~~
+
+See Also
+~~~~~~~~
+
+io.realm.RealmQuery.. _io_realm_RealmSet_min__String__:
+
+min
+----
+
+public **Number (?)** min (**String (?)** fieldName)
+
+
+
+
+.. _io_realm_RealmSet_max__String__:
+
+max
+----
+
+public **Number (?)** max (**String (?)** fieldName)
+
+
+
+
+.. _io_realm_RealmSet_sum__String__:
+
+sum
+----
+
+public **Number (?)** sum (**String (?)** fieldName)
+
+
+
+
+.. _io_realm_RealmSet_average__String__:
+
+average
+-------
+
+public **double (?)** average (**String (?)** fieldName)
+
+
+
+
+.. _io_realm_RealmSet_maxDate__String__:
+
+maxDate
+-------
+
+public **Date (?)** maxDate (**String (?)** fieldName)
+
+
+
+
+.. _io_realm_RealmSet_minDate__String__:
+
+minDate
+-------
+
+public **Date (?)** minDate (**String (?)** fieldName)
+
+
+
+
+.. _io_realm_RealmSet_deleteAllFromRealm____:
+
+deleteAllFromRealm
+------------------
+
+public **boolean (?)** deleteAllFromRealm ()
+
+
+
+
+.. _io_realm_RealmSet_isLoaded____:
+
+isLoaded
+--------
+
+public **boolean (?)** isLoaded ()
+
+
+
+
+.. _io_realm_RealmSet_load____:
+
+load
+----
+
+public **boolean (?)** load ()
+
+
+
+
+.. _io_realm_RealmSet_getValueClassName____:
+
+getValueClassName
+-----------------
+
+public **String (?)** getValueClassName ()
+
+
+.. _io_realm_RealmSet_getValueClass____:
+
+getValueClass
+-------------
+
+public **Class (?)** getValueClass ()
+
+
+

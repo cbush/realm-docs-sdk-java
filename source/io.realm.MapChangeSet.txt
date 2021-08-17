@@ -1,0 +1,109 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+io.realm.MapChangeSet<T>
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _io_realm_MapChangeSet:
+
+This interface describes the changes made to a map during the last update. **MapChangeSet (?)** is passed to the **MapChangeListener (?)** which is registered by **RealmMap#addChangeListener(MapChangeListener) (?)** .
+
+
+Method Summary
+==============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Method and Description
+   
+   * - public **T (?)**
+     - :ref:`getDeletions <io_realm_MapChangeSet_getDeletions____>` ()
+       
+       The number of entries that have been deleted in the previous version of the map.
+       
+       
+       
+       
+       
+   
+   * - public **T (?)**
+     - :ref:`getInsertions <io_realm_MapChangeSet_getInsertions____>` ()
+       
+       Array containing the keys that have been inserted in the previous version of the map.
+       
+       
+       
+       
+       
+   
+   * - public **T (?)**
+     - :ref:`getChanges <io_realm_MapChangeSet_getChanges____>` ()
+       
+       Array containing the keys that have been modified in the previous version of the map.
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`isEmpty <io_realm_MapChangeSet_isEmpty____>` ()
+       
+       Whether the change set is empty or not.
+       
+       
+       
+       
+       
+   
+   
+Method Detail
+=============
+
+.. _io_realm_MapChangeSet_getDeletions____:
+
+getDeletions
+------------
+
+public **T (?)** getDeletions ()
+
+The number of entries that have been deleted in the previous version of the map.
+
+
+.. _io_realm_MapChangeSet_getInsertions____:
+
+getInsertions
+-------------
+
+public **T (?)** getInsertions ()
+
+Array containing the keys that have been inserted in the previous version of the map.
+
+
+.. _io_realm_MapChangeSet_getChanges____:
+
+getChanges
+----------
+
+public **T (?)** getChanges ()
+
+Array containing the keys that have been modified in the previous version of the map.
+
+
+.. _io_realm_MapChangeSet_isEmpty____:
+
+isEmpty
+-------
+
+public **boolean (?)** isEmpty ()
+
+Whether the change set is empty or not. This is needed to detect whether a notification has been triggered right after subscription.
+
+
+

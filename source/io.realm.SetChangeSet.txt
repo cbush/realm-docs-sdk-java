@@ -1,0 +1,98 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+io.realm.SetChangeSet
+^^^^^^^^^^^^^^^^^^^^^
+
+.. _io_realm_SetChangeSet:
+
+*Superclass:*
+
+- **java.lang.Object (?)**
+
+This class describes the changes made to a set during the last update. **SetChangeSet (?)** is passed to the **SetChangeListener (?)** which is registered by **RealmSet#addChangeListener(SetChangeListener) (?)** .
+
+
+Constructors
+============
+
+- io.realm.SetChangeSet(OsCollectionChangeSet)
+
+Method Summary
+==============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Method and Description
+   
+   * - public **int (?)**
+     - :ref:`getNumberOfInsertions <io_realm_SetChangeSet_getNumberOfInsertions____>` ()
+       
+       The number of entries that have been inserted.
+       
+       
+       
+       
+       
+   
+   * - public **int (?)**
+     - :ref:`getNumberOfDeletions <io_realm_SetChangeSet_getNumberOfDeletions____>` ()
+       
+       The number of entries that have been deleted
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`isEmpty <io_realm_SetChangeSet_isEmpty____>` ()
+       
+       Whether the change set is empty or not.
+       
+       
+       
+       
+       
+   
+   
+Method Detail
+=============
+
+.. _io_realm_SetChangeSet_getNumberOfInsertions____:
+
+getNumberOfInsertions
+---------------------
+
+public **int (?)** getNumberOfInsertions ()
+
+The number of entries that have been inserted.
+
+
+.. _io_realm_SetChangeSet_getNumberOfDeletions____:
+
+getNumberOfDeletions
+--------------------
+
+public **int (?)** getNumberOfDeletions ()
+
+The number of entries that have been deleted
+
+
+.. _io_realm_SetChangeSet_isEmpty____:
+
+isEmpty
+-------
+
+public **boolean (?)** isEmpty ()
+
+Whether the change set is empty or not. This is needed to detect whether a notification has been triggered right after subscription.
+
+
+

@@ -1,0 +1,47 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+io.realm.SetChangeListener<T>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _io_realm_SetChangeListener:
+
+**SetChangeListener (?)** can be registered with a **RealmSet (?)** to receive a notification with a **SetChangeSet (?)** to describe the details of what have been changed in the set since last time.
+
+Realm instances on a thread without an **android.os.Looper (?)** cannot register a **SetChangeListener (?)** .
+
+
+Method Summary
+==============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Method and Description
+   
+   * - public **void (?)**
+     - :ref:`onChange <io_realm_SetChangeListener_onChange__RealmSet_T___SetChangeSet__>` (:ref:`io.realm.RealmSet\<T> <io_realm_RealmSet>` set, :ref:`SetChangeSet <io_realm_SetChangeSet>` changes)
+       
+       
+       
+       
+       
+   
+   
+Method Detail
+=============
+
+.. _io_realm_SetChangeListener_onChange__RealmSet_T___SetChangeSet__:
+
+onChange
+--------
+
+public **void (?)** onChange (:ref:`io.realm.RealmSet\<T> <io_realm_RealmSet>` set, :ref:`SetChangeSet <io_realm_SetChangeSet>` changes)
+
+
+

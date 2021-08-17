@@ -5,10 +5,10 @@
    :depth: 2
    :class: singlecol
 
-io.realm.Realm.Callback
-^^^^^^^^^^^^^^^^^^^^^^^
+io.realm.DynamicRealm.Callback
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _io_realm_Realm_Callback:
+.. _io_realm_DynamicRealm_Callback:
 
 *Superclass:*
 
@@ -20,7 +20,7 @@ io.realm.Realm.Callback
 Constructors
 ============
 
-- io.realm.Realm.Callback()
+- io.realm.DynamicRealm.Callback()
 
 Method Summary
 ==============
@@ -32,7 +32,7 @@ Method Summary
      - Method and Description
    
    * - public abstract **void (?)**
-     - :ref:`onSuccess <io_realm_Realm_Callback_onSuccess__Realm__>` (:ref:`Realm <io_realm_Realm>` realm)
+     - :ref:`onSuccess <io_realm_DynamicRealm_Callback_onSuccess__DynamicRealm__>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
        
        
        
@@ -42,7 +42,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`onError <io_realm_Realm_Callback_onError__Throwable__>` (**Throwable (?)** exception)
+     - :ref:`onError <io_realm_DynamicRealm_Callback_onError__Throwable__>` (**Throwable (?)** exception)
        
        
        
@@ -55,17 +55,17 @@ Method Summary
 Method Detail
 =============
 
-.. _io_realm_Realm_Callback_onSuccess__Realm__:
+.. _io_realm_DynamicRealm_Callback_onSuccess__DynamicRealm__:
 
 onSuccess
 ---------
 
-public abstract **void (?)** onSuccess (:ref:`Realm <io_realm_Realm>` realm)
+public abstract **void (?)** onSuccess (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
 
 
 
 
-.. _io_realm_Realm_Callback_onError__Throwable__:
+.. _io_realm_DynamicRealm_Callback_onError__Throwable__:
 
 onError
 -------

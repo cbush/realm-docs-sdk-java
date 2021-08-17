@@ -1,0 +1,69 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+io.realm.RealmAnyOperator
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _io_realm_RealmAnyOperator:
+
+*Superclass:*
+
+- **java.lang.Object (?)**
+
+
+Constructors
+============
+
+- io.realm.RealmAnyOperator(RealmAny.Type)
+- io.realm.RealmAnyOperator(RealmAny.Type, NativeRealmAny)
+
+Method Summary
+==============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Method and Description
+   
+   * - protected abstract **NativeRealmAny (?)**
+     - :ref:`createNativeRealmAny <io_realm_RealmAnyOperator_createNativeRealmAny____>` ()
+       
+       
+       
+       
+       
+   
+   * - public **void (?)**
+     - :ref:`checkValidObject <io_realm_RealmAnyOperator_checkValidObject__BaseRealm__>` (**BaseRealm (?)** realm)
+       
+       
+       
+       
+       
+   
+   
+Method Detail
+=============
+
+.. _io_realm_RealmAnyOperator_createNativeRealmAny____:
+
+createNativeRealmAny
+--------------------
+
+protected abstract **NativeRealmAny (?)** createNativeRealmAny ()
+
+
+.. _io_realm_RealmAnyOperator_checkValidObject__BaseRealm__:
+
+checkValidObject
+----------------
+
+public **void (?)** checkValidObject (**BaseRealm (?)** realm)
+
+
+
