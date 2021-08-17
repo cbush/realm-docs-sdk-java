@@ -308,7 +308,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`createAllFromJson <io_realm_Realm_createAllFromJson__Class_E___JSONArray__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **JSONArray (?)** json)
+     - :ref:`createAllFromJson <io_realm_Realm_createAllFromJson__Class_E___JSONArray__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **JSONArray (?)** json)
        
        
        .. contents:: On this page
@@ -325,7 +325,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`createOrUpdateAllFromJson <io_realm_Realm_createOrUpdateAllFromJson__Class_E___JSONArray__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **JSONArray (?)** json)
+     - :ref:`createOrUpdateAllFromJson <io_realm_Realm_createOrUpdateAllFromJson__Class_E___JSONArray__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **JSONArray (?)** json)
        
        
        .. contents:: On this page
@@ -342,7 +342,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`createAllFromJson <io_realm_Realm_createAllFromJson__Class_E___String__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **String (?)** json)
+     - :ref:`createAllFromJson <io_realm_Realm_createAllFromJson__Class_E___String__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **String (?)** json)
        
        
        .. contents:: On this page
@@ -359,7 +359,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`createOrUpdateAllFromJson <io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **String (?)** json)
+     - :ref:`createOrUpdateAllFromJson <io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **String (?)** json)
        
        
        .. contents:: On this page
@@ -376,7 +376,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`createAllFromJson <io_realm_Realm_createAllFromJson__Class_E___InputStream__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **InputStream (?)** inputStream)
+     - :ref:`createAllFromJson <io_realm_Realm_createAllFromJson__Class_E___InputStream__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **InputStream (?)** inputStream)
        
        
        .. contents:: On this page
@@ -393,7 +393,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`createOrUpdateAllFromJson <io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **InputStream (?)** in)
+     - :ref:`createOrUpdateAllFromJson <io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **InputStream (?)** in)
        
        
        .. contents:: On this page
@@ -410,7 +410,7 @@ Method Summary
        
    
    * - public **E (?)**
-     - :ref:`createObjectFromJson <io_realm_Realm_createObjectFromJson__Class_E___JSONObject__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **JSONObject (?)** json)
+     - :ref:`createObjectFromJson <io_realm_Realm_createObjectFromJson__Class_E___JSONObject__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **JSONObject (?)** json)
        
        
        .. contents:: On this page
@@ -427,7 +427,7 @@ Method Summary
        
    
    * - public **E (?)**
-     - :ref:`createOrUpdateObjectFromJson <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___JSONObject__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **JSONObject (?)** json)
+     - :ref:`createOrUpdateObjectFromJson <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___JSONObject__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **JSONObject (?)** json)
        
        
        .. contents:: On this page
@@ -444,7 +444,7 @@ Method Summary
        
    
    * - public **E (?)**
-     - :ref:`createObjectFromJson <io_realm_Realm_createObjectFromJson__Class_E___String__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **String (?)** json)
+     - :ref:`createObjectFromJson <io_realm_Realm_createObjectFromJson__Class_E___String__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **String (?)** json)
        
        
        .. contents:: On this page
@@ -461,7 +461,7 @@ Method Summary
        
    
    * - public **E (?)**
-     - :ref:`createOrUpdateObjectFromJson <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **String (?)** json)
+     - :ref:`createOrUpdateObjectFromJson <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **String (?)** json)
        
        
        .. contents:: On this page
@@ -478,7 +478,7 @@ Method Summary
        
    
    * - public **E (?)**
-     - :ref:`createObjectFromJson <io_realm_Realm_createObjectFromJson__Class_E___InputStream__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **InputStream (?)** inputStream)
+     - :ref:`createObjectFromJson <io_realm_Realm_createObjectFromJson__Class_E___InputStream__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **InputStream (?)** inputStream)
        
        
        .. contents:: On this page
@@ -495,7 +495,7 @@ Method Summary
        
    
    * - public **E (?)**
-     - :ref:`createOrUpdateObjectFromJson <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **InputStream (?)** in)
+     - :ref:`createOrUpdateObjectFromJson <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **InputStream (?)** in)
        
        
        .. contents:: On this page
@@ -512,7 +512,7 @@ Method Summary
        
    
    * - public **E (?)**
-     - :ref:`createObject <io_realm_Realm_createObject__Class_E___>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz)
+     - :ref:`createObject <io_realm_Realm_createObject__Class_E___>` <**E (?)** >(**java.lang.Class<E> (?)** clazz)
        
        
        .. contents:: On this page
@@ -529,7 +529,7 @@ Method Summary
        
    
    * - public **E (?)**
-     - :ref:`createObject <io_realm_Realm_createObject__Class_E___Object__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **Object (?)** primaryKeyValue)
+     - :ref:`createObject <io_realm_Realm_createObject__Class_E___Object__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **Object (?)** primaryKeyValue)
        
        
        .. contents:: On this page
@@ -546,7 +546,7 @@ Method Summary
        
    
    * - public **E (?)**
-     - :ref:`createEmbeddedObject <io_realm_Realm_createEmbeddedObject__Class_E___RealmModel__String__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **RealmModel (?)** parentObject, **String (?)** parentProperty)
+     - :ref:`createEmbeddedObject <io_realm_Realm_createEmbeddedObject__Class_E___RealmModel__String__>` <**E (?)** >(**java.lang.Class<E> (?)** clazz, **RealmModel (?)** parentObject, **String (?)** parentProperty)
        
        
        .. contents:: On this page
@@ -563,7 +563,7 @@ Method Summary
        
    
    * - public **E (?)**
-     - :ref:`copyToRealm <io_realm_Realm_copyToRealm__E__ImportFlag_____>` <**E (?)** undefined>(**E (?)** object, **ImportFlag[] (?)** flags)
+     - :ref:`copyToRealm <io_realm_Realm_copyToRealm__E__ImportFlag_____>` <**E (?)** >(**E (?)** object, **ImportFlag[] (?)** flags)
        
        
        .. contents:: On this page
@@ -580,7 +580,7 @@ Method Summary
        
    
    * - public **E (?)**
-     - :ref:`copyToRealmOrUpdate <io_realm_Realm_copyToRealmOrUpdate__E__ImportFlag_____>` <**E (?)** undefined>(**E (?)** object, **ImportFlag[] (?)** flags)
+     - :ref:`copyToRealmOrUpdate <io_realm_Realm_copyToRealmOrUpdate__E__ImportFlag_____>` <**E (?)** >(**E (?)** object, **ImportFlag[] (?)** flags)
        
        
        .. contents:: On this page
@@ -597,7 +597,7 @@ Method Summary
        
    
    * - public **List (?)**
-     - :ref:`copyToRealm <io_realm_Realm_copyToRealm__Iterable_E___ImportFlag_____>` <**E (?)** undefined>(**java.lang.Iterable<E> (?)** objects, **ImportFlag[] (?)** flags)
+     - :ref:`copyToRealm <io_realm_Realm_copyToRealm__Iterable_E___ImportFlag_____>` <**E (?)** >(**java.lang.Iterable<E> (?)** objects, **ImportFlag[] (?)** flags)
        
        
        .. contents:: On this page
@@ -682,7 +682,7 @@ Method Summary
        
    
    * - public **List (?)**
-     - :ref:`copyToRealmOrUpdate <io_realm_Realm_copyToRealmOrUpdate__Iterable_E___ImportFlag_____>` <**E (?)** undefined>(**java.lang.Iterable<E> (?)** objects, **ImportFlag[] (?)** flags)
+     - :ref:`copyToRealmOrUpdate <io_realm_Realm_copyToRealmOrUpdate__Iterable_E___ImportFlag_____>` <**E (?)** >(**java.lang.Iterable<E> (?)** objects, **ImportFlag[] (?)** flags)
        
        
        .. contents:: On this page
@@ -699,7 +699,7 @@ Method Summary
        
    
    * - public **List (?)**
-     - :ref:`copyFromRealm <io_realm_Realm_copyFromRealm__Iterable_E___>` <**E (?)** undefined>(**java.lang.Iterable<E> (?)** realmObjects)
+     - :ref:`copyFromRealm <io_realm_Realm_copyFromRealm__Iterable_E___>` <**E (?)** >(**java.lang.Iterable<E> (?)** realmObjects)
        
        
        .. contents:: On this page
@@ -716,7 +716,7 @@ Method Summary
        
    
    * - public **List (?)**
-     - :ref:`copyFromRealm <io_realm_Realm_copyFromRealm__Iterable_E___int__>` <**E (?)** undefined>(**java.lang.Iterable<E> (?)** realmObjects, **int (?)** maxDepth)
+     - :ref:`copyFromRealm <io_realm_Realm_copyFromRealm__Iterable_E___int__>` <**E (?)** >(**java.lang.Iterable<E> (?)** realmObjects, **int (?)** maxDepth)
        
        
        .. contents:: On this page
@@ -733,7 +733,7 @@ Method Summary
        
    
    * - public **E (?)**
-     - :ref:`copyFromRealm <io_realm_Realm_copyFromRealm__E__>` <**E (?)** undefined>(**E (?)** realmObject)
+     - :ref:`copyFromRealm <io_realm_Realm_copyFromRealm__E__>` <**E (?)** >(**E (?)** realmObject)
        
        
        .. contents:: On this page
@@ -750,7 +750,7 @@ Method Summary
        
    
    * - public **E (?)**
-     - :ref:`copyFromRealm <io_realm_Realm_copyFromRealm__E__int__>` <**E (?)** undefined>(**E (?)** realmObject, **int (?)** maxDepth)
+     - :ref:`copyFromRealm <io_realm_Realm_copyFromRealm__E__int__>` <**E (?)** >(**E (?)** realmObject, **int (?)** maxDepth)
        
        
        .. contents:: On this page
@@ -767,7 +767,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`where <io_realm_Realm_where__Class_E___>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz)
+     - :ref:`where <io_realm_Realm_where__Class_E___>` <**E (?)** >(**java.lang.Class<E> (?)** clazz)
        
        
        .. contents:: On this page
@@ -1126,8 +1126,8 @@ Method Detail
 
 .. _io_realm_Realm_asFlowable____:
 
-:ref:`asFlowable <io_realm_Realm_asFlowable____>` ()
-----------------------------------------------------
+asFlowable()
+------------
 
 
 .. contents:: On this page
@@ -1141,8 +1141,8 @@ Method Detail
 
 .. _io_realm_Realm_isEmpty____:
 
-:ref:`isEmpty <io_realm_Realm_isEmpty____>` ()
-----------------------------------------------
+isEmpty()
+---------
 
 
 .. contents:: On this page
@@ -1156,8 +1156,8 @@ Method Detail
 
 .. _io_realm_Realm_getSchema____:
 
-:ref:`getSchema <io_realm_Realm_getSchema____>` ()
---------------------------------------------------
+getSchema()
+-----------
 
 
 .. contents:: On this page
@@ -1173,8 +1173,8 @@ The schema can only be modified using **DynamicRealm#getSchema() (?)** or throug
 
 .. _io_realm_Realm_init__Context__:
 
-:ref:`init <io_realm_Realm_init__Context__>` (**Context (?)** context)
-----------------------------------------------------------------------
+init(**Context (?)** context)
+-----------------------------
 
 
 .. contents:: On this page
@@ -1219,8 +1219,8 @@ Remember to register it in the ``AndroidManifest.xml`` file:
 
 .. _io_realm_Realm_init__Context__String__:
 
-:ref:`init <io_realm_Realm_init__Context__String__>` (**Context (?)** context, **String (?)** userAgent)
---------------------------------------------------------------------------------------------------------
+init(**Context (?)** context, **String (?)** userAgent)
+-------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1265,8 +1265,8 @@ Remember to register it in the ``AndroidManifest.xml`` file:
 
 .. _io_realm_Realm_getDefaultInstance____:
 
-:ref:`getDefaultInstance <io_realm_Realm_getDefaultInstance____>` ()
---------------------------------------------------------------------
+getDefaultInstance()
+--------------------
 
 
 .. contents:: On this page
@@ -1280,8 +1280,8 @@ Realm static constructor that returns the Realm instance defined by the **io.rea
 
 .. _io_realm_Realm_getInstance__RealmConfiguration__:
 
-:ref:`getInstance <io_realm_Realm_getInstance__RealmConfiguration__>` (**RealmConfiguration (?)** configuration)
-----------------------------------------------------------------------------------------------------------------
+getInstance(**RealmConfiguration (?)** configuration)
+-----------------------------------------------------
 
 
 .. contents:: On this page
@@ -1295,8 +1295,8 @@ Realm static constructor that returns the Realm instance defined by provided **i
 
 .. _io_realm_Realm_getInstanceAsync__RealmConfiguration__Realm_Callback__:
 
-:ref:`getInstanceAsync <io_realm_Realm_getInstanceAsync__RealmConfiguration__Realm_Callback__>` (**RealmConfiguration (?)** configuration, :ref:`Realm.Callback <io_realm_Realm_Callback>` callback)
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+getInstanceAsync(**RealmConfiguration (?)** configuration, :ref:`Realm.Callback <io_realm_Realm_Callback>` callback)
+--------------------------------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1310,8 +1310,8 @@ The creation of the first Realm instance per **RealmConfiguration (?)** in a pro
 
 .. _io_realm_Realm_setDefaultConfiguration__RealmConfiguration__:
 
-:ref:`setDefaultConfiguration <io_realm_Realm_setDefaultConfiguration__RealmConfiguration__>` (**RealmConfiguration (?)** configuration)
-----------------------------------------------------------------------------------------------------------------------------------------
+setDefaultConfiguration(**RealmConfiguration (?)** configuration)
+-----------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1325,8 +1325,8 @@ Sets the **io.realm.RealmConfiguration (?)** used when calling **#getDefaultInst
 
 .. _io_realm_Realm_getDefaultConfiguration____:
 
-:ref:`getDefaultConfiguration <io_realm_Realm_getDefaultConfiguration____>` ()
-------------------------------------------------------------------------------
+getDefaultConfiguration()
+-------------------------
 
 
 .. contents:: On this page
@@ -1340,8 +1340,8 @@ Returns the default configuration for **#getDefaultInstance() (?)** .
 
 .. _io_realm_Realm_removeDefaultConfiguration____:
 
-:ref:`removeDefaultConfiguration <io_realm_Realm_removeDefaultConfiguration____>` ()
-------------------------------------------------------------------------------------
+removeDefaultConfiguration()
+----------------------------
 
 
 .. contents:: On this page
@@ -1355,8 +1355,8 @@ Removes the current default configuration (if any). Any further calls to **#getD
 
 .. _io_realm_Realm_createAllFromJson__Class_E___JSONArray__:
 
-:ref:`createAllFromJson <io_realm_Realm_createAllFromJson__Class_E___JSONArray__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **JSONArray (?)** json)
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+createAllFromJson<**E (?)** >(**java.lang.Class<E> (?)** clazz, **JSONArray (?)** json)
+---------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1374,8 +1374,8 @@ This method currently does not support value list field.
 
 .. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___JSONArray__:
 
-:ref:`createOrUpdateAllFromJson <io_realm_Realm_createOrUpdateAllFromJson__Class_E___JSONArray__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **JSONArray (?)** json)
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+createOrUpdateAllFromJson<**E (?)** >(**java.lang.Class<E> (?)** clazz, **JSONArray (?)** json)
+-----------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1391,8 +1391,8 @@ This method currently does not support value list field.
 
 .. _io_realm_Realm_createAllFromJson__Class_E___String__:
 
-:ref:`createAllFromJson <io_realm_Realm_createAllFromJson__Class_E___String__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **String (?)** json)
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+createAllFromJson<**E (?)** >(**java.lang.Class<E> (?)** clazz, **String (?)** json)
+------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1408,8 +1408,8 @@ This method currently does not support value list field.
 
 .. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__:
 
-:ref:`createOrUpdateAllFromJson <io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **String (?)** json)
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+createOrUpdateAllFromJson<**E (?)** >(**java.lang.Class<E> (?)** clazz, **String (?)** json)
+--------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1425,8 +1425,8 @@ This method currently does not support value list field.
 
 .. _io_realm_Realm_createAllFromJson__Class_E___InputStream__:
 
-:ref:`createAllFromJson <io_realm_Realm_createAllFromJson__Class_E___InputStream__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **InputStream (?)** inputStream)
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+createAllFromJson<**E (?)** >(**java.lang.Class<E> (?)** clazz, **InputStream (?)** inputStream)
+------------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1444,8 +1444,8 @@ This method currently does not support value list field.
 
 .. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__:
 
-:ref:`createOrUpdateAllFromJson <io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **InputStream (?)** in)
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+createOrUpdateAllFromJson<**E (?)** >(**java.lang.Class<E> (?)** clazz, **InputStream (?)** in)
+-----------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1463,8 +1463,8 @@ This method currently does not support value list field.
 
 .. _io_realm_Realm_createObjectFromJson__Class_E___JSONObject__:
 
-:ref:`createObjectFromJson <io_realm_Realm_createObjectFromJson__Class_E___JSONObject__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **JSONObject (?)** json)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+createObjectFromJson<**E (?)** >(**java.lang.Class<E> (?)** clazz, **JSONObject (?)** json)
+-------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1480,8 +1480,8 @@ This method currently does not support value list field.
 
 .. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___JSONObject__:
 
-:ref:`createOrUpdateObjectFromJson <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___JSONObject__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **JSONObject (?)** json)
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+createOrUpdateObjectFromJson<**E (?)** >(**java.lang.Class<E> (?)** clazz, **JSONObject (?)** json)
+---------------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1497,8 +1497,8 @@ This method currently does not support value list field.
 
 .. _io_realm_Realm_createObjectFromJson__Class_E___String__:
 
-:ref:`createObjectFromJson <io_realm_Realm_createObjectFromJson__Class_E___String__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **String (?)** json)
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+createObjectFromJson<**E (?)** >(**java.lang.Class<E> (?)** clazz, **String (?)** json)
+---------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1514,8 +1514,8 @@ This method currently does not support value list field.
 
 .. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__:
 
-:ref:`createOrUpdateObjectFromJson <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **String (?)** json)
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+createOrUpdateObjectFromJson<**E (?)** >(**java.lang.Class<E> (?)** clazz, **String (?)** json)
+-----------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1531,8 +1531,8 @@ This method currently does not support value list field.
 
 .. _io_realm_Realm_createObjectFromJson__Class_E___InputStream__:
 
-:ref:`createObjectFromJson <io_realm_Realm_createObjectFromJson__Class_E___InputStream__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **InputStream (?)** inputStream)
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+createObjectFromJson<**E (?)** >(**java.lang.Class<E> (?)** clazz, **InputStream (?)** inputStream)
+---------------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1550,8 +1550,8 @@ This method currently does not support value list field.
 
 .. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__:
 
-:ref:`createOrUpdateObjectFromJson <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **InputStream (?)** in)
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+createOrUpdateObjectFromJson<**E (?)** >(**java.lang.Class<E> (?)** clazz, **InputStream (?)** in)
+--------------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1569,8 +1569,8 @@ This method currently does not support value list field.
 
 .. _io_realm_Realm_createObject__Class_E___:
 
-:ref:`createObject <io_realm_Realm_createObject__Class_E___>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz)
----------------------------------------------------------------------------------------------------------------------
+createObject<**E (?)** >(**java.lang.Class<E> (?)** clazz)
+----------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1586,8 +1586,8 @@ This method is only available for model classes with no @PrimaryKey annotation. 
 
 .. _io_realm_Realm_createObject__Class_E___Object__:
 
-:ref:`createObject <io_realm_Realm_createObject__Class_E___Object__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **Object (?)** primaryKeyValue)
--------------------------------------------------------------------------------------------------------------------------------------------------------------
+createObject<**E (?)** >(**java.lang.Class<E> (?)** clazz, **Object (?)** primaryKeyValue)
+------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1603,8 +1603,8 @@ If the value violates the primary key constraint, no object will be added and a 
 
 .. _io_realm_Realm_createEmbeddedObject__Class_E___RealmModel__String__:
 
-:ref:`createEmbeddedObject <io_realm_Realm_createEmbeddedObject__Class_E___RealmModel__String__>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz, **RealmModel (?)** parentObject, **String (?)** parentProperty)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+createEmbeddedObject<**E (?)** >(**java.lang.Class<E> (?)** clazz, **RealmModel (?)** parentObject, **String (?)** parentProperty)
+----------------------------------------------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1620,8 +1620,8 @@ This method should only be used to create objects of types marked as embedded.
 
 .. _io_realm_Realm_copyToRealm__E__ImportFlag_____:
 
-:ref:`copyToRealm <io_realm_Realm_copyToRealm__E__ImportFlag_____>` <**E (?)** undefined>(**E (?)** object, **ImportFlag[] (?)** flags)
----------------------------------------------------------------------------------------------------------------------------------------
+copyToRealm<**E (?)** >(**E (?)** object, **ImportFlag[] (?)** flags)
+---------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1637,8 +1637,8 @@ Please note, copying an object will copy all field values. Any unset field in th
 
 .. _io_realm_Realm_copyToRealmOrUpdate__E__ImportFlag_____:
 
-:ref:`copyToRealmOrUpdate <io_realm_Realm_copyToRealmOrUpdate__E__ImportFlag_____>` <**E (?)** undefined>(**E (?)** object, **ImportFlag[] (?)** flags)
--------------------------------------------------------------------------------------------------------------------------------------------------------
+copyToRealmOrUpdate<**E (?)** >(**E (?)** object, **ImportFlag[] (?)** flags)
+-----------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1654,8 +1654,8 @@ Please note, copying an object will copy all field values. Any unset field in th
 
 .. _io_realm_Realm_copyToRealm__Iterable_E___ImportFlag_____:
 
-:ref:`copyToRealm <io_realm_Realm_copyToRealm__Iterable_E___ImportFlag_____>` <**E (?)** undefined>(**java.lang.Iterable<E> (?)** objects, **ImportFlag[] (?)** flags)
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+copyToRealm<**E (?)** >(**java.lang.Iterable<E> (?)** objects, **ImportFlag[] (?)** flags)
+------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1671,8 +1671,8 @@ Please note, copying an object will copy all field values. Any unset field in th
 
 .. _io_realm_Realm_insert__Collection___extends_RealmModel___:
 
-:ref:`insert <io_realm_Realm_insert__Collection___extends_RealmModel___>` (**java.util.Collection<? extends RealmModel> (?)** objects)
---------------------------------------------------------------------------------------------------------------------------------------
+insert(**java.util.Collection<? extends RealmModel> (?)** objects)
+------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1699,8 +1699,8 @@ If you want the managed **RealmObject (?)** returned, use **#copyToRealm(Iterabl
 
 .. _io_realm_Realm_insert__RealmModel__:
 
-:ref:`insert <io_realm_Realm_insert__RealmModel__>` (**RealmModel (?)** object)
--------------------------------------------------------------------------------
+insert(**RealmModel (?)** object)
+---------------------------------
 
 
 .. contents:: On this page
@@ -1727,8 +1727,8 @@ If you want the managed **RealmObject (?)** returned, use **#copyToRealm(RealmMo
 
 .. _io_realm_Realm_insertOrUpdate__Collection___extends_RealmModel___:
 
-:ref:`insertOrUpdate <io_realm_Realm_insertOrUpdate__Collection___extends_RealmModel___>` (**java.util.Collection<? extends RealmModel> (?)** objects)
-------------------------------------------------------------------------------------------------------------------------------------------------------
+insertOrUpdate(**java.util.Collection<? extends RealmModel> (?)** objects)
+--------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1755,8 +1755,8 @@ If you want the managed **RealmObject (?)** returned, use **#copyToRealm(Iterabl
 
 .. _io_realm_Realm_insertOrUpdate__RealmModel__:
 
-:ref:`insertOrUpdate <io_realm_Realm_insertOrUpdate__RealmModel__>` (**RealmModel (?)** object)
------------------------------------------------------------------------------------------------
+insertOrUpdate(**RealmModel (?)** object)
+-----------------------------------------
 
 
 .. contents:: On this page
@@ -1783,8 +1783,8 @@ If you want the managed **RealmObject (?)** returned, use **#copyToRealm(RealmMo
 
 .. _io_realm_Realm_copyToRealmOrUpdate__Iterable_E___ImportFlag_____:
 
-:ref:`copyToRealmOrUpdate <io_realm_Realm_copyToRealmOrUpdate__Iterable_E___ImportFlag_____>` <**E (?)** undefined>(**java.lang.Iterable<E> (?)** objects, **ImportFlag[] (?)** flags)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+copyToRealmOrUpdate<**E (?)** >(**java.lang.Iterable<E> (?)** objects, **ImportFlag[] (?)** flags)
+--------------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1800,8 +1800,8 @@ Please note, copying an object will copy all field values. Any unset field in th
 
 .. _io_realm_Realm_copyFromRealm__Iterable_E___:
 
-:ref:`copyFromRealm <io_realm_Realm_copyFromRealm__Iterable_E___>` <**E (?)** undefined>(**java.lang.Iterable<E> (?)** realmObjects)
-------------------------------------------------------------------------------------------------------------------------------------
+copyFromRealm<**E (?)** >(**java.lang.Iterable<E> (?)** realmObjects)
+---------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1819,8 +1819,8 @@ The copied objects are all detached from Realm and they will no longer be automa
 
 .. _io_realm_Realm_copyFromRealm__Iterable_E___int__:
 
-:ref:`copyFromRealm <io_realm_Realm_copyFromRealm__Iterable_E___int__>` <**E (?)** undefined>(**java.lang.Iterable<E> (?)** realmObjects, **int (?)** maxDepth)
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+copyFromRealm<**E (?)** >(**java.lang.Iterable<E> (?)** realmObjects, **int (?)** maxDepth)
+-------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1838,8 +1838,8 @@ The copied objects are all detached from Realm and they will no longer be automa
 
 .. _io_realm_Realm_copyFromRealm__E__:
 
-:ref:`copyFromRealm <io_realm_Realm_copyFromRealm__E__>` <**E (?)** undefined>(**E (?)** realmObject)
------------------------------------------------------------------------------------------------------
+copyFromRealm<**E (?)** >(**E (?)** realmObject)
+------------------------------------------------
 
 
 .. contents:: On this page
@@ -1857,8 +1857,8 @@ The copied object(s) are all detached from Realm and they will no longer be auto
 
 .. _io_realm_Realm_copyFromRealm__E__int__:
 
-:ref:`copyFromRealm <io_realm_Realm_copyFromRealm__E__int__>` <**E (?)** undefined>(**E (?)** realmObject, **int (?)** maxDepth)
---------------------------------------------------------------------------------------------------------------------------------
+copyFromRealm<**E (?)** >(**E (?)** realmObject, **int (?)** maxDepth)
+----------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1876,8 +1876,8 @@ The copied object(s) are all detached from Realm and they will no longer be auto
 
 .. _io_realm_Realm_where__Class_E___:
 
-:ref:`where <io_realm_Realm_where__Class_E___>` <**E (?)** undefined>(**java.lang.Class<E> (?)** clazz)
--------------------------------------------------------------------------------------------------------
+where<**E (?)** >(**java.lang.Class<E> (?)** clazz)
+---------------------------------------------------
 
 
 .. contents:: On this page
@@ -1891,8 +1891,8 @@ Returns a typed RealmQuery, which can be used to query for specific objects of t
 
 .. _io_realm_Realm_addChangeListener___any___:
 
-:ref:`addChangeListener <io_realm_Realm_addChangeListener___any___>` (**<any> (?)** listener)
----------------------------------------------------------------------------------------------
+addChangeListener(**<any> (?)** listener)
+-----------------------------------------
 
 
 .. contents:: On this page
@@ -1910,8 +1910,8 @@ Realm instances are per thread singletons and cached, so listeners should be rem
 
 .. _io_realm_Realm_removeChangeListener___any___:
 
-:ref:`removeChangeListener <io_realm_Realm_removeChangeListener___any___>` (**<any> (?)** listener)
----------------------------------------------------------------------------------------------------
+removeChangeListener(**<any> (?)** listener)
+--------------------------------------------
 
 
 .. contents:: On this page
@@ -1925,8 +1925,8 @@ Removes the specified change listener.
 
 .. _io_realm_Realm_removeAllChangeListeners____:
 
-:ref:`removeAllChangeListeners <io_realm_Realm_removeAllChangeListeners____>` ()
---------------------------------------------------------------------------------
+removeAllChangeListeners()
+--------------------------
 
 
 .. contents:: On this page
@@ -1940,8 +1940,8 @@ Removes all user-defined change listeners.
 
 .. _io_realm_Realm_executeTransaction__Realm_Transaction__:
 
-:ref:`executeTransaction <io_realm_Realm_executeTransaction__Realm_Transaction__>` (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
-------------------------------------------------------------------------------------------------------------------------------------------------------
+executeTransaction(:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
+-------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1957,8 +1957,8 @@ Calling this method from the UI thread will throw a **RealmException (?)** . Doi
 
 .. _io_realm_Realm_executeTransactionAsync__Realm_Transaction__:
 
-:ref:`executeTransactionAsync <io_realm_Realm_executeTransactionAsync__Realm_Transaction__>` (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+executeTransactionAsync(:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
+------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1972,8 +1972,8 @@ Similar to **#executeTransaction(Transaction) (?)** but runs asynchronously on a
 
 .. _io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__:
 
-:ref:`executeTransactionAsync <io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__>` (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction, :ref:`Realm.Transaction.OnSuccess <io_realm_Realm_Transaction_OnSuccess>` onSuccess)
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+executeTransactionAsync(:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction, :ref:`Realm.Transaction.OnSuccess <io_realm_Realm_Transaction_OnSuccess>` onSuccess)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -1987,8 +1987,8 @@ Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an O
 
 .. _io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnError__:
 
-:ref:`executeTransactionAsync <io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnError__>` (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction, :ref:`Realm.Transaction.OnError <io_realm_Realm_Transaction_OnError>` onError)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+executeTransactionAsync(:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction, :ref:`Realm.Transaction.OnError <io_realm_Realm_Transaction_OnError>` onError)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -2002,8 +2002,8 @@ Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an O
 
 .. _io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__Realm_Transaction_OnError__:
 
-:ref:`executeTransactionAsync <io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__Realm_Transaction_OnError__>` (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction, :ref:`Realm.Transaction.OnSuccess <io_realm_Realm_Transaction_OnSuccess>` onSuccess, :ref:`Realm.Transaction.OnError <io_realm_Realm_Transaction_OnError>` onError)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+executeTransactionAsync(:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction, :ref:`Realm.Transaction.OnSuccess <io_realm_Realm_Transaction_OnSuccess>` onSuccess, :ref:`Realm.Transaction.OnError <io_realm_Realm_Transaction_OnError>` onError)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -2017,8 +2017,8 @@ Similar to **#executeTransactionAsync(Transaction) (?)** , but also accepts an O
 
 .. _io_realm_Realm_delete__Class___extends_RealmModel___:
 
-:ref:`delete <io_realm_Realm_delete__Class___extends_RealmModel___>` (**java.lang.Class<? extends RealmModel> (?)** clazz)
---------------------------------------------------------------------------------------------------------------------------
+delete(**java.lang.Class<? extends RealmModel> (?)** clazz)
+-----------------------------------------------------------
 
 
 .. contents:: On this page
@@ -2032,8 +2032,8 @@ Deletes all objects of the specified class from the Realm.
 
 .. _io_realm_Realm_migrateRealm__RealmConfiguration__:
 
-:ref:`migrateRealm <io_realm_Realm_migrateRealm__RealmConfiguration__>` (**RealmConfiguration (?)** configuration)
-------------------------------------------------------------------------------------------------------------------
+migrateRealm(**RealmConfiguration (?)** configuration)
+------------------------------------------------------
 
 
 .. contents:: On this page
@@ -2047,8 +2047,8 @@ Manually triggers the migration associated with a given RealmConfiguration. If R
 
 .. _io_realm_Realm_migrateRealm__RealmConfiguration__RealmMigration__:
 
-:ref:`migrateRealm <io_realm_Realm_migrateRealm__RealmConfiguration__RealmMigration__>` (**RealmConfiguration (?)** configuration, **RealmMigration (?)** migration)
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+migrateRealm(**RealmConfiguration (?)** configuration, **RealmMigration (?)** migration)
+----------------------------------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -2062,8 +2062,8 @@ Manually triggers a migration on a RealmMigration.
 
 .. _io_realm_Realm_deleteRealm__RealmConfiguration__:
 
-:ref:`deleteRealm <io_realm_Realm_deleteRealm__RealmConfiguration__>` (**RealmConfiguration (?)** configuration)
-----------------------------------------------------------------------------------------------------------------
+deleteRealm(**RealmConfiguration (?)** configuration)
+-----------------------------------------------------
 
 
 .. contents:: On this page
@@ -2081,8 +2081,8 @@ WARNING: For synchronized Realm, there is a chance that an internal Realm instan
 
 .. _io_realm_Realm_compactRealm__RealmConfiguration__:
 
-:ref:`compactRealm <io_realm_Realm_compactRealm__RealmConfiguration__>` (**RealmConfiguration (?)** configuration)
-------------------------------------------------------------------------------------------------------------------
+compactRealm(**RealmConfiguration (?)** configuration)
+------------------------------------------------------
 
 
 .. contents:: On this page
@@ -2101,8 +2101,8 @@ The file must be closed before this method is called, otherwise ``false`` will b
 
 .. _io_realm_Realm_freeze____:
 
-:ref:`freeze <io_realm_Realm_freeze____>` ()
---------------------------------------------
+freeze()
+--------
 
 
 .. contents:: On this page
@@ -2116,8 +2116,8 @@ The file must be closed before this method is called, otherwise ``false`` will b
 
 .. _io_realm_Realm_getDefaultModule____:
 
-:ref:`getDefaultModule <io_realm_Realm_getDefaultModule____>` ()
-----------------------------------------------------------------
+getDefaultModule()
+------------------
 
 
 .. contents:: On this page
@@ -2131,8 +2131,8 @@ Returns the default Realm module. This module contains all Realm classes in the 
 
 .. _io_realm_Realm_getGlobalInstanceCount__RealmConfiguration__:
 
-:ref:`getGlobalInstanceCount <io_realm_Realm_getGlobalInstanceCount__RealmConfiguration__>` (**RealmConfiguration (?)** configuration)
---------------------------------------------------------------------------------------------------------------------------------------
+getGlobalInstanceCount(**RealmConfiguration (?)** configuration)
+----------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -2146,8 +2146,8 @@ Returns the current number of open Realm instances across all threads in current
 
 .. _io_realm_Realm_getLocalInstanceCount__RealmConfiguration__:
 
-:ref:`getLocalInstanceCount <io_realm_Realm_getLocalInstanceCount__RealmConfiguration__>` (**RealmConfiguration (?)** configuration)
-------------------------------------------------------------------------------------------------------------------------------------
+getLocalInstanceCount(**RealmConfiguration (?)** configuration)
+---------------------------------------------------------------
 
 
 .. contents:: On this page
@@ -2161,8 +2161,8 @@ Returns the current number of open Realm instances on the thread calling this me
 
 .. _io_realm_Realm_getApplicationContext____:
 
-:ref:`getApplicationContext <io_realm_Realm_getApplicationContext____>` ()
---------------------------------------------------------------------------
+getApplicationContext()
+-----------------------
 
 
 .. contents:: On this page

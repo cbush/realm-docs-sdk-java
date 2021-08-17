@@ -78,8 +78,8 @@ Method Detail
 
 .. _io_realm_Realm_Callback_onSuccess__Realm__:
 
-:ref:`onSuccess <io_realm_Realm_Callback_onSuccess__Realm__>` (:ref:`Realm <io_realm_Realm>` realm)
----------------------------------------------------------------------------------------------------
+onSuccess(:ref:`Realm <io_realm_Realm>` realm)
+----------------------------------------------
 
 
 .. contents:: On this page
@@ -93,8 +93,8 @@ Method Detail
 
 .. _io_realm_Realm_Callback_onError__Throwable__:
 
-:ref:`onError <io_realm_Realm_Callback_onError__Throwable__>` (**Throwable (?)** exception)
--------------------------------------------------------------------------------------------
+onError(**Throwable (?)** exception)
+------------------------------------
 
 
 .. contents:: On this page

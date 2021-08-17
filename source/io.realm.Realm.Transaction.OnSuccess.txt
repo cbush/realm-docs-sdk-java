@@ -50,8 +50,8 @@ Method Detail
 
 .. _io_realm_Realm_Transaction_OnSuccess_onSuccess____:
 
-:ref:`onSuccess <io_realm_Realm_Transaction_OnSuccess_onSuccess____>` ()
-------------------------------------------------------------------------
+onSuccess()
+-----------
 
 
 .. contents:: On this page
