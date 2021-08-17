@@ -38,7 +38,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public void
+   * - public **void (?)**
      - :ref:`onSuccess <io_realm_Realm_Transaction_Callback_onSuccess____>` ()
        
        
@@ -53,8 +53,8 @@ Method Summary
        
        
    
-   * - public void
-     - :ref:`onError <io_realm_Realm_Transaction_Callback_onError__Exception__>` (**Exception (?)** ignore )
+   * - public **void (?)**
+     - :ref:`onError <io_realm_Realm_Transaction_Callback_onError__Exception__>` (**Exception (?)** ignore)
        
        
        .. contents:: On this page

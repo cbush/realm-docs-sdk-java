@@ -12,8 +12,8 @@
 
    io.realm.Realm.Callback </io.realm.Realm.Callback>
    io.realm.Realm.Transaction.Callback </io.realm.Realm.Transaction.Callback>
-   io.realm.Realm.Transaction.OnError </io.realm.Realm.Transaction.OnError>
-   io.realm.Realm.Transaction.OnSuccess </io.realm.Realm.Transaction.OnSuccess>
    io.realm.Realm.Transaction </io.realm.Realm.Transaction>
+   io.realm.Realm.Transaction.OnSuccess </io.realm.Realm.Transaction.OnSuccess>
+   io.realm.Realm.Transaction.OnError </io.realm.Realm.Transaction.OnError>
    io.realm.Realm </io.realm.Realm>
    
