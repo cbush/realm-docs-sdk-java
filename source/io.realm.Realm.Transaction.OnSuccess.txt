@@ -10,13 +10,6 @@ io.realm.Realm.Transaction.OnSuccess
 
 .. _io_realm_Realm_Transaction_OnSuccess:
 
-
-.. contents:: On this page
-   :local:
-   :backlinks: none
-   :depth: 2
-   :class: singlecol
-
 Callback invoked to notify the caller thread about the success of the transaction.
 
 
@@ -33,13 +26,6 @@ Method Summary
      - :ref:`onSuccess <io_realm_Realm_Transaction_OnSuccess_onSuccess____>` ()
        
        
-       .. contents:: On this page
-          :local:
-          :backlinks: none
-          :depth: 2
-          :class: singlecol
-       
-       
        
        
        
@@ -50,15 +36,10 @@ Method Detail
 
 .. _io_realm_Realm_Transaction_OnSuccess_onSuccess____:
 
-onSuccess()
------------
+onSuccess
+---------
 
-
-.. contents:: On this page
-   :local:
-   :backlinks: none
-   :depth: 2
-   :class: singlecol
+public **void (?)** onSuccess ()
 
 
 

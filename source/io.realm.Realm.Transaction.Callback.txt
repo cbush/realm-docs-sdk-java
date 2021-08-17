@@ -14,13 +14,6 @@ io.realm.Realm.Transaction.Callback
 
 - **java.lang.Object (?)**
 
-
-.. contents:: On this page
-   :local:
-   :backlinks: none
-   :depth: 2
-   :class: singlecol
-
 Callback invoked to notify the caller thread.
 
 
@@ -42,26 +35,12 @@ Method Summary
      - :ref:`onSuccess <io_realm_Realm_Transaction_Callback_onSuccess____>` ()
        
        
-       .. contents:: On this page
-          :local:
-          :backlinks: none
-          :depth: 2
-          :class: singlecol
-       
-       
        
        
        
    
    * - public **void (?)**
      - :ref:`onError <io_realm_Realm_Transaction_Callback_onError__Exception__>` (**Exception (?)** ignore)
-       
-       
-       .. contents:: On this page
-          :local:
-          :backlinks: none
-          :depth: 2
-          :class: singlecol
        
        
        
@@ -74,28 +53,18 @@ Method Detail
 
 .. _io_realm_Realm_Transaction_Callback_onSuccess____:
 
-onSuccess()
------------
+onSuccess
+---------
 
-
-.. contents:: On this page
-   :local:
-   :backlinks: none
-   :depth: 2
-   :class: singlecol
+public **void (?)** onSuccess ()
 
 
 .. _io_realm_Realm_Transaction_Callback_onError__Exception__:
 
-onError(**Exception (?)** ignore)
----------------------------------
+onError
+-------
 
-
-.. contents:: On this page
-   :local:
-   :backlinks: none
-   :depth: 2
-   :class: singlecol
+public **void (?)** onError (**Exception (?)** ignore)
 
 
 
