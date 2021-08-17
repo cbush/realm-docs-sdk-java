@@ -121,7 +121,7 @@ Method Summary
      - Method and Description
    
    * - public <any>
-     - :ref:`asFlowable() <io_realm_Realm_asFlowable____>`
+     - :ref:`asFlowable <io_realm_Realm_asFlowable____>`()
        
        
        .. contents:: On this page
@@ -138,7 +138,7 @@ Method Summary
        
    
    * - public boolean
-     - :ref:`isEmpty() <io_realm_Realm_isEmpty____>`
+     - :ref:`isEmpty <io_realm_Realm_isEmpty____>`()
        
        
        .. contents:: On this page
@@ -155,7 +155,7 @@ Method Summary
        
    
    * - public RealmSchema
-     - :ref:`getSchema() <io_realm_Realm_getSchema____>`
+     - :ref:`getSchema <io_realm_Realm_getSchema____>`()
        
        
        .. contents:: On this page
@@ -172,7 +172,7 @@ Method Summary
        
    
    * - public static synchronized void
-     - :ref:`init(Context) <io_realm_Realm_init__Context__>`
+     - :ref:`init <io_realm_Realm_init__Context__>`(**Context (?)** context)
        
        
        .. contents:: On this page
@@ -189,7 +189,7 @@ Method Summary
        
    
    * - public static synchronized void
-     - :ref:`init(Context, String) <io_realm_Realm_init__Context__String__>`
+     - :ref:`init <io_realm_Realm_init__Context__String__>`(**Context (?)** context, **String (?)** userAgent)
        
        
        .. contents:: On this page
@@ -206,7 +206,7 @@ Method Summary
        
    
    * - public static Realm
-     - :ref:`getDefaultInstance() <io_realm_Realm_getDefaultInstance____>`
+     - :ref:`getDefaultInstance <io_realm_Realm_getDefaultInstance____>`()
        
        
        .. contents:: On this page
@@ -223,7 +223,7 @@ Method Summary
        
    
    * - public static Realm
-     - :ref:`getInstance(RealmConfiguration) <io_realm_Realm_getInstance__RealmConfiguration__>`
+     - :ref:`getInstance <io_realm_Realm_getInstance__RealmConfiguration__>`(**RealmConfiguration (?)** configuration)
        
        
        .. contents:: On this page
@@ -240,7 +240,7 @@ Method Summary
        
    
    * - public static RealmAsyncTask
-     - :ref:`getInstanceAsync(RealmConfiguration, Realm.Callback) <io_realm_Realm_getInstanceAsync__RealmConfiguration__Realm_Callback__>`
+     - :ref:`getInstanceAsync <io_realm_Realm_getInstanceAsync__RealmConfiguration__Realm_Callback__>`(**RealmConfiguration (?)** configuration, :ref:`Realm.Callback <io_realm_Realm_Callback>` callback)
        
        
        .. contents:: On this page
@@ -257,7 +257,7 @@ Method Summary
        
    
    * - public static void
-     - :ref:`setDefaultConfiguration(RealmConfiguration) <io_realm_Realm_setDefaultConfiguration__RealmConfiguration__>`
+     - :ref:`setDefaultConfiguration <io_realm_Realm_setDefaultConfiguration__RealmConfiguration__>`(**RealmConfiguration (?)** configuration)
        
        
        .. contents:: On this page
@@ -274,7 +274,7 @@ Method Summary
        
    
    * - public static RealmConfiguration
-     - :ref:`getDefaultConfiguration() <io_realm_Realm_getDefaultConfiguration____>`
+     - :ref:`getDefaultConfiguration <io_realm_Realm_getDefaultConfiguration____>`()
        
        
        .. contents:: On this page
@@ -291,7 +291,7 @@ Method Summary
        
    
    * - public static void
-     - :ref:`removeDefaultConfiguration() <io_realm_Realm_removeDefaultConfiguration____>`
+     - :ref:`removeDefaultConfiguration <io_realm_Realm_removeDefaultConfiguration____>`()
        
        
        .. contents:: On this page
@@ -308,7 +308,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`createAllFromJson(java.lang.Class\<E>, JSONArray) <io_realm_Realm_createAllFromJson__Class_E___JSONArray__>`
+     - :ref:`createAllFromJson <io_realm_Realm_createAllFromJson__Class_E___JSONArray__>`(**java.lang.Class<E> (?)** clazz, **JSONArray (?)** json)
        
        
        .. contents:: On this page
@@ -325,7 +325,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`createOrUpdateAllFromJson(java.lang.Class\<E>, JSONArray) <io_realm_Realm_createOrUpdateAllFromJson__Class_E___JSONArray__>`
+     - :ref:`createOrUpdateAllFromJson <io_realm_Realm_createOrUpdateAllFromJson__Class_E___JSONArray__>`(**java.lang.Class<E> (?)** clazz, **JSONArray (?)** json)
        
        
        .. contents:: On this page
@@ -342,7 +342,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`createAllFromJson(java.lang.Class\<E>, String) <io_realm_Realm_createAllFromJson__Class_E___String__>`
+     - :ref:`createAllFromJson <io_realm_Realm_createAllFromJson__Class_E___String__>`(**java.lang.Class<E> (?)** clazz, **String (?)** json)
        
        
        .. contents:: On this page
@@ -359,7 +359,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`createOrUpdateAllFromJson(java.lang.Class\<E>, String) <io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__>`
+     - :ref:`createOrUpdateAllFromJson <io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__>`(**java.lang.Class<E> (?)** clazz, **String (?)** json)
        
        
        .. contents:: On this page
@@ -376,7 +376,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`createAllFromJson(java.lang.Class\<E>, InputStream) <io_realm_Realm_createAllFromJson__Class_E___InputStream__>`
+     - :ref:`createAllFromJson <io_realm_Realm_createAllFromJson__Class_E___InputStream__>`(**java.lang.Class<E> (?)** clazz, **InputStream (?)** inputStream)
        
        
        .. contents:: On this page
@@ -393,7 +393,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`createOrUpdateAllFromJson(java.lang.Class\<E>, InputStream) <io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__>`
+     - :ref:`createOrUpdateAllFromJson <io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__>`(**java.lang.Class<E> (?)** clazz, **InputStream (?)** in)
        
        
        .. contents:: On this page
@@ -410,7 +410,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createObjectFromJson(java.lang.Class\<E>, JSONObject) <io_realm_Realm_createObjectFromJson__Class_E___JSONObject__>`
+     - :ref:`createObjectFromJson <io_realm_Realm_createObjectFromJson__Class_E___JSONObject__>`(**java.lang.Class<E> (?)** clazz, **JSONObject (?)** json)
        
        
        .. contents:: On this page
@@ -427,7 +427,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createOrUpdateObjectFromJson(java.lang.Class\<E>, JSONObject) <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___JSONObject__>`
+     - :ref:`createOrUpdateObjectFromJson <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___JSONObject__>`(**java.lang.Class<E> (?)** clazz, **JSONObject (?)** json)
        
        
        .. contents:: On this page
@@ -444,7 +444,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createObjectFromJson(java.lang.Class\<E>, String) <io_realm_Realm_createObjectFromJson__Class_E___String__>`
+     - :ref:`createObjectFromJson <io_realm_Realm_createObjectFromJson__Class_E___String__>`(**java.lang.Class<E> (?)** clazz, **String (?)** json)
        
        
        .. contents:: On this page
@@ -461,7 +461,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createOrUpdateObjectFromJson(java.lang.Class\<E>, String) <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__>`
+     - :ref:`createOrUpdateObjectFromJson <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__>`(**java.lang.Class<E> (?)** clazz, **String (?)** json)
        
        
        .. contents:: On this page
@@ -478,7 +478,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createObjectFromJson(java.lang.Class\<E>, InputStream) <io_realm_Realm_createObjectFromJson__Class_E___InputStream__>`
+     - :ref:`createObjectFromJson <io_realm_Realm_createObjectFromJson__Class_E___InputStream__>`(**java.lang.Class<E> (?)** clazz, **InputStream (?)** inputStream)
        
        
        .. contents:: On this page
@@ -495,7 +495,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createOrUpdateObjectFromJson(java.lang.Class\<E>, InputStream) <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__>`
+     - :ref:`createOrUpdateObjectFromJson <io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__>`(**java.lang.Class<E> (?)** clazz, **InputStream (?)** in)
        
        
        .. contents:: On this page
@@ -512,7 +512,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createObject(java.lang.Class\<E>) <io_realm_Realm_createObject__Class_E___>`
+     - :ref:`createObject <io_realm_Realm_createObject__Class_E___>`(**java.lang.Class<E> (?)** clazz)
        
        
        .. contents:: On this page
@@ -529,7 +529,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createObject(java.lang.Class\<E>, Object) <io_realm_Realm_createObject__Class_E___Object__>`
+     - :ref:`createObject <io_realm_Realm_createObject__Class_E___Object__>`(**java.lang.Class<E> (?)** clazz, **Object (?)** primaryKeyValue)
        
        
        .. contents:: On this page
@@ -546,7 +546,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`createEmbeddedObject(java.lang.Class\<E>, RealmModel, String) <io_realm_Realm_createEmbeddedObject__Class_E___RealmModel__String__>`
+     - :ref:`createEmbeddedObject <io_realm_Realm_createEmbeddedObject__Class_E___RealmModel__String__>`(**java.lang.Class<E> (?)** clazz, **RealmModel (?)** parentObject, **String (?)** parentProperty)
        
        
        .. contents:: On this page
@@ -563,7 +563,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`copyToRealm(E, ImportFlag[]) <io_realm_Realm_copyToRealm__E__ImportFlag_____>`
+     - :ref:`copyToRealm <io_realm_Realm_copyToRealm__E__ImportFlag_____>`(**E (?)** object, **ImportFlag[] (?)** flags)
        
        
        .. contents:: On this page
@@ -580,7 +580,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`copyToRealmOrUpdate(E, ImportFlag[]) <io_realm_Realm_copyToRealmOrUpdate__E__ImportFlag_____>`
+     - :ref:`copyToRealmOrUpdate <io_realm_Realm_copyToRealmOrUpdate__E__ImportFlag_____>`(**E (?)** object, **ImportFlag[] (?)** flags)
        
        
        .. contents:: On this page
@@ -597,7 +597,7 @@ Method Summary
        
    
    * - public List
-     - :ref:`copyToRealm(java.lang.Iterable\<E>, ImportFlag[]) <io_realm_Realm_copyToRealm__Iterable_E___ImportFlag_____>`
+     - :ref:`copyToRealm <io_realm_Realm_copyToRealm__Iterable_E___ImportFlag_____>`(**java.lang.Iterable<E> (?)** objects, **ImportFlag[] (?)** flags)
        
        
        .. contents:: On this page
@@ -614,7 +614,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`insert(java.util.Collection\<? extends RealmModel>) <io_realm_Realm_insert__Collection___extends_RealmModel___>`
+     - :ref:`insert <io_realm_Realm_insert__Collection___extends_RealmModel___>`(**java.util.Collection<? extends RealmModel> (?)** objects)
        
        
        .. contents:: On this page
@@ -631,7 +631,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`insert(RealmModel) <io_realm_Realm_insert__RealmModel__>`
+     - :ref:`insert <io_realm_Realm_insert__RealmModel__>`(**RealmModel (?)** object)
        
        
        .. contents:: On this page
@@ -648,7 +648,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`insertOrUpdate(java.util.Collection\<? extends RealmModel>) <io_realm_Realm_insertOrUpdate__Collection___extends_RealmModel___>`
+     - :ref:`insertOrUpdate <io_realm_Realm_insertOrUpdate__Collection___extends_RealmModel___>`(**java.util.Collection<? extends RealmModel> (?)** objects)
        
        
        .. contents:: On this page
@@ -665,7 +665,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`insertOrUpdate(RealmModel) <io_realm_Realm_insertOrUpdate__RealmModel__>`
+     - :ref:`insertOrUpdate <io_realm_Realm_insertOrUpdate__RealmModel__>`(**RealmModel (?)** object)
        
        
        .. contents:: On this page
@@ -682,7 +682,7 @@ Method Summary
        
    
    * - public List
-     - :ref:`copyToRealmOrUpdate(java.lang.Iterable\<E>, ImportFlag[]) <io_realm_Realm_copyToRealmOrUpdate__Iterable_E___ImportFlag_____>`
+     - :ref:`copyToRealmOrUpdate <io_realm_Realm_copyToRealmOrUpdate__Iterable_E___ImportFlag_____>`(**java.lang.Iterable<E> (?)** objects, **ImportFlag[] (?)** flags)
        
        
        .. contents:: On this page
@@ -699,7 +699,7 @@ Method Summary
        
    
    * - public List
-     - :ref:`copyFromRealm(java.lang.Iterable\<E>) <io_realm_Realm_copyFromRealm__Iterable_E___>`
+     - :ref:`copyFromRealm <io_realm_Realm_copyFromRealm__Iterable_E___>`(**java.lang.Iterable<E> (?)** realmObjects)
        
        
        .. contents:: On this page
@@ -716,7 +716,7 @@ Method Summary
        
    
    * - public List
-     - :ref:`copyFromRealm(java.lang.Iterable\<E>, int) <io_realm_Realm_copyFromRealm__Iterable_E___int__>`
+     - :ref:`copyFromRealm <io_realm_Realm_copyFromRealm__Iterable_E___int__>`(**java.lang.Iterable<E> (?)** realmObjects, **int (?)** maxDepth)
        
        
        .. contents:: On this page
@@ -733,7 +733,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`copyFromRealm(E) <io_realm_Realm_copyFromRealm__E__>`
+     - :ref:`copyFromRealm <io_realm_Realm_copyFromRealm__E__>`(**E (?)** realmObject)
        
        
        .. contents:: On this page
@@ -750,7 +750,7 @@ Method Summary
        
    
    * - public E
-     - :ref:`copyFromRealm(E, int) <io_realm_Realm_copyFromRealm__E__int__>`
+     - :ref:`copyFromRealm <io_realm_Realm_copyFromRealm__E__int__>`(**E (?)** realmObject, **int (?)** maxDepth)
        
        
        .. contents:: On this page
@@ -767,7 +767,7 @@ Method Summary
        
    
    * - public <any>
-     - :ref:`where(java.lang.Class\<E>) <io_realm_Realm_where__Class_E___>`
+     - :ref:`where <io_realm_Realm_where__Class_E___>`(**java.lang.Class<E> (?)** clazz)
        
        
        .. contents:: On this page
@@ -784,7 +784,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`addChangeListener(\<any>) <io_realm_Realm_addChangeListener___any___>`
+     - :ref:`addChangeListener <io_realm_Realm_addChangeListener___any___>`(**<any> (?)** listener)
        
        
        .. contents:: On this page
@@ -801,7 +801,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`removeChangeListener(\<any>) <io_realm_Realm_removeChangeListener___any___>`
+     - :ref:`removeChangeListener <io_realm_Realm_removeChangeListener___any___>`(**<any> (?)** listener)
        
        
        .. contents:: On this page
@@ -818,7 +818,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`removeAllChangeListeners() <io_realm_Realm_removeAllChangeListeners____>`
+     - :ref:`removeAllChangeListeners <io_realm_Realm_removeAllChangeListeners____>`()
        
        
        .. contents:: On this page
@@ -835,7 +835,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`executeTransaction(Realm.Transaction) <io_realm_Realm_executeTransaction__Realm_Transaction__>`
+     - :ref:`executeTransaction <io_realm_Realm_executeTransaction__Realm_Transaction__>`(:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
        
        
        .. contents:: On this page
@@ -852,7 +852,7 @@ Method Summary
        
    
    * - public RealmAsyncTask
-     - :ref:`executeTransactionAsync(Realm.Transaction) <io_realm_Realm_executeTransactionAsync__Realm_Transaction__>`
+     - :ref:`executeTransactionAsync <io_realm_Realm_executeTransactionAsync__Realm_Transaction__>`(:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
        
        
        .. contents:: On this page
@@ -869,7 +869,7 @@ Method Summary
        
    
    * - public RealmAsyncTask
-     - :ref:`executeTransactionAsync(Realm.Transaction, Realm.Transaction.OnSuccess) <io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__>`
+     - :ref:`executeTransactionAsync <io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__>`(:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction, :ref:`Realm.Transaction.OnSuccess <io_realm_Realm_Transaction_OnSuccess>` onSuccess)
        
        
        .. contents:: On this page
@@ -886,7 +886,7 @@ Method Summary
        
    
    * - public RealmAsyncTask
-     - :ref:`executeTransactionAsync(Realm.Transaction, Realm.Transaction.OnError) <io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnError__>`
+     - :ref:`executeTransactionAsync <io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnError__>`(:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction, :ref:`Realm.Transaction.OnError <io_realm_Realm_Transaction_OnError>` onError)
        
        
        .. contents:: On this page
@@ -903,7 +903,7 @@ Method Summary
        
    
    * - public RealmAsyncTask
-     - :ref:`executeTransactionAsync(Realm.Transaction, Realm.Transaction.OnSuccess, Realm.Transaction.OnError) <io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__Realm_Transaction_OnError__>`
+     - :ref:`executeTransactionAsync <io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__Realm_Transaction_OnError__>`(:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction, :ref:`Realm.Transaction.OnSuccess <io_realm_Realm_Transaction_OnSuccess>` onSuccess, :ref:`Realm.Transaction.OnError <io_realm_Realm_Transaction_OnError>` onError)
        
        
        .. contents:: On this page
@@ -920,7 +920,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`delete(java.lang.Class\<? extends RealmModel>) <io_realm_Realm_delete__Class___extends_RealmModel___>`
+     - :ref:`delete <io_realm_Realm_delete__Class___extends_RealmModel___>`(**java.lang.Class<? extends RealmModel> (?)** clazz)
        
        
        .. contents:: On this page
@@ -937,7 +937,7 @@ Method Summary
        
    
    * - public static void
-     - :ref:`migrateRealm(RealmConfiguration) <io_realm_Realm_migrateRealm__RealmConfiguration__>`
+     - :ref:`migrateRealm <io_realm_Realm_migrateRealm__RealmConfiguration__>`(**RealmConfiguration (?)** configuration)
        
        
        .. contents:: On this page
@@ -954,7 +954,7 @@ Method Summary
        
    
    * - public static void
-     - :ref:`migrateRealm(RealmConfiguration, RealmMigration) <io_realm_Realm_migrateRealm__RealmConfiguration__RealmMigration__>`
+     - :ref:`migrateRealm <io_realm_Realm_migrateRealm__RealmConfiguration__RealmMigration__>`(**RealmConfiguration (?)** configuration, **RealmMigration (?)** migration)
        
        
        .. contents:: On this page
@@ -971,7 +971,7 @@ Method Summary
        
    
    * - public static boolean
-     - :ref:`deleteRealm(RealmConfiguration) <io_realm_Realm_deleteRealm__RealmConfiguration__>`
+     - :ref:`deleteRealm <io_realm_Realm_deleteRealm__RealmConfiguration__>`(**RealmConfiguration (?)** configuration)
        
        
        .. contents:: On this page
@@ -988,7 +988,7 @@ Method Summary
        
    
    * - public static boolean
-     - :ref:`compactRealm(RealmConfiguration) <io_realm_Realm_compactRealm__RealmConfiguration__>`
+     - :ref:`compactRealm <io_realm_Realm_compactRealm__RealmConfiguration__>`(**RealmConfiguration (?)** configuration)
        
        
        .. contents:: On this page
@@ -1005,7 +1005,7 @@ Method Summary
        
    
    * - public Realm
-     - :ref:`freeze() <io_realm_Realm_freeze____>`
+     - :ref:`freeze <io_realm_Realm_freeze____>`()
        
        
        .. contents:: On this page
@@ -1022,7 +1022,7 @@ Method Summary
        
    
    * - public static Object
-     - :ref:`getDefaultModule() <io_realm_Realm_getDefaultModule____>`
+     - :ref:`getDefaultModule <io_realm_Realm_getDefaultModule____>`()
        
        
        .. contents:: On this page
@@ -1039,7 +1039,7 @@ Method Summary
        
    
    * - public static int
-     - :ref:`getGlobalInstanceCount(RealmConfiguration) <io_realm_Realm_getGlobalInstanceCount__RealmConfiguration__>`
+     - :ref:`getGlobalInstanceCount <io_realm_Realm_getGlobalInstanceCount__RealmConfiguration__>`(**RealmConfiguration (?)** configuration)
        
        
        .. contents:: On this page
@@ -1056,7 +1056,7 @@ Method Summary
        
    
    * - public static int
-     - :ref:`getLocalInstanceCount(RealmConfiguration) <io_realm_Realm_getLocalInstanceCount__RealmConfiguration__>`
+     - :ref:`getLocalInstanceCount <io_realm_Realm_getLocalInstanceCount__RealmConfiguration__>`(**RealmConfiguration (?)** configuration)
        
        
        .. contents:: On this page
@@ -1073,7 +1073,7 @@ Method Summary
        
    
    * - public static Context
-     - :ref:`getApplicationContext() <io_realm_Realm_getApplicationContext____>`
+     - :ref:`getApplicationContext <io_realm_Realm_getApplicationContext____>`()
        
        
        .. contents:: On this page

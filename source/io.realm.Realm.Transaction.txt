@@ -51,7 +51,7 @@ Method Summary
      - Method and Description
    
    * - public void
-     - :ref:`execute(Realm) <io_realm_Realm_Transaction_execute__Realm__>`
+     - :ref:`execute <io_realm_Realm_Transaction_execute__Realm__>`(:ref:`Realm <io_realm_Realm>` realm)
        
        
        .. contents:: On this page

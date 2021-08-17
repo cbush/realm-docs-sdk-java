@@ -30,7 +30,7 @@ Method Summary
      - Method and Description
    
    * - public void
-     - :ref:`onError(Throwable) <io_realm_Realm_Transaction_OnError_onError__Throwable__>`
+     - :ref:`onError <io_realm_Realm_Transaction_OnError_onError__Throwable__>`(**Throwable (?)** error)
        
        
        .. contents:: On this page
