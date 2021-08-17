@@ -30,7 +30,7 @@ Method Summary
      - Method and Description
    
    * - public void
-     - :ref:`onSuccess <io_realm_Realm_Transaction_OnSuccess_onSuccess____>`()
+     - :ref:`onSuccess <io_realm_Realm_Transaction_OnSuccess_onSuccess____>` ()
        
        
        .. contents:: On this page

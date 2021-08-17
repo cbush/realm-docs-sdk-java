@@ -39,7 +39,7 @@ Method Summary
      - Method and Description
    
    * - public void
-     - :ref:`onSuccess <io_realm_Realm_Transaction_Callback_onSuccess____>`()
+     - :ref:`onSuccess <io_realm_Realm_Transaction_Callback_onSuccess____>` ()
        
        
        .. contents:: On this page
@@ -54,7 +54,7 @@ Method Summary
        
    
    * - public void
-     - :ref:`onError <io_realm_Realm_Transaction_Callback_onError__Exception__>`(**Exception (?)** ignore)
+     - :ref:`onError <io_realm_Realm_Transaction_Callback_onError__Exception__>` (**Exception (?)** ignore )
        
        
        .. contents:: On this page
