@@ -202,7 +202,7 @@ Method Summary
        
        
    
-   * - public **RxObservableFactory (?)**
+   * - public :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>`
      - :ref:`getRxFactory <io_realm_RealmConfiguration_getRxFactory____>` ()
        
        Returns the **RxObservableFactory (?)** that is used to create Rx Observables from Realm objects.
@@ -212,7 +212,7 @@ Method Summary
        
        
    
-   * - public **FlowFactory (?)**
+   * - public :ref:`FlowFactory <io_realm_coroutines_FlowFactory>`
      - :ref:`getFlowFactory <io_realm_RealmConfiguration_getFlowFactory____>` ()
        
        Returns the **FlowFactory (?)** that is used to create Kotlin Flows from Realm objects.
@@ -458,7 +458,7 @@ WARNING: This method is just a point-in-time check. Unless protected by external
 getRxFactory
 ------------
 
-public **RxObservableFactory (?)** getRxFactory ()
+public :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` getRxFactory ()
 
 Returns the **RxObservableFactory (?)** that is used to create Rx Observables from Realm objects.
 
@@ -471,7 +471,7 @@ Throws
 getFlowFactory
 --------------
 
-public **FlowFactory (?)** getFlowFactory ()
+public :ref:`FlowFactory <io_realm_coroutines_FlowFactory>` getFlowFactory ()
 
 Returns the **FlowFactory (?)** that is used to create Kotlin Flows from Realm objects.
 

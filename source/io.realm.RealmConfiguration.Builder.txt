@@ -122,7 +122,7 @@ Method Summary
        
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
-     - :ref:`rxFactory <io_realm_RealmConfiguration_Builder_rxFactory__RxObservableFactory__>` (**RxObservableFactory (?)** factory)
+     - :ref:`rxFactory <io_realm_RealmConfiguration_Builder_rxFactory__RxObservableFactory__>` (:ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` factory)
        
        Sets the **RxObservableFactory (?)** used to create Rx Observables from Realm objects.
        
@@ -132,7 +132,7 @@ Method Summary
        
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
-     - :ref:`flowFactory <io_realm_RealmConfiguration_Builder_flowFactory__FlowFactory__>` (**FlowFactory (?)** factory)
+     - :ref:`flowFactory <io_realm_RealmConfiguration_Builder_flowFactory__FlowFactory__>` (:ref:`FlowFactory <io_realm_coroutines_FlowFactory>` factory)
        
        Sets the **FlowFactory (?)** used to create coroutines Flows from Realm objects.
        
@@ -375,7 +375,7 @@ FIXME: Temporary visible DEBUG method. Will add a module unconditionally. Adds a
 rxFactory
 ---------
 
-public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` rxFactory (**RxObservableFactory (?)** factory)
+public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` rxFactory (:ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` factory)
 
 Sets the **RxObservableFactory (?)** used to create Rx Observables from Realm objects. The default factory is **RealmObservableFactory (?)** .
 
@@ -393,7 +393,7 @@ Parameters
 flowFactory
 -----------
 
-public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` flowFactory (**FlowFactory (?)** factory)
+public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` flowFactory (:ref:`FlowFactory <io_realm_coroutines_FlowFactory>` factory)
 
 Sets the **FlowFactory (?)** used to create coroutines Flows from Realm objects. The default factory is **RealmFlowFactory (?)** .
 

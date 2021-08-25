@@ -161,7 +161,7 @@ Method Summary
        
        
    
-   * - public :ref:`RealmAny <io_realm_RealmAny>`
+   * - public **RealmAny (?)**
      - :ref:`getRealmAny <io_realm_DynamicRealmObject_getRealmAny__String__>` (**String (?)** fieldName)
        
        Returns the ``RealmAny`` value for a given field.
@@ -211,7 +211,7 @@ Method Summary
        
        
    
-   * - public :ref:`RealmDictionary <io_realm_RealmDictionary>`
+   * - public **<any> (?)**
      - :ref:`getDictionary <io_realm_DynamicRealmObject_getDictionary__String__>` (**String (?)** fieldName)
        
        Returns the **RealmDictionary (?)** of **DynamicRealmObject (?)** s being linked from the given field.
@@ -221,7 +221,7 @@ Method Summary
        
        
    
-   * - public :ref:`RealmDictionary <io_realm_RealmDictionary>`
+   * - public **<any> (?)**
      - :ref:`getDictionary <io_realm_DynamicRealmObject_getDictionary__String__Class_E___>` <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
        
        Returns the **RealmDictionary (?)** containing only primitive values.
@@ -231,7 +231,7 @@ Method Summary
        
        
    
-   * - public :ref:`RealmSet <io_realm_RealmSet>`
+   * - public **<any> (?)**
      - :ref:`getRealmSet <io_realm_DynamicRealmObject_getRealmSet__String__>` (**String (?)** fieldName)
        
        Returns the **RealmSet (?)** of **DynamicRealmObject (?)** s being linked from the given field.
@@ -241,7 +241,7 @@ Method Summary
        
        
    
-   * - public :ref:`RealmSet <io_realm_RealmSet>`
+   * - public **<any> (?)**
      - :ref:`getRealmSet <io_realm_DynamicRealmObject_getRealmSet__String__Class_E___>` <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
        
        Returns the **RealmSet (?)** containing only primitive values.
@@ -412,7 +412,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setRealmAny <io_realm_DynamicRealmObject_setRealmAny__String__RealmAny__>` (**String (?)** fieldName, :ref:`RealmAny <io_realm_RealmAny>` value)
+     - :ref:`setRealmAny <io_realm_DynamicRealmObject_setRealmAny__String__RealmAny__>` (**String (?)** fieldName, **RealmAny (?)** value)
        
        Sets the ``RealmAny`` value of the given field.
        
@@ -452,7 +452,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setDictionary <io_realm_DynamicRealmObject_setDictionary__String__RealmDictionary_E___>` <**E (?)** >(**String (?)** fieldName, :ref:`io.realm.RealmDictionary\<E> <io_realm_RealmDictionary>` dictionary)
+     - :ref:`setDictionary <io_realm_DynamicRealmObject_setDictionary__String___any___>` <**E (?)** >(**String (?)** fieldName, **<any> (?)** dictionary)
        
        Sets the reference to a **RealmDictionary (?)** on the given field.
        
@@ -462,7 +462,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setRealmSet <io_realm_DynamicRealmObject_setRealmSet__String__RealmSet_E___>` <**E (?)** >(**String (?)** fieldName, :ref:`io.realm.RealmSet\<E> <io_realm_RealmSet>` set)
+     - :ref:`setRealmSet <io_realm_DynamicRealmObject_setRealmSet__String___any___>` <**E (?)** >(**String (?)** fieldName, **<any> (?)** set)
        
        Sets the reference to a **RealmSet (?)** on the given field.
        
@@ -859,7 +859,7 @@ Throws
 getRealmAny
 -----------
 
-public :ref:`RealmAny <io_realm_RealmAny>` getRealmAny (**String (?)** fieldName)
+public **RealmAny (?)** getRealmAny (**String (?)** fieldName)
 
 Returns the ``RealmAny`` value for a given field.
 
@@ -972,7 +972,7 @@ Throws
 getDictionary
 -------------
 
-public :ref:`RealmDictionary <io_realm_RealmDictionary>` getDictionary (**String (?)** fieldName)
+public **<any> (?)** getDictionary (**String (?)** fieldName)
 
 Returns the **RealmDictionary (?)** of **DynamicRealmObject (?)** s being linked from the given field.
 
@@ -995,7 +995,7 @@ Throws
 getDictionary
 -------------
 
-public :ref:`RealmDictionary <io_realm_RealmDictionary>` getDictionary <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
+public **<any> (?)** getDictionary <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
 
 Returns the **RealmDictionary (?)** containing only primitive values.
 
@@ -1022,7 +1022,7 @@ Throws
 getRealmSet
 -----------
 
-public :ref:`RealmSet <io_realm_RealmSet>` getRealmSet (**String (?)** fieldName)
+public **<any> (?)** getRealmSet (**String (?)** fieldName)
 
 Returns the **RealmSet (?)** of **DynamicRealmObject (?)** s being linked from the given field.
 
@@ -1045,7 +1045,7 @@ Throws
 getRealmSet
 -----------
 
-public :ref:`RealmSet <io_realm_RealmSet>` getRealmSet <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
+public **<any> (?)** getRealmSet <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
 
 Returns the **RealmSet (?)** containing only primitive values.
 
@@ -1436,7 +1436,7 @@ Throws
 setRealmAny
 -----------
 
-public **void (?)** setRealmAny (**String (?)** fieldName, :ref:`RealmAny <io_realm_RealmAny>` value)
+public **void (?)** setRealmAny (**String (?)** fieldName, **RealmAny (?)** value)
 
 Sets the ``RealmAny`` value of the given field.
 
@@ -1533,12 +1533,12 @@ Parameters
 Throws
 ~~~~~~
 
-.. _io_realm_DynamicRealmObject_setDictionary__String__RealmDictionary_E___:
+.. _io_realm_DynamicRealmObject_setDictionary__String___any___:
 
 setDictionary
 -------------
 
-public **void (?)** setDictionary <**E (?)** >(**String (?)** fieldName, :ref:`io.realm.RealmDictionary\<E> <io_realm_RealmDictionary>` dictionary)
+public **void (?)** setDictionary <**E (?)** >(**String (?)** fieldName, **<any> (?)** dictionary)
 
 Sets the reference to a **RealmDictionary (?)** on the given field.
 
@@ -1560,12 +1560,12 @@ Parameters
 Throws
 ~~~~~~
 
-.. _io_realm_DynamicRealmObject_setRealmSet__String__RealmSet_E___:
+.. _io_realm_DynamicRealmObject_setRealmSet__String___any___:
 
 setRealmSet
 -----------
 
-public **void (?)** setRealmSet <**E (?)** >(**String (?)** fieldName, :ref:`io.realm.RealmSet\<E> <io_realm_RealmSet>` set)
+public **void (?)** setRealmSet <**E (?)** >(**String (?)** fieldName, **<any> (?)** set)
 
 Sets the reference to a **RealmSet (?)** on the given field.
 
