@@ -1,0 +1,121 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+io.realm.mongodb.UserIdentity
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _io_realm_mongodb_UserIdentity:
+
+*Superclass:*
+
+- **java.lang.Object (?)**
+
+Each User is represented by 1 or more identities each defined by an **Credentials.Provider (?)** . This class represents the identity defined by a specific provider.
+
+
+Method Summary
+==============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Method and Description
+   
+   * - public **String (?)**
+     - :ref:`getId <io_realm_mongodb_UserIdentity_getId____>` ()
+       
+       Returns a unique identifier for this identity.
+       
+       
+       
+       
+       
+   
+   * - public :ref:`Credentials.Provider <io_realm_mongodb_Credentials_Provider>`
+     - :ref:`getProvider <io_realm_mongodb_UserIdentity_getProvider____>` ()
+       
+       Returns the provider defining this identity.
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`equals <io_realm_mongodb_UserIdentity_equals__Object__>` (**Object (?)** o)
+       
+       
+       
+       
+       
+   
+   * - public **int (?)**
+     - :ref:`hashCode <io_realm_mongodb_UserIdentity_hashCode____>` ()
+       
+       
+       
+       
+       
+   
+   * - public **String (?)**
+     - :ref:`toString <io_realm_mongodb_UserIdentity_toString____>` ()
+       
+       
+       
+       
+       
+   
+   
+Method Detail
+=============
+
+.. _io_realm_mongodb_UserIdentity_getId____:
+
+getId
+-----
+
+public **String (?)** getId ()
+
+Returns a unique identifier for this identity.
+
+
+.. _io_realm_mongodb_UserIdentity_getProvider____:
+
+getProvider
+-----------
+
+public :ref:`Credentials.Provider <io_realm_mongodb_Credentials_Provider>` getProvider ()
+
+Returns the provider defining this identity.
+
+
+.. _io_realm_mongodb_UserIdentity_equals__Object__:
+
+equals
+------
+
+public **boolean (?)** equals (**Object (?)** o)
+
+
+.. _io_realm_mongodb_UserIdentity_hashCode____:
+
+hashCode
+--------
+
+public **int (?)** hashCode ()
+
+
+.. _io_realm_mongodb_UserIdentity_toString____:
+
+toString
+--------
+
+public **String (?)** toString ()
+
+
+

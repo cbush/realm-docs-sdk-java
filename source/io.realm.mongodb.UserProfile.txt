@@ -1,0 +1,279 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+io.realm.mongodb.UserProfile
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _io_realm_mongodb_UserProfile:
+
+*Superclass:*
+
+- **java.lang.Object (?)**
+
+
+Method Summary
+==============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Method and Description
+   
+   * - public **String (?)**
+     - :ref:`getName <io_realm_mongodb_UserProfile_getName____>` ()
+       
+       Returns the name of the user.
+       
+       
+       
+       
+       
+   
+   * - public **String (?)**
+     - :ref:`getEmail <io_realm_mongodb_UserProfile_getEmail____>` ()
+       
+       Returns the email address of the user.
+       
+       
+       
+       
+       
+   
+   * - public **String (?)**
+     - :ref:`getPictureUrl <io_realm_mongodb_UserProfile_getPictureUrl____>` ()
+       
+       Returns the picture URL of the user.
+       
+       
+       
+       
+       
+   
+   * - public **String (?)**
+     - :ref:`getFirstName <io_realm_mongodb_UserProfile_getFirstName____>` ()
+       
+       Return the first name of the user.
+       
+       
+       
+       
+       
+   
+   * - public **String (?)**
+     - :ref:`getLastName <io_realm_mongodb_UserProfile_getLastName____>` ()
+       
+       Return the last name of the user.
+       
+       
+       
+       
+       
+   
+   * - public **String (?)**
+     - :ref:`getGender <io_realm_mongodb_UserProfile_getGender____>` ()
+       
+       Returns the gender of the user.
+       
+       
+       
+       
+       
+   
+   * - public **String (?)**
+     - :ref:`getBirthday <io_realm_mongodb_UserProfile_getBirthday____>` ()
+       
+       Returns the birthday of the user.
+       
+       
+       
+       
+       
+   
+   * - public **Long (?)**
+     - :ref:`getMinAge <io_realm_mongodb_UserProfile_getMinAge____>` ()
+       
+       Returns the minimum age of the user.
+       
+       
+       
+       
+       
+   
+   * - public **Long (?)**
+     - :ref:`getMaxAge <io_realm_mongodb_UserProfile_getMaxAge____>` ()
+       
+       Returns the maximum age of the user.
+       
+       
+       
+       
+       
+   
+   * - public :ref:`User <io_realm_mongodb_User>`
+     - :ref:`getUser <io_realm_mongodb_UserProfile_getUser____>` ()
+       
+       Returns the **User (?)** that this instance in associated with.
+       
+       
+       
+       
+       
+   
+   * - public **String (?)**
+     - :ref:`toString <io_realm_mongodb_UserProfile_toString____>` ()
+       
+       
+       
+       
+       
+   
+   * - public **boolean (?)**
+     - :ref:`equals <io_realm_mongodb_UserProfile_equals__Object__>` (**Object (?)** o)
+       
+       
+       
+       
+       
+   
+   * - public **int (?)**
+     - :ref:`hashCode <io_realm_mongodb_UserProfile_hashCode____>` ()
+       
+       
+       
+       
+       
+   
+   
+Method Detail
+=============
+
+.. _io_realm_mongodb_UserProfile_getName____:
+
+getName
+-------
+
+public **String (?)** getName ()
+
+Returns the name of the user.
+
+
+.. _io_realm_mongodb_UserProfile_getEmail____:
+
+getEmail
+--------
+
+public **String (?)** getEmail ()
+
+Returns the email address of the user.
+
+
+.. _io_realm_mongodb_UserProfile_getPictureUrl____:
+
+getPictureUrl
+-------------
+
+public **String (?)** getPictureUrl ()
+
+Returns the picture URL of the user.
+
+
+.. _io_realm_mongodb_UserProfile_getFirstName____:
+
+getFirstName
+------------
+
+public **String (?)** getFirstName ()
+
+Return the first name of the user.
+
+
+.. _io_realm_mongodb_UserProfile_getLastName____:
+
+getLastName
+-----------
+
+public **String (?)** getLastName ()
+
+Return the last name of the user.
+
+
+.. _io_realm_mongodb_UserProfile_getGender____:
+
+getGender
+---------
+
+public **String (?)** getGender ()
+
+Returns the gender of the user.
+
+
+.. _io_realm_mongodb_UserProfile_getBirthday____:
+
+getBirthday
+-----------
+
+public **String (?)** getBirthday ()
+
+Returns the birthday of the user.
+
+
+.. _io_realm_mongodb_UserProfile_getMinAge____:
+
+getMinAge
+---------
+
+public **Long (?)** getMinAge ()
+
+Returns the minimum age of the user.
+
+
+.. _io_realm_mongodb_UserProfile_getMaxAge____:
+
+getMaxAge
+---------
+
+public **Long (?)** getMaxAge ()
+
+Returns the maximum age of the user.
+
+
+.. _io_realm_mongodb_UserProfile_getUser____:
+
+getUser
+-------
+
+public :ref:`User <io_realm_mongodb_User>` getUser ()
+
+Returns the **User (?)** that this instance in associated with.
+
+
+.. _io_realm_mongodb_UserProfile_toString____:
+
+toString
+--------
+
+public **String (?)** toString ()
+
+
+.. _io_realm_mongodb_UserProfile_equals__Object__:
+
+equals
+------
+
+public **boolean (?)** equals (**Object (?)** o)
+
+
+.. _io_realm_mongodb_UserProfile_hashCode____:
+
+hashCode
+--------
+
+public **int (?)** hashCode ()
+
+
+
