@@ -18,15 +18,18 @@ An  *App*  is the main client-side entry point for interacting with a  *MongoDB 
 
 The *App* can be used to:
 
-- Register uses and perform various user-related operations through authentication providers (
+- Register uses and perform various user-related operations through authentication providers (, )
    
    
-
-**io.realm.mongodb.auth.ApiKeyAuth (?)** , **EmailPasswordAuthImpl (?)** )
-
-**Functions (?)**
-
-**io.realm.mongodb.mongo.MongoClient (?)**
+- Synchronize data between the local device and a remote Realm App with Synchronized Realms
+   
+   
+- Invoke Realm App functions with
+   
+   
+- Access remote data from MongoDB databases with a
+   
+   
 
 To create an app that is linked with a remote *Realm App* initialize Realm and configure the *App* as shown below:
 
@@ -66,7 +69,7 @@ To register a new user and/or login with an existing user do as shown below:
         User user = APP.login(Credentials.emailPassword(username, password))
     
 
-With an authorized user you can synchronize data between the local device and the remote Realm App by opening a Realm with a **io.realm.mongodb.sync.SyncConfiguration (?)** as indicated below:
+With an authorized user you can synchronize data between the local device and the remote Realm App by opening a Realm with a as indicated below:
 
 .. code-block:: java
 
@@ -166,7 +169,7 @@ Method Summary
    * - public **Map (?)**
      - :ref:`allUsers <io_realm_mongodb_App_allUsers____>` ()
        
-       Returns all known users that are either **User.State#LOGGED_IN (?)** or **User.State#LOGGED_OUT (?)** .
+       Returns all known users that are either or .
        
        
        
@@ -216,7 +219,7 @@ Method Summary
    * - public :ref:`EmailPasswordAuth <io_realm_mongodb_auth_EmailPasswordAuth>`
      - :ref:`getEmailPassword <io_realm_mongodb_App_getEmailPassword____>` ()
        
-       Returns a wrapper for interacting with functionality related to users either being created or logged in using the **Credentials.Provider#EMAIL_PASSWORD (?)** identity provider.
+       Returns a wrapper for interacting with functionality related to users either being created or logged in using the identity provider.
        
        
        
@@ -296,7 +299,7 @@ Method Summary
    * - public **boolean (?)**
      - :ref:`equals <io_realm_mongodb_App_equals__Object__>` (**Object (?)** o)
        
-       Two Apps are considered equal and will share their underlying state if they both refer to the same **AppConfiguration#getAppId() (?)** .
+       Two Apps are considered equal and will share their underlying state if they both refer to the same .
        
        
        
@@ -349,7 +352,7 @@ allUsers
 
 public **Map (?)** allUsers ()
 
-Returns all known users that are either **User.State#LOGGED_IN (?)** or **User.State#LOGGED_OUT (?)** .
+Returns all known users that are either or .
 
 Only users that at some point logged into this device will be returned.
 
@@ -363,7 +366,7 @@ public :ref:`User <io_realm_mongodb_User>` switchUser (:ref:`User <io_realm_mong
 
 Switch current user.
 
-The current user is the user returned by **#currentUser() (?)** .
+The current user is the user returned by .
 
 
 Parameters
@@ -409,9 +412,9 @@ Logs in as a user with the given credentials associated with an authentication p
 
 The user who logs in becomes the current user. Other App functionality acts on behalf of the current user.
 
-If there was already a current user, that user is still logged in and can be found in the list returned by **#allUsers() (?)** .
+If there was already a current user, that user is still logged in and can be found in the list returned by .
 
-It is also possible to switch between which user is considered the current user by using **#switchUser(User) (?)** .
+It is also possible to switch between which user is considered the current user by using .
 
 
 Parameters
@@ -436,9 +439,9 @@ Logs in as a user with the given credentials associated with an authentication p
 
 The user who logs in becomes the current user. Other App functionality acts on behalf of the current user.
 
-If there was already a current user, that user is still logged in and can be found in the list returned by **#allUsers() (?)** .
+If there was already a current user, that user is still logged in and can be found in the list returned by .
 
-It is also possible to switch between which user is considered the current user by using **#switchUser(User) (?)** .
+It is also possible to switch between which user is considered the current user by using .
 
 
 Parameters
@@ -463,7 +466,7 @@ getEmailPassword
 
 public :ref:`EmailPasswordAuth <io_realm_mongodb_auth_EmailPasswordAuth>` getEmailPassword ()
 
-Returns a wrapper for interacting with functionality related to users either being created or logged in using the **Credentials.Provider#EMAIL_PASSWORD (?)** identity provider.
+Returns a wrapper for interacting with functionality related to users either being created or logged in using the identity provider.
 
 
 .. _io_realm_mongodb_App_addAuthenticationListener__AuthenticationListener__:
@@ -574,7 +577,7 @@ equals
 
 public **boolean (?)** equals (**Object (?)** o)
 
-Two Apps are considered equal and will share their underlying state if they both refer to the same **AppConfiguration#getAppId() (?)** .
+Two Apps are considered equal and will share their underlying state if they both refer to the same .
 
 
 .. _io_realm_mongodb_App_hashCode____:

@@ -14,30 +14,31 @@ io.realm.mongodb.sync.SyncConfiguration
 
 - :ref:`io.realm.RealmConfiguration <io_realm_RealmConfiguration>`
 
-A **SyncConfiguration (?)** is used to setup a Realm Database that can be synchronized between devices using MongoDB Realm.
+A is used to setup a Realm Database that can be synchronized between devices using MongoDB Realm.
 
-A valid **User (?)** is required to create a **SyncConfiguration (?)** . See **Credentials (?)** and **App#loginAsync(Credentials, App.Callback) (?)** for more information on how to get a user object.
+A valid is required to create a . See and for more information on how to get a user object.
 
-A minimal **SyncConfiguration (?)** can be found below.
+A minimal can be found below.
 
 .. code-block:: java
 
-    
-
-
-    App app = new App("app-id");
-    User user = app.login(Credentials.anonymous());
-    SyncConfiguration config = SyncConfiguration.defaultConfiguration(user, "partition-value");
-    Realm realm = Realm.getInstance(config);
+    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n App app = new App(\"app-id\");\n User user = app.login(Credentials.anonymous());\n SyncConfiguration config = SyncConfiguration.defaultConfiguration(user, \"partition-value\");\n Realm realm = Realm.getInstance(config);\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n App app = new App(\"app-id\");\n User user = app.login(Credentials.anonymous());\n SyncConfiguration config = SyncConfiguration.defaultConfiguration(user, \"partition-value\");\n Realm realm = Realm.getInstance(config);\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"App app = new App(\"app-id\");\n User user = app.login(Credentials.anonymous());\n SyncConfiguration config = SyncConfiguration.defaultConfiguration(user, \"partition-value\");\n Realm realm = Realm.getInstance(config);"}]}!!!preHtmlParseTagDelimiter!!!
     
 
 Synchronized Realms only support additive migrations which can be detected and performed automatically, so the following builder options are not accessible compared to a normal Realm:
 
-- 
+- ``deleteRealmIfMigrationNeeded()``
+   
+   
+   
+   
+- ``migration(Migration)``
+   
+   
+   
+   
 
-``deleteRealmIfMigrationNeeded()``
-
-``migration(Migration)`` Synchronized Realms are created by using **Realm#getInstance(RealmConfiguration) (?)** and **Realm#getDefaultInstance() (?)** like ordinary unsynchronized Realms.
+Synchronized Realms are created by using and like ordinary unsynchronized Realms.
 
 
 Nested Class Summary
@@ -65,7 +66,7 @@ Method Summary
    * - public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>`
      - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__byte[]__Object_____>` (**String (?)** canonicalPath, **byte[] (?)** encryptionKey, **java.lang.Object[] (?)** modules)
        
-       Returns a **RealmConfiguration (?)** appropriate to open a read-only, non-synced Realm to recover any pending changes.
+       Returns a appropriate to open a read-only, non-synced Realm to recover any pending changes.
        
        
        
@@ -115,7 +116,7 @@ Method Summary
    * - public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>`
      - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__>` (**String (?)** canonicalPath)
        
-       Returns a **RealmConfiguration (?)** appropriate to open a read-only, non-synced Realm to recover any pending changes.
+       Returns a appropriate to open a read-only, non-synced Realm to recover any pending changes.
        
        
        
@@ -197,7 +198,7 @@ Method Summary
    * - public **boolean (?)**
      - :ref:`shouldDeleteRealmOnLogout <io_realm_mongodb_sync_SyncConfiguration_shouldDeleteRealmOnLogout____>` ()
        
-       Returns ``true`` if the Realm file must be deleted once the **User (?)** owning it logs out.
+       Returns ``true`` if the Realm file must be deleted once the owning it logs out.
        
        
        
@@ -281,7 +282,7 @@ forRecovery
 
 public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (**String (?)** canonicalPath, **byte[] (?)** encryptionKey, **java.lang.Object[] (?)** modules)
 
-Returns a **RealmConfiguration (?)** appropriate to open a read-only, non-synced Realm to recover any pending changes. This is useful when trying to open a backup/recovery Realm (after a client reset).
+Returns a appropriate to open a read-only, non-synced Realm to recover any pending changes. This is useful when trying to open a backup/recovery Realm (after a client reset).
 
 
 Parameters
@@ -395,7 +396,7 @@ forRecovery
 
 public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (**String (?)** canonicalPath)
 
-Returns a **RealmConfiguration (?)** appropriate to open a read-only, non-synced Realm to recover any pending changes. This is useful when trying to open a backup/recovery Realm (after a client reset). Note: This will use the default Realm module (composed of all **RealmModel (?)** ), and assume no encryption should be used as well.
+Returns a appropriate to open a read-only, non-synced Realm to recover any pending changes. This is useful when trying to open a backup/recovery Realm (after a client reset). Note: This will use the default Realm module (composed of all ), and assume no encryption should be used as well.
 
 
 Parameters
@@ -485,7 +486,7 @@ shouldDeleteRealmOnLogout
 
 public **boolean (?)** shouldDeleteRealmOnLogout ()
 
-Returns ``true`` if the Realm file must be deleted once the **User (?)** owning it logs out.
+Returns ``true`` if the Realm file must be deleted once the owning it logs out.
 
 
 .. _io_realm_mongodb_sync_SyncConfiguration_shouldWaitForInitialRemoteData____:
@@ -507,7 +508,9 @@ public **long (?)** getInitialRemoteDataTimeout (**TimeUnit (?)** unit)
 
 Returns the timeout defined when downloading any initial data the first time the Realm is opened.
 
-This value is only applicable if **#shouldWaitForInitialRemoteData() (?)** returns ``true`` .
+This value is only applicable if returns ``true``.
+
+
 
 
 See Also

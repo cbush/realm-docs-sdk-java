@@ -14,29 +14,15 @@ io.realm.annotations.LinkingObjects
 
 - **java.lang.annotation.Annotation (?)**
 
-Annotation for defining a reverse relationship from one class to another. This annotation can only be added to a field of the type ``RealmResults`` .
+Annotation for defining a reverse relationship from one class to another. This annotation can only be added to a field of the type ``RealmResults``.
 
 .. code-block:: java
 
     To expose reverse relationships for use, create a declaration as follows:
+    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n\n public class Person extends RealmObject {\n   String name;\n   Dog dog; // Normal relation\n }\n\n public class Dog extends RealmObject {\n   // This holds all Person objects with a relation to this Dog object (= linking objects)\n   \\@LinkingObjects(\"dog\")\n   final RealmResults&gt;Person&lt; owners = null;\n }\n\n // Find all Dogs with at least one owner named John\n realm.where(Dog.class).equalTo(\"owners.name\", \"John\").findAll();\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n\n public class Person extends RealmObject {\n   String name;\n   Dog dog; // Normal relation\n }\n\n public class Dog extends RealmObject {\n   // This holds all Person objects with a relation to this Dog object (= linking objects)\n   \\@LinkingObjects(\"dog\")\n   final RealmResults&gt;Person&lt; owners = null;\n }\n\n // Find all Dogs with at least one owner named John\n realm.where(Dog.class).equalTo(\"owners.name\", \"John\").findAll();\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"public class Person extends RealmObject {\n   String name;\n   Dog dog; // Normal relation\n }\n\n public class Dog extends RealmObject {\n   // This holds all Person objects with a relation to this Dog object (= linking objects)\n   \\@LinkingObjects(\"dog\")\n   final RealmResults&gt;Person&lt; owners = null;\n }\n\n // Find all Dogs with at least one owner named John\n realm.where(Dog.class).equalTo(\"owners.name\", \"John\").findAll();"}]}!!!preHtmlParseTagDelimiter!!!
     
 
-
-   
-    public class Person extends RealmObject {
-      String name;
-      Dog dog; // Normal relation
-    }
-   
-    public class Dog extends RealmObject {
-      // This holds all Person objects with a relation to this Dog object (= linking objects)
-      \@LinkingObjects("dog")
-      final RealmResults&gt;Person&lt; owners = null;
-    }
-   
-    // Find all Dogs with at least one owner named John
-    realm.where(Dog.class).equalTo("owners.name", "John").findAll();
-     In the above example `Person` is related to `Dog` through the field `dog`. This in turn means that an implicit reverse relationship exists between the class `Dog` and the class `Person`. This inverse relationship is made public and queryable by the `RealmResults` field annotated with `@LinkingObject`. This makes it possible to query properties of the dogs owner without having to manually maintain a "owner" field in the `Dog` class.
+In the above example `Person` is related to `Dog` through the field `dog`. This in turn means that an implicit reverse relationship exists between the class `Dog` and the class `Person`. This inverse relationship is made public and queryable by the `RealmResults` field annotated with `@LinkingObject`. This makes it possible to query properties of the dogs owner without having to manually maintain a "owner" field in the `Dog` class.
 
 Linking objects have the following properties:
 
@@ -64,15 +50,32 @@ Linking objects have the following properties:
 
 In addition, they have the following restrictions:
 
-- 
-
-@ Ignore takes precedence. A @ LinkingObjects annotation on @ Ignore field will be ignored.
-
-@ Required.
+- @Ignore takes precedence. A @LinkingObjects annotation on @Ignore field will be ignored.
+   
+   
+   
+   
+- The annotated field cannot be @Required.
+   
+   
+   
+   
+- The annotated field must be `final`.
+   
+   
+- The annotation argument (the name of the backlinked field) is required.
+   
+   
+- The annotation argument must be a simple field name. It cannot contain periods ('.').
+   
+   
+- The annotated field must be of type `RealmResults<T>` where T is concrete class that extends `RealmModel`.
+   
+   
 
 Note that when the source of the reverse reference (`dog` in the case above) is a `List`, there is a reverse reference for each forward reference, even if both forward references are to the same object. If the `Person` class above were defined as: public class DogLover extends RealmObject {
-      String name;
-      List<Dog> dogs = new ArrayList<Dog>;
+    String name;
+    List<Dog> dogs = new ArrayList<Dog>;
     }
      then the following code executes without error Dog fido = new Dog();
     DogLover john = new DogLover()
@@ -82,7 +85,9 @@ Note that when the source of the reverse reference (`dog` in the case above) is 
     assert fido.owners.size() == 2;
     
 
-Querying inverse relationship is like querying any ``RealmResults`` . This means that an inverse relationship cannot be ``null`` but it can be empty (length is 0). It is possible to query fields in the source class. This is equivalent to link queries. Please read  `for more information <https://realm.io/docs/java/latest/#link-queries>`__ .
+Querying inverse relationship is like querying any ``RealmResults``. This means that an inverse relationship cannot be ``null`` but it can be empty (length is 0). It is possible to query fields in the source class. This is equivalent to link queries. Please read 
+
+`for more information <https://realm.io/docs/java/latest/#link-queries>`__.
 
 
 

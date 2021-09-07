@@ -14,7 +14,7 @@ io.realm.mongodb.mongo.MongoDatabase
 
 - **java.lang.Object (?)**
 
-The RemoteMongoDatabase provides access to its **Document (?)** **MongoCollection (?)** s.
+The RemoteMongoDatabase provides access to its s.
 
 
 Method Summary
@@ -101,7 +101,7 @@ Gets a collection, with a specific default document class.
 Type Parameters
 ~~~~~~~~~~~~~~~
 
-- DocumentT - the type of the class to use instead of ``Document`` .
+- DocumentT - the type of the class to use instead of ``Document``.
    
    
    

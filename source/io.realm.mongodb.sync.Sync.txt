@@ -16,7 +16,7 @@ io.realm.mongodb.sync.Sync
 
 A  *sync*  manager handling synchronization of local Realms with remote Realm Apps.
 
-The primary role of this is to access the **SyncSession (?)** for a synchronized Realm. After opening the synchronized Realm you can access the **SyncSession (?)** and perform synchronization related operations as shown below:
+The primary role of this is to access the for a synchronized Realm. After opening the synchronized Realm you can access the and perform synchronization related operations as shown below:
 
 .. code-block:: java
 
@@ -65,7 +65,7 @@ Method Summary
    * - public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`
      - :ref:`getSession <io_realm_mongodb_sync_Sync_getSession__SyncConfiguration__>` (:ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` syncConfiguration)
        
-       Gets a cached **SyncSession (?)** for the given **SyncConfiguration (?)** or throw if no one exists yet.
+       Gets a cached for the given or throw if no one exists yet.
        
        
        
@@ -75,7 +75,7 @@ Method Summary
    * - public synchronized **Collection (?)**
      - :ref:`getAllSessions <io_realm_mongodb_sync_Sync_getAllSessions____>` ()
        
-       Gets a collection of all the cached **SyncSession (?)** .
+       Gets a collection of all the cached .
        
        
        
@@ -85,7 +85,7 @@ Method Summary
    * - public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`
      - :ref:`getOrCreateSession <io_realm_mongodb_sync_Sync_getOrCreateSession__SyncConfiguration__>` (:ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` syncConfiguration)
        
-       Gets any cached **SyncSession (?)** for the given **SyncConfiguration (?)** or create a new one if no one exists.
+       Gets any cached for the given or create a new one if no one exists.
        
        
        
@@ -113,7 +113,7 @@ getSession
 
 public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` getSession (:ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` syncConfiguration)
 
-Gets a cached **SyncSession (?)** for the given **SyncConfiguration (?)** or throw if no one exists yet. A session should exist after you open a Realm with a **SyncConfiguration (?)** .
+Gets a cached for the given or throw if no one exists yet. A session should exist after you open a Realm with a .
 
 
 Parameters
@@ -134,7 +134,7 @@ getAllSessions
 
 public synchronized **Collection (?)** getAllSessions ()
 
-Gets a collection of all the cached **SyncSession (?)** .
+Gets a collection of all the cached .
 
 
 .. _io_realm_mongodb_sync_Sync_getOrCreateSession__SyncConfiguration__:
@@ -144,7 +144,7 @@ getOrCreateSession
 
 public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` getOrCreateSession (:ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` syncConfiguration)
 
-Gets any cached **SyncSession (?)** for the given **SyncConfiguration (?)** or create a new one if no one exists. Note: This is mainly for internal usage, consider using **#getSession(SyncConfiguration) (?)** instead.
+Gets any cached for the given or create a new one if no one exists. Note: This is mainly for internal usage, consider using instead.
 
 
 Parameters

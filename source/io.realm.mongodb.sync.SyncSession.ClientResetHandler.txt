@@ -10,7 +10,7 @@ io.realm.mongodb.sync.SyncSession.ClientResetHandler
 
 .. _io_realm_mongodb_sync_SyncSession_ClientResetHandler:
 
-Callback for the specific error event known as a Client Reset, determined by the error code **ErrorCode#CLIENT_RESET (?)** .
+Callback for the specific error event known as a Client Reset, determined by the error code .
 
 A synced Realm may need to be reset because the MongoDB Realm Server encountered an error and had to be restored from a backup or because it has been too long since the client connected to the server so the server has rotated the logs.
 
@@ -22,11 +22,12 @@ Data written to the Realm after the local copy of the Realm diverged from the ba
 
 The client reset process can be initiated in one of two ways:
 
-1. Run
+1. Run manually. All Realm instances must be closed before this method is called.
    
    
-
-**ClientResetRequiredError#executeClientReset() (?)** manually. All Realm instances must be closed before this method is called.
+#. If Client Reset isn't executed manually, it will automatically be carried out the next time all Realm instances have been closed and re-opened. This will most likely be when the app is restarted.
+   
+   
 
 **WARNING:**  Any writes to the Realm file between this callback and Client Reset has been executed, will not be synchronized to MongoDB Realm. Those changes will only be present in the backed up file. It is therefore recommended to close all open Realm instances as soon as possible.
 
@@ -67,11 +68,11 @@ Callback that indicates a Client Reset has happened. This should be handled as q
 Parameters
 ~~~~~~~~~~
 
-- session - **SyncSession (?)** this error happened on.
+- session - this error happened on.
    
    
    
-- error - **ClientResetRequiredError (?)** the specific Client Reset error.
+- error - the specific Client Reset error.
    
    
    

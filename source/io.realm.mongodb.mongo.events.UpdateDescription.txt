@@ -29,7 +29,7 @@ Method Summary
    * - public **BsonDocument (?)**
      - :ref:`getUpdatedFields <io_realm_mongodb_mongo_events_UpdateDescription_getUpdatedFields____>` ()
        
-       Returns a **BsonDocument (?)** containing keys and values representing (respectively) the fields that have changed in the corresponding update and their new values.
+       Returns a containing keys and values representing (respectively) the fields that have changed in the corresponding update and their new values.
        
        
        
@@ -39,7 +39,7 @@ Method Summary
    * - public **Collection (?)**
      - :ref:`getRemovedFields <io_realm_mongodb_mongo_events_UpdateDescription_getRemovedFields____>` ()
        
-       Returns a **List (?)** containing the field names that have been removed in the corresponding update.
+       Returns a containing the field names that have been removed in the corresponding update.
        
        
        
@@ -133,7 +133,7 @@ getUpdatedFields
 
 public **BsonDocument (?)** getUpdatedFields ()
 
-Returns a **BsonDocument (?)** containing keys and values representing (respectively) the fields that have changed in the corresponding update and their new values.
+Returns a containing keys and values representing (respectively) the fields that have changed in the corresponding update and their new values.
 
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_getRemovedFields____:
@@ -143,7 +143,7 @@ getRemovedFields
 
 public **Collection (?)** getRemovedFields ()
 
-Returns a **List (?)** containing the field names that have been removed in the corresponding update.
+Returns a containing the field names that have been removed in the corresponding update.
 
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_toUpdateDocument____:

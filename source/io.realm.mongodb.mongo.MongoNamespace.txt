@@ -110,7 +110,7 @@ Method Summary
    * - public **String (?)**
      - :ref:`toString <io_realm_mongodb_mongo_MongoNamespace_toString____>` ()
        
-       Returns the standard MongoDB representation of a namespace, which is ``&lt;database&gt;.&lt;collection&gt;`` .
+       Returns the standard MongoDB representation of a namespace, which is ``<database>.<collection>``.
        
        
        
@@ -145,7 +145,7 @@ checkDatabaseNameValidity
 
 public static **void (?)** checkDatabaseNameValidity (**String (?)** databaseName)
 
-Check the validity of the given database name. A valid database name is non-null, non-empty, and does not contain any of the following characters: ``'\0', '/', '\\', ' ', '"', '.'`` . The server may impose additional restrictions on database names.
+Check the validity of the given database name. A valid database name is non-null, non-empty, and does not contain any of the following characters: ``'\0', '/', '\\', ' ', '"', '.'``. The server may impose additional restrictions on database names.
 
 
 Parameters
@@ -225,7 +225,7 @@ toString
 
 public **String (?)** toString ()
 
-Returns the standard MongoDB representation of a namespace, which is ``&lt;database&gt;.&lt;collection&gt;`` .
+Returns the standard MongoDB representation of a namespace, which is ``<database>.<collection>``.
 
 
 .. _io_realm_mongodb_mongo_MongoNamespace_hashCode____:

@@ -33,48 +33,56 @@ Examples where this is useful:
 
 Depending on where the policy is applied, it will have slightly different semantics:
 
-- If applied to
+- If applied to all classes part of that module will be affected. If a class is part of multiple modules, the same naming policy must be applied to both modules, otherwise an error will be thrown.
    
    
-
-**RealmModule#classNamingPolicy (?)** all classes part of that module will be affected. If a class is part of multiple modules, the same naming policy must be applied to both modules, otherwise an error will be thrown.
-
-**RealmModule#fieldNamingPolicy (?)** all persistable fields in all classes part of this module will be affected.
-
-**RealmClass#fieldNamingPolicy (?)** all fields in that class will be affected. This will override any field naming policy specified on a module.
+- If applied to all persistable fields in all classes part of this module will be affected.
+   
+   
+- If applied to all fields in that class will be affected. This will override any field naming policy specified on a module.
+   
+   
 
 An example of this:
 
 .. code-block:: java
 
-    
-
-
-    \@RealmClass(name = "__person", fieldNamingPolicy = RealmNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
-    public class Person implements RealmModel { // is converted to "__person" internally
-        public string firstName; // Is converted to "first_name" internally
-    }
+    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n \\@RealmClass(name = \"__person\", fieldNamingPolicy = RealmNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)\n public class Person implements RealmModel { // is converted to \"__person\" internally\n     public string firstName; // Is converted to \"first_name\" internally\n }\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n \\@RealmClass(name = \"__person\", fieldNamingPolicy = RealmNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)\n public class Person implements RealmModel { // is converted to \"__person\" internally\n     public string firstName; // Is converted to \"first_name\" internally\n }\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\\@RealmClass(name = \"__person\", fieldNamingPolicy = RealmNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)\n public class Person implements RealmModel { // is converted to \"__person\" internally\n     public string firstName; // Is converted to \"first_name\" internally\n }"}]}!!!preHtmlParseTagDelimiter!!!
     
 
 Choosing an internal name that differs from the name used in the Java model classes has the following implications:
 
-- Queries on
+- Queries on ``DynamicRealm`` must use the internal name. Queries on normal ``Realm`` instances must continue to use the name as it is defined in the Java class.
    
    
-
-``DynamicRealm`` must use the internal name. Queries on normal ``Realm`` instances must continue to use the name as it is defined in the Java class.
+   
+   
+- Migrations must use the internal name when creating classes and fields.
+   
+   
+- Schema errors reported will use the internal names.
+   
+   
 
 When automatically converting Java variable names, each variable name is normalized by splitting it into a list of words that are then joined using the rules of the target format. The following heuristics are used for determining what constitutes a "word".
 
-1. Anytime a
+1. Anytime a ``_`` or ``$`` is encountered. Examples are "_FirstName", "_First_Name" and "$First$Name" which all becomes "First" and "Name".
    
    
-
-``_`` or ``$`` is encountered. Examples are "_FirstName", "_First_Name" and "$First$Name" which all becomes "First" and "Name".
-
-**Character#isUpperCase(int) (?)** and **Character#isLowerCase(int) (?)** . Example is "FirstName" which becomes "First" and "Name".
-
-**Character#isUpperCase(int) (?)** and **Character#isLowerCase(int) (?)** . Example is "FIRSTName" which becomes "FIRST" and "Name.
+   
+   
+#. Anytime you switch from a lower case character to an upper case character as identified by and . Example is "FirstName" which becomes "First" and "Name".
+   
+   
+#. Anytime you switch from more than one uppercase character to a lower case one. The last upper case letter is assumed to be part of the next word. This is identified by using and . Example is "FIRSTName" which becomes "FIRST" and "Name.
+   
+   
+#. Some characters like emojiis are neither uppercase nor lowercase characters, so they will be part of the current word. Examples are "my😁" and "MY😁" which are both treated as one word.
+   
+   
+#. Hungarian notation, i.e. variable names starting with lowercase "m" followed by uppercase letter is stripped and not considered part of any word. Example is "mFirstName" and "mFIRSTName" which becomes "First" and "Name.
+   
+   
 
 Note that changing the internal name does *NOT* affect importing data from JSON. The JSON data must still follow the names as defined in the Realm Java class.
 
@@ -86,14 +94,7 @@ Using Moshi, it would look something like this:
 
 .. code-block:: java
 
-    
-
-
-    public class Person extends RealmObject {
-        \@Json(name = "first_name") // Name used in JSON input.
-        \@RealmField(name = "first_name") // Name used internally in the Realm file.
-        public string firstName; // name used in Java
-    }
+    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n public class Person extends RealmObject {\n     \\@Json(name = \"first_name\") // Name used in JSON input.\n     \\@RealmField(name = \"first_name\") // Name used internally in the Realm file.\n     public string firstName; // name used in Java\n }\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n public class Person extends RealmObject {\n     \\@Json(name = \"first_name\") // Name used in JSON input.\n     \\@RealmField(name = \"first_name\") // Name used internally in the Realm file.\n     public string firstName; // name used in Java\n }\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"public class Person extends RealmObject {\n     \\@Json(name = \"first_name\") // Name used in JSON input."}]}!!!preHtmlParseTagDelimiter!!!
     
 
 

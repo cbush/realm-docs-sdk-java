@@ -77,9 +77,9 @@ executeClientReset
 
 public **void (?)** executeClientReset ()
 
-Calling this method will execute the Client Reset manually instead of waiting until next app restart. This will only be possible if all instances of that Realm have been closed, otherwise a **IllegalStateException (?)** will be thrown.
+Calling this method will execute the Client Reset manually instead of waiting until next app restart. This will only be possible if all instances of that Realm have been closed, otherwise a will be thrown.
 
-After this method returns, the backup file can be found in the location returned by **#getBackupFile() (?)** . The file at **#getOriginalFile() (?)** have been deleted, but will be recreated from scratch next time a Realm instance is opened.
+After this method returns, the backup file can be found in the location returned by . The file at have been deleted, but will be recreated from scratch next time a Realm instance is opened.
 
 
 Throws
@@ -102,7 +102,7 @@ getBackupRealmConfiguration
 
 public :ref:`RealmConfiguration <io_realm_RealmConfiguration>` getBackupRealmConfiguration ()
 
-The configuration that can be used to open the backup Realm offline. This configuration can only be used in combination with a **DynamicRealm (?)** .
+The configuration that can be used to open the backup Realm offline. This configuration can only be used in combination with a .
 
 
 .. _io_realm_mongodb_sync_ClientResetRequiredError_getOriginalFile____:

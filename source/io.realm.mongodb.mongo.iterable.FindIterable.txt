@@ -14,7 +14,7 @@ io.realm.mongodb.mongo.iterable.FindIterable<ResultT>
 
 - :ref:`io.realm.mongodb.mongo.iterable.MongoIterable <io_realm_mongodb_mongo_iterable_MongoIterable>`
 
-Specific iterable for **io.realm.mongodb.mongo.MongoCollection#find() (?)** operations.
+Specific iterable for operations.
 
 
 Constructors

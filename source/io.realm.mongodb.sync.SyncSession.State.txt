@@ -14,9 +14,11 @@ io.realm.mongodb.sync.SyncSession.State
 
 - **java.lang.Enum (?)**
 
-Enum describing the states a SyncSession can be in. The initial state is **State#INACTIVE (?)** .
+Enum describing the states a SyncSession can be in. The initial state is .
 
-A Realm will automatically synchronize data with the server if the session is either **State#ACTIVE (?)** or **State#DYING (?)** and **#isConnected() (?)** returns ``true`` .
+A Realm will automatically synchronize data with the server if the session is either or and returns ``true``.
+
+
 
 
 Method Summary

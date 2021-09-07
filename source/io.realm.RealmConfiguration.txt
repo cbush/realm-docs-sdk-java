@@ -16,11 +16,15 @@ io.realm.RealmConfiguration
 
 A RealmConfiguration is used to setup a specific Realm instance.
 
-Instances of a RealmConfiguration can only created by using the **io.realm.RealmConfiguration.Builder (?)** and calling its **io.realm.RealmConfiguration.Builder#build() (?)** method.
+Instances of a RealmConfiguration can only created by using the and calling its method.
 
-A commonly used RealmConfiguration can easily be accessed by first saving it as **Realm#setDefaultConfiguration(RealmConfiguration) (?)** and then using **io.realm.Realm#getDefaultInstance() (?)** .
+A commonly used RealmConfiguration can easily be accessed by first saving it as and then using .
 
-A minimal configuration can be created using: ``RealmConfiguration config = new RealmConfiguration.Builder().build()``
+A minimal configuration can be created using:
+
+``RealmConfiguration config = new RealmConfiguration.Builder().build()``
+
+
 
 This will create a RealmConfiguration with the following properties.
 
@@ -175,7 +179,7 @@ Method Summary
    * - public **Set (?)**
      - :ref:`getRealmObjectClasses <io_realm_RealmConfiguration_getRealmObjectClasses____>` ()
        
-       Returns the unmodifiable **Set (?)** of model classes that make up the schema for this Realm.
+       Returns the unmodifiable of model classes that make up the schema for this Realm.
        
        
        
@@ -205,7 +209,7 @@ Method Summary
    * - public :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>`
      - :ref:`getRxFactory <io_realm_RealmConfiguration_getRxFactory____>` ()
        
-       Returns the **RxObservableFactory (?)** that is used to create Rx Observables from Realm objects.
+       Returns the that is used to create Rx Observables from Realm objects.
        
        
        
@@ -215,7 +219,7 @@ Method Summary
    * - public :ref:`FlowFactory <io_realm_coroutines_FlowFactory>`
      - :ref:`getFlowFactory <io_realm_RealmConfiguration_getFlowFactory____>` ()
        
-       Returns the **FlowFactory (?)** that is used to create Kotlin Flows from Realm objects.
+       Returns the that is used to create Kotlin Flows from Realm objects.
        
        
        
@@ -251,7 +255,7 @@ Method Summary
    * - public **boolean (?)**
      - :ref:`isAllowWritesOnUiThread <io_realm_RealmConfiguration_isAllowWritesOnUiThread____>` ()
        
-       Returns whether calls to **Realm#executeTransaction (?)** can be done on the UI thread.
+       Returns whether calls to can be done on the UI thread.
        
        
        
@@ -261,7 +265,7 @@ Method Summary
    * - public **boolean (?)**
      - :ref:`isAllowQueriesOnUiThread <io_realm_RealmConfiguration_isAllowQueriesOnUiThread____>` ()
        
-       Returns whether a **RealmQuery (?)** is allowed to be launched from the UI thread.
+       Returns whether a is allowed to be launched from the UI thread.
        
        
        
@@ -428,7 +432,7 @@ getRealmObjectClasses
 
 public **Set (?)** getRealmObjectClasses ()
 
-Returns the unmodifiable **Set (?)** of model classes that make up the schema for this Realm.
+Returns the unmodifiable of model classes that make up the schema for this Realm.
 
 
 .. _io_realm_RealmConfiguration_getPath____:
@@ -460,7 +464,7 @@ getRxFactory
 
 public :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` getRxFactory ()
 
-Returns the **RxObservableFactory (?)** that is used to create Rx Observables from Realm objects.
+Returns the that is used to create Rx Observables from Realm objects.
 
 
 Throws
@@ -473,7 +477,7 @@ getFlowFactory
 
 public :ref:`FlowFactory <io_realm_coroutines_FlowFactory>` getFlowFactory ()
 
-Returns the **FlowFactory (?)** that is used to create Kotlin Flows from Realm objects.
+Returns the that is used to create Kotlin Flows from Realm objects.
 
 
 Throws
@@ -486,7 +490,7 @@ isReadOnly
 
 public **boolean (?)** isReadOnly ()
 
-Returns whether this Realm is read-only or not. Read-only Realms cannot be modified and will throw an **IllegalStateException (?)** if **Realm#beginTransaction() (?)** is called on it.
+Returns whether this Realm is read-only or not. Read-only Realms cannot be modified and will throw an if is called on it.
 
 
 .. _io_realm_RealmConfiguration_isRecoveryConfiguration____:
@@ -515,9 +519,9 @@ isAllowWritesOnUiThread
 
 public **boolean (?)** isAllowWritesOnUiThread ()
 
-Returns whether calls to **Realm#executeTransaction (?)** can be done on the UI thread.
+Returns whether calls to can be done on the UI thread.
 
-**Note: Realm does not allow blocking transactions to be run on the main thread unless users explicitly opt in with** **Builder#allowWritesOnUiThread(boolean) (?)** or its Realm Sync builder counterpart.
+**Note: Realm does not allow blocking transactions to be run on the main thread unless users explicitly opt in with or its Realm Sync builder counterpart.**
 
 
 .. _io_realm_RealmConfiguration_isAllowQueriesOnUiThread____:
@@ -527,9 +531,9 @@ isAllowQueriesOnUiThread
 
 public **boolean (?)** isAllowQueriesOnUiThread ()
 
-Returns whether a **RealmQuery (?)** is allowed to be launched from the UI thread.
+Returns whether a is allowed to be launched from the UI thread.
 
-By default Realm allows queries on the main thread. To disallow this users have to explicitly opt in with **Builder#allowQueriesOnUiThread(boolean) (?)** or its Realm Sync builder counterpart.
+By default Realm allows queries on the main thread. To disallow this users have to explicitly opt in with or its Realm Sync builder counterpart.
 
 
 .. _io_realm_RealmConfiguration_equals__Object__:

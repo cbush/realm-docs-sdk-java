@@ -14,7 +14,7 @@ Interface used when reporting changes that happened to the connection used by th
 
 Multiple sessions might re-use the same connection. In that case, any connection change will be reported to all sessions.
 
-If a disconnect happened due to an error, that error will be reported to the sessions **SyncSession.ErrorHandler (?)** .
+If a disconnect happened due to an error, that error will be reported to the sessions .
 
 
 Method Summary

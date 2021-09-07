@@ -49,7 +49,7 @@ Callback for errors on a session object. It is not allowed to throw an exception
 Parameters
 ~~~~~~~~~~
 
-- session - **SyncSession (?)** this error happened on.
+- session - this error happened on.
    
    
    

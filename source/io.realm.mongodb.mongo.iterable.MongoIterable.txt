@@ -16,7 +16,9 @@ io.realm.mongodb.mongo.iterable.MongoIterable<ResultT>
 
 The MongoIterable is the results from an operation, such as a ``find()`` or an ``aggregate()`` query.
 
-This class somewhat mimics the behavior of an **Iterable (?)** but given its results are obtained asynchronously, its values are wrapped inside a ``Task`` .
+This class somewhat mimics the behavior of an but given its results are obtained asynchronously, its values are wrapped inside a ``Task``.
+
+
 
 
 Field Summary
@@ -103,6 +105,8 @@ Returns a cursor of the operation represented by this iterable.
 The result is wrapped in a ``Task`` since the iterator should be capable of asynchronously retrieve documents from the server.
 
 
+
+
 .. _io_realm_mongodb_mongo_iterable_MongoIterable_first____:
 
 first
@@ -113,6 +117,8 @@ public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` first ()
 Helper to return the first item in the iterator or null.
 
 The result is wrapped in a ``Task`` since the iterator should be capable of asynchronously retrieve documents from the server.
+
+
 
 
 

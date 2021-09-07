@@ -18,19 +18,36 @@ io.realm.MutableRealmInteger
 
 - **java.lang.Comparable (?)**
 
-A ``MutableRealmInteger`` is a mutable, **Long (?)** -like numeric quantity. It behaves almost exactly as a reference to a **Long (?)** . More specifically:
+A ``MutableRealmInteger`` is a mutable, -like numeric quantity. It behaves almost exactly as a reference to a . More specifically:
 
-- A
+- A ``MutableRealmInteger`` may have the value ``null``.
+   
+   
+   
+   
+- The operator compares the contained values. ``null``-valued ``MutableRealmInteger`` are ``.equals``
+   
+   
+   
+   
+- The operator compares the contained values. It considers ``null`` < any non-``null`` value.
+   
+   
+   
+   
+- The and operators throw when applied to a ``null``-valued ``MutableRealmInteger``.
+   
+   
    
    
 
-``MutableRealmInteger`` may have the value ``null`` .
+``MutableRealmInteger``s are most interesting as members of a managed object. When managed, the and operators implement a 
 
-**#equals (?)** operator compares the contained **Long (?)** values. ``null`` -valued ``MutableRealmInteger`` are ``.equals``
+`conflict free replicated data type <https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type>`__: Simultaneous increments and decrements from multiple distributed clients will be aggregated correctly. For instance, if the value of ``counter`` field for the object representing user "Fred" is currently 0, then the following code, executed on two different devices, simultaneously, even if connected by only a slow, unreliable network, will 
 
-**#compareTo (?)** operator compares the contained **Long (?)** values. It considers ``null`` < any non- ``null`` value.
+**always** cause the value of ``counter`` to converge, eventually on the value 2.
 
-**#increment (?)** and **#decrement (?)** operators throw **IllegalStateException (?)** when applied to a ``null`` -valued ``MutableRealmInteger`` . ``MutableRealmInteger`` s are most interesting as members of a managed **RealmModel (?)** object. When managed, the **#increment (?)** and **#decrement (?)** operators implement a  `conflict free replicated data type <https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type>`__ : Simultaneous increments and decrements from multiple distributed clients will be aggregated correctly. For instance, if the value of ``counter`` field for the object representing user "Fred" is currently 0, then the following code, executed on two different devices, simultaneously, even if connected by only a slow, unreliable network, will  **always**  cause the value of ``counter`` to converge, eventually on the value 2.
+
 
 .. code-block:: java
 
@@ -40,37 +57,47 @@ A ``MutableRealmInteger`` is a mutable, **Long (?)** -like numeric quantity. It 
         .counter.increment(1);
     
 
-Note that the **#set(Long) (?)** operator must be used with extreme care. It will quash the effects of any prior calls to **#increment(long) (?)** or **#decrement(long) (?)** . Although the value of a ``MutableRealmInteger`` will always converge across devices, the specific value on which it converges will depend on the actual order in which operations took place. Mixing **#set(Long) (?)** with **#increment(long) (?)** and **#decrement(long) (?)** is, therefore, not advised, unless fuzzy counting is acceptable. ``MutableRealmInteger`` s may not be primary keys. Their implementations are not thread safe. Like all managed Realm objects, managed ``MutableRealmInteger`` s may not be moved across threads. Unmanaged ``MutableRealmInteger`` s may be moved across threads but require safe publication.
+Note that the operator must be used with extreme care. It will quash the effects of any prior calls to or . Although the value of a ``MutableRealmInteger`` will always converge across devices, the specific value on which it converges will depend on the actual order in which operations took place. Mixing with and is, therefore, not advised, unless fuzzy counting is acceptable.
 
-A ``MutableRealmInteger`` , in a model class, must always be declared ``final`` . For instance:
+``MutableRealmInteger``s may not be primary keys. Their implementations are not thread safe. Like all managed Realm objects, managed ``MutableRealmInteger``s may not be moved across threads. Unmanaged ``MutableRealmInteger``s may be moved across threads but require safe publication.
+
+
+
+A ``MutableRealmInteger``, in a model class, must always be declared ``final``. For instance:
+
+
+
+.. code-block:: java
+
+    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":" public final MutableRealmInteger counter = MutableRealmInteger.ofNull(); ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":" public final MutableRealmInteger counter = MutableRealmInteger.ofNull(); "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"public final MutableRealmInteger counter = MutableRealmInteger.ofNull();"}]}!!!preHtmlParseTagDelimiter!!!
+    
+
+Although initializing the ``MutableRealmInteger`` as ``null`` may work very limited circumstances, developers are advised  **not**  to do it:
+
+.. code-block:: java
+
+    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n  public final MutableRealmInteger counter = null; // DO NOT DO THIS! ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n  public final MutableRealmInteger counter = null; // DO NOT DO THIS! "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"public final MutableRealmInteger counter = null; // DO NOT DO THIS!"}]}!!!preHtmlParseTagDelimiter!!!
+    
+
+Also note that when a ``MutableRealmInteger`` is ``@Required``, it is better, though not required, to initialize it with a non-null value.
 
 .. code-block:: java
 
     
-
-`` public final MutableRealmInteger counter = MutableRealmInteger.ofNull(); `` Although initializing the ``MutableRealmInteger`` as ``null`` may work very limited circumstances, developers are advised  **not**  to do it:
-
-.. code-block:: java
-
+    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@literal","kind":"@literal","text":" @","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":" @"}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"@"}]}!!!preHtmlParseTagDelimiter!!!Required
+     public final MutableRealmInteger counter = MutableRealmInteger.valueOf(0L);
     
-
-
-     public final MutableRealmInteger counter = null; // DO NOT DO THIS!  Also note that when a ``MutableRealmInteger`` is ``@Required`` , it is better, though not required, to initialize it with a non-null value.
-
-.. code-block:: java
-
-    
-    
-
- @ Required public final MutableRealmInteger counter = MutableRealmInteger.valueOf(0L);
 
 A reference to a managed ``MutableRealmInteger`` is subject to all of the constraints that apply to the model object from which it was obtained: It can only be mutated within a transaction and it becomes invalid if the Realm backing it is closed. Use the ``isManaged()`` and ``isValid()`` operators to determine whether a ``MutableRealmInteger`` is in a consistent state. Note, in particular, that a reference to a managed ``MutableRealmInteger`` retains a reference to the model object to which it belongs. For example in this code:
 
+
+
 .. code-block:: java
 
+    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":" MutableRealmInteger counter = realm.where(Users.class).findFirst().counter; ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":" MutableRealmInteger counter = realm.where(Users.class).findFirst().counter; "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"MutableRealmInteger counter = realm.where(Users.class).findFirst().counter;"}]}!!!preHtmlParseTagDelimiter!!!
     
 
-`` MutableRealmInteger counter = realm.where(Users.class).findFirst().counter; `` the ``counter`` holds a reference to the ``User`` model object from which it was obtained. Neither can be GCed until all references to both are unreachable.
+the ``counter`` holds a reference to the ``User`` model object from which it was obtained. Neither can be GCed until all references to both are unreachable.
 
 
 Method Summary
@@ -95,7 +122,7 @@ Method Summary
    * - public static :ref:`MutableRealmInteger <io_realm_MutableRealmInteger>`
      - :ref:`ofNull <io_realm_MutableRealmInteger_ofNull____>` ()
        
-       Creates a new, unmanaged ``MutableRealmInteger`` whose value is ``null`` .
+       Creates a new, unmanaged ``MutableRealmInteger`` whose value is ``null``.
        
        
        
@@ -155,7 +182,7 @@ Method Summary
    * - public abstract **void (?)**
      - :ref:`increment <io_realm_MutableRealmInteger_increment__long__>` (**long (?)** inc)
        
-       Increments the ``MutableRealmInteger`` , adding the value of the argument.
+       Increments the ``MutableRealmInteger``, adding the value of the argument.
        
        
        
@@ -165,7 +192,7 @@ Method Summary
    * - public abstract **void (?)**
      - :ref:`decrement <io_realm_MutableRealmInteger_decrement__long__>` (**long (?)** dec)
        
-       Decrements the ``MutableRealmInteger`` , subtracting the value of the argument.
+       Decrements the ``MutableRealmInteger``, subtracting the value of the argument.
        
        
        
@@ -183,7 +210,7 @@ Method Summary
    * - public final **int (?)**
      - :ref:`compareTo <io_realm_MutableRealmInteger_compareTo__MutableRealmInteger__>` (:ref:`MutableRealmInteger <io_realm_MutableRealmInteger>` o)
        
-       ``MutableRealmInteger`` s compare strictly by their values.
+       ``MutableRealmInteger``s compare strictly by their values.
        
        
        
@@ -193,7 +220,7 @@ Method Summary
    * - public final **int (?)**
      - :ref:`hashCode <io_realm_MutableRealmInteger_hashCode____>` ()
        
-       A ``MutableRealmInteger`` 's hash code is, exactly, the hash code of its value.
+       A ``MutableRealmInteger``'s hash code is, exactly, the hash code of its value.
        
        
        
@@ -203,7 +230,7 @@ Method Summary
    * - public final **boolean (?)**
      - :ref:`equals <io_realm_MutableRealmInteger_equals__Object__>` (**Object (?)** o)
        
-       Two ``MutableRealmInteger`` s are ``.equals`` if and only if their ``longValues`` are equal.
+       Two ``MutableRealmInteger``s are ``.equals`` if and only if their ``longValues`` are equal.
        
        
        
@@ -239,7 +266,7 @@ ofNull
 
 public static :ref:`MutableRealmInteger <io_realm_MutableRealmInteger>` ofNull ()
 
-Creates a new, unmanaged ``MutableRealmInteger`` whose value is ``null`` .
+Creates a new, unmanaged ``MutableRealmInteger`` whose value is ``null``.
 
 
 .. _io_realm_MutableRealmInteger_valueOf__long__:
@@ -273,7 +300,7 @@ Creates a new, unmanaged ``MutableRealmInteger`` with the specified initial valu
 Parameters
 ~~~~~~~~~~
 
-- value - initial value: parsed by **Long#parseLong (?)** .
+- value - initial value: parsed by .
    
    
    
@@ -295,7 +322,7 @@ set
 
 public abstract **void (?)** set (**Long (?)** newValue)
 
-Sets the ``MutableRealmInteger`` value. Calling ``set`` forcibly sets the ``MutableRealmInteger`` to the provided value. Doing this obliterates the effects of any calls to **#increment (?)** and **#decrement (?)** perceived before the call to ``set`` .
+Sets the ``MutableRealmInteger`` value. Calling ``set`` forcibly sets the ``MutableRealmInteger`` to the provided value. Doing this obliterates the effects of any calls to and perceived before the call to ``set``.
 
 
 Parameters
@@ -313,7 +340,7 @@ set
 
 public final **void (?)** set (**long (?)** newValue)
 
-Sets the ``MutableRealmInteger`` value. Calling **#set (?)** forcibly sets the ``MutableRealmInteger`` to the provided value. Doing this obliterates the effects of any calls to **#increment (?)** and **#decrement (?)** perceived before the call to **#set (?)** .
+Sets the ``MutableRealmInteger`` value. Calling forcibly sets the ``MutableRealmInteger`` to the provided value. Doing this obliterates the effects of any calls to and perceived before the call to .
 
 
 Parameters
@@ -331,13 +358,13 @@ increment
 
 public abstract **void (?)** increment (**long (?)** inc)
 
-Increments the ``MutableRealmInteger`` , adding the value of the argument. Increment/decrement from all devices are reflected in the new value, which is guaranteed to converge.
+Increments the ``MutableRealmInteger``, adding the value of the argument. Increment/decrement from all devices are reflected in the new value, which is guaranteed to converge.
 
 
 Parameters
 ~~~~~~~~~~
 
-- inc - quantity to be added to the ``MutableRealmInteger`` .
+- inc - quantity to be added to the ``MutableRealmInteger``.
    
    
    
@@ -349,13 +376,13 @@ decrement
 
 public abstract **void (?)** decrement (**long (?)** dec)
 
-Decrements the ``MutableRealmInteger`` , subtracting the value of the argument. Increment/decrement from all devices are reflected in the new value, which is guaranteed to converge.
+Decrements the ``MutableRealmInteger``, subtracting the value of the argument. Increment/decrement from all devices are reflected in the new value, which is guaranteed to converge.
 
 
 Parameters
 ~~~~~~~~~~
 
-- dec - quantity to be subtracted from the ``MutableRealmInteger`` .
+- dec - quantity to be subtracted from the ``MutableRealmInteger``.
    
    
    
@@ -375,7 +402,7 @@ compareTo
 
 public final **int (?)** compareTo (:ref:`MutableRealmInteger <io_realm_MutableRealmInteger>` o)
 
-``MutableRealmInteger`` s compare strictly by their values. Null is a legal value for a ``MutableRealmInteger`` and ``null`` < any non- ``null`` value
+``MutableRealmInteger``s compare strictly by their values. Null is a legal value for a ``MutableRealmInteger`` and ``null`` < any non-``null`` value
 
 
 Parameters
@@ -393,7 +420,7 @@ hashCode
 
 public final **int (?)** hashCode ()
 
-A ``MutableRealmInteger`` 's hash code is, exactly, the hash code of its value.
+A ``MutableRealmInteger``'s hash code is, exactly, the hash code of its value.
 
 
 .. _io_realm_MutableRealmInteger_equals__Object__:
@@ -403,7 +430,7 @@ equals
 
 public final **boolean (?)** equals (**Object (?)** o)
 
-Two ``MutableRealmInteger`` s are ``.equals`` if and only if their ``longValues`` are equal.
+Two ``MutableRealmInteger``s are ``.equals`` if and only if their ``longValues`` are equal.
 
 
 Parameters
