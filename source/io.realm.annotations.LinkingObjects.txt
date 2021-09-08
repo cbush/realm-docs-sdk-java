@@ -41,7 +41,7 @@ Annotation for defining a reverse relationship from one class to another. This a
 
  
 
-In the above example `Person` is related to `Dog` through the field `dog`. This in turn means that an implicit reverse relationship exists between the class `Dog` and the class `Person`. This inverse relationship is made public and queryable by the `RealmResults` field annotated with `@LinkingObject`. This makes it possible to query properties of the dogs owner without having to manually maintain a "owner" field in the `Dog` class.Linking objects have the following properties:
+In the above example \`Person\` is related to \`Dog\` through the field \`dog\`. This in turn means that an implicit reverse relationship exists between the class \`Dog\` and the class \`Person\`. This inverse relationship is made public and queryable by the \`RealmResults\` field annotated with \`@LinkingObject\`. This makes it possible to query properties of the dogs owner without having to manually maintain a "owner" field in the \`Dog\` class.Linking objects have the following properties:
 
 - The link is maintained by Realm and only works for managed objects.
    
@@ -52,16 +52,16 @@ In the above example `Person` is related to `Dog` through the field `dog`. This 
 - They can be followed just like normal relation.
    
    
-- They are ignored when doing a `copyToRealm().`
+- They are ignored when doing a \`copyToRealm().\`
    
    
-- They are ignored when doing a `copyFromRealm().`
+- They are ignored when doing a \`copyFromRealm().\`
    
    
-- They are ignored when using the various `createObjectFromJson*` and `createAllFromJson*` methods.
+- They are ignored when using the various \`createObjectFromJson*\` and \`createAllFromJson*\` methods.
    
    
-- Listeners on an object with a `@LinkingObject` field will not be triggered if the linking objects change, e.g: if another object drops a reference to this object.
+- Listeners on an object with a \`@LinkingObject\` field will not be triggered if the linking objects change, e.g: if another object drops a reference to this object.
    
    
 
@@ -77,7 +77,7 @@ In addition, they have the following restrictions:
    
    
    
-- The annotated field must be `final`.
+- The annotated field must be \`final\`.
    
    
 - The annotation argument (the name of the backlinked field) is required.
@@ -86,11 +86,11 @@ In addition, they have the following restrictions:
 - The annotation argument must be a simple field name. It cannot contain periods ('.').
    
    
-- The annotated field must be of type `RealmResults<T>` where T is concrete class that extends `RealmModel`.
+- The annotated field must be of type \`RealmResults<T>\` where T is concrete class that extends \`RealmModel\`.
    
    
 
-Note that when the source of the reverse reference (`dog` in the case above) is a `List`, there is a reverse reference for each forward reference, even if both forward references are to the same object. If the `Person` class above were defined as: 
+Note that when the source of the reverse reference (\`dog\` in the case above) is a \`List\`, there is a reverse reference for each forward reference, even if both forward references are to the same object. If the \`Person\` class above were defined as: 
 
 .. code-block:: java
 
