@@ -15,7 +15,9 @@ io.realm.rx.ObjectChange<E extends io.realm.RealmModel>
 - **java.lang.Object (?)**
 
 Container wrapping the result of a **io.realm.RealmObjectChangeListener (?)** being triggered.
+
 This is used by **RealmObject#asChangesetObservable() (?)** and **RealmObject#asChangesetObservable(RealmModel) (?)** as RxJava is only capable of emitting one item, not multiple.
+
 
 
 
@@ -99,6 +101,7 @@ Returns the changeset describing the update.
 This will be ``null`` the first time the stream emits the object as well as when a asynchronous query is loaded for the first time.
 
 
+
  
     // Example
     realm.where(Person.class).findFirstAsync().asChangesetObservable()
@@ -110,6 +113,7 @@ This will be ``null`` the first time the stream emits the object as well as when
     });
     
  
+
 
 .. _io_realm_rx_ObjectChange_equals__Object__:
 

@@ -16,6 +16,7 @@ io.realm.exceptions.RealmFileException.Kind
 
 The specific kind of this **RealmFileException (?)**.
 
+
 Method Summary
 ==============
 

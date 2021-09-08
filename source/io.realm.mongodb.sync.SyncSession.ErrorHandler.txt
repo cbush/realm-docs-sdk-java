@@ -52,6 +52,7 @@ Parameters
 - session - **SyncSession (?)** this error happened on.
    
    
+   
 - error - type of error.
    
    

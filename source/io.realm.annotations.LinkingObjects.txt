@@ -15,6 +15,7 @@ io.realm.annotations.LinkingObjects
 - **java.lang.annotation.Annotation (?)**
 
 Annotation for defining a reverse relationship from one class to another. This annotation can only be added to a field of the type ``RealmResults``.
+
  To expose reverse relationships for use, create a declaration as follows:
  
    
@@ -32,8 +33,7 @@ Annotation for defining a reverse relationship from one class to another. This a
     // Find all Dogs with at least one owner named John
     realm.where(Dog.class).equalTo("owners.name", "John").findAll();
     
- 
-In the above example `Person` is related to `Dog` through the field `dog`. This in turn means that an implicit reverse relationship exists between the class `Dog` and the class `Person`. This inverse relationship is made public and queryable by the `RealmResults` field annotated with `@LinkingObject`. This makes it possible to query properties of the dogs owner without having to manually maintain a "owner" field in the `Dog` class.
+  In the above example `Person` is related to `Dog` through the field `dog`. This in turn means that an implicit reverse relationship exists between the class `Dog` and the class `Person`. This inverse relationship is made public and queryable by the `RealmResults` field annotated with `@LinkingObject`. This makes it possible to query properties of the dogs owner without having to manually maintain a "owner" field in the `Dog` class.
 
 Linking objects have the following properties:
 
@@ -65,7 +65,9 @@ In addition, they have the following restrictions:
    
    
    
+   
 - The annotated field cannot be @Required.
+   
    
    
    
@@ -93,7 +95,9 @@ Note that when the source of the reverse reference (`dog` in the case above) is 
     assert john.dogs.size() == 2;
     assert fido.owners.size() == 2;
     
+
 Querying inverse relationship is like querying any ``RealmResults``. This means that an inverse relationship cannot be ``null`` but it can be empty (length is 0). It is possible to query fields in the source class. This is equivalent to link queries. Please read 
+
 `for more information <https://realm.io/docs/java/latest/#link-queries>`__.
 
 

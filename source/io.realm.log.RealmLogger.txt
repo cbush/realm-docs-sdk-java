@@ -12,6 +12,7 @@ io.realm.log.RealmLogger
 
 Interface for custom loggers that can be registered at **RealmLog#add(RealmLogger) (?)**. The different log levels are described in **LogLevel (?)**.
 
+
 Method Summary
 ==============
 
@@ -49,6 +50,7 @@ Parameters
 ~~~~~~~~~~
 
 - level - for this log event. It can only be a value between :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>` and :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>`
+   
    
    
 - tag - for this log event.

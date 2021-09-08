@@ -11,6 +11,7 @@ io.realm.RealmModel
 .. _io_realm_RealmModel:
 
 Interface for marking classes as RealmObjects, it can be used instead of extending **RealmObject (?)**.
+
 All helper methods available to classes that extend RealmObject are instead available as static methods:
 
  
@@ -23,7 +24,9 @@ All helper methods available to classes that extend RealmObject are instead avai
       p.isValid();
     
  
+
 Note: Object implementing this interface needs also to be annotated with **RealmClass (?)**, so the annotation processor can generate the underlining proxy class.
+
 
 
 

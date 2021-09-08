@@ -11,6 +11,7 @@ io.realm.RealmMigration
 .. _io_realm_RealmMigration:
 
 The RealmMigration class is used to perform the migration of one Realm schema to another. The schema for a Realm is defined by all classes in a project that extend **io.realm.RealmObject (?)** or implement **io.realm.RealmModel (?)**, so any changes to these classes will require a migration.
+
 To support migrations from any previous schemaVersion to the newest, the following pattern is recommended when writing a migration:
 
  
@@ -36,7 +37,9 @@ To support migrations from any previous schemaVersion to the newest, the followi
     }
     
  
+
 During development when RealmObject classes can change frequently, it is possible to use **io.realm.Realm#deleteRealm(RealmConfiguration) (?)**. This will delete the database file and eliminate the need for any migrations.
+
 
 
 

@@ -16,6 +16,7 @@ io.realm.mongodb.RealmEventStreamAsyncTask<T>
 
 The RealmEventStreamAsyncTask is a specific version of **RealmAsyncTask (?)** that provides a non-blocking mechanism to work with asynchronous operations carried out against MongoDB Realm that yield stream results.
 
+
 Method Summary
 ==============
 
@@ -63,6 +64,7 @@ Parameters
 ~~~~~~~~~~
 
 - callback - the **App.Callback (?)** designed to receive event results.
+   
    
    
 

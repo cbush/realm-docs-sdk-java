@@ -55,6 +55,7 @@ Method Summary
        
        
        
+       
    
    * - public **String (?)**
      - :ref:`toString <io_realm_exceptions_RealmFileException_toString____>` ()
@@ -76,6 +77,7 @@ getKind
 public :ref:`RealmFileException.Kind <io_realm_exceptions_RealmFileException_Kind>` getKind ()
 
 Gets the **#kind (?)** of this exception.
+
 
 .. _io_realm_exceptions_RealmFileException_toString____:
 

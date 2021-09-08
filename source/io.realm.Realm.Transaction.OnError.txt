@@ -12,6 +12,7 @@ io.realm.Realm.Transaction.OnError
 
 Callback invoked to notify the caller thread about error during the transaction. The transaction will be rolled back and the background Realm will be closed before invoking **#onError(Throwable) (?)**.
 
+
 Method Summary
 ==============
 

@@ -16,6 +16,7 @@ io.realm.mongodb.AppException
 
 This class is a wrapper for all errors happening when communicating with a MongoDB Realm app. This include both exceptions and protocol errors. Only **#getErrorCode() (?)** is guaranteed to contain a value. If the error was caused by an underlying exception **#getErrorMessage() (?)** is ``null`` and **#getException() (?)** is set, while if the error was a protocol error **#getErrorMessage() (?)** is set and **#getException() (?)** is null.
 
+
 Constructors
 ============
 
@@ -39,6 +40,7 @@ Method Summary
      - :ref:`getErrorCode <io_realm_mongodb_AppException_getErrorCode____>` ()
        
        Returns the **ErrorCode (?)** identifying the type of error.
+       
        
        
        
@@ -92,6 +94,7 @@ Method Summary
        
        
        
+       
    
    * - public **String (?)**
      - :ref:`toString <io_realm_mongodb_AppException_toString____>` ()
@@ -113,7 +116,9 @@ getErrorCode
 public :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` getErrorCode ()
 
 Returns the **ErrorCode (?)** identifying the type of error.
+
 If **ErrorCode#UNKNOWN (?)** is returned, it means that the error could not be mapped to any known errors. In that case **#getErrorType() (?)** and **#getErrorIntValue() (?)** will return the underlying error information which can better identify the type of error.
+
 
 
 
@@ -138,6 +143,7 @@ getErrorIntValue
 public **int (?)** getErrorIntValue ()
 
 Returns an integer representing this specific type of error. This value is only unique within the value provided by **#getErrorType() (?)**.
+
 
 .. _io_realm_mongodb_AppException_getErrorMessage____:
 
@@ -167,6 +173,7 @@ getCategory
 public :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` getCategory ()
 
 Returns the **ErrorCode.Category (?)** category for this error. Errors that are **ErrorCode.Category#RECOVERABLE (?)** mean that it is still possible for a given **SyncSession (?)** to resume synchronization. **ErrorCode.Category#FATAL (?)** errors means that session has stopped and cannot be recovered.
+
 
 .. _io_realm_mongodb_AppException_toString____:
 

@@ -34,11 +34,13 @@ Method Summary
        
        
        
+       
    
    * - public **Collection (?)**
      - :ref:`getRemovedFields <io_realm_mongodb_mongo_events_UpdateDescription_getRemovedFields____>` ()
        
        Returns a **List (?)** containing the field names that have been removed in the corresponding update.
+       
        
        
        
@@ -133,6 +135,7 @@ public **BsonDocument (?)** getUpdatedFields ()
 
 Returns a **BsonDocument (?)** containing keys and values representing (respectively) the fields that have changed in the corresponding update and their new values.
 
+
 .. _io_realm_mongodb_mongo_events_UpdateDescription_getRemovedFields____:
 
 getRemovedFields
@@ -141,6 +144,7 @@ getRemovedFields
 public **Collection (?)** getRemovedFields ()
 
 Returns a **List (?)** containing the field names that have been removed in the corresponding update.
+
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_toUpdateDocument____:
 

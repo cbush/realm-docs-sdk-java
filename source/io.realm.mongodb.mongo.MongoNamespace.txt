@@ -115,6 +115,7 @@ Method Summary
        
        
        
+       
    
    * - public **int (?)**
      - :ref:`hashCode <io_realm_mongodb_mongo_MongoNamespace_hashCode____>` ()
@@ -145,6 +146,7 @@ checkDatabaseNameValidity
 public static **void (?)** checkDatabaseNameValidity (**String (?)** databaseName)
 
 Check the validity of the given database name. A valid database name is non-null, non-empty, and does not contain any of the following characters: ``'\0', '/', '\\', ' ', '"', '.'``. The server may impose additional restrictions on database names.
+
 
 Parameters
 ~~~~~~~~~~
@@ -224,6 +226,7 @@ toString
 public **String (?)** toString ()
 
 Returns the standard MongoDB representation of a namespace, which is ``<database>.<collection>``.
+
 
 .. _io_realm_mongodb_mongo_MongoNamespace_hashCode____:
 

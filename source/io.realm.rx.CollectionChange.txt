@@ -15,7 +15,9 @@ io.realm.rx.CollectionChange<E extends io.realm.OrderedRealmCollection>
 - **java.lang.Object (?)**
 
 Container wrapping the result of a **io.realm.OrderedRealmCollectionChangeListener (?)** being triggered.
+
 This is used by **RealmResults#asChangesetObservable() (?)**} and **RealmList#asChangesetObservable() (?)** as RxJava is only capable of emitting one item, not multiple.
+
 
 
 
@@ -95,6 +97,7 @@ Returns the changeset describing the update.
 This will be ``null`` the first time the stream emits the collection as well as when a asynchronous query is loaded for the first time.
 
 
+
  
     // Example
     realm.where(Person.class).findAllAsync().asChangesetObservable()
@@ -106,6 +109,7 @@ This will be ``null`` the first time the stream emits the collection as well as 
     });
     
  
+
 
 .. _io_realm_rx_CollectionChange_equals__Object__:
 

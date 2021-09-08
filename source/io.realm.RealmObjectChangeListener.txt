@@ -11,7 +11,9 @@ io.realm.RealmObjectChangeListener<T extends io.realm.RealmModel>
 .. _io_realm_RealmObjectChangeListener:
 
 ``RealmObjectChangeListener`` can be registered on a **RealmModel (?)** or **RealmObject (?)** to receive detailed notifications when an object changes.
+
 Realm instances on a thread without an **android.os.Looper (?)** cannot register a ``RealmObjectChangeListener``.
+
 
 
 Listener cannot be registered inside a transaction.
@@ -34,6 +36,7 @@ Method Summary
        
        
        
+       
    
    
 Method Detail
@@ -47,10 +50,13 @@ onChange
 public **void (?)** onChange (**T (?)** t, :ref:`ObjectChangeSet <io_realm_ObjectChangeSet>` changeSet)
 
 When this gets called to return the results of an asynchronous query made by **RealmQuery#findFirstAsync() (?)**, ``changeSet`` will be ``null``.
+
 When this gets called because the object was deleted, ``changeSet.isDeleted()`` will return ``true`` and ``changeSet.getFieldChanges()`` will return ``null``.
 
 
+
 When this gets called because the object was modified, ``changeSet.isDeleted()`` will return ``false`` and ``changeSet.getFieldChanges()`` will return the detailed information about the fields' changes.
+
 
 
 If a field points to another RealmObject this listener will only be triggered if the field is set to a new object or null. Updating the referenced RealmObject will not trigger this listener.
@@ -61,10 +67,12 @@ Changes to **LinkingObjects (?)** annotated **RealmResults (?)** fields will not
 
 
 
+
 Parameters
 ~~~~~~~~~~
 
 - t - the ``RealmObject`` this listener is registered to.
+   
    
    
 - changeSet - the detailed information about the changes.

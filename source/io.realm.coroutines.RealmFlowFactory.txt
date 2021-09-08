@@ -19,7 +19,9 @@ io.realm.coroutines.RealmFlowFactory
 - :ref:`io.realm.coroutines.FlowFactory <io_realm_coroutines_FlowFactory>`
 
 Factory class used to create coroutine **Flow (?)**s.
+
 This class is used by default unless overridden in **io.realm.RealmConfiguration.Builder#flowFactory(FlowFactory) (?)**.
+
 
 
 

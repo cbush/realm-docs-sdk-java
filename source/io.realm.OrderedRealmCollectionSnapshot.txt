@@ -15,7 +15,9 @@ io.realm.OrderedRealmCollectionSnapshot<E>
 - **io.realm.OrderedRealmCollectionImpl (?)**
 
 An **OrderedRealmCollectionSnapshot (?)** is a special type of **OrderedRealmCollection (?)**. It can be created by calling **OrderedRealmCollection#createSnapshot() (?)**. Unlike **RealmResults (?)** and **RealmList (?)**, its size and order of elements will never be changed after creation.
+
 **OrderedRealmCollectionSnapshot (?)** is useful when making changes which may impact the size or order of the collection in simple loops. For example:
+
 
 
  
@@ -36,6 +38,7 @@ An **OrderedRealmCollectionSnapshot (?)** is a special type of **OrderedRealmCol
     
  
 
+
 Method Summary
 ==============
 
@@ -53,11 +56,13 @@ Method Summary
        
        
        
+       
    
    * - public :ref:`RealmResults <io_realm_RealmResults>`
      - :ref:`sort <io_realm_OrderedRealmCollectionSnapshot_sort__String__>` (**String (?)** fieldName)
        
        Not supported by **OrderedRealmCollectionSnapshot (?)**.
+       
        
        
        
@@ -71,11 +76,13 @@ Method Summary
        
        
        
+       
    
    * - public :ref:`RealmResults <io_realm_RealmResults>`
      - :ref:`sort <io_realm_OrderedRealmCollectionSnapshot_sort__String__Sort__String__Sort__>` (**String (?)** fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, **String (?)** fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
        
        Not supported by **OrderedRealmCollectionSnapshot (?)**.
+       
        
        
        
@@ -89,6 +96,7 @@ Method Summary
        
        
        
+       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`where <io_realm_OrderedRealmCollectionSnapshot_where____>` ()
@@ -98,9 +106,11 @@ Method Summary
        
        
        
+       
    
    * - public **boolean (?)**
      - :ref:`isLoaded <io_realm_OrderedRealmCollectionSnapshot_isLoaded____>` ()
+       
        
        
        
@@ -116,9 +126,11 @@ Method Summary
        
        
        
+       
    
    * - public :ref:`OrderedRealmCollectionSnapshot <io_realm_OrderedRealmCollectionSnapshot>`
      - :ref:`createSnapshot <io_realm_OrderedRealmCollectionSnapshot_createSnapshot____>` ()
+       
        
        
        
@@ -195,6 +207,7 @@ public **int (?)** size ()
 
 
 
+
 .. _io_realm_OrderedRealmCollectionSnapshot_sort__String__:
 
 sort
@@ -203,6 +216,7 @@ sort
 public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldName)
 
 Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'sort()' on the original **OrderedRealmCollection (?)** instead.
+
 
 Throws
 ~~~~~~
@@ -216,6 +230,7 @@ public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldNam
 
 Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'sort()' on the original **OrderedRealmCollection (?)** instead.
 
+
 Throws
 ~~~~~~
 
@@ -227,6 +242,7 @@ sort
 public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, **String (?)** fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
 
 Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'sort()' on the original **OrderedRealmCollection (?)** instead.
+
 
 Throws
 ~~~~~~
@@ -240,6 +256,7 @@ public :ref:`RealmResults <io_realm_RealmResults>` sort (**java.lang.String[] (?
 
 Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'sort()' on the original **OrderedRealmCollection (?)** instead.
 
+
 Throws
 ~~~~~~
 
@@ -251,6 +268,7 @@ where
 public :ref:`RealmQuery <io_realm_RealmQuery>` where ()
 
 Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'where()' on the original **OrderedRealmCollection (?)** instead.
+
 
 Throws
 ~~~~~~
@@ -264,6 +282,7 @@ public **boolean (?)** isLoaded ()
 
 
 
+
 .. _io_realm_OrderedRealmCollectionSnapshot_load____:
 
 load
@@ -273,12 +292,14 @@ public **boolean (?)** load ()
 
 
 
+
 .. _io_realm_OrderedRealmCollectionSnapshot_createSnapshot____:
 
 createSnapshot
 --------------
 
 public :ref:`OrderedRealmCollectionSnapshot <io_realm_OrderedRealmCollectionSnapshot>` createSnapshot ()
+
 
 
 
