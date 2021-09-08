@@ -11,16 +11,32 @@ io.realm.RealmMigration
 .. _io_realm_RealmMigration:
 
 The RealmMigration class is used to perform the migration of one Realm schema to another. The schema for a Realm is defined by all classes in a project that extend **io.realm.RealmObject (?)** or implement **io.realm.RealmModel (?)**, so any changes to these classes will require a migration.
-
 To support migrations from any previous schemaVersion to the newest, the following pattern is recommended when writing a migration:
 
-.. code-block:: java
-
-    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n public class CustomMigration implements RealmMigration {\n   \\@Override\n   public long migrate(DynamicRealm realm, long oldVersion, long newVersion) {\n     RealmSchema schema = realm.getSchema();\n\n     if (oldVersion == 0) {\n       // Migrate from v0 to v1\n       oldVersion++;\n     }\n\n     if (oldVersion == 1) {\n       // Migrate from v1 to v2\n       oldVersion++;\n     }\n\n     if (oldVersion < newVersion) {\n         throw new IllegalStateException(String.format(Locale.US, \"Migration missing from v%d to v%d\", oldVersion, newVersion));\n     }\n   }\n }\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n public class CustomMigration implements RealmMigration {\n   \\@Override\n   public long migrate(DynamicRealm realm, long oldVersion, long newVersion) {\n     RealmSchema schema = realm.getSchema();\n\n     if (oldVersion == 0) {\n       // Migrate from v0 to v1\n       oldVersion++;\n     }\n\n     if (oldVersion == 1) {\n       // Migrate from v1 to v2\n       oldVersion++;\n     }\n\n     if (oldVersion < newVersion) {\n         throw new IllegalStateException(String.format(Locale.US, \"Migration missing from v%d to v%d\", oldVersion, newVersion));\n     }\n   }\n }\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"public class CustomMigration implements RealmMigration {\n   \\@Override\n   public long migrate(DynamicRealm realm, long oldVersion, long newVersion) {\n     RealmSchema schema = realm.getSchema();\n\n     if (oldVersion == 0) {\n       // Migrate from v0 to v1\n       oldVersion++;\n     }\n\n     if (oldVersion == 1) {\n       // Migrate from v1 to v2\n       oldVersion++;\n     }\n\n     if (oldVersion < newVersion) {\n         throw new IllegalStateException(String.format(Locale.US, \"Migration missing from v%d to v%d\", oldVersion, newVersion));\n     }\n   }\n }"}]}!!!preHtmlParseTagDelimiter!!!
+ 
+    public class CustomMigration implements RealmMigration {
+      \@Override
+      public long migrate(DynamicRealm realm, long oldVersion, long newVersion) {
+        RealmSchema schema = realm.getSchema();
+   
+        if (oldVersion == 0) {
+          // Migrate from v0 to v1
+          oldVersion++;
+        }
+   
+        if (oldVersion == 1) {
+          // Migrate from v1 to v2
+          oldVersion++;
+        }
+   
+        if (oldVersion < newVersion) {
+            throw new IllegalStateException(String.format(Locale.US, "Migration missing from v%d to v%d", oldVersion, newVersion));
+        }
+      }
+    }
     
-
+ 
 During development when RealmObject classes can change frequently, it is possible to use **io.realm.Realm#deleteRealm(RealmConfiguration) (?)**. This will delete the database file and eliminate the need for any migrations.
-
 
 
 

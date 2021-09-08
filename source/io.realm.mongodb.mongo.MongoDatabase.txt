@@ -16,7 +16,6 @@ io.realm.mongodb.mongo.MongoDatabase
 
 The RemoteMongoDatabase provides access to its **Document (?)** **MongoCollection (?)**s.
 
-
 Method Summary
 ==============
 
@@ -102,7 +101,6 @@ Type Parameters
 ~~~~~~~~~~~~~~~
 
 - DocumentT - the type of the class to use instead of ``Document``.
-   
    
    
 

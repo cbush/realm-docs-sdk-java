@@ -19,9 +19,7 @@ A AppConfiguration is used to setup a MongoDB Realm application.
 Instances of a AppConfiguration can only created by using the **AppConfiguration.Builder (?)** and calling its **AppConfiguration.Builder#build() (?)** method.
 
 
-
 Configuring a App is only required if the default settings are not enough. Otherwise calling ``new App("app-id")`` is sufficient.
-
 
 
 
@@ -190,13 +188,11 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`SyncSession.ClientResetHandler <io_realm_mongodb_sync_SyncSession_ClientResetHandler>`
      - :ref:`getDefaultClientResetHandler <io_realm_mongodb_AppConfiguration_getDefaultClientResetHandler____>` ()
        
        Returns the default Client Reset handler used by synced Realms if there are problems with their **SyncSession (?)**.
-       
        
        
        
@@ -220,13 +216,11 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`HttpLogObfuscator <io_realm_mongodb_log_obfuscator_HttpLogObfuscator>`
      - :ref:`getHttpLogObfuscator <io_realm_mongodb_AppConfiguration_getHttpLogObfuscator____>` ()
        
        Returns the **HttpLogObfuscator (?)** used in the app, which keeps sensitive information in HTTP requests from being displayed in the logcat.
-       
        
        
        
@@ -294,7 +288,6 @@ loginObfuscators
 Default obfuscators for login requests used in a MongoDB Realm app.
 
 This map is needed to instantiate the default **HttpLogObfuscator (?)**, which will keep all login-sensitive information from being shown in Logcat.
-
 
 
 This map's keys represent the different login identity providers which can be used to authenticate against an app and the values are the concrete obfuscators used for that provider.
@@ -392,7 +385,6 @@ public :ref:`SyncSession.ErrorHandler <io_realm_mongodb_sync_SyncSession_ErrorHa
 
 Returns the default error handler used by synced Realms if there are problems with their **SyncSession (?)**.
 
-
 .. _io_realm_mongodb_AppConfiguration_getDefaultClientResetHandler____:
 
 getDefaultClientResetHandler
@@ -401,7 +393,6 @@ getDefaultClientResetHandler
 public :ref:`SyncSession.ClientResetHandler <io_realm_mongodb_sync_SyncSession_ClientResetHandler>` getDefaultClientResetHandler ()
 
 Returns the default Client Reset handler used by synced Realms if there are problems with their **SyncSession (?)**.
-
 
 .. _io_realm_mongodb_AppConfiguration_getSyncRootDirectory____:
 
@@ -422,7 +413,6 @@ public **CodecRegistry (?)** getDefaultCodecRegistry ()
 
 Returns the default codec registry used to encode and decode BSON arguments and results when calling remote Realm **io.realm.mongodb.functions.Functions (?)** and accessing a remote **io.realm.mongodb.mongo.MongoDatabase (?)**.
 
-
 See Also
 ~~~~~~~~
 
@@ -434,7 +424,6 @@ getHttpLogObfuscator
 public :ref:`HttpLogObfuscator <io_realm_mongodb_log_obfuscator_HttpLogObfuscator>` getHttpLogObfuscator ()
 
 Returns the **HttpLogObfuscator (?)** used in the app, which keeps sensitive information in HTTP requests from being displayed in the logcat.
-
 
 .. _io_realm_mongodb_AppConfiguration_equals__Object__:
 

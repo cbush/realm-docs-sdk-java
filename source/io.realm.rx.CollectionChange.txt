@@ -15,9 +15,7 @@ io.realm.rx.CollectionChange<E extends io.realm.OrderedRealmCollection>
 - **java.lang.Object (?)**
 
 Container wrapping the result of a **io.realm.OrderedRealmCollectionChangeListener (?)** being triggered.
-
 This is used by **RealmResults#asChangesetObservable() (?)**} and **RealmList#asChangesetObservable() (?)** as RxJava is only capable of emitting one item, not multiple.
-
 
 
 
@@ -97,12 +95,17 @@ Returns the changeset describing the update.
 This will be ``null`` the first time the stream emits the collection as well as when a asynchronous query is loaded for the first time.
 
 
-
-.. code-block:: java
-
-    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n // Example\n realm.where(Person.class).findAllAsync().asChangesetObservable()\n   .subscribe(new Consumer<CollectionChange>() {\n    \\@Override\n     public void accept(CollectionChange item) throws Exception {\n       item.getChangeset(); // Will return null the first two times\n   }\n });\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n // Example\n realm.where(Person.class).findAllAsync().asChangesetObservable()\n   .subscribe(new Consumer<CollectionChange>() {\n    \\@Override\n     public void accept(CollectionChange item) throws Exception {\n       item.getChangeset(); // Will return null the first two times\n   }\n });\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"// Example\n realm.where(Person.class).findAllAsync().asChangesetObservable()\n   .subscribe(new Consumer<CollectionChange>() {\n    \\@Override\n     public void accept(CollectionChange item) throws Exception {\n       item.getChangeset(); // Will return null the first two times\n   }\n });"}]}!!!preHtmlParseTagDelimiter!!!
+ 
+    // Example
+    realm.where(Person.class).findAllAsync().asChangesetObservable()
+      .subscribe(new Consumer<CollectionChange>() {
+       \@Override
+        public void accept(CollectionChange item) throws Exception {
+          item.getChangeset(); // Will return null the first two times
+      }
+    });
     
-
+ 
 
 .. _io_realm_rx_CollectionChange_equals__Object__:
 

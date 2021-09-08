@@ -39,13 +39,11 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`App <io_realm_mongodb_App>`
      - :ref:`getApp <io_realm_mongodb_auth_ApiKeyAuth_getApp____>` ()
        
        Returns the **App (?)** that this instance in associated with.
-       
        
        
        
@@ -216,7 +214,6 @@ public :ref:`User <io_realm_mongodb_User>` getUser ()
 
 Returns the **User (?)** that this instance in associated with.
 
-
 .. _io_realm_mongodb_auth_ApiKeyAuth_getApp____:
 
 getApp
@@ -225,7 +222,6 @@ getApp
 public :ref:`App <io_realm_mongodb_App>` getApp ()
 
 Returns the **App (?)** that this instance in associated with.
-
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_create__String__:
 
@@ -239,7 +235,6 @@ Creates a user API key that can be used to authenticate as the user.
 The value of the key must be persisted at this time as this is the only time it is visible.
 
 The key is enabled when created. It can be disabled by calling **#disable(ObjectId) (?)**.
-
 
 
 
@@ -266,7 +261,6 @@ Asynchronously creates a user API key that can be used to authenticate as the us
 The value of the key must be persisted at this time as this is the only time it is visible.
 
 The key is enabled when created. It can be disabled by calling **#disable(ObjectId) (?)**.
-
 
 
 

@@ -12,7 +12,6 @@ io.realm.mongodb.App.Callback<T>
 
 Callback for async methods available to the **App (?)**.
 
-
 Method Summary
 ==============
 

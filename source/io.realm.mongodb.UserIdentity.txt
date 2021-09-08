@@ -16,7 +16,6 @@ io.realm.mongodb.UserIdentity
 
 Each User is represented by 1 or more identities each defined by an **Credentials.Provider (?)**. This class represents the identity defined by a specific provider.
 
-
 Method Summary
 ==============
 

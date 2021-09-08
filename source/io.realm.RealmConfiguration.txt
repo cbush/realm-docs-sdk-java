@@ -19,15 +19,12 @@ A RealmConfiguration is used to setup a specific Realm instance.
 Instances of a RealmConfiguration can only created by using the **io.realm.RealmConfiguration.Builder (?)** and calling its **io.realm.RealmConfiguration.Builder#build() (?)** method.
 
 
-
 A commonly used RealmConfiguration can easily be accessed by first saving it as **Realm#setDefaultConfiguration(RealmConfiguration) (?)** and then using **io.realm.Realm#getDefaultInstance() (?)**.
-
 
 
 A minimal configuration can be created using:
 
 ``RealmConfiguration config = new RealmConfiguration.Builder().build()``
-
 
 
 This will create a RealmConfiguration with the following properties.
@@ -188,7 +185,6 @@ Method Summary
        
        
        
-       
    
    * - public **String (?)**
      - :ref:`getPath <io_realm_RealmConfiguration_getPath____>` ()
@@ -218,13 +214,11 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`FlowFactory <io_realm_coroutines_FlowFactory>`
      - :ref:`getFlowFactory <io_realm_RealmConfiguration_getFlowFactory____>` ()
        
        Returns the **FlowFactory (?)** that is used to create Kotlin Flows from Realm objects.
-       
        
        
        
@@ -264,13 +258,11 @@ Method Summary
        
        
        
-       
    
    * - public **boolean (?)**
      - :ref:`isAllowQueriesOnUiThread <io_realm_RealmConfiguration_isAllowQueriesOnUiThread____>` ()
        
        Returns whether a **RealmQuery (?)** is allowed to be launched from the UI thread.
-       
        
        
        
@@ -438,7 +430,6 @@ public **Set (?)** getRealmObjectClasses ()
 
 Returns the unmodifiable **Set (?)** of model classes that make up the schema for this Realm.
 
-
 .. _io_realm_RealmConfiguration_getPath____:
 
 getPath
@@ -470,7 +461,6 @@ public :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` getRxFactory
 
 Returns the **RxObservableFactory (?)** that is used to create Rx Observables from Realm objects.
 
-
 Throws
 ~~~~~~
 
@@ -483,7 +473,6 @@ public :ref:`FlowFactory <io_realm_coroutines_FlowFactory>` getFlowFactory ()
 
 Returns the **FlowFactory (?)** that is used to create Kotlin Flows from Realm objects.
 
-
 Throws
 ~~~~~~
 
@@ -495,7 +484,6 @@ isReadOnly
 public **boolean (?)** isReadOnly ()
 
 Returns whether this Realm is read-only or not. Read-only Realms cannot be modified and will throw an **IllegalStateException (?)** if **Realm#beginTransaction() (?)** is called on it.
-
 
 .. _io_realm_RealmConfiguration_isRecoveryConfiguration____:
 
@@ -524,9 +512,7 @@ isAllowWritesOnUiThread
 public **boolean (?)** isAllowWritesOnUiThread ()
 
 Returns whether calls to **Realm#executeTransaction (?)** can be done on the UI thread.
-
 **Note: Realm does not allow blocking transactions to be run on the main thread unless users explicitly opt in with \*\*Builder#allowWritesOnUiThread(boolean) (?)\*\* or its Realm Sync builder counterpart.
-
 **
 
 
@@ -538,9 +524,7 @@ isAllowQueriesOnUiThread
 public **boolean (?)** isAllowQueriesOnUiThread ()
 
 Returns whether a **RealmQuery (?)** is allowed to be launched from the UI thread.
-
 By default Realm allows queries on the main thread. To disallow this users have to explicitly opt in with **Builder#allowQueriesOnUiThread(boolean) (?)** or its Realm Sync builder counterpart.
-
 
 
 

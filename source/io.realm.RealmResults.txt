@@ -15,9 +15,7 @@ io.realm.RealmResults<E>
 - **io.realm.OrderedRealmCollectionImpl (?)**
 
 This class holds all the matches of a **RealmQuery (?)** for a given Realm. The objects are not copied from the Realm to the RealmResults list, but are just referenced from the RealmResult instead. This saves memory and increases speed.
-
 RealmResults are live views, which means that if it is on an **Looper (?)** thread, it will automatically update its query results after a transaction has been committed. If on a non-looper thread, **Realm#refresh() (?)** must be called to update the results.
-
 
 
 Updates to RealmObjects from a RealmResults list must be done from within a transaction and the modified objects are persisted to the Realm file during the commit of the transaction.
@@ -27,13 +25,10 @@ A RealmResults object cannot be passed between different threads.
 Notice that a RealmResults is never ``null`` not even in the case where it contains no objects. You should always use the **RealmResults#size() (?)** method to check if a RealmResults is empty or not.
 
 
-
 If a RealmResults is built on RealmList through **RealmList#where() (?)**, it will become empty when the source RealmList gets deleted.
 
 
-
 **RealmResults (?)** can contain more elements than ``Integer.MAX_VALUE``. In that case, you can access only first ``Integer.MAX_VALUE`` elements in it.
-
 
 
 
@@ -54,11 +49,9 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`RealmResults <io_realm_RealmResults>`
      - :ref:`sort <io_realm_RealmResults_sort__String__Sort__String__Sort__>` (**String (?)** fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, **String (?)** fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
-       
        
        
        
@@ -70,7 +63,6 @@ Method Summary
      - :ref:`isLoaded <io_realm_RealmResults_isLoaded____>` ()
        
        Returns ``false`` if the results are not yet loaded, ``true`` if they are loaded.
-       
        
        
        
@@ -94,13 +86,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setNull <io_realm_RealmResults_setNull__String__>` (**String (?)** fieldName)
        
        Sets the value to ``null`` for the given field in all of the objects in the collection.
-       
        
        
        
@@ -114,13 +104,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setByte <io_realm_RealmResults_setByte__String__byte__>` (**String (?)** fieldName, **byte (?)** value)
        
        Sets the ``byte`` value of the given field in all of the objects in the collection.
-       
        
        
        
@@ -134,13 +122,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setInt <io_realm_RealmResults_setInt__String__int__>` (**String (?)** fieldName, **int (?)** value)
        
        Sets the ``int`` value of the given field in all of the objects in the collection.
-       
        
        
        
@@ -154,13 +140,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setFloat <io_realm_RealmResults_setFloat__String__float__>` (**String (?)** fieldName, **float (?)** value)
        
        Sets the ``float`` value of the given field in all of the objects in the collection.
-       
        
        
        
@@ -174,13 +158,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setString <io_realm_RealmResults_setString__String__String__>` (**String (?)** fieldName, **String (?)** value)
        
        Sets the ``String`` value of the given field in all of the objects in the collection.
-       
        
        
        
@@ -204,7 +186,6 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setObject <io_realm_RealmResults_setObject__String__RealmModel__>` (**String (?)** fieldName, :ref:`RealmModel <io_realm_RealmModel>` value)
@@ -224,7 +205,6 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setObjectId <io_realm_RealmResults_setObjectId__String__ObjectId__>` (**String (?)** fieldName, **ObjectId (?)** value)
@@ -234,13 +214,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setUUID <io_realm_RealmResults_setUUID__String__UUID__>` (**String (?)** fieldName, **UUID (?)** value)
        
        Sets the ``UUID`` value of the given field in all of the objects in the collection.
-       
        
        
        
@@ -264,11 +242,9 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`RealmResults <io_realm_RealmResults>`
      - :ref:`freeze <io_realm_RealmResults_freeze____>` ()
-       
        
        
        
@@ -284,13 +260,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`addChangeListener <io_realm_RealmResults_addChangeListener__OrderedRealmCollectionChangeListener_RealmResults_E____>` (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmResults\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
        
        Adds a change listener to this **RealmResults (?)**.
-       
        
        
        
@@ -354,7 +328,6 @@ Method Summary
        
        
        
-       
    
    
 Method Detail
@@ -369,14 +342,12 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` where ()
 
 
 
-
 .. _io_realm_RealmResults_sort__String__Sort__String__Sort__:
 
 sort
 ----
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, **String (?)** fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
-
 
 
 
@@ -389,7 +360,6 @@ public **boolean (?)** isLoaded ()
 
 Returns ``false`` if the results are not yet loaded, ``true`` if they are loaded.
 
-
 .. _io_realm_RealmResults_load____:
 
 load
@@ -399,7 +369,6 @@ public **boolean (?)** load ()
 
 Makes an asynchronous query blocking. This will also trigger any registered **RealmChangeListener (?)** when the query completes.
 
-
 .. _io_realm_RealmResults_setValue__String__Object__:
 
 setValue
@@ -408,13 +377,10 @@ setValue
 public **void (?)** setValue (**String (?)** fieldName, **Object (?)** value)
 
 Updates the field given by ``fieldName`` in all objects inside the query result.
-
 This method will automatically try to convert numbers and booleans that are given as ``String`` to their appropriate type. For example ``"10"`` will be converted to ``10`` if the field type is **RealmFieldType#INTEGER (?)**.
 
 
-
 Using the typed setters like **#setInt(String, int) (?)** will be faster than using this method.
-
 
 
 
@@ -442,7 +408,6 @@ public **void (?)** setNull (**String (?)** fieldName)
 
 Sets the value to ``null`` for the given field in all of the objects in the collection.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -462,7 +427,6 @@ setBoolean
 public **void (?)** setBoolean (**String (?)** fieldName, **boolean (?)** value)
 
 Sets the ``boolean`` value of the given field in all of the objects in the collection.
-
 
 Parameters
 ~~~~~~~~~~
@@ -488,7 +452,6 @@ public **void (?)** setByte (**String (?)** fieldName, **byte (?)** value)
 
 Sets the ``byte`` value of the given field in all of the objects in the collection.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -512,7 +475,6 @@ setShort
 public **void (?)** setShort (**String (?)** fieldName, **short (?)** value)
 
 Sets the ``short`` value of the given field in all of the objects in the collection.
-
 
 Parameters
 ~~~~~~~~~~
@@ -538,7 +500,6 @@ public **void (?)** setInt (**String (?)** fieldName, **int (?)** value)
 
 Sets the ``int`` value of the given field in all of the objects in the collection.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -562,7 +523,6 @@ setLong
 public **void (?)** setLong (**String (?)** fieldName, **long (?)** value)
 
 Sets the ``long`` value of the given field in all of the objects in the collection.
-
 
 Parameters
 ~~~~~~~~~~
@@ -588,7 +548,6 @@ public **void (?)** setFloat (**String (?)** fieldName, **float (?)** value)
 
 Sets the ``float`` value of the given field in all of the objects in the collection.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -613,7 +572,6 @@ public **void (?)** setDouble (**String (?)** fieldName, **double (?)** value)
 
 Sets the ``double`` value of the given field in all of the objects in the collection.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -637,7 +595,6 @@ setString
 public **void (?)** setString (**String (?)** fieldName, **String (?)** value)
 
 Sets the ``String`` value of the given field in all of the objects in the collection.
-
 
 Parameters
 ~~~~~~~~~~
@@ -688,7 +645,6 @@ public **void (?)** setDate (**String (?)** fieldName, **Date (?)** value)
 
 Sets the ``Date`` value of the given field in all of the objects in the collection.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -738,7 +694,6 @@ public **void (?)** setDecimal128 (**String (?)** fieldName, **Decimal128 (?)** 
 
 Sets the ``Decimal128`` value of the given field in all of the objects in the collection.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -763,7 +718,6 @@ public **void (?)** setObjectId (**String (?)** fieldName, **ObjectId (?)** valu
 
 Sets the ``ObjectId`` value of the given field in all of the objects in the collection.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -787,7 +741,6 @@ setUUID
 public **void (?)** setUUID (**String (?)** fieldName, **UUID (?)** value)
 
 Sets the ``UUID`` value of the given field in all of the objects in the collection.
-
 
 Parameters
 ~~~~~~~~~~
@@ -838,14 +791,12 @@ public **boolean (?)** isFrozen ()
 
 
 
-
 .. _io_realm_RealmResults_freeze____:
 
 freeze
 ------
 
 public :ref:`RealmResults <io_realm_RealmResults>` freeze ()
-
 
 
 
@@ -857,14 +808,27 @@ addChangeListener
 public **void (?)** addChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmResults\<E>> <io_realm_RealmChangeListener>` listener)
 
 Adds a change listener to this **RealmResults (?)**.
-
 Registering a change listener will not prevent the underlying RealmResults from being garbage collected. If the RealmResults is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
-.. code-block:: java
-
-    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n public class MyActivity extends Activity {\n\n     private RealmResults<Person> results; // Strong reference to keep listeners alive\n\n     \\@Override\n     protected void onCreate(Bundle savedInstanceState) {\n       super.onCreate(savedInstanceState);\n       results = realm.where(Person.class).findAllAsync();\n       results.addChangeListener(new RealmChangeListener<RealmResults<Person>>() {\n           \\@Override\n           public void onChange(RealmResults<Person> persons) {\n               // React to change\n           }\n       });\n     }\n }\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n public class MyActivity extends Activity {\n\n     private RealmResults<Person> results; // Strong reference to keep listeners alive\n\n     \\@Override\n     protected void onCreate(Bundle savedInstanceState) {\n       super.onCreate(savedInstanceState);\n       results = realm.where(Person.class).findAllAsync();\n       results.addChangeListener(new RealmChangeListener<RealmResults<Person>>() {\n           \\@Override\n           public void onChange(RealmResults<Person> persons) {\n               // React to change\n           }\n       });\n     }\n }\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"public class MyActivity extends Activity {\n\n     private RealmResults<Person> results; // Strong reference to keep listeners alive\n\n     \\@Override\n     protected void onCreate(Bundle savedInstanceState) {\n       super.onCreate(savedInstanceState);\n       results = realm.where(Person.class).findAllAsync();\n       results.addChangeListener(new RealmChangeListener<RealmResults<Person>>() {\n           \\@Override\n           public void onChange(RealmResults<Person> persons) {\n               // React to change\n           }\n       });\n     }\n }"}]}!!!preHtmlParseTagDelimiter!!!
+ 
+    public class MyActivity extends Activity {
+   
+        private RealmResults<Person> results; // Strong reference to keep listeners alive
+   
+        \@Override
+        protected void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          results = realm.where(Person.class).findAllAsync();
+          results.addChangeListener(new RealmChangeListener<RealmResults<Person>>() {
+              \@Override
+              public void onChange(RealmResults<Person> persons) {
+                  // React to change
+              }
+          });
+        }
+    }
     
-
+ 
 
 Parameters
 ~~~~~~~~~~
@@ -885,14 +849,27 @@ addChangeListener
 public **void (?)** addChangeListener (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmResults\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
 
 Adds a change listener to this **RealmResults (?)**.
-
 Registering a change listener will not prevent the underlying RealmResults from being garbage collected. If the RealmResults is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
-.. code-block:: java
-
-    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n public class MyActivity extends Activity {\n\n     private RealmResults<Person> results; // Strong reference to keep listeners alive\n\n     \\@Override\n     protected void onCreate(Bundle savedInstanceState) {\n       super.onCreate(savedInstanceState);\n       results = realm.where(Person.class).findAllAsync();\n       results.addChangeListener(new OrderedRealmCollectionChangeListener<RealmResults<Person>>() {\n           \\@Override\n           public void onChange(RealmResults<Person> persons, OrderedCollectionChangeSet changeSet) {\n               // React to change\n           }\n       });\n     }\n }\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n public class MyActivity extends Activity {\n\n     private RealmResults<Person> results; // Strong reference to keep listeners alive\n\n     \\@Override\n     protected void onCreate(Bundle savedInstanceState) {\n       super.onCreate(savedInstanceState);\n       results = realm.where(Person.class).findAllAsync();\n       results.addChangeListener(new OrderedRealmCollectionChangeListener<RealmResults<Person>>() {\n           \\@Override\n           public void onChange(RealmResults<Person> persons, OrderedCollectionChangeSet changeSet) {\n               // React to change\n           }\n       });\n     }\n }\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"public class MyActivity extends Activity {\n\n     private RealmResults<Person> results; // Strong reference to keep listeners alive\n\n     \\@Override\n     protected void onCreate(Bundle savedInstanceState) {\n       super.onCreate(savedInstanceState);\n       results = realm.where(Person.class).findAllAsync();\n       results.addChangeListener(new OrderedRealmCollectionChangeListener<RealmResults<Person>>() {\n           \\@Override\n           public void onChange(RealmResults<Person> persons, OrderedCollectionChangeSet changeSet) {\n               // React to change\n           }\n       });\n     }\n }"}]}!!!preHtmlParseTagDelimiter!!!
+ 
+    public class MyActivity extends Activity {
+   
+        private RealmResults<Person> results; // Strong reference to keep listeners alive
+   
+        \@Override
+        protected void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          results = realm.where(Person.class).findAllAsync();
+          results.addChangeListener(new OrderedRealmCollectionChangeListener<RealmResults<Person>>() {
+              \@Override
+              public void onChange(RealmResults<Person> persons, OrderedCollectionChangeSet changeSet) {
+                  // React to change
+              }
+          });
+        }
+    }
     
-
+ 
 
 Parameters
 ~~~~~~~~~~
@@ -977,9 +954,7 @@ asFlowable
 public **<any> (?)** asFlowable ()
 
 Returns an Rx Flowable that monitors changes to this RealmResults. It will emit the current RealmResults when subscribed to. RealmResults will continually be emitted as the RealmResults are updated - ``onComplete`` will never be called.
-
 Items emitted from Realm Flowables are frozen (See **#freeze() (?)**. This means that they are immutable and can be read on any thread.
-
 
 
 Realm Flowables always emit items from the thread holding the live RealmResults. This means that if you need to do further processing, it is recommend to observe the values on a computation scheduler:
@@ -992,16 +967,16 @@ realm.where(Foo.class).findAllAsync().asFlowable()
     
 
 
-
 If you would like the ``asFlowable()`` to stop emitting items you can instruct RxJava to only emit only the first item by using the ``first()`` operator:
 
 
-
-.. code-block:: java
-
-    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n realm.where(Foo.class).findAllAsync().asFlowable()\n      .filter(results -> results.isLoaded())\n      .first()\n      .subscribe( ... ) // You only get the results once\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n realm.where(Foo.class).findAllAsync().asFlowable()\n      .filter(results -> results.isLoaded())\n      .first()\n      .subscribe( ... ) // You only get the results once\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"realm.where(Foo.class).findAllAsync().asFlowable()\n      .filter(results -> results.isLoaded())\n      .first()\n      .subscribe( ..."}]}!!!preHtmlParseTagDelimiter!!!
+ 
+    realm.where(Foo.class).findAllAsync().asFlowable()
+         .filter(results -> results.isLoaded())
+         .first()
+         .subscribe( ... ) // You only get the results once
     
-
+ 
 
 Throws
 ~~~~~~
@@ -1017,13 +992,10 @@ asChangesetObservable
 public **<any> (?)** asChangesetObservable ()
 
 Returns an Rx Observable that monitors changes to this RealmResults. It will emit the current RealmResults when subscribed. For each update to the RealmResult a pair consisting of the RealmResults and the **OrderedCollectionChangeSet (?)** will be sent. The changeset will be ``null`` the first time an RealmResults is emitted.
-
 RealmResults will continually be emitted as the RealmResults are updated - ``onComplete`` will never be called.
 
 
-
 Items emitted from Realm Observables are frozen (See **#freeze() (?)**. This means that they are immutable and can be read on any thread.
-
 
 
 Realm Observables always emit items from the thread holding the live Realm. This means that if you need to do further processing, it is recommend to observe the values on a computation scheduler:
@@ -1034,7 +1006,6 @@ realm.where(Foo.class).findAllAsync().asChangesetObservable()
     .observeOn(AndroidSchedulers.mainThread())
     .subscribe( ... );
     
-
 
 
 
@@ -1052,6 +1023,5 @@ asJSON
 public **String (?)** asJSON ()
 
 Returns a JSON representation of the matches of a **RealmQuery (?)**. Cycles will be returned as row indices. This is a helper method used to inspect data, or for debugging purpose, this method could pull a large string which could cause an OutOfMemory error.
-
 
 

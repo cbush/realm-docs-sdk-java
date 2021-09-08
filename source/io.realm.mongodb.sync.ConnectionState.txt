@@ -16,7 +16,6 @@ io.realm.mongodb.sync.ConnectionState
 
 Enum describing the states of the underlying connection used by a **SyncSession (?)**.
 
-
 Method Summary
 ==============
 

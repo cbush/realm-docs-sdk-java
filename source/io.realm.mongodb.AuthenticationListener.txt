@@ -62,7 +62,6 @@ Parameters
 - user - **User (?)** that is now logged in.
    
    
-   
 
 .. _io_realm_mongodb_AuthenticationListener_loggedOut__User__:
 
@@ -78,7 +77,6 @@ Parameters
 ~~~~~~~~~~
 
 - user - **User (?)** that was successfully logged out.
-   
    
    
 

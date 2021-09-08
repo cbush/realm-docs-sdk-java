@@ -16,38 +16,53 @@ io.realm.OrderedRealmCollection<E>
 - :ref:`io.realm.RealmCollection <io_realm_RealmCollection>`
 
 An ``OrderedRealmCollection`` is a collection which maintains an ordering for its elements. Every element in the ``OrderedRealmCollection`` has an index. Each element can thus be accessed by its index, with the first index being zero. Normally, ``OrderedRealmCollection``s allow duplicate elements, as compared to Sets, where elements have to be unique.
-
 There are three types of **OrderedRealmCollection (?)**. **RealmResults (?)** and **RealmList (?)** are live collections. They are up-to-date all the time and they will never contain an invalid **RealmObject (?)**. **OrderedRealmCollectionSnapshot (?)** is different. An **OrderedRealmCollectionSnapshot (?)** can be created from another **OrderedRealmCollection (?)**. Its size and elements order stay the same as the original collection's when it was created. **OrderedRealmCollectionSnapshot (?)** may contain invalid **RealmObject (?)**s if the objects get deleted.
 
 
-
 Using iterators to iterate on **OrderedRealmCollection (?)** will always work. You can delete or modify the elements without impacting the iterator. See below example:
-
-.. code-block:: java
-
-    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n RealmResults<Dog> dogs = realm.where(Dog.class).findAll();\n int s = dogs.size(); // 10\n realm.beginTransaction();\n for (Dog dog : dogs) {\n     dog.deleteFromRealm();\n     s = dogs.size(); // This will be decreased by 1 every time after a dog is removed.\n }\n realm.commitTransaction();\n s = dogs.size(); // 0\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n RealmResults<Dog> dogs = realm.where(Dog.class).findAll();\n int s = dogs.size(); // 10\n realm.beginTransaction();\n for (Dog dog : dogs) {\n     dog.deleteFromRealm();\n     s = dogs.size(); // This will be decreased by 1 every time after a dog is removed.\n }\n realm.commitTransaction();\n s = dogs.size(); // 0\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"RealmResults<Dog> dogs = realm.where(Dog.class).findAll();\n int s = dogs.size(); // 10\n realm.beginTransaction();\n for (Dog dog : dogs) {\n     dog.deleteFromRealm();\n     s = dogs.size(); // This will be decreased by 1 every time after a dog is removed."}]}!!!preHtmlParseTagDelimiter!!!
+ 
+    RealmResults<Dog> dogs = realm.where(Dog.class).findAll();
+    int s = dogs.size(); // 10
+    realm.beginTransaction();
+    for (Dog dog : dogs) {
+        dog.deleteFromRealm();
+        s = dogs.size(); // This will be decreased by 1 every time after a dog is removed.
+    }
+    realm.commitTransaction();
+    s = dogs.size(); // 0
     
-
+ 
 An iterator created from a live collection will create a stable view when the iterator is created, allowing you to delete and modify elements while iterating without impacting the iterator. However, the ``RealmResults`` backing the iterator will still be live updated meaning that size and order of elements can change when iterating. **RealmList (?)** has the same behaviour as **RealmResults (?)** since they are both live collections.
-
 
 
 A simple for-loop is different. See below example:
 
-.. code-block:: java
-
-    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n RealmResults<Dog> dogs = realm.where(Dog.class).findAll();\n realm.beginTransaction();\n for (int i = 0; i < dogs.size(); i++) {\n     dogs.get(i).deleteFromRealm();\n }\n realm.commitTransaction();\n s = dogs.size(); // 5\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n RealmResults<Dog> dogs = realm.where(Dog.class).findAll();\n realm.beginTransaction();\n for (int i = 0; i < dogs.size(); i++) {\n     dogs.get(i).deleteFromRealm();\n }\n realm.commitTransaction();\n s = dogs.size(); // 5\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"RealmResults<Dog> dogs = realm.where(Dog.class).findAll();\n realm.beginTransaction();\n for (int i = 0; i < dogs.size(); i++) {\n     dogs.get(i).deleteFromRealm();\n }\n realm.commitTransaction();\n s = dogs.size(); // 5"}]}!!!preHtmlParseTagDelimiter!!!
+ 
+    RealmResults<Dog> dogs = realm.where(Dog.class).findAll();
+    realm.beginTransaction();
+    for (int i = 0; i < dogs.size(); i++) {
+        dogs.get(i).deleteFromRealm();
+    }
+    realm.commitTransaction();
+    s = dogs.size(); // 5
     
-
+ 
 The above example only deletes half of elements in the **RealmResults (?)**. This is because of ``dogs.size()`` decreased by 1 for every loop. The deletion happens in the loop will immediately impact the size of ``RealmResults``. To solve this problem, you can create a **OrderedRealmCollectionSnapshot (?)** from the **RealmResults (?)** or **RealmList (?)** and do simple for-loop on that instead:
 
 
-
-.. code-block:: java
-
-    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n RealmResults<Dog> dogs = realm.where(Dog.class).findAll();\n OrderedRealmCollectionSnapshot snapshot = dogs.createSnapshot();\n // dogs.size() == 10 && snapshot.size() == 10\n realm.beginTransaction();\n for (int i = 0; i < snapshot.size(); i++) {\n     snapshot.get(0).deleteFromRealm();\n     // snapshot.get(0).isValid() == false\n }\n realm.commitTransaction();\n // dogs.size() == 0 && snapshot.size() == 10\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n RealmResults<Dog> dogs = realm.where(Dog.class).findAll();\n OrderedRealmCollectionSnapshot snapshot = dogs.createSnapshot();\n // dogs.size() == 10 && snapshot.size() == 10\n realm.beginTransaction();\n for (int i = 0; i < snapshot.size(); i++) {\n     snapshot.get(0).deleteFromRealm();\n     // snapshot.get(0).isValid() == false\n }\n realm.commitTransaction();\n // dogs.size() == 0 && snapshot.size() == 10\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"RealmResults<Dog> dogs = realm.where(Dog.class).findAll();\n OrderedRealmCollectionSnapshot snapshot = dogs.createSnapshot();\n // dogs.size() == 10 && snapshot.size() == 10\n realm.beginTransaction();\n for (int i = 0; i < snapshot.size(); i++) {\n     snapshot.get(0).deleteFromRealm();\n     // snapshot.get(0).isValid() == false\n }\n realm.commitTransaction();\n // dogs.size() == 0 && snapshot.size() == 10"}]}!!!preHtmlParseTagDelimiter!!!
+ 
+    RealmResults<Dog> dogs = realm.where(Dog.class).findAll();
+    OrderedRealmCollectionSnapshot snapshot = dogs.createSnapshot();
+    // dogs.size() == 10 && snapshot.size() == 10
+    realm.beginTransaction();
+    for (int i = 0; i < snapshot.size(); i++) {
+        snapshot.get(0).deleteFromRealm();
+        // snapshot.get(0).isValid() == false
+    }
+    realm.commitTransaction();
+    // dogs.size() == 0 && snapshot.size() == 10
     
-
+ 
 As you can see, after deletion, the size and elements order of snapshot stay the same as before. But the element at the position becomes invalid.
 
 
@@ -174,7 +189,6 @@ Method Summary
      - :ref:`createSnapshot <io_realm_OrderedRealmCollection_createSnapshot____>` ()
        
        Creates a snapshot from this **OrderedRealmCollection (?)**.
-       
        
        
        
@@ -389,7 +403,6 @@ createSnapshot
 public :ref:`OrderedRealmCollectionSnapshot <io_realm_OrderedRealmCollectionSnapshot>` createSnapshot ()
 
 Creates a snapshot from this **OrderedRealmCollection (?)**.
-
 
 Throws
 ~~~~~~

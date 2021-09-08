@@ -15,24 +15,22 @@ io.realm.mongodb.sync.SyncConfiguration
 - :ref:`io.realm.RealmConfiguration <io_realm_RealmConfiguration>`
 
 A **SyncConfiguration (?)** is used to setup a Realm Database that can be synchronized between devices using MongoDB Realm.
-
 A valid **User (?)** is required to create a **SyncConfiguration (?)**. See **Credentials (?)** and **App#loginAsync(Credentials, App.Callback) (?)** for more information on how to get a user object.
-
 
 
 A minimal **SyncConfiguration (?)** can be found below.
 
 
-
-.. code-block:: java
-
-    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n App app = new App(\"app-id\");\n User user = app.login(Credentials.anonymous());\n SyncConfiguration config = SyncConfiguration.defaultConfiguration(user, \"partition-value\");\n Realm realm = Realm.getInstance(config);\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n App app = new App(\"app-id\");\n User user = app.login(Credentials.anonymous());\n SyncConfiguration config = SyncConfiguration.defaultConfiguration(user, \"partition-value\");\n Realm realm = Realm.getInstance(config);\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"App app = new App(\"app-id\");\n User user = app.login(Credentials.anonymous());\n SyncConfiguration config = SyncConfiguration.defaultConfiguration(user, \"partition-value\");\n Realm realm = Realm.getInstance(config);"}]}!!!preHtmlParseTagDelimiter!!!
+ 
+    App app = new App("app-id");
+    User user = app.login(Credentials.anonymous());
+    SyncConfiguration config = SyncConfiguration.defaultConfiguration(user, "partition-value");
+    Realm realm = Realm.getInstance(config);
     
-
+ 
 Synchronized Realms only support additive migrations which can be detected and performed automatically, so the following builder options are not accessible compared to a normal Realm:
 
 - ``deleteRealmIfMigrationNeeded()``
-   
    
    
    
@@ -40,10 +38,8 @@ Synchronized Realms only support additive migrations which can be detected and p
    
    
    
-   
 
 Synchronized Realms are created by using **Realm#getInstance(RealmConfiguration) (?)** and **Realm#getDefaultInstance() (?)** like ordinary unsynchronized Realms.
-
 
 Nested Class Summary
 ====================
@@ -71,7 +67,6 @@ Method Summary
      - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__byte[]__Object_____>` (**String (?)** canonicalPath, **byte[] (?)** encryptionKey, **java.lang.Object[] (?)** modules)
        
        Returns a **RealmConfiguration (?)** appropriate to open a read-only, non-synced Realm to recover any pending changes.
-       
        
        
        
@@ -121,7 +116,6 @@ Method Summary
      - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__>` (**String (?)** canonicalPath)
        
        Returns a **RealmConfiguration (?)** appropriate to open a read-only, non-synced Realm to recover any pending changes.
-       
        
        
        
@@ -207,13 +201,11 @@ Method Summary
        
        
        
-       
    
    * - public **boolean (?)**
      - :ref:`shouldWaitForInitialRemoteData <io_realm_mongodb_sync_SyncConfiguration_shouldWaitForInitialRemoteData____>` ()
        
        Returns ``true`` if the Realm will download all known changes from the remote server before being opened the first time.
-       
        
        
        
@@ -287,7 +279,6 @@ forRecovery
 public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (**String (?)** canonicalPath, **byte[] (?)** encryptionKey, **java.lang.Object[] (?)** modules)
 
 Returns a **RealmConfiguration (?)** appropriate to open a read-only, non-synced Realm to recover any pending changes. This is useful when trying to open a backup/recovery Realm (after a client reset).
-
 
 Parameters
 ~~~~~~~~~~
@@ -402,7 +393,6 @@ public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecover
 
 Returns a **RealmConfiguration (?)** appropriate to open a read-only, non-synced Realm to recover any pending changes. This is useful when trying to open a backup/recovery Realm (after a client reset). Note: This will use the default Realm module (composed of all **RealmModel (?)**), and assume no encryption should be used as well.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -492,7 +482,6 @@ public **boolean (?)** shouldDeleteRealmOnLogout ()
 
 Returns ``true`` if the Realm file must be deleted once the **User (?)** owning it logs out.
 
-
 .. _io_realm_mongodb_sync_SyncConfiguration_shouldWaitForInitialRemoteData____:
 
 shouldWaitForInitialRemoteData
@@ -501,7 +490,6 @@ shouldWaitForInitialRemoteData
 public **boolean (?)** shouldWaitForInitialRemoteData ()
 
 Returns ``true`` if the Realm will download all known changes from the remote server before being opened the first time.
-
 
 .. _io_realm_mongodb_sync_SyncConfiguration_getInitialRemoteDataTimeout__TimeUnit__:
 
@@ -513,7 +501,6 @@ public **long (?)** getInitialRemoteDataTimeout (**TimeUnit (?)** unit)
 Returns the timeout defined when downloading any initial data the first time the Realm is opened.
 
 This value is only applicable if **#shouldWaitForInitialRemoteData() (?)** returns ``true``.
-
 
 
 

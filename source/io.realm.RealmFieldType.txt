@@ -20,7 +20,6 @@ Normally there is no reason to interact with the underlying Realm types as Realm
 
 
 
-
 Method Summary
 ==============
 

@@ -19,7 +19,6 @@ A  *sync*  manager handling synchronization of local Realms with remote Realm Ap
 The primary role of this is to access the **SyncSession (?)** for a synchronized Realm. After opening the synchronized Realm you can access the **SyncSession (?)** and perform synchronization related operations as shown below:
 
 
-
 .. code-block:: java
 
         App app = new App("app-id");
@@ -72,7 +71,6 @@ Method Summary
        
        
        
-       
    
    * - public synchronized **Collection (?)**
      - :ref:`getAllSessions <io_realm_mongodb_sync_Sync_getAllSessions____>` ()
@@ -82,13 +80,11 @@ Method Summary
        
        
        
-       
    
    * - public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`
      - :ref:`getOrCreateSession <io_realm_mongodb_sync_Sync_getOrCreateSession__SyncConfiguration__>` (:ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` syncConfiguration)
        
        Gets any cached **SyncSession (?)** for the given **SyncConfiguration (?)** or create a new one if no one exists.
-       
        
        
        
@@ -117,7 +113,6 @@ public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` getSe
 
 Gets a cached **SyncSession (?)** for the given **SyncConfiguration (?)** or throw if no one exists yet. A session should exist after you open a Realm with a **SyncConfiguration (?)**.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -138,7 +133,6 @@ public synchronized **Collection (?)** getAllSessions ()
 
 Gets a collection of all the cached **SyncSession (?)**.
 
-
 .. _io_realm_mongodb_sync_Sync_getOrCreateSession__SyncConfiguration__:
 
 getOrCreateSession
@@ -147,7 +141,6 @@ getOrCreateSession
 public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` getOrCreateSession (:ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` syncConfiguration)
 
 Gets any cached **SyncSession (?)** for the given **SyncConfiguration (?)** or create a new one if no one exists. Note: This is mainly for internal usage, consider using **#getSession(SyncConfiguration) (?)** instead.
-
 
 Parameters
 ~~~~~~~~~~

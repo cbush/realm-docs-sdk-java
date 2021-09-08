@@ -16,7 +16,6 @@ io.realm.log.RealmLog
 
 Global logger used by all Realm components. Custom loggers can be added by registering classes implementing **RealmLogger (?)**.
 
-
 Constructors
 ============
 
@@ -49,13 +48,11 @@ Method Summary
        
        
        
-       
    
    * - public static **int (?)**
      - :ref:`getLevel <io_realm_log_RealmLog_getLevel____>` ()
        
        Get the current **LogLevel (?)**.
-       
        
        
        
@@ -99,13 +96,11 @@ Method Summary
        
        
        
-       
    
    * - public static **void (?)**
      - :ref:`trace <io_realm_log_RealmLog_trace__String__Object_____>` (**String (?)** message, **java.lang.Object[] (?)** args)
        
        Logs a :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>` event.
-       
        
        
        
@@ -119,13 +114,11 @@ Method Summary
        
        
        
-       
    
    * - public static **void (?)**
      - :ref:`debug <io_realm_log_RealmLog_debug__Throwable__>` (**Throwable (?)** throwable)
        
        Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>` exception.
-       
        
        
        
@@ -139,13 +132,11 @@ Method Summary
        
        
        
-       
    
    * - public static **void (?)**
      - :ref:`debug <io_realm_log_RealmLog_debug__Throwable__String__Object_____>` (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
        
        Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>` event.
-       
        
        
        
@@ -159,13 +150,11 @@ Method Summary
        
        
        
-       
    
    * - public static **void (?)**
      - :ref:`info <io_realm_log_RealmLog_info__String__Object_____>` (**String (?)** message, **java.lang.Object[] (?)** args)
        
        Logs an :ref:`LogLevel#INFO <io_realm_log_LogLevel_INFO>` event.
-       
        
        
        
@@ -179,13 +168,11 @@ Method Summary
        
        
        
-       
    
    * - public static **void (?)**
      - :ref:`warn <io_realm_log_RealmLog_warn__Throwable__>` (**Throwable (?)** throwable)
        
        Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>` exception.
-       
        
        
        
@@ -199,13 +186,11 @@ Method Summary
        
        
        
-       
    
    * - public static **void (?)**
      - :ref:`warn <io_realm_log_RealmLog_warn__Throwable__String__Object_____>` (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
        
        Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>` event.
-       
        
        
        
@@ -219,13 +204,11 @@ Method Summary
        
        
        
-       
    
    * - public static **void (?)**
      - :ref:`error <io_realm_log_RealmLog_error__String__Object_____>` (**String (?)** message, **java.lang.Object[] (?)** args)
        
        Logs an :ref:`LogLevel#ERROR <io_realm_log_LogLevel_ERROR>` event.
-       
        
        
        
@@ -239,13 +222,11 @@ Method Summary
        
        
        
-       
    
    * - public static **void (?)**
      - :ref:`fatal <io_realm_log_RealmLog_fatal__Throwable__>` (**Throwable (?)** throwable)
        
        Logs a :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>` exception.
-       
        
        
        
@@ -259,13 +240,11 @@ Method Summary
        
        
        
-       
    
    * - public static **void (?)**
      - :ref:`fatal <io_realm_log_RealmLog_fatal__Throwable__String__Object_____>` (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
        
        Logs a :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>` event.
-       
        
        
        
@@ -291,7 +270,6 @@ Parameters
 - logger - the reference to a **RealmLogger (?)** implementation.
    
    
-   
 
 .. _io_realm_log_RealmLog_setLevel__int__:
 
@@ -302,12 +280,10 @@ public static **void (?)** setLevel (**int (?)** level)
 
 Sets the current **LogLevel (?)**. Setting this will affect all registered loggers.
 
-
 Parameters
 ~~~~~~~~~~
 
 - level - see **LogLevel (?)**.
-   
    
    
 
@@ -319,7 +295,6 @@ getLevel
 public static **int (?)** getLevel ()
 
 Get the current **LogLevel (?)**.
-
 
 .. _io_realm_log_RealmLog_remove__RealmLogger__:
 
@@ -340,7 +315,6 @@ public static **void (?)** clear ()
 
 Removes all loggers. The default native logger will be removed as well. Use **#registerDefaultLogger() (?)** to add it back.
 
-
 .. _io_realm_log_RealmLog_registerDefaultLogger____:
 
 registerDefaultLogger
@@ -360,7 +334,6 @@ public static **void (?)** trace (**Throwable (?)** throwable)
 
 Logs a :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>` exception.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -378,7 +351,6 @@ public static **void (?)** trace (**String (?)** message, **java.lang.Object[] (
 
 Logs a :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>` event.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -387,7 +359,6 @@ Parameters
    
    
 - args - optional args used to format the message using **String#format(String, Object...) (?)**.
-   
    
    
 
@@ -399,7 +370,6 @@ trace
 public static **void (?)** trace (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
 
 Logs a :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>` event.
-
 
 Parameters
 ~~~~~~~~~~
@@ -415,7 +385,6 @@ Parameters
 - args - optional args used to format the message using **String#format(String, Object...) (?)**.
    
    
-   
 
 .. _io_realm_log_RealmLog_debug__Throwable__:
 
@@ -425,7 +394,6 @@ debug
 public static **void (?)** debug (**Throwable (?)** throwable)
 
 Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>` exception.
-
 
 Parameters
 ~~~~~~~~~~
@@ -444,7 +412,6 @@ public static **void (?)** debug (**String (?)** message, **java.lang.Object[] (
 
 Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>` event.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -453,7 +420,6 @@ Parameters
    
    
 - args - optional args used to format the message using **String#format(String, Object...) (?)**.
-   
    
    
 
@@ -465,7 +431,6 @@ debug
 public static **void (?)** debug (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
 
 Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>` event.
-
 
 Parameters
 ~~~~~~~~~~
@@ -481,7 +446,6 @@ Parameters
 - args - optional args used to format the message using **String#format(String, Object...) (?)**.
    
    
-   
 
 .. _io_realm_log_RealmLog_info__Throwable__:
 
@@ -491,7 +455,6 @@ info
 public static **void (?)** info (**Throwable (?)** throwable)
 
 Logs an :ref:`LogLevel#INFO <io_realm_log_LogLevel_INFO>` exception.
-
 
 Parameters
 ~~~~~~~~~~
@@ -510,7 +473,6 @@ public static **void (?)** info (**String (?)** message, **java.lang.Object[] (?
 
 Logs an :ref:`LogLevel#INFO <io_realm_log_LogLevel_INFO>` event.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -519,7 +481,6 @@ Parameters
    
    
 - args - optional args used to format the message using **String#format(String, Object...) (?)**.
-   
    
    
 
@@ -531,7 +492,6 @@ info
 public static **void (?)** info (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
 
 Logs an :ref:`LogLevel#INFO <io_realm_log_LogLevel_INFO>` event.
-
 
 Parameters
 ~~~~~~~~~~
@@ -547,7 +507,6 @@ Parameters
 - args - optional args used to format the message using **String#format(String, Object...) (?)**.
    
    
-   
 
 .. _io_realm_log_RealmLog_warn__Throwable__:
 
@@ -557,7 +516,6 @@ warn
 public static **void (?)** warn (**Throwable (?)** throwable)
 
 Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>` exception.
-
 
 Parameters
 ~~~~~~~~~~
@@ -576,7 +534,6 @@ public static **void (?)** warn (**String (?)** message, **java.lang.Object[] (?
 
 Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>` event.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -585,7 +542,6 @@ Parameters
    
    
 - args - optional args used to format the message using **String#format(String, Object...) (?)**.
-   
    
    
 
@@ -597,7 +553,6 @@ warn
 public static **void (?)** warn (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
 
 Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>` event.
-
 
 Parameters
 ~~~~~~~~~~
@@ -613,7 +568,6 @@ Parameters
 - args - optional args used to format the message using **String#format(String, Object...) (?)**.
    
    
-   
 
 .. _io_realm_log_RealmLog_error__Throwable__:
 
@@ -623,7 +577,6 @@ error
 public static **void (?)** error (**Throwable (?)** throwable)
 
 Logs an :ref:`LogLevel#ERROR <io_realm_log_LogLevel_ERROR>` exception.
-
 
 Parameters
 ~~~~~~~~~~
@@ -642,7 +595,6 @@ public static **void (?)** error (**String (?)** message, **java.lang.Object[] (
 
 Logs an :ref:`LogLevel#ERROR <io_realm_log_LogLevel_ERROR>` event.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -651,7 +603,6 @@ Parameters
    
    
 - args - optional args used to format the message using **String#format(String, Object...) (?)**.
-   
    
    
 
@@ -663,7 +614,6 @@ error
 public static **void (?)** error (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
 
 Logs an :ref:`LogLevel#ERROR <io_realm_log_LogLevel_ERROR>` event.
-
 
 Parameters
 ~~~~~~~~~~
@@ -679,7 +629,6 @@ Parameters
 - args - optional args used to format the message using **String#format(String, Object...) (?)**.
    
    
-   
 
 .. _io_realm_log_RealmLog_fatal__Throwable__:
 
@@ -689,7 +638,6 @@ fatal
 public static **void (?)** fatal (**Throwable (?)** throwable)
 
 Logs a :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>` exception.
-
 
 Parameters
 ~~~~~~~~~~
@@ -708,7 +656,6 @@ public static **void (?)** fatal (**String (?)** message, **java.lang.Object[] (
 
 Logs an :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>` event.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -717,7 +664,6 @@ Parameters
    
    
 - args - optional args used to format the message using **String#format(String, Object...) (?)**.
-   
    
    
 
@@ -729,7 +675,6 @@ fatal
 public static **void (?)** fatal (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
 
 Logs a :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>` event.
-
 
 Parameters
 ~~~~~~~~~~
@@ -743,7 +688,6 @@ Parameters
    
    
 - args - optional args used to format the message using **String#format(String, Object...) (?)**.
-   
    
    
 

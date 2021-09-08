@@ -16,7 +16,6 @@ io.realm.FieldAttribute
 
 This class contains all Realm attributes for a Realm field. These will usually match the annotations found in the ``io.realm.annotation`` package. See the relevant annotation for further information on each modifier.
 
-
 Method Summary
 ==============
 

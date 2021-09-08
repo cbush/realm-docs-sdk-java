@@ -16,7 +16,6 @@ io.realm.ProxyState<E extends io.realm.RealmModel>
 
 This implements ``RealmObjectProxy`` interface, to eliminate copying logic between **RealmObject (?)** and **DynamicRealmObject (?)**.
 
-
 Constructors
 ============
 

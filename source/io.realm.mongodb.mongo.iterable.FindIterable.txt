@@ -16,7 +16,6 @@ io.realm.mongodb.mongo.iterable.FindIterable<ResultT>
 
 Specific iterable for **io.realm.mongodb.mongo.MongoCollection#find() (?)** operations.
 
-
 Constructors
 ============
 

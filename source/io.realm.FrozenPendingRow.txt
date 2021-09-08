@@ -16,7 +16,6 @@ io.realm.FrozenPendingRow
 
 A PendingRow that has been frozen. This behaves in many ways similar to a deleted Row, but will report **#isLoaded() (?)** as ``as false``.
 
-
 Method Summary
 ==============
 

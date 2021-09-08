@@ -49,13 +49,11 @@ Method Summary
        
        
        
-       
    
    * - public **int (?)**
      - :ref:`getInt <io_realm_DynamicRealmObject_getInt__String__>` (**String (?)** fieldName)
        
        Returns the ``int`` value for a given field.
-       
        
        
        
@@ -69,13 +67,11 @@ Method Summary
        
        
        
-       
    
    * - public **long (?)**
      - :ref:`getLong <io_realm_DynamicRealmObject_getLong__String__>` (**String (?)** fieldName)
        
        Returns the ``long`` value for a given field.
-       
        
        
        
@@ -89,13 +85,11 @@ Method Summary
        
        
        
-       
    
    * - public **float (?)**
      - :ref:`getFloat <io_realm_DynamicRealmObject_getFloat__String__>` (**String (?)** fieldName)
        
        Returns the ``float`` value for a given field.
-       
        
        
        
@@ -109,13 +103,11 @@ Method Summary
        
        
        
-       
    
    * - public **byte (?)**
      - :ref:`getBlob <io_realm_DynamicRealmObject_getBlob__String__>` (**String (?)** fieldName)
        
        Returns the ``byte[]`` value for a given field.
-       
        
        
        
@@ -129,13 +121,11 @@ Method Summary
        
        
        
-       
    
    * - public **Date (?)**
      - :ref:`getDate <io_realm_DynamicRealmObject_getDate__String__>` (**String (?)** fieldName)
        
        Returns the ``Date`` value for a given field.
-       
        
        
        
@@ -149,13 +139,11 @@ Method Summary
        
        
        
-       
    
    * - public **ObjectId (?)**
      - :ref:`getObjectId <io_realm_DynamicRealmObject_getObjectId__String__>` (**String (?)** fieldName)
        
        Returns the ``ObjectId`` value for a given field.
-       
        
        
        
@@ -169,13 +157,11 @@ Method Summary
        
        
        
-       
    
    * - public **UUID (?)**
      - :ref:`getUUID <io_realm_DynamicRealmObject_getUUID__String__>` (**String (?)** fieldName)
        
        Returns the ``UUID`` value for a given field.
-       
        
        
        
@@ -199,13 +185,11 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`RealmList <io_realm_RealmList>`
      - :ref:`getList <io_realm_DynamicRealmObject_getList__String__Class_E___>` <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
        
        Returns the **RealmList (?)** containing only primitive values.
-       
        
        
        
@@ -219,13 +203,11 @@ Method Summary
        
        
        
-       
    
    * - public **<any> (?)**
      - :ref:`getDictionary <io_realm_DynamicRealmObject_getDictionary__String__Class_E___>` <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
        
        Returns the **RealmDictionary (?)** containing only primitive values.
-       
        
        
        
@@ -239,7 +221,6 @@ Method Summary
        
        
        
-       
    
    * - public **<any> (?)**
      - :ref:`getRealmSet <io_realm_DynamicRealmObject_getRealmSet__String__Class_E___>` <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
@@ -249,13 +230,11 @@ Method Summary
        
        
        
-       
    
    * - public **boolean (?)**
      - :ref:`isNull <io_realm_DynamicRealmObject_isNull__String__>` (**String (?)** fieldName)
        
        Checks if the value of a given field is ``null``.
-       
        
        
        
@@ -299,13 +278,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setShort <io_realm_DynamicRealmObject_setShort__String__short__>` (**String (?)** fieldName, **short (?)** value)
        
        Sets the ``short`` value of the given field.
-       
        
        
        
@@ -319,13 +296,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setLong <io_realm_DynamicRealmObject_setLong__String__long__>` (**String (?)** fieldName, **long (?)** value)
        
        Sets the ``long`` value of the given field.
-       
        
        
        
@@ -339,13 +314,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setFloat <io_realm_DynamicRealmObject_setFloat__String__float__>` (**String (?)** fieldName, **float (?)** value)
        
        Sets the ``float`` value of the given field.
-       
        
        
        
@@ -359,13 +332,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setString <io_realm_DynamicRealmObject_setString__String__String__>` (**String (?)** fieldName, **String (?)** value)
        
        Sets the ``String`` value of the given field.
-       
        
        
        
@@ -389,13 +360,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setDecimal128 <io_realm_DynamicRealmObject_setDecimal128__String__Decimal128__>` (**String (?)** fieldName, **Decimal128 (?)** value)
        
        Sets the ``Decimal128`` value of the given field.
-       
        
        
        
@@ -409,7 +378,6 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setRealmAny <io_realm_DynamicRealmObject_setRealmAny__String__RealmAny__>` (**String (?)** fieldName, **RealmAny (?)** value)
@@ -419,13 +387,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setUUID <io_realm_DynamicRealmObject_setUUID__String__UUID__>` (**String (?)** fieldName, **UUID (?)** value)
        
        Sets the ``UUID`` value of the given field.
-       
        
        
        
@@ -449,13 +415,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setDictionary <io_realm_DynamicRealmObject_setDictionary__String___any___>` <**E (?)** >(**String (?)** fieldName, **<any> (?)** dictionary)
        
        Sets the reference to a **RealmDictionary (?)** on the given field.
-       
        
        
        
@@ -469,13 +433,11 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`setNull <io_realm_DynamicRealmObject_setNull__String__>` (**String (?)** fieldName)
        
        Sets the value to ``null`` for the given field.
-       
        
        
        
@@ -509,7 +471,6 @@ Method Summary
        
        
        
-       
    
    * - public **boolean (?)**
      - :ref:`equals <io_realm_DynamicRealmObject_equals__Object__>` (**Object (?)** o)
@@ -535,13 +496,11 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`DynamicRealm <io_realm_DynamicRealm>`
      - :ref:`getDynamicRealm <io_realm_DynamicRealmObject_getDynamicRealm____>` ()
        
        Returns **DynamicRealm (?)** instance where this **DynamicRealmObject (?)** belongs.
-       
        
        
        
@@ -596,9 +555,7 @@ getBoolean
 public **boolean (?)** getBoolean (**String (?)** fieldName)
 
 Returns the ``boolean`` value for a given field.
-
 If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
-
 
 
 
@@ -621,9 +578,7 @@ getInt
 public **int (?)** getInt (**String (?)** fieldName)
 
 Returns the ``int`` value for a given field.
-
 If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
-
 
 
 
@@ -646,9 +601,7 @@ getShort
 public **short (?)** getShort (**String (?)** fieldName)
 
 Returns the ``short`` value for a given field.
-
 If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
-
 
 
 
@@ -671,9 +624,7 @@ getLong
 public **long (?)** getLong (**String (?)** fieldName)
 
 Returns the ``long`` value for a given field.
-
 If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
-
 
 
 
@@ -696,9 +647,7 @@ getByte
 public **byte (?)** getByte (**String (?)** fieldName)
 
 Returns the ``byte`` value for a given field.
-
 If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
-
 
 
 
@@ -721,9 +670,7 @@ getFloat
 public **float (?)** getFloat (**String (?)** fieldName)
 
 Returns the ``float`` value for a given field.
-
 If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
-
 
 
 
@@ -746,9 +693,7 @@ getDouble
 public **double (?)** getDouble (**String (?)** fieldName)
 
 Returns the ``double`` value for a given field.
-
 If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
-
 
 
 
@@ -772,7 +717,6 @@ public **byte (?)** getBlob (**String (?)** fieldName)
 
 Returns the ``byte[]`` value for a given field.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -792,7 +736,6 @@ getString
 public **String (?)** getString (**String (?)** fieldName)
 
 Returns the ``String`` value for a given field.
-
 
 Parameters
 ~~~~~~~~~~
@@ -814,7 +757,6 @@ public **Date (?)** getDate (**String (?)** fieldName)
 
 Returns the ``Date`` value for a given field.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -834,7 +776,6 @@ getDecimal128
 public **Decimal128 (?)** getDecimal128 (**String (?)** fieldName)
 
 Returns the ``Decimal128`` value for a given field.
-
 
 Parameters
 ~~~~~~~~~~
@@ -856,7 +797,6 @@ public **ObjectId (?)** getObjectId (**String (?)** fieldName)
 
 Returns the ``ObjectId`` value for a given field.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -877,7 +817,6 @@ public **RealmAny (?)** getRealmAny (**String (?)** fieldName)
 
 Returns the ``RealmAny`` value for a given field.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -897,7 +836,6 @@ getUUID
 public **UUID (?)** getUUID (**String (?)** fieldName)
 
 Returns the ``UUID`` value for a given field.
-
 
 Parameters
 ~~~~~~~~~~
@@ -939,9 +877,7 @@ getList
 public :ref:`RealmList <io_realm_RealmList>` getList (**String (?)** fieldName)
 
 Returns the **RealmList (?)** of **DynamicRealmObject (?)**s being linked from the given field.
-
 If the list contains primitive types, use **#getList(String, Class) (?)** instead.
-
 
 
 
@@ -964,9 +900,7 @@ getList
 public :ref:`RealmList <io_realm_RealmList>` getList <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
 
 Returns the **RealmList (?)** containing only primitive values.
-
 If the list contains references to other Realm objects, use **#getList(String) (?)** instead.
-
 
 
 
@@ -993,9 +927,7 @@ getDictionary
 public **<any> (?)** getDictionary (**String (?)** fieldName)
 
 Returns the **RealmDictionary (?)** of **DynamicRealmObject (?)**s being linked from the given field.
-
 If the dictionary contains primitive types, use **#getDictionary(String, Class) (?)** instead.
-
 
 
 
@@ -1018,9 +950,7 @@ getDictionary
 public **<any> (?)** getDictionary <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
 
 Returns the **RealmDictionary (?)** containing only primitive values.
-
 If the dictionary contains references to other Realm objects, use **#getDictionary(String) (?)** instead.
-
 
 
 
@@ -1047,9 +977,7 @@ getRealmSet
 public **<any> (?)** getRealmSet (**String (?)** fieldName)
 
 Returns the **RealmSet (?)** of **DynamicRealmObject (?)**s being linked from the given field.
-
 If the set contains primitive types, use **#getRealmSet(String, Class) (?)** instead.
-
 
 
 
@@ -1072,9 +1000,7 @@ getRealmSet
 public **<any> (?)** getRealmSet <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
 
 Returns the **RealmSet (?)** containing only primitive values.
-
 If the set contains references to other Realm objects, use **#getRealmSet(String) (?)** instead.
-
 
 
 
@@ -1101,7 +1027,6 @@ isNull
 public **boolean (?)** isNull (**String (?)** fieldName)
 
 Checks if the value of a given field is ``null``.
-
 
 Parameters
 ~~~~~~~~~~
@@ -1150,7 +1075,6 @@ set
 public **void (?)** set (**String (?)** fieldName, **Object (?)** value)
 
 Sets the value for the given field. This method will automatically try to convert numbers and booleans that are given as ``String`` to their appropriate type. For example ``"10"`` will be converted to ``10`` if the field type is ``int``.
-
 Using the typed setters will be faster than using this method.
 
 
@@ -1165,7 +1089,6 @@ setBoolean
 public **void (?)** setBoolean (**String (?)** fieldName, **boolean (?)** value)
 
 Sets the ``boolean`` value of the given field.
-
 
 Parameters
 ~~~~~~~~~~
@@ -1191,7 +1114,6 @@ public **void (?)** setShort (**String (?)** fieldName, **short (?)** value)
 
 Sets the ``short`` value of the given field.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -1215,7 +1137,6 @@ setInt
 public **void (?)** setInt (**String (?)** fieldName, **int (?)** value)
 
 Sets the ``int`` value of the given field.
-
 
 Parameters
 ~~~~~~~~~~
@@ -1241,7 +1162,6 @@ public **void (?)** setLong (**String (?)** fieldName, **long (?)** value)
 
 Sets the ``long`` value of the given field.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -1265,7 +1185,6 @@ setByte
 public **void (?)** setByte (**String (?)** fieldName, **byte (?)** value)
 
 Sets the ``byte`` value of the given field.
-
 
 Parameters
 ~~~~~~~~~~
@@ -1291,7 +1210,6 @@ public **void (?)** setFloat (**String (?)** fieldName, **float (?)** value)
 
 Sets the ``float`` value of the given field.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -1316,7 +1234,6 @@ public **void (?)** setDouble (**String (?)** fieldName, **double (?)** value)
 
 Sets the ``double`` value of the given field.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -1340,7 +1257,6 @@ setString
 public **void (?)** setString (**String (?)** fieldName, **String (?)** value)
 
 Sets the ``String`` value of the given field.
-
 
 Parameters
 ~~~~~~~~~~
@@ -1391,7 +1307,6 @@ public **void (?)** setDate (**String (?)** fieldName, **Date (?)** value)
 
 Sets the ``Date`` value of the given field.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -1415,7 +1330,6 @@ setDecimal128
 public **void (?)** setDecimal128 (**String (?)** fieldName, **Decimal128 (?)** value)
 
 Sets the ``Decimal128`` value of the given field.
-
 
 Parameters
 ~~~~~~~~~~
@@ -1441,7 +1355,6 @@ public **void (?)** setObjectId (**String (?)** fieldName, **ObjectId (?)** valu
 
 Sets the ``ObjectId`` value of the given field.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -1466,7 +1379,6 @@ public **void (?)** setRealmAny (**String (?)** fieldName, **RealmAny (?)** valu
 
 Sets the ``RealmAny`` value of the given field.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -1490,7 +1402,6 @@ setUUID
 public **void (?)** setUUID (**String (?)** fieldName, **UUID (?)** value)
 
 Sets the ``UUID`` value of the given field.
-
 
 Parameters
 ~~~~~~~~~~
@@ -1540,9 +1451,7 @@ setList
 public **void (?)** setList <**E (?)** >(**String (?)** fieldName, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 
 Sets the reference to a **RealmList (?)** on the given field.
-
 This will copy all the elements in the list into Realm, but any further changes to the list will not be reflected in the Realm. Use **#getList(String) (?)** in order to get a reference to the managed list.
-
 
 
 
@@ -1554,7 +1463,6 @@ Parameters
    
    
 - list - list of objects. Must either be primitive types or **DynamicRealmObject (?)**s.
-   
    
    
 
@@ -1569,9 +1477,7 @@ setDictionary
 public **void (?)** setDictionary <**E (?)** >(**String (?)** fieldName, **<any> (?)** dictionary)
 
 Sets the reference to a **RealmDictionary (?)** on the given field.
-
 This will copy all the elements in the dictionary into Realm, but any further changes to the dictionary will not be reflected in the Realm. Use **#getDictionary(String) (?)** in order to get a reference to the managed dictionary.
-
 
 
 
@@ -1583,7 +1489,6 @@ Parameters
    
    
 - dictionary - dictionary of objects. Must either be primitive types or **DynamicRealmObject (?)**s.
-   
    
    
 
@@ -1598,9 +1503,7 @@ setRealmSet
 public **void (?)** setRealmSet <**E (?)** >(**String (?)** fieldName, **<any> (?)** set)
 
 Sets the reference to a **RealmSet (?)** on the given field.
-
 This will copy all the elements in the set into Realm, but any further changes to the set will not be reflected in the Realm. Use **#getRealmSet(String) (?)** in order to get a reference to the managed set.
-
 
 
 
@@ -1612,7 +1515,6 @@ Parameters
    
    
 - set - set of objects. Must either be primitive types or **DynamicRealmObject (?)**s.
-   
    
    
 
@@ -1627,7 +1529,6 @@ setNull
 public **void (?)** setNull (**String (?)** fieldName)
 
 Sets the value to ``null`` for the given field.
-
 
 Parameters
 ~~~~~~~~~~
@@ -1649,7 +1550,6 @@ public **String (?)** getType ()
 
 Returns the type of object. This will normally correspond to the name of a class that is extending **RealmObject (?)**.
 
-
 .. _io_realm_DynamicRealmObject_getFieldType__String__:
 
 getFieldType
@@ -1668,13 +1568,10 @@ hashCode
 public **int (?)** hashCode ()
 
 Returns a hash code value for the **DynamicRealmObject (?)** object.
-
 By the general contract of **Object#hashCode() (?)**, any two objects for which **#equals (?)** returns ``true`` must return the same hash code value.
 
 
-
 Note that a **RealmObject (?)** is a live object, and it might be updated by changes from other threads. This means that a hash code value of the object is not stable, and the value should be neither used as a key in HashMap nor saved in HashSet.
-
 
 
 
@@ -1705,7 +1602,6 @@ linkingObjects
 public :ref:`RealmResults <io_realm_RealmResults>` linkingObjects (**String (?)** srcClassName, **String (?)** srcFieldName)
 
 Returns **RealmResults (?)** containing all ``srcClassName`` class objects that have a relationship to this object from ``srcFieldName`` field.
-
 An entry is added for each reference, e.g. if the same reference is in a list multiple times, the src object will show up here multiple times.
 
 
@@ -1717,7 +1613,6 @@ Parameters
    
    
 - srcFieldName - name of the field in the source class that holds a reference to this object. Field type must be either ``io.realm.RealmFieldType.OBJECT`` or ``io.realm.RealmFieldType.LIST``.
-   
    
    
 
@@ -1732,9 +1627,7 @@ getDynamicRealm
 public :ref:`DynamicRealm <io_realm_DynamicRealm>` getDynamicRealm ()
 
 Returns **DynamicRealm (?)** instance where this **DynamicRealmObject (?)** belongs.
-
 You **must not** call **DynamicRealm#close() (?)** against returned instance.
-
 
 
 

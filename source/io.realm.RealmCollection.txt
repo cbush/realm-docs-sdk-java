@@ -15,9 +15,7 @@ io.realm.RealmCollection<E>
 - **java.util.Collection (?)**
 
 ``RealmCollection`` is the root of the collection hierarchy that Realm supports. It defines operations on data collections and the behavior that they will have in all implementations of ``RealmCollection``s.
-
 Realm collections are "live" views to the underlying data. This means that they automatically will be kept up to date. As a consequence, using methods like **Collections#unmodifiableCollection(Collection) (?)** will not prevent a collection from being modified.
-
 
 
 
@@ -34,7 +32,6 @@ Method Summary
      - :ref:`where <io_realm_RealmCollection_where____>` ()
        
        Returns a **RealmQuery (?)**, which can be used to query for specific objects from this collection.
-       
        
        
        
@@ -138,7 +135,6 @@ Method Summary
        
        
        
-       
    
    * - public **boolean (?)**
      - :ref:`isManaged <io_realm_RealmCollection_isManaged____>` ()
@@ -158,7 +154,6 @@ Method Summary
        
        
        
-       
    
    
 Method Detail
@@ -172,7 +167,6 @@ where
 public :ref:`RealmQuery <io_realm_RealmQuery>` where ()
 
 Returns a **RealmQuery (?)**, which can be used to query for specific objects from this collection.
-
 
 Throws
 ~~~~~~
@@ -348,7 +342,6 @@ public **boolean (?)** isValid ()
 
 Checks if the collection is still valid to use, i.e., the **io.realm.Realm (?)** instance hasn't been closed. It will always return ``true`` for an unmanaged collection.
 
-
 .. _io_realm_RealmCollection_isManaged____:
 
 isManaged
@@ -362,7 +355,6 @@ If this method returns ``false``, the collection is unmanaged. An unmanaged coll
 
 
 
-
 .. _io_realm_RealmCollection_contains__Object__:
 
 contains
@@ -371,7 +363,6 @@ contains
 public **boolean (?)** contains (**Object (?)** object)
 
 Tests whether this ``Collection`` contains the specified object. Returns ``true`` if and only if at least one element ``elem`` in this ``Collection`` meets following requirement: ``(object==null ? elem==null : object.equals(elem))``.
-
 
 Parameters
 ~~~~~~~~~~

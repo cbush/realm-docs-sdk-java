@@ -40,7 +40,6 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
      - :ref:`schemaVersion <io_realm_mongodb_sync_SyncConfiguration_Builder_schemaVersion__long__>` (**long (?)** schemaVersion)
@@ -60,13 +59,11 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
      - :ref:`modules <io_realm_mongodb_sync_SyncConfiguration_Builder_modules__Iterable_Object___>` (**java.lang.Iterable<java.lang.Object> (?)** modules)
        
        Replaces the existing module(s) with one or more **RealmModule (?)**s.
-       
        
        
        
@@ -90,7 +87,6 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
      - :ref:`flowFactory <io_realm_mongodb_sync_SyncConfiguration_Builder_flowFactory__FlowFactory__>` (:ref:`FlowFactory <io_realm_coroutines_FlowFactory>` factory)
@@ -100,13 +96,11 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
      - :ref:`initialData <io_realm_mongodb_sync_SyncConfiguration_Builder_initialData__Realm_Transaction__>` (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
        
        Sets the initial data in **io.realm.Realm (?)**.
-       
        
        
        
@@ -170,7 +164,6 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
      - :ref:`compactOnLaunch <io_realm_mongodb_sync_SyncConfiguration_Builder_compactOnLaunch____>` ()
@@ -210,7 +203,6 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
      - :ref:`allowWritesOnUiThread <io_realm_mongodb_sync_SyncConfiguration_Builder_allowWritesOnUiThread__boolean__>` (**boolean (?)** allowWritesOnUiThread)
@@ -220,13 +212,11 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
      - :ref:`allowQueriesOnUiThread <io_realm_mongodb_sync_SyncConfiguration_Builder_allowQueriesOnUiThread__boolean__>` (**boolean (?)** allowQueriesOnUiThread)
        
        Sets whether or not ``RealmQueries`` are allowed from the UI thread.
-       
        
        
        
@@ -255,7 +245,6 @@ public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_
 
 Sets the io.realm.Realm#ENCRYPTION_KEY_LENGTH bytes key used to encrypt and decrypt the Realm file.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -279,14 +268,11 @@ Sets the schema version of the Realm.
 Synced Realms only support additive schema changes which can be applied without requiring a manual migration. The schema version will only be used as an indication to the underlying storage layer to remove or add indexes. These will be recalculated if the provided schema version differ from the version in the Realm file. **WARNING:** There is no guarantee that the value inserted here is the same returned by **Realm#getVersion() (?)**. Due to the nature of synced Realms, the value can both be higher and lower.
 
 
-
 - It will be lower if another client with a lesser ``schemaVersion`` connected to the server for the first time after this schemaVersion was used.
    
    
    
-   
 - It will be higher if another client with a higher ``schemaVersion`` connected to the server after this Realm was created.
-   
    
    
    
@@ -311,13 +297,10 @@ modules
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` modules (**Object (?)** baseModule, **java.lang.Object[] (?)** additionalModules)
 
 Replaces the existing module(s) with one or more **RealmModule (?)**s. Using this method will replace the current schema for this Realm with the schema defined by the provided modules.
-
 A reference to the default Realm module containing all Realm classes in the project (but not dependencies), can be found using **Realm#getDefaultModule() (?)**. Combining the schema from the app project and a library dependency is thus done using the following code:
 
 
-
 ``builder.modules(Realm.getDefaultMode(), new MyLibraryModule()); ``
-
 
 
 
@@ -347,13 +330,10 @@ modules
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` modules (**java.lang.Iterable<java.lang.Object> (?)** modules)
 
 Replaces the existing module(s) with one or more **RealmModule (?)**s. Using this method will replace the current schema for this Realm with the schema defined by the provided modules.
-
 A reference to the default Realm module containing all Realm classes in the project (but not dependencies), can be found using **Realm#getDefaultModule() (?)**. Combining the schema from the app project and a library dependency is thus done using the following code:
 
 
-
 ``builder.modules(Realm.getDefaultMode(), new MyLibraryModule()); ``
-
 
 
 
@@ -390,7 +370,6 @@ public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_
 
 Sets the **RxObservableFactory (?)** used to create Rx Observables from Realm objects. The default factory is **RealmObservableFactory (?)**.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -408,7 +387,6 @@ public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_
 
 Sets the **FlowFactory (?)** used to create coroutines Flows from Realm objects. The default factory is **RealmFlowFactory (?)**.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -425,7 +403,6 @@ initialData
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` initialData (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
 
 Sets the initial data in **io.realm.Realm (?)**. This transaction will be executed only the first time the Realm file is opened (created) or while migrating the data if **RealmConfiguration.Builder#deleteRealmIfMigrationNeeded() (?)** is set.
-
 
 Parameters
 ~~~~~~~~~~
@@ -457,7 +434,6 @@ public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_
 Sets the error handler used by this configuration.
 
 Only errors not handled by the defined ``SyncPolicy`` will be reported to this error handler.
-
 
 
 
@@ -502,9 +478,7 @@ Setting this will cause the Realm to download all known changes from the server 
 Since downloading all changes can be an lengthy operation that might block the UI thread, Realms with this setting enabled should only be opened on background threads or with **Realm#getInstanceAsync(RealmConfiguration, Realm.Callback) (?)** on the UI thread.
 
 
-
 This check is only enforced the first time a Realm is created. If you otherwise want to make sure a Realm has the latest changes, use **SyncSession#downloadAllServerChanges() (?)**.
-
 
 
 
@@ -520,9 +494,7 @@ Setting this will cause the Realm to download all known changes from the server 
 Since downloading all changes can be an lengthy operation that might block the UI thread, Realms with this setting enabled should only be opened on background threads or with **Realm#getInstanceAsync(RealmConfiguration, Realm.Callback) (?)** on the UI thread.
 
 
-
 This check is only enforced the first time a Realm is created. If you otherwise want to make sure a Realm has the latest changes, use **SyncSession#downloadAllServerChanges() (?)**.
-
 
 
 
@@ -530,7 +502,6 @@ Parameters
 ~~~~~~~~~~
 
 - timeout - how long to wait for the download to complete before an **io.realm.exceptions.DownloadingRealmInterruptedException (?)** is thrown.
-   
    
    
 - unit - the unit of time used to define the timeout.
@@ -546,9 +517,7 @@ readOnly
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` readOnly ()
 
 Setting this will cause the Realm to become read only and all write transactions made against this Realm will fail with an **IllegalStateException (?)**.
-
 This in particular mean that **#initialData(Realm.Transaction) (?)** will not work in combination with a read only Realm and setting this will result in a **IllegalStateException (?)** being thrown.
-
  Marking a Realm as read only only applies to the Realm in this process. Other processes and devices can still write to the Realm.
 
 
@@ -560,7 +529,6 @@ compactOnLaunch
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` compactOnLaunch ()
 
 Setting this will cause Realm to compact the Realm file if the Realm file has grown too large and a significant amount of space can be recovered. See **DefaultCompactOnLaunchCallback (?)** for details.
-
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_compactOnLaunch__CompactOnLaunchCallback__:
 
@@ -609,7 +577,6 @@ maxNumberOfActiveVersions
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` maxNumberOfActiveVersions (**long (?)** number)
 
 Sets the maximum number of live versions in the Realm file before an **IllegalStateException (?)** is thrown when attempting to write more data.
-
 Realm is capable of concurrently handling many different versions of Realm objects. This can happen if you have a Realm open on many different threads or are freezing objects while data is being written to the file.
 
 Under normal circumstances this is not a problem, but if the number of active versions grow too large, it will have a negative effect on the filesize on disk. Setting this parameters can therefore be used to prevent uses of Realm that can result in very large Realms.
@@ -636,9 +603,7 @@ allowWritesOnUiThread
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` allowWritesOnUiThread (**boolean (?)** allowWritesOnUiThread)
 
 Sets whether or not calls to **Realm#executeTransaction (?)** are allowed from the UI thread.
-
 **WARNING: Realm does not allow synchronous transactions to be run on the main thread unless users explicitly opt in with this method.** We recommend diverting calls to ``executeTransaction`` to non-UI threads or, alternatively, using **Realm#executeTransactionAsync (?)**.
-
 
 
 
@@ -650,9 +615,7 @@ allowQueriesOnUiThread
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` allowQueriesOnUiThread (**boolean (?)** allowQueriesOnUiThread)
 
 Sets whether or not ``RealmQueries`` are allowed from the UI thread.
-
 By default Realm allows queries on the main thread. However, by doing so your application may experience a drop of frames or even ANRs. We recommend diverting queries to non-UI threads or, alternatively, using **RealmQuery#findAllAsync() (?)** or **RealmQuery#findFirstAsync() (?)**.
-
 
 
 

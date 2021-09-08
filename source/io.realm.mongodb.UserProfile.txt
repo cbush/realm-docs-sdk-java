@@ -122,7 +122,6 @@ Method Summary
        
        
        
-       
    
    * - public **String (?)**
      - :ref:`toString <io_realm_mongodb_UserProfile_toString____>` ()
@@ -250,7 +249,6 @@ getUser
 public :ref:`User <io_realm_mongodb_User>` getUser ()
 
 Returns the **User (?)** that this instance in associated with.
-
 
 .. _io_realm_mongodb_UserProfile_toString____:
 

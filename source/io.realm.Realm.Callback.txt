@@ -16,7 +16,6 @@ io.realm.Realm.Callback
 
 
 
-
 Constructors
 ============
 
@@ -39,11 +38,9 @@ Method Summary
        
        
        
-       
    
    * - public **void (?)**
      - :ref:`onError <io_realm_Realm_Callback_onError__Throwable__>` (**Throwable (?)** exception)
-       
        
        
        
@@ -64,14 +61,12 @@ public abstract **void (?)** onSuccess (:ref:`Realm <io_realm_Realm>` realm)
 
 
 
-
 .. _io_realm_Realm_Callback_onError__Throwable__:
 
 onError
 -------
 
 public **void (?)** onError (**Throwable (?)** exception)
-
 
 
 

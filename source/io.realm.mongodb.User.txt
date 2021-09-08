@@ -17,9 +17,7 @@ io.realm.mongodb.User
 A  *user*  holds the user's meta data and tokens for accessing Realm App functionality.
 
 The user is used to configure Synchronized Realms and gives access to calling Realm App *Functions* through **Functions (?)** and accessing remote Realm App 
-
 *Mongo Databases* through a **MongoClient (?)**.
-
 
 
 
@@ -123,13 +121,11 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`User.State <io_realm_mongodb_User_State>`
      - :ref:`getState <io_realm_mongodb_User_getState____>` ()
        
        Returns the **State (?)** the user is in.
-       
        
        
        
@@ -253,13 +249,11 @@ Method Summary
        
        
        
-       
    
    * - public synchronized :ref:`MongoClient <io_realm_mongodb_mongo_MongoClient>`
      - :ref:`getMongoClient <io_realm_mongodb_User_getMongoClient__String__>` (**String (?)** serviceName)
        
        Returns a **MongoClient (?)** instance for accessing documents in the database.
-       
        
        
        
@@ -369,7 +363,6 @@ public :ref:`App <io_realm_mongodb_App>` getApp ()
 
 Returns the **App (?)** this user is associated with.
 
-
 .. _io_realm_mongodb_User_getState____:
 
 getState
@@ -378,7 +371,6 @@ getState
 public :ref:`User.State <io_realm_mongodb_User_State>` getState ()
 
 Returns the **State (?)** the user is in.
-
 
 .. _io_realm_mongodb_User_getCustomData____:
 
@@ -390,7 +382,6 @@ public **Document (?)** getCustomData ()
 Return the custom user data associated with the user in the Realm App.
 
 The data is only refreshed when the user's access token is refreshed or when explicitly calling **#refreshCustomData() (?)**.
-
 
 
 
@@ -417,7 +408,6 @@ public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` refreshCustomData (:ref:`
 Re-fetch custom user data from the Realm App asynchronously.
 
 This is the asynchronous variant of **#refreshCustomData() (?)**.
-
 
 
 
@@ -453,11 +443,13 @@ Links the current user with a new user identity represented by the given credent
 
 Linking a user with more credentials, mean the user can login either of these credentials. It also makes it possible to "upgrade" an anonymous user by linking it with e.g. Email/Password credentials.
 
-.. code-block:: java
-
-    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n // Example\n App app = new App(\"app-id\")\n User user = app.login(Credentials.anonymous());\n user.linkCredentials(Credentials.emailPassword(\"email\", \"password\"));\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n // Example\n App app = new App(\"app-id\")\n User user = app.login(Credentials.anonymous());\n user.linkCredentials(Credentials.emailPassword(\"email\", \"password\"));\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"// Example\n App app = new App(\"app-id\")\n User user = app.login(Credentials.anonymous());\n user.linkCredentials(Credentials.emailPassword(\"email\", \"password\"));"}]}!!!preHtmlParseTagDelimiter!!!
+ 
+    // Example
+    App app = new App("app-id")
+    User user = app.login(Credentials.anonymous());
+    user.linkCredentials(Credentials.emailPassword("email", "password"));
     
-
+ 
 Note: It is not possible to link two existing users of MongoDB Realm. The provided credentials must not have been used by another user.
 
 
@@ -483,11 +475,13 @@ Links the current user with a new user identity represented by the given credent
 
 Linking a user with more credentials, mean the user can login either of these credentials. It also makes it possible to "upgrade" an anonymous user by linking it with e.g. Email/Password credentials.
 
-.. code-block:: java
-
-    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n // Example\n App app = new App(\"app-id\")\n User user = app.login(Credentials.anonymous());\n user.linkCredentials(Credentials.emailPassword(\"email\", \"password\"));\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n // Example\n App app = new App(\"app-id\")\n User user = app.login(Credentials.anonymous());\n user.linkCredentials(Credentials.emailPassword(\"email\", \"password\"));\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"// Example\n App app = new App(\"app-id\")\n User user = app.login(Credentials.anonymous());\n user.linkCredentials(Credentials.emailPassword(\"email\", \"password\"));"}]}!!!preHtmlParseTagDelimiter!!!
+ 
+    // Example
+    App app = new App("app-id")
+    User user = app.login(Credentials.anonymous());
+    user.linkCredentials(Credentials.emailPassword("email", "password"));
     
-
+ 
 Note: It is not possible to link two existing users of MongoDB Realm. The provided credentials must not have been used by another user.
 
 
@@ -518,9 +512,7 @@ Log the user out of the Realm App. This will unregister them on the device, stop
 Once the Realm App has confirmed the logout any registered **AuthenticationListener (?)** will be notified and user credentials will be deleted from this device.
 
 
-
 Logging out anonymous users will remove them immediately instead of marking them as **User.State#LOGGED_OUT (?)**. All other users will be marked as **User.State#LOGGED_OUT (?)** and will still be returned by **App#allUsers() (?)**. They can be removed completely by calling **App#removeUser(User (?)** ()}.
-
 
 
 
@@ -539,9 +531,7 @@ Log the user out of the Realm App asynchronously. This will unregister them on t
 Once the Realm App has confirmed the logout any registered **AuthenticationListener (?)** will be notified and user credentials will be deleted from this device.
 
 
-
 Logging out anonymous users will remove them immediately instead of marking them as **User.State#LOGGED_OUT (?)**. All other users will be marked as **User.State#LOGGED_OUT (?)** and will still be returned by **App#allUsers() (?)**. They can be removed completely by calling **App#removeUser(User) (?)** ()}.
-
 
 
 
@@ -614,7 +604,6 @@ public synchronized :ref:`Push <io_realm_mongodb_push_Push>` getPush (**String (
 
 Returns the **Push (?)** instance for managing push notification registrations.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -631,7 +620,6 @@ getMongoClient
 public synchronized :ref:`MongoClient <io_realm_mongodb_mongo_MongoClient>` getMongoClient (**String (?)** serviceName)
 
 Returns a **MongoClient (?)** instance for accessing documents in the database.
-
 
 Parameters
 ~~~~~~~~~~

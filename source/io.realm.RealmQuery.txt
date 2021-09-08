@@ -15,17 +15,14 @@ io.realm.RealmQuery<E>
 - **java.lang.Object (?)**
 
 A RealmQuery encapsulates a query on a **io.realm.Realm (?)** or a **io.realm.RealmResults (?)** using the Builder pattern. The query is executed using either **#findAll() (?)** or **#findFirst() (?)**.
-
 The input to many of the query functions take a field name as String. Note that this is not type safe. If a RealmObject class is refactored care has to be taken to not break any queries.
 
 A **io.realm.Realm (?)** is unordered, which means that there is no guarantee that querying a Realm will return the objects in the order they where inserted. Use **#sort(String) (?)** (String)} and similar methods if a specific order is required.
 
 
-
 A RealmQuery cannot be passed between different threads.
 
 Results are obtained quickly most of the times. However, launching heavy queries from the UI thread may result in a drop of frames or even ANRs. If you want to prevent these behaviors, you can instantiate a Realm using a **RealmConfiguration (?)** that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)** to ``false``. This way queries will be forced to be launched from a non-UI thread. Alternatively, you can also use **#findAllAsync() (?)** or **#findFirstAsync() (?)**.
-
 
 
 
@@ -46,7 +43,6 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`isNull <io_realm_RealmQuery_isNull__String__>` (**String (?)** fieldName)
@@ -56,13 +52,11 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`isNotNull <io_realm_RealmQuery_isNotNull__String__>` (**String (?)** fieldName)
        
        Tests if a field is not ``null``.
-       
        
        
        
@@ -834,7 +828,6 @@ Method Summary
        
        
        
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`or <io_realm_RealmQuery_or____>` ()
@@ -1104,7 +1097,6 @@ Method Summary
        
        
        
-       
    
    * - public **Number (?)**
      - :ref:`max <io_realm_RealmQuery_max__String__>` (**String (?)** fieldName)
@@ -1130,7 +1122,6 @@ Method Summary
      - :ref:`maxRealmAny <io_realm_RealmQuery_maxRealmAny__String__>` (**String (?)** fieldName)
        
        Finds the maximum value of a **RealmAny (?)** field.
-       
        
        
        
@@ -1264,7 +1255,6 @@ Method Summary
        
        
        
-       
    
    * - public **String (?)**
      - :ref:`getDescription <io_realm_RealmQuery_getDescription____>` ()
@@ -1304,7 +1294,6 @@ Method Summary
        
        
        
-       
    
    
 Method Detail
@@ -1319,7 +1308,6 @@ public **boolean (?)** isValid ()
 
 Checks if **io.realm.RealmQuery (?)** is still valid to use i.e., the **io.realm.Realm (?)** instance hasn't been closed and any parent **io.realm.RealmResults (?)** is still valid.
 
-
 .. _io_realm_RealmQuery_isNull__String__:
 
 isNull
@@ -1328,9 +1316,7 @@ isNull
 public :ref:`RealmQuery <io_realm_RealmQuery>` isNull (**String (?)** fieldName)
 
 Tests if a field is ``null``. Only works for nullable fields.
-
 For link queries, if any part of the link path is ``null`` the whole path is considered to be ``null`` e.g., ``isNull("linkField.stringField")`` will be considered to be ``null`` if either ``linkField`` or ``linkField.stringField`` is ``null``.
-
 
 
 
@@ -1356,7 +1342,6 @@ isNotNull
 public :ref:`RealmQuery <io_realm_RealmQuery>` isNotNull (**String (?)** fieldName)
 
 Tests if a field is not ``null``. Only works for nullable fields.
-
 
 Parameters
 ~~~~~~~~~~
@@ -1421,7 +1406,6 @@ Parameters
 - casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
-   
 
 Throws
 ~~~~~~
@@ -1448,7 +1432,6 @@ Parameters
    
    
 - casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
-   
    
    
 
@@ -1550,7 +1533,6 @@ Parameters
 - values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
-   
 
 Throws
 ~~~~~~
@@ -1575,9 +1557,7 @@ Parameters
 - values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
-   
 - casing - how casing is handled. **Case#INSENSITIVE (?)** works only for the Latin-1 characters.
-   
    
    
 
@@ -1604,7 +1584,6 @@ Parameters
 - values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
-   
 
 Throws
 ~~~~~~
@@ -1627,7 +1606,6 @@ Parameters
    
    
 - values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
-   
    
    
 
@@ -1654,7 +1632,6 @@ Parameters
 - values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
-   
 
 Throws
 ~~~~~~
@@ -1677,7 +1654,6 @@ Parameters
    
    
 - values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
-   
    
    
 
@@ -1704,7 +1680,6 @@ Parameters
 - values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
-   
 
 Throws
 ~~~~~~
@@ -1727,7 +1702,6 @@ Parameters
    
    
 - values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
-   
    
    
 
@@ -1754,7 +1728,6 @@ Parameters
 - values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
-   
 
 Throws
 ~~~~~~
@@ -1779,7 +1752,6 @@ Parameters
 - values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
-   
 
 Throws
 ~~~~~~
@@ -1802,7 +1774,6 @@ Parameters
    
    
 - values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
-   
    
    
 
@@ -1858,7 +1829,6 @@ Parameters
 - casing - how casing is handled. **Case#INSENSITIVE (?)** works only for the Latin-1 characters.
    
    
-   
 
 Throws
 ~~~~~~
@@ -1885,7 +1855,6 @@ Parameters
    
    
 - casing - how casing is handled. **Case#INSENSITIVE (?)** works only for the Latin-1 characters.
-   
    
    
 
@@ -2894,7 +2863,6 @@ Parameters
 - casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
-   
 
 Throws
 ~~~~~~
@@ -2921,7 +2889,6 @@ Parameters
    
    
 - casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
-   
    
    
 
@@ -3002,7 +2969,6 @@ Parameters
 - casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
-   
 
 Throws
 ~~~~~~
@@ -3029,7 +2995,6 @@ Parameters
    
    
 - casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
-   
    
    
 
@@ -3110,7 +3075,6 @@ Parameters
 - casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
-   
 
 Throws
 ~~~~~~
@@ -3137,7 +3101,6 @@ Parameters
    
    
 - casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
-   
    
    
 
@@ -3239,7 +3202,6 @@ Parameters
 - casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
-   
 
 Throws
 ~~~~~~
@@ -3275,7 +3237,6 @@ Parameters
 - casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
-   
 
 Throws
 ~~~~~~
@@ -3289,7 +3250,6 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` beginGroup ()
 
 Begin grouping of conditions ("left parenthesis"). A group must be closed with a call to ``endGroup()``.
 
-
 See Also
 ~~~~~~~~
 
@@ -3301,7 +3261,6 @@ endGroup
 public :ref:`RealmQuery <io_realm_RealmQuery>` endGroup ()
 
 End grouping of conditions ("right parenthesis") which was opened by a call to ``beginGroup()``.
-
 
 See Also
 ~~~~~~~~
@@ -3811,7 +3770,6 @@ Parameters
 - fieldName - the field to calculate average on. Only Decimal128 fields is supported. For other number types consider using **#average(String) (?)**.
    
    
-   
 
 Throws
 ~~~~~~
@@ -3830,7 +3788,6 @@ Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to calculate average on. Only RealmAny fields are supported. For other types consider using **#average(String) (?)**.
-   
    
    
 
@@ -3887,7 +3844,6 @@ minRealmAny
 public **RealmAny (?)** minRealmAny (**String (?)** fieldName)
 
 Finds the minimum value of a **RealmAny (?)** field.
-
 
 Parameters
 ~~~~~~~~~~
@@ -3951,7 +3907,6 @@ public **RealmAny (?)** maxRealmAny (**String (?)** fieldName)
 
 Finds the maximum value of a **RealmAny (?)** field.
 
-
 Parameters
 ~~~~~~~~~~
 
@@ -3986,7 +3941,6 @@ public :ref:`RealmResults <io_realm_RealmResults>` findAll ()
 Finds all objects that fulfill the query conditions.
 
 Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so and therefore it is not allowed by default.** If you want to prevent these behaviors you can obtain a Realm using a **RealmConfiguration (?)** that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)** to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a **RealmException (?)**. Alternatively, you can use **#findAllAsync() (?)**.
-
 
 
 
@@ -4067,7 +4021,6 @@ sort
 public :ref:`RealmQuery <io_realm_RealmQuery>` sort (**String (?)** fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, **String (?)** fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
 
 Sorts the query result by the specific field names in the provided orders. ``fieldName2`` is only used in case of equal values in ``fieldName1``.
-
 Sorting is currently limited to character sets in 'Latin Basic', 'Latin Supplement', 'Latin Extended A', 'Latin Extended B' (UTF-8 range 0-591). For other character sets, sorting will have no effect.
 
 
@@ -4159,12 +4112,10 @@ Note that when using this method in combination with **#sort(String) (?)** and *
 
 
 
-
 Parameters
 ~~~~~~~~~~
 
 - limit - a limit that is ``≥ 1``.
-   
    
    
 
@@ -4201,17 +4152,37 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` rawPredicate (**String (?)** pred
 Create a text-based predicate using the Realm Query Language. This predicate can be combined with other raw or type safe predicates, it accepts Realm values as arguments.
 
 Class and property names used in the raw predicate can be either the names defined in the Realm Model classes or the internal names defined using the **io.realm.annotations.RealmClass (?)** or **io.realm.annotations.RealmField (?)** annotations. If a class or property name contains spaces those must be escaped.
-
  Arguments are defined in the string predicate as $argument_index, where $argument_index is a decimal integer that specifies the position of the argument in the argument list. The first argument is referenced by $0, the second by $1, etc.
 
 See `these docs <https://docs.mongodb.com/realm-sdks/js/latest/tutorial-query-language.html>`__ for a more detailed description of the Realm Query Language.
 
-.. code-block:: java
-
-    Examples:
-    !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n RealmQuery<Person> query = realm.where(Person.class);\n\n // Simple query\n query.rawPredicate(\"name = 'Jane'\");\n\n // Spaces in property name\n query.rawPredicate(\"my\\ property = 'Jane'\");\n\n // Multiple predicates\n query.rawPredicate(\"name = 'Jane' OR name = 'John'\")\n\n // Collection queries\n query.rawPredicate(\"children.@count > 3\")\n query.rawPredicate(\"ALL children.age > 18\")\n\n // Sub queries\n query.rawPredicate(\"SUBQUERY(children, $child, $child.age > 21 AND $child.gender = 'male').@count > 0\");\n\n // Sort, Distinct, Limit\n query.rawPredicate(\"name = 'Jane' SORT(lastName ASC) DISTINCT(city) LIMIT(5)\");\n\n // Arguments\n query.rawPredicate(\"name = $0 AND age > $1\", \"Jane\", 18);\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n RealmQuery<Person> query = realm.where(Person.class);\n\n // Simple query\n query.rawPredicate(\"name = 'Jane'\");\n\n // Spaces in property name\n query.rawPredicate(\"my\\ property = 'Jane'\");\n\n // Multiple predicates\n query.rawPredicate(\"name = 'Jane' OR name = 'John'\")\n\n // Collection queries\n query.rawPredicate(\"children.@count > 3\")\n query.rawPredicate(\"ALL children.age > 18\")\n\n // Sub queries\n query.rawPredicate(\"SUBQUERY(children, $child, $child.age > 21 AND $child.gender = 'male').@count > 0\");\n\n // Sort, Distinct, Limit\n query.rawPredicate(\"name = 'Jane' SORT(lastName ASC) DISTINCT(city) LIMIT(5)\");\n\n // Arguments\n query.rawPredicate(\"name = $0 AND age > $1\", \"Jane\", 18);\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"RealmQuery<Person> query = realm.where(Person.class);\n\n // Simple query\n query.rawPredicate(\"name = 'Jane'\");\n\n // Spaces in property name\n query.rawPredicate(\"my\\ property = 'Jane'\");\n\n // Multiple predicates\n query.rawPredicate(\"name = 'Jane' OR name = 'John'\")\n\n // Collection queries\n query.rawPredicate(\"children.@count > 3\")\n query.rawPredicate(\"ALL children.age > 18\")\n\n // Sub queries\n query.rawPredicate(\"SUBQUERY(children, $child, $child.age > 21 AND $child.gender = 'male').@count > 0\");\n\n // Sort, Distinct, Limit\n query.rawPredicate(\"name = 'Jane' SORT(lastName ASC) DISTINCT(city) LIMIT(5)\");\n\n // Arguments\n query.rawPredicate(\"name = $0 AND age > $1\", \"Jane\", 18);"}]}!!!preHtmlParseTagDelimiter!!!
+ Examples:
+ 
+    RealmQuery<Person> query = realm.where(Person.class);
+   
+    // Simple query
+    query.rawPredicate("name = 'Jane'");
+   
+    // Spaces in property name
+    query.rawPredicate("my\ property = 'Jane'");
+   
+    // Multiple predicates
+    query.rawPredicate("name = 'Jane' OR name = 'John'")
+   
+    // Collection queries
+    query.rawPredicate("children.@count > 3")
+    query.rawPredicate("ALL children.age > 18")
+   
+    // Sub queries
+    query.rawPredicate("SUBQUERY(children, $child, $child.age > 21 AND $child.gender = 'male').@count > 0");
+   
+    // Sort, Distinct, Limit
+    query.rawPredicate("name = 'Jane' SORT(lastName ASC) DISTINCT(city) LIMIT(5)");
+   
+    // Arguments
+    query.rawPredicate("name = $0 AND age > $1", "Jane", 18);
     
-
+ 
 
 Parameters
 ~~~~~~~~~~
@@ -4236,9 +4207,7 @@ getRealm
 public :ref:`Realm <io_realm_Realm>` getRealm ()
 
 Returns the **Realm (?)** instance to which this query belongs.
-
 Calling **Realm#close() (?)** on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the query.
-
 
 
 
@@ -4278,7 +4247,6 @@ Launching heavy queries from the UI thread may result in a drop of frames or eve
 
 
 
-
 Throws
 ~~~~~~
 
@@ -4293,7 +4261,6 @@ findFirstAsync
 public **E (?)** findFirstAsync ()
 
 Similar to **#findFirst() (?)** but runs asynchronously on a worker thread. An listener should be registered to the returned **RealmObject (?)** to get the notification when query completes. The registered listener will also be triggered if there are changes made to the queried **RealmObject (?)**. If the **RealmObject (?)** is deleted, the listener will be called one last time and then stop. The query will not be re-run.
-
 
 Throws
 ~~~~~~
