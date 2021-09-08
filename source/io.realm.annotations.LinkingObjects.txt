@@ -17,7 +17,9 @@ io.realm.annotations.LinkingObjects
 Annotation for defining a reverse relationship from one class to another. This annotation can only be added to a field of the type ``RealmResults``.
 
  To expose reverse relationships for use, create a declaration as follows:
- .. code-block:: java
+ 
+
+.. code-block:: java
 
    
    
@@ -88,7 +90,9 @@ In addition, they have the following restrictions:
    
    
 
-Note that when the source of the reverse reference (`dog` in the case above) is a `List`, there is a reverse reference for each forward reference, even if both forward references are to the same object. If the `Person` class above were defined as: .. code-block:: java
+Note that when the source of the reverse reference (`dog` in the case above) is a `List`, there is a reverse reference for each forward reference, even if both forward references are to the same object. If the `Person` class above were defined as: 
+
+.. code-block:: java
 
    public class DogLover extends RealmObject {
     String name;
@@ -96,7 +100,9 @@ Note that when the source of the reverse reference (`dog` in the case above) is 
     }
     
 
- then the following code executes without error .. code-block:: java
+ then the following code executes without error 
+
+.. code-block:: java
 
    Dog fido = new Dog();
     DogLover john = new DogLover()
