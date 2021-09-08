@@ -10,9 +10,11 @@ io.realm.OrderedRealmCollectionChangeListener<T>
 
 .. _io_realm_OrderedRealmCollectionChangeListener:
 
-can be registered with a to receive a notification with a to describe the details of what have been changed in the collection since last time.
+**OrderedRealmCollectionChangeListener (?)** can be registered with a **RealmResults (?)** to receive a notification with a **OrderedCollectionChangeSet (?)** to describe the details of what have been changed in the collection since last time.
 
-Realm instances on a thread without an cannot register a .
+Realm instances on a thread without an **android.os.Looper (?)** cannot register a **OrderedRealmCollectionChangeListener (?)**.
+
+
 
 
 Method Summary

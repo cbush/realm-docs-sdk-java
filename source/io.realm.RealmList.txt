@@ -18,13 +18,17 @@ io.realm.RealmList<E>
 
 - :ref:`io.realm.OrderedRealmCollection <io_realm_OrderedRealmCollection>`
 
-RealmList is used to model one-to-many relationships in a . RealmList has two modes: A managed and unmanaged mode. In managed mode all objects are persisted inside a Realm, in unmanaged mode it works as a normal ArrayList.
+RealmList is used to model one-to-many relationships in a **io.realm.RealmObject (?)**. RealmList has two modes: A managed and unmanaged mode. In managed mode all objects are persisted inside a Realm, in unmanaged mode it works as a normal ArrayList.
 
-Only Realm can create managed RealmLists. Managed RealmLists will automatically update the content whenever the underlying Realm is updated, and can only be accessed using the getter of a .
+Only Realm can create managed RealmLists. Managed RealmLists will automatically update the content whenever the underlying Realm is updated, and can only be accessed using the getter of a **io.realm.RealmObject (?)**.
 
-Unmanaged RealmLists can be created by the user and can contain both managed and unmanaged RealmObjects. This is useful when dealing with JSON deserializers like GSON or other frameworks that inject values into a class. Unmanaged elements in this list can be added to a Realm using the method.
 
-can contain more elements than ``Integer.MAX_VALUE``. In that case, you can access only first ``Integer.MAX_VALUE`` elements in it.
+
+Unmanaged RealmLists can be created by the user and can contain both managed and unmanaged RealmObjects. This is useful when dealing with JSON deserializers like GSON or other frameworks that inject values into a class. Unmanaged elements in this list can be added to a Realm using the **Realm#copyToRealm(Iterable, ImportFlag...) (?)** method.
+
+
+
+**RealmList (?)** can contain more elements than ``Integer.MAX_VALUE``. In that case, you can access only first ``Integer.MAX_VALUE`` elements in it.
 
 
 
@@ -480,7 +484,7 @@ Method Summary
    * - public :ref:`Realm <io_realm_Realm>`
      - :ref:`getRealm <io_realm_RealmList_getRealm____>` ()
        
-       Returns the instance to which this collection belongs.
+       Returns the **Realm (?)** instance to which this collection belongs.
        
        
        
@@ -518,7 +522,7 @@ Method Summary
    * - public **void (?)**
      - :ref:`addChangeListener <io_realm_RealmList_addChangeListener__OrderedRealmCollectionChangeListener_RealmList_E____>` (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmList\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
        
-       Adds a change listener to this .
+       Adds a change listener to this **RealmList (?)**.
        
        
        
@@ -538,7 +542,7 @@ Method Summary
    * - public **void (?)**
      - :ref:`addChangeListener <io_realm_RealmList_addChangeListener__RealmChangeListener_RealmList_E____>` (:ref:`io.realm.RealmChangeListener\<io.realm.RealmList\<E>> <io_realm_RealmChangeListener>` listener)
        
-       Adds a change listener to this .
+       Adds a change listener to this **RealmList (?)**.
        
        
        
@@ -586,7 +590,7 @@ className
 baseRealm
 ---------
 
-The instance in which this list resides.
+The **BaseRealm (?)** instance in which this list resides.
 
 Warning: This field is only exposed for internal usage, and should not be used.
 
@@ -643,10 +647,14 @@ public **void (?)** add (**int (?)** location, **E (?)** element)
 
 Inserts the specified object into this List at the specified location. The object is inserted before any previous element at the specified location. If the location is equal to the size of this List, the object is added at the end.
 
-1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using afterwards.
+1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** afterwards.
    
    
-#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using or if it has a primary key.
+   
+   
+#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** or **Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** if it has a primary key.
+   
+   
    
    
 
@@ -675,10 +683,14 @@ public **boolean (?)** add (**E (?)** object)
 
 Adds the specified object at the end of this List.
 
-1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using afterwards.
+1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** afterwards.
    
    
-#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using or if it has a primary key.
+   
+   
+#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** or **Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** if it has a primary key.
+   
+   
    
    
 
@@ -703,10 +715,14 @@ public **E (?)** set (**int (?)** location, **E (?)** object)
 
 Replaces the element at the specified location in this list with the specified object.
 
-1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using afterwards.
+1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** afterwards.
    
    
-#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using or if it has a primary key.
+   
+   
+#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** or **Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** if it has a primary key.
+   
+   
    
    
 
@@ -1093,7 +1109,9 @@ public **boolean (?)** contains (**Object (?)** object)
 
 Returns ``true`` if the list contains the specified element when attached to a Realm. This method will query the native Realm underlying storage engine to quickly find the specified element.
 
-If the list is not attached to a Realm, the default implementation will occur.
+If the list is not attached to a Realm, the default **List#contains(Object) (?)** implementation will occur.
+
+
 
 
 Parameters
@@ -1151,9 +1169,11 @@ getRealm
 
 public :ref:`Realm <io_realm_Realm>` getRealm ()
 
-Returns the instance to which this collection belongs.
+Returns the **Realm (?)** instance to which this collection belongs.
 
-Calling on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the list.
+Calling **Realm#close() (?)** on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the list.
+
+
 
 
 Throws
@@ -1176,7 +1196,9 @@ public **<any> (?)** asFlowable ()
 
 Returns an Rx Flowable that monitors changes to this RealmList. It will emit the current RealmList when subscribed to. RealmList will continually be emitted as the RealmList is updated - ``onComplete`` will never be called.
 
-Items emitted from Realm Flowables are frozen (See . This means that they are immutable and can be read on any thread.
+Items emitted from Realm Flowables are frozen (See **#freeze() (?)**. This means that they are immutable and can be read on any thread.
+
+
 
 Realm Flowables always emit items from the thread holding the live RealmList. This means that if you need to do further processing, it is recommend to observe the values on a computation scheduler:
 
@@ -1212,13 +1234,15 @@ asChangesetObservable
 
 public **<any> (?)** asChangesetObservable ()
 
-Returns an Rx Observable that monitors changes to this RealmList. It will emit the current RealmList when subscribed. For each update to the RealmList a pair consisting of the RealmList and the will be sent. The changeset will be ``null`` the first time an RealmList is emitted.
+Returns an Rx Observable that monitors changes to this RealmList. It will emit the current RealmList when subscribed. For each update to the RealmList a pair consisting of the RealmList and the **OrderedCollectionChangeSet (?)** will be sent. The changeset will be ``null`` the first time an RealmList is emitted.
 
 RealmList will continually be emitted as the RealmList is updated - ``onComplete`` will never be called.
 
 
 
-Items emitted from Realm Observables are frozen (See . This means that they are immutable and can be read on any thread.
+Items emitted from Realm Observables are frozen (See **#freeze() (?)**. This means that they are immutable and can be read on any thread.
+
+
 
 Realm Observables always emit items from the thread holding the live Realm. This means that if you need to do further processing, it is recommend to observe the values on a computation scheduler:
 
@@ -1245,7 +1269,7 @@ addChangeListener
 
 public **void (?)** addChangeListener (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmList\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
 
-Adds a change listener to this .
+Adds a change listener to this **RealmList (?)**.
 
 Registering a change listener will not prevent the underlying RealmList from being garbage collected. If the RealmList is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
@@ -1297,7 +1321,7 @@ addChangeListener
 
 public **void (?)** addChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmList\<E>> <io_realm_RealmChangeListener>` listener)
 
-Adds a change listener to this .
+Adds a change listener to this **RealmList (?)**.
 
 Registering a change listener will not prevent the underlying RealmList from being garbage collected. If the RealmList is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 

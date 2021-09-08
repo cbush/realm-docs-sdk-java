@@ -14,9 +14,11 @@ io.realm.rx.CollectionChange<E extends io.realm.OrderedRealmCollection>
 
 - **java.lang.Object (?)**
 
-Container wrapping the result of a being triggered.
+Container wrapping the result of a **io.realm.OrderedRealmCollectionChangeListener (?)** being triggered.
 
-This is used by } and as RxJava is only capable of emitting one item, not multiple.
+This is used by **RealmResults#asChangesetObservable() (?)**} and **RealmList#asChangesetObservable() (?)** as RxJava is only capable of emitting one item, not multiple.
+
+
 
 
 Constructors

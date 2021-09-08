@@ -14,7 +14,7 @@ io.realm.mongodb.RealmEventStreamTask<T>
 
 - :ref:`io.realm.RealmAsyncTask <io_realm_RealmAsyncTask>`
 
-The RealmEventStreamTask is a specific version of that provides a blocking mechanism to work with asynchronous operations carried out against MongoDB Realm that yield stream results.
+The RealmEventStreamTask is a specific version of **RealmAsyncTask (?)** that provides a blocking mechanism to work with asynchronous operations carried out against MongoDB Realm that yield stream results.
 
 
 Method Summary

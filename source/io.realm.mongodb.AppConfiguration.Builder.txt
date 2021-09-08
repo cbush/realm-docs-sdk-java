@@ -14,7 +14,7 @@ io.realm.mongodb.AppConfiguration.Builder
 
 - **java.lang.Object (?)**
 
-Builder used to construct instances of a in a fluent manner.
+Builder used to construct instances of a **AppConfiguration (?)** in a fluent manner.
 
 
 Constructors
@@ -144,7 +144,7 @@ Method Summary
    * - public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>`
      - :ref:`codecRegistry <io_realm_mongodb_AppConfiguration_Builder_codecRegistry__CodecRegistry__>` (**CodecRegistry (?)** codecRegistry)
        
-       Set the default codec registry used to encode and decode BSON arguments and results when calling remote Realm and accessing a remote .
+       Set the default codec registry used to encode and decode BSON arguments and results when calling remote Realm **io.realm.mongodb.functions.Functions (?)** and accessing a remote **io.realm.mongodb.mongo.MongoDatabase (?)**.
        
        
        
@@ -154,7 +154,7 @@ Method Summary
    * - public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>`
      - :ref:`httpLogObfuscator <io_realm_mongodb_AppConfiguration_Builder_httpLogObfuscator__HttpLogObfuscator__>` (:ref:`HttpLogObfuscator <io_realm_mongodb_log_obfuscator_HttpLogObfuscator>` httpLogObfuscator)
        
-       Sets the used to keep sensitive information in HTTP requests from being displayed in the logcat.
+       Sets the **HttpLogObfuscator (?)** used to keep sensitive information in HTTP requests from being displayed in the logcat.
        
        
        
@@ -182,7 +182,7 @@ encryptionKey
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` encryptionKey (**byte[] (?)** key)
 
-Sets the encryption key used to encrypt user meta data only. Individual Realms needs to use to make them encrypted.
+Sets the encryption key used to encrypt user meta data only. Individual Realms needs to use **io.realm.mongodb.sync.SyncConfiguration.Builder#encryptionKey(byte[]) (?)** to make them encrypted.
 
 
 Parameters
@@ -203,7 +203,7 @@ baseUrl
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` baseUrl (**String (?)** baseUrl)
 
-Sets the base url for the MongoDB Realm Application. The default value is .
+Sets the base url for the MongoDB Realm Application. The default value is **#DEFAULT_BASE_URL (?)**.
 
 
 Parameters
@@ -257,7 +257,7 @@ requestTimeout
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` requestTimeout (**long (?)** time, **TimeUnit (?)** unit)
 
-Sets the default timeout used by network requests against the MongoDB Realm application. Requests will terminate with a failure if they exceed this limit. The default value is seconds.
+Sets the default timeout used by network requests against the MongoDB Realm application. Requests will terminate with a failure if they exceed this limit. The default value is :ref:`AppConfiguration#DEFAULT_REQUEST_TIMEOUT <io_realm_mongodb_AppConfiguration_DEFAULT_REQUEST_TIMEOUT>` seconds.
 
 
 Parameters
@@ -281,7 +281,9 @@ public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder
 
 Sets the name of the HTTP header used to send authorization data in when making requests to MongoDB Realm. The MongoDB server or firewall must have been configured to expect a custom authorization header.
 
-The default authorization header is named .
+The default authorization header is named **#DEFAULT_AUTHORIZATION_HEADER_NAME (?)**.
+
+
 
 
 Parameters
@@ -353,7 +355,9 @@ public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder
 
 Sets the default error handler used by Synced Realms when reporting errors with their session.
 
-This default can be overridden by calling when creating the .
+This default can be overridden by calling **io.realm.mongodb.sync.SyncConfiguration.Builder#errorHandler(SyncSession.ErrorHandler) (?)** when creating the **io.realm.mongodb.sync.SyncConfiguration (?)**.
+
+
 
 
 Parameters
@@ -373,7 +377,9 @@ public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder
 
 Sets the default Client Reset handler used by Synced Realms when they report a Client Reset. session.
 
-This default can be overridden by calling when creating the .
+This default can be overridden by calling **io.realm.mongodb.sync.SyncConfiguration.Builder#clientResetHandler(SyncSession.ClientResetHandler) (?)** when creating the **io.realm.mongodb.sync.SyncConfiguration (?)**.
+
+
 
 
 Parameters
@@ -413,9 +419,11 @@ codecRegistry
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` codecRegistry (**CodecRegistry (?)** codecRegistry)
 
-Set the default codec registry used to encode and decode BSON arguments and results when calling remote Realm and accessing a remote .
+Set the default codec registry used to encode and decode BSON arguments and results when calling remote Realm **io.realm.mongodb.functions.Functions (?)** and accessing a remote **io.realm.mongodb.mongo.MongoDatabase (?)**.
 
-Will default to if not specified.
+Will default to **#DEFAULT_BSON_CODEC_REGISTRY (?)** if not specified.
+
+
 
 
 Parameters
@@ -436,7 +444,7 @@ httpLogObfuscator
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` httpLogObfuscator (:ref:`HttpLogObfuscator <io_realm_mongodb_log_obfuscator_HttpLogObfuscator>` httpLogObfuscator)
 
-Sets the used to keep sensitive information in HTTP requests from being displayed in the logcat.
+Sets the **HttpLogObfuscator (?)** used to keep sensitive information in HTTP requests from being displayed in the logcat.
 
 If left unspecified, it will default to obfuscating HTTP login requests.
 

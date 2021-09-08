@@ -14,7 +14,7 @@ io.realm.mongodb.UserIdentity
 
 - **java.lang.Object (?)**
 
-Each User is represented by 1 or more identities each defined by an . This class represents the identity defined by a specific provider.
+Each User is represented by 1 or more identities each defined by an **Credentials.Provider (?)**. This class represents the identity defined by a specific provider.
 
 
 Method Summary

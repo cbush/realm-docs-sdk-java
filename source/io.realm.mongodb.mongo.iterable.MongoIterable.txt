@@ -16,7 +16,7 @@ io.realm.mongodb.mongo.iterable.MongoIterable<ResultT>
 
 The MongoIterable is the results from an operation, such as a ``find()`` or an ``aggregate()`` query.
 
-This class somewhat mimics the behavior of an but given its results are obtained asynchronously, its values are wrapped inside a ``Task``.
+This class somewhat mimics the behavior of an **Iterable (?)** but given its results are obtained asynchronously, its values are wrapped inside a ``Task``.
 
 
 

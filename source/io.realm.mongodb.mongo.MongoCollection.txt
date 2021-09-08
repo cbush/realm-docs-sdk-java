@@ -16,7 +16,9 @@ io.realm.mongodb.mongo.MongoCollection<DocumentT>
 
 The MongoCollection interface provides read and write access to documents.
 
-Use to get a collection instance.
+Use **MongoDatabase#getCollection (?)** to get a collection instance.
+
+
 
 Before any access is possible, there must be an active, logged-in user.
 
@@ -193,7 +195,7 @@ Method Summary
    * - public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>`
      - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find__FindOptions__>` (:ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
        
-       Finds all documents in the collection using to build the query.
+       Finds all documents in the collection using **FindOptions (?)** to build the query.
        
        
        
@@ -213,7 +215,7 @@ Method Summary
    * - public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>`
      - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find__Class_ResultT___FindOptions__>` <**ResultT (?)** >(**java.lang.Class<ResultT> (?)** resultClass, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
        
-       Finds all documents in the collection specifying an output class and also using to build the query.
+       Finds all documents in the collection specifying an output class and also using **FindOptions (?)** to build the query.
        
        
        
@@ -233,7 +235,7 @@ Method Summary
    * - public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>`
      - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find__Bson__FindOptions__>` (**Bson (?)** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
        
-       Finds all documents in the collection that match the given filter using to build the query.
+       Finds all documents in the collection that match the given filter using **FindOptions (?)** to build the query.
        
        
        
@@ -253,7 +255,7 @@ Method Summary
    * - public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>`
      - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find__Bson__Class_ResultT___FindOptions__>` <**ResultT (?)** >(**Bson (?)** filter, **java.lang.Class<ResultT> (?)** resultClass, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
        
-       Finds all documents in the collection that match the given filter specifying an output class and also using to build the query.
+       Finds all documents in the collection that match the given filter specifying an output class and also using **FindOptions (?)** to build the query.
        
        
        
@@ -613,7 +615,9 @@ public **Class (?)** getDocumentClass ()
 
 Gets the class of documents stored in this collection.
 
-If you used the simple to get this collection, this is .
+If you used the simple **MongoDatabase#getCollection(String) (?)** to get this collection, this is **org.bson.Document (?)**.
+
+
 
 
 .. _io_realm_mongodb_mongo_MongoCollection_getCodecRegistry____:
@@ -665,7 +669,7 @@ Creates a new MongoCollection instance with a different codec registry.
 Parameters
 ~~~~~~~~~~
 
-- codecRegistry - the new for the collection.
+- codecRegistry - the new **CodecRegistry (?)** for the collection.
    
    
    
@@ -821,7 +825,7 @@ Parameters
    
    
    
-- options - a struct
+- options - a **FindOptions (?)** struct
    
    
    
@@ -851,7 +855,7 @@ Parameters
    
    
    
-- options - a struct
+- options - a **FindOptions (?)** struct
    
    
    
@@ -869,7 +873,9 @@ public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find (
 
 Finds all documents in the collection.
 
-All documents will be delivered in the form of a from which individual elements can be extracted.
+All documents will be delivered in the form of a **FindIterable (?)** from which individual elements can be extracted.
+
+
 
 
 .. _io_realm_mongodb_mongo_MongoCollection_find__FindOptions__:
@@ -879,15 +885,17 @@ find
 
 public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find (:ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
 
-Finds all documents in the collection using to build the query.
+Finds all documents in the collection using **FindOptions (?)** to build the query.
 
-All documents will be delivered in the form of a from which individual elements can be extracted.
+All documents will be delivered in the form of a **FindIterable (?)** from which individual elements can be extracted.
+
+
 
 
 Parameters
 ~~~~~~~~~~
 
-- options - a struct for building the query
+- options - a **FindOptions (?)** struct for building the query
    
    
    
@@ -901,7 +909,9 @@ public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find <
 
 Finds all documents in the collection specifying an output class.
 
-All documents will be delivered in the form of a from which individual elements can be extracted.
+All documents will be delivered in the form of a **FindIterable (?)** from which individual elements can be extracted.
+
+
 
 
 Type Parameters
@@ -927,9 +937,11 @@ find
 
 public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find <**ResultT (?)** >(**java.lang.Class<ResultT> (?)** resultClass, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
 
-Finds all documents in the collection specifying an output class and also using to build the query.
+Finds all documents in the collection specifying an output class and also using **FindOptions (?)** to build the query.
 
-All documents will be delivered in the form of a from which individual elements can be extracted.
+All documents will be delivered in the form of a **FindIterable (?)** from which individual elements can be extracted.
+
+
 
 
 Type Parameters
@@ -947,7 +959,7 @@ Parameters
    
    
    
-- options - a struct for building the query
+- options - a **FindOptions (?)** struct for building the query
    
    
    
@@ -961,7 +973,9 @@ public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find (
 
 Finds all documents in the collection that match the given filter.
 
-All documents will be delivered in the form of a from which individual elements can be extracted.
+All documents will be delivered in the form of a **FindIterable (?)** from which individual elements can be extracted.
+
+
 
 
 Parameters
@@ -979,9 +993,11 @@ find
 
 public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find (**Bson (?)** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
 
-Finds all documents in the collection that match the given filter using to build the query.
+Finds all documents in the collection that match the given filter using **FindOptions (?)** to build the query.
 
-All documents will be delivered in the form of a from which individual elements can be extracted.
+All documents will be delivered in the form of a **FindIterable (?)** from which individual elements can be extracted.
+
+
 
 
 Parameters
@@ -991,7 +1007,7 @@ Parameters
    
    
    
-- options - a struct
+- options - a **FindOptions (?)** struct
    
    
    
@@ -1005,7 +1021,9 @@ public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find <
 
 Finds all documents in the collection that match the given filter specifying an output class.
 
-All documents will be delivered in the form of a from which individual elements can be extracted.
+All documents will be delivered in the form of a **FindIterable (?)** from which individual elements can be extracted.
+
+
 
 
 Type Parameters
@@ -1035,9 +1053,11 @@ find
 
 public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find <**ResultT (?)** >(**Bson (?)** filter, **java.lang.Class<ResultT> (?)** resultClass, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
 
-Finds all documents in the collection that match the given filter specifying an output class and also using to build the query.
+Finds all documents in the collection that match the given filter specifying an output class and also using **FindOptions (?)** to build the query.
 
-All documents will be delivered in the form of a from which individual elements can be extracted.
+All documents will be delivered in the form of a **FindIterable (?)** from which individual elements can be extracted.
+
+
 
 
 Type Parameters
@@ -1059,7 +1079,7 @@ Parameters
    
    
    
-- options - a struct
+- options - a **FindOptions (?)** struct
    
    
    
@@ -1073,7 +1093,9 @@ public :ref:`AggregateIterable <io_realm_mongodb_mongo_iterable_AggregateIterabl
 
 Aggregates documents according to the specified aggregation pipeline.
 
-All documents will be delivered in the form of an from which individual elements can be extracted.
+All documents will be delivered in the form of an **AggregateIterable (?)** from which individual elements can be extracted.
+
+
 
 
 Parameters
@@ -1093,7 +1115,9 @@ public :ref:`AggregateIterable <io_realm_mongodb_mongo_iterable_AggregateIterabl
 
 Aggregates documents according to the specified aggregation pipeline specifying an output class.
 
-All documents will be delivered in the form of an from which individual elements can be extracted.
+All documents will be delivered in the form of an **AggregateIterable (?)** from which individual elements can be extracted.
+
+
 
 
 Type Parameters
@@ -1361,7 +1385,7 @@ Parameters
    
    
    
-- options - a struct
+- options - a **FindOneAndModifyOptions (?)** struct
    
    
    
@@ -1395,7 +1419,7 @@ Parameters
    
    
    
-- options - a struct
+- options - a **FindOneAndModifyOptions (?)** struct
    
    
    
@@ -1481,7 +1505,7 @@ Parameters
    
    
    
-- options - a struct
+- options - a **FindOneAndModifyOptions (?)** struct
    
    
    
@@ -1515,7 +1539,7 @@ Parameters
    
    
    
-- options - a struct
+- options - a **FindOneAndModifyOptions (?)** struct
    
    
    
@@ -1589,7 +1613,7 @@ Parameters
    
    
    
-- options - a struct
+- options - a **FindOneAndModifyOptions (?)** struct
    
    
    
@@ -1619,7 +1643,7 @@ Parameters
    
    
    
-- options - a struct
+- options - a **FindOneAndModifyOptions (?)** struct
    
    
    
@@ -1663,7 +1687,7 @@ watch
 
 public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>` watch (**ObjectId[] (?)** ids)
 
-Watches specified IDs in a collection. This convenience overload supports the use case of non- instances of by wrapping them in instances for the user.
+Watches specified IDs in a collection. This convenience overload supports the use case of non-**BsonValue (?)** instances of **ObjectId (?)** by wrapping them in **BsonObjectId (?)** instances for the user.
 
 
 Parameters
@@ -1681,7 +1705,7 @@ watchWithFilter
 
 public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>` watchWithFilter (**Document (?)** matchFilter)
 
-Watches a collection. The provided document will be used as a match expression filter on the change events coming from the stream. This convenience overload supports the use of non- instances for the user.
+Watches a collection. The provided document will be used as a match expression filter on the change events coming from the stream. This convenience overload supports the use of non-**BsonDocument (?)** instances for the user.
 
 See `how to define a match filter <https://docs.mongodb.com/manual/reference/operator/aggregation/match/>`__.
 
@@ -1753,7 +1777,7 @@ watchAsync
 
 public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>` watchAsync (**ObjectId[] (?)** ids)
 
-Watches specified IDs in a collection asynchronously. This convenience overload supports the use case of non- instances of by wrapping them in instances for the user.
+Watches specified IDs in a collection asynchronously. This convenience overload supports the use case of non-**BsonValue (?)** instances of **ObjectId (?)** by wrapping them in **BsonObjectId (?)** instances for the user.
 
 
 Parameters
@@ -1771,7 +1795,7 @@ watchWithFilterAsync
 
 public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>` watchWithFilterAsync (**Document (?)** matchFilter)
 
-Watches a collection asynchronously. The provided document will be used as a match expression filter on the change events coming from the stream. This convenience overload supports the use of non- instances for the user.
+Watches a collection asynchronously. The provided document will be used as a match expression filter on the change events coming from the stream. This convenience overload supports the use of non-**BsonDocument (?)** instances for the user.
 
 See `how to define a match filter <https://docs.mongodb.com/manual/reference/operator/aggregation/match/>`__.
 

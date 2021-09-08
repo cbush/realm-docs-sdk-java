@@ -14,15 +14,17 @@ io.realm.RealmQuery<E>
 
 - **java.lang.Object (?)**
 
-A RealmQuery encapsulates a query on a or a using the Builder pattern. The query is executed using either or .
+A RealmQuery encapsulates a query on a **io.realm.Realm (?)** or a **io.realm.RealmResults (?)** using the Builder pattern. The query is executed using either **#findAll() (?)** or **#findFirst() (?)**.
 
 The input to many of the query functions take a field name as String. Note that this is not type safe. If a RealmObject class is refactored care has to be taken to not break any queries.
 
-A is unordered, which means that there is no guarantee that querying a Realm will return the objects in the order they where inserted. Use (String)} and similar methods if a specific order is required.
+A **io.realm.Realm (?)** is unordered, which means that there is no guarantee that querying a Realm will return the objects in the order they where inserted. Use **#sort(String) (?)** (String)} and similar methods if a specific order is required.
+
+
 
 A RealmQuery cannot be passed between different threads.
 
-Results are obtained quickly most of the times. However, launching heavy queries from the UI thread may result in a drop of frames or even ANRs. If you want to prevent these behaviors, you can instantiate a Realm using a that explicitly sets to ``false``. This way queries will be forced to be launched from a non-UI thread. Alternatively, you can also use or .
+Results are obtained quickly most of the times. However, launching heavy queries from the UI thread may result in a drop of frames or even ANRs. If you want to prevent these behaviors, you can instantiate a Realm using a **RealmConfiguration (?)** that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)** to ``false``. This way queries will be forced to be launched from a non-UI thread. Alternatively, you can also use **#findAllAsync() (?)** or **#findFirstAsync() (?)**.
 
 
 
@@ -39,7 +41,7 @@ Method Summary
    * - public **boolean (?)**
      - :ref:`isValid <io_realm_RealmQuery_isValid____>` ()
        
-       Checks if is still valid to use i.e., the instance hasn't been closed and any parent is still valid.
+       Checks if **io.realm.RealmQuery (?)** is still valid to use i.e., the **io.realm.Realm (?)** instance hasn't been closed and any parent **io.realm.RealmResults (?)** is still valid.
        
        
        
@@ -1097,7 +1099,7 @@ Method Summary
    * - public **RealmAny (?)**
      - :ref:`minRealmAny <io_realm_RealmQuery_minRealmAny__String__>` (**String (?)** fieldName)
        
-       Finds the minimum value of a field.
+       Finds the minimum value of a **RealmAny (?)** field.
        
        
        
@@ -1127,7 +1129,7 @@ Method Summary
    * - public **RealmAny (?)**
      - :ref:`maxRealmAny <io_realm_RealmQuery_maxRealmAny__String__>` (**String (?)** fieldName)
        
-       Finds the maximum value of a field.
+       Finds the maximum value of a **RealmAny (?)** field.
        
        
        
@@ -1257,7 +1259,7 @@ Method Summary
    * - public :ref:`Realm <io_realm_Realm>`
      - :ref:`getRealm <io_realm_RealmQuery_getRealm____>` ()
        
-       Returns the instance to which this query belongs.
+       Returns the **Realm (?)** instance to which this query belongs.
        
        
        
@@ -1297,7 +1299,7 @@ Method Summary
    * - public **E (?)**
      - :ref:`findFirstAsync <io_realm_RealmQuery_findFirstAsync____>` ()
        
-       Similar to but runs asynchronously on a worker thread.
+       Similar to **#findFirst() (?)** but runs asynchronously on a worker thread.
        
        
        
@@ -1315,7 +1317,7 @@ isValid
 
 public **boolean (?)** isValid ()
 
-Checks if is still valid to use i.e., the instance hasn't been closed and any parent is still valid.
+Checks if **io.realm.RealmQuery (?)** is still valid to use i.e., the **io.realm.Realm (?)** instance hasn't been closed and any parent **io.realm.RealmResults (?)** is still valid.
 
 
 .. _io_realm_RealmQuery_isNull__String__:
@@ -1416,7 +1418,7 @@ Parameters
    
    
    
-- casing - how to handle casing. Setting this to only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
    
@@ -1445,7 +1447,7 @@ Parameters
    
    
    
-- casing - how to handle casing. Setting this to only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
    
@@ -1574,7 +1576,7 @@ Parameters
    
    
    
-- casing - how casing is handled. works only for the Latin-1 characters.
+- casing - how casing is handled. **Case#INSENSITIVE (?)** works only for the Latin-1 characters.
    
    
    
@@ -1853,7 +1855,7 @@ Parameters
    
    
    
-- casing - how casing is handled. works only for the Latin-1 characters.
+- casing - how casing is handled. **Case#INSENSITIVE (?)** works only for the Latin-1 characters.
    
    
    
@@ -1882,7 +1884,7 @@ Parameters
    
    
    
-- casing - how casing is handled. works only for the Latin-1 characters.
+- casing - how casing is handled. **Case#INSENSITIVE (?)** works only for the Latin-1 characters.
    
    
    
@@ -2889,7 +2891,7 @@ Parameters
    
    
    
-- casing - how to handle casing. Setting this to only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
    
@@ -2918,7 +2920,7 @@ Parameters
    
    
    
-- casing - how to handle casing. Setting this to only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
    
@@ -2997,7 +2999,7 @@ Parameters
    
    
    
-- casing - how to handle casing. Setting this to only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
    
@@ -3026,7 +3028,7 @@ Parameters
    
    
    
-- casing - how to handle casing. Setting this to only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
    
@@ -3105,7 +3107,7 @@ Parameters
    
    
    
-- casing - how to handle casing. Setting this to only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
    
@@ -3134,7 +3136,7 @@ Parameters
    
    
    
-- casing - how to handle casing. Setting this to only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
    
@@ -3234,7 +3236,7 @@ Parameters
    
    
    
-- casing - how to handle casing. Setting this to only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
    
@@ -3270,7 +3272,7 @@ Parameters
    
    
    
-- casing - how to handle casing. Setting this to only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
    
    
    
@@ -3806,7 +3808,7 @@ Returns the average of a given field. Does not support dotted field notation.
 Parameters
 ~~~~~~~~~~
 
-- fieldName - the field to calculate average on. Only Decimal128 fields is supported. For other number types consider using .
+- fieldName - the field to calculate average on. Only Decimal128 fields is supported. For other number types consider using **#average(String) (?)**.
    
    
    
@@ -3827,7 +3829,7 @@ Returns the average of a given field. Does not support dotted field notation.
 Parameters
 ~~~~~~~~~~
 
-- fieldName - the field to calculate average on. Only RealmAny fields are supported. For other types consider using .
+- fieldName - the field to calculate average on. Only RealmAny fields are supported. For other types consider using **#average(String) (?)**.
    
    
    
@@ -3884,7 +3886,7 @@ minRealmAny
 
 public **RealmAny (?)** minRealmAny (**String (?)** fieldName)
 
-Finds the minimum value of a field.
+Finds the minimum value of a **RealmAny (?)** field.
 
 
 Parameters
@@ -3947,7 +3949,7 @@ maxRealmAny
 
 public **RealmAny (?)** maxRealmAny (**String (?)** fieldName)
 
-Finds the maximum value of a field.
+Finds the maximum value of a **RealmAny (?)** field.
 
 
 Parameters
@@ -3983,7 +3985,7 @@ public :ref:`RealmResults <io_realm_RealmResults>` findAll ()
 
 Finds all objects that fulfill the query conditions.
 
-Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so and therefore it is not allowed by default.** If you want to prevent these behaviors you can obtain a Realm using a that explicitly sets to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a . Alternatively, you can use .
+Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so and therefore it is not allowed by default.** If you want to prevent these behaviors you can obtain a Realm using a **RealmConfiguration (?)** that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)** to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a **RealmException (?)**. Alternatively, you can use **#findAllAsync() (?)**.
 
 
 
@@ -4153,7 +4155,9 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` limit (**long (?)** limit)
 
 Limits the number of objects returned in case the query matched more objects.
 
-Note that when using this method in combination with and they will be executed in the order they where added which can affect the end result.
+Note that when using this method in combination with **#sort(String) (?)** and **#distinct(String, String...) (?)** they will be executed in the order they where added which can affect the end result.
+
+
 
 
 Parameters
@@ -4196,7 +4200,9 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` rawPredicate (**String (?)** pred
 
 Create a text-based predicate using the Realm Query Language. This predicate can be combined with other raw or type safe predicates, it accepts Realm values as arguments.
 
-Class and property names used in the raw predicate can be either the names defined in the Realm Model classes or the internal names defined using the or annotations. If a class or property name contains spaces those must be escaped. Arguments are defined in the string predicate as $argument_index, where $argument_index is a decimal integer that specifies the position of the argument in the argument list. The first argument is referenced by $0, the second by $1, etc.
+Class and property names used in the raw predicate can be either the names defined in the Realm Model classes or the internal names defined using the **io.realm.annotations.RealmClass (?)** or **io.realm.annotations.RealmField (?)** annotations. If a class or property name contains spaces those must be escaped.
+
+ Arguments are defined in the string predicate as $argument_index, where $argument_index is a decimal integer that specifies the position of the argument in the argument list. The first argument is referenced by $0, the second by $1, etc.
 
 See `these docs <https://docs.mongodb.com/realm-sdks/js/latest/tutorial-query-language.html>`__ for a more detailed description of the Realm Query Language.
 
@@ -4229,9 +4235,11 @@ getRealm
 
 public :ref:`Realm <io_realm_Realm>` getRealm ()
 
-Returns the instance to which this query belongs.
+Returns the **Realm (?)** instance to which this query belongs.
 
-Calling on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the query.
+Calling **Realm#close() (?)** on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the query.
+
+
 
 
 Throws
@@ -4266,7 +4274,7 @@ public **E (?)** findFirst ()
 
 Finds the first object that fulfills the query conditions.
 
-Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so, but it is allowed by default.** If you want to prevent these behaviors you can obtain a Realm using a that explicitly sets to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a . Alternatively, you can use .
+Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so, but it is allowed by default.** If you want to prevent these behaviors you can obtain a Realm using a **RealmConfiguration (?)** that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)** to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a **RealmException (?)**. Alternatively, you can use **#findFirstAsync() (?)**.
 
 
 
@@ -4284,7 +4292,7 @@ findFirstAsync
 
 public **E (?)** findFirstAsync ()
 
-Similar to but runs asynchronously on a worker thread. An listener should be registered to the returned to get the notification when query completes. The registered listener will also be triggered if there are changes made to the queried . If the is deleted, the listener will be called one last time and then stop. The query will not be re-run.
+Similar to **#findFirst() (?)** but runs asynchronously on a worker thread. An listener should be registered to the returned **RealmObject (?)** to get the notification when query completes. The registered listener will also be triggered if there are changes made to the queried **RealmObject (?)**. If the **RealmObject (?)** is deleted, the listener will be called one last time and then stop. The query will not be re-run.
 
 
 Throws

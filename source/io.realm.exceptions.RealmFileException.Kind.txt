@@ -14,7 +14,7 @@ io.realm.exceptions.RealmFileException.Kind
 
 - **java.lang.Enum (?)**
 
-The specific kind of this .
+The specific kind of this **RealmFileException (?)**.
 
 
 Method Summary

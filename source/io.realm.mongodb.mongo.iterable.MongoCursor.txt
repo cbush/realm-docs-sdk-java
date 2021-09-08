@@ -19,7 +19,7 @@ io.realm.mongodb.mongo.iterable.MongoCursor<ResultT>
 - **java.util.Iterator (?)**
 - **java.io.Closeable (?)**
 
-The Mongo Cursor class is fundamentally an containing an additional ``tryNext()`` method for convenience.
+The Mongo Cursor class is fundamentally an **Iterator (?)** containing an additional ``tryNext()`` method for convenience.
 
 An application should ensure that a cursor is closed in all circumstances, e.g. using a try-with-resources statement.
 

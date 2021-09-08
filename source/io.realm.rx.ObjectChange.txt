@@ -14,9 +14,11 @@ io.realm.rx.ObjectChange<E extends io.realm.RealmModel>
 
 - **java.lang.Object (?)**
 
-Container wrapping the result of a being triggered.
+Container wrapping the result of a **io.realm.RealmObjectChangeListener (?)** being triggered.
 
-This is used by and as RxJava is only capable of emitting one item, not multiple.
+This is used by **RealmObject#asChangesetObservable() (?)** and **RealmObject#asChangesetObservable(RealmModel) (?)** as RxJava is only capable of emitting one item, not multiple.
+
+
 
 
 Constructors

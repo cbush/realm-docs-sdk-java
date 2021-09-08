@@ -34,7 +34,7 @@ Method Summary
    * - public :ref:`MongoDatabase <io_realm_mongodb_mongo_MongoDatabase>`
      - :ref:`getDatabase <io_realm_mongodb_mongo_MongoClient_getDatabase__String__>` (**String (?)** databaseName)
        
-       Gets a instance for the given database name.
+       Gets a **MongoDatabase (?)** instance for the given database name.
        
        
        
@@ -62,7 +62,7 @@ getDatabase
 
 public :ref:`MongoDatabase <io_realm_mongodb_mongo_MongoDatabase>` getDatabase (**String (?)** databaseName)
 
-Gets a instance for the given database name.
+Gets a **MongoDatabase (?)** instance for the given database name.
 
 
 Parameters

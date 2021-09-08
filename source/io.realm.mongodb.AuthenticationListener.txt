@@ -59,7 +59,7 @@ A user was logged into the Object Server
 Parameters
 ~~~~~~~~~~
 
-- user - that is now logged in.
+- user - **User (?)** that is now logged in.
    
    
    
@@ -77,7 +77,7 @@ A user was successfully logged out from the Object Server.
 Parameters
 ~~~~~~~~~~
 
-- user - that was successfully logged out.
+- user - **User (?)** that was successfully logged out.
    
    
    

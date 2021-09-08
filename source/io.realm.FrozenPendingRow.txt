@@ -14,7 +14,7 @@ io.realm.FrozenPendingRow
 
 - **java.lang.Enum (?)**
 
-A PendingRow that has been frozen. This behaves in many ways similar to a deleted Row, but will report as ``as false``.
+A PendingRow that has been frozen. This behaves in many ways similar to a deleted Row, but will report **#isLoaded() (?)** as ``as false``.
 
 
 Method Summary

@@ -14,9 +14,11 @@ io.realm.OrderedRealmCollectionSnapshot<E>
 
 - **io.realm.OrderedRealmCollectionImpl (?)**
 
-An is a special type of . It can be created by calling . Unlike and , its size and order of elements will never be changed after creation.
+An **OrderedRealmCollectionSnapshot (?)** is a special type of **OrderedRealmCollection (?)**. It can be created by calling **OrderedRealmCollection#createSnapshot() (?)**. Unlike **RealmResults (?)** and **RealmList (?)**, its size and order of elements will never be changed after creation.
 
-is useful when making changes which may impact the size or order of the collection in simple loops. For example:
+**OrderedRealmCollectionSnapshot (?)** is useful when making changes which may impact the size or order of the collection in simple loops. For example:
+
+
 
 .. code-block:: java
 
@@ -46,7 +48,7 @@ Method Summary
    * - public :ref:`RealmResults <io_realm_RealmResults>`
      - :ref:`sort <io_realm_OrderedRealmCollectionSnapshot_sort__String__>` (**String (?)** fieldName)
        
-       Not supported by .
+       Not supported by **OrderedRealmCollectionSnapshot (?)**.
        
        
        
@@ -56,7 +58,7 @@ Method Summary
    * - public :ref:`RealmResults <io_realm_RealmResults>`
      - :ref:`sort <io_realm_OrderedRealmCollectionSnapshot_sort__String__Sort__>` (**String (?)** fieldName, :ref:`Sort <io_realm_Sort>` sortOrder)
        
-       Not supported by .
+       Not supported by **OrderedRealmCollectionSnapshot (?)**.
        
        
        
@@ -66,7 +68,7 @@ Method Summary
    * - public :ref:`RealmResults <io_realm_RealmResults>`
      - :ref:`sort <io_realm_OrderedRealmCollectionSnapshot_sort__String__Sort__String__Sort__>` (**String (?)** fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, **String (?)** fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
        
-       Not supported by .
+       Not supported by **OrderedRealmCollectionSnapshot (?)**.
        
        
        
@@ -76,7 +78,7 @@ Method Summary
    * - public :ref:`RealmResults <io_realm_RealmResults>`
      - :ref:`sort <io_realm_OrderedRealmCollectionSnapshot_sort__String[]__Sort[]__>` (**java.lang.String[] (?)** fieldNames, :ref:`io.realm.Sort[] <io_realm_Sort>` sortOrders)
        
-       Not supported by .
+       Not supported by **OrderedRealmCollectionSnapshot (?)**.
        
        
        
@@ -86,7 +88,7 @@ Method Summary
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`where <io_realm_OrderedRealmCollectionSnapshot_where____>` ()
        
-       Not supported by .
+       Not supported by **OrderedRealmCollectionSnapshot (?)**.
        
        
        
@@ -200,7 +202,7 @@ sort
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldName)
 
-Not supported by . Use 'sort()' on the original instead.
+Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'sort()' on the original **OrderedRealmCollection (?)** instead.
 
 
 Throws
@@ -213,7 +215,7 @@ sort
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldName, :ref:`Sort <io_realm_Sort>` sortOrder)
 
-Not supported by . Use 'sort()' on the original instead.
+Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'sort()' on the original **OrderedRealmCollection (?)** instead.
 
 
 Throws
@@ -226,7 +228,7 @@ sort
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, **String (?)** fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
 
-Not supported by . Use 'sort()' on the original instead.
+Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'sort()' on the original **OrderedRealmCollection (?)** instead.
 
 
 Throws
@@ -239,7 +241,7 @@ sort
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (**java.lang.String[] (?)** fieldNames, :ref:`io.realm.Sort[] <io_realm_Sort>` sortOrders)
 
-Not supported by . Use 'sort()' on the original instead.
+Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'sort()' on the original **OrderedRealmCollection (?)** instead.
 
 
 Throws
@@ -252,7 +254,7 @@ where
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` where ()
 
-Not supported by . Use 'where()' on the original instead.
+Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'where()' on the original **OrderedRealmCollection (?)** instead.
 
 
 Throws

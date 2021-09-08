@@ -194,7 +194,7 @@ Method Summary
    * - public :ref:`RealmList <io_realm_RealmList>`
      - :ref:`getList <io_realm_DynamicRealmObject_getList__String__>` (**String (?)** fieldName)
        
-       Returns the of s being linked from the given field.
+       Returns the **RealmList (?)** of **DynamicRealmObject (?)**s being linked from the given field.
        
        
        
@@ -204,7 +204,7 @@ Method Summary
    * - public :ref:`RealmList <io_realm_RealmList>`
      - :ref:`getList <io_realm_DynamicRealmObject_getList__String__Class_E___>` <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
        
-       Returns the containing only primitive values.
+       Returns the **RealmList (?)** containing only primitive values.
        
        
        
@@ -214,7 +214,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`getDictionary <io_realm_DynamicRealmObject_getDictionary__String__>` (**String (?)** fieldName)
        
-       Returns the of s being linked from the given field.
+       Returns the **RealmDictionary (?)** of **DynamicRealmObject (?)**s being linked from the given field.
        
        
        
@@ -224,7 +224,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`getDictionary <io_realm_DynamicRealmObject_getDictionary__String__Class_E___>` <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
        
-       Returns the containing only primitive values.
+       Returns the **RealmDictionary (?)** containing only primitive values.
        
        
        
@@ -234,7 +234,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`getRealmSet <io_realm_DynamicRealmObject_getRealmSet__String__>` (**String (?)** fieldName)
        
-       Returns the of s being linked from the given field.
+       Returns the **RealmSet (?)** of **DynamicRealmObject (?)**s being linked from the given field.
        
        
        
@@ -244,7 +244,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`getRealmSet <io_realm_DynamicRealmObject_getRealmSet__String__Class_E___>` <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
        
-       Returns the containing only primitive values.
+       Returns the **RealmSet (?)** containing only primitive values.
        
        
        
@@ -444,7 +444,7 @@ Method Summary
    * - public **void (?)**
      - :ref:`setList <io_realm_DynamicRealmObject_setList__String__RealmList_E___>` <**E (?)** >(**String (?)** fieldName, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
        
-       Sets the reference to a on the given field.
+       Sets the reference to a **RealmList (?)** on the given field.
        
        
        
@@ -454,7 +454,7 @@ Method Summary
    * - public **void (?)**
      - :ref:`setDictionary <io_realm_DynamicRealmObject_setDictionary__String___any___>` <**E (?)** >(**String (?)** fieldName, **<any> (?)** dictionary)
        
-       Sets the reference to a on the given field.
+       Sets the reference to a **RealmDictionary (?)** on the given field.
        
        
        
@@ -464,7 +464,7 @@ Method Summary
    * - public **void (?)**
      - :ref:`setRealmSet <io_realm_DynamicRealmObject_setRealmSet__String___any___>` <**E (?)** >(**String (?)** fieldName, **<any> (?)** set)
        
-       Sets the reference to a on the given field.
+       Sets the reference to a **RealmSet (?)** on the given field.
        
        
        
@@ -504,7 +504,7 @@ Method Summary
    * - public **int (?)**
      - :ref:`hashCode <io_realm_DynamicRealmObject_hashCode____>` ()
        
-       Returns a hash code value for the object.
+       Returns a hash code value for the **DynamicRealmObject (?)** object.
        
        
        
@@ -530,7 +530,7 @@ Method Summary
    * - public :ref:`RealmResults <io_realm_RealmResults>`
      - :ref:`linkingObjects <io_realm_DynamicRealmObject_linkingObjects__String__String__>` (**String (?)** srcClassName, **String (?)** srcFieldName)
        
-       Returns containing all ``srcClassName`` class objects that have a relationship to this object from ``srcFieldName`` field.
+       Returns **RealmResults (?)** containing all ``srcClassName`` class objects that have a relationship to this object from ``srcFieldName`` field.
        
        
        
@@ -540,7 +540,7 @@ Method Summary
    * - public :ref:`DynamicRealm <io_realm_DynamicRealm>`
      - :ref:`getDynamicRealm <io_realm_DynamicRealmObject_getDynamicRealm____>` ()
        
-       Returns instance where this belongs.
+       Returns **DynamicRealm (?)** instance where this **DynamicRealmObject (?)** belongs.
        
        
        
@@ -597,7 +597,7 @@ public **boolean (?)** getBoolean (**String (?)** fieldName)
 
 Returns the ``boolean`` value for a given field.
 
-If the field is nullable, use to check for ``null`` instead of using this method.
+If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
 
 
 
@@ -622,7 +622,7 @@ public **int (?)** getInt (**String (?)** fieldName)
 
 Returns the ``int`` value for a given field.
 
-If the field is nullable, use to check for ``null`` instead of using this method.
+If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
 
 
 
@@ -647,7 +647,7 @@ public **short (?)** getShort (**String (?)** fieldName)
 
 Returns the ``short`` value for a given field.
 
-If the field is nullable, use to check for ``null`` instead of using this method.
+If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
 
 
 
@@ -672,7 +672,7 @@ public **long (?)** getLong (**String (?)** fieldName)
 
 Returns the ``long`` value for a given field.
 
-If the field is nullable, use to check for ``null`` instead of using this method.
+If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
 
 
 
@@ -697,7 +697,7 @@ public **byte (?)** getByte (**String (?)** fieldName)
 
 Returns the ``byte`` value for a given field.
 
-If the field is nullable, use to check for ``null`` instead of using this method.
+If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
 
 
 
@@ -722,7 +722,7 @@ public **float (?)** getFloat (**String (?)** fieldName)
 
 Returns the ``float`` value for a given field.
 
-If the field is nullable, use to check for ``null`` instead of using this method.
+If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
 
 
 
@@ -747,7 +747,7 @@ public **double (?)** getDouble (**String (?)** fieldName)
 
 Returns the ``double`` value for a given field.
 
-If the field is nullable, use to check for ``null`` instead of using this method.
+If the field is nullable, use **#isNull(String) (?)** to check for ``null`` instead of using this method.
 
 
 
@@ -938,9 +938,11 @@ getList
 
 public :ref:`RealmList <io_realm_RealmList>` getList (**String (?)** fieldName)
 
-Returns the of s being linked from the given field.
+Returns the **RealmList (?)** of **DynamicRealmObject (?)**s being linked from the given field.
 
-If the list contains primitive types, use instead.
+If the list contains primitive types, use **#getList(String, Class) (?)** instead.
+
+
 
 
 Parameters
@@ -961,9 +963,11 @@ getList
 
 public :ref:`RealmList <io_realm_RealmList>` getList <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
 
-Returns the containing only primitive values.
+Returns the **RealmList (?)** containing only primitive values.
 
-If the list contains references to other Realm objects, use instead.
+If the list contains references to other Realm objects, use **#getList(String) (?)** instead.
+
+
 
 
 Parameters
@@ -988,9 +992,11 @@ getDictionary
 
 public **<any> (?)** getDictionary (**String (?)** fieldName)
 
-Returns the of s being linked from the given field.
+Returns the **RealmDictionary (?)** of **DynamicRealmObject (?)**s being linked from the given field.
 
-If the dictionary contains primitive types, use instead.
+If the dictionary contains primitive types, use **#getDictionary(String, Class) (?)** instead.
+
+
 
 
 Parameters
@@ -1011,9 +1017,11 @@ getDictionary
 
 public **<any> (?)** getDictionary <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
 
-Returns the containing only primitive values.
+Returns the **RealmDictionary (?)** containing only primitive values.
 
-If the dictionary contains references to other Realm objects, use instead.
+If the dictionary contains references to other Realm objects, use **#getDictionary(String) (?)** instead.
+
+
 
 
 Parameters
@@ -1038,9 +1046,11 @@ getRealmSet
 
 public **<any> (?)** getRealmSet (**String (?)** fieldName)
 
-Returns the of s being linked from the given field.
+Returns the **RealmSet (?)** of **DynamicRealmObject (?)**s being linked from the given field.
 
-If the set contains primitive types, use instead.
+If the set contains primitive types, use **#getRealmSet(String, Class) (?)** instead.
+
+
 
 
 Parameters
@@ -1061,9 +1071,11 @@ getRealmSet
 
 public **<any> (?)** getRealmSet <**E (?)** >(**String (?)** fieldName, **java.lang.Class<E> (?)** primitiveType)
 
-Returns the containing only primitive values.
+Returns the **RealmSet (?)** containing only primitive values.
 
-If the set contains references to other Realm objects, use instead.
+If the set contains references to other Realm objects, use **#getRealmSet(String) (?)** instead.
+
+
 
 
 Parameters
@@ -1527,9 +1539,11 @@ setList
 
 public **void (?)** setList <**E (?)** >(**String (?)** fieldName, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 
-Sets the reference to a on the given field.
+Sets the reference to a **RealmList (?)** on the given field.
 
-This will copy all the elements in the list into Realm, but any further changes to the list will not be reflected in the Realm. Use in order to get a reference to the managed list.
+This will copy all the elements in the list into Realm, but any further changes to the list will not be reflected in the Realm. Use **#getList(String) (?)** in order to get a reference to the managed list.
+
+
 
 
 Parameters
@@ -1539,7 +1553,7 @@ Parameters
    
    
    
-- list - list of objects. Must either be primitive types or s.
+- list - list of objects. Must either be primitive types or **DynamicRealmObject (?)**s.
    
    
    
@@ -1554,9 +1568,11 @@ setDictionary
 
 public **void (?)** setDictionary <**E (?)** >(**String (?)** fieldName, **<any> (?)** dictionary)
 
-Sets the reference to a on the given field.
+Sets the reference to a **RealmDictionary (?)** on the given field.
 
-This will copy all the elements in the dictionary into Realm, but any further changes to the dictionary will not be reflected in the Realm. Use in order to get a reference to the managed dictionary.
+This will copy all the elements in the dictionary into Realm, but any further changes to the dictionary will not be reflected in the Realm. Use **#getDictionary(String) (?)** in order to get a reference to the managed dictionary.
+
+
 
 
 Parameters
@@ -1566,7 +1582,7 @@ Parameters
    
    
    
-- dictionary - dictionary of objects. Must either be primitive types or s.
+- dictionary - dictionary of objects. Must either be primitive types or **DynamicRealmObject (?)**s.
    
    
    
@@ -1581,9 +1597,11 @@ setRealmSet
 
 public **void (?)** setRealmSet <**E (?)** >(**String (?)** fieldName, **<any> (?)** set)
 
-Sets the reference to a on the given field.
+Sets the reference to a **RealmSet (?)** on the given field.
 
-This will copy all the elements in the set into Realm, but any further changes to the set will not be reflected in the Realm. Use in order to get a reference to the managed set.
+This will copy all the elements in the set into Realm, but any further changes to the set will not be reflected in the Realm. Use **#getRealmSet(String) (?)** in order to get a reference to the managed set.
+
+
 
 
 Parameters
@@ -1593,7 +1611,7 @@ Parameters
    
    
    
-- set - set of objects. Must either be primitive types or s.
+- set - set of objects. Must either be primitive types or **DynamicRealmObject (?)**s.
    
    
    
@@ -1629,7 +1647,7 @@ getType
 
 public **String (?)** getType ()
 
-Returns the type of object. This will normally correspond to the name of a class that is extending .
+Returns the type of object. This will normally correspond to the name of a class that is extending **RealmObject (?)**.
 
 
 .. _io_realm_DynamicRealmObject_getFieldType__String__:
@@ -1649,13 +1667,15 @@ hashCode
 
 public **int (?)** hashCode ()
 
-Returns a hash code value for the object.
+Returns a hash code value for the **DynamicRealmObject (?)** object.
 
-By the general contract of , any two objects for which returns ``true`` must return the same hash code value.
+By the general contract of **Object#hashCode() (?)**, any two objects for which **#equals (?)** returns ``true`` must return the same hash code value.
 
 
 
-Note that a is a live object, and it might be updated by changes from other threads. This means that a hash code value of the object is not stable, and the value should be neither used as a key in HashMap nor saved in HashSet.
+Note that a **RealmObject (?)** is a live object, and it might be updated by changes from other threads. This means that a hash code value of the object is not stable, and the value should be neither used as a key in HashMap nor saved in HashSet.
+
+
 
 
 See Also
@@ -1684,7 +1704,7 @@ linkingObjects
 
 public :ref:`RealmResults <io_realm_RealmResults>` linkingObjects (**String (?)** srcClassName, **String (?)** srcFieldName)
 
-Returns containing all ``srcClassName`` class objects that have a relationship to this object from ``srcFieldName`` field.
+Returns **RealmResults (?)** containing all ``srcClassName`` class objects that have a relationship to this object from ``srcFieldName`` field.
 
 An entry is added for each reference, e.g. if the same reference is in a list multiple times, the src object will show up here multiple times.
 
@@ -1711,9 +1731,11 @@ getDynamicRealm
 
 public :ref:`DynamicRealm <io_realm_DynamicRealm>` getDynamicRealm ()
 
-Returns instance where this belongs.
+Returns **DynamicRealm (?)** instance where this **DynamicRealmObject (?)** belongs.
 
-You **must not** call against returned instance.
+You **must not** call **DynamicRealm#close() (?)** against returned instance.
+
+
 
 
 Throws

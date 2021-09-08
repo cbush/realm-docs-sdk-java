@@ -10,7 +10,7 @@ io.realm.RealmModel
 
 .. _io_realm_RealmModel:
 
-Interface for marking classes as RealmObjects, it can be used instead of extending .
+Interface for marking classes as RealmObjects, it can be used instead of extending **RealmObject (?)**.
 
 All helper methods available to classes that extend RealmObject are instead available as static methods:
 
@@ -19,7 +19,9 @@ All helper methods available to classes that extend RealmObject are instead avai
     !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n   Person p = realm.createObject(Person.class);\n\n   // With the RealmModel interface\n   RealmObject.isValid(p);\n\n   // With the RealmObject base class\n   p.isValid();\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n   Person p = realm.createObject(Person.class);\n\n   // With the RealmModel interface\n   RealmObject.isValid(p);\n\n   // With the RealmObject base class\n   p.isValid();\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"Person p = realm.createObject(Person.class);\n\n   // With the RealmModel interface\n   RealmObject.isValid(p);\n\n   // With the RealmObject base class\n   p.isValid();"}]}!!!preHtmlParseTagDelimiter!!!
     
 
-Note: Object implementing this interface needs also to be annotated with , so the annotation processor can generate the underlining proxy class.
+Note: Object implementing this interface needs also to be annotated with **RealmClass (?)**, so the annotation processor can generate the underlining proxy class.
+
+
 
 
 

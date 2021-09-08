@@ -14,21 +14,25 @@ io.realm.RealmResults<E>
 
 - **io.realm.OrderedRealmCollectionImpl (?)**
 
-This class holds all the matches of a for a given Realm. The objects are not copied from the Realm to the RealmResults list, but are just referenced from the RealmResult instead. This saves memory and increases speed.
+This class holds all the matches of a **RealmQuery (?)** for a given Realm. The objects are not copied from the Realm to the RealmResults list, but are just referenced from the RealmResult instead. This saves memory and increases speed.
 
-RealmResults are live views, which means that if it is on an thread, it will automatically update its query results after a transaction has been committed. If on a non-looper thread, must be called to update the results.
+RealmResults are live views, which means that if it is on an **Looper (?)** thread, it will automatically update its query results after a transaction has been committed. If on a non-looper thread, **Realm#refresh() (?)** must be called to update the results.
+
+
 
 Updates to RealmObjects from a RealmResults list must be done from within a transaction and the modified objects are persisted to the Realm file during the commit of the transaction.
 
 A RealmResults object cannot be passed between different threads.
 
-Notice that a RealmResults is never ``null`` not even in the case where it contains no objects. You should always use the method to check if a RealmResults is empty or not.
+Notice that a RealmResults is never ``null`` not even in the case where it contains no objects. You should always use the **RealmResults#size() (?)** method to check if a RealmResults is empty or not.
 
 
 
-If a RealmResults is built on RealmList through , it will become empty when the source RealmList gets deleted.
+If a RealmResults is built on RealmList through **RealmList#where() (?)**, it will become empty when the source RealmList gets deleted.
 
-can contain more elements than ``Integer.MAX_VALUE``. In that case, you can access only first ``Integer.MAX_VALUE`` elements in it.
+
+
+**RealmResults (?)** can contain more elements than ``Integer.MAX_VALUE``. In that case, you can access only first ``Integer.MAX_VALUE`` elements in it.
 
 
 
@@ -275,7 +279,7 @@ Method Summary
    * - public **void (?)**
      - :ref:`addChangeListener <io_realm_RealmResults_addChangeListener__RealmChangeListener_RealmResults_E____>` (:ref:`io.realm.RealmChangeListener\<io.realm.RealmResults\<E>> <io_realm_RealmChangeListener>` listener)
        
-       Adds a change listener to this .
+       Adds a change listener to this **RealmResults (?)**.
        
        
        
@@ -285,7 +289,7 @@ Method Summary
    * - public **void (?)**
      - :ref:`addChangeListener <io_realm_RealmResults_addChangeListener__OrderedRealmCollectionChangeListener_RealmResults_E____>` (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmResults\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
        
-       Adds a change listener to this .
+       Adds a change listener to this **RealmResults (?)**.
        
        
        
@@ -345,7 +349,7 @@ Method Summary
    * - public **String (?)**
      - :ref:`asJSON <io_realm_RealmResults_asJSON____>` ()
        
-       Returns a JSON representation of the matches of a .
+       Returns a JSON representation of the matches of a **RealmQuery (?)**.
        
        
        
@@ -393,7 +397,7 @@ load
 
 public **boolean (?)** load ()
 
-Makes an asynchronous query blocking. This will also trigger any registered when the query completes.
+Makes an asynchronous query blocking. This will also trigger any registered **RealmChangeListener (?)** when the query completes.
 
 
 .. _io_realm_RealmResults_setValue__String__Object__:
@@ -405,11 +409,13 @@ public **void (?)** setValue (**String (?)** fieldName, **Object (?)** value)
 
 Updates the field given by ``fieldName`` in all objects inside the query result.
 
-This method will automatically try to convert numbers and booleans that are given as ``String`` to their appropriate type. For example ``"10"`` will be converted to ``10`` if the field type is .
+This method will automatically try to convert numbers and booleans that are given as ``String`` to their appropriate type. For example ``"10"`` will be converted to ``10`` if the field type is **RealmFieldType#INTEGER (?)**.
 
 
 
-Using the typed setters like will be faster than using this method.
+Using the typed setters like **#setInt(String, int) (?)** will be faster than using this method.
+
+
 
 
 Parameters
@@ -850,7 +856,7 @@ addChangeListener
 
 public **void (?)** addChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmResults\<E>> <io_realm_RealmChangeListener>` listener)
 
-Adds a change listener to this .
+Adds a change listener to this **RealmResults (?)**.
 
 Registering a change listener will not prevent the underlying RealmResults from being garbage collected. If the RealmResults is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
@@ -878,7 +884,7 @@ addChangeListener
 
 public **void (?)** addChangeListener (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmResults\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
 
-Adds a change listener to this .
+Adds a change listener to this **RealmResults (?)**.
 
 Registering a change listener will not prevent the underlying RealmResults from being garbage collected. If the RealmResults is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
@@ -972,7 +978,9 @@ public **<any> (?)** asFlowable ()
 
 Returns an Rx Flowable that monitors changes to this RealmResults. It will emit the current RealmResults when subscribed to. RealmResults will continually be emitted as the RealmResults are updated - ``onComplete`` will never be called.
 
-Items emitted from Realm Flowables are frozen (See . This means that they are immutable and can be read on any thread.
+Items emitted from Realm Flowables are frozen (See **#freeze() (?)**. This means that they are immutable and can be read on any thread.
+
+
 
 Realm Flowables always emit items from the thread holding the live RealmResults. This means that if you need to do further processing, it is recommend to observe the values on a computation scheduler:
 
@@ -1008,13 +1016,15 @@ asChangesetObservable
 
 public **<any> (?)** asChangesetObservable ()
 
-Returns an Rx Observable that monitors changes to this RealmResults. It will emit the current RealmResults when subscribed. For each update to the RealmResult a pair consisting of the RealmResults and the will be sent. The changeset will be ``null`` the first time an RealmResults is emitted.
+Returns an Rx Observable that monitors changes to this RealmResults. It will emit the current RealmResults when subscribed. For each update to the RealmResult a pair consisting of the RealmResults and the **OrderedCollectionChangeSet (?)** will be sent. The changeset will be ``null`` the first time an RealmResults is emitted.
 
 RealmResults will continually be emitted as the RealmResults are updated - ``onComplete`` will never be called.
 
 
 
-Items emitted from Realm Observables are frozen (See . This means that they are immutable and can be read on any thread.
+Items emitted from Realm Observables are frozen (See **#freeze() (?)**. This means that they are immutable and can be read on any thread.
+
+
 
 Realm Observables always emit items from the thread holding the live Realm. This means that if you need to do further processing, it is recommend to observe the values on a computation scheduler:
 
@@ -1041,7 +1051,7 @@ asJSON
 
 public **String (?)** asJSON ()
 
-Returns a JSON representation of the matches of a . Cycles will be returned as row indices. This is a helper method used to inspect data, or for debugging purpose, this method could pull a large string which could cause an OutOfMemory error.
+Returns a JSON representation of the matches of a **RealmQuery (?)**. Cycles will be returned as row indices. This is a helper method used to inspect data, or for debugging purpose, this method could pull a large string which could cause an OutOfMemory error.
 
 
 

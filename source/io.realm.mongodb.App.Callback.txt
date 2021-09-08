@@ -10,7 +10,7 @@ io.realm.mongodb.App.Callback<T>
 
 .. _io_realm_mongodb_App_Callback:
 
-Callback for async methods available to the .
+Callback for async methods available to the **App (?)**.
 
 
 Method Summary

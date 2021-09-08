@@ -14,7 +14,7 @@ io.realm.mongodb.mongo.MongoDatabase
 
 - **java.lang.Object (?)**
 
-The RemoteMongoDatabase provides access to its s.
+The RemoteMongoDatabase provides access to its **Document (?)** **MongoCollection (?)**s.
 
 
 Method Summary

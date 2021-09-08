@@ -16,7 +16,9 @@ io.realm.RealmObjectSchema
 
 Class for interacting with the schema for a given RealmObject class. This makes it possible to inspect, add, delete or change the fields for given class.
 
-If this is retrieved from an immutable , this will be immutable as well.
+If this **RealmObjectSchema (?)** is retrieved from an immutable **RealmSchema (?)**, this **RealmObjectSchema (?)** will be immutable as well.
+
+
 
 
 Nested Class Summary
@@ -74,7 +76,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`addRealmObjectField <io_realm_RealmObjectSchema_addRealmObjectField__String__RealmObjectSchema__>` (**String (?)** fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
        
-       Adds a new field that references another .
+       Adds a new field that references another **RealmObject (?)**.
        
        
        
@@ -84,7 +86,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`addRealmListField <io_realm_RealmObjectSchema_addRealmListField__String__RealmObjectSchema__>` (**String (?)** fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
        
-       Adds a new field that contains a with references to other Realm model classes.
+       Adds a new field that contains a **RealmList (?)** with references to other Realm model classes.
        
        
        
@@ -94,7 +96,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`addRealmListField <io_realm_RealmObjectSchema_addRealmListField__String__Class_____>` (**String (?)** fieldName, **java.lang.Class<?> (?)** primitiveType)
        
-       Adds a new field that references a with primitive values.
+       Adds a new field that references a **RealmList (?)** with primitive values.
        
        
        
@@ -104,7 +106,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`addRealmDictionaryField <io_realm_RealmObjectSchema_addRealmDictionaryField__String__RealmObjectSchema__>` (**String (?)** fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
        
-       Adds a new field that contains a with references to other Realm model classes.
+       Adds a new field that contains a **RealmDictionary (?)** with references to other Realm model classes.
        
        
        
@@ -114,7 +116,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`addRealmDictionaryField <io_realm_RealmObjectSchema_addRealmDictionaryField__String__Class_____>` (**String (?)** fieldName, **java.lang.Class<?> (?)** primitiveType)
        
-       Adds a new field that references a with primitive values.
+       Adds a new field that references a **RealmDictionary (?)** with primitive values.
        
        
        
@@ -124,7 +126,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`addRealmSetField <io_realm_RealmObjectSchema_addRealmSetField__String__RealmObjectSchema__>` (**String (?)** fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
        
-       Adds a new field that contains a with references to other Realm model classes.
+       Adds a new field that contains a **RealmSet (?)** with references to other Realm model classes.
        
        
        
@@ -134,7 +136,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`addRealmSetField <io_realm_RealmObjectSchema_addRealmSetField__String__Class_____>` (**String (?)** fieldName, **java.lang.Class<?> (?)** primitiveType)
        
-       Adds a new field that references a with primitive values.
+       Adds a new field that references a **RealmSet (?)** with primitive values.
        
        
        
@@ -354,10 +356,14 @@ public **String (?)** getClassName ()
 
 Returns the name of the RealmObject class being represented by this schema.
 
-- When using a normal this name is the same as the class.
+- When using a normal **Realm (?)** this name is the same as the **RealmObject (?)** class.
    
    
-- When using a this is the name used in all API methods requiring a class name.
+   
+   
+- When using a **DynamicRealm (?)** this is the name used in all API methods requiring a class name.
+   
+   
    
    
 
@@ -396,9 +402,11 @@ addField
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addField (**String (?)** fieldName, **java.lang.Class<?> (?)** fieldType, :ref:`io.realm.FieldAttribute[] <io_realm_FieldAttribute>` attributes)
 
-Adds a new simple field to the RealmObject class. The type must be one supported by Realm. See for the list of supported types. If the field should allow ``null`` values use the boxed type instead e.g., ``Integer.class`` instead of ``int.class``.
+Adds a new simple field to the RealmObject class. The type must be one supported by Realm. See **RealmObject (?)** for the list of supported types. If the field should allow ``null`` values use the boxed type instead e.g., ``Integer.class`` instead of ``int.class``.
 
-To add fields that reference other RealmObjects or RealmLists use or instead.
+To add fields that reference other RealmObjects or RealmLists use **#addRealmObjectField(String, RealmObjectSchema) (?)** or **#addRealmListField(String, RealmObjectSchema) (?)** instead.
+
+
 
 
 Parameters
@@ -408,7 +416,7 @@ Parameters
    
    
    
-- fieldType - type of field to add. See for the full list.
+- fieldType - type of field to add. See **RealmObject (?)** for the full list.
    
    
    
@@ -427,7 +435,7 @@ addRealmObjectField
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmObjectField (**String (?)** fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
 
-Adds a new field that references another .
+Adds a new field that references another **RealmObject (?)**.
 
 
 Parameters
@@ -452,9 +460,11 @@ addRealmListField
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmListField (**String (?)** fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
 
-Adds a new field that contains a with references to other Realm model classes.
+Adds a new field that contains a **RealmList (?)** with references to other Realm model classes.
 
-If the list contains primitive types, use instead.
+If the list contains primitive types, use **#addRealmListField(String, Class) (?)** instead.
+
+
 
 
 Parameters
@@ -479,9 +489,9 @@ addRealmListField
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmListField (**String (?)** fieldName, **java.lang.Class<?> (?)** primitiveType)
 
-Adds a new field that references a with primitive values. See for the list of supported types.
+Adds a new field that references a **RealmList (?)** with primitive values. See **RealmObject (?)** for the list of supported types.
 
-Nullability of elements are defined by using the correct class e.g., ``Integer.class`` instead of ``int.class``. Alternatively can be used.
+Nullability of elements are defined by using the correct class e.g., ``Integer.class`` instead of ``int.class``. Alternatively **#setRequired(String, boolean) (?)** can be used.
 
 
 
@@ -492,7 +502,7 @@ Example:
     !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n // Defines the list of Strings as being non null.\n RealmObjectSchema schema = schema.create(\"Person\")\n     .addRealmListField(\"children\", String.class)\n     .setRequired(\"children\", true)\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n // Defines the list of Strings as being non null.\n RealmObjectSchema schema = schema.create(\"Person\")\n     .addRealmListField(\"children\", String.class)\n     .setRequired(\"children\", true)\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"// Defines the list of Strings as being non null."}]}!!!preHtmlParseTagDelimiter!!!
     
 
-If the list contains references to other Realm classes, use instead.
+If the list contains references to other Realm classes, use **#addRealmListField(String, RealmObjectSchema) (?)** instead.
 
 
 Parameters
@@ -517,9 +527,11 @@ addRealmDictionaryField
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmDictionaryField (**String (?)** fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
 
-Adds a new field that contains a with references to other Realm model classes.
+Adds a new field that contains a **RealmDictionary (?)** with references to other Realm model classes.
 
-If the dictionary contains primitive types, use instead.
+If the dictionary contains primitive types, use **#addRealmDictionaryField(String, Class) (?)** instead.
+
+
 
 
 Parameters
@@ -544,9 +556,9 @@ addRealmDictionaryField
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmDictionaryField (**String (?)** fieldName, **java.lang.Class<?> (?)** primitiveType)
 
-Adds a new field that references a with primitive values. See for the list of supported types.
+Adds a new field that references a **RealmDictionary (?)** with primitive values. See **RealmObject (?)** for the list of supported types.
 
-Nullability of elements are defined by using the correct class e.g., ``Integer.class`` instead of ``int.class``. Alternatively can be used.
+Nullability of elements are defined by using the correct class e.g., ``Integer.class`` instead of ``int.class``. Alternatively **#setRequired(String, boolean) (?)** can be used.
 
 
 
@@ -557,7 +569,7 @@ Example:
     !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n // Defines the dictionary of Strings as being non null.\n RealmObjectSchema schema = schema.create(\"Person\")\n     .addRealmDictionaryField(\"parentAndChild\", String.class)\n     .setRequired(\"parentAndChild\", true)\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n // Defines the dictionary of Strings as being non null.\n RealmObjectSchema schema = schema.create(\"Person\")\n     .addRealmDictionaryField(\"parentAndChild\", String.class)\n     .setRequired(\"parentAndChild\", true)\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"// Defines the dictionary of Strings as being non null."}]}!!!preHtmlParseTagDelimiter!!!
     
 
-If the list contains references to other Realm classes, use instead.
+If the list contains references to other Realm classes, use **#addRealmDictionaryField(String, RealmObjectSchema) (?)** instead.
 
 
 Parameters
@@ -582,9 +594,11 @@ addRealmSetField
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmSetField (**String (?)** fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
 
-Adds a new field that contains a with references to other Realm model classes.
+Adds a new field that contains a **RealmSet (?)** with references to other Realm model classes.
 
-If the set contains primitive types, use instead.
+If the set contains primitive types, use **#addRealmSetField(String, Class) (?)** instead.
+
+
 
 
 Parameters
@@ -609,9 +623,9 @@ addRealmSetField
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmSetField (**String (?)** fieldName, **java.lang.Class<?> (?)** primitiveType)
 
-Adds a new field that references a with primitive values. See for the list of supported types.
+Adds a new field that references a **RealmSet (?)** with primitive values. See **RealmObject (?)** for the list of supported types.
 
-Nullability of elements are defined by using the correct class e.g., ``Integer.class`` instead of ``int.class``. Alternatively can be used.
+Nullability of elements are defined by using the correct class e.g., ``Integer.class`` instead of ``int.class``. Alternatively **#setRequired(String, boolean) (?)** can be used.
 
 
 
@@ -622,7 +636,7 @@ Example:
     !!!preHtmlParseTagDelimiter!!!{"_class":"Tag","name":"@code","kind":"@code","text":"\n // Defines the set of Strings as being non null.\n RealmObjectSchema schema = schema.create(\"Person\")\n     .addRealmSetField(\"children\", String.class)\n     .setRequired(\"children\", true)\n ","inlineTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"\n // Defines the set of Strings as being non null.\n RealmObjectSchema schema = schema.create(\"Person\")\n     .addRealmSetField(\"children\", String.class)\n     .setRequired(\"children\", true)\n "}],"firstSentenceTags":[{"_class":"Tag","name":"Text","kind":"Text","text":"// Defines the set of Strings as being non null."}]}!!!preHtmlParseTagDelimiter!!!
     
 
-If the list contains references to other Realm classes, use instead.
+If the list contains references to other Realm classes, use **#addRealmSetField(String, RealmObjectSchema) (?)** instead.
 
 
 Parameters
@@ -711,7 +725,7 @@ addIndex
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addIndex (**String (?)** fieldName)
 
-Adds an index to a given field. This is the equivalent of adding the annotation on the field.
+Adds an index to a given field. This is the equivalent of adding the **io.realm.annotations.Index (?)** annotation on the field.
 
 
 Parameters
@@ -777,7 +791,7 @@ addPrimaryKey
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addPrimaryKey (**String (?)** fieldName)
 
-Adds a primary key to a given field. This is the same as adding the annotation on the field. Further, this implicitly adds annotation to the field as well.
+Adds a primary key to a given field. This is the same as adding the **io.realm.annotations.PrimaryKey (?)** annotation on the field. Further, this implicitly adds **io.realm.annotations.Index (?)** annotation to the field as well.
 
 
 Parameters
@@ -798,7 +812,7 @@ removePrimaryKey
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` removePrimaryKey ()
 
-Removes the primary key from this class. This is the same as removing the annotation from the class. Further, this implicitly removes annotation from the field as well.
+Removes the primary key from this class. This is the same as removing the **io.realm.annotations.PrimaryKey (?)** annotation from the class. Further, this implicitly removes **io.realm.annotations.Index (?)** annotation from the field as well.
 
 
 Throws
@@ -813,7 +827,9 @@ public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setRequire
 
 Sets a field to be required i.e., it is not allowed to hold ``null`` values. This is equivalent to switching between boxed types and their primitive variant e.g., ``Integer`` to ``int``.
 
-If the type of designated field is a list of values (not s , specified nullability only affects its elements, not the field itself. Value list itself is always non-nullable.
+If the type of designated field is a list of values (not **RealmObject (?)**s , specified nullability only affects its elements, not the field itself. Value list itself is always non-nullable.
+
+
 
 
 Parameters
@@ -843,7 +859,9 @@ public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setNullabl
 
 Sets a field to be nullable i.e., it should be able to hold ``null`` values. This is equivalent to switching between primitive types and their boxed variant e.g., ``int`` to ``Integer``.
 
-If the type of designated field is a list of values (not s , specified nullability only affects its elements, not the field itself. Value list itself is always non-nullable.
+If the type of designated field is a list of values (not **RealmObject (?)**s , specified nullability only affects its elements, not the field itself. Value list itself is always non-nullable.
+
+
 
 
 Parameters
@@ -976,7 +994,7 @@ transform
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` transform (:ref:`RealmObjectSchema.Function <io_realm_RealmObjectSchema_Function>` function)
 
-Runs a transformation function on each RealmObject instance of the current class. The object will be represented as a .
+Runs a transformation function on each RealmObject instance of the current class. The object will be represented as a **DynamicRealmObject (?)**.
 
 There is no guarantees in which order the objects are returned.
 
@@ -1017,7 +1035,7 @@ isEmbedded
 
 public **boolean (?)** isEmbedded ()
 
-Returns ``true`` if objects of this type are considered "embedded". See for further details.
+Returns ``true`` if objects of this type are considered "embedded". See **RealmClass#embedded() (?)** for further details.
 
 
 .. _io_realm_RealmObjectSchema_setEmbedded__boolean__:
@@ -1034,7 +1052,9 @@ A class can only be marked as embedded if the following invariants are satisfied
 - The class is not allowed to have a primary key defined.
    
    
-- All existing objects of this type, must have one and exactly one parent object already pointing to it. If 0 or more than 1 object has a reference to an object about to be marked embedded an will be thrown.
+- All existing objects of this type, must have one and exactly one parent object already pointing to it. If 0 or more than 1 object has a reference to an object about to be marked embedded an **IllegalStateException (?)** will be thrown.
+   
+   
    
    
 

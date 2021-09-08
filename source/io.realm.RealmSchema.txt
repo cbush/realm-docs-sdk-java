@@ -16,7 +16,7 @@ io.realm.RealmSchema
 
 Class for interacting with the Realm schema. This makes it possible to inspect, add, delete and change the classes in the Realm.
 
-returns an immutable ``RealmSchema`` which can only be used for inspecting. Use to get a mutable schema.
+**Realm#getSchema() (?)** returns an immutable ``RealmSchema`` which can only be used for inspecting. Use **DynamicRealm#getSchema() (?)** to get a mutable schema.
 
 
 
@@ -35,7 +35,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`get <io_realm_RealmSchema_get__String__>` (**String (?)** className)
        
-       Returns the for a given class.
+       Returns the **RealmObjectSchema (?)** for a given class.
        
        
        
@@ -45,7 +45,7 @@ Method Summary
    * - public abstract **Set (?)**
      - :ref:`getAll <io_realm_RealmSchema_getAll____>` ()
        
-       Returns the s for all RealmObject classes that can be saved in this Realm.
+       Returns the **RealmObjectSchema (?)**s for all RealmObject classes that can be saved in this Realm.
        
        
        
@@ -131,7 +131,7 @@ get
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` get (**String (?)** className)
 
-Returns the for a given class. If this is immutable, an immutable will be returned. Otherwise, it returns an mutable .
+Returns the **RealmObjectSchema (?)** for a given class. If this **RealmSchema (?)** is immutable, an immutable **RealmObjectSchema (?)** will be returned. Otherwise, it returns an mutable **RealmObjectSchema (?)**.
 
 
 Parameters
@@ -149,7 +149,7 @@ getAll
 
 public abstract **Set (?)** getAll ()
 
-Returns the s for all RealmObject classes that can be saved in this Realm. If this is immutable, an immutable set will be returned. Otherwise, it returns an mutable set.
+Returns the **RealmObjectSchema (?)**s for all RealmObject classes that can be saved in this Realm. If this **RealmSchema (?)** is immutable, an immutable **RealmObjectSchema (?)** set will be returned. Otherwise, it returns an mutable **RealmObjectSchema (?)** set.
 
 
 .. _io_realm_RealmSchema_create__String__:
@@ -198,7 +198,7 @@ Parameters
    
    
    
-- attributes - set of attributes for this field. This method implicitly adds and attributes to the field.
+- attributes - set of attributes for this field. This method implicitly adds **FieldAttribute#PRIMARY_KEY (?)** and **FieldAttribute#INDEXED (?)** attributes to the field.
    
    
    
@@ -213,7 +213,7 @@ remove
 
 public abstract **void (?)** remove (**String (?)** className)
 
-Removes a class from the Realm. All data will be removed. Removing a class while other classes point to it will throw an . Removes those classes or fields first.
+Removes a class from the Realm. All data will be removed. Removing a class while other classes point to it will throw an **IllegalStateException (?)**. Removes those classes or fields first.
 
 
 Parameters
