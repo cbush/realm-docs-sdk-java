@@ -12,7 +12,7 @@ io.realm.RealmObject
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 *Implemented interfaces:*
 
@@ -444,11 +444,11 @@ freeze
 
 public final **E (?)** freeze <**E (?)** >()
 
-Returns a frozen snapshot of this object. The frozen copy can be read and queried from any thread without throwing an **IllegalStateException (?)**.
+Returns a frozen snapshot of this object. The frozen copy can be read and queried from any thread without throwing an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__.
 
 Freezing a RealmObject also creates a frozen Realm which has its own lifecycle, but if the live Realm that spawned the original collection is fully closed (i.e. all instances across all threads are closed), the frozen Realm and object will be closed as well.
 
-Frozen objects can be queried as normal, but trying to mutate it in any way or attempting to register a listener will throw an **IllegalStateException (?)**.
+Frozen objects can be queried as normal, but trying to mutate it in any way or attempting to register a listener will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__.
 
 
 
@@ -478,11 +478,11 @@ freeze
 
 public static **E (?)** freeze <**E (?)** >(**E (?)** object)
 
-Returns a frozen snapshot of this object. The frozen copy can be read and queried from any thread without throwing an **IllegalStateException (?)**.
+Returns a frozen snapshot of this object. The frozen copy can be read and queried from any thread without throwing an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__.
 
 Freezing a RealmObject also creates a frozen Realm which has its own lifecycle, but if the live Realm that spawned the original collection is fully closed (i.e. all instances across all threads are closed), the frozen Realm and object will be closed as well.
 
-Frozen objects can be queried as normal, but trying to mutate it in any way or attempting to register a listener will throw an **IllegalStateException (?)**.
+Frozen objects can be queried as normal, but trying to mutate it in any way or attempting to register a listener will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__.
 
 
 
@@ -501,7 +501,7 @@ isLoaded
 
 public final **boolean (?)** isLoaded ()
 
-Checks if the query used to find this RealmObject has completed.Async methods like **RealmQuery#findFirstAsync() (?)**return an **RealmObject (?)**that represents the future result of the **RealmQuery (?)**. It can be considered similar to a **java.util.concurrent.Future (?)**in this regard.
+Checks if the query used to find this RealmObject has completed.Async methods like **RealmQuery#findFirstAsync() (?)**return an **RealmObject (?)**that represents the future result of the **RealmQuery (?)**. It can be considered similar to a `java.util.concurrent.Future <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Future/.html>`__in this regard.
 
 
 
@@ -548,7 +548,7 @@ isLoaded
 
 public static **boolean (?)** isLoaded <**E (?)** >(**E (?)** object)
 
-Checks if the query used to find this RealmObject has completed.Async methods like **RealmQuery#findFirstAsync() (?)**return an **RealmObject (?)**that represents the future result of the **RealmQuery (?)**. It can be considered similar to a **java.util.concurrent.Future (?)**in this regard.
+Checks if the query used to find this RealmObject has completed.Async methods like **RealmQuery#findFirstAsync() (?)**return an **RealmObject (?)**that represents the future result of the **RealmQuery (?)**. It can be considered similar to a `java.util.concurrent.Future <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Future/.html>`__in this regard.
 
 
 

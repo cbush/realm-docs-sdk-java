@@ -12,7 +12,7 @@ io.realm.annotations.RealmNamingPolicy
 
 *Superclass:*
 
-- **java.lang.Enum (?)**
+- `java.lang.Enum <https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html>`__
 
 This enum defines the possible ways class and field names can be mapped from what is used in Java to the name used internally in the Realm file.Examples where this is useful:
 
@@ -81,12 +81,12 @@ When automatically converting Java variable names, each variable name is normali
    
    
    
-#. Anytime you switch from a lower case character to an upper case character as identified by **Character#isUpperCase(int) (?)**and **Character#isLowerCase(int) (?)**. Example is "FirstName" which becomes "First" and "Name".
+#. Anytime you switch from a lower case character to an upper case character as identified by `Character#isUpperCase(int) <https://docs.oracle.com/javase/7/docs/api/java/lang/Character/isUpperCase(int).html>`__and `Character#isLowerCase(int) <https://docs.oracle.com/javase/7/docs/api/java/lang/Character/isLowerCase(int).html>`__. Example is "FirstName" which becomes "First" and "Name".
    
    
    
    
-#. Anytime you switch from more than one uppercase character to a lower case one. The last upper case letter is assumed to be part of the next word. This is identified by using **Character#isUpperCase(int) (?)**and **Character#isLowerCase(int) (?)**. Example is "FIRSTName" which becomes "FIRST" and "Name.
+#. Anytime you switch from more than one uppercase character to a lower case one. The last upper case letter is assumed to be part of the next word. This is identified by using `Character#isUpperCase(int) <https://docs.oracle.com/javase/7/docs/api/java/lang/Character/isUpperCase(int).html>`__and `Character#isLowerCase(int) <https://docs.oracle.com/javase/7/docs/api/java/lang/Character/isLowerCase(int).html>`__. Example is "FIRSTName" which becomes "FIRST" and "Name.
    
    
    
@@ -139,7 +139,7 @@ Method Summary
        
    
    * - public static :ref:`RealmNamingPolicy <io_realm_annotations_RealmNamingPolicy>`
-     - :ref:`valueOf <io_realm_annotations_RealmNamingPolicy_valueOf__String__>` (**String (?)** name)
+     - :ref:`valueOf <io_realm_annotations_RealmNamingPolicy_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
@@ -163,7 +163,7 @@ public static :ref:`RealmNamingPolicy <io_realm_annotations_RealmNamingPolicy>` 
 valueOf
 -------
 
-public static :ref:`RealmNamingPolicy <io_realm_annotations_RealmNamingPolicy>` valueOf (**String (?)** name)
+public static :ref:`RealmNamingPolicy <io_realm_annotations_RealmNamingPolicy>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
 
 

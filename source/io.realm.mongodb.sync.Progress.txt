@@ -12,7 +12,7 @@ io.realm.mongodb.sync.Progress
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 Class used to encapsulate progress notifications when either downloading or uploading Realm data. Each instance of this class is an immutable snapshot of the current progress.If the **ProgressListener (?)**was registered with **ProgressMode#INDEFINITELY (?)**, the progress reported by **#getFractionTransferred() (?)**can both increase and decrease since more changes might be added while the progres listener is registered. This means it is possible for one notification to report ``true``for **#isTransferComplete() (?)**, and then on the next event report ``false``.
 
@@ -69,7 +69,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`equals <io_realm_mongodb_sync_Progress_equals__Object__>` (**Object (?)** o)
+     - :ref:`equals <io_realm_mongodb_sync_Progress_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
        
@@ -84,7 +84,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`toString <io_realm_mongodb_sync_Progress_toString____>` ()
        
        
@@ -155,7 +155,7 @@ If the **ProgressListener (?)**was registered with **ProgressMode#CURRENT_CHANGE
 equals
 ------
 
-public **boolean (?)** equals (**Object (?)** o)
+public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
 
 .. _io_realm_mongodb_sync_Progress_hashCode____:
@@ -171,7 +171,7 @@ public **int (?)** hashCode ()
 toString
 --------
 
-public **String (?)** toString ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 
 
 

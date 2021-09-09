@@ -12,7 +12,7 @@ io.realm.mongodb.AppException
 
 *Superclass:*
 
-- **java.lang.RuntimeException (?)**
+- `java.lang.RuntimeException <https://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html>`__
 
 This class is a wrapper for all errors happening when communicating with a MongoDB Realm app. This include both exceptions and protocol errors. Only **#getErrorCode() (?)**is guaranteed to contain a value. If the error was caused by an underlying exception **#getErrorMessage() (?)**is ``null``and **#getException() (?)**is set, while if the error was a protocol error **#getErrorMessage() (?)**is set and **#getException() (?)**is null.
 
@@ -46,7 +46,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getErrorType <io_realm_mongodb_AppException_getErrorType____>` ()
        
        Returns a string describing the type of error it is.
@@ -62,7 +62,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getErrorMessage <io_realm_mongodb_AppException_getErrorMessage____>` ()
        
        Returns a more detailed error message about the cause of this error.
@@ -70,7 +70,7 @@ Method Summary
        
        
    
-   * - public **Throwable (?)**
+   * - public `Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__
      - :ref:`getException <io_realm_mongodb_AppException_getException____>` ()
        
        Returns the underlying exception causing this error, if any.
@@ -88,7 +88,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`toString <io_realm_mongodb_AppException_toString____>` ()
        
        
@@ -122,7 +122,7 @@ ErrorCode.. _io_realm_mongodb_AppException_getErrorType____:
 getErrorType
 ------------
 
-public **String (?)** getErrorType ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getErrorType ()
 
 Returns a string describing the type of error it is.
 .. _io_realm_mongodb_AppException_getErrorIntValue____:
@@ -140,7 +140,7 @@ Returns an integer representing this specific type of error. This value is only 
 getErrorMessage
 ---------------
 
-public **String (?)** getErrorMessage ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getErrorMessage ()
 
 Returns a more detailed error message about the cause of this error.
 .. _io_realm_mongodb_AppException_getException____:
@@ -148,7 +148,7 @@ Returns a more detailed error message about the cause of this error.
 getException
 ------------
 
-public **Throwable (?)** getException ()
+public `Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ getException ()
 
 Returns the underlying exception causing this error, if any.
 .. _io_realm_mongodb_AppException_getCategory____:
@@ -166,7 +166,7 @@ Returns the **ErrorCode.Category (?)**category for this error. Errors that are *
 toString
 --------
 
-public **String (?)** toString ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 
 
 

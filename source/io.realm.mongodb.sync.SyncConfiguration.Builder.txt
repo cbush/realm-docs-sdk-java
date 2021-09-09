@@ -12,7 +12,7 @@ io.realm.mongodb.sync.SyncConfiguration.Builder
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 Builder used to construct instances of a SyncConfiguration in a fluent manner.
 Constructors
@@ -49,7 +49,7 @@ Method Summary
        
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
-     - :ref:`modules <io_realm_mongodb_sync_SyncConfiguration_Builder_modules__Object__Object_____>` (**Object (?)** baseModule, **java.lang.Object[] (?)** additionalModules)
+     - :ref:`modules <io_realm_mongodb_sync_SyncConfiguration_Builder_modules__Object__Object_____>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ baseModule, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ additionalModules)
        
        Replaces the existing module(s) with one or more **RealmModule (?)**s.
        
@@ -59,7 +59,7 @@ Method Summary
        
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
-     - :ref:`modules <io_realm_mongodb_sync_SyncConfiguration_Builder_modules__Iterable_Object___>` (**java.lang.Iterable<java.lang.Object> (?)** modules)
+     - :ref:`modules <io_realm_mongodb_sync_SyncConfiguration_Builder_modules__Iterable_Object___>` (`java.lang.Iterable\<java.lang.Object> <https://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html>`__ modules)
        
        Replaces the existing module(s) with one or more **RealmModule (?)**s.
        
@@ -69,7 +69,7 @@ Method Summary
        
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
-     - :ref:`addModule <io_realm_mongodb_sync_SyncConfiguration_Builder_addModule__Object__>` (**Object (?)** module)
+     - :ref:`addModule <io_realm_mongodb_sync_SyncConfiguration_Builder_addModule__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ module)
        
        Adds a module to the already defined modules.
        
@@ -139,7 +139,7 @@ Method Summary
        
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
-     - :ref:`waitForInitialRemoteData <io_realm_mongodb_sync_SyncConfiguration_Builder_waitForInitialRemoteData__long__TimeUnit__>` (**long (?)** timeout, **TimeUnit (?)** unit)
+     - :ref:`waitForInitialRemoteData <io_realm_mongodb_sync_SyncConfiguration_Builder_waitForInitialRemoteData__long__TimeUnit__>` (**long (?)** timeout, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
        
        Setting this will cause the Realm to download all known changes from the server the first time a Realm is opened.
        
@@ -149,7 +149,7 @@ Method Summary
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
      - :ref:`readOnly <io_realm_mongodb_sync_SyncConfiguration_Builder_readOnly____>` ()
        
-       Setting this will cause the Realm to become read only and all write transactions made against this Realm will fail with an **IllegalStateException (?)**.
+       Setting this will cause the Realm to become read only and all write transactions made against this Realm will fail with an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__.
        
        
        
@@ -173,7 +173,7 @@ Method Summary
        
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
-     - :ref:`urlPrefix <io_realm_mongodb_sync_SyncConfiguration_Builder_urlPrefix__String__>` (**String (?)** urlPrefix)
+     - :ref:`urlPrefix <io_realm_mongodb_sync_SyncConfiguration_Builder_urlPrefix__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ urlPrefix)
        
        The prefix that is prepended to the path in the WebSocket request that initiates a sync connection to MongoDB Realm.
        
@@ -183,7 +183,7 @@ Method Summary
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
      - :ref:`maxNumberOfActiveVersions <io_realm_mongodb_sync_SyncConfiguration_Builder_maxNumberOfActiveVersions__long__>` (**long (?)** number)
        
-       Sets the maximum number of live versions in the Realm file before an **IllegalStateException (?)**is thrown when attempting to write more data.
+       Sets the maximum number of live versions in the Realm file before an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__is thrown when attempting to write more data.
        
        
        
@@ -278,7 +278,7 @@ Throws
 modules
 -------
 
-public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` modules (**Object (?)** baseModule, **java.lang.Object[] (?)** additionalModules)
+public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` modules (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ baseModule, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ additionalModules)
 
 Replaces the existing module(s) with one or more **RealmModule (?)**s. Using this method will replace the current schema for this Realm with the schema defined by the provided modules.
 
@@ -310,7 +310,7 @@ Realm#getDefaultModule().. _io_realm_mongodb_sync_SyncConfiguration_Builder_modu
 modules
 -------
 
-public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` modules (**java.lang.Iterable<java.lang.Object> (?)** modules)
+public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` modules (`java.lang.Iterable\<java.lang.Object> <https://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html>`__ modules)
 
 Replaces the existing module(s) with one or more **RealmModule (?)**s. Using this method will replace the current schema for this Realm with the schema defined by the provided modules.
 
@@ -340,7 +340,7 @@ Realm#getDefaultModule().. _io_realm_mongodb_sync_SyncConfiguration_Builder_addM
 addModule
 ---------
 
-public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` addModule (**Object (?)** module)
+public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` addModule (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ module)
 
 Adds a module to the already defined modules.
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_rxFactory__RxObservableFactory__:
@@ -457,7 +457,7 @@ This check is only enforced the first time a Realm is created. If you otherwise 
 waitForInitialRemoteData
 ------------------------
 
-public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` waitForInitialRemoteData (**long (?)** timeout, **TimeUnit (?)** unit)
+public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` waitForInitialRemoteData (**long (?)** timeout, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
 
 Setting this will cause the Realm to download all known changes from the server the first time a Realm is opened. The Realm will not open until all the data has been downloaded. This means that if a device is offline the Realm will not open.Since downloading all changes can be an lengthy operation that might block the UI thread, Realms with this setting enabled should only be opened on background threads or with **Realm#getInstanceAsync(RealmConfiguration, Realm.Callback) (?)**on the UI thread.
 
@@ -485,9 +485,9 @@ readOnly
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` readOnly ()
 
-Setting this will cause the Realm to become read only and all write transactions made against this Realm will fail with an **IllegalStateException (?)**.
+Setting this will cause the Realm to become read only and all write transactions made against this Realm will fail with an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__.
 
-This in particular mean that **#initialData(Realm.Transaction) (?)**will not work in combination with a read only Realm and setting this will result in a **IllegalStateException (?)**being thrown.
+This in particular mean that **#initialData(Realm.Transaction) (?)**will not work in combination with a read only Realm and setting this will result in a `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__being thrown.
 
 
 
@@ -521,7 +521,7 @@ Parameters
 urlPrefix
 ---------
 
-public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` urlPrefix (**String (?)** urlPrefix)
+public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` urlPrefix (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ urlPrefix)
 
 The prefix that is prepended to the path in the WebSocket request that initiates a sync connection to MongoDB Realm. The value specified must match the server’s configuration otherwise the device will not be able to create a connection. This value is optional and should only be set if a specific firewall rule requires it.
 Parameters
@@ -540,7 +540,7 @@ maxNumberOfActiveVersions
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` maxNumberOfActiveVersions (**long (?)** number)
 
-Sets the maximum number of live versions in the Realm file before an **IllegalStateException (?)**is thrown when attempting to write more data.
+Sets the maximum number of live versions in the Realm file before an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__is thrown when attempting to write more data.
 
 Realm is capable of concurrently handling many different versions of Realm objects. This can happen if you have a Realm open on many different threads or are freezing objects while data is being written to the file.
 

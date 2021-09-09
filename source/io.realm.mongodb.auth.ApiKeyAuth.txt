@@ -12,7 +12,7 @@ io.realm.mongodb.auth.ApiKeyAuth
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 This class exposes functionality for a user to manage API keys under their control.
 Constructors
@@ -50,7 +50,7 @@ Method Summary
        
    
    * - public :ref:`ApiKey <io_realm_mongodb_auth_ApiKey>`
-     - :ref:`create <io_realm_mongodb_auth_ApiKeyAuth_create__String__>` (**String (?)** name)
+     - :ref:`create <io_realm_mongodb_auth_ApiKeyAuth_create__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        Creates a user API key that can be used to authenticate as the user.
        
@@ -58,7 +58,7 @@ Method Summary
        
    
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
-     - :ref:`createAsync <io_realm_mongodb_auth_ApiKeyAuth_createAsync__String__App_Callback_ApiKey___>` (**String (?)** name, :ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.auth.ApiKey> <io_realm_mongodb_App_Callback>` callback)
+     - :ref:`createAsync <io_realm_mongodb_auth_ApiKeyAuth_createAsync__String__App_Callback_ApiKey___>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name, :ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.auth.ApiKey> <io_realm_mongodb_App_Callback>` callback)
        
        Asynchronously creates a user API key that can be used to authenticate as the user.
        
@@ -81,7 +81,7 @@ Method Summary
        
        
    
-   * - public **List (?)**
+   * - public `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__
      - :ref:`fetchAll <io_realm_mongodb_auth_ApiKeyAuth_fetchAll____>` ()
        
        Fetches all API keys associated with the user.
@@ -146,7 +146,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`equals <io_realm_mongodb_auth_ApiKeyAuth_equals__Object__>` (**Object (?)** o)
+     - :ref:`equals <io_realm_mongodb_auth_ApiKeyAuth_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
        
@@ -161,7 +161,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`toString <io_realm_mongodb_auth_ApiKeyAuth_toString____>` ()
        
        
@@ -170,7 +170,7 @@ Method Summary
        
    
    * - protected abstract **void (?)**
-     - :ref:`call <io_realm_mongodb_auth_ApiKeyAuth_call__int__String__OsJavaNetworkTransport_NetworkTransportJNIResultCallback__>` (**int (?)** functionType, **String (?)** arg, **OsJavaNetworkTransport.NetworkTransportJNIResultCallback (?)** callback)
+     - :ref:`call <io_realm_mongodb_auth_ApiKeyAuth_call__int__String__OsJavaNetworkTransport_NetworkTransportJNIResultCallback__>` (**int (?)** functionType, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ arg, **OsJavaNetworkTransport.NetworkTransportJNIResultCallback (?)** callback)
        
        
        
@@ -206,7 +206,7 @@ Returns the **App (?)**that this instance in associated with.
 create
 ------
 
-public :ref:`ApiKey <io_realm_mongodb_auth_ApiKey>` create (**String (?)** name)
+public :ref:`ApiKey <io_realm_mongodb_auth_ApiKey>` create (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
 Creates a user API key that can be used to authenticate as the user.The value of the key must be persisted at this time as this is the only time it is visible.
 
@@ -229,7 +229,7 @@ Throws
 createAsync
 -----------
 
-public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` createAsync (**String (?)** name, :ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.auth.ApiKey> <io_realm_mongodb_App_Callback>` callback)
+public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` createAsync (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name, :ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.auth.ApiKey> <io_realm_mongodb_App_Callback>` callback)
 
 Asynchronously creates a user API key that can be used to authenticate as the user.The value of the key must be persisted at this time as this is the only time it is visible.
 
@@ -290,7 +290,7 @@ Throws
 fetchAll
 --------
 
-public **List (?)** fetchAll ()
+public `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ fetchAll ()
 
 Fetches all API keys associated with the user.
 Throws
@@ -426,7 +426,7 @@ Throws
 equals
 ------
 
-public **boolean (?)** equals (**Object (?)** o)
+public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_hashCode____:
@@ -442,7 +442,7 @@ public **int (?)** hashCode ()
 toString
 --------
 
-public **String (?)** toString ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_call__int__String__OsJavaNetworkTransport_NetworkTransportJNIResultCallback__:
@@ -450,7 +450,7 @@ public **String (?)** toString ()
 call
 ----
 
-protected abstract **void (?)** call (**int (?)** functionType, **String (?)** arg, **OsJavaNetworkTransport.NetworkTransportJNIResultCallback (?)** callback)
+protected abstract **void (?)** call (**int (?)** functionType, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ arg, **OsJavaNetworkTransport.NetworkTransportJNIResultCallback (?)** callback)
 
 
 

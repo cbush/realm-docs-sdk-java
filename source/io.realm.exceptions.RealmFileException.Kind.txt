@@ -12,7 +12,7 @@ io.realm.exceptions.RealmFileException.Kind
 
 *Superclass:*
 
-- **java.lang.Enum (?)**
+- `java.lang.Enum <https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html>`__
 
 The specific kind of this **RealmFileException (?)**.
 
@@ -35,7 +35,7 @@ Method Summary
        
    
    * - public static :ref:`RealmFileException.Kind <io_realm_exceptions_RealmFileException_Kind>`
-     - :ref:`valueOf <io_realm_exceptions_RealmFileException_Kind_valueOf__String__>` (**String (?)** name)
+     - :ref:`valueOf <io_realm_exceptions_RealmFileException_Kind_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
@@ -59,7 +59,7 @@ public static :ref:`RealmFileException.Kind <io_realm_exceptions_RealmFileExcept
 valueOf
 -------
 
-public static :ref:`RealmFileException.Kind <io_realm_exceptions_RealmFileException_Kind>` valueOf (**String (?)** name)
+public static :ref:`RealmFileException.Kind <io_realm_exceptions_RealmFileException_Kind>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
 
 

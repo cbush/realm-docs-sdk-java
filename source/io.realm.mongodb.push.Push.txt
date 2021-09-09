@@ -12,7 +12,7 @@ io.realm.mongodb.push.Push
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 The Push client allows to register/deregister for push notifications from a client app.
 Constructors
@@ -30,7 +30,7 @@ Method Summary
      - Method and Description
    
    * - public **void (?)**
-     - :ref:`registerDevice <io_realm_mongodb_push_Push_registerDevice__String__>` (**String (?)** registrationToken)
+     - :ref:`registerDevice <io_realm_mongodb_push_Push_registerDevice__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ registrationToken)
        
        Registers the given FCM registration token with the currently logged in user's device on MongoDB Realm.
        
@@ -38,7 +38,7 @@ Method Summary
        
    
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
-     - :ref:`registerDeviceAsync <io_realm_mongodb_push_Push_registerDeviceAsync__String__App_Callback_Void___>` (**String (?)** registrationToken, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
+     - :ref:`registerDeviceAsync <io_realm_mongodb_push_Push_registerDeviceAsync__String__App_Callback_Void___>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ registrationToken, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
        
        Registers the given FCM registration token with the currently logged in user's device on MongoDB Realm.
        
@@ -70,7 +70,7 @@ Method Detail
 registerDevice
 --------------
 
-public **void (?)** registerDevice (**String (?)** registrationToken)
+public **void (?)** registerDevice (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ registrationToken)
 
 Registers the given FCM registration token with the currently logged in user's device on MongoDB Realm.
 Parameters
@@ -84,7 +84,7 @@ Parameters
 registerDeviceAsync
 -------------------
 
-public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` registerDeviceAsync (**String (?)** registrationToken, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
+public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` registerDeviceAsync (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ registrationToken, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
 
 Registers the given FCM registration token with the currently logged in user's device on MongoDB Realm.
 Parameters

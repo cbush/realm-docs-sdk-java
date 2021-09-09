@@ -12,7 +12,7 @@ io.realm.FrozenPendingRow
 
 *Superclass:*
 
-- **java.lang.Enum (?)**
+- `java.lang.Enum <https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html>`__
 
 A PendingRow that has been frozen. This behaves in many ways similar to a deleted Row, but will report **#isLoaded() (?)**as ``as false``.
 
@@ -35,7 +35,7 @@ Method Summary
        
    
    * - public static :ref:`FrozenPendingRow <io_realm_FrozenPendingRow>`
-     - :ref:`valueOf <io_realm_FrozenPendingRow_valueOf__String__>` (**String (?)** name)
+     - :ref:`valueOf <io_realm_FrozenPendingRow_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
@@ -50,7 +50,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getColumnNames <io_realm_FrozenPendingRow_getColumnNames____>` ()
        
        
@@ -59,7 +59,7 @@ Method Summary
        
    
    * - public **long (?)**
-     - :ref:`getColumnKey <io_realm_FrozenPendingRow_getColumnKey__String__>` (**String (?)** columnName)
+     - :ref:`getColumnKey <io_realm_FrozenPendingRow_getColumnKey__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ columnName)
        
        
        
@@ -122,7 +122,7 @@ Method Summary
        
        
    
-   * - public **Date (?)**
+   * - public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__
      - :ref:`getDate <io_realm_FrozenPendingRow_getDate__long__>` (**long (?)** columnKey)
        
        
@@ -130,7 +130,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getString <io_realm_FrozenPendingRow_getString__long__>` (**long (?)** columnKey)
        
        
@@ -162,7 +162,7 @@ Method Summary
        
        
    
-   * - public **UUID (?)**
+   * - public `UUID <https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html>`__
      - :ref:`getUUID <io_realm_FrozenPendingRow_getUUID__long__>` (**long (?)** columnKey)
        
        
@@ -291,7 +291,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setDate <io_realm_FrozenPendingRow_setDate__long__Date__>` (**long (?)** columnKey, **Date (?)** date)
+     - :ref:`setDate <io_realm_FrozenPendingRow_setDate__long__Date__>` (**long (?)** columnKey, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ date)
        
        
        
@@ -299,7 +299,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setString <io_realm_FrozenPendingRow_setString__long__String__>` (**long (?)** columnKey, **String (?)** value)
+     - :ref:`setString <io_realm_FrozenPendingRow_setString__long__String__>` (**long (?)** columnKey, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
        
        
        
@@ -371,7 +371,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setUUID <io_realm_FrozenPendingRow_setUUID__long__UUID__>` (**long (?)** columnKey, **UUID (?)** value)
+     - :ref:`setUUID <io_realm_FrozenPendingRow_setUUID__long__UUID__>` (**long (?)** columnKey, `UUID <https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html>`__ value)
        
        
        
@@ -403,7 +403,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`hasColumn <io_realm_FrozenPendingRow_hasColumn__String__>` (**String (?)** fieldName)
+     - :ref:`hasColumn <io_realm_FrozenPendingRow_hasColumn__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        
        
@@ -443,7 +443,7 @@ public static :ref:`FrozenPendingRow <io_realm_FrozenPendingRow>` values ()
 valueOf
 -------
 
-public static :ref:`FrozenPendingRow <io_realm_FrozenPendingRow>` valueOf (**String (?)** name)
+public static :ref:`FrozenPendingRow <io_realm_FrozenPendingRow>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
 
 .. _io_realm_FrozenPendingRow_getColumnCount____:
@@ -459,7 +459,7 @@ public **long (?)** getColumnCount ()
 getColumnNames
 --------------
 
-public **String (?)** getColumnNames ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getColumnNames ()
 
 
 .. _io_realm_FrozenPendingRow_getColumnKey__String__:
@@ -467,7 +467,7 @@ public **String (?)** getColumnNames ()
 getColumnKey
 ------------
 
-public **long (?)** getColumnKey (**String (?)** columnName)
+public **long (?)** getColumnKey (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ columnName)
 
 
 .. _io_realm_FrozenPendingRow_getColumnType__long__:
@@ -531,7 +531,7 @@ public **double (?)** getDouble (**long (?)** columnKey)
 getDate
 -------
 
-public **Date (?)** getDate (**long (?)** columnKey)
+public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ getDate (**long (?)** columnKey)
 
 
 .. _io_realm_FrozenPendingRow_getString__long__:
@@ -539,7 +539,7 @@ public **Date (?)** getDate (**long (?)** columnKey)
 getString
 ---------
 
-public **String (?)** getString (**long (?)** columnKey)
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getString (**long (?)** columnKey)
 
 
 .. _io_realm_FrozenPendingRow_getBinaryByteArray__long__:
@@ -571,7 +571,7 @@ public **ObjectId (?)** getObjectId (**long (?)** columnKey)
 getUUID
 -------
 
-public **UUID (?)** getUUID (**long (?)** columnKey)
+public `UUID <https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html>`__ getUUID (**long (?)** columnKey)
 
 
 .. _io_realm_FrozenPendingRow_getNativeRealmAny__long__:
@@ -699,7 +699,7 @@ public **void (?)** setDouble (**long (?)** columnKey, **double (?)** value)
 setDate
 -------
 
-public **void (?)** setDate (**long (?)** columnKey, **Date (?)** date)
+public **void (?)** setDate (**long (?)** columnKey, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ date)
 
 
 .. _io_realm_FrozenPendingRow_setString__long__String__:
@@ -707,7 +707,7 @@ public **void (?)** setDate (**long (?)** columnKey, **Date (?)** date)
 setString
 ---------
 
-public **void (?)** setString (**long (?)** columnKey, **String (?)** value)
+public **void (?)** setString (**long (?)** columnKey, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
 
 
 .. _io_realm_FrozenPendingRow_setRealmAny__long__long__:
@@ -779,7 +779,7 @@ public **void (?)** setObjectId (**long (?)** columnKey, **ObjectId (?)** value)
 setUUID
 -------
 
-public **void (?)** setUUID (**long (?)** columnKey, **UUID (?)** value)
+public **void (?)** setUUID (**long (?)** columnKey, `UUID <https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html>`__ value)
 
 
 .. _io_realm_FrozenPendingRow_createEmbeddedObject__long__RealmFieldType__:
@@ -811,7 +811,7 @@ public **void (?)** checkIfAttached ()
 hasColumn
 ---------
 
-public **boolean (?)** hasColumn (**String (?)** fieldName)
+public **boolean (?)** hasColumn (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 
 .. _io_realm_FrozenPendingRow_freeze__OsSharedRealm__:

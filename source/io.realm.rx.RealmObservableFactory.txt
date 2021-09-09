@@ -12,7 +12,7 @@ io.realm.rx.RealmObservableFactory
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 *Implemented interfaces:*
 
@@ -162,7 +162,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`equals <io_realm_rx_RealmObservableFactory_equals__Object__>` (**Object (?)** o)
+     - :ref:`equals <io_realm_rx_RealmObservableFactory_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
        
@@ -314,7 +314,7 @@ public **<any> (?)** from <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm
 equals
 ------
 
-public **boolean (?)** equals (**Object (?)** o)
+public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
 
 .. _io_realm_rx_RealmObservableFactory_hashCode____:

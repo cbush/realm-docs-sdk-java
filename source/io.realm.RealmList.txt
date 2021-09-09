@@ -12,7 +12,7 @@ io.realm.RealmList<E>
 
 *Superclass:*
 
-- **java.util.AbstractList (?)**
+- `java.util.AbstractList <https://docs.oracle.com/javase/7/docs/api/java/util/AbstractList.html>`__
 
 *Implemented interfaces:*
 
@@ -170,7 +170,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`remove <io_realm_RealmList_remove__Object__>` (**Object (?)** object)
+     - :ref:`remove <io_realm_RealmList_remove__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
        
        Removes one instance of the specified object from this ``Collection``if one is contained.
        
@@ -180,7 +180,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`removeAll <io_realm_RealmList_removeAll__Collection_____>` (**java.util.Collection<?> (?)** collection)
+     - :ref:`removeAll <io_realm_RealmList_removeAll__Collection_____>` (`java.util.Collection\<?> <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ collection)
        
        Removes all occurrences in this ``Collection``of each object in the specified ``Collection``.
        
@@ -258,7 +258,7 @@ Method Summary
        
    
    * - public :ref:`RealmResults <io_realm_RealmResults>`
-     - :ref:`sort <io_realm_RealmList_sort__String__>` (**String (?)** fieldName)
+     - :ref:`sort <io_realm_RealmList_sort__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        
        
@@ -268,7 +268,7 @@ Method Summary
        
    
    * - public :ref:`RealmResults <io_realm_RealmResults>`
-     - :ref:`sort <io_realm_RealmList_sort__String__Sort__>` (**String (?)** fieldName, :ref:`Sort <io_realm_Sort>` sortOrder)
+     - :ref:`sort <io_realm_RealmList_sort__String__Sort__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`Sort <io_realm_Sort>` sortOrder)
        
        
        
@@ -278,7 +278,7 @@ Method Summary
        
    
    * - public :ref:`RealmResults <io_realm_RealmResults>`
-     - :ref:`sort <io_realm_RealmList_sort__String__Sort__String__Sort__>` (**String (?)** fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, **String (?)** fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
+     - :ref:`sort <io_realm_RealmList_sort__String__Sort__String__Sort__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
        
        
        
@@ -288,7 +288,7 @@ Method Summary
        
    
    * - public :ref:`RealmResults <io_realm_RealmResults>`
-     - :ref:`sort <io_realm_RealmList_sort__String[]__Sort[]__>` (**java.lang.String[] (?)** fieldNames, :ref:`io.realm.Sort[] <io_realm_Sort>` sortOrders)
+     - :ref:`sort <io_realm_RealmList_sort__String[]__Sort[]__>` (`java.lang.String[] <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldNames, :ref:`io.realm.Sort[] <io_realm_Sort>` sortOrders)
        
        
        
@@ -325,8 +325,8 @@ Method Summary
        
        
    
-   * - public **Number (?)**
-     - :ref:`min <io_realm_RealmList_min__String__>` (**String (?)** fieldName)
+   * - public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__
+     - :ref:`min <io_realm_RealmList_min__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        
        
@@ -335,8 +335,8 @@ Method Summary
        
        
    
-   * - public **Number (?)**
-     - :ref:`max <io_realm_RealmList_max__String__>` (**String (?)** fieldName)
+   * - public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__
+     - :ref:`max <io_realm_RealmList_max__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        
        
@@ -345,8 +345,8 @@ Method Summary
        
        
    
-   * - public **Number (?)**
-     - :ref:`sum <io_realm_RealmList_sum__String__>` (**String (?)** fieldName)
+   * - public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__
+     - :ref:`sum <io_realm_RealmList_sum__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        
        
@@ -356,7 +356,7 @@ Method Summary
        
    
    * - public **double (?)**
-     - :ref:`average <io_realm_RealmList_average__String__>` (**String (?)** fieldName)
+     - :ref:`average <io_realm_RealmList_average__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        
        
@@ -365,8 +365,8 @@ Method Summary
        
        
    
-   * - public **Date (?)**
-     - :ref:`maxDate <io_realm_RealmList_maxDate__String__>` (**String (?)** fieldName)
+   * - public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__
+     - :ref:`maxDate <io_realm_RealmList_maxDate__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        
        
@@ -375,8 +375,8 @@ Method Summary
        
        
    
-   * - public **Date (?)**
-     - :ref:`minDate <io_realm_RealmList_minDate__String__>` (**String (?)** fieldName)
+   * - public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__
+     - :ref:`minDate <io_realm_RealmList_minDate__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        
        
@@ -416,7 +416,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`contains <io_realm_RealmList_contains__Object__>` (**Object (?)** object)
+     - :ref:`contains <io_realm_RealmList_contains__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
        
        Returns ``true``if the list contains the specified element when attached to a Realm.
        
@@ -425,7 +425,7 @@ Method Summary
        
        
    
-   * - public **Iterator (?)**
+   * - public `Iterator <https://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html>`__
      - :ref:`iterator <io_realm_RealmList_iterator____>` ()
        
        
@@ -435,7 +435,7 @@ Method Summary
        
        
    
-   * - public **ListIterator (?)**
+   * - public `ListIterator <https://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html>`__
      - :ref:`listIterator <io_realm_RealmList_listIterator____>` ()
        
        
@@ -445,7 +445,7 @@ Method Summary
        
        
    
-   * - public **ListIterator (?)**
+   * - public `ListIterator <https://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html>`__
      - :ref:`listIterator <io_realm_RealmList_listIterator__int__>` (**int (?)** location)
        
        
@@ -475,7 +475,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`toString <io_realm_RealmList_toString____>` ()
        
        
@@ -757,7 +757,7 @@ Throws
 remove
 ------
 
-public **boolean (?)** remove (**Object (?)** object)
+public **boolean (?)** remove (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
 
 Removes one instance of the specified object from this ``Collection``if one is contained. This implementation iterates over this ``Collection``and tests each element ``e``returned by the iterator, whether ``e``is equal to the given object. If ``object != null``then this test is performed using ``object.equals(e)``, otherwise using ``object == null``. If an element equal to the given object is found, then the ``remove``method is called on the iterator and ``true``is returned, ``false``otherwise. If the iterator does not support removing elements, an ``UnsupportedOperationException``is thrown.
 
@@ -776,7 +776,7 @@ Throws
 removeAll
 ---------
 
-public **boolean (?)** removeAll (**java.util.Collection<?> (?)** collection)
+public **boolean (?)** removeAll (`java.util.Collection\<?> <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ collection)
 
 Removes all occurrences in this ``Collection``of each object in the specified ``Collection``. After this method returns none of the elements in the passed ``Collection``can be found in this ``Collection``anymore.
 
@@ -876,7 +876,7 @@ public **E (?)** last (**E (?)** defaultValue)
 sort
 ----
 
-public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldName)
+public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 
 
@@ -886,7 +886,7 @@ public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldNam
 sort
 ----
 
-public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldName, :ref:`Sort <io_realm_Sort>` sortOrder)
+public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`Sort <io_realm_Sort>` sortOrder)
 
 
 
@@ -896,7 +896,7 @@ public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldNam
 sort
 ----
 
-public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, **String (?)** fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
+public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
 
 
 
@@ -906,7 +906,7 @@ public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldNam
 sort
 ----
 
-public :ref:`RealmResults <io_realm_RealmResults>` sort (**java.lang.String[] (?)** fieldNames, :ref:`io.realm.Sort[] <io_realm_Sort>` sortOrders)
+public :ref:`RealmResults <io_realm_RealmResults>` sort (`java.lang.String[] <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldNames, :ref:`io.realm.Sort[] <io_realm_Sort>` sortOrders)
 
 
 
@@ -953,7 +953,7 @@ io.realm.RealmQuery.. _io_realm_RealmList_min__String__:
 min
 ----
 
-public **Number (?)** min (**String (?)** fieldName)
+public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ min (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 
 
@@ -963,7 +963,7 @@ public **Number (?)** min (**String (?)** fieldName)
 max
 ----
 
-public **Number (?)** max (**String (?)** fieldName)
+public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ max (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 
 
@@ -973,7 +973,7 @@ public **Number (?)** max (**String (?)** fieldName)
 sum
 ----
 
-public **Number (?)** sum (**String (?)** fieldName)
+public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ sum (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 
 
@@ -983,7 +983,7 @@ public **Number (?)** sum (**String (?)** fieldName)
 average
 -------
 
-public **double (?)** average (**String (?)** fieldName)
+public **double (?)** average (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 
 
@@ -993,7 +993,7 @@ public **double (?)** average (**String (?)** fieldName)
 maxDate
 -------
 
-public **Date (?)** maxDate (**String (?)** fieldName)
+public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ maxDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 
 
@@ -1003,7 +1003,7 @@ public **Date (?)** maxDate (**String (?)** fieldName)
 minDate
 -------
 
-public **Date (?)** minDate (**String (?)** fieldName)
+public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ minDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 
 
@@ -1043,11 +1043,11 @@ public **boolean (?)** load ()
 contains
 --------
 
-public **boolean (?)** contains (**Object (?)** object)
+public **boolean (?)** contains (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
 
 Returns ``true``if the list contains the specified element when attached to a Realm. This method will query the native Realm underlying storage engine to quickly find the specified element.
 
-If the list is not attached to a Realm, the default **List#contains(Object) (?)**implementation will occur.
+If the list is not attached to a Realm, the default `List#contains(Object) <https://docs.oracle.com/javase/7/docs/api/java/util/List/contains(Object).html>`__implementation will occur.
 
 
 
@@ -1063,7 +1063,7 @@ Parameters
 iterator
 --------
 
-public **Iterator (?)** iterator ()
+public `Iterator <https://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html>`__ iterator ()
 
 
 
@@ -1073,7 +1073,7 @@ public **Iterator (?)** iterator ()
 listIterator
 ------------
 
-public **ListIterator (?)** listIterator ()
+public `ListIterator <https://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html>`__ listIterator ()
 
 
 
@@ -1083,7 +1083,7 @@ public **ListIterator (?)** listIterator ()
 listIterator
 ------------
 
-public **ListIterator (?)** listIterator (**int (?)** location)
+public `ListIterator <https://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html>`__ listIterator (**int (?)** location)
 
 
 
@@ -1120,7 +1120,7 @@ Throws
 toString
 --------
 
-public **String (?)** toString ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 
 
 .. _io_realm_RealmList_asFlowable____:

@@ -12,7 +12,7 @@ io.realm.FieldAttribute
 
 *Superclass:*
 
-- **java.lang.Enum (?)**
+- `java.lang.Enum <https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html>`__
 
 This class contains all Realm attributes for a Realm field. These will usually match the annotations found in the ``io.realm.annotation``package. See the relevant annotation for further information on each modifier.
 
@@ -35,7 +35,7 @@ Method Summary
        
    
    * - public static :ref:`FieldAttribute <io_realm_FieldAttribute>`
-     - :ref:`valueOf <io_realm_FieldAttribute_valueOf__String__>` (**String (?)** name)
+     - :ref:`valueOf <io_realm_FieldAttribute_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
@@ -59,7 +59,7 @@ public static :ref:`FieldAttribute <io_realm_FieldAttribute>` values ()
 valueOf
 -------
 
-public static :ref:`FieldAttribute <io_realm_FieldAttribute>` valueOf (**String (?)** name)
+public static :ref:`FieldAttribute <io_realm_FieldAttribute>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
 
 

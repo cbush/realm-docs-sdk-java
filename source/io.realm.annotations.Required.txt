@@ -12,7 +12,7 @@ io.realm.annotations.Required
 
 *Implemented interfaces:*
 
-- **java.lang.annotation.Annotation (?)**
+- `java.lang.annotation.Annotation <https://docs.oracle.com/javase/7/docs/api/java/lang/annotation/Annotation.html>`__
 
 This annotation will mark the field or the element in ``io.realm.RealmList``as not nullable.
 

@@ -12,7 +12,7 @@ io.realm.annotations.RealmClass
 
 *Implemented interfaces:*
 
-- **java.lang.annotation.Annotation (?)**
+- `java.lang.annotation.Annotation <https://docs.oracle.com/javase/7/docs/api/java/lang/annotation/Annotation.html>`__
 
 Interface used to mark a class that can be persisted by Realm.
 

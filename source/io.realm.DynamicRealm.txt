@@ -75,7 +75,7 @@ Method Summary
        
    
    * - public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`
-     - :ref:`createObject <io_realm_DynamicRealm_createObject__String__>` (**String (?)** className)
+     - :ref:`createObject <io_realm_DynamicRealm_createObject__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
        
        Instantiates and adds a new object to the Realm.
        
@@ -83,7 +83,7 @@ Method Summary
        
    
    * - public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`
-     - :ref:`createObject <io_realm_DynamicRealm_createObject__String__Object__>` (**String (?)** className, **Object (?)** primaryKeyValue)
+     - :ref:`createObject <io_realm_DynamicRealm_createObject__String__Object__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className, `Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ primaryKeyValue)
        
        Creates an object with a given primary key.
        
@@ -91,7 +91,7 @@ Method Summary
        
    
    * - public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`
-     - :ref:`createEmbeddedObject <io_realm_DynamicRealm_createEmbeddedObject__String__DynamicRealmObject__String__>` (**String (?)** className, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` parentObject, **String (?)** parentProperty)
+     - :ref:`createEmbeddedObject <io_realm_DynamicRealm_createEmbeddedObject__String__DynamicRealmObject__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` parentObject, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ parentProperty)
        
        Instantiates and adds a new embedded object to the Realm.
        
@@ -99,7 +99,7 @@ Method Summary
        
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
-     - :ref:`where <io_realm_DynamicRealm_where__String__>` (**String (?)** className)
+     - :ref:`where <io_realm_DynamicRealm_where__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
        
        Returns a RealmQuery, which can be used to query the provided class.
        
@@ -131,7 +131,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`delete <io_realm_DynamicRealm_delete__String__>` (**String (?)** className)
+     - :ref:`delete <io_realm_DynamicRealm_delete__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
        
        Deletes all objects of the specified class from the Realm.
        
@@ -275,7 +275,7 @@ Callback for more details... _io_realm_DynamicRealm_createObject__String__:
 createObject
 ------------
 
-public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` createObject (**String (?)** className)
+public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` createObject (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
 
 Instantiates and adds a new object to the Realm.
 Parameters
@@ -292,7 +292,7 @@ Throws
 createObject
 ------------
 
-public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` createObject (**String (?)** className, **Object (?)** primaryKeyValue)
+public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` createObject (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className, `Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ primaryKeyValue)
 
 Creates an object with a given primary key. Classes without a primary key defined must use **#createObject(String) (?)**} instead.
 
@@ -305,7 +305,7 @@ Throws
 createEmbeddedObject
 --------------------
 
-public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` createEmbeddedObject (**String (?)** className, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` parentObject, **String (?)** parentProperty)
+public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` createEmbeddedObject (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` parentObject, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ parentProperty)
 
 Instantiates and adds a new embedded object to the Realm.This method should only be used to create objects of types marked as embedded.
 
@@ -331,7 +331,7 @@ RealmClass#embedded().. _io_realm_DynamicRealm_where__String__:
 where
 -----
 
-public :ref:`RealmQuery <io_realm_RealmQuery>` where (**String (?)** className)
+public :ref:`RealmQuery <io_realm_RealmQuery>` where (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
 
 Returns a RealmQuery, which can be used to query the provided class.
 Parameters
@@ -411,7 +411,7 @@ io.realm.RealmChangeListener.. _io_realm_DynamicRealm_delete__String__:
 delete
 ------
 
-public **void (?)** delete (**String (?)** className)
+public **void (?)** delete (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
 
 Deletes all objects of the specified class from the Realm.
 Parameters

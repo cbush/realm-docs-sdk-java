@@ -23,7 +23,7 @@ Method Summary
      - Method and Description
    
    * - public **void (?)**
-     - :ref:`log <io_realm_log_RealmLogger_log__int__String__Throwable__String__>` (**int (?)** level, **String (?)** tag, **Throwable (?)** throwable, **String (?)** message)
+     - :ref:`log <io_realm_log_RealmLogger_log__int__String__Throwable__String__>` (**int (?)** level, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ tag, `Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message)
        
        Handles a log event.
        
@@ -39,7 +39,7 @@ Method Detail
 log
 ----
 
-public **void (?)** log (**int (?)** level, **String (?)** tag, **Throwable (?)** throwable, **String (?)** message)
+public **void (?)** log (**int (?)** level, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ tag, `Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message)
 
 Handles a log event.
 Parameters

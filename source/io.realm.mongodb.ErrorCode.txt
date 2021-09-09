@@ -12,7 +12,7 @@ io.realm.mongodb.ErrorCode
 
 *Superclass:*
 
-- **java.lang.Enum (?)**
+- `java.lang.Enum <https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html>`__
 
 This class enumerate all potential errors related to using the Object Server or synchronizing data.
 Nested Class Summary
@@ -49,14 +49,14 @@ Method Summary
        
    
    * - public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>`
-     - :ref:`valueOf <io_realm_mongodb_ErrorCode_valueOf__String__>` (**String (?)** name)
+     - :ref:`valueOf <io_realm_mongodb_ErrorCode_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`toString <io_realm_mongodb_ErrorCode_toString____>` ()
        
        
@@ -80,7 +80,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getType <io_realm_mongodb_ErrorCode_getType____>` ()
        
        Returns the type of error.
@@ -89,7 +89,7 @@ Method Summary
        
    
    * - public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>`
-     - :ref:`fromNativeError <io_realm_mongodb_ErrorCode_fromNativeError__String__int__>` (**String (?)** type, **int (?)** errorCode)
+     - :ref:`fromNativeError <io_realm_mongodb_ErrorCode_fromNativeError__String__int__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ type, **int (?)** errorCode)
        
        Converts a native error to the appropriate Java equivalent
        
@@ -113,7 +113,7 @@ public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` values ()
 valueOf
 -------
 
-public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` valueOf (**String (?)** name)
+public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
 
 .. _io_realm_mongodb_ErrorCode_toString____:
@@ -121,7 +121,7 @@ public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` valueOf (**String (?
 toString
 --------
 
-public **String (?)** toString ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 
 
 .. _io_realm_mongodb_ErrorCode_intValue____:
@@ -155,7 +155,7 @@ RECOVERABLE: Temporary error. The session will automatically try to recover as s
 getType
 -------
 
-public **String (?)** getType ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getType ()
 
 Returns the type of error. Note that an error is only uniquely identified by the ``(type:value)``pair.
 
@@ -165,7 +165,7 @@ Returns the type of error. Note that an error is only uniquely identified by the
 fromNativeError
 ---------------
 
-public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` fromNativeError (**String (?)** type, **int (?)** errorCode)
+public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` fromNativeError (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ type, **int (?)** errorCode)
 
 Converts a native error to the appropriate Java equivalent
 Parameters

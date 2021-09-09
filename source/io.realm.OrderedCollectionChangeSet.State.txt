@@ -12,7 +12,7 @@ io.realm.OrderedCollectionChangeSet.State
 
 *Superclass:*
 
-- **java.lang.Enum (?)**
+- `java.lang.Enum <https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html>`__
 
 State describing the nature of the changeset.
 Method Summary
@@ -33,7 +33,7 @@ Method Summary
        
    
    * - public static :ref:`OrderedCollectionChangeSet.State <io_realm_OrderedCollectionChangeSet_State>`
-     - :ref:`valueOf <io_realm_OrderedCollectionChangeSet_State_valueOf__String__>` (**String (?)** name)
+     - :ref:`valueOf <io_realm_OrderedCollectionChangeSet_State_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
@@ -57,7 +57,7 @@ public static :ref:`OrderedCollectionChangeSet.State <io_realm_OrderedCollection
 valueOf
 -------
 
-public static :ref:`OrderedCollectionChangeSet.State <io_realm_OrderedCollectionChangeSet_State>` valueOf (**String (?)** name)
+public static :ref:`OrderedCollectionChangeSet.State <io_realm_OrderedCollectionChangeSet_State>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
 
 

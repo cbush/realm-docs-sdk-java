@@ -12,7 +12,7 @@ io.realm.exceptions.RealmMigrationNeededException
 
 *Superclass:*
 
-- **java.lang.RuntimeException (?)**
+- `java.lang.RuntimeException <https://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html>`__
 
 
 Constructors
@@ -29,7 +29,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getPath <io_realm_exceptions_RealmMigrationNeededException_getPath____>` ()
        
        Returns the canonical path to the Realm file that needs to be migrated.
@@ -46,7 +46,7 @@ Method Detail
 getPath
 -------
 
-public **String (?)** getPath ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getPath ()
 
 Returns the canonical path to the Realm file that needs to be migrated.This can be used for easy reference during a migration:
 

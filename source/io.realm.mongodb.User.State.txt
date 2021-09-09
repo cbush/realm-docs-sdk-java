@@ -12,7 +12,7 @@ io.realm.mongodb.User.State
 
 *Superclass:*
 
-- **java.lang.Enum (?)**
+- `java.lang.Enum <https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html>`__
 
 The user's potential states.
 Method Summary
@@ -33,7 +33,7 @@ Method Summary
        
    
    * - public static :ref:`User.State <io_realm_mongodb_User_State>`
-     - :ref:`valueOf <io_realm_mongodb_User_State_valueOf__String__>` (**String (?)** name)
+     - :ref:`valueOf <io_realm_mongodb_User_State_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
@@ -57,7 +57,7 @@ public static :ref:`User.State <io_realm_mongodb_User_State>` values ()
 valueOf
 -------
 
-public static :ref:`User.State <io_realm_mongodb_User_State>` valueOf (**String (?)** name)
+public static :ref:`User.State <io_realm_mongodb_User_State>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
 
 

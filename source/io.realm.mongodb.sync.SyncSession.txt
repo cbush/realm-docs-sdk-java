@@ -12,7 +12,7 @@ io.realm.mongodb.sync.SyncSession
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 A session controls how data is synchronized between a single Realm on the device and the server Realm on the Realm Object Server.A Session is created by opening a Realm instance using a **SyncConfiguration (?)**. Once a session has been created, it will continue to exist until the app is closed or all threads using this **SyncConfiguration (?)**closes their respective **Realm (?)**s.
 
@@ -83,10 +83,10 @@ Method Summary
        
        
    
-   * - public **URI (?)**
+   * - public `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI.html>`__
      - :ref:`getServerUrl <io_realm_mongodb_sync_SyncSession_getServerUrl____>` ()
        
-       Returns the **URI (?)**describing the remote Realm which this session connects to and synchronizes changes with.
+       Returns the `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI/.html>`__describing the remote Realm which this session connects to and synchronizes changes with.
        
        
        
@@ -172,7 +172,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`downloadAllServerChanges <io_realm_mongodb_sync_SyncSession_downloadAllServerChanges__long__TimeUnit__>` (**long (?)** timeout, **TimeUnit (?)** unit)
+     - :ref:`downloadAllServerChanges <io_realm_mongodb_sync_SyncSession_downloadAllServerChanges__long__TimeUnit__>` (**long (?)** timeout, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
        
        Calling this method will block until all known remote changes have been downloaded and applied to the Realm or the specified timeout is hit.
        
@@ -188,7 +188,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`uploadAllLocalChanges <io_realm_mongodb_sync_SyncSession_uploadAllLocalChanges__long__TimeUnit__>` (**long (?)** timeout, **TimeUnit (?)** unit)
+     - :ref:`uploadAllLocalChanges <io_realm_mongodb_sync_SyncSession_uploadAllLocalChanges__long__TimeUnit__>` (**long (?)** timeout, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
        
        Calling this method will block until all known local changes have been uploaded to the server or the specified timeout is hit.
        
@@ -240,9 +240,9 @@ Returns the **User (?)**defined by the **SyncConfiguration (?)**that is used to 
 getServerUrl
 ------------
 
-public **URI (?)** getServerUrl ()
+public `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI.html>`__ getServerUrl ()
 
-Returns the **URI (?)**describing the remote Realm which this session connects to and synchronizes changes with.
+Returns the `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI/.html>`__describing the remote Realm which this session connects to and synchronizes changes with.
 
 
 .. _io_realm_mongodb_sync_SyncSession_getState____:
@@ -402,7 +402,7 @@ Throws
 downloadAllServerChanges
 ------------------------
 
-public **boolean (?)** downloadAllServerChanges (**long (?)** timeout, **TimeUnit (?)** unit)
+public **boolean (?)** downloadAllServerChanges (**long (?)** timeout, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
 
 Calling this method will block until all known remote changes have been downloaded and applied to the Realm or the specified timeout is hit. This will involve network access, so calling this method should only be done from a non-UI thread.This method cannot be called before the Realm has been opened.
 
@@ -430,7 +430,7 @@ Throws
 uploadAllLocalChanges
 ---------------------
 
-public **boolean (?)** uploadAllLocalChanges (**long (?)** timeout, **TimeUnit (?)** unit)
+public **boolean (?)** uploadAllLocalChanges (**long (?)** timeout, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
 
 Calling this method will block until all known local changes have been uploaded to the server or the specified timeout is hit. This will involve network access, so calling this method should only be done from a non-UI thread.This method cannot be called before the Realm has been opened.
 

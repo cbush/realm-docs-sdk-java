@@ -12,7 +12,7 @@ io.realm.log.RealmLog
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 Global logger used by all Realm components. Custom loggers can be added by registering classes implementing **RealmLogger (?)**.
 
@@ -84,7 +84,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`trace <io_realm_log_RealmLog_trace__Throwable__>` (**Throwable (?)** throwable)
+     - :ref:`trace <io_realm_log_RealmLog_trace__Throwable__>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable)
        
        Logs a :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>`exception.
        
@@ -94,7 +94,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`trace <io_realm_log_RealmLog_trace__String__Object_____>` (**String (?)** message, **java.lang.Object[] (?)** args)
+     - :ref:`trace <io_realm_log_RealmLog_trace__String__Object_____>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
        
        Logs a :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>`event.
        
@@ -104,7 +104,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`trace <io_realm_log_RealmLog_trace__Throwable__String__Object_____>` (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
+     - :ref:`trace <io_realm_log_RealmLog_trace__Throwable__String__Object_____>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
        
        Logs a :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>`event.
        
@@ -114,7 +114,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`debug <io_realm_log_RealmLog_debug__Throwable__>` (**Throwable (?)** throwable)
+     - :ref:`debug <io_realm_log_RealmLog_debug__Throwable__>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable)
        
        Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>`exception.
        
@@ -124,7 +124,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`debug <io_realm_log_RealmLog_debug__String__Object_____>` (**String (?)** message, **java.lang.Object[] (?)** args)
+     - :ref:`debug <io_realm_log_RealmLog_debug__String__Object_____>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
        
        Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>`event.
        
@@ -134,7 +134,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`debug <io_realm_log_RealmLog_debug__Throwable__String__Object_____>` (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
+     - :ref:`debug <io_realm_log_RealmLog_debug__Throwable__String__Object_____>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
        
        Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>`event.
        
@@ -144,7 +144,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`info <io_realm_log_RealmLog_info__Throwable__>` (**Throwable (?)** throwable)
+     - :ref:`info <io_realm_log_RealmLog_info__Throwable__>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable)
        
        Logs an :ref:`LogLevel#INFO <io_realm_log_LogLevel_INFO>`exception.
        
@@ -154,7 +154,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`info <io_realm_log_RealmLog_info__String__Object_____>` (**String (?)** message, **java.lang.Object[] (?)** args)
+     - :ref:`info <io_realm_log_RealmLog_info__String__Object_____>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
        
        Logs an :ref:`LogLevel#INFO <io_realm_log_LogLevel_INFO>`event.
        
@@ -164,7 +164,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`info <io_realm_log_RealmLog_info__Throwable__String__Object_____>` (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
+     - :ref:`info <io_realm_log_RealmLog_info__Throwable__String__Object_____>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
        
        Logs an :ref:`LogLevel#INFO <io_realm_log_LogLevel_INFO>`event.
        
@@ -174,7 +174,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`warn <io_realm_log_RealmLog_warn__Throwable__>` (**Throwable (?)** throwable)
+     - :ref:`warn <io_realm_log_RealmLog_warn__Throwable__>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable)
        
        Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>`exception.
        
@@ -184,7 +184,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`warn <io_realm_log_RealmLog_warn__String__Object_____>` (**String (?)** message, **java.lang.Object[] (?)** args)
+     - :ref:`warn <io_realm_log_RealmLog_warn__String__Object_____>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
        
        Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>`event.
        
@@ -194,7 +194,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`warn <io_realm_log_RealmLog_warn__Throwable__String__Object_____>` (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
+     - :ref:`warn <io_realm_log_RealmLog_warn__Throwable__String__Object_____>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
        
        Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>`event.
        
@@ -204,7 +204,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`error <io_realm_log_RealmLog_error__Throwable__>` (**Throwable (?)** throwable)
+     - :ref:`error <io_realm_log_RealmLog_error__Throwable__>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable)
        
        Logs an :ref:`LogLevel#ERROR <io_realm_log_LogLevel_ERROR>`exception.
        
@@ -214,7 +214,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`error <io_realm_log_RealmLog_error__String__Object_____>` (**String (?)** message, **java.lang.Object[] (?)** args)
+     - :ref:`error <io_realm_log_RealmLog_error__String__Object_____>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
        
        Logs an :ref:`LogLevel#ERROR <io_realm_log_LogLevel_ERROR>`event.
        
@@ -224,7 +224,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`error <io_realm_log_RealmLog_error__Throwable__String__Object_____>` (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
+     - :ref:`error <io_realm_log_RealmLog_error__Throwable__String__Object_____>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
        
        Logs an :ref:`LogLevel#ERROR <io_realm_log_LogLevel_ERROR>`event.
        
@@ -234,7 +234,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`fatal <io_realm_log_RealmLog_fatal__Throwable__>` (**Throwable (?)** throwable)
+     - :ref:`fatal <io_realm_log_RealmLog_fatal__Throwable__>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable)
        
        Logs a :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>`exception.
        
@@ -244,7 +244,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`fatal <io_realm_log_RealmLog_fatal__String__Object_____>` (**String (?)** message, **java.lang.Object[] (?)** args)
+     - :ref:`fatal <io_realm_log_RealmLog_fatal__String__Object_____>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
        
        Logs an :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>`event.
        
@@ -254,7 +254,7 @@ Method Summary
        
    
    * - public static **void (?)**
-     - :ref:`fatal <io_realm_log_RealmLog_fatal__Throwable__String__Object_____>` (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
+     - :ref:`fatal <io_realm_log_RealmLog_fatal__Throwable__String__Object_____>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
        
        Logs a :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>`event.
        
@@ -342,7 +342,7 @@ Adds default native logger if it has been removed before. If the default logger 
 trace
 -----
 
-public static **void (?)** trace (**Throwable (?)** throwable)
+public static **void (?)** trace (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable)
 
 Logs a :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>`exception.
 
@@ -358,7 +358,7 @@ Parameters
 trace
 -----
 
-public static **void (?)** trace (**String (?)** message, **java.lang.Object[] (?)** args)
+public static **void (?)** trace (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
 
 Logs a :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>`event.
 
@@ -368,7 +368,7 @@ Parameters
 
 - message - message to log.
    
-- args - optional args used to format the message using **String#format(String, Object...) (?)**.
+- args - optional args used to format the message using `String#format(String, Object...) <https://docs.oracle.com/javase/7/docs/api/java/lang/String/format(String, Object///).html>`__.
    
    
    
@@ -378,7 +378,7 @@ Parameters
 trace
 -----
 
-public static **void (?)** trace (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
+public static **void (?)** trace (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
 
 Logs a :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>`event.
 
@@ -390,7 +390,7 @@ Parameters
    
 - message - optional message.
    
-- args - optional args used to format the message using **String#format(String, Object...) (?)**.
+- args - optional args used to format the message using `String#format(String, Object...) <https://docs.oracle.com/javase/7/docs/api/java/lang/String/format(String, Object///).html>`__.
    
    
    
@@ -400,7 +400,7 @@ Parameters
 debug
 -----
 
-public static **void (?)** debug (**Throwable (?)** throwable)
+public static **void (?)** debug (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable)
 
 Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>`exception.
 
@@ -416,7 +416,7 @@ Parameters
 debug
 -----
 
-public static **void (?)** debug (**String (?)** message, **java.lang.Object[] (?)** args)
+public static **void (?)** debug (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
 
 Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>`event.
 
@@ -426,7 +426,7 @@ Parameters
 
 - message - message to log.
    
-- args - optional args used to format the message using **String#format(String, Object...) (?)**.
+- args - optional args used to format the message using `String#format(String, Object...) <https://docs.oracle.com/javase/7/docs/api/java/lang/String/format(String, Object///).html>`__.
    
    
    
@@ -436,7 +436,7 @@ Parameters
 debug
 -----
 
-public static **void (?)** debug (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
+public static **void (?)** debug (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
 
 Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>`event.
 
@@ -448,7 +448,7 @@ Parameters
    
 - message - optional message.
    
-- args - optional args used to format the message using **String#format(String, Object...) (?)**.
+- args - optional args used to format the message using `String#format(String, Object...) <https://docs.oracle.com/javase/7/docs/api/java/lang/String/format(String, Object///).html>`__.
    
    
    
@@ -458,7 +458,7 @@ Parameters
 info
 ----
 
-public static **void (?)** info (**Throwable (?)** throwable)
+public static **void (?)** info (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable)
 
 Logs an :ref:`LogLevel#INFO <io_realm_log_LogLevel_INFO>`exception.
 
@@ -474,7 +474,7 @@ Parameters
 info
 ----
 
-public static **void (?)** info (**String (?)** message, **java.lang.Object[] (?)** args)
+public static **void (?)** info (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
 
 Logs an :ref:`LogLevel#INFO <io_realm_log_LogLevel_INFO>`event.
 
@@ -484,7 +484,7 @@ Parameters
 
 - message - message to log.
    
-- args - optional args used to format the message using **String#format(String, Object...) (?)**.
+- args - optional args used to format the message using `String#format(String, Object...) <https://docs.oracle.com/javase/7/docs/api/java/lang/String/format(String, Object///).html>`__.
    
    
    
@@ -494,7 +494,7 @@ Parameters
 info
 ----
 
-public static **void (?)** info (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
+public static **void (?)** info (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
 
 Logs an :ref:`LogLevel#INFO <io_realm_log_LogLevel_INFO>`event.
 
@@ -506,7 +506,7 @@ Parameters
    
 - message - optional message.
    
-- args - optional args used to format the message using **String#format(String, Object...) (?)**.
+- args - optional args used to format the message using `String#format(String, Object...) <https://docs.oracle.com/javase/7/docs/api/java/lang/String/format(String, Object///).html>`__.
    
    
    
@@ -516,7 +516,7 @@ Parameters
 warn
 ----
 
-public static **void (?)** warn (**Throwable (?)** throwable)
+public static **void (?)** warn (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable)
 
 Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>`exception.
 
@@ -532,7 +532,7 @@ Parameters
 warn
 ----
 
-public static **void (?)** warn (**String (?)** message, **java.lang.Object[] (?)** args)
+public static **void (?)** warn (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
 
 Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>`event.
 
@@ -542,7 +542,7 @@ Parameters
 
 - message - message to log.
    
-- args - optional args used to format the message using **String#format(String, Object...) (?)**.
+- args - optional args used to format the message using `String#format(String, Object...) <https://docs.oracle.com/javase/7/docs/api/java/lang/String/format(String, Object///).html>`__.
    
    
    
@@ -552,7 +552,7 @@ Parameters
 warn
 ----
 
-public static **void (?)** warn (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
+public static **void (?)** warn (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
 
 Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>`event.
 
@@ -564,7 +564,7 @@ Parameters
    
 - message - optional message.
    
-- args - optional args used to format the message using **String#format(String, Object...) (?)**.
+- args - optional args used to format the message using `String#format(String, Object...) <https://docs.oracle.com/javase/7/docs/api/java/lang/String/format(String, Object///).html>`__.
    
    
    
@@ -574,7 +574,7 @@ Parameters
 error
 -----
 
-public static **void (?)** error (**Throwable (?)** throwable)
+public static **void (?)** error (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable)
 
 Logs an :ref:`LogLevel#ERROR <io_realm_log_LogLevel_ERROR>`exception.
 
@@ -590,7 +590,7 @@ Parameters
 error
 -----
 
-public static **void (?)** error (**String (?)** message, **java.lang.Object[] (?)** args)
+public static **void (?)** error (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
 
 Logs an :ref:`LogLevel#ERROR <io_realm_log_LogLevel_ERROR>`event.
 
@@ -600,7 +600,7 @@ Parameters
 
 - message - message to log.
    
-- args - optional args used to format the message using **String#format(String, Object...) (?)**.
+- args - optional args used to format the message using `String#format(String, Object...) <https://docs.oracle.com/javase/7/docs/api/java/lang/String/format(String, Object///).html>`__.
    
    
    
@@ -610,7 +610,7 @@ Parameters
 error
 -----
 
-public static **void (?)** error (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
+public static **void (?)** error (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
 
 Logs an :ref:`LogLevel#ERROR <io_realm_log_LogLevel_ERROR>`event.
 
@@ -622,7 +622,7 @@ Parameters
    
 - message - optional message.
    
-- args - optional args used to format the message using **String#format(String, Object...) (?)**.
+- args - optional args used to format the message using `String#format(String, Object...) <https://docs.oracle.com/javase/7/docs/api/java/lang/String/format(String, Object///).html>`__.
    
    
    
@@ -632,7 +632,7 @@ Parameters
 fatal
 -----
 
-public static **void (?)** fatal (**Throwable (?)** throwable)
+public static **void (?)** fatal (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable)
 
 Logs a :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>`exception.
 
@@ -648,7 +648,7 @@ Parameters
 fatal
 -----
 
-public static **void (?)** fatal (**String (?)** message, **java.lang.Object[] (?)** args)
+public static **void (?)** fatal (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
 
 Logs an :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>`event.
 
@@ -658,7 +658,7 @@ Parameters
 
 - message - message to log.
    
-- args - optional args used to format the message using **String#format(String, Object...) (?)**.
+- args - optional args used to format the message using `String#format(String, Object...) <https://docs.oracle.com/javase/7/docs/api/java/lang/String/format(String, Object///).html>`__.
    
    
    
@@ -668,7 +668,7 @@ Parameters
 fatal
 -----
 
-public static **void (?)** fatal (**Throwable (?)** throwable, **String (?)** message, **java.lang.Object[] (?)** args)
+public static **void (?)** fatal (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ args)
 
 Logs a :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>`event.
 
@@ -680,7 +680,7 @@ Parameters
    
 - message - optional message.
    
-- args - optional args used to format the message using **String#format(String, Object...) (?)**.
+- args - optional args used to format the message using `String#format(String, Object...) <https://docs.oracle.com/javase/7/docs/api/java/lang/String/format(String, Object///).html>`__.
    
    
    

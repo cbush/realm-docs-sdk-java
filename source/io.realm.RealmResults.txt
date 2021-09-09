@@ -57,7 +57,7 @@ Method Summary
        
    
    * - public :ref:`RealmResults <io_realm_RealmResults>`
-     - :ref:`sort <io_realm_RealmResults_sort__String__Sort__String__Sort__>` (**String (?)** fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, **String (?)** fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
+     - :ref:`sort <io_realm_RealmResults_sort__String__Sort__String__Sort__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
        
        
        
@@ -85,7 +85,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setValue <io_realm_RealmResults_setValue__String__Object__>` (**String (?)** fieldName, **Object (?)** value)
+     - :ref:`setValue <io_realm_RealmResults_setValue__String__Object__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ value)
        
        Updates the field given by ``fieldName``in all objects inside the query result.
        
@@ -95,7 +95,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setNull <io_realm_RealmResults_setNull__String__>` (**String (?)** fieldName)
+     - :ref:`setNull <io_realm_RealmResults_setNull__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Sets the value to ``null``for the given field in all of the objects in the collection.
        
@@ -105,7 +105,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setBoolean <io_realm_RealmResults_setBoolean__String__boolean__>` (**String (?)** fieldName, **boolean (?)** value)
+     - :ref:`setBoolean <io_realm_RealmResults_setBoolean__String__boolean__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean (?)** value)
        
        Sets the ``boolean``value of the given field in all of the objects in the collection.
        
@@ -115,7 +115,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setByte <io_realm_RealmResults_setByte__String__byte__>` (**String (?)** fieldName, **byte (?)** value)
+     - :ref:`setByte <io_realm_RealmResults_setByte__String__byte__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **byte (?)** value)
        
        Sets the ``byte``value of the given field in all of the objects in the collection.
        
@@ -125,7 +125,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setShort <io_realm_RealmResults_setShort__String__short__>` (**String (?)** fieldName, **short (?)** value)
+     - :ref:`setShort <io_realm_RealmResults_setShort__String__short__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **short (?)** value)
        
        Sets the ``short``value of the given field in all of the objects in the collection.
        
@@ -135,7 +135,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setInt <io_realm_RealmResults_setInt__String__int__>` (**String (?)** fieldName, **int (?)** value)
+     - :ref:`setInt <io_realm_RealmResults_setInt__String__int__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **int (?)** value)
        
        Sets the ``int``value of the given field in all of the objects in the collection.
        
@@ -145,7 +145,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setLong <io_realm_RealmResults_setLong__String__long__>` (**String (?)** fieldName, **long (?)** value)
+     - :ref:`setLong <io_realm_RealmResults_setLong__String__long__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **long (?)** value)
        
        Sets the ``long``value of the given field in all of the objects in the collection.
        
@@ -155,7 +155,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setFloat <io_realm_RealmResults_setFloat__String__float__>` (**String (?)** fieldName, **float (?)** value)
+     - :ref:`setFloat <io_realm_RealmResults_setFloat__String__float__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **float (?)** value)
        
        Sets the ``float``value of the given field in all of the objects in the collection.
        
@@ -165,7 +165,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setDouble <io_realm_RealmResults_setDouble__String__double__>` (**String (?)** fieldName, **double (?)** value)
+     - :ref:`setDouble <io_realm_RealmResults_setDouble__String__double__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **double (?)** value)
        
        Sets the ``double``value of the given field in all of the objects in the collection.
        
@@ -175,7 +175,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setString <io_realm_RealmResults_setString__String__String__>` (**String (?)** fieldName, **String (?)** value)
+     - :ref:`setString <io_realm_RealmResults_setString__String__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
        
        Sets the ``String``value of the given field in all of the objects in the collection.
        
@@ -185,7 +185,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setBlob <io_realm_RealmResults_setBlob__String__byte[]__>` (**String (?)** fieldName, **byte[] (?)** value)
+     - :ref:`setBlob <io_realm_RealmResults_setBlob__String__byte[]__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **byte[] (?)** value)
        
        Sets the binary value of the given field in all of the objects in the collection.
        
@@ -193,7 +193,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setDate <io_realm_RealmResults_setDate__String__Date__>` (**String (?)** fieldName, **Date (?)** value)
+     - :ref:`setDate <io_realm_RealmResults_setDate__String__Date__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ value)
        
        Sets the ``Date``value of the given field in all of the objects in the collection.
        
@@ -203,7 +203,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setObject <io_realm_RealmResults_setObject__String__RealmModel__>` (**String (?)** fieldName, :ref:`RealmModel <io_realm_RealmModel>` value)
+     - :ref:`setObject <io_realm_RealmResults_setObject__String__RealmModel__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`RealmModel <io_realm_RealmModel>` value)
        
        Sets a reference to another object on the given field in all of the objects in the collection.
        
@@ -211,7 +211,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setDecimal128 <io_realm_RealmResults_setDecimal128__String__Decimal128__>` (**String (?)** fieldName, **Decimal128 (?)** value)
+     - :ref:`setDecimal128 <io_realm_RealmResults_setDecimal128__String__Decimal128__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **Decimal128 (?)** value)
        
        Sets the ``Decimal128``value of the given field in all of the objects in the collection.
        
@@ -221,7 +221,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setObjectId <io_realm_RealmResults_setObjectId__String__ObjectId__>` (**String (?)** fieldName, **ObjectId (?)** value)
+     - :ref:`setObjectId <io_realm_RealmResults_setObjectId__String__ObjectId__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **ObjectId (?)** value)
        
        Sets the ``ObjectId``value of the given field in all of the objects in the collection.
        
@@ -231,7 +231,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setUUID <io_realm_RealmResults_setUUID__String__UUID__>` (**String (?)** fieldName, **UUID (?)** value)
+     - :ref:`setUUID <io_realm_RealmResults_setUUID__String__UUID__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `UUID <https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html>`__ value)
        
        Sets the ``UUID``value of the given field in all of the objects in the collection.
        
@@ -241,7 +241,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`setList <io_realm_RealmResults_setList__String__RealmList_T___>` <**T (?)** >(**String (?)** fieldName, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` list)
+     - :ref:`setList <io_realm_RealmResults_setList__String__RealmList_T___>` <**T (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` list)
        
        Replaces the RealmList at the given field on all objects in this collection.
        
@@ -328,7 +328,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`asJSON <io_realm_RealmResults_asJSON____>` ()
        
        Returns a JSON representation of the matches of a **RealmQuery (?)**.
@@ -357,7 +357,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` where ()
 sort
 ----
 
-public :ref:`RealmResults <io_realm_RealmResults>` sort (**String (?)** fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, **String (?)** fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
+public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
 
 
 
@@ -387,7 +387,7 @@ Makes an asynchronous query blocking. This will also trigger any registered **Re
 setValue
 --------
 
-public **void (?)** setValue (**String (?)** fieldName, **Object (?)** value)
+public **void (?)** setValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ value)
 
 Updates the field given by ``fieldName``in all objects inside the query result.
 
@@ -416,7 +416,7 @@ Throws
 setNull
 -------
 
-public **void (?)** setNull (**String (?)** fieldName)
+public **void (?)** setNull (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 Sets the value to ``null``for the given field in all of the objects in the collection.
 
@@ -435,7 +435,7 @@ Throws
 setBoolean
 ----------
 
-public **void (?)** setBoolean (**String (?)** fieldName, **boolean (?)** value)
+public **void (?)** setBoolean (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean (?)** value)
 
 Sets the ``boolean``value of the given field in all of the objects in the collection.
 
@@ -456,7 +456,7 @@ Throws
 setByte
 -------
 
-public **void (?)** setByte (**String (?)** fieldName, **byte (?)** value)
+public **void (?)** setByte (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **byte (?)** value)
 
 Sets the ``byte``value of the given field in all of the objects in the collection.
 
@@ -477,7 +477,7 @@ Throws
 setShort
 --------
 
-public **void (?)** setShort (**String (?)** fieldName, **short (?)** value)
+public **void (?)** setShort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **short (?)** value)
 
 Sets the ``short``value of the given field in all of the objects in the collection.
 
@@ -498,7 +498,7 @@ Throws
 setInt
 ------
 
-public **void (?)** setInt (**String (?)** fieldName, **int (?)** value)
+public **void (?)** setInt (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **int (?)** value)
 
 Sets the ``int``value of the given field in all of the objects in the collection.
 
@@ -519,7 +519,7 @@ Throws
 setLong
 -------
 
-public **void (?)** setLong (**String (?)** fieldName, **long (?)** value)
+public **void (?)** setLong (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **long (?)** value)
 
 Sets the ``long``value of the given field in all of the objects in the collection.
 
@@ -540,7 +540,7 @@ Throws
 setFloat
 --------
 
-public **void (?)** setFloat (**String (?)** fieldName, **float (?)** value)
+public **void (?)** setFloat (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **float (?)** value)
 
 Sets the ``float``value of the given field in all of the objects in the collection.
 
@@ -561,7 +561,7 @@ Throws
 setDouble
 ---------
 
-public **void (?)** setDouble (**String (?)** fieldName, **double (?)** value)
+public **void (?)** setDouble (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **double (?)** value)
 
 Sets the ``double``value of the given field in all of the objects in the collection.
 
@@ -582,7 +582,7 @@ Throws
 setString
 ---------
 
-public **void (?)** setString (**String (?)** fieldName, **String (?)** value)
+public **void (?)** setString (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
 
 Sets the ``String``value of the given field in all of the objects in the collection.
 
@@ -603,7 +603,7 @@ Throws
 setBlob
 -------
 
-public **void (?)** setBlob (**String (?)** fieldName, **byte[] (?)** value)
+public **void (?)** setBlob (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **byte[] (?)** value)
 
 Sets the binary value of the given field in all of the objects in the collection.
 Parameters
@@ -622,7 +622,7 @@ Throws
 setDate
 -------
 
-public **void (?)** setDate (**String (?)** fieldName, **Date (?)** value)
+public **void (?)** setDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ value)
 
 Sets the ``Date``value of the given field in all of the objects in the collection.
 
@@ -643,7 +643,7 @@ Throws
 setObject
 ---------
 
-public **void (?)** setObject (**String (?)** fieldName, :ref:`RealmModel <io_realm_RealmModel>` value)
+public **void (?)** setObject (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`RealmModel <io_realm_RealmModel>` value)
 
 Sets a reference to another object on the given field in all of the objects in the collection.
 Parameters
@@ -662,7 +662,7 @@ Throws
 setDecimal128
 -------------
 
-public **void (?)** setDecimal128 (**String (?)** fieldName, **Decimal128 (?)** value)
+public **void (?)** setDecimal128 (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **Decimal128 (?)** value)
 
 Sets the ``Decimal128``value of the given field in all of the objects in the collection.
 
@@ -683,7 +683,7 @@ Throws
 setObjectId
 -----------
 
-public **void (?)** setObjectId (**String (?)** fieldName, **ObjectId (?)** value)
+public **void (?)** setObjectId (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **ObjectId (?)** value)
 
 Sets the ``ObjectId``value of the given field in all of the objects in the collection.
 
@@ -704,7 +704,7 @@ Throws
 setUUID
 -------
 
-public **void (?)** setUUID (**String (?)** fieldName, **UUID (?)** value)
+public **void (?)** setUUID (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `UUID <https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html>`__ value)
 
 Sets the ``UUID``value of the given field in all of the objects in the collection.
 
@@ -725,7 +725,7 @@ Throws
 setList
 -------
 
-public **void (?)** setList <**T (?)** >(**String (?)** fieldName, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` list)
+public **void (?)** setList <**T (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` list)
 
 Replaces the RealmList at the given field on all objects in this collection.
 Parameters
@@ -1005,7 +1005,7 @@ See Also
 asJSON
 ------
 
-public **String (?)** asJSON ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ asJSON ()
 
 Returns a JSON representation of the matches of a **RealmQuery (?)**. Cycles will be returned as row indices. This is a helper method used to inspect data, or for debugging purpose, this method could pull a large string which could cause an OutOfMemory error.
 

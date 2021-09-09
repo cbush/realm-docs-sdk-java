@@ -28,7 +28,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getChangedFields <io_realm_ObjectChangeSet_getChangedFields____>` ()
        
        
@@ -37,7 +37,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`isFieldChanged <io_realm_ObjectChangeSet_isFieldChanged__String__>` (**String (?)** fieldName)
+     - :ref:`isFieldChanged <io_realm_ObjectChangeSet_isFieldChanged__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Checks if a given field has been changed.
        
@@ -61,7 +61,7 @@ public **boolean (?)** isDeleted ()
 getChangedFields
 ----------------
 
-public **String (?)** getChangedFields ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getChangedFields ()
 
 
 .. _io_realm_ObjectChangeSet_isFieldChanged__String__:
@@ -69,7 +69,7 @@ public **String (?)** getChangedFields ()
 isFieldChanged
 --------------
 
-public **boolean (?)** isFieldChanged (**String (?)** fieldName)
+public **boolean (?)** isFieldChanged (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 Checks if a given field has been changed.
 Parameters

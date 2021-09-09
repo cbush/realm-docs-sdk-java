@@ -12,7 +12,7 @@ io.realm.Sort
 
 *Superclass:*
 
-- **java.lang.Enum (?)**
+- `java.lang.Enum <https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html>`__
 
 This class describes the sorting order used in Realm queries.
 Method Summary
@@ -33,7 +33,7 @@ Method Summary
        
    
    * - public static :ref:`Sort <io_realm_Sort>`
-     - :ref:`valueOf <io_realm_Sort_valueOf__String__>` (**String (?)** name)
+     - :ref:`valueOf <io_realm_Sort_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
@@ -65,7 +65,7 @@ public static :ref:`Sort <io_realm_Sort>` values ()
 valueOf
 -------
 
-public static :ref:`Sort <io_realm_Sort>` valueOf (**String (?)** name)
+public static :ref:`Sort <io_realm_Sort>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
 
 .. _io_realm_Sort_getValue____:

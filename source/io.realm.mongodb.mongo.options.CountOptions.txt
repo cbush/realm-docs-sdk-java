@@ -12,7 +12,7 @@ io.realm.mongodb.mongo.options.CountOptions
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 The options for a count operation.
 Constructors
@@ -45,7 +45,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`toString <io_realm_mongodb_mongo_options_CountOptions_toString____>` ()
        
        
@@ -84,7 +84,7 @@ Parameters
 toString
 --------
 
-public **String (?)** toString ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 
 
 

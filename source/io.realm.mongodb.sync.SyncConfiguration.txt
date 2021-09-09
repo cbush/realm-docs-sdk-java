@@ -76,7 +76,7 @@ Method Summary
      - Method and Description
    
    * - public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>`
-     - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__byte[]__Object_____>` (**String (?)** canonicalPath, **byte[] (?)** encryptionKey, **java.lang.Object[] (?)** modules)
+     - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__byte[]__Object_____>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[] (?)** encryptionKey, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ modules)
        
        Returns a **RealmConfiguration (?)**appropriate to open a read-only, non-synced Realm to recover any pending changes.
        
@@ -86,7 +86,7 @@ Method Summary
        
    
    * - public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`
-     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__String__>` (:ref:`User <io_realm_mongodb_User>` user, **String (?)** partitionValue)
+     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__String__>` (:ref:`User <io_realm_mongodb_User>` user, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ partitionValue)
        
        Returns a default configuration for the given user and partition value.
        
@@ -94,7 +94,7 @@ Method Summary
        
    
    * - public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`
-     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__Long__>` (:ref:`User <io_realm_mongodb_User>` user, **Long (?)** partitionValue)
+     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__Long__>` (:ref:`User <io_realm_mongodb_User>` user, `Long <https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html>`__ partitionValue)
        
        Returns a default configuration for the given user and partition value.
        
@@ -102,7 +102,7 @@ Method Summary
        
    
    * - public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`
-     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__Integer__>` (:ref:`User <io_realm_mongodb_User>` user, **Integer (?)** partitionValue)
+     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__Integer__>` (:ref:`User <io_realm_mongodb_User>` user, `Integer <https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html>`__ partitionValue)
        
        Returns a default configuration for the given user and partition value.
        
@@ -118,7 +118,7 @@ Method Summary
        
    
    * - public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>`
-     - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__>` (**String (?)** canonicalPath)
+     - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath)
        
        Returns a **RealmConfiguration (?)**appropriate to open a read-only, non-synced Realm to recover any pending changes.
        
@@ -136,7 +136,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`equals <io_realm_mongodb_sync_SyncConfiguration_equals__Object__>` (**Object (?)** o)
+     - :ref:`equals <io_realm_mongodb_sync_SyncConfiguration_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
        
@@ -151,7 +151,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`toString <io_realm_mongodb_sync_SyncConfiguration_toString____>` ()
        
        
@@ -167,7 +167,7 @@ Method Summary
        
        
    
-   * - public **URI (?)**
+   * - public `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI.html>`__
      - :ref:`getServerUrl <io_realm_mongodb_sync_SyncConfiguration_getServerUrl____>` ()
        
        Returns the server URI for the remote MongoDB Realm the local Realm is synchronizing with.
@@ -212,7 +212,7 @@ Method Summary
        
    
    * - public **long (?)**
-     - :ref:`getInitialRemoteDataTimeout <io_realm_mongodb_sync_SyncConfiguration_getInitialRemoteDataTimeout__TimeUnit__>` (**TimeUnit (?)** unit)
+     - :ref:`getInitialRemoteDataTimeout <io_realm_mongodb_sync_SyncConfiguration_getInitialRemoteDataTimeout__TimeUnit__>` (`TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
        
        Returns the timeout defined when downloading any initial data the first time the Realm is opened.
        
@@ -235,7 +235,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getUrlPrefix <io_realm_mongodb_sync_SyncConfiguration_getUrlPrefix____>` ()
        
        Returns the url prefix used when establishing a sync connection to the Realm Object Server.
@@ -268,7 +268,7 @@ Method Detail
 forRecovery
 -----------
 
-public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (**String (?)** canonicalPath, **byte[] (?)** encryptionKey, **java.lang.Object[] (?)** modules)
+public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[] (?)** encryptionKey, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ modules)
 
 Returns a **RealmConfiguration (?)**appropriate to open a read-only, non-synced Realm to recover any pending changes. This is useful when trying to open a backup/recovery Realm (after a client reset).
 
@@ -288,7 +288,7 @@ Parameters
 defaultConfig
 -------------
 
-public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, **String (?)** partitionValue)
+public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ partitionValue)
 
 Returns a default configuration for the given user and partition value.
 Parameters
@@ -304,7 +304,7 @@ Parameters
 defaultConfig
 -------------
 
-public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, **Long (?)** partitionValue)
+public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, `Long <https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html>`__ partitionValue)
 
 Returns a default configuration for the given user and partition value.
 Parameters
@@ -320,7 +320,7 @@ Parameters
 defaultConfig
 -------------
 
-public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, **Integer (?)** partitionValue)
+public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, `Integer <https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html>`__ partitionValue)
 
 Returns a default configuration for the given user and partition value.
 Parameters
@@ -352,7 +352,7 @@ Parameters
 forRecovery
 -----------
 
-public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (**String (?)** canonicalPath)
+public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath)
 
 Returns a **RealmConfiguration (?)**appropriate to open a read-only, non-synced Realm to recover any pending changes. This is useful when trying to open a backup/recovery Realm (after a client reset). Note: This will use the default Realm module (composed of all **RealmModel (?)**), and assume no encryption should be used as well.
 
@@ -376,7 +376,7 @@ protected :ref:`Realm.Transaction <io_realm_Realm_Transaction>` getInitialDataTr
 equals
 ------
 
-public **boolean (?)** equals (**Object (?)** o)
+public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
 
 .. _io_realm_mongodb_sync_SyncConfiguration_hashCode____:
@@ -392,7 +392,7 @@ public **int (?)** hashCode ()
 toString
 --------
 
-public **String (?)** toString ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 
 
 .. _io_realm_mongodb_sync_SyncConfiguration_getUser____:
@@ -408,7 +408,7 @@ Returns the user.
 getServerUrl
 ------------
 
-public **URI (?)** getServerUrl ()
+public `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI.html>`__ getServerUrl ()
 
 Returns the server URI for the remote MongoDB Realm the local Realm is synchronizing with.
 .. _io_realm_mongodb_sync_SyncConfiguration_getErrorHandler____:
@@ -452,7 +452,7 @@ Returns ``true``if the Realm will download all known changes from the remote ser
 getInitialRemoteDataTimeout
 ---------------------------
 
-public **long (?)** getInitialRemoteDataTimeout (**TimeUnit (?)** unit)
+public **long (?)** getInitialRemoteDataTimeout (`TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
 
 Returns the timeout defined when downloading any initial data the first time the Realm is opened.This value is only applicable if **#shouldWaitForInitialRemoteData() (?)**returns ``true``.
 
@@ -483,7 +483,7 @@ NOTE: Only for internal usage. May change without warning. Returns the stop poli
 getUrlPrefix
 ------------
 
-public **String (?)** getUrlPrefix ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getUrlPrefix ()
 
 Returns the url prefix used when establishing a sync connection to the Realm Object Server.
 .. _io_realm_mongodb_sync_SyncConfiguration_getPartitionValue____:

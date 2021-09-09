@@ -12,7 +12,7 @@ io.realm.annotations.LinkingObjects
 
 *Implemented interfaces:*
 
-- **java.lang.annotation.Annotation (?)**
+- `java.lang.annotation.Annotation <https://docs.oracle.com/javase/7/docs/api/java/lang/annotation/Annotation.html>`__
 
 Annotation for defining a reverse relationship from one class to another. This annotation can only be added to a field of the type ``RealmResults``.
 

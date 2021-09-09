@@ -12,7 +12,7 @@ io.realm.mongodb.AppConfiguration.Builder
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 Builder used to construct instances of a **AppConfiguration (?)**in a fluent manner.
 
@@ -40,7 +40,7 @@ Method Summary
        
    
    * - public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>`
-     - :ref:`baseUrl <io_realm_mongodb_AppConfiguration_Builder_baseUrl__String__>` (**String (?)** baseUrl)
+     - :ref:`baseUrl <io_realm_mongodb_AppConfiguration_Builder_baseUrl__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ baseUrl)
        
        Sets the base url for the MongoDB Realm Application.
        
@@ -48,7 +48,7 @@ Method Summary
        
    
    * - public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>`
-     - :ref:`appName <io_realm_mongodb_AppConfiguration_Builder_appName__String__>` (**String (?)** appName)
+     - :ref:`appName <io_realm_mongodb_AppConfiguration_Builder_appName__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ appName)
        
        Sets the apps name.
        
@@ -56,7 +56,7 @@ Method Summary
        
    
    * - public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>`
-     - :ref:`appVersion <io_realm_mongodb_AppConfiguration_Builder_appVersion__String__>` (**String (?)** appVersion)
+     - :ref:`appVersion <io_realm_mongodb_AppConfiguration_Builder_appVersion__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ appVersion)
        
        Sets the apps version.
        
@@ -64,7 +64,7 @@ Method Summary
        
    
    * - public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>`
-     - :ref:`requestTimeout <io_realm_mongodb_AppConfiguration_Builder_requestTimeout__long__TimeUnit__>` (**long (?)** time, **TimeUnit (?)** unit)
+     - :ref:`requestTimeout <io_realm_mongodb_AppConfiguration_Builder_requestTimeout__long__TimeUnit__>` (**long (?)** time, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
        
        Sets the default timeout used by network requests against the MongoDB Realm application.
        
@@ -72,7 +72,7 @@ Method Summary
        
    
    * - public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>`
-     - :ref:`authorizationHeaderName <io_realm_mongodb_AppConfiguration_Builder_authorizationHeaderName__String__>` (**String (?)** headerName)
+     - :ref:`authorizationHeaderName <io_realm_mongodb_AppConfiguration_Builder_authorizationHeaderName__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ headerName)
        
        Sets the name of the HTTP header used to send authorization data in when making requests to MongoDB Realm.
        
@@ -80,7 +80,7 @@ Method Summary
        
    
    * - public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>`
-     - :ref:`addCustomRequestHeader <io_realm_mongodb_AppConfiguration_Builder_addCustomRequestHeader__String__String__>` (**String (?)** headerName, **String (?)** headerValue)
+     - :ref:`addCustomRequestHeader <io_realm_mongodb_AppConfiguration_Builder_addCustomRequestHeader__String__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ headerName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ headerValue)
        
        Adds an extra HTTP header to append to every request to a Realm Object Server.
        
@@ -88,7 +88,7 @@ Method Summary
        
    
    * - public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>`
-     - :ref:`addCustomRequestHeaders <io_realm_mongodb_AppConfiguration_Builder_addCustomRequestHeaders__Map_String__String___>` (**java.util.Map<java.lang.String, java.lang.String> (?)** headers)
+     - :ref:`addCustomRequestHeaders <io_realm_mongodb_AppConfiguration_Builder_addCustomRequestHeaders__Map_String__String___>` (`java.util.Map\<java.lang.String, java.lang.String> <https://docs.oracle.com/javase/7/docs/api/java/util/Map.html>`__ headers)
        
        Adds extra HTTP headers to append to every request to a Realm Object Server.
        
@@ -112,7 +112,7 @@ Method Summary
        
    
    * - public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>`
-     - :ref:`syncRootDirectory <io_realm_mongodb_AppConfiguration_Builder_syncRootDirectory__File__>` (**File (?)** rootDir)
+     - :ref:`syncRootDirectory <io_realm_mongodb_AppConfiguration_Builder_syncRootDirectory__File__>` (`File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__ rootDir)
        
        Configures the root folder containing all files and Realms used when synchronizing data between the device and MongoDB Realm.
        
@@ -175,7 +175,7 @@ Throws
 baseUrl
 -------
 
-public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` baseUrl (**String (?)** baseUrl)
+public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` baseUrl (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ baseUrl)
 
 Sets the base url for the MongoDB Realm Application. The default value is **#DEFAULT_BASE_URL (?)**.
 
@@ -191,7 +191,7 @@ Parameters
 appName
 -------
 
-public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` appName (**String (?)** appName)
+public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` appName (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ appName)
 
 Sets the apps name. This is only used as part of debug headers sent when making network requests at the MongoDB Realm application.
 Parameters
@@ -205,7 +205,7 @@ Parameters
 appVersion
 ----------
 
-public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` appVersion (**String (?)** appVersion)
+public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` appVersion (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ appVersion)
 
 Sets the apps version. This is only used as part of debug headers sent when making network requests at the MongoDB Realm application.
 Parameters
@@ -219,7 +219,7 @@ Parameters
 requestTimeout
 --------------
 
-public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` requestTimeout (**long (?)** time, **TimeUnit (?)** unit)
+public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` requestTimeout (**long (?)** time, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
 
 Sets the default timeout used by network requests against the MongoDB Realm application. Requests will terminate with a failure if they exceed this limit. The default value is :ref:`AppConfiguration#DEFAULT_REQUEST_TIMEOUT <io_realm_mongodb_AppConfiguration_DEFAULT_REQUEST_TIMEOUT>`seconds.
 
@@ -237,7 +237,7 @@ Parameters
 authorizationHeaderName
 -----------------------
 
-public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` authorizationHeaderName (**String (?)** headerName)
+public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` authorizationHeaderName (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ headerName)
 
 Sets the name of the HTTP header used to send authorization data in when making requests to MongoDB Realm. The MongoDB server or firewall must have been configured to expect a custom authorization header.The default authorization header is named **#DEFAULT_AUTHORIZATION_HEADER_NAME (?)**.
 
@@ -261,7 +261,7 @@ See Also
 addCustomRequestHeader
 ----------------------
 
-public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` addCustomRequestHeader (**String (?)** headerName, **String (?)** headerValue)
+public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` addCustomRequestHeader (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ headerName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ headerValue)
 
 Adds an extra HTTP header to append to every request to a Realm Object Server.
 Parameters
@@ -280,7 +280,7 @@ Throws
 addCustomRequestHeaders
 -----------------------
 
-public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` addCustomRequestHeaders (**java.util.Map<java.lang.String, java.lang.String> (?)** headers)
+public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` addCustomRequestHeaders (`java.util.Map\<java.lang.String, java.lang.String> <https://docs.oracle.com/javase/7/docs/api/java/util/Map.html>`__ headers)
 
 Adds extra HTTP headers to append to every request to a Realm Object Server.
 Parameters
@@ -333,7 +333,7 @@ Parameters
 syncRootDirectory
 -----------------
 
-public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` syncRootDirectory (**File (?)** rootDir)
+public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` syncRootDirectory (`File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__ rootDir)
 
 Configures the root folder containing all files and Realms used when synchronizing data between the device and MongoDB Realm.The default root dir is ``Context.getFilesDir()/mongodb-realm``.
 

@@ -12,7 +12,7 @@ io.realm.DynamicRealm.Transaction.Callback
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 Callback invoked to notify the caller thread.
 Constructors
@@ -38,7 +38,7 @@ Method Summary
        
    
    * - public **void (?)**
-     - :ref:`onError <io_realm_DynamicRealm_Transaction_Callback_onError__Exception__>` (**Exception (?)** ignore)
+     - :ref:`onError <io_realm_DynamicRealm_Transaction_Callback_onError__Exception__>` (`Exception <https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html>`__ ignore)
        
        
        
@@ -62,7 +62,7 @@ public **void (?)** onSuccess ()
 onError
 -------
 
-public **void (?)** onError (**Exception (?)** ignore)
+public **void (?)** onError (`Exception <https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html>`__ ignore)
 
 
 

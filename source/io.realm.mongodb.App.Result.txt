@@ -12,7 +12,7 @@ io.realm.mongodb.App.Result<T>
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 Result class representing the result of an async request from this app towards MongoDB Realm.
 Method Summary

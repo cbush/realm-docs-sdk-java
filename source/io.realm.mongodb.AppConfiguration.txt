@@ -12,7 +12,7 @@ io.realm.mongodb.AppConfiguration
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 A AppConfiguration is used to setup a MongoDB Realm application.Instances of a AppConfiguration can only created by using the **AppConfiguration.Builder (?)**and calling its **AppConfiguration.Builder#build() (?)**method.
 
@@ -100,7 +100,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getAppId <io_realm_mongodb_AppConfiguration_getAppId____>` ()
        
        Returns the unique app id that identities the Realm application.
@@ -108,7 +108,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getAppName <io_realm_mongodb_AppConfiguration_getAppName____>` ()
        
        Returns the name used to describe the Realm application.
@@ -116,7 +116,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getAppVersion <io_realm_mongodb_AppConfiguration_getAppVersion____>` ()
        
        Returns the version of this Realm application.
@@ -124,7 +124,7 @@ Method Summary
        
        
    
-   * - public **URL (?)**
+   * - public `URL <https://docs.oracle.com/javase/7/docs/api/java/net/URL.html>`__
      - :ref:`getBaseUrl <io_realm_mongodb_AppConfiguration_getBaseUrl____>` ()
        
        Returns the base url for this Realm application.
@@ -148,7 +148,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getAuthorizationHeaderName <io_realm_mongodb_AppConfiguration_getAuthorizationHeaderName____>` ()
        
        Returns the name of the header used to carry authentication data when making network requests towards MongoDB Realm.
@@ -156,7 +156,7 @@ Method Summary
        
        
    
-   * - public **Map (?)**
+   * - public `Map <https://docs.oracle.com/javase/7/docs/api/java/util/Map.html>`__
      - :ref:`getCustomRequestHeaders <io_realm_mongodb_AppConfiguration_getCustomRequestHeaders____>` ()
        
        Returns any custom configured headers that will be sent alongside other headers when making network requests towards MongoDB Realm.
@@ -184,7 +184,7 @@ Method Summary
        
        
    
-   * - public **File (?)**
+   * - public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__
      - :ref:`getSyncRootDirectory <io_realm_mongodb_AppConfiguration_getSyncRootDirectory____>` ()
        
        Returns the root folder containing all files and Realms used when synchronizing data between the device and MongoDB Realm.
@@ -213,7 +213,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`equals <io_realm_mongodb_AppConfiguration_equals__Object__>` (**Object (?)** o)
+     - :ref:`equals <io_realm_mongodb_AppConfiguration_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
        
@@ -278,7 +278,7 @@ Method Detail
 getAppId
 --------
 
-public **String (?)** getAppId ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getAppId ()
 
 Returns the unique app id that identities the Realm application.
 .. _io_realm_mongodb_AppConfiguration_getAppName____:
@@ -286,7 +286,7 @@ Returns the unique app id that identities the Realm application.
 getAppName
 ----------
 
-public **String (?)** getAppName ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getAppName ()
 
 Returns the name used to describe the Realm application. This is only used as debug information.
 .. _io_realm_mongodb_AppConfiguration_getAppVersion____:
@@ -294,7 +294,7 @@ Returns the name used to describe the Realm application. This is only used as de
 getAppVersion
 -------------
 
-public **String (?)** getAppVersion ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getAppVersion ()
 
 Returns the version of this Realm application. This is only used as debug information.
 .. _io_realm_mongodb_AppConfiguration_getBaseUrl____:
@@ -302,7 +302,7 @@ Returns the version of this Realm application. This is only used as debug inform
 getBaseUrl
 ----------
 
-public **URL (?)** getBaseUrl ()
+public `URL <https://docs.oracle.com/javase/7/docs/api/java/net/URL.html>`__ getBaseUrl ()
 
 Returns the base url for this Realm application.
 .. _io_realm_mongodb_AppConfiguration_getEncryptionKey____:
@@ -326,7 +326,7 @@ Returns the default timeout for network requests against the Realm application i
 getAuthorizationHeaderName
 --------------------------
 
-public **String (?)** getAuthorizationHeaderName ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getAuthorizationHeaderName ()
 
 Returns the name of the header used to carry authentication data when making network requests towards MongoDB Realm.
 .. _io_realm_mongodb_AppConfiguration_getCustomRequestHeaders____:
@@ -334,7 +334,7 @@ Returns the name of the header used to carry authentication data when making net
 getCustomRequestHeaders
 -----------------------
 
-public **Map (?)** getCustomRequestHeaders ()
+public `Map <https://docs.oracle.com/javase/7/docs/api/java/util/Map.html>`__ getCustomRequestHeaders ()
 
 Returns any custom configured headers that will be sent alongside other headers when making network requests towards MongoDB Realm.
 .. _io_realm_mongodb_AppConfiguration_getDefaultErrorHandler____:
@@ -362,7 +362,7 @@ Returns the default Client Reset handler used by synced Realms if there are prob
 getSyncRootDirectory
 --------------------
 
-public **File (?)** getSyncRootDirectory ()
+public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__ getSyncRootDirectory ()
 
 Returns the root folder containing all files and Realms used when synchronizing data between the device and MongoDB Realm.
 .. _io_realm_mongodb_AppConfiguration_getDefaultCodecRegistry____:
@@ -393,7 +393,7 @@ Returns the **HttpLogObfuscator (?)**used in the app, which keeps sensitive info
 equals
 ------
 
-public **boolean (?)** equals (**Object (?)** o)
+public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
 
 .. _io_realm_mongodb_AppConfiguration_hashCode____:

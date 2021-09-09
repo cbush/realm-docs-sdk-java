@@ -12,7 +12,7 @@ io.realm.RealmConfiguration
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 A RealmConfiguration is used to setup a specific Realm instance.Instances of a RealmConfiguration can only created by using the **io.realm.RealmConfiguration.Builder (?)**and calling its **io.realm.RealmConfiguration.Builder#build() (?)**method.
 
@@ -92,7 +92,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **File (?)**
+   * - public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__
      - :ref:`getRealmDirectory <io_realm_RealmConfiguration_getRealmDirectory____>` ()
        
        
@@ -100,7 +100,7 @@ Method Summary
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getRealmFileName <io_realm_RealmConfiguration_getRealmFileName____>` ()
        
        
@@ -172,17 +172,17 @@ Method Summary
        
        
    
-   * - public **Set (?)**
+   * - public `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__
      - :ref:`getRealmObjectClasses <io_realm_RealmConfiguration_getRealmObjectClasses____>` ()
        
-       Returns the unmodifiable **Set (?)**of model classes that make up the schema for this Realm.
+       Returns the unmodifiable `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set/.html>`__of model classes that make up the schema for this Realm.
        
        
        
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`getPath <io_realm_RealmConfiguration_getPath____>` ()
        
        Returns the absolute path to where the Realm file will be saved.
@@ -263,7 +263,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`equals <io_realm_RealmConfiguration_equals__Object__>` (**Object (?)** obj)
+     - :ref:`equals <io_realm_RealmConfiguration_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
        
        
        
@@ -279,14 +279,14 @@ Method Summary
        
    
    * - protected static **RealmProxyMediator (?)**
-     - :ref:`createSchemaMediator <io_realm_RealmConfiguration_createSchemaMediator__Set_Object___Set_Class___extends_RealmModel____boolean__>` (**java.util.Set<java.lang.Object> (?)** modules, **java.util.Set<java.lang.Class<? extends io.realm.RealmModel>> (?)** debugSchema, **boolean (?)** excludeDebugSchema)
+     - :ref:`createSchemaMediator <io_realm_RealmConfiguration_createSchemaMediator__Set_Object___Set_Class___extends_RealmModel____boolean__>` (`java.util.Set\<java.lang.Object> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ modules, `java.util.Set\<java.lang.Class\<? extends io.realm.RealmModel>> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ debugSchema, **boolean (?)** excludeDebugSchema)
        
        
        
        
        
    
-   * - public **String (?)**
+   * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`toString <io_realm_RealmConfiguration_toString____>` ()
        
        
@@ -303,7 +303,7 @@ Method Summary
        
    
    * - protected static :ref:`RealmConfiguration <io_realm_RealmConfiguration>`
-     - :ref:`forRecovery <io_realm_RealmConfiguration_forRecovery__String__byte[]__RealmProxyMediator__>` (**String (?)** canonicalPath, **byte[] (?)** encryptionKey, **RealmProxyMediator (?)** schemaMediator)
+     - :ref:`forRecovery <io_realm_RealmConfiguration_forRecovery__String__byte[]__RealmProxyMediator__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[] (?)** encryptionKey, **RealmProxyMediator (?)** schemaMediator)
        
        
        
@@ -334,7 +334,7 @@ Method Detail
 getRealmDirectory
 -----------------
 
-public **File (?)** getRealmDirectory ()
+public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__ getRealmDirectory ()
 
 
 .. _io_realm_RealmConfiguration_getRealmFileName____:
@@ -342,7 +342,7 @@ public **File (?)** getRealmDirectory ()
 getRealmFileName
 ----------------
 
-public **String (?)** getRealmFileName ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getRealmFileName ()
 
 
 .. _io_realm_RealmConfiguration_getEncryptionKey____:
@@ -414,9 +414,9 @@ Returns a callback to determine if the Realm file should be compacted before bei
 getRealmObjectClasses
 ---------------------
 
-public **Set (?)** getRealmObjectClasses ()
+public `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ getRealmObjectClasses ()
 
-Returns the unmodifiable **Set (?)**of model classes that make up the schema for this Realm.
+Returns the unmodifiable `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set/.html>`__of model classes that make up the schema for this Realm.
 
 
 .. _io_realm_RealmConfiguration_getPath____:
@@ -424,7 +424,7 @@ Returns the unmodifiable **Set (?)**of model classes that make up the schema for
 getPath
 -------
 
-public **String (?)** getPath ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getPath ()
 
 Returns the absolute path to where the Realm file will be saved.
 .. _io_realm_RealmConfiguration_realmExists____:
@@ -470,7 +470,7 @@ isReadOnly
 
 public **boolean (?)** isReadOnly ()
 
-Returns whether this Realm is read-only or not. Read-only Realms cannot be modified and will throw an **IllegalStateException (?)**if **Realm#beginTransaction() (?)**is called on it.
+Returns whether this Realm is read-only or not. Read-only Realms cannot be modified and will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__if **Realm#beginTransaction() (?)**is called on it.
 
 
 .. _io_realm_RealmConfiguration_isRecoveryConfiguration____:
@@ -525,7 +525,7 @@ By default Realm allows queries on the main thread. To disallow this users have 
 equals
 ------
 
-public **boolean (?)** equals (**Object (?)** obj)
+public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
 
 
 .. _io_realm_RealmConfiguration_hashCode____:
@@ -541,7 +541,7 @@ public **int (?)** hashCode ()
 createSchemaMediator
 --------------------
 
-protected static **RealmProxyMediator (?)** createSchemaMediator (**java.util.Set<java.lang.Object> (?)** modules, **java.util.Set<java.lang.Class<? extends io.realm.RealmModel>> (?)** debugSchema, **boolean (?)** excludeDebugSchema)
+protected static **RealmProxyMediator (?)** createSchemaMediator (`java.util.Set\<java.lang.Object> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ modules, `java.util.Set\<java.lang.Class\<? extends io.realm.RealmModel>> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ debugSchema, **boolean (?)** excludeDebugSchema)
 
 
 .. _io_realm_RealmConfiguration_toString____:
@@ -549,7 +549,7 @@ protected static **RealmProxyMediator (?)** createSchemaMediator (**java.util.Se
 toString
 --------
 
-public **String (?)** toString ()
+public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 
 
 .. _io_realm_RealmConfiguration_isSyncConfiguration____:
@@ -565,7 +565,7 @@ protected **boolean (?)** isSyncConfiguration ()
 forRecovery
 -----------
 
-protected static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (**String (?)** canonicalPath, **byte[] (?)** encryptionKey, **RealmProxyMediator (?)** schemaMediator)
+protected static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[] (?)** encryptionKey, **RealmProxyMediator (?)** schemaMediator)
 
 
 

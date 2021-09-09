@@ -12,7 +12,7 @@ io.realm.mongodb.mongo.events.UpdateDescription
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 Indicates which fields have been modified in a given update operation.
 Method Summary
@@ -34,10 +34,10 @@ Method Summary
        
        
    
-   * - public **Collection (?)**
+   * - public `Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__
      - :ref:`getRemovedFields <io_realm_mongodb_mongo_events_UpdateDescription_getRemovedFields____>` ()
        
-       Returns a **List (?)**containing the field names that have been removed in the corresponding update.
+       Returns a `List <https://docs.oracle.com/javase/7/docs/api/java/util/List/.html>`__containing the field names that have been removed in the corresponding update.
        
        
        
@@ -93,7 +93,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`equals <io_realm_mongodb_mongo_events_UpdateDescription_equals__Object__>` (**Object (?)** obj)
+     - :ref:`equals <io_realm_mongodb_mongo_events_UpdateDescription_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
        
        
        
@@ -127,9 +127,9 @@ Returns a **BsonDocument (?)**containing keys and values representing (respectiv
 getRemovedFields
 ----------------
 
-public **Collection (?)** getRemovedFields ()
+public `Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ getRemovedFields ()
 
-Returns a **List (?)**containing the field names that have been removed in the corresponding update.
+Returns a `List <https://docs.oracle.com/javase/7/docs/api/java/util/List/.html>`__containing the field names that have been removed in the corresponding update.
 
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_toUpdateDocument____:
@@ -207,7 +207,7 @@ Determines whether this update description is empty.
 equals
 ------
 
-public **boolean (?)** equals (**Object (?)** obj)
+public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
 
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_hashCode____:

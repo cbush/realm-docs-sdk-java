@@ -12,7 +12,7 @@ io.realm.mongodb.App
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 An *App* is the main client-side entry point for interacting with a *MongoDB Realm App*.The *App* can be used to:
 
@@ -180,7 +180,7 @@ Method Summary
        
        
    
-   * - public **Map (?)**
+   * - public `Map <https://docs.oracle.com/javase/7/docs/api/java/util/Map.html>`__
      - :ref:`allUsers <io_realm_mongodb_App_allUsers____>` ()
        
        Returns all known users that are either **User.State#LOGGED_IN (?)**or **User.State#LOGGED_OUT (?)**.
@@ -289,7 +289,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`equals <io_realm_mongodb_App_equals__Object__>` (**Object (?)** o)
+     - :ref:`equals <io_realm_mongodb_App_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        Two Apps are considered equal and will share their underlying state if they both refer to the same **AppConfiguration#getAppId() (?)**.
        
@@ -338,7 +338,7 @@ If two or more users are logged in, it is the last valid user that is returned b
 allUsers
 --------
 
-public **Map (?)** allUsers ()
+public `Map <https://docs.oracle.com/javase/7/docs/api/java/util/Map.html>`__ allUsers ()
 
 Returns all known users that are either **User.State#LOGGED_IN (?)**or **User.State#LOGGED_OUT (?)**.
 
@@ -537,7 +537,7 @@ Exposed for testing.Swap the currently configured network transport with the pro
 equals
 ------
 
-public **boolean (?)** equals (**Object (?)** o)
+public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
 Two Apps are considered equal and will share their underlying state if they both refer to the same **AppConfiguration#getAppId() (?)**.
 

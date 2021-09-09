@@ -12,7 +12,7 @@ io.realm.rx.CollectionChange<E extends io.realm.OrderedRealmCollection>
 
 *Superclass:*
 
-- **java.lang.Object (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
 Container wrapping the result of a **io.realm.OrderedRealmCollectionChangeListener (?)**being triggered.
 
@@ -52,7 +52,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`equals <io_realm_rx_CollectionChange_equals__Object__>` (**Object (?)** o)
+     - :ref:`equals <io_realm_rx_CollectionChange_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
        
@@ -113,7 +113,7 @@ Returns the changeset describing the update.This will be ``null``the first time 
 equals
 ------
 
-public **boolean (?)** equals (**Object (?)** o)
+public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
 
 .. _io_realm_rx_CollectionChange_hashCode____:

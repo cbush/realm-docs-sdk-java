@@ -12,7 +12,7 @@ io.realm.RealmFieldType
 
 *Superclass:*
 
-- **java.lang.Enum (?)**
+- `java.lang.Enum <https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html>`__
 
 List of the types used by Realm's underlying storage engine.Normally there is no reason to interact with the underlying Realm types as Realm will automatically convert between normal Java types and the Realm types. However it is possible to access these types through a **DynamicRealmObject (?)**.
 
@@ -37,7 +37,7 @@ Method Summary
        
    
    * - public static :ref:`RealmFieldType <io_realm_RealmFieldType>`
-     - :ref:`valueOf <io_realm_RealmFieldType_valueOf__String__>` (**String (?)** name)
+     - :ref:`valueOf <io_realm_RealmFieldType_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
@@ -53,7 +53,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`isValid <io_realm_RealmFieldType_isValid__Object__>` (**Object (?)** obj)
+     - :ref:`isValid <io_realm_RealmFieldType_isValid__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
        
        Checks if the given Java object can be converted to the underlying Realm type.
        
@@ -85,7 +85,7 @@ public static :ref:`RealmFieldType <io_realm_RealmFieldType>` values ()
 valueOf
 -------
 
-public static :ref:`RealmFieldType <io_realm_RealmFieldType>` valueOf (**String (?)** name)
+public static :ref:`RealmFieldType <io_realm_RealmFieldType>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
 
 .. _io_realm_RealmFieldType_getNativeValue____:
@@ -101,7 +101,7 @@ Returns the native value representing this type.
 isValid
 -------
 
-public **boolean (?)** isValid (**Object (?)** obj)
+public **boolean (?)** isValid (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
 
 Checks if the given Java object can be converted to the underlying Realm type.
 Parameters

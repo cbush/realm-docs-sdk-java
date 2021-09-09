@@ -12,11 +12,11 @@ io.realm.RealmCollection<E>
 
 *Implemented interfaces:*
 
-- **java.util.Collection (?)**
+- `java.util.Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__
 
 ``RealmCollection``is the root of the collection hierarchy that Realm supports. It defines operations on data collections and the behavior that they will have in all implementations of ``RealmCollection``s.
 
-Realm collections are "live" views to the underlying data. This means that they automatically will be kept up to date. As a consequence, using methods like **Collections#unmodifiableCollection(Collection) (?)**will not prevent a collection from being modified.
+Realm collections are "live" views to the underlying data. This means that they automatically will be kept up to date. As a consequence, using methods like `Collections#unmodifiableCollection(Collection) <https://docs.oracle.com/javase/7/docs/api/java/util/Collections/unmodifiableCollection(Collection).html>`__will not prevent a collection from being modified.
 
 
 
@@ -40,24 +40,24 @@ Method Summary
        
        
    
-   * - public **Number (?)**
-     - :ref:`min <io_realm_RealmCollection_min__String__>` (**String (?)** fieldName)
+   * - public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__
+     - :ref:`min <io_realm_RealmCollection_min__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Finds the minimum value of a field.
        
        
        
    
-   * - public **Number (?)**
-     - :ref:`max <io_realm_RealmCollection_max__String__>` (**String (?)** fieldName)
+   * - public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__
+     - :ref:`max <io_realm_RealmCollection_max__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Finds the maximum value of a field.
        
        
        
    
-   * - public **Number (?)**
-     - :ref:`sum <io_realm_RealmCollection_sum__String__>` (**String (?)** fieldName)
+   * - public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__
+     - :ref:`sum <io_realm_RealmCollection_sum__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Calculates the sum of a given field.
        
@@ -65,23 +65,23 @@ Method Summary
        
    
    * - public **double (?)**
-     - :ref:`average <io_realm_RealmCollection_average__String__>` (**String (?)** fieldName)
+     - :ref:`average <io_realm_RealmCollection_average__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the average of a given field.
        
        
        
    
-   * - public **Date (?)**
-     - :ref:`maxDate <io_realm_RealmCollection_maxDate__String__>` (**String (?)** fieldName)
+   * - public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__
+     - :ref:`maxDate <io_realm_RealmCollection_maxDate__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Finds the maximum date.
        
        
        
    
-   * - public **Date (?)**
-     - :ref:`minDate <io_realm_RealmCollection_minDate__String__>` (**String (?)** fieldName)
+   * - public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__
+     - :ref:`minDate <io_realm_RealmCollection_minDate__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Finds the minimum date.
        
@@ -131,7 +131,7 @@ Method Summary
        
    
    * - public **boolean (?)**
-     - :ref:`contains <io_realm_RealmCollection_contains__Object__>` (**Object (?)** object)
+     - :ref:`contains <io_realm_RealmCollection_contains__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
        
        Tests whether this ``Collection``contains the specified object.
        
@@ -165,7 +165,7 @@ io.realm.RealmQuery.. _io_realm_RealmCollection_min__String__:
 min
 ----
 
-public **Number (?)** min (**String (?)** fieldName)
+public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ min (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 Finds the minimum value of a field.
 Parameters
@@ -182,7 +182,7 @@ Throws
 max
 ----
 
-public **Number (?)** max (**String (?)** fieldName)
+public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ max (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 Finds the maximum value of a field.
 Parameters
@@ -199,7 +199,7 @@ Throws
 sum
 ----
 
-public **Number (?)** sum (**String (?)** fieldName)
+public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ sum (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 Calculates the sum of a given field.
 Parameters
@@ -216,7 +216,7 @@ Throws
 average
 -------
 
-public **double (?)** average (**String (?)** fieldName)
+public **double (?)** average (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 Returns the average of a given field.
 Parameters
@@ -233,7 +233,7 @@ Throws
 maxDate
 -------
 
-public **Date (?)** maxDate (**String (?)** fieldName)
+public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ maxDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 Finds the maximum date.
 Parameters
@@ -250,7 +250,7 @@ Throws
 minDate
 -------
 
-public **Date (?)** minDate (**String (?)** fieldName)
+public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ minDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
 Finds the minimum date.
 Parameters
@@ -316,7 +316,7 @@ Checks if the collection is managed by Realm. A managed collection is just a wra
 contains
 --------
 
-public **boolean (?)** contains (**Object (?)** object)
+public **boolean (?)** contains (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
 
 Tests whether this ``Collection``contains the specified object. Returns ``true``if and only if at least one element ``elem``in this ``Collection``meets following requirement: ``(object==null ? elem==null : object.equals(elem))``.
 
