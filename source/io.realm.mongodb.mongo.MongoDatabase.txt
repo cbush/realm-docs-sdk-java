@@ -14,7 +14,7 @@ io.realm.mongodb.mongo.MongoDatabase
 
 - **java.lang.Object (?)**
 
-The RemoteMongoDatabase provides access to its **Document (?)** **MongoCollection (?)**s.
+The RemoteMongoDatabase provides access to its **Document (?)****MongoCollection (?)**s.
 
 
 Method Summary
@@ -33,8 +33,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>`
      - :ref:`getCollection <io_realm_mongodb_mongo_MongoDatabase_getCollection__String__>` (**String (?)** collectionName)
@@ -43,15 +41,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>`
      - :ref:`getCollection <io_realm_mongodb_mongo_MongoDatabase_getCollection__String__Class_DocumentT___>` <**DocumentT (?)** >(**String (?)** collectionName, **java.lang.Class<DocumentT> (?)** documentClass)
        
        Gets a collection, with a specific default document class.
-       
-       
        
        
        
@@ -68,8 +62,6 @@ getName
 public **String (?)** getName ()
 
 Gets the name of the database.
-
-
 .. _io_realm_mongodb_mongo_MongoDatabase_getCollection__String__:
 
 getCollection
@@ -78,14 +70,10 @@ getCollection
 public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>` getCollection (**String (?)** collectionName)
 
 Gets a collection.
-
-
 Parameters
 ~~~~~~~~~~
 
 - collectionName - the name of the collection to return
-   
-   
    
 
 .. _io_realm_mongodb_mongo_MongoDatabase_getCollection__String__Class_DocumentT___:
@@ -96,8 +84,6 @@ getCollection
 public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>` getCollection <**DocumentT (?)** >(**String (?)** collectionName, **java.lang.Class<DocumentT> (?)** documentClass)
 
 Gets a collection, with a specific default document class.
-
-
 Type Parameters
 ~~~~~~~~~~~~~~~
 
@@ -111,11 +97,7 @@ Parameters
 
 - collectionName - the name of the collection to return
    
-   
-   
 - documentClass - the default class to cast any documents returned from the database into.
-   
-   
    
 
 

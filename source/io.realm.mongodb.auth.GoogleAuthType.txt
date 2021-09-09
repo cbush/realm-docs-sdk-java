@@ -15,8 +15,6 @@ io.realm.mongodb.auth.GoogleAuthType
 - **java.lang.Enum (?)**
 
 This enum contains the list of Google authentication types supported by MongoDB Realm.
-
-
 Method Summary
 ==============
 

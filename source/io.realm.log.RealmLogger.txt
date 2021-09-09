@@ -29,8 +29,6 @@ Method Summary
        
        
        
-       
-       
    
    
 Method Detail
@@ -44,26 +42,18 @@ log
 public **void (?)** log (**int (?)** level, **String (?)** tag, **Throwable (?)** throwable, **String (?)** message)
 
 Handles a log event.
-
-
 Parameters
 ~~~~~~~~~~
 
-- level - for this log event. It can only be a value between :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>` and :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>`
+- level - for this log event. It can only be a value between :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>`and :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>`
    
    
    
 - tag - for this log event.
    
-   
-   
 - throwable - optional exception to log.
    
-   
-   
 - message - optional additional message.
-   
-   
    
 
 

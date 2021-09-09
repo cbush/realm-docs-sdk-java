@@ -22,7 +22,7 @@ Data written to the Realm after the local copy of the Realm diverged from the ba
 
 The client reset process can be initiated in one of two ways:
 
-1. Run **ClientResetRequiredError#executeClientReset() (?)** manually. All Realm instances must be closed before this method is called.
+1. Run **ClientResetRequiredError#executeClientReset() (?)**manually. All Realm instances must be closed before this method is called.
    
    
    
@@ -31,9 +31,7 @@ The client reset process can be initiated in one of two ways:
    
    
 
-**WARNING:**  Any writes to the Realm file between this callback and Client Reset has been executed, will not be synchronized to MongoDB Realm. Those changes will only be present in the backed up file. It is therefore recommended to close all open Realm instances as soon as possible.
-
-
+**WARNING:** Any writes to the Realm file between this callback and Client Reset has been executed, will not be synchronized to MongoDB Realm. Those changes will only be present in the backed up file. It is therefore recommended to close all open Realm instances as soon as possible.
 Method Summary
 ==============
 
@@ -50,8 +48,6 @@ Method Summary
        
        
        
-       
-       
    
    
 Method Detail
@@ -65,16 +61,14 @@ onClientReset
 public **void (?)** onClientReset (:ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` session, :ref:`ClientResetRequiredError <io_realm_mongodb_sync_ClientResetRequiredError>` error)
 
 Callback that indicates a Client Reset has happened. This should be handled as quickly as possible as any further changes to the Realm will not be synchronized with the server and must be moved manually from the backup Realm to the new one.
-
-
 Parameters
 ~~~~~~~~~~
 
-- session - **SyncSession (?)** this error happened on.
+- session - **SyncSession (?)**this error happened on.
    
    
    
-- error - **ClientResetRequiredError (?)** the specific Client Reset error.
+- error - **ClientResetRequiredError (?)**the specific Client Reset error.
    
    
    

@@ -15,8 +15,6 @@ io.realm.mongodb.sync.ProgressMode
 - **java.lang.Enum (?)**
 
 Enum describing how to listen to progress changes.
-
-
 Method Summary
 ==============
 

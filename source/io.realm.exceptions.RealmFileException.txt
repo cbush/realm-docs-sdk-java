@@ -15,8 +15,6 @@ io.realm.exceptions.RealmFileException
 - **java.lang.RuntimeException (?)**
 
 Class for reporting problems when accessing the Realm related files.
-
-
 Constructors
 ============
 
@@ -50,7 +48,7 @@ Method Summary
    * - public :ref:`RealmFileException.Kind <io_realm_exceptions_RealmFileException_Kind>`
      - :ref:`getKind <io_realm_exceptions_RealmFileException_getKind____>` ()
        
-       Gets the **#kind (?)** of this exception.
+       Gets the **#kind (?)**of this exception.
        
        
        
@@ -76,7 +74,7 @@ getKind
 
 public :ref:`RealmFileException.Kind <io_realm_exceptions_RealmFileException_Kind>` getKind ()
 
-Gets the **#kind (?)** of this exception.
+Gets the **#kind (?)**of this exception.
 
 
 .. _io_realm_exceptions_RealmFileException_toString____:

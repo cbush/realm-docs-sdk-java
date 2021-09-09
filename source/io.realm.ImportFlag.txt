@@ -15,8 +15,6 @@ io.realm.ImportFlag
 - **java.lang.Enum (?)**
 
 This class describe how data is saved to Realm when saving whole objects.
-
-
 Method Summary
 ==============
 

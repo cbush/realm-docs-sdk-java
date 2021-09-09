@@ -15,8 +15,6 @@ io.realm.RealmConfiguration.Builder
 - **java.lang.Object (?)**
 
 RealmConfiguration.Builder used to construct instances of a RealmConfiguration in a fluent manner.
-
-
 Constructors
 ============
 
@@ -38,15 +36,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
      - :ref:`directory <io_realm_RealmConfiguration_Builder_directory__File__>` (**File (?)** directory)
        
        Specifies the directory where the Realm file will be saved.
-       
-       
        
        
        
@@ -58,8 +52,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
      - :ref:`schemaVersion <io_realm_RealmConfiguration_Builder_schemaVersion__long__>` (**long (?)** schemaVersion)
@@ -68,13 +60,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
      - :ref:`migration <io_realm_RealmConfiguration_Builder_migration__RealmMigration__>` (:ref:`RealmMigration <io_realm_RealmMigration>` migration)
        
-       Sets the **io.realm.RealmMigration (?)** to be run if a migration is needed.
+       Sets the **io.realm.RealmMigration (?)**to be run if a migration is needed.
        
        
        
@@ -88,15 +78,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
      - :ref:`inMemory <io_realm_RealmConfiguration_Builder_inMemory____>` ()
        
        Setting this will create an in-memory Realm instead of saving it to disk.
-       
-       
        
        
        
@@ -118,13 +104,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
      - :ref:`rxFactory <io_realm_RealmConfiguration_Builder_rxFactory__RxObservableFactory__>` (:ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` factory)
        
-       Sets the **RxObservableFactory (?)** used to create Rx Observables from Realm objects.
+       Sets the **RxObservableFactory (?)**used to create Rx Observables from Realm objects.
        
        
        
@@ -134,7 +118,7 @@ Method Summary
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
      - :ref:`flowFactory <io_realm_RealmConfiguration_Builder_flowFactory__FlowFactory__>` (:ref:`FlowFactory <io_realm_coroutines_FlowFactory>` factory)
        
-       Sets the **FlowFactory (?)** used to create coroutines Flows from Realm objects.
+       Sets the **FlowFactory (?)**used to create coroutines Flows from Realm objects.
        
        
        
@@ -158,8 +142,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
      - :ref:`readOnly <io_realm_RealmConfiguration_Builder_readOnly____>` ()
@@ -178,8 +160,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
      - :ref:`compactOnLaunch <io_realm_RealmConfiguration_Builder_compactOnLaunch__CompactOnLaunchCallback__>` (:ref:`CompactOnLaunchCallback <io_realm_CompactOnLaunchCallback>` compactOnLaunch)
@@ -188,13 +168,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
      - :ref:`maxNumberOfActiveVersions <io_realm_RealmConfiguration_Builder_maxNumberOfActiveVersions__long__>` (**long (?)** number)
        
-       Sets the maximum number of live versions in the Realm file before an **IllegalStateException (?)** is thrown when attempting to write more data.
+       Sets the maximum number of live versions in the Realm file before an **IllegalStateException (?)**is thrown when attempting to write more data.
        
        
        
@@ -204,7 +182,7 @@ Method Summary
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
      - :ref:`allowWritesOnUiThread <io_realm_RealmConfiguration_Builder_allowWritesOnUiThread__boolean__>` (**boolean (?)** allowWritesOnUiThread)
        
-       Sets whether or not calls to **Realm#executeTransaction (?)** are allowed from the UI thread.
+       Sets whether or not calls to **Realm#executeTransaction (?)**are allowed from the UI thread.
        
        
        
@@ -214,7 +192,7 @@ Method Summary
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
      - :ref:`allowQueriesOnUiThread <io_realm_RealmConfiguration_Builder_allowQueriesOnUiThread__boolean__>` (**boolean (?)** allowQueriesOnUiThread)
        
-       Sets whether or not a **RealmQuery (?)** can be launched from the UI thread.
+       Sets whether or not a **RealmQuery (?)**can be launched from the UI thread.
        
        
        
@@ -225,8 +203,6 @@ Method Summary
      - :ref:`build <io_realm_RealmConfiguration_Builder_build____>` ()
        
        Creates the RealmConfiguration based on the builder parameters.
-       
-       
        
        
        
@@ -243,8 +219,6 @@ name
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` name (**String (?)** filename)
 
 Sets the filename for the Realm file.
-
-
 .. _io_realm_RealmConfiguration_Builder_directory__File__:
 
 directory
@@ -260,8 +234,6 @@ Parameters
 
 - directory - the directory to save the Realm file in. Directory must be writable.
    
-   
-   
 
 Throws
 ~~~~~~
@@ -273,7 +245,7 @@ encryptionKey
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` encryptionKey (**byte[] (?)** key)
 
-Sets the 64 byte key used to encrypt and decrypt the Realm file. Sets the io.realm.Realm#ENCRYPTION_KEY_LENGTH bytes key used to encrypt and decrypt the Realm file.
+Sets the 64 byte key used to encrypt and decrypt the Realm file. Sets the io.realm.Realm#ENCRYPTION_KEY_LENGTHbytes key used to encrypt and decrypt the Realm file.
 
 
 .. _io_realm_RealmConfiguration_Builder_schemaVersion__long__:
@@ -283,9 +255,7 @@ schemaVersion
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` schemaVersion (**long (?)** schemaVersion)
 
-Sets the schema version of the Realm. This must be equal to or higher than the schema version of the existing Realm file, if any. If the schema version is higher than the already existing Realm, a migration is needed.
-
-If no migration code is provided, Realm will throw a **io.realm.exceptions.RealmMigrationNeededException (?)**.
+Sets the schema version of the Realm. This must be equal to or higher than the schema version of the existing Realm file, if any. If the schema version is higher than the already existing Realm, a migration is needed.If no migration code is provided, Realm will throw a **io.realm.exceptions.RealmMigrationNeededException (?)**.
 
 
 
@@ -300,7 +270,7 @@ migration
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` migration (:ref:`RealmMigration <io_realm_RealmMigration>` migration)
 
-Sets the **io.realm.RealmMigration (?)** to be run if a migration is needed. If this migration fails to upgrade the on-disc schema to the runtime schema, a **io.realm.exceptions.RealmMigrationNeededException (?)** will be thrown.
+Sets the **io.realm.RealmMigration (?)**to be run if a migration is needed. If this migration fails to upgrade the on-disc schema to the runtime schema, a **io.realm.exceptions.RealmMigrationNeededException (?)**will be thrown.
 
 
 .. _io_realm_RealmConfiguration_Builder_deleteRealmIfMigrationNeeded____:
@@ -310,9 +280,9 @@ deleteRealmIfMigrationNeeded
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` deleteRealmIfMigrationNeeded ()
 
-Setting this will change the behavior of how migration exceptions are handled. Instead of throwing a **io.realm.exceptions.RealmMigrationNeededException (?)** the on-disc Realm will be cleared and recreated with the new Realm schema.
+Setting this will change the behavior of how migration exceptions are handled. Instead of throwing a **io.realm.exceptions.RealmMigrationNeededException (?)**the on-disc Realm will be cleared and recreated with the new Realm schema.
 
-This cannot be configured to have an asset file at the same time by calling **#assetFile(String) (?)** as the provided asset file will be deleted in migrations.
+This cannot be configured to have an asset file at the same time by calling **#assetFile(String) (?)**as the provided asset file will be deleted in migrations.
 
 
 
@@ -329,9 +299,7 @@ inMemory
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` inMemory ()
 
-Setting this will create an in-memory Realm instead of saving it to disk. In-memory Realms might still use disk space if memory is running low, but all files created by an in-memory Realm will be deleted when the Realm is closed.
-
-Note that because in-memory Realms are not persisted, you must be sure to hold on to at least one non-closed reference to the in-memory Realm object with the specific name as long as you want the data to last.
+Setting this will create an in-memory Realm instead of saving it to disk. In-memory Realms might still use disk space if memory is running low, but all files created by an in-memory Realm will be deleted when the Realm is closed.Note that because in-memory Realms are not persisted, you must be sure to hold on to at least one non-closed reference to the in-memory Realm object with the specific name as long as you want the data to last.
 
 
 .. _io_realm_RealmConfiguration_Builder_modules__Object__Object_____:
@@ -357,11 +325,7 @@ Parameters
 
 - baseModule - the first Realm module (required).
    
-   
-   
 - additionalModules - the additional Realm modules
-   
-   
    
 
 Throws
@@ -378,8 +342,6 @@ addModule
 public final :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` addModule (**Object (?)** module)
 
 FIXME: Temporary visible DEBUG method. Will add a module unconditionally. Adds a module to already defined modules.
-
-
 .. _io_realm_RealmConfiguration_Builder_rxFactory__RxObservableFactory__:
 
 rxFactory
@@ -387,15 +349,13 @@ rxFactory
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` rxFactory (:ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` factory)
 
-Sets the **RxObservableFactory (?)** used to create Rx Observables from Realm objects. The default factory is **RealmObservableFactory (?)**.
+Sets the **RxObservableFactory (?)**used to create Rx Observables from Realm objects. The default factory is **RealmObservableFactory (?)**.
 
 
 Parameters
 ~~~~~~~~~~
 
 - factory - factory to use.
-   
-   
    
 
 .. _io_realm_RealmConfiguration_Builder_flowFactory__FlowFactory__:
@@ -405,15 +365,13 @@ flowFactory
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` flowFactory (:ref:`FlowFactory <io_realm_coroutines_FlowFactory>` factory)
 
-Sets the **FlowFactory (?)** used to create coroutines Flows from Realm objects. The default factory is **RealmFlowFactory (?)**.
+Sets the **FlowFactory (?)**used to create coroutines Flows from Realm objects. The default factory is **RealmFlowFactory (?)**.
 
 
 Parameters
 ~~~~~~~~~~
 
 - factory - factory to use.
-   
-   
    
 
 .. _io_realm_RealmConfiguration_Builder_initialData__Realm_Transaction__:
@@ -423,15 +381,13 @@ initialData
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` initialData (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
 
-Sets the initial data in **io.realm.Realm (?)**. This transaction will be executed only for the first time when database file is created or while migrating the data when **Builder#deleteRealmIfMigrationNeeded() (?)** is set.
+Sets the initial data in **io.realm.Realm (?)**. This transaction will be executed only for the first time when database file is created or while migrating the data when **Builder#deleteRealmIfMigrationNeeded() (?)**is set.
 
 
 Parameters
 ~~~~~~~~~~
 
 - transaction - transaction to execute.
-   
-   
    
 
 .. _io_realm_RealmConfiguration_Builder_assetFile__String__:
@@ -441,11 +397,9 @@ assetFile
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` assetFile (**String (?)** assetFile)
 
-Copies the Realm file from the given asset file path.
+Copies the Realm file from the given asset file path.When opening the Realm for the first time, instead of creating an empty file, the Realm file will be copied from the provided asset file and used instead.
 
-When opening the Realm for the first time, instead of creating an empty file, the Realm file will be copied from the provided asset file and used instead.
-
-This cannot be combined with **#deleteRealmIfMigrationNeeded() (?)** as doing so would just result in the copied file being deleted.
+This cannot be combined with **#deleteRealmIfMigrationNeeded() (?)**as doing so would just result in the copied file being deleted.
 
 
 
@@ -456,8 +410,6 @@ Parameters
 ~~~~~~~~~~
 
 - assetFile - path to the asset database file.
-   
-   
    
 
 Throws
@@ -472,11 +424,11 @@ public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` r
 
 Setting this will cause the Realm to become read only and all write transactions made against this Realm will fail with an **IllegalStateException (?)**.
 
-This in particular mean that **#initialData(Realm.Transaction) (?)** will not work in combination with a read only Realm and setting this will result in a **IllegalStateException (?)** being thrown.
-
- Marking a Realm as read only only applies to the Realm in this process. Other processes can still write to the Realm.
+This in particular mean that **#initialData(Realm.Transaction) (?)**will not work in combination with a read only Realm and setting this will result in a **IllegalStateException (?)**being thrown.
 
 
+
+Marking a Realm as read only only applies to the Realm in this process. Other processes can still write to the Realm.
 .. _io_realm_RealmConfiguration_Builder_compactOnLaunch____:
 
 compactOnLaunch
@@ -484,7 +436,7 @@ compactOnLaunch
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` compactOnLaunch ()
 
-Setting this will cause Realm to compact the Realm file if the Realm file has grown too large and a significant amount of space can be recovered. See **DefaultCompactOnLaunchCallback (?)** for details.
+Setting this will cause Realm to compact the Realm file if the Realm file has grown too large and a significant amount of space can be recovered. See **DefaultCompactOnLaunchCallback (?)**for details.
 
 
 .. _io_realm_RealmConfiguration_Builder_compactOnLaunch__CompactOnLaunchCallback__:
@@ -495,14 +447,10 @@ compactOnLaunch
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` compactOnLaunch (:ref:`CompactOnLaunchCallback <io_realm_CompactOnLaunchCallback>` compactOnLaunch)
 
 Sets this to determine if the Realm file should be compacted before returned to the user. It is passed the total file size (data + free space) and the bytes used by data in the file.
-
-
 Parameters
 ~~~~~~~~~~
 
 - compactOnLaunch - a callback called when opening a Realm for the first time during the life of a process to determine if it should be compacted before being returned to the user. It is passed the total file size (data + free space) and the bytes used by data in the file.
-   
-   
    
 
 .. _io_realm_RealmConfiguration_Builder_maxNumberOfActiveVersions__long__:
@@ -512,7 +460,7 @@ maxNumberOfActiveVersions
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` maxNumberOfActiveVersions (**long (?)** number)
 
-Sets the maximum number of live versions in the Realm file before an **IllegalStateException (?)** is thrown when attempting to write more data.
+Sets the maximum number of live versions in the Realm file before an **IllegalStateException (?)**is thrown when attempting to write more data.
 
 Realm is capable of concurrently handling many different versions of Realm objects. This can e.g. happen if you have a Realm open on many different threads or are freezing objects while data is being written to the file.
 
@@ -523,8 +471,6 @@ Parameters
 ~~~~~~~~~~
 
 - number - the maximum number of active versions before an exception is thrown.
-   
-   
    
 
 See Also
@@ -537,9 +483,9 @@ allowWritesOnUiThread
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` allowWritesOnUiThread (**boolean (?)** allowWritesOnUiThread)
 
-Sets whether or not calls to **Realm#executeTransaction (?)** are allowed from the UI thread.
+Sets whether or not calls to **Realm#executeTransaction (?)**are allowed from the UI thread.
 
-**WARNING: Realm does not allow synchronous transactions to be run on the main thread unless users explicitly opt in with this method.** We recommend diverting calls to ``executeTransaction`` to non-UI threads or, alternatively, using **Realm#executeTransactionAsync (?)**.
+**WARNING: Realm does not allow synchronous transactions to be run on the main thread unless users explicitly opt in with this method.**We recommend diverting calls to ``executeTransaction``to non-UI threads or, alternatively, using **Realm#executeTransactionAsync (?)**.
 
 
 
@@ -551,9 +497,9 @@ allowQueriesOnUiThread
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` allowQueriesOnUiThread (**boolean (?)** allowQueriesOnUiThread)
 
-Sets whether or not a **RealmQuery (?)** can be launched from the UI thread.
+Sets whether or not a **RealmQuery (?)**can be launched from the UI thread.
 
-By default Realm allows queries on the main thread. However, by doing so your application may experience a drop of frames or even ANRs. We recommend diverting queries to non-UI threads or, alternatively, using **RealmQuery#findAllAsync() (?)** or **RealmQuery#findFirstAsync() (?)**.
+By default Realm allows queries on the main thread. However, by doing so your application may experience a drop of frames or even ANRs. We recommend diverting queries to non-UI threads or, alternatively, using **RealmQuery#findAllAsync() (?)**or **RealmQuery#findFirstAsync() (?)**.
 
 
 
@@ -566,6 +512,4 @@ build
 public :ref:`RealmConfiguration <io_realm_RealmConfiguration>` build ()
 
 Creates the RealmConfiguration based on the builder parameters.
-
-
 

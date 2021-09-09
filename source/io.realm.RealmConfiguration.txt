@@ -14,13 +14,11 @@ io.realm.RealmConfiguration
 
 - **java.lang.Object (?)**
 
-A RealmConfiguration is used to setup a specific Realm instance.
-
-Instances of a RealmConfiguration can only created by using the **io.realm.RealmConfiguration.Builder (?)** and calling its **io.realm.RealmConfiguration.Builder#build() (?)** method.
+A RealmConfiguration is used to setup a specific Realm instance.Instances of a RealmConfiguration can only created by using the **io.realm.RealmConfiguration.Builder (?)**and calling its **io.realm.RealmConfiguration.Builder#build() (?)**method.
 
 
 
-A commonly used RealmConfiguration can easily be accessed by first saving it as **Realm#setDefaultConfiguration(RealmConfiguration) (?)** and then using **io.realm.Realm#getDefaultInstance() (?)**.
+A commonly used RealmConfiguration can easily be accessed by first saving it as **Realm#setDefaultConfiguration(RealmConfiguration) (?)**and then using **io.realm.Realm#getDefaultInstance() (?)**.
 
 
 
@@ -157,15 +155,11 @@ Method Summary
        
        
        
-       
-       
    
    * - protected :ref:`Realm.Transaction <io_realm_Realm_Transaction>`
      - :ref:`getInitialDataTransaction <io_realm_RealmConfiguration_getInitialDataTransaction____>` ()
        
        Returns the transaction instance with initial data.
-       
-       
        
        
        
@@ -177,13 +171,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **Set (?)**
      - :ref:`getRealmObjectClasses <io_realm_RealmConfiguration_getRealmObjectClasses____>` ()
        
-       Returns the unmodifiable **Set (?)** of model classes that make up the schema for this Realm.
+       Returns the unmodifiable **Set (?)**of model classes that make up the schema for this Realm.
        
        
        
@@ -197,8 +189,6 @@ Method Summary
        
        
        
-       
-       
    
    * - protected **boolean (?)**
      - :ref:`realmExists <io_realm_RealmConfiguration_realmExists____>` ()
@@ -207,13 +197,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>`
      - :ref:`getRxFactory <io_realm_RealmConfiguration_getRxFactory____>` ()
        
-       Returns the **RxObservableFactory (?)** that is used to create Rx Observables from Realm objects.
+       Returns the **RxObservableFactory (?)**that is used to create Rx Observables from Realm objects.
        
        
        
@@ -223,7 +211,7 @@ Method Summary
    * - public :ref:`FlowFactory <io_realm_coroutines_FlowFactory>`
      - :ref:`getFlowFactory <io_realm_RealmConfiguration_getFlowFactory____>` ()
        
-       Returns the **FlowFactory (?)** that is used to create Kotlin Flows from Realm objects.
+       Returns the **FlowFactory (?)**that is used to create Kotlin Flows from Realm objects.
        
        
        
@@ -234,8 +222,6 @@ Method Summary
      - :ref:`isReadOnly <io_realm_RealmConfiguration_isReadOnly____>` ()
        
        Returns whether this Realm is read-only or not.
-       
-       
        
        
        
@@ -259,7 +245,7 @@ Method Summary
    * - public **boolean (?)**
      - :ref:`isAllowWritesOnUiThread <io_realm_RealmConfiguration_isAllowWritesOnUiThread____>` ()
        
-       Returns whether calls to **Realm#executeTransaction (?)** can be done on the UI thread.
+       Returns whether calls to **Realm#executeTransaction (?)**can be done on the UI thread.
        
        
        
@@ -269,7 +255,7 @@ Method Summary
    * - public **boolean (?)**
      - :ref:`isAllowQueriesOnUiThread <io_realm_RealmConfiguration_isAllowQueriesOnUiThread____>` ()
        
-       Returns whether a **RealmQuery (?)** is allowed to be launched from the UI thread.
+       Returns whether a **RealmQuery (?)**is allowed to be launched from the UI thread.
        
        
        
@@ -407,8 +393,6 @@ getSchemaMediator
 protected **RealmProxyMediator (?)** getSchemaMediator ()
 
 Returns the mediator instance of schema which is defined by this configuration.
-
-
 .. _io_realm_RealmConfiguration_getInitialDataTransaction____:
 
 getInitialDataTransaction
@@ -417,8 +401,6 @@ getInitialDataTransaction
 protected :ref:`Realm.Transaction <io_realm_Realm_Transaction>` getInitialDataTransaction ()
 
 Returns the transaction instance with initial data.
-
-
 .. _io_realm_RealmConfiguration_getCompactOnLaunchCallback____:
 
 getCompactOnLaunchCallback
@@ -427,8 +409,6 @@ getCompactOnLaunchCallback
 public :ref:`CompactOnLaunchCallback <io_realm_CompactOnLaunchCallback>` getCompactOnLaunchCallback ()
 
 Returns a callback to determine if the Realm file should be compacted before being returned to the user.
-
-
 .. _io_realm_RealmConfiguration_getRealmObjectClasses____:
 
 getRealmObjectClasses
@@ -436,7 +416,7 @@ getRealmObjectClasses
 
 public **Set (?)** getRealmObjectClasses ()
 
-Returns the unmodifiable **Set (?)** of model classes that make up the schema for this Realm.
+Returns the unmodifiable **Set (?)**of model classes that make up the schema for this Realm.
 
 
 .. _io_realm_RealmConfiguration_getPath____:
@@ -447,8 +427,6 @@ getPath
 public **String (?)** getPath ()
 
 Returns the absolute path to where the Realm file will be saved.
-
-
 .. _io_realm_RealmConfiguration_realmExists____:
 
 realmExists
@@ -456,9 +434,7 @@ realmExists
 
 protected **boolean (?)** realmExists ()
 
-Checks if the Realm file defined by this configuration already exists.
-
-WARNING: This method is just a point-in-time check. Unless protected by external synchronization another thread or process might have created or deleted the Realm file right after this method has returned.
+Checks if the Realm file defined by this configuration already exists.WARNING: This method is just a point-in-time check. Unless protected by external synchronization another thread or process might have created or deleted the Realm file right after this method has returned.
 
 
 .. _io_realm_RealmConfiguration_getRxFactory____:
@@ -468,7 +444,7 @@ getRxFactory
 
 public :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` getRxFactory ()
 
-Returns the **RxObservableFactory (?)** that is used to create Rx Observables from Realm objects.
+Returns the **RxObservableFactory (?)**that is used to create Rx Observables from Realm objects.
 
 
 Throws
@@ -481,7 +457,7 @@ getFlowFactory
 
 public :ref:`FlowFactory <io_realm_coroutines_FlowFactory>` getFlowFactory ()
 
-Returns the **FlowFactory (?)** that is used to create Kotlin Flows from Realm objects.
+Returns the **FlowFactory (?)**that is used to create Kotlin Flows from Realm objects.
 
 
 Throws
@@ -494,7 +470,7 @@ isReadOnly
 
 public **boolean (?)** isReadOnly ()
 
-Returns whether this Realm is read-only or not. Read-only Realms cannot be modified and will throw an **IllegalStateException (?)** if **Realm#beginTransaction() (?)** is called on it.
+Returns whether this Realm is read-only or not. Read-only Realms cannot be modified and will throw an **IllegalStateException (?)**if **Realm#beginTransaction() (?)**is called on it.
 
 
 .. _io_realm_RealmConfiguration_isRecoveryConfiguration____:
@@ -523,9 +499,9 @@ isAllowWritesOnUiThread
 
 public **boolean (?)** isAllowWritesOnUiThread ()
 
-Returns whether calls to **Realm#executeTransaction (?)** can be done on the UI thread.
+Returns whether calls to **Realm#executeTransaction (?)**can be done on the UI thread.
 
-**Note: Realm does not allow blocking transactions to be run on the main thread unless users explicitly opt in with \*\*Builder#allowWritesOnUiThread(boolean) (?)\*\* or its Realm Sync builder counterpart.
+**Note: Realm does not allow blocking transactions to be run on the main thread unless users explicitly opt in with \*\*Builder#allowWritesOnUiThread(boolean) (?)\*\*or its Realm Sync builder counterpart.
 
 **
 
@@ -537,9 +513,9 @@ isAllowQueriesOnUiThread
 
 public **boolean (?)** isAllowQueriesOnUiThread ()
 
-Returns whether a **RealmQuery (?)** is allowed to be launched from the UI thread.
+Returns whether a **RealmQuery (?)**is allowed to be launched from the UI thread.
 
-By default Realm allows queries on the main thread. To disallow this users have to explicitly opt in with **Builder#allowQueriesOnUiThread(boolean) (?)** or its Realm Sync builder counterpart.
+By default Realm allows queries on the main thread. To disallow this users have to explicitly opt in with **Builder#allowQueriesOnUiThread(boolean) (?)**or its Realm Sync builder counterpart.
 
 
 

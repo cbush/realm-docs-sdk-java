@@ -14,11 +14,9 @@ io.realm.mongodb.functions.Functions
 
 - **java.lang.Object (?)**
 
-A  *Functions*  manager to call remote Realm functions for the associated Realm App.
+A *Functions* manager to call remote Realm functions for the associated Realm App.Arguments and results are encoded/decoded with the *Functions'*codec registry either inherited from the **AppConfiguration#getDefaultCodecRegistry() (?)**or set explicitly when creating the 
 
-Arguments and results are encoded/decoded with the *Functions'* codec registry either inherited from the **AppConfiguration#getDefaultCodecRegistry() (?)** or set explicitly when creating the 
-
-*Functions*-instance through **User#getFunctions(CodecRegistry) (?)** or through the individual calls to **#callFunction(String, List, Class, CodecRegistry) (?)**.
+*Functions*-instance through **User#getFunctions(CodecRegistry) (?)**or through the individual calls to **#callFunction(String, List, Class, CodecRegistry) (?)**.
 
 
 
@@ -61,15 +59,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **ResultT (?)**
      - :ref:`callFunction <io_realm_mongodb_functions_Functions_callFunction__String__List_____Class_ResultT___>` <**ResultT (?)** >(**String (?)** name, **java.util.List<?> (?)** args, **java.lang.Class<ResultT> (?)** resultClass)
        
        Call a MongoDB Realm function synchronously with default codec registry encoding/decoding arguments/results.
-       
-       
        
        
        
@@ -81,15 +75,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
      - :ref:`callFunctionAsync <io_realm_mongodb_functions_Functions_callFunctionAsync__String__List_____Class_T___CodecRegistry__App_Callback_T___>` <**T (?)** >(**String (?)** name, **java.util.List<?> (?)** args, **java.lang.Class<T> (?)** resultClass, **CodecRegistry (?)** codecRegistry, :ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
        
        Call a MongoDB Realm function asynchronously with custom codec registry for encoding/decoding arguments/results.
-       
-       
        
        
        
@@ -101,8 +91,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
      - :ref:`callFunctionAsync <io_realm_mongodb_functions_Functions_callFunctionAsync__String__List______any___App_Callback_T___>` <**T (?)** >(**String (?)** name, **java.util.List<?> (?)** args, **<any> (?)** resultDecoder, :ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
@@ -111,15 +99,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **CodecRegistry (?)**
      - :ref:`getDefaultCodecRegistry <io_realm_mongodb_functions_Functions_getDefaultCodecRegistry____>` ()
        
-       Returns the default codec registry used for encoding arguments and decoding results for this  *Realm functions*  instance.
-       
-       
+       Returns the default codec registry used for encoding arguments and decoding results for this *Realm functions* instance.
        
        
        
@@ -127,7 +111,7 @@ Method Summary
    * - public :ref:`App <io_realm_mongodb_App>`
      - :ref:`getApp <io_realm_mongodb_functions_Functions_getApp____>` ()
        
-       Returns the **App (?)** that this instance in associated with.
+       Returns the **App (?)**that this instance in associated with.
        
        
        
@@ -137,7 +121,7 @@ Method Summary
    * - public :ref:`User <io_realm_mongodb_User>`
      - :ref:`getUser <io_realm_mongodb_functions_Functions_getUser____>` ()
        
-       Returns the **User (?)** that this instance in associated with.
+       Returns the **User (?)**that this instance in associated with.
        
        
        
@@ -173,8 +157,6 @@ callFunction
 public **ResultT (?)** callFunction <**ResultT (?)** >(**String (?)** name, **java.util.List<?> (?)** args, **java.lang.Class<ResultT> (?)** resultClass, **CodecRegistry (?)** codecRegistry)
 
 Call a MongoDB Realm function synchronously with custom codec registry encoding/decoding arguments/results.
-
-
 Type Parameters
 ~~~~~~~~~~~~~~~
 
@@ -188,19 +170,11 @@ Parameters
 
 - name - Name of the Realm function to call.
    
-   
-   
 - args - Arguments to the Realm function.
-   
-   
    
 - resultClass - The type that the functions result should be converted to.
    
-   
-   
 - codecRegistry - Codec registry to use for argument encoding and result decoding.
-   
-   
    
 
 Throws
@@ -217,14 +191,10 @@ callFunction
 public **ResultT (?)** callFunction <**ResultT (?)** >(**String (?)** name, **java.util.List<?> (?)** args, **java.lang.Class<ResultT> (?)** resultClass)
 
 Call a MongoDB Realm function synchronously with default codec registry encoding/decoding arguments/results.
-
-
 Type Parameters
 ~~~~~~~~~~~~~~~
 
 - ResultT - The type that the response will be decoded as using the default codec registry.
-   
-   
    
 
 Parameters
@@ -232,15 +202,9 @@ Parameters
 
 - name - Name of the Realm function to call.
    
-   
-   
 - args - Arguments to the Realm function.
    
-   
-   
 - resultClass - The type that the functions result should be converted to.
-   
-   
    
 
 Throws
@@ -256,9 +220,7 @@ callFunction
 
 public **ResultT (?)** callFunction <**ResultT (?)** >(**String (?)** name, **java.util.List<?> (?)** args, **<any> (?)** resultDecoder)
 
-Call a MongoDB Realm function synchronously with custom result decoder.
-
-The arguments will be encoded with the default codec registry encoding.
+Call a MongoDB Realm function synchronously with custom result decoder.The arguments will be encoded with the default codec registry encoding.
 
 
 Type Parameters
@@ -274,15 +236,9 @@ Parameters
 
 - name - Name of the Realm function to call.
    
-   
-   
 - args - Arguments to the Realm function.
    
-   
-   
 - resultDecoder - The decoder used to decode the result.
-   
-   
    
 
 Throws
@@ -298,9 +254,7 @@ callFunctionAsync
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` callFunctionAsync <**T (?)** >(**String (?)** name, **java.util.List<?> (?)** args, **java.lang.Class<T> (?)** resultClass, **CodecRegistry (?)** codecRegistry, :ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
 
-Call a MongoDB Realm function asynchronously with custom codec registry for encoding/decoding arguments/results.
-
-This is the asynchronous equivalent of **#callFunction(String, List, Class, CodecRegistry) (?)**.
+Call a MongoDB Realm function asynchronously with custom codec registry for encoding/decoding arguments/results.This is the asynchronous equivalent of **#callFunction(String, List, Class, CodecRegistry) (?)**.
 
 
 
@@ -310,31 +264,19 @@ Type Parameters
 
 - T - The type that the response will be decoded as using the default codec registry.
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
 - name - Name of the Realm function to call.
    
-   
-   
 - args - Arguments to the Realm function.
-   
-   
    
 - resultClass - The type that the functions result should be converted to.
    
-   
-   
 - codecRegistry - Codec registry to use for argument encoding and result decoding.
    
-   
-   
 - callback - The callback that will receive the result or any errors from the request.
-   
-   
    
 
 Throws
@@ -350,9 +292,7 @@ callFunctionAsync
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` callFunctionAsync <**T (?)** >(**String (?)** name, **java.util.List<?> (?)** args, **java.lang.Class<T> (?)** resultClass, :ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
 
-Call a MongoDB Realm function asynchronously with custom codec registry for encoding/decoding arguments/results.
-
-This is the asynchronous equivalent of **#callFunction(String, List, Class) (?)**.
+Call a MongoDB Realm function asynchronously with custom codec registry for encoding/decoding arguments/results.This is the asynchronous equivalent of **#callFunction(String, List, Class) (?)**.
 
 
 
@@ -362,27 +302,17 @@ Type Parameters
 
 - T - The type that the response will be decoded as using the default codec registry.
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
 - name - Name of the Realm function to call.
    
-   
-   
 - args - Arguments to the Realm function.
-   
-   
    
 - resultClass - The type that the functions result should be converted to.
    
-   
-   
 - callback - The callback that will receive the result or any errors from the request.
-   
-   
    
 
 Throws
@@ -398,9 +328,7 @@ callFunctionAsync
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` callFunctionAsync <**T (?)** >(**String (?)** name, **java.util.List<?> (?)** args, **<any> (?)** resultDecoder, :ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
 
-Call a MongoDB Realm function asynchronously with custom result decoder.
-
-This is the asynchronous equivalent of **#callFunction(String, List, Decoder) (?)**.
+Call a MongoDB Realm function asynchronously with custom result decoder.This is the asynchronous equivalent of **#callFunction(String, List, Decoder) (?)**.
 
 
 
@@ -418,19 +346,11 @@ Parameters
 
 - name - Name of the Realm function to call.
    
-   
-   
 - args - Arguments to the Realm function.
-   
-   
    
 - resultDecoder - The decoder used to decode the result.
    
-   
-   
 - callback - The callback that will receive the result or any errors from the request.
-   
-   
    
 
 Throws
@@ -446,9 +366,7 @@ getDefaultCodecRegistry
 
 public **CodecRegistry (?)** getDefaultCodecRegistry ()
 
-Returns the default codec registry used for encoding arguments and decoding results for this  *Realm functions*  instance.
-
-
+Returns the default codec registry used for encoding arguments and decoding results for this *Realm functions* instance.
 .. _io_realm_mongodb_functions_Functions_getApp____:
 
 getApp
@@ -456,7 +374,7 @@ getApp
 
 public :ref:`App <io_realm_mongodb_App>` getApp ()
 
-Returns the **App (?)** that this instance in associated with.
+Returns the **App (?)**that this instance in associated with.
 
 
 .. _io_realm_mongodb_functions_Functions_getUser____:
@@ -466,7 +384,7 @@ getUser
 
 public :ref:`User <io_realm_mongodb_User>` getUser ()
 
-Returns the **User (?)** that this instance in associated with.
+Returns the **User (?)**that this instance in associated with.
 
 
 .. _io_realm_mongodb_functions_Functions_invoke__String__List_____CodecRegistry___any___:

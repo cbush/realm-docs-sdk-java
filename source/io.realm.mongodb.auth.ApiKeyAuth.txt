@@ -15,8 +15,6 @@ io.realm.mongodb.auth.ApiKeyAuth
 - **java.lang.Object (?)**
 
 This class exposes functionality for a user to manage API keys under their control.
-
-
 Constructors
 ============
 
@@ -34,7 +32,7 @@ Method Summary
    * - public :ref:`User <io_realm_mongodb_User>`
      - :ref:`getUser <io_realm_mongodb_auth_ApiKeyAuth_getUser____>` ()
        
-       Returns the **User (?)** that this instance in associated with.
+       Returns the **User (?)**that this instance in associated with.
        
        
        
@@ -44,7 +42,7 @@ Method Summary
    * - public :ref:`App <io_realm_mongodb_App>`
      - :ref:`getApp <io_realm_mongodb_auth_ApiKeyAuth_getApp____>` ()
        
-       Returns the **App (?)** that this instance in associated with.
+       Returns the **App (?)**that this instance in associated with.
        
        
        
@@ -58,15 +56,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
      - :ref:`createAsync <io_realm_mongodb_auth_ApiKeyAuth_createAsync__String__App_Callback_ApiKey___>` (**String (?)** name, :ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.auth.ApiKey> <io_realm_mongodb_App_Callback>` callback)
        
        Asynchronously creates a user API key that can be used to authenticate as the user.
-       
-       
        
        
        
@@ -78,15 +72,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
      - :ref:`fetchAsync <io_realm_mongodb_auth_ApiKeyAuth_fetchAsync__ObjectId__App_Callback_ApiKey___>` (**ObjectId (?)** id, :ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.auth.ApiKey> <io_realm_mongodb_App_Callback>` callback)
        
        Fetches a specific user API key associated with the user.
-       
-       
        
        
        
@@ -98,15 +88,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
      - :ref:`fetchAll <io_realm_mongodb_auth_ApiKeyAuth_fetchAll__App_Callback_List_ApiKey____>` (:ref:`io.realm.mongodb.App.Callback\<java.util.List\<io.realm.mongodb.auth.ApiKey>> <io_realm_mongodb_App_Callback>` callback)
        
        Fetches all API keys associated with the user.
-       
-       
        
        
        
@@ -118,15 +104,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
      - :ref:`deleteAsync <io_realm_mongodb_auth_ApiKeyAuth_deleteAsync__ObjectId__App_Callback_Void___>` (**ObjectId (?)** id, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
        
        Deletes a specific API key created by the user.
-       
-       
        
        
        
@@ -138,15 +120,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
      - :ref:`disableAsync <io_realm_mongodb_auth_ApiKeyAuth_disableAsync__ObjectId__App_Callback_Void___>` (**ObjectId (?)** id, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
        
        Disables a specific API key created by the user.
-       
-       
        
        
        
@@ -158,15 +136,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
      - :ref:`enableAsync <io_realm_mongodb_auth_ApiKeyAuth_enableAsync__ObjectId__App_Callback_Void___>` (**ObjectId (?)** id, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
        
        Enables a specific API key created by the user.
-       
-       
        
        
        
@@ -214,7 +188,7 @@ getUser
 
 public :ref:`User <io_realm_mongodb_User>` getUser ()
 
-Returns the **User (?)** that this instance in associated with.
+Returns the **User (?)**that this instance in associated with.
 
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_getApp____:
@@ -224,7 +198,7 @@ getApp
 
 public :ref:`App <io_realm_mongodb_App>` getApp ()
 
-Returns the **App (?)** that this instance in associated with.
+Returns the **App (?)**that this instance in associated with.
 
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_create__String__:
@@ -234,9 +208,7 @@ create
 
 public :ref:`ApiKey <io_realm_mongodb_auth_ApiKey>` create (**String (?)** name)
 
-Creates a user API key that can be used to authenticate as the user.
-
-The value of the key must be persisted at this time as this is the only time it is visible.
+Creates a user API key that can be used to authenticate as the user.The value of the key must be persisted at this time as this is the only time it is visible.
 
 The key is enabled when created. It can be disabled by calling **#disable(ObjectId) (?)**.
 
@@ -247,8 +219,6 @@ Parameters
 ~~~~~~~~~~
 
 - name - the name of the key
-   
-   
    
 
 Throws
@@ -261,9 +231,7 @@ createAsync
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` createAsync (**String (?)** name, :ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.auth.ApiKey> <io_realm_mongodb_App_Callback>` callback)
 
-Asynchronously creates a user API key that can be used to authenticate as the user.
-
-The value of the key must be persisted at this time as this is the only time it is visible.
+Asynchronously creates a user API key that can be used to authenticate as the user.The value of the key must be persisted at this time as this is the only time it is visible.
 
 The key is enabled when created. It can be disabled by calling **#disable(ObjectId) (?)**.
 
@@ -275,11 +243,7 @@ Parameters
 
 - name - the name of the key
    
-   
-   
 - callback - callback when key creation has completed or failed. The callback will always happen on the same thread as this method is called on.
-   
-   
    
 
 Throws
@@ -293,14 +257,10 @@ fetch
 public :ref:`ApiKey <io_realm_mongodb_auth_ApiKey>` fetch (**ObjectId (?)** id)
 
 Fetches a specific user API key associated with the user.
-
-
 Parameters
 ~~~~~~~~~~
 
 - id - the id of the key to fetch.
-   
-   
    
 
 Throws
@@ -314,18 +274,12 @@ fetchAsync
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` fetchAsync (**ObjectId (?)** id, :ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.auth.ApiKey> <io_realm_mongodb_App_Callback>` callback)
 
 Fetches a specific user API key associated with the user.
-
-
 Parameters
 ~~~~~~~~~~
 
 - id - the id of the key to fetch.
    
-   
-   
 - callback - callback used when the key was fetched or the call failed. The callback will always happen on the same thread as this method was called on.
-   
-   
    
 
 Throws
@@ -339,8 +293,6 @@ fetchAll
 public **List (?)** fetchAll ()
 
 Fetches all API keys associated with the user.
-
-
 Throws
 ~~~~~~
 
@@ -352,14 +304,10 @@ fetchAll
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` fetchAll (:ref:`io.realm.mongodb.App.Callback\<java.util.List\<io.realm.mongodb.auth.ApiKey>> <io_realm_mongodb_App_Callback>` callback)
 
 Fetches all API keys associated with the user.
-
-
 Parameters
 ~~~~~~~~~~
 
 - callback - callback used when the keys were fetched or the call failed. The callback will always happen on the same thread as this method was called on.
-   
-   
    
 
 Throws
@@ -373,14 +321,10 @@ delete
 public **void (?)** delete (**ObjectId (?)** id)
 
 Deletes a specific API key created by the user.
-
-
 Parameters
 ~~~~~~~~~~
 
 - id - the id of the key to delete.
-   
-   
    
 
 Throws
@@ -394,18 +338,12 @@ deleteAsync
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` deleteAsync (**ObjectId (?)** id, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
 
 Deletes a specific API key created by the user.
-
-
 Parameters
 ~~~~~~~~~~
 
 - id - the id of the key to delete.
    
-   
-   
 - callback - callback used when the was deleted or the call failed. The callback will always happen on the same thread as this method was called on.
-   
-   
    
 
 Throws
@@ -419,14 +357,10 @@ disable
 public **void (?)** disable (**ObjectId (?)** id)
 
 Disables a specific API key created by the user.
-
-
 Parameters
 ~~~~~~~~~~
 
 - id - the id of the key to disable.
-   
-   
    
 
 Throws
@@ -440,18 +374,12 @@ disableAsync
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` disableAsync (**ObjectId (?)** id, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
 
 Disables a specific API key created by the user.
-
-
 Parameters
 ~~~~~~~~~~
 
 - id - the id of the key to disable.
    
-   
-   
 - callback - callback used when the key was disabled or the call failed. The callback will always happen on the same thread as this method was called on.
-   
-   
    
 
 Throws
@@ -465,14 +393,10 @@ enable
 public **void (?)** enable (**ObjectId (?)** id)
 
 Enables a specific API key created by the user.
-
-
 Parameters
 ~~~~~~~~~~
 
 - id - the id of the key to enable.
-   
-   
    
 
 Throws
@@ -486,18 +410,12 @@ enableAsync
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` enableAsync (**ObjectId (?)** id, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
 
 Enables a specific API key created by the user.
-
-
 Parameters
 ~~~~~~~~~~
 
 - id - the id of the key to enable.
    
-   
-   
 - callback - callback used when the key was enabled or the call failed. The callback will always happen on the same thread as this method was called on.
-   
-   
    
 
 Throws

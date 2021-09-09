@@ -29,8 +29,6 @@ Method Summary
        
        
        
-       
-       
    
    
 Method Detail
@@ -44,14 +42,10 @@ onResult
 public **void (?)** onResult (:ref:`io.realm.mongodb.App.Result\<T> <io_realm_mongodb_App_Result>` result)
 
 Returns the result of the request when available.
-
-
 Parameters
 ~~~~~~~~~~
 
 - result - the request response.
-   
-   
    
 
 

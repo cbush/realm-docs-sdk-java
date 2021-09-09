@@ -71,16 +71,12 @@ startIndex
 ----------
 
 The start index of this change range.
-
-
 .. _io_realm_OrderedCollectionChangeSet_Range_length:
 
 length
 ------
 
 How many elements are inside this range.
-
-
 Method Detail
 =============
 

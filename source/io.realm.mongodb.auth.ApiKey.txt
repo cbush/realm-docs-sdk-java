@@ -16,11 +16,11 @@ io.realm.mongodb.auth.ApiKey
 
 Class representing an API key for a **User (?)**. An API can be used to represent the user when logging instead of using email and password.
 
-These keys are created or fetched through **ApiKeyAuth#create(String) (?)** or the various ``fetch``-methods.
+These keys are created or fetched through **ApiKeyAuth#create(String) (?)**or the various ``fetch``-methods.
 
 
 
-Note that a keys **#value (?)** is only available when the key is created, after that it is not visible. So anyone creating an API key is responsible for storing it safely after that.
+Note that a keys **#value (?)**is only available when the key is created, after that it is not visible. So anyone creating an API key is responsible for storing it safely after that.
 
 
 
@@ -41,15 +41,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **String (?)**
      - :ref:`getValue <io_realm_mongodb_auth_ApiKey_getValue____>` ()
        
        Returns this keys value.
-       
-       
        
        
        
@@ -61,15 +57,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **boolean (?)**
      - :ref:`isEnabled <io_realm_mongodb_auth_ApiKey_isEnabled____>` ()
        
        Returns whether or not this key is currently enabled.
-       
-       
        
        
        
@@ -110,8 +102,6 @@ getId
 public **ObjectId (?)** getId ()
 
 Returns the unique identifier for this key.
-
-
 .. _io_realm_mongodb_auth_ApiKey_getValue____:
 
 getValue
@@ -120,8 +110,6 @@ getValue
 public **String (?)** getValue ()
 
 Returns this keys value. This value is only returned when the key is created. After that the value is no longer visible.
-
-
 .. _io_realm_mongodb_auth_ApiKey_getName____:
 
 getName
@@ -130,8 +118,6 @@ getName
 public **String (?)** getName ()
 
 Returns the name of this key.
-
-
 .. _io_realm_mongodb_auth_ApiKey_isEnabled____:
 
 isEnabled
@@ -140,8 +126,6 @@ isEnabled
 public **boolean (?)** isEnabled ()
 
 Returns whether or not this key is currently enabled.
-
-
 .. _io_realm_mongodb_auth_ApiKey_equals__Object__:
 
 equals

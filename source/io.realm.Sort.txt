@@ -15,8 +15,6 @@ io.realm.Sort
 - **java.lang.Enum (?)**
 
 This class describes the sorting order used in Realm queries.
-
-
 Method Summary
 ==============
 
@@ -49,8 +47,6 @@ Method Summary
        
        
        
-       
-       
    
    
 Method Detail
@@ -80,6 +76,4 @@ getValue
 public **boolean (?)** getValue ()
 
 Returns the value for this setting that is used by the underlying query engine.
-
-
 

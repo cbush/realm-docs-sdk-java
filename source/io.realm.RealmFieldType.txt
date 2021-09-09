@@ -14,9 +14,7 @@ io.realm.RealmFieldType
 
 - **java.lang.Enum (?)**
 
-List of the types used by Realm's underlying storage engine.
-
-Normally there is no reason to interact with the underlying Realm types as Realm will automatically convert between normal Java types and the Realm types. However it is possible to access these types through a **DynamicRealmObject (?)**.
+List of the types used by Realm's underlying storage engine.Normally there is no reason to interact with the underlying Realm types as Realm will automatically convert between normal Java types and the Realm types. However it is possible to access these types through a **DynamicRealmObject (?)**.
 
 
 
@@ -53,8 +51,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public **boolean (?)**
      - :ref:`isValid <io_realm_RealmFieldType_isValid__Object__>` (**Object (?)** obj)
@@ -63,15 +59,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public static :ref:`RealmFieldType <io_realm_RealmFieldType>`
      - :ref:`fromNativeValue <io_realm_RealmFieldType_fromNativeValue__int__>` (**int (?)** value)
        
        Converts the underlying value used by the storage engine to the proper Realm type.
-       
-       
        
        
        
@@ -104,8 +96,6 @@ getNativeValue
 public **int (?)** getNativeValue ()
 
 Returns the native value representing this type.
-
-
 .. _io_realm_RealmFieldType_isValid__Object__:
 
 isValid
@@ -114,14 +104,10 @@ isValid
 public **boolean (?)** isValid (**Object (?)** obj)
 
 Checks if the given Java object can be converted to the underlying Realm type.
-
-
 Parameters
 ~~~~~~~~~~
 
 - obj - object to test compatibility on.
-   
-   
    
 
 .. _io_realm_RealmFieldType_fromNativeValue__int__:
@@ -132,14 +118,10 @@ fromNativeValue
 public static :ref:`RealmFieldType <io_realm_RealmFieldType>` fromNativeValue (**int (?)** value)
 
 Converts the underlying value used by the storage engine to the proper Realm type.
-
-
 Parameters
 ~~~~~~~~~~
 
 - value - the value to convert
-   
-   
    
 
 Throws

@@ -15,8 +15,6 @@ io.realm.exceptions.RealmException
 - **java.lang.RuntimeException (?)**
 
 RealmException is Realm specific exceptions.
-
-
 Constructors
 ============
 

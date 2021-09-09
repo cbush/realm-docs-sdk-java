@@ -14,7 +14,7 @@ io.realm.mongodb.AppException
 
 - **java.lang.RuntimeException (?)**
 
-This class is a wrapper for all errors happening when communicating with a MongoDB Realm app. This include both exceptions and protocol errors. Only **#getErrorCode() (?)** is guaranteed to contain a value. If the error was caused by an underlying exception **#getErrorMessage() (?)** is ``null`` and **#getException() (?)** is set, while if the error was a protocol error **#getErrorMessage() (?)** is set and **#getException() (?)** is null.
+This class is a wrapper for all errors happening when communicating with a MongoDB Realm app. This include both exceptions and protocol errors. Only **#getErrorCode() (?)**is guaranteed to contain a value. If the error was caused by an underlying exception **#getErrorMessage() (?)**is ``null``and **#getException() (?)**is set, while if the error was a protocol error **#getErrorMessage() (?)**is set and **#getException() (?)**is null.
 
 
 Constructors
@@ -39,7 +39,7 @@ Method Summary
    * - public :ref:`ErrorCode <io_realm_mongodb_ErrorCode>`
      - :ref:`getErrorCode <io_realm_mongodb_AppException_getErrorCode____>` ()
        
-       Returns the **ErrorCode (?)** identifying the type of error.
+       Returns the **ErrorCode (?)**identifying the type of error.
        
        
        
@@ -53,15 +53,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **int (?)**
      - :ref:`getErrorIntValue <io_realm_mongodb_AppException_getErrorIntValue____>` ()
        
        Returns an integer representing this specific type of error.
-       
-       
        
        
        
@@ -73,8 +69,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public **Throwable (?)**
      - :ref:`getException <io_realm_mongodb_AppException_getException____>` ()
@@ -83,13 +77,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>`
      - :ref:`getCategory <io_realm_mongodb_AppException_getCategory____>` ()
        
-       Returns the **ErrorCode.Category (?)** category for this error.
+       Returns the **ErrorCode.Category (?)**category for this error.
        
        
        
@@ -115,9 +107,9 @@ getErrorCode
 
 public :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` getErrorCode ()
 
-Returns the **ErrorCode (?)** identifying the type of error.
+Returns the **ErrorCode (?)**identifying the type of error.
 
-If **ErrorCode#UNKNOWN (?)** is returned, it means that the error could not be mapped to any known errors. In that case **#getErrorType() (?)** and **#getErrorIntValue() (?)** will return the underlying error information which can better identify the type of error.
+If **ErrorCode#UNKNOWN (?)**is returned, it means that the error could not be mapped to any known errors. In that case **#getErrorType() (?)**and **#getErrorIntValue() (?)**will return the underlying error information which can better identify the type of error.
 
 
 
@@ -133,8 +125,6 @@ getErrorType
 public **String (?)** getErrorType ()
 
 Returns a string describing the type of error it is.
-
-
 .. _io_realm_mongodb_AppException_getErrorIntValue____:
 
 getErrorIntValue
@@ -153,8 +143,6 @@ getErrorMessage
 public **String (?)** getErrorMessage ()
 
 Returns a more detailed error message about the cause of this error.
-
-
 .. _io_realm_mongodb_AppException_getException____:
 
 getException
@@ -163,8 +151,6 @@ getException
 public **Throwable (?)** getException ()
 
 Returns the underlying exception causing this error, if any.
-
-
 .. _io_realm_mongodb_AppException_getCategory____:
 
 getCategory
@@ -172,7 +158,7 @@ getCategory
 
 public :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` getCategory ()
 
-Returns the **ErrorCode.Category (?)** category for this error. Errors that are **ErrorCode.Category#RECOVERABLE (?)** mean that it is still possible for a given **SyncSession (?)** to resume synchronization. **ErrorCode.Category#FATAL (?)** errors means that session has stopped and cannot be recovered.
+Returns the **ErrorCode.Category (?)**category for this error. Errors that are **ErrorCode.Category#RECOVERABLE (?)**mean that it is still possible for a given **SyncSession (?)**to resume synchronization. **ErrorCode.Category#FATAL (?)**errors means that session has stopped and cannot be recovered.
 
 
 .. _io_realm_mongodb_AppException_toString____:

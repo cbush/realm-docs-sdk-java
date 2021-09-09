@@ -15,8 +15,6 @@ io.realm.mongodb.sync.Sync.Debug
 - **java.lang.Object (?)**
 
 Debugging related options.
-
-
 Constructors
 ============
 
@@ -56,14 +54,10 @@ skipOnlineChecking
 ------------------
 
 Set this to true to bypass checking if the device is offline before making HTTP requests.
-
-
 .. _io_realm_mongodb_sync_Sync_Debug_separatedDirForSyncManager:
 
 separatedDirForSyncManager
 --------------------------
 
 Set this to true to init a SyncManager with a directory named by the process ID. This is useful for integration tests which are emulating multiple sync client by using multiple processes.
-
-
 

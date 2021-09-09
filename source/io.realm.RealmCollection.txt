@@ -14,9 +14,9 @@ io.realm.RealmCollection<E>
 
 - **java.util.Collection (?)**
 
-``RealmCollection`` is the root of the collection hierarchy that Realm supports. It defines operations on data collections and the behavior that they will have in all implementations of ``RealmCollection``s.
+``RealmCollection``is the root of the collection hierarchy that Realm supports. It defines operations on data collections and the behavior that they will have in all implementations of ``RealmCollection``s.
 
-Realm collections are "live" views to the underlying data. This means that they automatically will be kept up to date. As a consequence, using methods like **Collections#unmodifiableCollection(Collection) (?)** will not prevent a collection from being modified.
+Realm collections are "live" views to the underlying data. This means that they automatically will be kept up to date. As a consequence, using methods like **Collections#unmodifiableCollection(Collection) (?)**will not prevent a collection from being modified.
 
 
 
@@ -47,15 +47,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **Number (?)**
      - :ref:`max <io_realm_RealmCollection_max__String__>` (**String (?)** fieldName)
        
        Finds the maximum value of a field.
-       
-       
        
        
        
@@ -67,15 +63,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **double (?)**
      - :ref:`average <io_realm_RealmCollection_average__String__>` (**String (?)** fieldName)
        
        Returns the average of a given field.
-       
-       
        
        
        
@@ -87,15 +79,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **Date (?)**
      - :ref:`minDate <io_realm_RealmCollection_minDate__String__>` (**String (?)** fieldName)
        
        Finds the minimum date.
-       
-       
        
        
        
@@ -107,15 +95,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **boolean (?)**
      - :ref:`isLoaded <io_realm_RealmCollection_isLoaded____>` ()
        
        Checks if a collection has finished loading its data yet.
-       
-       
        
        
        
@@ -127,13 +111,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **boolean (?)**
      - :ref:`isValid <io_realm_RealmCollection_isValid____>` ()
        
-       Checks if the collection is still valid to use, i.e., the **io.realm.Realm (?)** instance hasn't been closed.
+       Checks if the collection is still valid to use, i.e., the **io.realm.Realm (?)**instance hasn't been closed.
        
        
        
@@ -147,13 +129,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **boolean (?)**
      - :ref:`contains <io_realm_RealmCollection_contains__Object__>` (**Object (?)** object)
        
-       Tests whether this ``Collection`` contains the specified object.
+       Tests whether this ``Collection``contains the specified object.
        
        
        
@@ -188,14 +168,10 @@ min
 public **Number (?)** min (**String (?)** fieldName)
 
 Finds the minimum value of a field.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to look for a minimum on. Only number fields are supported.
-   
-   
    
 
 Throws
@@ -209,14 +185,10 @@ max
 public **Number (?)** max (**String (?)** fieldName)
 
 Finds the maximum value of a field.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to look for a maximum on. Only number fields are supported.
-   
-   
    
 
 Throws
@@ -230,14 +202,10 @@ sum
 public **Number (?)** sum (**String (?)** fieldName)
 
 Calculates the sum of a given field.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to sum. Only number fields are supported.
-   
-   
    
 
 Throws
@@ -251,14 +219,10 @@ average
 public **double (?)** average (**String (?)** fieldName)
 
 Returns the average of a given field.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to calculate average on. Only number fields are supported.
-   
-   
    
 
 Throws
@@ -272,14 +236,10 @@ maxDate
 public **Date (?)** maxDate (**String (?)** fieldName)
 
 Finds the maximum date.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to look for the maximum date. If fieldName is not of Date type, an exception is thrown.
-   
-   
    
 
 Throws
@@ -293,14 +253,10 @@ minDate
 public **Date (?)** minDate (**String (?)** fieldName)
 
 Finds the minimum date.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to look for the minimum date. If fieldName is not of Date type, an exception is thrown.
-   
-   
    
 
 Throws
@@ -314,8 +270,6 @@ deleteAllFromRealm
 public **boolean (?)** deleteAllFromRealm ()
 
 This deletes all objects in the collection from the underlying Realm as well as from the collection.
-
-
 Throws
 ~~~~~~
 
@@ -327,8 +281,6 @@ isLoaded
 public **boolean (?)** isLoaded ()
 
 Checks if a collection has finished loading its data yet.
-
-
 .. _io_realm_RealmCollection_load____:
 
 load
@@ -337,8 +289,6 @@ load
 public **boolean (?)** load ()
 
 Blocks the collection until all data are available.
-
-
 .. _io_realm_RealmCollection_isValid____:
 
 isValid
@@ -346,7 +296,7 @@ isValid
 
 public **boolean (?)** isValid ()
 
-Checks if the collection is still valid to use, i.e., the **io.realm.Realm (?)** instance hasn't been closed. It will always return ``true`` for an unmanaged collection.
+Checks if the collection is still valid to use, i.e., the **io.realm.Realm (?)**instance hasn't been closed. It will always return ``true``for an unmanaged collection.
 
 
 .. _io_realm_RealmCollection_isManaged____:
@@ -356,9 +306,7 @@ isManaged
 
 public **boolean (?)** isManaged ()
 
-Checks if the collection is managed by Realm. A managed collection is just a wrapper around the data in the underlying Realm file. On Looper threads, a managed collection will be live-updated so it always points to the latest data. Managed collections are thread confined so that they cannot be accessed from other threads than the one that created them.
-
-If this method returns ``false``, the collection is unmanaged. An unmanaged collection is just a normal java collection, so it will not be live updated.
+Checks if the collection is managed by Realm. A managed collection is just a wrapper around the data in the underlying Realm file. On Looper threads, a managed collection will be live-updated so it always points to the latest data. Managed collections are thread confined so that they cannot be accessed from other threads than the one that created them.If this method returns ``false``, the collection is unmanaged. An unmanaged collection is just a normal java collection, so it will not be live updated.
 
 
 
@@ -370,15 +318,13 @@ contains
 
 public **boolean (?)** contains (**Object (?)** object)
 
-Tests whether this ``Collection`` contains the specified object. Returns ``true`` if and only if at least one element ``elem`` in this ``Collection`` meets following requirement: ``(object==null ? elem==null : object.equals(elem))``.
+Tests whether this ``Collection``contains the specified object. Returns ``true``if and only if at least one element ``elem``in this ``Collection``meets following requirement: ``(object==null ? elem==null : object.equals(elem))``.
 
 
 Parameters
 ~~~~~~~~~~
 
 - object - the object to search for.
-   
-   
    
 
 Throws

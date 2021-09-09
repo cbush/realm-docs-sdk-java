@@ -15,8 +15,6 @@ io.realm.mongodb.mongo.options.UpdateOptions
 - **java.lang.Object (?)**
 
 The options to apply when updating documents.
-
-
 Constructors
 ============
 
@@ -38,15 +36,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>`
      - :ref:`upsert <io_realm_mongodb_mongo_options_UpdateOptions_upsert__boolean__>` (**boolean (?)** upsert)
        
        Set to true if a new document should be inserted if there are no matches to the query filter.
-       
-       
        
        
        
@@ -71,8 +65,6 @@ isUpsert
 public **boolean (?)** isUpsert ()
 
 Returns true if a new document should be inserted if there are no matches to the query filter. The default is false.
-
-
 .. _io_realm_mongodb_mongo_options_UpdateOptions_upsert__boolean__:
 
 upsert
@@ -81,14 +73,10 @@ upsert
 public :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>` upsert (**boolean (?)** upsert)
 
 Set to true if a new document should be inserted if there are no matches to the query filter.
-
-
 Parameters
 ~~~~~~~~~~
 
 - upsert - true if a new document should be inserted if there are no matches to the query filter.
-   
-   
    
 
 .. _io_realm_mongodb_mongo_options_UpdateOptions_toString____:

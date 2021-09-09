@@ -14,7 +14,7 @@ io.realm.mongodb.RealmEventStreamAsyncTask<T>
 
 - :ref:`io.realm.RealmAsyncTask <io_realm_RealmAsyncTask>`
 
-The RealmEventStreamAsyncTask is a specific version of **RealmAsyncTask (?)** that provides a non-blocking mechanism to work with asynchronous operations carried out against MongoDB Realm that yield stream results.
+The RealmEventStreamAsyncTask is a specific version of **RealmAsyncTask (?)**that provides a non-blocking mechanism to work with asynchronous operations carried out against MongoDB Realm that yield stream results.
 
 
 Method Summary
@@ -33,15 +33,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **boolean (?)**
      - :ref:`isOpen <io_realm_mongodb_RealmEventStreamAsyncTask_isOpen____>` ()
        
        Whether or not the stream is currently open.
-       
-       
        
        
        
@@ -58,12 +54,10 @@ get
 public **void (?)** get (:ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.mongo.events.BaseChangeEvent\<T>> <io_realm_mongodb_App_Callback>` callback)
 
 Provides a way to subscribe to asynchronous operations via a callback, which handles both results and errors.
-
-
 Parameters
 ~~~~~~~~~~
 
-- callback - the **App.Callback (?)** designed to receive event results.
+- callback - the **App.Callback (?)**designed to receive event results.
    
    
    
@@ -79,6 +73,4 @@ isOpen
 public **boolean (?)** isOpen ()
 
 Whether or not the stream is currently open.
-
-
 

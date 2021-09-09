@@ -15,8 +15,6 @@ io.realm.exceptions.RealmPrimaryKeyConstraintException
 - **java.lang.RuntimeException (?)**
 
 Class for reporting problems when the primary key constraint is being broken.
-
-
 Constructors
 ============
 

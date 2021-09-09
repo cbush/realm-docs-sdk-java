@@ -15,8 +15,6 @@ io.realm.mongodb.mongo.events.BaseChangeEvent.OperationType
 - **java.lang.Enum (?)**
 
 Represents the different MongoDB operations that can occur.
-
-
 Method Summary
 ==============
 

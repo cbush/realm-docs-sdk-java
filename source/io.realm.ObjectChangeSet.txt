@@ -11,8 +11,6 @@ io.realm.ObjectChangeSet
 .. _io_realm_ObjectChangeSet:
 
 Information about the changes made to an object.
-
-
 Method Summary
 ==============
 
@@ -45,8 +43,6 @@ Method Summary
        
        
        
-       
-       
    
    
 Method Detail
@@ -76,14 +72,10 @@ isFieldChanged
 public **boolean (?)** isFieldChanged (**String (?)** fieldName)
 
 Checks if a given field has been changed.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - to be checked if its value has been changed.
-   
-   
    
 
 

@@ -14,17 +14,17 @@ io.realm.RealmQuery<E>
 
 - **java.lang.Object (?)**
 
-A RealmQuery encapsulates a query on a **io.realm.Realm (?)** or a **io.realm.RealmResults (?)** using the Builder pattern. The query is executed using either **#findAll() (?)** or **#findFirst() (?)**.
+A RealmQuery encapsulates a query on a **io.realm.Realm (?)**or a **io.realm.RealmResults (?)**using the Builder pattern. The query is executed using either **#findAll() (?)**or **#findFirst() (?)**.
 
 The input to many of the query functions take a field name as String. Note that this is not type safe. If a RealmObject class is refactored care has to be taken to not break any queries.
 
-A **io.realm.Realm (?)** is unordered, which means that there is no guarantee that querying a Realm will return the objects in the order they where inserted. Use **#sort(String) (?)** (String)} and similar methods if a specific order is required.
+A **io.realm.Realm (?)**is unordered, which means that there is no guarantee that querying a Realm will return the objects in the order they where inserted. Use **#sort(String) (?)**(String)} and similar methods if a specific order is required.
 
 
 
 A RealmQuery cannot be passed between different threads.
 
-Results are obtained quickly most of the times. However, launching heavy queries from the UI thread may result in a drop of frames or even ANRs. If you want to prevent these behaviors, you can instantiate a Realm using a **RealmConfiguration (?)** that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)** to ``false``. This way queries will be forced to be launched from a non-UI thread. Alternatively, you can also use **#findAllAsync() (?)** or **#findFirstAsync() (?)**.
+Results are obtained quickly most of the times. However, launching heavy queries from the UI thread may result in a drop of frames or even ANRs. If you want to prevent these behaviors, you can instantiate a Realm using a **RealmConfiguration (?)**that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)**to ``false``. This way queries will be forced to be launched from a non-UI thread. Alternatively, you can also use **#findAllAsync() (?)**or **#findFirstAsync() (?)**.
 
 
 
@@ -41,7 +41,7 @@ Method Summary
    * - public **boolean (?)**
      - :ref:`isValid <io_realm_RealmQuery_isValid____>` ()
        
-       Checks if **io.realm.RealmQuery (?)** is still valid to use i.e., the **io.realm.Realm (?)** instance hasn't been closed and any parent **io.realm.RealmResults (?)** is still valid.
+       Checks if **io.realm.RealmQuery (?)**is still valid to use i.e., the **io.realm.Realm (?)**instance hasn't been closed and any parent **io.realm.RealmResults (?)**is still valid.
        
        
        
@@ -75,15 +75,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`equalTo <io_realm_RealmQuery_equalTo__String__String__Case__>` (**String (?)** fieldName, **String (?)** value, :ref:`Case <io_realm_Case>` casing)
        
        Equal-to comparison.
-       
-       
        
        
        
@@ -95,15 +91,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`equalTo <io_realm_RealmQuery_equalTo__String__Decimal128__>` (**String (?)** fieldName, **Decimal128 (?)** value)
        
        Equal-to comparison.
-       
-       
        
        
        
@@ -115,15 +107,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`equalTo <io_realm_RealmQuery_equalTo__String__RealmAny__>` (**String (?)** fieldName, **RealmAny (?)** value)
        
        Equal-to comparison.
-       
-       
        
        
        
@@ -135,15 +123,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`in <io_realm_RealmQuery_in__String__String[]__Case__>` (**String (?)** fieldName, **java.lang.String[] (?)** values, :ref:`Case <io_realm_Case>` casing)
        
        In comparison.
-       
-       
        
        
        
@@ -155,15 +139,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`in <io_realm_RealmQuery_in__String__Short[]__>` (**String (?)** fieldName, **java.lang.Short[] (?)** values)
        
        In comparison.
-       
-       
        
        
        
@@ -175,15 +155,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`in <io_realm_RealmQuery_in__String__Long[]__>` (**String (?)** fieldName, **java.lang.Long[] (?)** values)
        
        In comparison.
-       
-       
        
        
        
@@ -195,15 +171,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`in <io_realm_RealmQuery_in__String__Float[]__>` (**String (?)** fieldName, **java.lang.Float[] (?)** values)
        
        In comparison.
-       
-       
        
        
        
@@ -215,15 +187,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`in <io_realm_RealmQuery_in__String__Date[]__>` (**String (?)** fieldName, **java.util.Date[] (?)** values)
        
        In comparison.
-       
-       
        
        
        
@@ -235,15 +203,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`notEqualTo <io_realm_RealmQuery_notEqualTo__String__String__>` (**String (?)** fieldName, **String (?)** value)
        
        Not-equal-to comparison.
-       
-       
        
        
        
@@ -255,15 +219,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`notEqualTo <io_realm_RealmQuery_notEqualTo__String__RealmAny__Case__>` (**String (?)** fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
        
        Not-equal-to comparison.
-       
-       
        
        
        
@@ -275,15 +235,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`notEqualTo <io_realm_RealmQuery_notEqualTo__String__ObjectId__>` (**String (?)** fieldName, **ObjectId (?)** value)
        
        Not-equal-to comparison.
-       
-       
        
        
        
@@ -295,15 +251,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`greaterThan <io_realm_RealmQuery_greaterThan__String__int__>` (**String (?)** fieldName, **int (?)** value)
        
        Greater-than comparison.
-       
-       
        
        
        
@@ -315,15 +267,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`greaterThan <io_realm_RealmQuery_greaterThan__String__double__>` (**String (?)** fieldName, **double (?)** value)
        
        Greater-than comparison.
-       
-       
        
        
        
@@ -335,15 +283,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`greaterThan <io_realm_RealmQuery_greaterThan__String__Date__>` (**String (?)** fieldName, **Date (?)** value)
        
        Greater-than comparison.
-       
-       
        
        
        
@@ -355,15 +299,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`greaterThan <io_realm_RealmQuery_greaterThan__String__Decimal128__>` (**String (?)** fieldName, **Decimal128 (?)** value)
        
        Greater-than comparison.
-       
-       
        
        
        
@@ -375,15 +315,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`greaterThanOrEqualTo <io_realm_RealmQuery_greaterThanOrEqualTo__String__int__>` (**String (?)** fieldName, **int (?)** value)
        
        Greater-than-or-equal-to comparison.
-       
-       
        
        
        
@@ -395,15 +331,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`greaterThanOrEqualTo <io_realm_RealmQuery_greaterThanOrEqualTo__String__double__>` (**String (?)** fieldName, **double (?)** value)
        
        Greater-than-or-equal-to comparison.
-       
-       
        
        
        
@@ -415,15 +347,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`greaterThanOrEqualTo <io_realm_RealmQuery_greaterThanOrEqualTo__String__Date__>` (**String (?)** fieldName, **Date (?)** value)
        
        Greater-than-or-equal-to comparison.
-       
-       
        
        
        
@@ -435,15 +363,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`greaterThanOrEqualTo <io_realm_RealmQuery_greaterThanOrEqualTo__String__ObjectId__>` (**String (?)** fieldName, **ObjectId (?)** value)
        
        Greater-than-or-equal-to comparison.
-       
-       
        
        
        
@@ -455,15 +379,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`lessThan <io_realm_RealmQuery_lessThan__String__int__>` (**String (?)** fieldName, **int (?)** value)
        
        Less-than comparison.
-       
-       
        
        
        
@@ -475,15 +395,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`lessThan <io_realm_RealmQuery_lessThan__String__Decimal128__>` (**String (?)** fieldName, **Decimal128 (?)** value)
        
        Less-than comparison.
-       
-       
        
        
        
@@ -495,15 +411,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`lessThan <io_realm_RealmQuery_lessThan__String__RealmAny__>` (**String (?)** fieldName, **RealmAny (?)** value)
        
        Less-than comparison.
-       
-       
        
        
        
@@ -515,15 +427,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`lessThanOrEqualTo <io_realm_RealmQuery_lessThanOrEqualTo__String__long__>` (**String (?)** fieldName, **long (?)** value)
        
        Less-than-or-equal-to comparison.
-       
-       
        
        
        
@@ -535,15 +443,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`lessThanOrEqualTo <io_realm_RealmQuery_lessThanOrEqualTo__String__ObjectId__>` (**String (?)** fieldName, **ObjectId (?)** value)
        
        Less-than-or-equal-to comparison.
-       
-       
        
        
        
@@ -555,15 +459,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`between <io_realm_RealmQuery_between__String__int__int__>` (**String (?)** fieldName, **int (?)** from, **int (?)** to)
        
        Between condition.
-       
-       
        
        
        
@@ -575,15 +475,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`between <io_realm_RealmQuery_between__String__double__double__>` (**String (?)** fieldName, **double (?)** from, **double (?)** to)
        
        Between condition.
-       
-       
        
        
        
@@ -595,15 +491,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`between <io_realm_RealmQuery_between__String__Date__Date__>` (**String (?)** fieldName, **Date (?)** from, **Date (?)** to)
        
        Between condition.
-       
-       
        
        
        
@@ -615,15 +507,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`between <io_realm_RealmQuery_between__String__Decimal128__Decimal128__>` (**String (?)** fieldName, **Decimal128 (?)** from, **Decimal128 (?)** to)
        
        Between condition.
-       
-       
        
        
        
@@ -635,15 +523,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`contains <io_realm_RealmQuery_contains__String__RealmAny__>` (**String (?)** fieldName, **RealmAny (?)** value)
        
        Condition that value of field contains the specified substring.
-       
-       
        
        
        
@@ -655,15 +539,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`contains <io_realm_RealmQuery_contains__String__RealmAny__Case__>` (**String (?)** fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
        
        Condition that value of field contains the specified substring.
-       
-       
        
        
        
@@ -675,15 +555,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`beginsWith <io_realm_RealmQuery_beginsWith__String__RealmAny__>` (**String (?)** fieldName, **RealmAny (?)** value)
        
        Condition that the value of field begins with the specified string.
-       
-       
        
        
        
@@ -695,15 +571,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`beginsWith <io_realm_RealmQuery_beginsWith__String__RealmAny__Case__>` (**String (?)** fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
        
        Condition that the value of field begins with the specified substring.
-       
-       
        
        
        
@@ -715,15 +587,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`endsWith <io_realm_RealmQuery_endsWith__String__RealmAny__>` (**String (?)** fieldName, **RealmAny (?)** value)
        
        Condition that the value of field ends with the specified string.
-       
-       
        
        
        
@@ -735,8 +603,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`endsWith <io_realm_RealmQuery_endsWith__String__RealmAny__Case__>` (**String (?)** fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
@@ -745,15 +611,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`like <io_realm_RealmQuery_like__String__String__>` (**String (?)** fieldName, **String (?)** value)
        
-       Condition that the value of field matches with the specified substring, with wildcards:
-       
-       - '*' matches [0, n] unicode chars
+       Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
           
           
        - '?' matches a single unicode char.
@@ -768,9 +630,7 @@ Method Summary
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`like <io_realm_RealmQuery_like__String__RealmAny__>` (**String (?)** fieldName, **RealmAny (?)** value)
        
-       Condition that the value of field matches with the specified substring, with wildcards:
-       
-       - '*' matches [0, n] unicode chars
+       Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
           
           
        - '?' matches a single unicode char.
@@ -785,9 +645,7 @@ Method Summary
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`like <io_realm_RealmQuery_like__String__String__Case__>` (**String (?)** fieldName, **String (?)** value, :ref:`Case <io_realm_Case>` casing)
        
-       Condition that the value of field matches with the specified substring, with wildcards:
-       
-       - '*' matches [0, n] unicode chars
+       Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
           
           
        - '?' matches a single unicode char.
@@ -802,9 +660,7 @@ Method Summary
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`like <io_realm_RealmQuery_like__String__RealmAny__Case__>` (**String (?)** fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
        
-       Condition that the value of field matches with the specified substring, with wildcards:
-       
-       - '*' matches [0, n] unicode chars
+       Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
           
           
        - '?' matches a single unicode char.
@@ -820,8 +676,6 @@ Method Summary
      - :ref:`beginGroup <io_realm_RealmQuery_beginGroup____>` ()
        
        Begin grouping of conditions ("left parenthesis").
-       
-       
        
        
        
@@ -843,15 +697,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`and <io_realm_RealmQuery_and____>` ()
        
        Logical-and two conditions Realm automatically applies logical-and between all query statements, so this is intended only as a mean to increase readability.
-       
-       
        
        
        
@@ -863,15 +713,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`isEmpty <io_realm_RealmQuery_isEmpty__String__>` (**String (?)** fieldName)
        
        Condition that finds values that are considered "empty" i.e., an empty list, the 0-length string or byte array.
-       
-       
        
        
        
@@ -883,15 +729,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`containsKey <io_realm_RealmQuery_containsKey__String__String__>` (**String (?)** fieldName, **String (?)** key)
        
        Condition that value, if a dictionary field, contains the specified key.
-       
-       
        
        
        
@@ -903,15 +745,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`containsValue <io_realm_RealmQuery_containsValue__String__Byte__>` (**String (?)** fieldName, **Byte (?)** value)
        
        Condition that value, if a dictionary field, contains the specified value.
-       
-       
        
        
        
@@ -923,15 +761,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`containsValue <io_realm_RealmQuery_containsValue__String__Integer__>` (**String (?)** fieldName, **Integer (?)** value)
        
        Condition that value, if a dictionary field, contains the specified value.
-       
-       
        
        
        
@@ -943,15 +777,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`containsValue <io_realm_RealmQuery_containsValue__String__Double__>` (**String (?)** fieldName, **Double (?)** value)
        
        Condition that value, if a dictionary field, contains the specified value.
-       
-       
        
        
        
@@ -963,15 +793,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`containsValue <io_realm_RealmQuery_containsValue__String__String__>` (**String (?)** fieldName, **String (?)** value)
        
        Condition that value, if a dictionary field, contains the specified value.
-       
-       
        
        
        
@@ -983,15 +809,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`containsValue <io_realm_RealmQuery_containsValue__String__Date__>` (**String (?)** fieldName, **Date (?)** value)
        
        Condition that value, if a dictionary field, contains the specified value.
-       
-       
        
        
        
@@ -1003,15 +825,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`containsValue <io_realm_RealmQuery_containsValue__String__ObjectId__>` (**String (?)** fieldName, **ObjectId (?)** value)
        
        Condition that value, if a dictionary field, contains the specified value.
-       
-       
        
        
        
@@ -1023,15 +841,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`containsEntry <io_realm_RealmQuery_containsEntry__String__Map_Entry_String______>` (**String (?)** fieldName, **java.util.Map.Entry<java.lang.String, ?> (?)** entry)
        
        Condition that value, if a dictionary field, contains the specified entry.
-       
-       
        
        
        
@@ -1043,15 +857,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **double (?)**
      - :ref:`average <io_realm_RealmQuery_average__String__>` (**String (?)** fieldName)
        
        Returns the average of a given field.
-       
-       
        
        
        
@@ -1063,15 +873,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **Decimal128 (?)**
      - :ref:`averageRealmAny <io_realm_RealmQuery_averageRealmAny__String__>` (**String (?)** fieldName)
        
        Returns the average of a given field.
-       
-       
        
        
        
@@ -1083,8 +889,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public **Date (?)**
      - :ref:`minimumDate <io_realm_RealmQuery_minimumDate__String__>` (**String (?)** fieldName)
@@ -1093,13 +897,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **RealmAny (?)**
      - :ref:`minRealmAny <io_realm_RealmQuery_minRealmAny__String__>` (**String (?)** fieldName)
        
-       Finds the minimum value of a **RealmAny (?)** field.
+       Finds the minimum value of a **RealmAny (?)**field.
        
        
        
@@ -1113,8 +915,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public **Date (?)**
      - :ref:`maximumDate <io_realm_RealmQuery_maximumDate__String__>` (**String (?)** fieldName)
@@ -1123,13 +923,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **RealmAny (?)**
      - :ref:`maxRealmAny <io_realm_RealmQuery_maxRealmAny__String__>` (**String (?)** fieldName)
        
-       Finds the maximum value of a **RealmAny (?)** field.
+       Finds the maximum value of a **RealmAny (?)**field.
        
        
        
@@ -1143,15 +941,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmResults <io_realm_RealmResults>`
      - :ref:`findAll <io_realm_RealmQuery_findAll____>` ()
        
        Finds all objects that fulfill the query conditions.
-       
-       
        
        
        
@@ -1163,15 +957,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`sort <io_realm_RealmQuery_sort__String__>` (**String (?)** fieldName)
        
        Sorts the query result by the specific field name in ascending order.
-       
-       
        
        
        
@@ -1183,15 +973,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`sort <io_realm_RealmQuery_sort__String__Sort__String__Sort__>` (**String (?)** fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, **String (?)** fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
        
        Sorts the query result by the specific field names in the provided orders.
-       
-       
        
        
        
@@ -1203,15 +989,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`distinct <io_realm_RealmQuery_distinct__String__String_____>` (**String (?)** firstFieldName, **java.lang.String[] (?)** remainingFieldNames)
        
        Selects a distinct set of objects of a specific class.
-       
-       
        
        
        
@@ -1223,15 +1005,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`alwaysTrue <io_realm_RealmQuery_alwaysTrue____>` ()
        
        This predicate will always match.
-       
-       
        
        
        
@@ -1243,8 +1021,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`rawPredicate <io_realm_RealmQuery_rawPredicate__String__Object_____>` (**String (?)** predicate, **java.lang.Object[] (?)** arguments)
@@ -1253,13 +1029,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`Realm <io_realm_Realm>`
      - :ref:`getRealm <io_realm_RealmQuery_getRealm____>` ()
        
-       Returns the **Realm (?)** instance to which this query belongs.
+       Returns the **Realm (?)**instance to which this query belongs.
        
        
        
@@ -1273,15 +1047,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **String (?)**
      - :ref:`getTypeQueried <io_realm_RealmQuery_getTypeQueried____>` ()
        
        Returns the internal Realm name of the type being queried.
-       
-       
        
        
        
@@ -1293,13 +1063,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **E (?)**
      - :ref:`findFirstAsync <io_realm_RealmQuery_findFirstAsync____>` ()
        
-       Similar to **#findFirst() (?)** but runs asynchronously on a worker thread.
+       Similar to **#findFirst() (?)**but runs asynchronously on a worker thread.
        
        
        
@@ -1317,7 +1085,7 @@ isValid
 
 public **boolean (?)** isValid ()
 
-Checks if **io.realm.RealmQuery (?)** is still valid to use i.e., the **io.realm.Realm (?)** instance hasn't been closed and any parent **io.realm.RealmResults (?)** is still valid.
+Checks if **io.realm.RealmQuery (?)**is still valid to use i.e., the **io.realm.Realm (?)**instance hasn't been closed and any parent **io.realm.RealmResults (?)**is still valid.
 
 
 .. _io_realm_RealmQuery_isNull__String__:
@@ -1329,7 +1097,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` isNull (**String (?)** fieldName)
 
 Tests if a field is ``null``. Only works for nullable fields.
 
-For link queries, if any part of the link path is ``null`` the whole path is considered to be ``null`` e.g., ``isNull("linkField.stringField")`` will be considered to be ``null`` if either ``linkField`` or ``linkField.stringField`` is ``null``.
+For link queries, if any part of the link path is ``null``the whole path is considered to be ``null``e.g., ``isNull("linkField.stringField")``will be considered to be ``null``if either ``linkField``or ``linkField.stringField``is ``null``.
 
 
 
@@ -1338,8 +1106,6 @@ Parameters
 ~~~~~~~~~~
 
 - fieldName - the field name.
-   
-   
    
 
 Throws
@@ -1363,8 +1129,6 @@ Parameters
 
 - fieldName - the field name.
    
-   
-   
 
 Throws
 ~~~~~~
@@ -1380,18 +1144,12 @@ equalTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (**String (?)** fieldName, **String (?)** value)
 
 Equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -1405,20 +1163,14 @@ equalTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (**String (?)** fieldName, **String (?)** value, :ref:`Case <io_realm_Case>` casing)
 
 Equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
    
-   
-   
-- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)**only works for Latin-1 characters.
    
    
    
@@ -1434,20 +1186,14 @@ equalTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (**String (?)** fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
 
 Equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
    
-   
-   
-- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)**only works for Latin-1 characters.
    
    
    
@@ -1463,18 +1209,12 @@ equalTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (**String (?)** fieldName, **Decimal128 (?)** value)
 
 Equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -1488,18 +1228,12 @@ equalTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (**String (?)** fieldName, **ObjectId (?)** value)
 
 Equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -1513,18 +1247,12 @@ equalTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (**String (?)** fieldName, **RealmAny (?)** value)
 
 Equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -1538,16 +1266,12 @@ in
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (**String (?)** fieldName, **java.lang.String[] (?)** values)
 
 In comparison. This allows you to test if objects match any value in an array of values.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
-- values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
+- values - array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
    
    
    
@@ -1563,20 +1287,16 @@ in
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (**String (?)** fieldName, **java.lang.String[] (?)** values, :ref:`Case <io_realm_Case>` casing)
 
 In comparison. This allows you to test if objects match any value in an array of values.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
-- values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
+- values - array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
    
    
    
-- casing - how casing is handled. **Case#INSENSITIVE (?)** works only for the Latin-1 characters.
+- casing - how casing is handled. **Case#INSENSITIVE (?)**works only for the Latin-1 characters.
    
    
    
@@ -1592,16 +1312,12 @@ in
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (**String (?)** fieldName, **java.lang.Byte[] (?)** values)
 
 In comparison. This allows you to test if objects match any value in an array of values.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
-- values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
+- values - array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
    
    
    
@@ -1617,16 +1333,12 @@ in
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (**String (?)** fieldName, **java.lang.Short[] (?)** values)
 
 In comparison. This allows you to test if objects match any value in an array of values.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
-- values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
+- values - array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
    
    
    
@@ -1642,16 +1354,12 @@ in
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (**String (?)** fieldName, **java.lang.Integer[] (?)** values)
 
 In comparison. This allows you to test if objects match any value in an array of values.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
-- values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
+- values - array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
    
    
    
@@ -1667,16 +1375,12 @@ in
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (**String (?)** fieldName, **java.lang.Long[] (?)** values)
 
 In comparison. This allows you to test if objects match any value in an array of values.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
-- values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
+- values - array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
    
    
    
@@ -1692,16 +1396,12 @@ in
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (**String (?)** fieldName, **java.lang.Double[] (?)** values)
 
 In comparison. This allows you to test if objects match any value in an array of values.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
-- values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
+- values - array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
    
    
    
@@ -1717,16 +1417,12 @@ in
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (**String (?)** fieldName, **java.lang.Float[] (?)** values)
 
 In comparison. This allows you to test if objects match any value in an array of values.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
-- values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
+- values - array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
    
    
    
@@ -1742,16 +1438,12 @@ in
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (**String (?)** fieldName, **java.lang.Boolean[] (?)** values)
 
 In comparison. This allows you to test if objects match any value in an array of values.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
-- values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
+- values - array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
    
    
    
@@ -1767,16 +1459,12 @@ in
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (**String (?)** fieldName, **java.util.Date[] (?)** values)
 
 In comparison. This allows you to test if objects match any value in an array of values.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
-- values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
+- values - array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
    
    
    
@@ -1792,16 +1480,12 @@ in
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (**String (?)** fieldName, **RealmAny[] (?)** values)
 
 In comparison. This allows you to test if objects match any value in an array of values.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
-- values - array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
+- values - array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
    
    
    
@@ -1817,18 +1501,12 @@ notEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (**String (?)** fieldName, **String (?)** value)
 
 Not-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -1842,20 +1520,14 @@ notEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (**String (?)** fieldName, **String (?)** value, :ref:`Case <io_realm_Case>` casing)
 
 Not-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
    
-   
-   
-- casing - how casing is handled. **Case#INSENSITIVE (?)** works only for the Latin-1 characters.
+- casing - how casing is handled. **Case#INSENSITIVE (?)**works only for the Latin-1 characters.
    
    
    
@@ -1871,20 +1543,14 @@ notEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (**String (?)** fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
 
 Not-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
    
-   
-   
-- casing - how casing is handled. **Case#INSENSITIVE (?)** works only for the Latin-1 characters.
+- casing - how casing is handled. **Case#INSENSITIVE (?)**works only for the Latin-1 characters.
    
    
    
@@ -1900,18 +1566,12 @@ notEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (**String (?)** fieldName, **Decimal128 (?)** value)
 
 Not-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -1925,18 +1585,12 @@ notEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (**String (?)** fieldName, **ObjectId (?)** value)
 
 Not-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -1950,18 +1604,12 @@ notEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (**String (?)** fieldName, **RealmAny (?)** value)
 
 Not-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -1975,18 +1623,12 @@ greaterThan
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (**String (?)** fieldName, **int (?)** value)
 
 Greater-than comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2000,18 +1642,12 @@ greaterThan
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (**String (?)** fieldName, **long (?)** value)
 
 Greater-than comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2025,18 +1661,12 @@ greaterThan
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (**String (?)** fieldName, **double (?)** value)
 
 Greater-than comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2050,18 +1680,12 @@ greaterThan
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (**String (?)** fieldName, **float (?)** value)
 
 Greater-than comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2075,18 +1699,12 @@ greaterThan
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (**String (?)** fieldName, **Date (?)** value)
 
 Greater-than comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2100,18 +1718,12 @@ greaterThan
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (**String (?)** fieldName, **RealmAny (?)** value)
 
 Greater-than comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2125,18 +1737,12 @@ greaterThan
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (**String (?)** fieldName, **Decimal128 (?)** value)
 
 Greater-than comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2150,18 +1756,12 @@ greaterThan
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (**String (?)** fieldName, **ObjectId (?)** value)
 
 Greater-than comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2175,18 +1775,12 @@ greaterThanOrEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (**String (?)** fieldName, **int (?)** value)
 
 Greater-than-or-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2200,18 +1794,12 @@ greaterThanOrEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (**String (?)** fieldName, **long (?)** value)
 
 Greater-than-or-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2225,18 +1813,12 @@ greaterThanOrEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (**String (?)** fieldName, **double (?)** value)
 
 Greater-than-or-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2250,18 +1832,12 @@ greaterThanOrEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (**String (?)** fieldName, **float (?)** value)
 
 Greater-than-or-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2275,18 +1851,12 @@ greaterThanOrEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (**String (?)** fieldName, **Date (?)** value)
 
 Greater-than-or-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2300,18 +1870,12 @@ greaterThanOrEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (**String (?)** fieldName, **Decimal128 (?)** value)
 
 Greater-than-or-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2325,18 +1889,12 @@ greaterThanOrEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (**String (?)** fieldName, **ObjectId (?)** value)
 
 Greater-than-or-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2350,18 +1908,12 @@ greaterThanOrEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (**String (?)** fieldName, **RealmAny (?)** value)
 
 Greater-than-or-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2375,18 +1927,12 @@ lessThan
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThan (**String (?)** fieldName, **int (?)** value)
 
 Less-than comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2400,18 +1946,12 @@ lessThan
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThan (**String (?)** fieldName, **long (?)** value)
 
 Less-than comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2425,18 +1965,12 @@ lessThan
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThan (**String (?)** fieldName, **Decimal128 (?)** value)
 
 Less-than comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2450,18 +1984,12 @@ lessThan
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThan (**String (?)** fieldName, **ObjectId (?)** value)
 
 Less-than comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2475,18 +2003,12 @@ lessThan
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThan (**String (?)** fieldName, **RealmAny (?)** value)
 
 Less-than comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2500,18 +2022,12 @@ lessThanOrEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThanOrEqualTo (**String (?)** fieldName, **int (?)** value)
 
 Less-than-or-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2525,18 +2041,12 @@ lessThanOrEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThanOrEqualTo (**String (?)** fieldName, **long (?)** value)
 
 Less-than-or-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2550,18 +2060,12 @@ lessThanOrEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThanOrEqualTo (**String (?)** fieldName, **Decimal128 (?)** value)
 
 Less-than-or-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2575,18 +2079,12 @@ lessThanOrEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThanOrEqualTo (**String (?)** fieldName, **ObjectId (?)** value)
 
 Less-than-or-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2600,18 +2098,12 @@ lessThanOrEqualTo
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThanOrEqualTo (**String (?)** fieldName, **RealmAny (?)** value)
 
 Less-than-or-equal-to comparison.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to compare with.
-   
-   
    
 
 Throws
@@ -2625,22 +2117,14 @@ between
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (**String (?)** fieldName, **int (?)** from, **int (?)** to)
 
 Between condition.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - from - lowest value (inclusive).
    
-   
-   
 - to - highest value (inclusive).
-   
-   
    
 
 Throws
@@ -2654,22 +2138,14 @@ between
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (**String (?)** fieldName, **long (?)** from, **long (?)** to)
 
 Between condition.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - from - lowest value (inclusive).
    
-   
-   
 - to - highest value (inclusive).
-   
-   
    
 
 Throws
@@ -2683,22 +2159,14 @@ between
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (**String (?)** fieldName, **double (?)** from, **double (?)** to)
 
 Between condition.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - from - lowest value (inclusive).
    
-   
-   
 - to - highest value (inclusive).
-   
-   
    
 
 Throws
@@ -2712,22 +2180,14 @@ between
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (**String (?)** fieldName, **float (?)** from, **float (?)** to)
 
 Between condition.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - from - lowest value (inclusive).
    
-   
-   
 - to - highest value (inclusive).
-   
-   
    
 
 Throws
@@ -2741,22 +2201,14 @@ between
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (**String (?)** fieldName, **Date (?)** from, **Date (?)** to)
 
 Between condition.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - from - lowest value (inclusive).
    
-   
-   
 - to - highest value (inclusive).
-   
-   
    
 
 Throws
@@ -2770,22 +2222,14 @@ between
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (**String (?)** fieldName, **RealmAny (?)** from, **RealmAny (?)** to)
 
 Between condition.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - from - lowest value (inclusive).
    
-   
-   
 - to - highest value (inclusive).
-   
-   
    
 
 Throws
@@ -2799,22 +2243,14 @@ between
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (**String (?)** fieldName, **Decimal128 (?)** from, **Decimal128 (?)** to)
 
 Between condition.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - from - lowest value (inclusive).
    
-   
-   
 - to - highest value (inclusive).
-   
-   
    
 
 Throws
@@ -2828,18 +2264,12 @@ contains
 public :ref:`RealmQuery <io_realm_RealmQuery>` contains (**String (?)** fieldName, **String (?)** value)
 
 Condition that value of field contains the specified substring.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the substring.
-   
-   
    
 
 Throws
@@ -2853,18 +2283,12 @@ contains
 public :ref:`RealmQuery <io_realm_RealmQuery>` contains (**String (?)** fieldName, **RealmAny (?)** value)
 
 Condition that value of field contains the specified substring.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the substring.
-   
-   
    
 
 Throws
@@ -2878,20 +2302,14 @@ contains
 public :ref:`RealmQuery <io_realm_RealmQuery>` contains (**String (?)** fieldName, **String (?)** value, :ref:`Case <io_realm_Case>` casing)
 
 Condition that value of field contains the specified substring.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the substring.
    
-   
-   
-- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)**only works for Latin-1 characters.
    
    
    
@@ -2907,20 +2325,14 @@ contains
 public :ref:`RealmQuery <io_realm_RealmQuery>` contains (**String (?)** fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
 
 Condition that value of field contains the specified substring.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the substring.
    
-   
-   
-- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)**only works for Latin-1 characters.
    
    
    
@@ -2936,18 +2348,12 @@ beginsWith
 public :ref:`RealmQuery <io_realm_RealmQuery>` beginsWith (**String (?)** fieldName, **String (?)** value)
 
 Condition that the value of field begins with the specified string.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the string.
-   
-   
    
 
 Throws
@@ -2961,18 +2367,12 @@ beginsWith
 public :ref:`RealmQuery <io_realm_RealmQuery>` beginsWith (**String (?)** fieldName, **RealmAny (?)** value)
 
 Condition that the value of field begins with the specified string.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the string.
-   
-   
    
 
 Throws
@@ -2986,20 +2386,14 @@ beginsWith
 public :ref:`RealmQuery <io_realm_RealmQuery>` beginsWith (**String (?)** fieldName, **String (?)** value, :ref:`Case <io_realm_Case>` casing)
 
 Condition that the value of field begins with the specified substring.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the substring.
    
-   
-   
-- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)**only works for Latin-1 characters.
    
    
    
@@ -3015,20 +2409,14 @@ beginsWith
 public :ref:`RealmQuery <io_realm_RealmQuery>` beginsWith (**String (?)** fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
 
 Condition that the value of field begins with the specified substring.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the substring.
    
-   
-   
-- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)**only works for Latin-1 characters.
    
    
    
@@ -3044,18 +2432,12 @@ endsWith
 public :ref:`RealmQuery <io_realm_RealmQuery>` endsWith (**String (?)** fieldName, **String (?)** value)
 
 Condition that the value of field ends with the specified string.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the string.
-   
-   
    
 
 Throws
@@ -3069,18 +2451,12 @@ endsWith
 public :ref:`RealmQuery <io_realm_RealmQuery>` endsWith (**String (?)** fieldName, **RealmAny (?)** value)
 
 Condition that the value of field ends with the specified string.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the string.
-   
-   
    
 
 Throws
@@ -3094,20 +2470,14 @@ endsWith
 public :ref:`RealmQuery <io_realm_RealmQuery>` endsWith (**String (?)** fieldName, **String (?)** value, :ref:`Case <io_realm_Case>` casing)
 
 Condition that the value of field ends with the specified substring.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the substring.
    
-   
-   
-- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)**only works for Latin-1 characters.
    
    
    
@@ -3123,20 +2493,14 @@ endsWith
 public :ref:`RealmQuery <io_realm_RealmQuery>` endsWith (**String (?)** fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
 
 Condition that the value of field ends with the specified substring.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the substring.
    
-   
-   
-- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)**only works for Latin-1 characters.
    
    
    
@@ -3151,9 +2515,7 @@ like
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` like (**String (?)** fieldName, **String (?)** value)
 
-Condition that the value of field matches with the specified substring, with wildcards:
-
-- '*' matches [0, n] unicode chars
+Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
    
    
 - '?' matches a single unicode char.
@@ -3166,11 +2528,7 @@ Parameters
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the wildcard string.
-   
-   
    
 
 Throws
@@ -3183,9 +2541,7 @@ like
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` like (**String (?)** fieldName, **RealmAny (?)** value)
 
-Condition that the value of field matches with the specified substring, with wildcards:
-
-- '*' matches [0, n] unicode chars
+Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
    
    
 - '?' matches a single unicode char.
@@ -3198,11 +2554,7 @@ Parameters
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the wildcard string.
-   
-   
    
 
 Throws
@@ -3215,9 +2567,7 @@ like
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` like (**String (?)** fieldName, **String (?)** value, :ref:`Case <io_realm_Case>` casing)
 
-Condition that the value of field matches with the specified substring, with wildcards:
-
-- '*' matches [0, n] unicode chars
+Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
    
    
 - '?' matches a single unicode char.
@@ -3230,13 +2580,9 @@ Parameters
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the wildcard string.
    
-   
-   
-- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)**only works for Latin-1 characters.
    
    
    
@@ -3251,9 +2597,7 @@ like
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` like (**String (?)** fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
 
-Condition that the value of field matches with the specified substring, with wildcards:
-
-- '*' matches [0, n] unicode chars
+Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
    
    
 - '?' matches a single unicode char.
@@ -3266,13 +2610,9 @@ Parameters
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the wildcard string.
    
-   
-   
-- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)** only works for Latin-1 characters.
+- casing - how to handle casing. Setting this to **Case#INSENSITIVE (?)**only works for Latin-1 characters.
    
    
    
@@ -3314,8 +2654,6 @@ or
 public :ref:`RealmQuery <io_realm_RealmQuery>` or ()
 
 Logical-or two conditions.
-
-
 .. _io_realm_RealmQuery_and____:
 
 and
@@ -3324,8 +2662,6 @@ and
 public :ref:`RealmQuery <io_realm_RealmQuery>` and ()
 
 Logical-and two conditions Realm automatically applies logical-and between all query statements, so this is intended only as a mean to increase readability.
-
-
 .. _io_realm_RealmQuery_not____:
 
 not
@@ -3334,8 +2670,6 @@ not
 public :ref:`RealmQuery <io_realm_RealmQuery>` not ()
 
 Negate condition.
-
-
 .. _io_realm_RealmQuery_isEmpty__String__:
 
 isEmpty
@@ -3344,14 +2678,10 @@ isEmpty
 public :ref:`RealmQuery <io_realm_RealmQuery>` isEmpty (**String (?)** fieldName)
 
 Condition that finds values that are considered "empty" i.e., an empty list, the 0-length string or byte array.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
-   
-   
    
 
 Throws
@@ -3365,14 +2695,10 @@ isNotEmpty
 public :ref:`RealmQuery <io_realm_RealmQuery>` isNotEmpty (**String (?)** fieldName)
 
 Condition that finds values that are considered "Not-empty" i.e., a list, a string or a byte array with not-empty values.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
-   
-   
    
 
 Throws
@@ -3386,18 +2712,12 @@ containsKey
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsKey (**String (?)** fieldName, **String (?)** key)
 
 Condition that value, if a dictionary field, contains the specified key.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - key - the key to search for.
-   
-   
    
 
 Throws
@@ -3411,18 +2731,12 @@ containsValue
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (**String (?)** fieldName, **Boolean (?)** value)
 
 Condition that value, if a dictionary field, contains the specified value.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to search for.
-   
-   
    
 
 Throws
@@ -3436,18 +2750,12 @@ containsValue
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (**String (?)** fieldName, **Byte (?)** value)
 
 Condition that value, if a dictionary field, contains the specified value.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to search for.
-   
-   
    
 
 Throws
@@ -3461,18 +2769,12 @@ containsValue
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (**String (?)** fieldName, **Short (?)** value)
 
 Condition that value, if a dictionary field, contains the specified value.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to search for.
-   
-   
    
 
 Throws
@@ -3486,18 +2788,12 @@ containsValue
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (**String (?)** fieldName, **Integer (?)** value)
 
 Condition that value, if a dictionary field, contains the specified value.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to search for
-   
-   
    
 
 Throws
@@ -3511,18 +2807,12 @@ containsValue
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (**String (?)** fieldName, **Long (?)** value)
 
 Condition that value, if a dictionary field, contains the specified value.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to search for.
-   
-   
    
 
 Throws
@@ -3536,18 +2826,12 @@ containsValue
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (**String (?)** fieldName, **Double (?)** value)
 
 Condition that value, if a dictionary field, contains the specified value.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to search for.
-   
-   
    
 
 Throws
@@ -3561,18 +2845,12 @@ containsValue
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (**String (?)** fieldName, **Float (?)** value)
 
 Condition that value, if a dictionary field, contains the specified value.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to search for.
-   
-   
    
 
 Throws
@@ -3586,18 +2864,12 @@ containsValue
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (**String (?)** fieldName, **String (?)** value)
 
 Condition that value, if a dictionary field, contains the specified value.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to search for.
-   
-   
    
 
 Throws
@@ -3611,18 +2883,12 @@ containsValue
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (**String (?)** fieldName, **byte[] (?)** value)
 
 Condition that value, if a dictionary field, contains the specified value.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to search for.
-   
-   
    
 
 Throws
@@ -3636,18 +2902,12 @@ containsValue
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (**String (?)** fieldName, **Date (?)** value)
 
 Condition that value, if a dictionary field, contains the specified value.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to search for.
-   
-   
    
 
 Throws
@@ -3661,18 +2921,12 @@ containsValue
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (**String (?)** fieldName, **Decimal128 (?)** value)
 
 Condition that value, if a dictionary field, contains the specified value.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to search for.
-   
-   
    
 
 Throws
@@ -3686,18 +2940,12 @@ containsValue
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (**String (?)** fieldName, **ObjectId (?)** value)
 
 Condition that value, if a dictionary field, contains the specified value.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to search for.
-   
-   
    
 
 Throws
@@ -3711,18 +2959,12 @@ containsValue
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (**String (?)** fieldName, **RealmAny (?)** value)
 
 Condition that value, if a dictionary field, contains the specified value.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - value - the value to search for.
-   
-   
    
 
 Throws
@@ -3736,18 +2978,12 @@ containsEntry
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsEntry (**String (?)** fieldName, **java.util.Map.Entry<java.lang.String, ?> (?)** entry)
 
 Condition that value, if a dictionary field, contains the specified entry.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to compare.
    
-   
-   
 - entry - the entry to search for.
-   
-   
    
 
 Throws
@@ -3761,14 +2997,10 @@ sum
 public **Number (?)** sum (**String (?)** fieldName)
 
 Calculates the sum of a given field.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to sum. Only number and RealmAny fields are supported.
-   
-   
    
 
 Throws
@@ -3782,14 +3014,10 @@ average
 public **double (?)** average (**String (?)** fieldName)
 
 Returns the average of a given field. Does not support dotted field notation.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to calculate average on. Only number fields are supported.
-   
-   
    
 
 Throws
@@ -3803,8 +3031,6 @@ averageDecimal128
 public **Decimal128 (?)** averageDecimal128 (**String (?)** fieldName)
 
 Returns the average of a given field. Does not support dotted field notation.
-
-
 Parameters
 ~~~~~~~~~~
 
@@ -3824,8 +3050,6 @@ averageRealmAny
 public **Decimal128 (?)** averageRealmAny (**String (?)** fieldName)
 
 Returns the average of a given field. Does not support dotted field notation.
-
-
 Parameters
 ~~~~~~~~~~
 
@@ -3845,14 +3069,10 @@ min
 public **Number (?)** min (**String (?)** fieldName)
 
 Finds the minimum value of a field.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to look for a minimum on. Only number fields are supported.
-   
-   
    
 
 Throws
@@ -3866,14 +3086,10 @@ minimumDate
 public **Date (?)** minimumDate (**String (?)** fieldName)
 
 Finds the minimum value of a field.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field name
-   
-   
    
 
 Throws
@@ -3886,15 +3102,13 @@ minRealmAny
 
 public **RealmAny (?)** minRealmAny (**String (?)** fieldName)
 
-Finds the minimum value of a **RealmAny (?)** field.
+Finds the minimum value of a **RealmAny (?)**field.
 
 
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field containing a RealmAny value.
-   
-   
    
 
 Throws
@@ -3908,14 +3122,10 @@ max
 public **Number (?)** max (**String (?)** fieldName)
 
 Finds the maximum value of a field.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field to look for a maximum on. Only number fields are supported.
-   
-   
    
 
 Throws
@@ -3929,14 +3139,10 @@ maximumDate
 public **Date (?)** maximumDate (**String (?)** fieldName)
 
 Finds the maximum value of a field.
-
-
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field name.
-   
-   
    
 
 Throws
@@ -3949,15 +3155,13 @@ maxRealmAny
 
 public **RealmAny (?)** maxRealmAny (**String (?)** fieldName)
 
-Finds the maximum value of a **RealmAny (?)** field.
+Finds the maximum value of a **RealmAny (?)**field.
 
 
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field containing a RealmAny value.
-   
-   
    
 
 Throws
@@ -3971,8 +3175,6 @@ count
 public **long (?)** count ()
 
 Counts the number of objects that fulfill the query conditions.
-
-
 Throws
 ~~~~~~
 
@@ -3983,9 +3185,7 @@ findAll
 
 public :ref:`RealmResults <io_realm_RealmResults>` findAll ()
 
-Finds all objects that fulfill the query conditions.
-
-Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so and therefore it is not allowed by default.** If you want to prevent these behaviors you can obtain a Realm using a **RealmConfiguration (?)** that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)** to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a **RealmException (?)**. Alternatively, you can use **#findAllAsync() (?)**.
+Finds all objects that fulfill the query conditions.Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so and therefore it is not allowed by default.**If you want to prevent these behaviors you can obtain a Realm using a **RealmConfiguration (?)**that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)**to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a **RealmException (?)**. Alternatively, you can use **#findAllAsync() (?)**.
 
 
 
@@ -4004,8 +3204,6 @@ findAllAsync
 public :ref:`RealmResults <io_realm_RealmResults>` findAllAsync ()
 
 Finds all objects that fulfill the query conditions. This method is only available from a Looper thread.
-
-
 See Also
 ~~~~~~~~
 
@@ -4016,17 +3214,13 @@ sort
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` sort (**String (?)** fieldName)
 
-Sorts the query result by the specific field name in ascending order.
-
-Sorting is currently limited to character sets in 'Latin Basic', 'Latin Supplement', 'Latin Extended A', 'Latin Extended B' (UTF-8 range 0-591). For other character sets, sorting will have no effect.
+Sorts the query result by the specific field name in ascending order.Sorting is currently limited to character sets in 'Latin Basic', 'Latin Supplement', 'Latin Extended A', 'Latin Extended B' (UTF-8 range 0-591). For other character sets, sorting will have no effect.
 
 
 Parameters
 ~~~~~~~~~~
 
 - fieldName - the field name to sort by.
-   
-   
    
 
 Throws
@@ -4039,9 +3233,7 @@ sort
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` sort (**String (?)** fieldName, :ref:`Sort <io_realm_Sort>` sortOrder)
 
-Sorts the query result by the specified field name and order.
-
-Sorting is currently limited to character sets in 'Latin Basic', 'Latin Supplement', 'Latin Extended A', 'Latin Extended B' (UTF-8 range 0-591). For other character sets, sorting will have no effect.
+Sorts the query result by the specified field name and order.Sorting is currently limited to character sets in 'Latin Basic', 'Latin Supplement', 'Latin Extended A', 'Latin Extended B' (UTF-8 range 0-591). For other character sets, sorting will have no effect.
 
 
 Parameters
@@ -4049,11 +3241,7 @@ Parameters
 
 - fieldName - the field name to sort by.
    
-   
-   
 - sortOrder - how to sort the results.
-   
-   
    
 
 Throws
@@ -4066,7 +3254,7 @@ sort
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` sort (**String (?)** fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, **String (?)** fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
 
-Sorts the query result by the specific field names in the provided orders. ``fieldName2`` is only used in case of equal values in ``fieldName1``.
+Sorts the query result by the specific field names in the provided orders. ``fieldName2``is only used in case of equal values in ``fieldName1``.
 
 Sorting is currently limited to character sets in 'Latin Basic', 'Latin Supplement', 'Latin Extended A', 'Latin Extended B' (UTF-8 range 0-591). For other character sets, sorting will have no effect.
 
@@ -4076,19 +3264,11 @@ Parameters
 
 - fieldName1 - first field name
    
-   
-   
 - sortOrder1 - sort order for first field
-   
-   
    
 - fieldName2 - second field name
    
-   
-   
 - sortOrder2 - sort order for second field
-   
-   
    
 
 Throws
@@ -4101,9 +3281,7 @@ sort
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` sort (**java.lang.String[] (?)** fieldNames, :ref:`io.realm.Sort[] <io_realm_Sort>` sortOrders)
 
-Sorts the query result by the specific field names in the provided orders. Later fields will only be used if the previous field values are equal.
-
-Sorting is currently limited to character sets in 'Latin Basic', 'Latin Supplement', 'Latin Extended A', 'Latin Extended B' (UTF-8 range 0-591). For other character sets, sorting will have no effect.
+Sorts the query result by the specific field names in the provided orders. Later fields will only be used if the previous field values are equal.Sorting is currently limited to character sets in 'Latin Basic', 'Latin Supplement', 'Latin Extended A', 'Latin Extended B' (UTF-8 range 0-591). For other character sets, sorting will have no effect.
 
 
 Parameters
@@ -4111,11 +3289,7 @@ Parameters
 
 - fieldNames - an array of field names to sort by.
    
-   
-   
 - sortOrders - how to sort the field names.
-   
-   
    
 
 Throws
@@ -4129,18 +3303,12 @@ distinct
 public :ref:`RealmQuery <io_realm_RealmQuery>` distinct (**String (?)** firstFieldName, **java.lang.String[] (?)** remainingFieldNames)
 
 Selects a distinct set of objects of a specific class. When multiple distinct fields are given, all unique combinations of values in the fields will be returned. In case of multiple matches, it is undefined which object is returned. Unless the result is sorted, then the first object will be returned.
-
-
 Parameters
 ~~~~~~~~~~
 
 - firstFieldName - first field name to use when finding distinct objects.
    
-   
-   
 - remainingFieldNames - remaining field names when determining all unique combinations of field values.
-   
-   
    
 
 Throws
@@ -4153,9 +3321,7 @@ limit
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` limit (**long (?)** limit)
 
-Limits the number of objects returned in case the query matched more objects.
-
-Note that when using this method in combination with **#sort(String) (?)** and **#distinct(String, String...) (?)** they will be executed in the order they where added which can affect the end result.
+Limits the number of objects returned in case the query matched more objects.Note that when using this method in combination with **#sort(String) (?)**and **#distinct(String, String...) (?)**they will be executed in the order they where added which can affect the end result.
 
 
 
@@ -4179,8 +3345,6 @@ alwaysTrue
 public :ref:`RealmQuery <io_realm_RealmQuery>` alwaysTrue ()
 
 This predicate will always match.
-
-
 .. _io_realm_RealmQuery_alwaysFalse____:
 
 alwaysFalse
@@ -4189,8 +3353,6 @@ alwaysFalse
 public :ref:`RealmQuery <io_realm_RealmQuery>` alwaysFalse ()
 
 This predicate will never match, resulting in the query always returning 0 results.
-
-
 .. _io_realm_RealmQuery_rawPredicate__String__Object_____:
 
 rawPredicate
@@ -4198,16 +3360,18 @@ rawPredicate
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` rawPredicate (**String (?)** predicate, **java.lang.Object[] (?)** arguments)
 
-Create a text-based predicate using the Realm Query Language. This predicate can be combined with other raw or type safe predicates, it accepts Realm values as arguments.
+Create a text-based predicate using the Realm Query Language. This predicate can be combined with other raw or type safe predicates, it accepts Realm values as arguments.Class and property names used in the raw predicate can be either the names defined in the Realm Model classes or the internal names defined using the **io.realm.annotations.RealmClass (?)**or **io.realm.annotations.RealmField (?)**annotations. If a class or property name contains spaces those must be escaped.
 
-Class and property names used in the raw predicate can be either the names defined in the Realm Model classes or the internal names defined using the **io.realm.annotations.RealmClass (?)** or **io.realm.annotations.RealmField (?)** annotations. If a class or property name contains spaces those must be escaped.
 
- Arguments are defined in the string predicate as $argument_index, where $argument_index is a decimal integer that specifies the position of the argument in the argument list. The first argument is referenced by $0, the second by $1, etc.
 
-See `these docs <https://docs.mongodb.com/realm-sdks/js/latest/tutorial-query-language.html>`__ for a more detailed description of the Realm Query Language.
+Arguments are defined in the string predicate as $argument_index, where $argument_index is a decimal integer that specifies the position of the argument in the argument list. The first argument is referenced by $0, the second by $1, etc.See `these docs <https://docs.mongodb.com/realm-sdks/js/latest/tutorial-query-language.html>`__ for a more detailed description of the Realm Query Language.
 
- Examples:
+Examples:
  
+
+.. code-block:: java
+
+   
     RealmQuery<Person> query = realm.where(Person.class);
    
     // Simple query
@@ -4232,7 +3396,8 @@ See `these docs <https://docs.mongodb.com/realm-sdks/js/latest/tutorial-query-la
     // Arguments
     query.rawPredicate("name = $0 AND age > $1", "Jane", 18);
     
- 
+
+
 
 
 Parameters
@@ -4240,11 +3405,7 @@ Parameters
 
 - predicate - a Realm Query Language predicate.
    
-   
-   
 - arguments - Realm values for the predicate.
-   
-   
    
 
 Throws
@@ -4257,9 +3418,9 @@ getRealm
 
 public :ref:`Realm <io_realm_Realm>` getRealm ()
 
-Returns the **Realm (?)** instance to which this query belongs.
+Returns the **Realm (?)**instance to which this query belongs.
 
-Calling **Realm#close() (?)** on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the query.
+Calling **Realm#close() (?)**on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the query.
 
 
 
@@ -4275,8 +3436,6 @@ getDescription
 public **String (?)** getDescription ()
 
 Returns a textual description of this query.
-
-
 .. _io_realm_RealmQuery_getTypeQueried____:
 
 getTypeQueried
@@ -4285,8 +3444,6 @@ getTypeQueried
 public **String (?)** getTypeQueried ()
 
 Returns the internal Realm name of the type being queried.
-
-
 .. _io_realm_RealmQuery_findFirst____:
 
 findFirst
@@ -4294,9 +3451,7 @@ findFirst
 
 public **E (?)** findFirst ()
 
-Finds the first object that fulfills the query conditions.
-
-Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so, but it is allowed by default.** If you want to prevent these behaviors you can obtain a Realm using a **RealmConfiguration (?)** that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)** to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a **RealmException (?)**. Alternatively, you can use **#findFirstAsync() (?)**.
+Finds the first object that fulfills the query conditions.Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so, but it is allowed by default.**If you want to prevent these behaviors you can obtain a Realm using a **RealmConfiguration (?)**that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)**to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a **RealmException (?)**. Alternatively, you can use **#findFirstAsync() (?)**.
 
 
 
@@ -4314,7 +3469,7 @@ findFirstAsync
 
 public **E (?)** findFirstAsync ()
 
-Similar to **#findFirst() (?)** but runs asynchronously on a worker thread. An listener should be registered to the returned **RealmObject (?)** to get the notification when query completes. The registered listener will also be triggered if there are changes made to the queried **RealmObject (?)**. If the **RealmObject (?)** is deleted, the listener will be called one last time and then stop. The query will not be re-run.
+Similar to **#findFirst() (?)**but runs asynchronously on a worker thread. An listener should be registered to the returned **RealmObject (?)**to get the notification when query completes. The registered listener will also be triggered if there are changes made to the queried **RealmObject (?)**. If the **RealmObject (?)**is deleted, the listener will be called one last time and then stop. The query will not be re-run.
 
 
 Throws

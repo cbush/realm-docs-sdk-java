@@ -31,15 +31,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **String (?)**
      - :ref:`getEmail <io_realm_mongodb_UserProfile_getEmail____>` ()
        
        Returns the email address of the user.
-       
-       
        
        
        
@@ -51,15 +47,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **String (?)**
      - :ref:`getFirstName <io_realm_mongodb_UserProfile_getFirstName____>` ()
        
        Return the first name of the user.
-       
-       
        
        
        
@@ -71,15 +63,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **String (?)**
      - :ref:`getGender <io_realm_mongodb_UserProfile_getGender____>` ()
        
        Returns the gender of the user.
-       
-       
        
        
        
@@ -91,15 +79,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **Long (?)**
      - :ref:`getMinAge <io_realm_mongodb_UserProfile_getMinAge____>` ()
        
        Returns the minimum age of the user.
-       
-       
        
        
        
@@ -111,13 +95,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`User <io_realm_mongodb_User>`
      - :ref:`getUser <io_realm_mongodb_UserProfile_getUser____>` ()
        
-       Returns the **User (?)** that this instance in associated with.
+       Returns the **User (?)**that this instance in associated with.
        
        
        
@@ -160,8 +142,6 @@ getName
 public **String (?)** getName ()
 
 Returns the name of the user.
-
-
 .. _io_realm_mongodb_UserProfile_getEmail____:
 
 getEmail
@@ -170,8 +150,6 @@ getEmail
 public **String (?)** getEmail ()
 
 Returns the email address of the user.
-
-
 .. _io_realm_mongodb_UserProfile_getPictureUrl____:
 
 getPictureUrl
@@ -180,8 +158,6 @@ getPictureUrl
 public **String (?)** getPictureUrl ()
 
 Returns the picture URL of the user.
-
-
 .. _io_realm_mongodb_UserProfile_getFirstName____:
 
 getFirstName
@@ -190,8 +166,6 @@ getFirstName
 public **String (?)** getFirstName ()
 
 Return the first name of the user.
-
-
 .. _io_realm_mongodb_UserProfile_getLastName____:
 
 getLastName
@@ -200,8 +174,6 @@ getLastName
 public **String (?)** getLastName ()
 
 Return the last name of the user.
-
-
 .. _io_realm_mongodb_UserProfile_getGender____:
 
 getGender
@@ -210,8 +182,6 @@ getGender
 public **String (?)** getGender ()
 
 Returns the gender of the user.
-
-
 .. _io_realm_mongodb_UserProfile_getBirthday____:
 
 getBirthday
@@ -220,8 +190,6 @@ getBirthday
 public **String (?)** getBirthday ()
 
 Returns the birthday of the user.
-
-
 .. _io_realm_mongodb_UserProfile_getMinAge____:
 
 getMinAge
@@ -230,8 +198,6 @@ getMinAge
 public **Long (?)** getMinAge ()
 
 Returns the minimum age of the user.
-
-
 .. _io_realm_mongodb_UserProfile_getMaxAge____:
 
 getMaxAge
@@ -240,8 +206,6 @@ getMaxAge
 public **Long (?)** getMaxAge ()
 
 Returns the maximum age of the user.
-
-
 .. _io_realm_mongodb_UserProfile_getUser____:
 
 getUser
@@ -249,7 +213,7 @@ getUser
 
 public :ref:`User <io_realm_mongodb_User>` getUser ()
 
-Returns the **User (?)** that this instance in associated with.
+Returns the **User (?)**that this instance in associated with.
 
 
 .. _io_realm_mongodb_UserProfile_toString____:

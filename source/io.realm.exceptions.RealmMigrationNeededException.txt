@@ -36,8 +36,6 @@ Method Summary
        
        
        
-       
-       
    
    
 Method Detail
@@ -50,9 +48,7 @@ getPath
 
 public **String (?)** getPath ()
 
-Returns the canonical path to the Realm file that needs to be migrated.
-
-This can be used for easy reference during a migration:
+Returns the canonical path to the Realm file that needs to be migrated.This can be used for easy reference during a migration:
 
 
 See Also

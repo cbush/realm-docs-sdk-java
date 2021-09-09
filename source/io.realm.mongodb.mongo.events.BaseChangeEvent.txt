@@ -15,8 +15,6 @@ io.realm.mongodb.mongo.events.BaseChangeEvent<DocumentT>
 - **java.lang.Object (?)**
 
 Represents the set of properties that exist on all MongoDB realm change events produced by watch streams in this SDK. Other change event types inherit from this type.
-
-
 Constructors
 ============
 
@@ -51,15 +49,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **DocumentT (?)**
      - :ref:`getFullDocument <io_realm_mongodb_mongo_events_BaseChangeEvent_getFullDocument____>` ()
        
        The full document at some point after the change has been applied.
-       
-       
        
        
        
@@ -71,15 +65,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`UpdateDescription <io_realm_mongodb_mongo_events_UpdateDescription>`
      - :ref:`getUpdateDescription <io_realm_mongodb_mongo_events_BaseChangeEvent_getUpdateDescription____>` ()
        
        In the case of an update, the description of which fields have been added, removed or updated.
-       
-       
        
        
        
@@ -91,15 +81,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public abstract **BsonDocument (?)**
      - :ref:`toBsonDocument <io_realm_mongodb_mongo_events_BaseChangeEvent_toBsonDocument____>` ()
        
        Converts the change event to a BSON representation, as it would look on a MongoDB realm change stream, or a Realm compact watch stream.
-       
-       
        
        
        
@@ -116,8 +102,6 @@ getOperationType
 public :ref:`BaseChangeEvent.OperationType <io_realm_mongodb_mongo_events_BaseChangeEvent_OperationType>` getOperationType ()
 
 Returns the operation type of the change that triggered the change event.
-
-
 .. _io_realm_mongodb_mongo_events_BaseChangeEvent_getFullDocument____:
 
 getFullDocument
@@ -126,8 +110,6 @@ getFullDocument
 public **DocumentT (?)** getFullDocument ()
 
 The full document at some point after the change has been applied.
-
-
 .. _io_realm_mongodb_mongo_events_BaseChangeEvent_getDocumentKey____:
 
 getDocumentKey
@@ -136,8 +118,6 @@ getDocumentKey
 public **BsonDocument (?)** getDocumentKey ()
 
 The unique identifier for the document that was actually changed.
-
-
 .. _io_realm_mongodb_mongo_events_BaseChangeEvent_getUpdateDescription____:
 
 getUpdateDescription
@@ -146,8 +126,6 @@ getUpdateDescription
 public :ref:`UpdateDescription <io_realm_mongodb_mongo_events_UpdateDescription>` getUpdateDescription ()
 
 In the case of an update, the description of which fields have been added, removed or updated.
-
-
 .. _io_realm_mongodb_mongo_events_BaseChangeEvent_hasUncommittedWrites____:
 
 hasUncommittedWrites
@@ -156,8 +134,6 @@ hasUncommittedWrites
 public **boolean (?)** hasUncommittedWrites ()
 
 Indicates a local change event that has not yet been synchronized with a remote data store. Used only for the sync use case.
-
-
 .. _io_realm_mongodb_mongo_events_BaseChangeEvent_toBsonDocument____:
 
 toBsonDocument
@@ -166,6 +142,4 @@ toBsonDocument
 public abstract **BsonDocument (?)** toBsonDocument ()
 
 Converts the change event to a BSON representation, as it would look on a MongoDB realm change stream, or a Realm compact watch stream.
-
-
 

@@ -15,8 +15,6 @@ io.realm.mongodb.mongo.result.DeleteResult
 - **java.lang.Object (?)**
 
 The result of a delete operation.
-
-
 Constructors
 ============
 
@@ -38,8 +36,6 @@ Method Summary
        
        
        
-       
-       
    
    
 Method Detail
@@ -53,6 +49,4 @@ getDeletedCount
 public **long (?)** getDeletedCount ()
 
 Gets the number of documents deleted.
-
-
 

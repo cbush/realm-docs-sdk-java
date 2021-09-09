@@ -33,15 +33,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`Credentials.Provider <io_realm_mongodb_Credentials_Provider>`
      - :ref:`getProvider <io_realm_mongodb_UserIdentity_getProvider____>` ()
        
        Returns the provider defining this identity.
-       
-       
        
        
        
@@ -82,8 +78,6 @@ getId
 public **String (?)** getId ()
 
 Returns a unique identifier for this identity.
-
-
 .. _io_realm_mongodb_UserIdentity_getProvider____:
 
 getProvider
@@ -92,8 +86,6 @@ getProvider
 public :ref:`Credentials.Provider <io_realm_mongodb_Credentials_Provider>` getProvider ()
 
 Returns the provider defining this identity.
-
-
 .. _io_realm_mongodb_UserIdentity_equals__Object__:
 
 equals

@@ -14,9 +14,7 @@ io.realm.RealmSchema
 
 - **java.lang.Object (?)**
 
-Class for interacting with the Realm schema. This makes it possible to inspect, add, delete and change the classes in the Realm.
-
-**Realm#getSchema() (?)** returns an immutable ``RealmSchema`` which can only be used for inspecting. Use **DynamicRealm#getSchema() (?)** to get a mutable schema.
+Class for interacting with the Realm schema. This makes it possible to inspect, add, delete and change the classes in the Realm.**Realm#getSchema() (?)**returns an immutable ``RealmSchema``which can only be used for inspecting. Use **DynamicRealm#getSchema() (?)**to get a mutable schema.
 
 
 
@@ -35,7 +33,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`get <io_realm_RealmSchema_get__String__>` (**String (?)** className)
        
-       Returns the **RealmObjectSchema (?)** for a given class.
+       Returns the **RealmObjectSchema (?)**for a given class.
        
        
        
@@ -59,15 +57,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`createWithPrimaryKeyField <io_realm_RealmSchema_createWithPrimaryKeyField__String__String__Class_____FieldAttribute_____>` (**String (?)** className, **String (?)** primaryKeyFieldName, **java.lang.Class<?> (?)** fieldType, :ref:`io.realm.FieldAttribute[] <io_realm_FieldAttribute>` attributes)
        
        Adds a new class to the Realm with a primary key field defined.
-       
-       
        
        
        
@@ -79,8 +73,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`rename <io_realm_RealmSchema_rename__String__String__>` (**String (?)** oldClassName, **String (?)** newClassName)
@@ -89,15 +81,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **boolean (?)**
      - :ref:`contains <io_realm_RealmSchema_contains__String__>` (**String (?)** className)
        
        Checks if a given class already exists in the schema.
-       
-       
        
        
        
@@ -117,8 +105,6 @@ Method Summary
        
        
        
-       
-       
    
    
 Method Detail
@@ -131,15 +117,13 @@ get
 
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` get (**String (?)** className)
 
-Returns the **RealmObjectSchema (?)** for a given class. If this **RealmSchema (?)** is immutable, an immutable **RealmObjectSchema (?)** will be returned. Otherwise, it returns an mutable **RealmObjectSchema (?)**.
+Returns the **RealmObjectSchema (?)**for a given class. If this **RealmSchema (?)**is immutable, an immutable **RealmObjectSchema (?)**will be returned. Otherwise, it returns an mutable **RealmObjectSchema (?)**.
 
 
 Parameters
 ~~~~~~~~~~
 
 - className - name of the class
-   
-   
    
 
 .. _io_realm_RealmSchema_getAll____:
@@ -149,7 +133,7 @@ getAll
 
 public abstract **Set (?)** getAll ()
 
-Returns the **RealmObjectSchema (?)**s for all RealmObject classes that can be saved in this Realm. If this **RealmSchema (?)** is immutable, an immutable **RealmObjectSchema (?)** set will be returned. Otherwise, it returns an mutable **RealmObjectSchema (?)** set.
+Returns the **RealmObjectSchema (?)**s for all RealmObject classes that can be saved in this Realm. If this **RealmSchema (?)**is immutable, an immutable **RealmObjectSchema (?)**set will be returned. Otherwise, it returns an mutable **RealmObjectSchema (?)**set.
 
 
 .. _io_realm_RealmSchema_create__String__:
@@ -160,14 +144,10 @@ create
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` create (**String (?)** className)
 
 Adds a new class to the Realm.
-
-
 Parameters
 ~~~~~~~~~~
 
 - className - name of the class.
-   
-   
    
 
 Throws
@@ -181,24 +161,18 @@ createWithPrimaryKeyField
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` createWithPrimaryKeyField (**String (?)** className, **String (?)** primaryKeyFieldName, **java.lang.Class<?> (?)** fieldType, :ref:`io.realm.FieldAttribute[] <io_realm_FieldAttribute>` attributes)
 
 Adds a new class to the Realm with a primary key field defined.
-
-
 Parameters
 ~~~~~~~~~~
 
 - className - name of the class.
    
-   
-   
 - primaryKeyFieldName - name of the primary key field.
    
-   
-   
-- fieldType - type of field to add. Only ``byte``, ``short``, ``int``, ``long`` and their boxed types or the ``String`` is supported.
+- fieldType - type of field to add. Only ``byte``, ``short``, ``int``, ``long``and their boxed types or the ``String``is supported.
    
    
    
-- attributes - set of attributes for this field. This method implicitly adds **FieldAttribute#PRIMARY_KEY (?)** and **FieldAttribute#INDEXED (?)** attributes to the field.
+- attributes - set of attributes for this field. This method implicitly adds **FieldAttribute#PRIMARY_KEY (?)**and **FieldAttribute#INDEXED (?)**attributes to the field.
    
    
    
@@ -221,8 +195,6 @@ Parameters
 
 - className - name of the class to remove.
    
-   
-   
 
 Throws
 ~~~~~~
@@ -235,18 +207,12 @@ rename
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` rename (**String (?)** oldClassName, **String (?)** newClassName)
 
 Renames a class already in the Realm.
-
-
 Parameters
 ~~~~~~~~~~
 
 - oldClassName - old class name.
    
-   
-   
 - newClassName - new class name.
-   
-   
    
 
 Throws
@@ -260,14 +226,10 @@ contains
 public **boolean (?)** contains (**String (?)** className)
 
 Checks if a given class already exists in the schema.
-
-
 Parameters
 ~~~~~~~~~~
 
 - className - class name to check.
-   
-   
    
 
 .. _io_realm_RealmSchema_getColumnInfo__String__:
@@ -286,6 +248,4 @@ createKeyPathMapping
 public **void (?)** createKeyPathMapping ()
 
 Create the underlying keypath mapping. Should only be called by typed Realms.
-
-
 

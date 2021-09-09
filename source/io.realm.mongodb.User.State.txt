@@ -15,8 +15,6 @@ io.realm.mongodb.User.State
 - **java.lang.Enum (?)**
 
 The user's potential states.
-
-
 Method Summary
 ==============
 

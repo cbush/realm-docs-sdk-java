@@ -15,8 +15,6 @@ io.realm.Realm.Transaction.Callback
 - **java.lang.Object (?)**
 
 Callback invoked to notify the caller thread.
-
-
 Constructors
 ============
 

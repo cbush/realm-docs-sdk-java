@@ -16,5 +16,3 @@ io.realm.annotations.RealmField
 
 Annotation used on fields in Realm model classes. It describes metadata about the field.
 
-
-

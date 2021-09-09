@@ -15,8 +15,6 @@ io.realm.mongodb.mongo.result.InsertOneResult
 - **java.lang.Object (?)**
 
 The result of an insert one operation.
-
-
 Constructors
 ============
 
@@ -38,8 +36,6 @@ Method Summary
        
        
        
-       
-       
    
    
 Method Detail
@@ -53,6 +49,4 @@ getInsertedId
 public **BsonValue (?)** getInsertedId ()
 
 Returns the _id of the inserted document.
-
-
 

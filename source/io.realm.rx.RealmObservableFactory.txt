@@ -19,8 +19,6 @@ io.realm.rx.RealmObservableFactory
 - :ref:`io.realm.rx.RxObservableFactory <io_realm_rx_RxObservableFactory>`
 
 Factory class for creating Observables for RxJava (<=2.0.*).
-
-
 Constructors
 ============
 

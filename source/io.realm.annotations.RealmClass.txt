@@ -16,5 +16,3 @@ io.realm.annotations.RealmClass
 
 Interface used to mark a class that can be persisted by Realm.
 
-
-

@@ -14,9 +14,7 @@ io.realm.annotations.Index
 
 - **java.lang.annotation.Annotation (?)**
 
-This annotation will add a search index to the field. A search index will make the Realm file larger and inserts slower but queries will be faster.
-
-NOTICE: Only String, int, byte, short, long, boolean and Date fields can be indexed.
+This annotation will add a search index to the field. A search index will make the Realm file larger and inserts slower but queries will be faster.NOTICE: Only String, int, byte, short, long, boolean and Date fields can be indexed.
 
 
 

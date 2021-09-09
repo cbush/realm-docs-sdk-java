@@ -11,8 +11,6 @@ io.realm.rx.RxObservableFactory
 .. _io_realm_rx_RxObservableFactory:
 
 Factory interface for creating Rx Observables for Realm classes.
-
-
 Method Summary
 ==============
 
@@ -201,7 +199,7 @@ Realm flowables are hot as Realms are automatically kept up to date.
 Parameters
 ~~~~~~~~~~
 
-- realm - **Realm (?)** to listen to changes for.
+- realm - **Realm (?)**to listen to changes for.
    
    
    
@@ -221,7 +219,7 @@ DynamicRealm observables are hot as DynamicRealms are automatically kept up to d
 Parameters
 ~~~~~~~~~~
 
-- realm - **DynamicRealm (?)** to listen to changes for.
+- realm - **DynamicRealm (?)**to listen to changes for.
    
    
    
@@ -243,17 +241,15 @@ Type Parameters
 
 - E - type of RealmObject
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
-- results - **RealmResults (?)** to listen to changes for.
+- results - **RealmResults (?)**to listen to changes for.
    
    
    
-- realm - **Realm (?)** instance results are coming from.
+- realm - **Realm (?)**instance results are coming from.
    
    
    
@@ -265,7 +261,7 @@ changesetsFrom
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
 
-Creates an Observable for a **RealmResults (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults it should emit the RealmResults + the **OrderedCollectionChangeSet (?)** that describes the update.
+Creates an Observable for a **RealmResults (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults it should emit the RealmResults + the **OrderedCollectionChangeSet (?)**that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefor be left to users.
 
@@ -275,17 +271,15 @@ Type Parameters
 
 - E - type of RealmObject
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
-- results - **RealmResults (?)** to listen to changes for.
+- results - **RealmResults (?)**to listen to changes for.
    
    
    
-- realm - **Realm (?)** instance results are coming from.
+- realm - **Realm (?)**instance results are coming from.
    
    
    
@@ -305,11 +299,11 @@ Realm observables are hot as RealmResults are automatically kept up to date.
 Parameters
 ~~~~~~~~~~
 
-- results - **RealmResults (?)** to listen to changes for.
+- results - **RealmResults (?)**to listen to changes for.
    
    
    
-- realm - **DynamicRealm (?)** instance results are coming from.
+- realm - **DynamicRealm (?)**instance results are coming from.
    
    
    
@@ -321,7 +315,7 @@ changesetsFrom
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
 
-Creates an Observable for a **RealmResults (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults it should emit the RealmResults + the **OrderedCollectionChangeSet (?)** that describes the update.
+Creates an Observable for a **RealmResults (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults it should emit the RealmResults + the **OrderedCollectionChangeSet (?)**that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefor be left to users.
 
@@ -329,11 +323,11 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 ~~~~~~~~~~
 
-- results - **RealmResults (?)** to listen to changes for.
+- results - **RealmResults (?)**to listen to changes for.
    
    
    
-- realm - **Realm (?)** instance results are coming from.
+- realm - **Realm (?)**instance results are coming from.
    
    
    
@@ -349,7 +343,7 @@ Creates an Observable for a **RealmList (?)**. It should emit the initial list w
 
 RealmList observables are hot as RealmLists are automatically kept up to date.
 
-Note: **io.realm.RealmChangeListener (?)** is currently not supported on RealmLists.
+Note: **io.realm.RealmChangeListener (?)**is currently not supported on RealmLists.
 
 
 
@@ -359,17 +353,13 @@ Type Parameters
 
 - E - type of query target
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
 - list - RealmObject to listen to changes for.
    
-   
-   
-- realm - **Realm (?)** instance list is coming from.
+- realm - **Realm (?)**instance list is coming from.
    
    
    
@@ -381,7 +371,7 @@ changesetsFrom
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 
-Creates an Observable for a **RealmList (?)**. It should emit the initial RealmList when subscribed to and on each subsequent update of the RealmIst it should emit the RealmList + the **OrderedCollectionChangeSet (?)** that describes the update.
+Creates an Observable for a **RealmList (?)**. It should emit the initial RealmList when subscribed to and on each subsequent update of the RealmIst it should emit the RealmList + the **OrderedCollectionChangeSet (?)**that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefor be left to users.
 
@@ -391,17 +381,15 @@ Type Parameters
 
 - E - type of RealmObject
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
-- list - **RealmList (?)** to listen to changes for.
+- list - **RealmList (?)**to listen to changes for.
    
    
    
-- realm - **Realm (?)** instance list is coming from.
+- realm - **Realm (?)**instance list is coming from.
    
    
    
@@ -417,7 +405,7 @@ Creates a Flowable for a **RealmList (?)**. It should emit the initial list when
 
 RealmList observables are hot as RealmLists are automatically kept up to date.
 
-Note: **io.realm.RealmChangeListener (?)** is currently not supported on RealmLists.
+Note: **io.realm.RealmChangeListener (?)**is currently not supported on RealmLists.
 
 
 
@@ -427,9 +415,7 @@ Parameters
 
 - list - RealmList to listen to changes for.
    
-   
-   
-- realm - **DynamicRealm (?)** instance list is coming from.
+- realm - **DynamicRealm (?)**instance list is coming from.
    
    
    
@@ -441,7 +427,7 @@ changesetsFrom
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 
-Creates an Observable for a **RealmList (?)**. It should emit the initial RealmList when subscribed to and on each subsequent update of the RealmList it should emit the RealmList + the **OrderedCollectionChangeSet (?)** that describes the update.
+Creates an Observable for a **RealmList (?)**. It should emit the initial RealmList when subscribed to and on each subsequent update of the RealmList it should emit the RealmList + the **OrderedCollectionChangeSet (?)**that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefor be left to users.
 
@@ -449,11 +435,11 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 ~~~~~~~~~~
 
-- list - **RealmList (?)** to listen to changes for.
+- list - **RealmList (?)**to listen to changes for.
    
    
    
-- realm - **Realm (?)** instance list is coming from.
+- realm - **Realm (?)**instance list is coming from.
    
    
    
@@ -475,17 +461,13 @@ Type Parameters
 
 - E - type of query target
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
 - object - RealmObject to listen to changes for.
    
-   
-   
-- realm - **Realm (?)** instance object is coming from.
+- realm - **Realm (?)**instance object is coming from.
    
    
    
@@ -497,7 +479,7 @@ changesetsFrom
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, **E (?)** object)
 
-Creates an Observable for a **RealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object + the **io.realm.ObjectChangeSet (?)** that describes the update.
+Creates an Observable for a **RealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object + the **io.realm.ObjectChangeSet (?)**that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefore be left to the user.
 
@@ -507,17 +489,13 @@ Type Parameters
 
 - E - type of RealmObject
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
 - object - RealmObject to listen to changes for.
    
-   
-   
-- realm - **Realm (?)** instance object is coming from.
+- realm - **Realm (?)**instance object is coming from.
    
    
    
@@ -539,9 +517,7 @@ Parameters
 
 - object - DynamicRealmObject to listen to changes for.
    
-   
-   
-- realm - **DynamicRealm (?)** instance object is coming from.
+- realm - **DynamicRealm (?)**instance object is coming from.
    
    
    
@@ -553,7 +529,7 @@ changesetsFrom
 
 public **<any> (?)** changesetsFrom (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object)
 
-Creates an Observable for a **RealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object + the **io.realm.ObjectChangeSet (?)** that describes the update.
+Creates an Observable for a **RealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object + the **io.realm.ObjectChangeSet (?)**that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefore be left to the user.
 
@@ -563,9 +539,7 @@ Parameters
 
 - object - RealmObject to listen to changes for.
    
-   
-   
-- realm - **Realm (?)** instance object is coming from.
+- realm - **Realm (?)**instance object is coming from.
    
    
    
@@ -587,17 +561,13 @@ Type Parameters
 
 - E - type of query target
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
 - query - RealmQuery to emit.
    
-   
-   
-- realm - **Realm (?)** instance query is coming from.
+- realm - **Realm (?)**instance query is coming from.
    
    
    
@@ -619,9 +589,7 @@ Parameters
 
 - query - RealmObject to listen to changes for.
    
-   
-   
-- realm - **DynamicRealm (?)** instance query is coming from.
+- realm - **DynamicRealm (?)**instance query is coming from.
    
    
    

@@ -15,8 +15,6 @@ io.realm.OrderedCollectionChangeSet.State
 - **java.lang.Enum (?)**
 
 State describing the nature of the changeset.
-
-
 Method Summary
 ==============
 

@@ -24,11 +24,11 @@ Only Realm can create managed RealmLists. Managed RealmLists will automatically 
 
 
 
-Unmanaged RealmLists can be created by the user and can contain both managed and unmanaged RealmObjects. This is useful when dealing with JSON deserializers like GSON or other frameworks that inject values into a class. Unmanaged elements in this list can be added to a Realm using the **Realm#copyToRealm(Iterable, ImportFlag...) (?)** method.
+Unmanaged RealmLists can be created by the user and can contain both managed and unmanaged RealmObjects. This is useful when dealing with JSON deserializers like GSON or other frameworks that inject values into a class. Unmanaged elements in this list can be added to a Realm using the **Realm#copyToRealm(Iterable, ImportFlag...) (?)**method.
 
 
 
-**RealmList (?)** can contain more elements than ``Integer.MAX_VALUE``. In that case, you can access only first ``Integer.MAX_VALUE`` elements in it.
+**RealmList (?)**can contain more elements than ``Integer.MAX_VALUE``. In that case, you can access only first ``Integer.MAX_VALUE``elements in it.
 
 
 
@@ -128,15 +128,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **boolean (?)**
      - :ref:`add <io_realm_RealmList_add__E__>` (**E (?)** object)
        
        Adds the specified object at the end of this List.
-       
-       
        
        
        
@@ -148,15 +144,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **void (?)**
      - :ref:`move <io_realm_RealmList_move__int__int__>` (**int (?)** oldPos, **int (?)** newPos)
        
        Moves an object from one position to another, while maintaining a fixed sized list.
-       
-       
        
        
        
@@ -168,8 +160,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public **E (?)**
      - :ref:`remove <io_realm_RealmList_remove__int__>` (**int (?)** location)
@@ -178,13 +168,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **boolean (?)**
      - :ref:`remove <io_realm_RealmList_remove__Object__>` (**Object (?)** object)
        
-       Removes one instance of the specified object from this ``Collection`` if one is contained.
+       Removes one instance of the specified object from this ``Collection``if one is contained.
        
        
        
@@ -194,7 +182,7 @@ Method Summary
    * - public **boolean (?)**
      - :ref:`removeAll <io_realm_RealmList_removeAll__Collection_____>` (**java.util.Collection<?> (?)** collection)
        
-       Removes all occurrences in this ``Collection`` of each object in the specified ``Collection``.
+       Removes all occurrences in this ``Collection``of each object in the specified ``Collection``.
        
        
        
@@ -225,8 +213,6 @@ Method Summary
      - :ref:`get <io_realm_RealmList_get__int__>` (**int (?)** location)
        
        Returns the element at the specified location in this list.
-       
-       
        
        
        
@@ -338,8 +324,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public **Number (?)**
      - :ref:`min <io_realm_RealmList_min__String__>` (**String (?)** fieldName)
@@ -434,7 +418,7 @@ Method Summary
    * - public **boolean (?)**
      - :ref:`contains <io_realm_RealmList_contains__Object__>` (**Object (?)** object)
        
-       Returns ``true`` if the list contains the specified element when attached to a Realm.
+       Returns ``true``if the list contains the specified element when attached to a Realm.
        
        
        
@@ -484,7 +468,7 @@ Method Summary
    * - public :ref:`Realm <io_realm_Realm>`
      - :ref:`getRealm <io_realm_RealmList_getRealm____>` ()
        
-       Returns the **Realm (?)** instance to which this collection belongs.
+       Returns the **Realm (?)**instance to which this collection belongs.
        
        
        
@@ -506,15 +490,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **<any> (?)**
      - :ref:`asChangesetObservable <io_realm_RealmList_asChangesetObservable____>` ()
        
        Returns an Rx Observable that monitors changes to this RealmList.
-       
-       
        
        
        
@@ -536,8 +516,6 @@ Method Summary
        
        
        
-       
-       
    
    * - public **void (?)**
      - :ref:`addChangeListener <io_realm_RealmList_addChangeListener__RealmChangeListener_RealmList_E____>` (:ref:`io.realm.RealmChangeListener\<io.realm.RealmList\<E>> <io_realm_RealmChangeListener>` listener)
@@ -556,15 +534,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public **void (?)**
      - :ref:`removeAllChangeListeners <io_realm_RealmList_removeAllChangeListeners____>` ()
        
        Removes all user-defined change listeners.
-       
-       
        
        
        
@@ -590,7 +564,7 @@ className
 baseRealm
 ---------
 
-The **BaseRealm (?)** instance in which this list resides.
+The **BaseRealm (?)**instance in which this list resides.
 
 Warning: This field is only exposed for internal usage, and should not be used.
 
@@ -645,14 +619,12 @@ add
 
 public **void (?)** add (**int (?)** location, **E (?)** element)
 
-Inserts the specified object into this List at the specified location. The object is inserted before any previous element at the specified location. If the location is equal to the size of this List, the object is added at the end.
-
-1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** afterwards.
+Inserts the specified object into this List at the specified location. The object is inserted before any previous element at the specified location. If the location is equal to the size of this List, the object is added at the end.1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)**afterwards.
    
    
    
    
-#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** or **Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** if it has a primary key.
+#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)**or **Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)**if it has a primary key.
    
    
    
@@ -664,11 +636,7 @@ Parameters
 
 - location - the index at which to insert.
    
-   
-   
 - element - the element to add.
-   
-   
    
 
 Throws
@@ -681,14 +649,12 @@ add
 
 public **boolean (?)** add (**E (?)** object)
 
-Adds the specified object at the end of this List.
-
-1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** afterwards.
+Adds the specified object at the end of this List.1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)**afterwards.
    
    
    
    
-#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** or **Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** if it has a primary key.
+#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)**or **Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)**if it has a primary key.
    
    
    
@@ -699,8 +665,6 @@ Parameters
 ~~~~~~~~~~
 
 - object - the object to add.
-   
-   
    
 
 Throws
@@ -713,14 +677,12 @@ set
 
 public **E (?)** set (**int (?)** location, **E (?)** object)
 
-Replaces the element at the specified location in this list with the specified object.
-
-1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** afterwards.
+Replaces the element at the specified location in this list with the specified object.1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)**afterwards.
    
    
    
    
-#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** or **Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** if it has a primary key.
+#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)**or **Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)**if it has a primary key.
    
    
    
@@ -732,11 +694,7 @@ Parameters
 
 - location - the index at which to put the specified object.
    
-   
-   
 - object - the object to add.
-   
-   
    
 
 Throws
@@ -749,7 +707,7 @@ move
 
 public **void (?)** move (**int (?)** oldPos, **int (?)** newPos)
 
-Moves an object from one position to another, while maintaining a fixed sized list. RealmObjects will be shifted so no ``null`` values are introduced.
+Moves an object from one position to another, while maintaining a fixed sized list. RealmObjects will be shifted so no ``null``values are introduced.
 
 
 Parameters
@@ -757,11 +715,7 @@ Parameters
 
 - oldPos - index of RealmObject to move.
    
-   
-   
 - newPos - target position. If newPos < oldPos the object at the location will be shifted to the right. If oldPos < newPos, indexes > oldPos will be shifted once to the left.
-   
-   
    
 
 Throws
@@ -775,8 +729,6 @@ clear
 public **void (?)** clear ()
 
 Removes all elements from this list, leaving it empty. This method doesn't remove the objects from the Realm.
-
-
 Throws
 ~~~~~~
 
@@ -791,14 +743,10 @@ remove
 public **E (?)** remove (**int (?)** location)
 
 Removes the object at the specified location from this list.
-
-
 Parameters
 ~~~~~~~~~~
 
 - location - the index of the object to remove.
-   
-   
    
 
 Throws
@@ -811,15 +759,13 @@ remove
 
 public **boolean (?)** remove (**Object (?)** object)
 
-Removes one instance of the specified object from this ``Collection`` if one is contained. This implementation iterates over this ``Collection`` and tests each element ``e`` returned by the iterator, whether ``e`` is equal to the given object. If ``object != null`` then this test is performed using ``object.equals(e)``, otherwise using ``object == null``. If an element equal to the given object is found, then the ``remove`` method is called on the iterator and ``true`` is returned, ``false`` otherwise. If the iterator does not support removing elements, an ``UnsupportedOperationException`` is thrown.
+Removes one instance of the specified object from this ``Collection``if one is contained. This implementation iterates over this ``Collection``and tests each element ``e``returned by the iterator, whether ``e``is equal to the given object. If ``object != null``then this test is performed using ``object.equals(e)``, otherwise using ``object == null``. If an element equal to the given object is found, then the ``remove``method is called on the iterator and ``true``is returned, ``false``otherwise. If the iterator does not support removing elements, an ``UnsupportedOperationException``is thrown.
 
 
 Parameters
 ~~~~~~~~~~
 
 - object - the object to remove.
-   
-   
    
 
 Throws
@@ -832,9 +778,9 @@ removeAll
 
 public **boolean (?)** removeAll (**java.util.Collection<?> (?)** collection)
 
-Removes all occurrences in this ``Collection`` of each object in the specified ``Collection``. After this method returns none of the elements in the passed ``Collection`` can be found in this ``Collection`` anymore.
+Removes all occurrences in this ``Collection``of each object in the specified ``Collection``. After this method returns none of the elements in the passed ``Collection``can be found in this ``Collection``anymore.
 
-This implementation iterates over the ``Collection`` and tests each element ``e`` returned by the iterator, whether it is contained in the specified ``Collection``. If this test is positive, then the ``remove`` method is called on the iterator.
+This implementation iterates over the ``Collection``and tests each element ``e``returned by the iterator, whether it is contained in the specified ``Collection``. If this test is positive, then the ``remove``method is called on the iterator.
 
 
 
@@ -843,8 +789,6 @@ Parameters
 ~~~~~~~~~~
 
 - collection - the collection of objects to remove.
-   
-   
    
 
 Throws
@@ -878,14 +822,10 @@ get
 public **E (?)** get (**int (?)** location)
 
 Returns the element at the specified location in this list.
-
-
 Parameters
 ~~~~~~~~~~
 
 - location - the index of the element to return.
-   
-   
    
 
 Throws
@@ -1002,8 +942,6 @@ where
 public :ref:`RealmQuery <io_realm_RealmQuery>` where ()
 
 Returns a RealmQuery, which can be used to query for specific objects of this class.
-
-
 Throws
 ~~~~~~
 
@@ -1107,9 +1045,9 @@ contains
 
 public **boolean (?)** contains (**Object (?)** object)
 
-Returns ``true`` if the list contains the specified element when attached to a Realm. This method will query the native Realm underlying storage engine to quickly find the specified element.
+Returns ``true``if the list contains the specified element when attached to a Realm. This method will query the native Realm underlying storage engine to quickly find the specified element.
 
-If the list is not attached to a Realm, the default **List#contains(Object) (?)** implementation will occur.
+If the list is not attached to a Realm, the default **List#contains(Object) (?)**implementation will occur.
 
 
 
@@ -1118,8 +1056,6 @@ Parameters
 ~~~~~~~~~~
 
 - object - the element whose presence in this list is to be tested.
-   
-   
    
 
 .. _io_realm_RealmList_iterator____:
@@ -1169,9 +1105,9 @@ getRealm
 
 public :ref:`Realm <io_realm_Realm>` getRealm ()
 
-Returns the **Realm (?)** instance to which this collection belongs.
+Returns the **Realm (?)**instance to which this collection belongs.
 
-Calling **Realm#close() (?)** on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the list.
+Calling **Realm#close() (?)**on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the list.
 
 
 
@@ -1194,7 +1130,7 @@ asFlowable
 
 public **<any> (?)** asFlowable ()
 
-Returns an Rx Flowable that monitors changes to this RealmList. It will emit the current RealmList when subscribed to. RealmList will continually be emitted as the RealmList is updated - ``onComplete`` will never be called.
+Returns an Rx Flowable that monitors changes to this RealmList. It will emit the current RealmList when subscribed to. RealmList will continually be emitted as the RealmList is updated - ``onComplete``will never be called.
 
 Items emitted from Realm Flowables are frozen (See **#freeze() (?)**. This means that they are immutable and can be read on any thread.
 
@@ -1202,7 +1138,11 @@ Items emitted from Realm Flowables are frozen (See **#freeze() (?)**. This means
 
 Realm Flowables always emit items from the thread holding the live RealmList. This means that if you need to do further processing, it is recommend to observe the values on a computation scheduler:
 
-list.asFlowable()
+
+
+.. code-block:: java
+
+   list.asFlowable()
     .observeOn(Schedulers.computation())
     .map(rxResults -> doExpensiveWork(rxResults))
     .observeOn(AndroidSchedulers.mainThread())
@@ -1211,16 +1151,23 @@ list.asFlowable()
 
 
 
-If you would like the ``asFlowable()`` to stop emitting items you can instruct RxJava to only emit only the first item by using the ``first()`` operator:
+
+
+If you would like the ``asFlowable()``to stop emitting items you can instruct RxJava to only emit only the first item by using the ``first()``operator:
 
 
 
- 
+
+
+.. code-block:: java
+
+   
     list.asFlowable()
          .first()
          .subscribe( ... ) // You only get the results once
     
- 
+
+
 
 
 Throws
@@ -1236,9 +1183,9 @@ asChangesetObservable
 
 public **<any> (?)** asChangesetObservable ()
 
-Returns an Rx Observable that monitors changes to this RealmList. It will emit the current RealmList when subscribed. For each update to the RealmList a pair consisting of the RealmList and the **OrderedCollectionChangeSet (?)** will be sent. The changeset will be ``null`` the first time an RealmList is emitted.
+Returns an Rx Observable that monitors changes to this RealmList. It will emit the current RealmList when subscribed. For each update to the RealmList a pair consisting of the RealmList and the **OrderedCollectionChangeSet (?)**will be sent. The changeset will be ``null``the first time an RealmList is emitted.
 
-RealmList will continually be emitted as the RealmList is updated - ``onComplete`` will never be called.
+RealmList will continually be emitted as the RealmList is updated - ``onComplete``will never be called.
 
 
 
@@ -1248,12 +1195,18 @@ Items emitted from Realm Observables are frozen (See **#freeze() (?)**. This mea
 
 Realm Observables always emit items from the thread holding the live Realm. This means that if you need to do further processing, it is recommend to observe the values on a computation scheduler:
 
-list.asChangesetObservable()
+
+
+.. code-block:: java
+
+   list.asChangesetObservable()
     .observeOn(Schedulers.computation())
     .map((rxList, changes) -> doExpensiveWork(rxList, changes))
     .observeOn(AndroidSchedulers.mainThread())
     .subscribe( ... );
     
+
+
 
 
 
@@ -1275,7 +1228,11 @@ Adds a change listener to this **RealmList (?)**.
 
 Registering a change listener will not prevent the underlying RealmList from being garbage collected. If the RealmList is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
- 
+
+
+.. code-block:: java
+
+   
     public class MyActivity extends Activity {
    
         private RealmList<Dog> dogs; // Strong reference to keep listeners alive
@@ -1293,15 +1250,14 @@ Registering a change listener will not prevent the underlying RealmList from bei
         }
     }
     
- 
+
+
 
 
 Parameters
 ~~~~~~~~~~
 
 - listener - the change listener to be notified.
-   
-   
    
 
 Throws
@@ -1315,14 +1271,10 @@ removeChangeListener
 public **void (?)** removeChangeListener (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmList\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
 
 Removes the specified change listener.
-
-
 Parameters
 ~~~~~~~~~~
 
 - listener - the change listener to be removed.
-   
-   
    
 
 Throws
@@ -1342,7 +1294,11 @@ Adds a change listener to this **RealmList (?)**.
 
 Registering a change listener will not prevent the underlying RealmList from being garbage collected. If the RealmList is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
- 
+
+
+.. code-block:: java
+
+   
     public class MyActivity extends Activity {
    
         private RealmList<Dog> dogs; // Strong reference to keep listeners alive
@@ -1360,15 +1316,14 @@ Registering a change listener will not prevent the underlying RealmList from bei
         }
     }
     
- 
+
+
 
 
 Parameters
 ~~~~~~~~~~
 
 - listener - the change listener to be notified.
-   
-   
    
 
 Throws
@@ -1382,14 +1337,10 @@ removeChangeListener
 public **void (?)** removeChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmList\<E>> <io_realm_RealmChangeListener>` listener)
 
 Removes the specified change listener.
-
-
 Parameters
 ~~~~~~~~~~
 
 - listener - the change listener to be removed.
-   
-   
    
 
 Throws
@@ -1406,8 +1357,6 @@ removeAllChangeListeners
 public **void (?)** removeAllChangeListeners ()
 
 Removes all user-defined change listeners.
-
-
 Throws
 ~~~~~~
 

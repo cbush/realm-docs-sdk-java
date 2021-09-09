@@ -25,7 +25,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`from <io_realm_coroutines_FlowFactory_from__Realm__>` (:ref:`Realm <io_realm_Realm>` realm)
        
-       Creates a **Flow (?)** for a **Realm (?)**.
+       Creates a **Flow (?)**for a **Realm (?)**.
        
        
        
@@ -35,7 +35,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`from <io_realm_coroutines_FlowFactory_from__DynamicRealm__>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm)
        
-       Creates a **Flow (?)** for a **DynamicRealm (?)**.
+       Creates a **Flow (?)**for a **DynamicRealm (?)**.
        
        
        
@@ -45,7 +45,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`from <io_realm_coroutines_FlowFactory_from__Realm__RealmResults_T___>` <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<T> <io_realm_RealmResults>` results)
        
-       Creates a **Flow (?)** for a **RealmResults (?)**.
+       Creates a **Flow (?)**for a **RealmResults (?)**.
        
        
        
@@ -55,7 +55,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`changesetFrom <io_realm_coroutines_FlowFactory_changesetFrom__Realm__RealmResults_T___>` <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<T> <io_realm_RealmResults>` results)
        
-       Creates a **Flow (?)** for a **RealmResults (?)** instance.
+       Creates a **Flow (?)**for a **RealmResults (?)**instance.
        
        
        
@@ -65,7 +65,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`from <io_realm_coroutines_FlowFactory_from__DynamicRealm__RealmResults_T___>` <**T (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`io.realm.RealmResults\<T> <io_realm_RealmResults>` results)
        
-       Creates a **Flow (?)** for a **RealmResults (?)**.
+       Creates a **Flow (?)**for a **RealmResults (?)**.
        
        
        
@@ -75,7 +75,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`changesetFrom <io_realm_coroutines_FlowFactory_changesetFrom__DynamicRealm__RealmResults_T___>` <**T (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`io.realm.RealmResults\<T> <io_realm_RealmResults>` results)
        
-       Creates a **Flow (?)** for a **RealmResults (?)** instance.
+       Creates a **Flow (?)**for a **RealmResults (?)**instance.
        
        
        
@@ -85,7 +85,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`from <io_realm_coroutines_FlowFactory_from__Realm__RealmList_T___>` <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` realmList)
        
-       Creates a **Flow (?)** for a **RealmList (?)**.
+       Creates a **Flow (?)**for a **RealmList (?)**.
        
        
        
@@ -95,7 +95,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`changesetFrom <io_realm_coroutines_FlowFactory_changesetFrom__Realm__RealmList_T___>` <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` list)
        
-       Creates a **Flow (?)** for a **RealmList (?)**.
+       Creates a **Flow (?)**for a **RealmList (?)**.
        
        
        
@@ -105,7 +105,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`from <io_realm_coroutines_FlowFactory_from__DynamicRealm__RealmList_T___>` <**T (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` realmList)
        
-       Creates a **Flow (?)** for a **RealmList (?)**.
+       Creates a **Flow (?)**for a **RealmList (?)**.
        
        
        
@@ -115,7 +115,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`changesetFrom <io_realm_coroutines_FlowFactory_changesetFrom__DynamicRealm__RealmList_T___>` <**T (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` list)
        
-       Creates a **Flow (?)** for a **RealmList (?)**.
+       Creates a **Flow (?)**for a **RealmList (?)**.
        
        
        
@@ -125,7 +125,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`from <io_realm_coroutines_FlowFactory_from__Realm__T__>` <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, **T (?)** realmObject)
        
-       Creates a **Flow (?)** for a **RealmObject (?)**.
+       Creates a **Flow (?)**for a **RealmObject (?)**.
        
        
        
@@ -135,7 +135,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`changesetFrom <io_realm_coroutines_FlowFactory_changesetFrom__Realm__T__>` <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, **T (?)** realmObject)
        
-       Creates a **Flow (?)** for a **RealmObject (?)**.
+       Creates a **Flow (?)**for a **RealmObject (?)**.
        
        
        
@@ -145,7 +145,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`from <io_realm_coroutines_FlowFactory_from__DynamicRealm__DynamicRealmObject__>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` dynamicRealmObject)
        
-       Creates a **Flow (?)** for a **DynamicRealmObject (?)**.
+       Creates a **Flow (?)**for a **DynamicRealmObject (?)**.
        
        
        
@@ -155,7 +155,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`changesetFrom <io_realm_coroutines_FlowFactory_changesetFrom__DynamicRealm__DynamicRealmObject__>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` dynamicRealmObject)
        
-       Creates a **Flow (?)** for a **DynamicRealmObject (?)**.
+       Creates a **Flow (?)**for a **DynamicRealmObject (?)**.
        
        
        
@@ -173,13 +173,13 @@ from
 
 public **<any> (?)** from (:ref:`Realm <io_realm_Realm>` realm)
 
-Creates a **Flow (?)** for a **Realm (?)**. It should emit the initial state of the Realm when subscribed to and on each subsequent update of the Realm.
+Creates a **Flow (?)**for a **Realm (?)**. It should emit the initial state of the Realm when subscribed to and on each subsequent update of the Realm.
 
 
 Parameters
 ~~~~~~~~~~
 
-- realm - **Realm (?)** instance being observed for changes to be emitted by the flow.
+- realm - **Realm (?)**instance being observed for changes to be emitted by the flow.
    
    
    
@@ -191,13 +191,13 @@ from
 
 public **<any> (?)** from (:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm)
 
-Creates a **Flow (?)** for a **DynamicRealm (?)**. It should emit the initial state of the Realm when subscribed to and on each subsequent update of the Realm.
+Creates a **Flow (?)**for a **DynamicRealm (?)**. It should emit the initial state of the Realm when subscribed to and on each subsequent update of the Realm.
 
 
 Parameters
 ~~~~~~~~~~
 
-- dynamicRealm - **DynamicRealm (?)** instance being observed for changes to be emitted by the flow.
+- dynamicRealm - **DynamicRealm (?)**instance being observed for changes to be emitted by the flow.
    
    
    
@@ -209,7 +209,7 @@ from
 
 public **<any> (?)** from <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<T> <io_realm_RealmResults>` results)
 
-Creates a **Flow (?)** for a **RealmResults (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults.
+Creates a **Flow (?)**for a **RealmResults (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults.
 
 
 Type Parameters
@@ -217,17 +217,15 @@ Type Parameters
 
 - T - type of RealmObject.
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
-- results - **RealmResults (?)** instance being observed for changes to be emitted by the flow.
+- results - **RealmResults (?)**instance being observed for changes to be emitted by the flow.
    
    
    
-- realm - **Realm (?)** instance from where the results are coming.
+- realm - **Realm (?)**instance from where the results are coming.
    
    
    
@@ -239,7 +237,7 @@ changesetFrom
 
 public **<any> (?)** changesetFrom <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<T> <io_realm_RealmResults>` results)
 
-Creates a **Flow (?)** for a **RealmResults (?)** instance. It should emit the initial results when subscribed to and on each subsequent update of the results it should emit the results plus the **io.realm.rx.CollectionChange (?)** that describes the update.
+Creates a **Flow (?)**for a **RealmResults (?)**instance. It should emit the initial results when subscribed to and on each subsequent update of the results it should emit the results plus the **io.realm.rx.CollectionChange (?)**that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefore be left to the user.
 
@@ -247,11 +245,11 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 ~~~~~~~~~~
 
-- realm - **Realm (?)** instance from where the object is coming.
+- realm - **Realm (?)**instance from where the object is coming.
    
    
    
-- results - **RealmResults (?)** instance being observed for changes to be emitted by the flow.
+- results - **RealmResults (?)**instance being observed for changes to be emitted by the flow.
    
    
    
@@ -263,7 +261,7 @@ from
 
 public **<any> (?)** from <**T (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`io.realm.RealmResults\<T> <io_realm_RealmResults>` results)
 
-Creates a **Flow (?)** for a **RealmResults (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults.
+Creates a **Flow (?)**for a **RealmResults (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults.
 
 
 Type Parameters
@@ -271,17 +269,15 @@ Type Parameters
 
 - T - type of RealmObject.
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
-- results - **RealmResults (?)** instance being observed for changes to be emitted by the flow.
+- results - **RealmResults (?)**instance being observed for changes to be emitted by the flow.
    
    
    
-- dynamicRealm - **DynamicRealm (?)** instance from where the results are coming.
+- dynamicRealm - **DynamicRealm (?)**instance from where the results are coming.
    
    
    
@@ -293,7 +289,7 @@ changesetFrom
 
 public **<any> (?)** changesetFrom <**T (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`io.realm.RealmResults\<T> <io_realm_RealmResults>` results)
 
-Creates a **Flow (?)** for a **RealmResults (?)** instance. It should emit the initial results when subscribed to and on each subsequent update of the results it should emit the results plus the **io.realm.rx.CollectionChange (?)** that describes the update.
+Creates a **Flow (?)**for a **RealmResults (?)**instance. It should emit the initial results when subscribed to and on each subsequent update of the results it should emit the results plus the **io.realm.rx.CollectionChange (?)**that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefore be left to the user.
 
@@ -301,11 +297,11 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 ~~~~~~~~~~
 
-- dynamicRealm - **DynamicRealm (?)** instance from where the object is coming.
+- dynamicRealm - **DynamicRealm (?)**instance from where the object is coming.
    
    
    
-- results - **RealmResults (?)** instance being observed for changes to be emitted by the flow.
+- results - **RealmResults (?)**instance being observed for changes to be emitted by the flow.
    
    
    
@@ -317,9 +313,9 @@ from
 
 public **<any> (?)** from <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` realmList)
 
-Creates a **Flow (?)** for a **RealmList (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmList.
+Creates a **Flow (?)**for a **RealmList (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmList.
 
-Note: **io.realm.RealmChangeListener (?)** is currently not supported on RealmLists.
+Note: **io.realm.RealmChangeListener (?)**is currently not supported on RealmLists.
 
 
 
@@ -329,17 +325,15 @@ Type Parameters
 
 - T - type of RealmObject
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
-- realmList - **RealmList (?)** instance being observed for changes to be emitted by the flow.
+- realmList - **RealmList (?)**instance being observed for changes to be emitted by the flow.
    
    
    
-- realm - **Realm (?)** instance from where the results are coming.
+- realm - **Realm (?)**instance from where the results are coming.
    
    
    
@@ -351,7 +345,7 @@ changesetFrom
 
 public **<any> (?)** changesetFrom <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` list)
 
-Creates a **Flow (?)** for a **RealmList (?)**. It should emit the initial list when subscribed to and on each subsequent update of the list it should emit the list plus the **io.realm.rx.CollectionChange (?)** that describes the update.
+Creates a **Flow (?)**for a **RealmList (?)**. It should emit the initial list when subscribed to and on each subsequent update of the list it should emit the list plus the **io.realm.rx.CollectionChange (?)**that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefore be left to the user.
 
@@ -359,11 +353,11 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 ~~~~~~~~~~
 
-- realm - **Realm (?)** instance from where the object is coming.
+- realm - **Realm (?)**instance from where the object is coming.
    
    
    
-- list - **RealmList (?)** instance being observed for changes to be emitted by the flow.
+- list - **RealmList (?)**instance being observed for changes to be emitted by the flow.
    
    
    
@@ -375,9 +369,9 @@ from
 
 public **<any> (?)** from <**T (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` realmList)
 
-Creates a **Flow (?)** for a **RealmList (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmList.
+Creates a **Flow (?)**for a **RealmList (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmList.
 
-Note: **io.realm.RealmChangeListener (?)** is currently not supported on RealmLists.
+Note: **io.realm.RealmChangeListener (?)**is currently not supported on RealmLists.
 
 
 
@@ -387,17 +381,15 @@ Type Parameters
 
 - T - type of RealmObject
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
-- realmList - **RealmList (?)** instance being observed for changes to be emitted by the flow.
+- realmList - **RealmList (?)**instance being observed for changes to be emitted by the flow.
    
    
    
-- dynamicRealm - **DynamicRealm (?)** instance from where the results are coming.
+- dynamicRealm - **DynamicRealm (?)**instance from where the results are coming.
    
    
    
@@ -409,7 +401,7 @@ changesetFrom
 
 public **<any> (?)** changesetFrom <**T (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` list)
 
-Creates a **Flow (?)** for a **RealmList (?)**. It should emit the initial list when subscribed to and on each subsequent update of the list it should emit the list plus the **io.realm.rx.CollectionChange (?)** that describes the update.
+Creates a **Flow (?)**for a **RealmList (?)**. It should emit the initial list when subscribed to and on each subsequent update of the list it should emit the list plus the **io.realm.rx.CollectionChange (?)**that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefore be left to the user.
 
@@ -417,11 +409,11 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 ~~~~~~~~~~
 
-- dynamicRealm - **DynamicRealm (?)** instance from where the object is coming.
+- dynamicRealm - **DynamicRealm (?)**instance from where the object is coming.
    
    
    
-- list - **RealmList (?)** instance being observed for changes to be emitted by the flow.
+- list - **RealmList (?)**instance being observed for changes to be emitted by the flow.
    
    
    
@@ -433,7 +425,7 @@ from
 
 public **<any> (?)** from <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, **T (?)** realmObject)
 
-Creates a **Flow (?)** for a **RealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object.
+Creates a **Flow (?)**for a **RealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object.
 
 
 Type Parameters
@@ -441,17 +433,15 @@ Type Parameters
 
 - T - type of query target
    
-   
-   
 
 Parameters
 ~~~~~~~~~~
 
-- realmObject - **RealmObject (?)** instance being observed for changes to be emitted by the flow.
+- realmObject - **RealmObject (?)**instance being observed for changes to be emitted by the flow.
    
    
    
-- realm - **Realm (?)** instance from where the object is coming.
+- realm - **Realm (?)**instance from where the object is coming.
    
    
    
@@ -463,7 +453,7 @@ changesetFrom
 
 public **<any> (?)** changesetFrom <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, **T (?)** realmObject)
 
-Creates a **Flow (?)** for a **RealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object plus the **io.realm.ObjectChangeSet (?)** that describes the update.
+Creates a **Flow (?)**for a **RealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object plus the **io.realm.ObjectChangeSet (?)**that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefore be left to the user.
 
@@ -471,11 +461,11 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 ~~~~~~~~~~
 
-- realm - **Realm (?)** instance from where the object is coming.
+- realm - **Realm (?)**instance from where the object is coming.
    
    
    
-- realmObject - **RealmObject (?)** instance being observed for changes to be emitted by the flow.
+- realmObject - **RealmObject (?)**instance being observed for changes to be emitted by the flow.
    
    
    
@@ -487,17 +477,17 @@ from
 
 public **<any> (?)** from (:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` dynamicRealmObject)
 
-Creates a **Flow (?)** for a **DynamicRealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object.
+Creates a **Flow (?)**for a **DynamicRealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object.
 
 
 Parameters
 ~~~~~~~~~~
 
-- dynamicRealm - **DynamicRealm (?)** instance from where the object is coming.
+- dynamicRealm - **DynamicRealm (?)**instance from where the object is coming.
    
    
    
-- dynamicRealmObject - **DynamicRealmObject (?)** instance being observed for changes to be emitted by the flow.
+- dynamicRealmObject - **DynamicRealmObject (?)**instance being observed for changes to be emitted by the flow.
    
    
    
@@ -509,7 +499,7 @@ changesetFrom
 
 public **<any> (?)** changesetFrom (:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` dynamicRealmObject)
 
-Creates a **Flow (?)** for a **DynamicRealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object plus the **io.realm.ObjectChangeSet (?)** that describes the update.
+Creates a **Flow (?)**for a **DynamicRealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object plus the **io.realm.ObjectChangeSet (?)**that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefore be left to the user.
 
@@ -517,11 +507,11 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 ~~~~~~~~~~
 
-- dynamicRealm - **DynamicRealm (?)** instance from where the object is coming.
+- dynamicRealm - **DynamicRealm (?)**instance from where the object is coming.
    
    
    
-- dynamicRealmObject - **DynamicRealmObject (?)** instance being observed for changes to be emitted by the flow.
+- dynamicRealmObject - **DynamicRealmObject (?)**instance being observed for changes to be emitted by the flow.
    
    
    

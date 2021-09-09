@@ -14,9 +14,9 @@ io.realm.rx.CollectionChange<E extends io.realm.OrderedRealmCollection>
 
 - **java.lang.Object (?)**
 
-Container wrapping the result of a **io.realm.OrderedRealmCollectionChangeListener (?)** being triggered.
+Container wrapping the result of a **io.realm.OrderedRealmCollectionChangeListener (?)**being triggered.
 
-This is used by **RealmResults#asChangesetObservable() (?)**} and **RealmList#asChangesetObservable() (?)** as RxJava is only capable of emitting one item, not multiple.
+This is used by **RealmResults#asChangesetObservable() (?)**} and **RealmList#asChangesetObservable() (?)**as RxJava is only capable of emitting one item, not multiple.
 
 
 
@@ -42,15 +42,11 @@ Method Summary
        
        
        
-       
-       
    
    * - public :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>`
      - :ref:`getChangeset <io_realm_rx_CollectionChange_getChangeset____>` ()
        
        Returns the changeset describing the update.
-       
-       
        
        
        
@@ -83,8 +79,6 @@ getCollection
 public **E (?)** getCollection ()
 
 Returns the collection that was updated.
-
-
 .. _io_realm_rx_CollectionChange_getChangeset____:
 
 getChangeset
@@ -92,13 +86,15 @@ getChangeset
 
 public :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` getChangeset ()
 
-Returns the changeset describing the update.
-
-This will be ``null`` the first time the stream emits the collection as well as when a asynchronous query is loaded for the first time.
+Returns the changeset describing the update.This will be ``null``the first time the stream emits the collection as well as when a asynchronous query is loaded for the first time.
 
 
 
- 
+
+
+.. code-block:: java
+
+   
     // Example
     realm.where(Person.class).findAllAsync().asChangesetObservable()
       .subscribe(new Consumer<CollectionChange>() {
@@ -108,7 +104,8 @@ This will be ``null`` the first time the stream emits the collection as well as 
       }
     });
     
- 
+
+
 
 
 .. _io_realm_rx_CollectionChange_equals__Object__:
