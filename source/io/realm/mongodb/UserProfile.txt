@@ -139,10 +139,8 @@ getName
 
 .. _io_realm_mongodb_UserProfile_getName____:
 
-public String getName()
-~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getName ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the name of the user.
 getEmail
@@ -150,10 +148,8 @@ getEmail
 
 .. _io_realm_mongodb_UserProfile_getEmail____:
 
-public String getEmail()
-~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getEmail ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the email address of the user.
 getPictureUrl
@@ -161,10 +157,8 @@ getPictureUrl
 
 .. _io_realm_mongodb_UserProfile_getPictureUrl____:
 
-public String getPictureUrl()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getPictureUrl ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the picture URL of the user.
 getFirstName
@@ -172,10 +166,8 @@ getFirstName
 
 .. _io_realm_mongodb_UserProfile_getFirstName____:
 
-public String getFirstName()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getFirstName ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Return the first name of the user.
 getLastName
@@ -183,10 +175,8 @@ getLastName
 
 .. _io_realm_mongodb_UserProfile_getLastName____:
 
-public String getLastName()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getLastName ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Return the last name of the user.
 getGender
@@ -194,10 +184,8 @@ getGender
 
 .. _io_realm_mongodb_UserProfile_getGender____:
 
-public String getGender()
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getGender ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the gender of the user.
 getBirthday
@@ -205,10 +193,8 @@ getBirthday
 
 .. _io_realm_mongodb_UserProfile_getBirthday____:
 
-public String getBirthday()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getBirthday ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the birthday of the user.
 getMinAge
@@ -216,10 +202,8 @@ getMinAge
 
 .. _io_realm_mongodb_UserProfile_getMinAge____:
 
-public Long getMinAge()
-~~~~~~~~~~~~~~~~~~~~~~~
-
 public `Long <https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html>`__ getMinAge ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the minimum age of the user.
 getMaxAge
@@ -227,10 +211,8 @@ getMaxAge
 
 .. _io_realm_mongodb_UserProfile_getMaxAge____:
 
-public Long getMaxAge()
-~~~~~~~~~~~~~~~~~~~~~~~
-
 public `Long <https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html>`__ getMaxAge ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the maximum age of the user.
 getUser
@@ -238,10 +220,8 @@ getUser
 
 .. _io_realm_mongodb_UserProfile_getUser____:
 
-public User getUser()
-~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`User <io_realm_mongodb_User>` getUser ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the **User (?)**that this instance in associated with.
 
@@ -251,10 +231,8 @@ toString
 
 .. _io_realm_mongodb_UserProfile_toString____:
 
-public String toString()
-~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 equals
@@ -262,10 +240,8 @@ equals
 
 .. _io_realm_mongodb_UserProfile_equals__Object__:
 
-public boolean equals(undefined o)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 hashCode
@@ -273,10 +249,8 @@ hashCode
 
 .. _io_realm_mongodb_UserProfile_hashCode____:
 
-public int hashCode()
-~~~~~~~~~~~~~~~~~~~~~
-
 public **int (?)** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

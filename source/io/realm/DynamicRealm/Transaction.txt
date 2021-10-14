@@ -60,10 +60,8 @@ execute
 
 .. _io_realm_DynamicRealm_Transaction_execute__DynamicRealm__:
 
-public void execute(undefined realm)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** execute (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

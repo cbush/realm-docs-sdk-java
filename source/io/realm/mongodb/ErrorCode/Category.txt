@@ -92,10 +92,8 @@ values
 
 .. _io_realm_mongodb_ErrorCode_Category_values____:
 
-public static ErrorCode.Category values()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public static :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` values ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 valueOf
@@ -103,10 +101,8 @@ valueOf
 
 .. _io_realm_mongodb_ErrorCode_Category_valueOf__String__:
 
-public static ErrorCode.Category valueOf(undefined name)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public static :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

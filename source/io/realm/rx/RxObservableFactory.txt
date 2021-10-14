@@ -189,10 +189,8 @@ from
 
 .. _io_realm_rx_RxObservableFactory_from__Realm__:
 
-public <any> from(undefined realm)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from (:ref:`Realm <io_realm_Realm>` realm)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a Flowable for a **Realm (?)**. It should emit the initial state of the Realm when subscribed to and on each subsequent update of the Realm.
 
@@ -209,10 +207,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_from__DynamicRealm__:
 
-public <any> from(undefined realm)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a Flowable for a **DynamicRealm (?)**. It should emit the initial state of the Realm when subscribed to and on each subsequent update of the Realm.
 
@@ -229,10 +225,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_from__Realm__RealmResults_E___:
 
-public <any> from<E>(undefined realm, undefined results)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a Flowable for a **RealmResults (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults.
 
@@ -259,10 +253,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_from__DynamicRealm__RealmResults_E___:
 
-public <any> from<E>(undefined realm, undefined results)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a Flowable for a **RealmResults (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults.
 
@@ -283,10 +275,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_from__Realm__RealmList_E___:
 
-public <any> from<E>(undefined realm, undefined list)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates an Observable for a **RealmList (?)**. It should emit the initial list when subscribed to and on each subsequent update of the RealmList.
 
@@ -315,10 +305,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_from__DynamicRealm__RealmList_E___:
 
-public <any> from<E>(undefined realm, undefined list)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a Flowable for a **RealmList (?)**. It should emit the initial list when subscribed to and on each subsequent update of the RealmList.
 
@@ -341,10 +329,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_from__Realm__E__:
 
-public <any> from<E>(undefined realm, undefined object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, **E (?)** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a Flowable for a **RealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object.
 
@@ -369,10 +355,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_from__DynamicRealm__DynamicRealmObject__:
 
-public <any> from(undefined realm, undefined object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a Flowable for a **DynamicRealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object.
 
@@ -391,10 +375,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_from__Realm__RealmQuery_E___:
 
-public <any> from<E>(undefined realm, undefined query)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmQuery\<E> <io_realm_RealmQuery>` query)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a Single from a **RealmQuery (?)**. It should emit the query and then complete.
 
@@ -419,10 +401,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_from__DynamicRealm__RealmQuery_E___:
 
-public <any> from<E>(undefined realm, undefined query)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmQuery\<E> <io_realm_RealmQuery>` query)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a Single from a **RealmQuery (?)**. It should emit the query and then complete.
 
@@ -444,10 +424,8 @@ changesetsFrom
 
 .. _io_realm_rx_RxObservableFactory_changesetsFrom__Realm__RealmResults_E___:
 
-public <any> changesetsFrom<E>(undefined realm, undefined results)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates an Observable for a **RealmResults (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults it should emit the RealmResults + the **OrderedCollectionChangeSet (?)**that describes the update.
 
@@ -474,10 +452,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_changesetsFrom__DynamicRealm__RealmResults_E___:
 
-public <any> changesetsFrom<E>(undefined realm, undefined results)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates an Observable for a **RealmResults (?)**. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults it should emit the RealmResults + the **OrderedCollectionChangeSet (?)**that describes the update.
 
@@ -498,10 +474,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_changesetsFrom__Realm__RealmList_E___:
 
-public <any> changesetsFrom<E>(undefined realm, undefined list)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates an Observable for a **RealmList (?)**. It should emit the initial RealmList when subscribed to and on each subsequent update of the RealmIst it should emit the RealmList + the **OrderedCollectionChangeSet (?)**that describes the update.
 
@@ -528,10 +502,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_changesetsFrom__DynamicRealm__RealmList_E___:
 
-public <any> changesetsFrom<E>(undefined realm, undefined list)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates an Observable for a **RealmList (?)**. It should emit the initial RealmList when subscribed to and on each subsequent update of the RealmList it should emit the RealmList + the **OrderedCollectionChangeSet (?)**that describes the update.
 
@@ -552,10 +524,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_changesetsFrom__Realm__E__:
 
-public <any> changesetsFrom<E>(undefined realm, undefined object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, **E (?)** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates an Observable for a **RealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object + the **io.realm.ObjectChangeSet (?)**that describes the update.
 
@@ -580,10 +550,8 @@ __________
 
 .. _io_realm_rx_RxObservableFactory_changesetsFrom__DynamicRealm__DynamicRealmObject__:
 
-public <any> changesetsFrom(undefined realm, undefined object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** changesetsFrom (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates an Observable for a **RealmObject (?)**. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object + the **io.realm.ObjectChangeSet (?)**that describes the update.
 

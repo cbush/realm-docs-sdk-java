@@ -50,10 +50,8 @@ shouldCompact
 
 .. _io_realm_DefaultCompactOnLaunchCallback_shouldCompact__long__long__:
 
-public boolean shouldCompact(undefined totalBytes, undefined usedBytes)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** shouldCompact (**long (?)** totalBytes, **long (?)** usedBytes)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

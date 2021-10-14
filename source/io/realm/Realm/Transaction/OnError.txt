@@ -39,10 +39,8 @@ onError
 
 .. _io_realm_Realm_Transaction_OnError_onError__Throwable__:
 
-public void onError(undefined error)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** onError (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ error)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

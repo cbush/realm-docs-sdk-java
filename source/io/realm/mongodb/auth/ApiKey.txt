@@ -99,10 +99,8 @@ getId
 
 .. _io_realm_mongodb_auth_ApiKey_getId____:
 
-public ObjectId getId()
-~~~~~~~~~~~~~~~~~~~~~~~
-
 public **ObjectId (?)** getId ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the unique identifier for this key.
 getValue
@@ -110,10 +108,8 @@ getValue
 
 .. _io_realm_mongodb_auth_ApiKey_getValue____:
 
-public String getValue()
-~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getValue ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns this keys value. This value is only returned when the key is created. After that the value is no longer visible.
 getName
@@ -121,10 +117,8 @@ getName
 
 .. _io_realm_mongodb_auth_ApiKey_getName____:
 
-public String getName()
-~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getName ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the name of this key.
 isEnabled
@@ -132,10 +126,8 @@ isEnabled
 
 .. _io_realm_mongodb_auth_ApiKey_isEnabled____:
 
-public boolean isEnabled()
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isEnabled ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns whether or not this key is currently enabled.
 equals
@@ -143,10 +135,8 @@ equals
 
 .. _io_realm_mongodb_auth_ApiKey_equals__Object__:
 
-public boolean equals(undefined o)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 hashCode
@@ -154,10 +144,8 @@ hashCode
 
 .. _io_realm_mongodb_auth_ApiKey_hashCode____:
 
-public int hashCode()
-~~~~~~~~~~~~~~~~~~~~~
-
 public **int (?)** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 toString
@@ -165,10 +153,8 @@ toString
 
 .. _io_realm_mongodb_auth_ApiKey_toString____:
 
-public String toString()
-~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

@@ -97,10 +97,8 @@ success
 
 .. _io_realm_mongodb_App_Result_success____:
 
-public static App.Result success<T>()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public static :ref:`App.Result <io_realm_mongodb_App_Result>` success <**T (?)** >()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a successful request result with no return value.
 withResult
@@ -108,10 +106,8 @@ withResult
 
 .. _io_realm_mongodb_App_Result_withResult__T__:
 
-public static App.Result withResult<T>(undefined result)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public static :ref:`App.Result <io_realm_mongodb_App_Result>` withResult <**T (?)** >(**T (?)** result)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a successful request result with a return value.
 Parameters
@@ -125,10 +121,8 @@ withError
 
 .. _io_realm_mongodb_App_Result_withError__AppException__:
 
-public static App.Result withError<T>(undefined exception)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public static :ref:`App.Result <io_realm_mongodb_App_Result>` withError <**T (?)** >(:ref:`AppException <io_realm_mongodb_AppException>` exception)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a failed request result. The request failed for some reason, either because there was a network error or the Realm Object Server returned an error.
 Parameters
@@ -142,10 +136,8 @@ isSuccess
 
 .. _io_realm_mongodb_App_Result_isSuccess____:
 
-public boolean isSuccess()
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isSuccess ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns whether or not request was successful
 get
@@ -153,10 +145,8 @@ get
 
 .. _io_realm_mongodb_App_Result_get____:
 
-public T get()
-~~~~~~~~~~~~~~
-
 public **T (?)** get ()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the response in case the request was a success.
 getOrDefault
@@ -164,10 +154,8 @@ getOrDefault
 
 .. _io_realm_mongodb_App_Result_getOrDefault__T__:
 
-public T getOrDefault(undefined defaultValue)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **T (?)** getOrDefault (**T (?)** defaultValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the response if the request was a success. If it failed, the default value is returned instead.
 getOrThrow
@@ -175,10 +163,8 @@ getOrThrow
 
 .. _io_realm_mongodb_App_Result_getOrThrow____:
 
-public T getOrThrow()
-~~~~~~~~~~~~~~~~~~~~~
-
 public **T (?)** getOrThrow ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If the request was successful the response is returned, otherwise the provided error is thrown.
 Throws
@@ -189,10 +175,8 @@ getError
 
 .. _io_realm_mongodb_App_Result_getError____:
 
-public AppException getError()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`AppException <io_realm_mongodb_AppException>` getError ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the error in case of a failed request.
 

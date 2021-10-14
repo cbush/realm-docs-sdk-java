@@ -49,10 +49,8 @@ cancel
 
 .. _io_realm_RealmAsyncTask_cancel____:
 
-public void cancel()
-~~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** cancel ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Attempts to cancel execution of this transaction (if it hasn't already completed or previously cancelled).
 isCancelled
@@ -60,10 +58,8 @@ isCancelled
 
 .. _io_realm_RealmAsyncTask_isCancelled____:
 
-public boolean isCancelled()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isCancelled ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks whether an attempt to cancel the transaction was performed.
 

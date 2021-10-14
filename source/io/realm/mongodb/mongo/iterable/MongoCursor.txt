@@ -76,10 +76,8 @@ hasNext
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_hasNext____:
 
-public boolean hasNext()
-~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** hasNext ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 next
@@ -87,10 +85,8 @@ next
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_next____:
 
-public ResultT next()
-~~~~~~~~~~~~~~~~~~~~~
-
 public **ResultT (?)** next ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 tryNext
@@ -98,10 +94,8 @@ tryNext
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_tryNext____:
 
-public ResultT tryNext()
-~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **ResultT (?)** tryNext ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A special ``next()``case that returns the next document if available or null.
 
@@ -111,10 +105,8 @@ close
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_close____:
 
-public void close()
-~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** close ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

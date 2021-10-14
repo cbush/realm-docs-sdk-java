@@ -72,10 +72,8 @@ filter
 
 .. _io_realm_mongodb_mongo_iterable_FindIterable_filter__Bson__:
 
-public FindIterable filter(undefined filter)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` filter (**Bson (?)** filter)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the query filter to apply to the query.
 Parameters
@@ -89,10 +87,8 @@ limit
 
 .. _io_realm_mongodb_mongo_iterable_FindIterable_limit__int__:
 
-public FindIterable limit(undefined limit)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` limit (**int (?)** limit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the limit to apply.
 Parameters
@@ -106,10 +102,8 @@ projection
 
 .. _io_realm_mongodb_mongo_iterable_FindIterable_projection__Bson__:
 
-public FindIterable projection(undefined projection)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` projection (**Bson (?)** projection)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets a document describing the fields to return for all matching documents.
 Parameters
@@ -123,10 +117,8 @@ sort
 
 .. _io_realm_mongodb_mongo_iterable_FindIterable_sort__Bson__:
 
-public FindIterable sort(undefined sort)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` sort (**Bson (?)** sort)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the sort criteria to apply to the query.
 Parameters

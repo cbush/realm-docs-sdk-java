@@ -314,10 +314,8 @@ getClassName
 
 .. _io_realm_RealmObjectSchema_getClassName____:
 
-public String getClassName()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getClassName ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the name of the RealmObject class being represented by this schema.- When using a normal **Realm (?)**this name is the same as the **RealmObject (?)**class.
    
@@ -339,10 +337,8 @@ setClassName
 
 .. _io_realm_RealmObjectSchema_setClassName__String__:
 
-public abstract RealmObjectSchema setClassName(undefined className)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setClassName (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets a new name for this RealmObject class. This is equivalent to renaming it.
 Parameters
@@ -362,10 +358,8 @@ RealmSchema#rename(String, String)addField
 
 .. _io_realm_RealmObjectSchema_addField__String__Class_____FieldAttribute_____:
 
-public abstract RealmObjectSchema addField(undefined fieldName, undefined fieldType, undefined attributes)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<?> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ fieldType, :ref:`io.realm.FieldAttribute[] <io_realm_FieldAttribute>` attributes)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a new simple field to the RealmObject class. The type must be one supported by Realm. See **RealmObject (?)**for the list of supported types. If the field should allow ``null``values use the boxed type instead e.g., ``Integer.class``instead of ``int.class``.
 
@@ -394,10 +388,8 @@ addRealmObjectField
 
 .. _io_realm_RealmObjectSchema_addRealmObjectField__String__RealmObjectSchema__:
 
-public abstract RealmObjectSchema addRealmObjectField(undefined fieldName, undefined objectSchema)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmObjectField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a new field that references another **RealmObject (?)**.
 
@@ -418,10 +410,8 @@ addRealmListField
 
 .. _io_realm_RealmObjectSchema_addRealmListField__String__RealmObjectSchema__:
 
-public abstract RealmObjectSchema addRealmListField(undefined fieldName, undefined objectSchema)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmListField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a new field that contains a **RealmList (?)**with references to other Realm model classes.
 
@@ -443,10 +433,8 @@ ______
 
 .. _io_realm_RealmObjectSchema_addRealmListField__String__Class_____:
 
-public abstract RealmObjectSchema addRealmListField(undefined fieldName, undefined primitiveType)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmListField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<?> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a new field that references a **RealmList (?)**with primitive values. See **RealmObject (?)**for the list of supported types.
 
@@ -488,10 +476,8 @@ addRealmDictionaryField
 
 .. _io_realm_RealmObjectSchema_addRealmDictionaryField__String__RealmObjectSchema__:
 
-public abstract RealmObjectSchema addRealmDictionaryField(undefined fieldName, undefined objectSchema)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmDictionaryField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a new field that contains a **RealmDictionary (?)**with references to other Realm model classes.
 
@@ -513,10 +499,8 @@ ______
 
 .. _io_realm_RealmObjectSchema_addRealmDictionaryField__String__Class_____:
 
-public abstract RealmObjectSchema addRealmDictionaryField(undefined fieldName, undefined primitiveType)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmDictionaryField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<?> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a new field that references a **RealmDictionary (?)**with primitive values. See **RealmObject (?)**for the list of supported types.
 
@@ -558,10 +542,8 @@ addRealmSetField
 
 .. _io_realm_RealmObjectSchema_addRealmSetField__String__RealmObjectSchema__:
 
-public abstract RealmObjectSchema addRealmSetField(undefined fieldName, undefined objectSchema)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmSetField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a new field that contains a **RealmSet (?)**with references to other Realm model classes.
 
@@ -583,10 +565,8 @@ ______
 
 .. _io_realm_RealmObjectSchema_addRealmSetField__String__Class_____:
 
-public abstract RealmObjectSchema addRealmSetField(undefined fieldName, undefined primitiveType)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmSetField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<?> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a new field that references a **RealmSet (?)**with primitive values. See **RealmObject (?)**for the list of supported types.
 
@@ -628,10 +608,8 @@ removeField
 
 .. _io_realm_RealmObjectSchema_removeField__String__:
 
-public abstract RealmObjectSchema removeField(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` removeField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes a field from the class.
 Parameters
@@ -648,10 +626,8 @@ renameField
 
 .. _io_realm_RealmObjectSchema_renameField__String__String__:
 
-public abstract RealmObjectSchema renameField(undefined currentFieldName, undefined newFieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` renameField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ currentFieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ newFieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Renames a field from one name to another.
 Parameters
@@ -670,10 +646,8 @@ hasField
 
 .. _io_realm_RealmObjectSchema_hasField__String__:
 
-public boolean hasField(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** hasField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Tests if the class has field defined with the given name.
 Parameters
@@ -687,10 +661,8 @@ addIndex
 
 .. _io_realm_RealmObjectSchema_addIndex__String__:
 
-public abstract RealmObjectSchema addIndex(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addIndex (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds an index to a given field. This is the equivalent of adding the **io.realm.annotations.Index (?)**annotation on the field.
 
@@ -709,10 +681,8 @@ hasIndex
 
 .. _io_realm_RealmObjectSchema_hasIndex__String__:
 
-public boolean hasIndex(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** hasIndex (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given field has an index defined.
 Parameters
@@ -732,10 +702,8 @@ io.realm.annotations.IndexremoveIndex
 
 .. _io_realm_RealmObjectSchema_removeIndex__String__:
 
-public abstract RealmObjectSchema removeIndex(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` removeIndex (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes an index from a given field. This is the same as removing the ``@Index``annotation on the field.
 
@@ -754,10 +722,8 @@ addPrimaryKey
 
 .. _io_realm_RealmObjectSchema_addPrimaryKey__String__:
 
-public abstract RealmObjectSchema addPrimaryKey(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addPrimaryKey (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a primary key to a given field. This is the same as adding the **io.realm.annotations.PrimaryKey (?)**annotation on the field. Further, this implicitly adds **io.realm.annotations.Index (?)**annotation to the field as well.
 
@@ -776,10 +742,8 @@ removePrimaryKey
 
 .. _io_realm_RealmObjectSchema_removePrimaryKey____:
 
-public abstract RealmObjectSchema removePrimaryKey()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` removePrimaryKey ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes the primary key from this class. This is the same as removing the **io.realm.annotations.PrimaryKey (?)**annotation from the class. Further, this implicitly removes **io.realm.annotations.Index (?)**annotation from the field as well.
 
@@ -792,10 +756,8 @@ setRequired
 
 .. _io_realm_RealmObjectSchema_setRequired__String__boolean__:
 
-public abstract RealmObjectSchema setRequired(undefined fieldName, undefined required)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setRequired (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean (?)** required)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets a field to be required i.e., it is not allowed to hold ``null``values. This is equivalent to switching between boxed types and their primitive variant e.g., ``Integer``to ``int``.
 
@@ -825,10 +787,8 @@ RequiredsetNullable
 
 .. _io_realm_RealmObjectSchema_setNullable__String__boolean__:
 
-public abstract RealmObjectSchema setNullable(undefined fieldName, undefined nullable)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setNullable (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean (?)** nullable)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets a field to be nullable i.e., it should be able to hold ``null``values. This is equivalent to switching between primitive types and their boxed variant e.g., ``int``to ``Integer``.
 
@@ -855,10 +815,8 @@ isRequired
 
 .. _io_realm_RealmObjectSchema_isRequired__String__:
 
-public boolean isRequired(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isRequired (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given field is required i.e., it is not allowed to contain ``null``values.
 
@@ -880,10 +838,8 @@ ________
 
 .. _io_realm_RealmObjectSchema_isNullable__String__:
 
-public boolean isNullable(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isNullable (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given field is nullable i.e., it is allowed to contain ``null``values.
 
@@ -905,10 +861,8 @@ ________
 
 .. _io_realm_RealmObjectSchema_isPrimaryKey__String__:
 
-public boolean isPrimaryKey(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isPrimaryKey (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given field is the primary key field.
 Parameters
@@ -928,10 +882,8 @@ ________
 
 .. _io_realm_RealmObjectSchema_hasPrimaryKey____:
 
-public boolean hasPrimaryKey()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** hasPrimaryKey ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the class has a primary key defined.
 See Also
@@ -942,10 +894,8 @@ io.realm.annotations.PrimaryKeygetPrimaryKey
 
 .. _io_realm_RealmObjectSchema_getPrimaryKey____:
 
-public String getPrimaryKey()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getPrimaryKey ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the name of the primary key field.
 Throws
@@ -956,10 +906,8 @@ getFieldNames
 
 .. _io_realm_RealmObjectSchema_getFieldNames____:
 
-public Set getFieldNames()
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ getFieldNames ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns all fields in this class.
 transform
@@ -967,10 +915,8 @@ transform
 
 .. _io_realm_RealmObjectSchema_transform__RealmObjectSchema_Function__:
 
-public abstract RealmObjectSchema transform(undefined function)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` transform (:ref:`RealmObjectSchema.Function <io_realm_RealmObjectSchema_Function>` function)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Runs a transformation function on each RealmObject instance of the current class. The object will be represented as a **DynamicRealmObject (?)**.
 
@@ -991,10 +937,8 @@ getFieldType
 
 .. _io_realm_RealmObjectSchema_getFieldType__String__:
 
-public RealmFieldType getFieldType(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`RealmFieldType <io_realm_RealmFieldType>` getFieldType (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the type used by the underlying storage engine to represent this field.
 Parameters
@@ -1008,10 +952,8 @@ isEmbedded
 
 .. _io_realm_RealmObjectSchema_isEmbedded____:
 
-public boolean isEmbedded()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isEmbedded ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns ``true``if objects of this type are considered "embedded". See **RealmClass#embedded() (?)**for further details.
 
@@ -1021,10 +963,8 @@ setEmbedded
 
 .. _io_realm_RealmObjectSchema_setEmbedded__boolean__:
 
-public void setEmbedded(undefined embedded)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** setEmbedded (**boolean (?)** embedded)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Converts the class to be embedded or not.A class can only be marked as embedded if the following invariants are satisfied:
 

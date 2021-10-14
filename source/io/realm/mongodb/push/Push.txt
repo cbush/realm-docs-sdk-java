@@ -70,10 +70,8 @@ registerDevice
 
 .. _io_realm_mongodb_push_Push_registerDevice__String__:
 
-public void registerDevice(undefined registrationToken)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** registerDevice (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ registrationToken)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Registers the given FCM registration token with the currently logged in user's device on MongoDB Realm.
 Parameters
@@ -87,10 +85,8 @@ registerDeviceAsync
 
 .. _io_realm_mongodb_push_Push_registerDeviceAsync__String__App_Callback_Void___:
 
-public RealmAsyncTask registerDeviceAsync(undefined registrationToken, undefined callback)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` registerDeviceAsync (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ registrationToken, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Registers the given FCM registration token with the currently logged in user's device on MongoDB Realm.
 Parameters
@@ -106,10 +102,8 @@ deregisterDevice
 
 .. _io_realm_mongodb_push_Push_deregisterDevice____:
 
-public void deregisterDevice()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** deregisterDevice ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deregisters the FCM registration token bound to the currently logged in user's device on MongoDB Realm.
 deregisterDeviceAsync
@@ -117,10 +111,8 @@ deregisterDeviceAsync
 
 .. _io_realm_mongodb_push_Push_deregisterDeviceAsync__App_Callback_Void___:
 
-public RealmAsyncTask deregisterDeviceAsync(undefined callback)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` deregisterDeviceAsync (:ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deregisters the FCM registration token bound to the currently logged in user's device on MongoDB Realm.
 Parameters

@@ -43,10 +43,8 @@ onChange
 
 .. _io_realm_OrderedRealmCollectionChangeListener_onChange__T__OrderedCollectionChangeSet__:
 
-public void onChange(undefined t, undefined changeSet)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** onChange (**T (?)** t, :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` changeSet)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This will be called when the async query is finished the first time or the collection of objects has changed.
 Parameters

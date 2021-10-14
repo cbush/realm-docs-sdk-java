@@ -200,10 +200,8 @@ size
 
 .. _io_realm_OrderedRealmCollectionSnapshot_size____:
 
-public int size()
-~~~~~~~~~~~~~~~~~
-
 public **int (?)** size ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -213,10 +211,8 @@ sort
 
 .. _io_realm_OrderedRealmCollectionSnapshot_sort__String__:
 
-public RealmResults sort(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'sort()' on the original **OrderedRealmCollection (?)**instead.
 
@@ -226,10 +222,8 @@ ______
 
 .. _io_realm_OrderedRealmCollectionSnapshot_sort__String__Sort__:
 
-public RealmResults sort(undefined fieldName, undefined sortOrder)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`Sort <io_realm_Sort>` sortOrder)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'sort()' on the original **OrderedRealmCollection (?)**instead.
 
@@ -239,10 +233,8 @@ ______
 
 .. _io_realm_OrderedRealmCollectionSnapshot_sort__String__Sort__String__Sort__:
 
-public RealmResults sort(undefined fieldName1, undefined sortOrder1, undefined fieldName2, undefined sortOrder2)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'sort()' on the original **OrderedRealmCollection (?)**instead.
 
@@ -252,10 +244,8 @@ ______
 
 .. _io_realm_OrderedRealmCollectionSnapshot_sort__String[]__Sort[]__:
 
-public RealmResults sort(undefined fieldNames, undefined sortOrders)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`RealmResults <io_realm_RealmResults>` sort (`java.lang.String[] <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldNames, :ref:`io.realm.Sort[] <io_realm_Sort>` sortOrders)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'sort()' on the original **OrderedRealmCollection (?)**instead.
 
@@ -268,10 +258,8 @@ where
 
 .. _io_realm_OrderedRealmCollectionSnapshot_where____:
 
-public RealmQuery where()
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`RealmQuery <io_realm_RealmQuery>` where ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Not supported by **OrderedRealmCollectionSnapshot (?)**. Use 'where()' on the original **OrderedRealmCollection (?)**instead.
 
@@ -284,10 +272,8 @@ isLoaded
 
 .. _io_realm_OrderedRealmCollectionSnapshot_isLoaded____:
 
-public boolean isLoaded()
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isLoaded ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -297,10 +283,8 @@ load
 
 .. _io_realm_OrderedRealmCollectionSnapshot_load____:
 
-public boolean load()
-~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** load ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -310,10 +294,8 @@ createSnapshot
 
 .. _io_realm_OrderedRealmCollectionSnapshot_createSnapshot____:
 
-public OrderedRealmCollectionSnapshot createSnapshot()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`OrderedRealmCollectionSnapshot <io_realm_OrderedRealmCollectionSnapshot>` createSnapshot ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -323,10 +305,8 @@ freeze
 
 .. _io_realm_OrderedRealmCollectionSnapshot_freeze____:
 
-public OrderedRealmCollection freeze()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`OrderedRealmCollection <io_realm_OrderedRealmCollection>` freeze ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 deleteFromRealm
@@ -334,10 +314,8 @@ deleteFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteFromRealm__int__:
 
-public void deleteFromRealm(undefined location)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** deleteFromRealm (**int (?)** location)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the object at the given index from the Realm. The object at the given index will become invalid. Just returns if the object is invalid already.
 Parameters
@@ -354,10 +332,8 @@ deleteFirstFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteFirstFromRealm____:
 
-public boolean deleteFirstFromRealm()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** deleteFirstFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the first object from the Realm. The first object will become invalid.
 Throws
@@ -368,10 +344,8 @@ deleteLastFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteLastFromRealm____:
 
-public boolean deleteLastFromRealm()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** deleteLastFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the last object from the Realm. The last object will become invalid.
 Throws
@@ -382,10 +356,8 @@ deleteAllFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteAllFromRealm____:
 
-public boolean deleteAllFromRealm()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** deleteAllFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This deletes all objects in the collection from the underlying Realm. All objects in the collection snapshot will become invalid.
 Throws
@@ -396,10 +368,8 @@ isFrozen
 
 .. _io_realm_OrderedRealmCollectionSnapshot_isFrozen____:
 
-public boolean isFrozen()
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isFrozen ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

@@ -115,10 +115,8 @@ get
 
 .. _io_realm_RealmSchema_get__String__:
 
-public abstract RealmObjectSchema get(undefined className)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` get (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the **RealmObjectSchema (?)**for a given class. If this **RealmSchema (?)**is immutable, an immutable **RealmObjectSchema (?)**will be returned. Otherwise, it returns an mutable **RealmObjectSchema (?)**.
 
@@ -134,10 +132,8 @@ getAll
 
 .. _io_realm_RealmSchema_getAll____:
 
-public abstract Set getAll()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ getAll ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the **RealmObjectSchema (?)**s for all RealmObject classes that can be saved in this Realm. If this **RealmSchema (?)**is immutable, an immutable **RealmObjectSchema (?)**set will be returned. Otherwise, it returns an mutable **RealmObjectSchema (?)**set.
 
@@ -147,10 +143,8 @@ create
 
 .. _io_realm_RealmSchema_create__String__:
 
-public abstract RealmObjectSchema create(undefined className)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` create (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a new class to the Realm.
 Parameters
@@ -167,10 +161,8 @@ createWithPrimaryKeyField
 
 .. _io_realm_RealmSchema_createWithPrimaryKeyField__String__String__Class_____FieldAttribute_____:
 
-public abstract RealmObjectSchema createWithPrimaryKeyField(undefined className, undefined primaryKeyFieldName, undefined fieldType, undefined attributes)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` createWithPrimaryKeyField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ primaryKeyFieldName, `java.lang.Class\<?> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ fieldType, :ref:`io.realm.FieldAttribute[] <io_realm_FieldAttribute>` attributes)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a new class to the Realm with a primary key field defined.
 Parameters
@@ -197,10 +189,8 @@ remove
 
 .. _io_realm_RealmSchema_remove__String__:
 
-public abstract void remove(undefined className)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract **void (?)** remove (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes a class from the Realm. All data will be removed. Removing a class while other classes point to it will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__. Removes those classes or fields first.
 
@@ -219,10 +209,8 @@ rename
 
 .. _io_realm_RealmSchema_rename__String__String__:
 
-public abstract RealmObjectSchema rename(undefined oldClassName, undefined newClassName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` rename (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ oldClassName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ newClassName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Renames a class already in the Realm.
 Parameters
@@ -241,10 +229,8 @@ contains
 
 .. _io_realm_RealmSchema_contains__String__:
 
-public boolean contains(undefined className)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** contains (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given class already exists in the schema.
 Parameters
@@ -258,10 +244,8 @@ getColumnInfo
 
 .. _io_realm_RealmSchema_getColumnInfo__String__:
 
-protected final ColumnInfo getColumnInfo(undefined className)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 protected final **ColumnInfo (?)** getColumnInfo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 createKeyPathMapping
@@ -269,10 +253,8 @@ createKeyPathMapping
 
 .. _io_realm_RealmSchema_createKeyPathMapping____:
 
-public void createKeyPathMapping()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** createKeyPathMapping ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Create the underlying keypath mapping. Should only be called by typed Realms.
 

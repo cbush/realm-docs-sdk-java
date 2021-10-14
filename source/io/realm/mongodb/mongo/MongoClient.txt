@@ -56,10 +56,8 @@ getDatabase
 
 .. _io_realm_mongodb_mongo_MongoClient_getDatabase__String__:
 
-public MongoDatabase getDatabase(undefined databaseName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`MongoDatabase <io_realm_mongodb_mongo_MongoDatabase>` getDatabase (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ databaseName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gets a **MongoDatabase (?)**instance for the given database name.
 
@@ -75,10 +73,8 @@ getServiceName
 
 .. _io_realm_mongodb_mongo_MongoClient_getServiceName____:
 
-public String getServiceName()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getServiceName ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the service name for this client.
 

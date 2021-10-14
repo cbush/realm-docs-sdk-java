@@ -46,10 +46,8 @@ getInsertedId
 
 .. _io_realm_mongodb_mongo_result_InsertOneResult_getInsertedId____:
 
-public BsonValue getInsertedId()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **BsonValue (?)** getInsertedId ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the _id of the inserted document.
 

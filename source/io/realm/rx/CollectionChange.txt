@@ -76,10 +76,8 @@ getCollection
 
 .. _io_realm_rx_CollectionChange_getCollection____:
 
-public E getCollection()
-~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **E (?)** getCollection ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the collection that was updated.
 getChangeset
@@ -87,10 +85,8 @@ getChangeset
 
 .. _io_realm_rx_CollectionChange_getChangeset____:
 
-public OrderedCollectionChangeSet getChangeset()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` getChangeset ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the changeset describing the update.This will be ``null``the first time the stream emits the collection as well as when a asynchronous query is loaded for the first time.
 
@@ -119,10 +115,8 @@ equals
 
 .. _io_realm_rx_CollectionChange_equals__Object__:
 
-public boolean equals(undefined o)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 hashCode
@@ -130,10 +124,8 @@ hashCode
 
 .. _io_realm_rx_CollectionChange_hashCode____:
 
-public int hashCode()
-~~~~~~~~~~~~~~~~~~~~~
-
 public **int (?)** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

@@ -100,10 +100,8 @@ values
 
 .. _io_realm_Sort_values____:
 
-public static Sort values()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public static :ref:`Sort <io_realm_Sort>` values ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 valueOf
@@ -111,10 +109,8 @@ valueOf
 
 .. _io_realm_Sort_valueOf__String__:
 
-public static Sort valueOf(undefined name)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public static :ref:`Sort <io_realm_Sort>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 getValue
@@ -122,10 +118,8 @@ getValue
 
 .. _io_realm_Sort_getValue____:
 
-public boolean getValue()
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** getValue ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the value for this setting that is used by the underlying query engine.
 

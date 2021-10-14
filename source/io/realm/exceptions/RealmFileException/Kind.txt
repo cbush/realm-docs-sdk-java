@@ -187,10 +187,8 @@ values
 
 .. _io_realm_exceptions_RealmFileException_Kind_values____:
 
-public static RealmFileException.Kind values()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public static :ref:`RealmFileException.Kind <io_realm_exceptions_RealmFileException_Kind>` values ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 valueOf
@@ -198,10 +196,8 @@ valueOf
 
 .. _io_realm_exceptions_RealmFileException_Kind_valueOf__String__:
 
-public static RealmFileException.Kind valueOf(undefined name)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public static :ref:`RealmFileException.Kind <io_realm_exceptions_RealmFileException_Kind>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

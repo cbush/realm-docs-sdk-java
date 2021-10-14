@@ -160,66 +160,50 @@ from
 
 .. _io_realm_coroutines_RealmFlowFactory_from__Realm__:
 
-public <any> from(undefined realm)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from (:ref:`Realm <io_realm_Realm>` realm)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. _io_realm_coroutines_RealmFlowFactory_from__DynamicRealm__:
 
-public <any> from(undefined dynamicRealm)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from (:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. _io_realm_coroutines_RealmFlowFactory_from__Realm__RealmResults_T___:
 
-public <any> from<T>(undefined realm, undefined results)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<T> <io_realm_RealmResults>` results)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. _io_realm_coroutines_RealmFlowFactory_from__DynamicRealm__RealmResults_T___:
 
-public <any> from<T>(undefined dynamicRealm, undefined results)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from <**T (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`io.realm.RealmResults\<T> <io_realm_RealmResults>` results)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. _io_realm_coroutines_RealmFlowFactory_from__Realm__RealmList_T___:
 
-public <any> from<T>(undefined realm, undefined realmList)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` realmList)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. _io_realm_coroutines_RealmFlowFactory_from__DynamicRealm__RealmList_T___:
 
-public <any> from<T>(undefined dynamicRealm, undefined realmList)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from <**T (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` realmList)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. _io_realm_coroutines_RealmFlowFactory_from__Realm__T__:
 
-public <any> from<T>(undefined realm, undefined realmObject)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, **T (?)** realmObject)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. _io_realm_coroutines_RealmFlowFactory_from__DynamicRealm__DynamicRealmObject__:
 
-public <any> from(undefined dynamicRealm, undefined dynamicRealmObject)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** from (:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` dynamicRealmObject)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 changesetFrom
@@ -227,50 +211,38 @@ changesetFrom
 
 .. _io_realm_coroutines_RealmFlowFactory_changesetFrom__Realm__RealmResults_T___:
 
-public <any> changesetFrom<T>(undefined realm, undefined results)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** changesetFrom <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<T> <io_realm_RealmResults>` results)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. _io_realm_coroutines_RealmFlowFactory_changesetFrom__DynamicRealm__RealmResults_T___:
 
-public <any> changesetFrom<T>(undefined dynamicRealm, undefined results)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** changesetFrom <**T (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`io.realm.RealmResults\<T> <io_realm_RealmResults>` results)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. _io_realm_coroutines_RealmFlowFactory_changesetFrom__Realm__RealmList_T___:
 
-public <any> changesetFrom<T>(undefined realm, undefined list)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** changesetFrom <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` list)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. _io_realm_coroutines_RealmFlowFactory_changesetFrom__DynamicRealm__RealmList_T___:
 
-public <any> changesetFrom<T>(undefined dynamicRealm, undefined list)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** changesetFrom <**T (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` list)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. _io_realm_coroutines_RealmFlowFactory_changesetFrom__Realm__T__:
 
-public <any> changesetFrom<T>(undefined realm, undefined realmObject)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** changesetFrom <**T (?)** >(:ref:`Realm <io_realm_Realm>` realm, **T (?)** realmObject)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. _io_realm_coroutines_RealmFlowFactory_changesetFrom__DynamicRealm__DynamicRealmObject__:
 
-public <any> changesetFrom(undefined dynamicRealm, undefined dynamicRealmObject)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **<any> (?)** changesetFrom (:ref:`DynamicRealm <io_realm_DynamicRealm>` dynamicRealm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` dynamicRealmObject)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

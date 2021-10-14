@@ -51,10 +51,8 @@ getNext
 
 .. _io_realm_mongodb_RealmEventStreamTask_getNext____:
 
-public BaseChangeEvent getNext()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`BaseChangeEvent <io_realm_mongodb_mongo_events_BaseChangeEvent>` getNext ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Blocks the thread on which the call is made until the result of the operation arrives.
 Throws
@@ -65,10 +63,8 @@ isOpen
 
 .. _io_realm_mongodb_RealmEventStreamTask_isOpen____:
 
-public boolean isOpen()
-~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isOpen ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Whether or not the stream is currently open.
 

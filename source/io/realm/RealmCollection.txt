@@ -149,10 +149,8 @@ where
 
 .. _io_realm_RealmCollection_where____:
 
-public RealmQuery where()
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`RealmQuery <io_realm_RealmQuery>` where ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns a **RealmQuery (?)**, which can be used to query for specific objects from this collection.
 
@@ -168,10 +166,8 @@ io.realm.RealmQuerymin
 
 .. _io_realm_RealmCollection_min__String__:
 
-public Number min(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ min (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds the minimum value of a field.
 Parameters
@@ -188,10 +184,8 @@ max
 
 .. _io_realm_RealmCollection_max__String__:
 
-public Number max(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ max (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds the maximum value of a field.
 Parameters
@@ -208,10 +202,8 @@ sum
 
 .. _io_realm_RealmCollection_sum__String__:
 
-public Number sum(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ sum (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Calculates the sum of a given field.
 Parameters
@@ -228,10 +220,8 @@ average
 
 .. _io_realm_RealmCollection_average__String__:
 
-public double average(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **double (?)** average (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the average of a given field.
 Parameters
@@ -248,10 +238,8 @@ maxDate
 
 .. _io_realm_RealmCollection_maxDate__String__:
 
-public Date maxDate(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ maxDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds the maximum date.
 Parameters
@@ -268,10 +256,8 @@ minDate
 
 .. _io_realm_RealmCollection_minDate__String__:
 
-public Date minDate(undefined fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ minDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds the minimum date.
 Parameters
@@ -288,10 +274,8 @@ deleteAllFromRealm
 
 .. _io_realm_RealmCollection_deleteAllFromRealm____:
 
-public boolean deleteAllFromRealm()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** deleteAllFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This deletes all objects in the collection from the underlying Realm as well as from the collection.
 Throws
@@ -302,10 +286,8 @@ isLoaded
 
 .. _io_realm_RealmCollection_isLoaded____:
 
-public boolean isLoaded()
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isLoaded ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a collection has finished loading its data yet.
 load
@@ -313,10 +295,8 @@ load
 
 .. _io_realm_RealmCollection_load____:
 
-public boolean load()
-~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** load ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Blocks the collection until all data are available.
 isValid
@@ -324,10 +304,8 @@ isValid
 
 .. _io_realm_RealmCollection_isValid____:
 
-public boolean isValid()
-~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isValid ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the collection is still valid to use, i.e., the **io.realm.Realm (?)**instance hasn't been closed. It will always return ``true``for an unmanaged collection.
 
@@ -337,10 +315,8 @@ isManaged
 
 .. _io_realm_RealmCollection_isManaged____:
 
-public boolean isManaged()
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isManaged ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the collection is managed by Realm. A managed collection is just a wrapper around the data in the underlying Realm file. On Looper threads, a managed collection will be live-updated so it always points to the latest data. Managed collections are thread confined so that they cannot be accessed from other threads than the one that created them.If this method returns ``false``, the collection is unmanaged. An unmanaged collection is just a normal java collection, so it will not be live updated.
 
@@ -352,10 +328,8 @@ contains
 
 .. _io_realm_RealmCollection_contains__Object__:
 
-public boolean contains(undefined object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** contains (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Tests whether this ``Collection``contains the specified object. Returns ``true``if and only if at least one element ``elem``in this ``Collection``meets following requirement: ``(object==null ? elem==null : object.equals(elem))``.
 

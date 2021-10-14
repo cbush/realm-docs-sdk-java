@@ -47,10 +47,8 @@ onChange
 
 .. _io_realm_RealmObjectChangeListener_onChange__T__ObjectChangeSet__:
 
-public void onChange(undefined t, undefined changeSet)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** onChange (**T (?)** t, :ref:`ObjectChangeSet <io_realm_ObjectChangeSet>` changeSet)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When this gets called to return the results of an asynchronous query made by **RealmQuery#findFirstAsync() (?)**, ``changeSet``will be ``null``.
 

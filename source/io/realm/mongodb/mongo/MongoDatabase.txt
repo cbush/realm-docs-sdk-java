@@ -59,10 +59,8 @@ getName
 
 .. _io_realm_mongodb_mongo_MongoDatabase_getName____:
 
-public String getName()
-~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getName ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gets the name of the database.
 getCollection
@@ -70,10 +68,8 @@ getCollection
 
 .. _io_realm_mongodb_mongo_MongoDatabase_getCollection__String__:
 
-public MongoCollection getCollection(undefined collectionName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>` getCollection (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ collectionName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gets a collection.
 Parameters
@@ -84,10 +80,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoDatabase_getCollection__String__Class_DocumentT___:
 
-public MongoCollection getCollection<DocumentT>(undefined collectionName, undefined documentClass)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>` getCollection <**DocumentT (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ collectionName, `java.lang.Class\<DocumentT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ documentClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gets a collection, with a specific default document class.
 Type Parameters

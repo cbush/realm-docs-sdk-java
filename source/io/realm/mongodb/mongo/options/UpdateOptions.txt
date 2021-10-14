@@ -62,10 +62,8 @@ isUpsert
 
 .. _io_realm_mongodb_mongo_options_UpdateOptions_isUpsert____:
 
-public boolean isUpsert()
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isUpsert ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns true if a new document should be inserted if there are no matches to the query filter. The default is false.
 upsert
@@ -73,10 +71,8 @@ upsert
 
 .. _io_realm_mongodb_mongo_options_UpdateOptions_upsert__boolean__:
 
-public UpdateOptions upsert(undefined upsert)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>` upsert (**boolean (?)** upsert)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Set to true if a new document should be inserted if there are no matches to the query filter.
 Parameters
@@ -90,10 +86,8 @@ toString
 
 .. _io_realm_mongodb_mongo_options_UpdateOptions_toString____:
 
-public String toString()
-~~~~~~~~~~~~~~~~~~~~~~~~
-
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

@@ -111,10 +111,8 @@ values
 
 .. _io_realm_ImportFlag_values____:
 
-public static ImportFlag values()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public static :ref:`ImportFlag <io_realm_ImportFlag>` values ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 valueOf
@@ -122,10 +120,8 @@ valueOf
 
 .. _io_realm_ImportFlag_valueOf__String__:
 
-public static ImportFlag valueOf(undefined name)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public static :ref:`ImportFlag <io_realm_ImportFlag>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

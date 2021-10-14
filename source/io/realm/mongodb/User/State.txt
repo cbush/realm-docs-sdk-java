@@ -107,10 +107,8 @@ values
 
 .. _io_realm_mongodb_User_State_values____:
 
-public static User.State values()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public static :ref:`User.State <io_realm_mongodb_User_State>` values ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 valueOf
@@ -118,10 +116,8 @@ valueOf
 
 .. _io_realm_mongodb_User_State_valueOf__String__:
 
-public static User.State valueOf(undefined name)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public static :ref:`User.State <io_realm_mongodb_User_State>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

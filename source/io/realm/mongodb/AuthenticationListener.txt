@@ -45,10 +45,8 @@ loggedIn
 
 .. _io_realm_mongodb_AuthenticationListener_loggedIn__User__:
 
-public void loggedIn(undefined user)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** loggedIn (:ref:`User <io_realm_mongodb_User>` user)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A user was logged into the Object Server
 Parameters
@@ -64,10 +62,8 @@ loggedOut
 
 .. _io_realm_mongodb_AuthenticationListener_loggedOut__User__:
 
-public void loggedOut(undefined user)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** loggedOut (:ref:`User <io_realm_mongodb_User>` user)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A user was successfully logged out from the Object Server.
 Parameters

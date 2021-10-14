@@ -46,10 +46,8 @@ getDeletedCount
 
 .. _io_realm_mongodb_mongo_result_DeleteResult_getDeletedCount____:
 
-public long getDeletedCount()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **long (?)** getDeletedCount ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gets the number of documents deleted.
 

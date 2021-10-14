@@ -51,10 +51,8 @@ get
 
 .. _io_realm_mongodb_RealmEventStreamAsyncTask_get__App_Callback_BaseChangeEvent_T____:
 
-public void get(undefined callback)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 public **void (?)** get (:ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.mongo.events.BaseChangeEvent\<T>> <io_realm_mongodb_App_Callback>` callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Provides a way to subscribe to asynchronous operations via a callback, which handles both results and errors.
 Parameters
@@ -73,10 +71,8 @@ isOpen
 
 .. _io_realm_mongodb_RealmEventStreamAsyncTask_isOpen____:
 
-public boolean isOpen()
-~~~~~~~~~~~~~~~~~~~~~~~
-
 public **boolean (?)** isOpen ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Whether or not the stream is currently open.
 
