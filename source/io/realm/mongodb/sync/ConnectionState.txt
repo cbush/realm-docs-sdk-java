@@ -113,8 +113,8 @@ values
 
 .. _io_realm_mongodb_sync_ConnectionState_values____:
 
-``values``
-~~~~~~~~~~
+public static ConnectionState values()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>` values ()
 
@@ -124,8 +124,8 @@ valueOf
 
 .. _io_realm_mongodb_sync_ConnectionState_valueOf__String__:
 
-``valueOf``
-~~~~~~~~~~~
+public static ConnectionState valueOf(undefined name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 

@@ -233,8 +233,8 @@ getInstance
 
 .. _io_realm_DynamicRealm_getInstance__RealmConfiguration__:
 
-``getInstance``
-~~~~~~~~~~~~~~~
+public static DynamicRealm getInstance(undefined configuration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`DynamicRealm <io_realm_DynamicRealm>` getInstance (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration)
 
@@ -252,8 +252,8 @@ RealmConfiguration for details on how to configure a Realm.getInstanceAsync
 
 .. _io_realm_DynamicRealm_getInstanceAsync__RealmConfiguration__DynamicRealm_Callback__:
 
-``getInstanceAsync``
-~~~~~~~~~~~~~~~~~~~~
+public static RealmAsyncTask getInstanceAsync(undefined configuration, undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` getInstanceAsync (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration, :ref:`DynamicRealm.Callback <io_realm_DynamicRealm_Callback>` callback)
 
@@ -281,8 +281,8 @@ Callback for more details.createObject
 
 .. _io_realm_DynamicRealm_createObject__String__:
 
-``createObject``
-~~~~~~~~~~~~~~~~
+public DynamicRealmObject createObject(undefined className)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` createObject (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
 
@@ -298,8 +298,8 @@ ______
 
 .. _io_realm_DynamicRealm_createObject__String__Object__:
 
-``createObject``
-~~~~~~~~~~~~~~~~
+public DynamicRealmObject createObject(undefined className, undefined primaryKeyValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` createObject (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className, `Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ primaryKeyValue)
 
@@ -314,8 +314,8 @@ createEmbeddedObject
 
 .. _io_realm_DynamicRealm_createEmbeddedObject__String__DynamicRealmObject__String__:
 
-``createEmbeddedObject``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public DynamicRealmObject createEmbeddedObject(undefined className, undefined parentObject, undefined parentProperty)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` createEmbeddedObject (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` parentObject, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ parentProperty)
 
@@ -343,8 +343,8 @@ RealmClass#embedded()where
 
 .. _io_realm_DynamicRealm_where__String__:
 
-``where``
-~~~~~~~~~
+public RealmQuery where(undefined className)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` where (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
 
@@ -366,8 +366,8 @@ io.realm.RealmQueryaddChangeListener
 
 .. _io_realm_DynamicRealm_addChangeListener__RealmChangeListener_DynamicRealm___:
 
-``addChangeListener``
-~~~~~~~~~~~~~~~~~~~~~
+public void addChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** addChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.DynamicRealm> <io_realm_RealmChangeListener>` listener)
 
@@ -395,8 +395,8 @@ io.realm.RealmChangeListener#removeChangeListener(RealmChangeListener)#removeAll
 
 .. _io_realm_DynamicRealm_removeChangeListener__RealmChangeListener_DynamicRealm___:
 
-``removeChangeListener``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public void removeChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** removeChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.DynamicRealm> <io_realm_RealmChangeListener>` listener)
 
@@ -418,8 +418,8 @@ io.realm.RealmChangeListenerremoveAllChangeListeners
 
 .. _io_realm_DynamicRealm_removeAllChangeListeners____:
 
-``removeAllChangeListeners``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public void removeAllChangeListeners()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** removeAllChangeListeners ()
 
@@ -435,8 +435,8 @@ io.realm.RealmChangeListenerdelete
 
 .. _io_realm_DynamicRealm_delete__String__:
 
-``delete``
-~~~~~~~~~~
+public void delete(undefined className)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** delete (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
 
@@ -455,8 +455,8 @@ executeTransaction
 
 .. _io_realm_DynamicRealm_executeTransaction__DynamicRealm_Transaction__:
 
-``executeTransaction``
-~~~~~~~~~~~~~~~~~~~~~~
+public void executeTransaction(undefined transaction)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** executeTransaction (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction)
 
@@ -483,8 +483,8 @@ executeTransactionAsync
 
 .. _io_realm_DynamicRealm_executeTransactionAsync__DynamicRealm_Transaction__:
 
-``executeTransactionAsync``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmAsyncTask executeTransactionAsync(undefined transaction)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` executeTransactionAsync (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction)
 
@@ -504,8 +504,8 @@ ______
 
 .. _io_realm_DynamicRealm_executeTransactionAsync__DynamicRealm_Transaction__DynamicRealm_Transaction_OnSuccess__:
 
-``executeTransactionAsync``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmAsyncTask executeTransactionAsync(undefined transaction, undefined onSuccess)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` executeTransactionAsync (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction, :ref:`DynamicRealm.Transaction.OnSuccess <io_realm_DynamicRealm_Transaction_OnSuccess>` onSuccess)
 
@@ -527,8 +527,8 @@ ______
 
 .. _io_realm_DynamicRealm_executeTransactionAsync__DynamicRealm_Transaction__DynamicRealm_Transaction_OnError__:
 
-``executeTransactionAsync``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmAsyncTask executeTransactionAsync(undefined transaction, undefined onError)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` executeTransactionAsync (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction, :ref:`DynamicRealm.Transaction.OnError <io_realm_DynamicRealm_Transaction_OnError>` onError)
 
@@ -550,8 +550,8 @@ ______
 
 .. _io_realm_DynamicRealm_executeTransactionAsync__DynamicRealm_Transaction__DynamicRealm_Transaction_OnSuccess__DynamicRealm_Transaction_OnError__:
 
-``executeTransactionAsync``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmAsyncTask executeTransactionAsync(undefined transaction, undefined onSuccess, undefined onError)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` executeTransactionAsync (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction, :ref:`DynamicRealm.Transaction.OnSuccess <io_realm_DynamicRealm_Transaction_OnSuccess>` onSuccess, :ref:`DynamicRealm.Transaction.OnError <io_realm_DynamicRealm_Transaction_OnError>` onError)
 
@@ -578,8 +578,8 @@ asFlowable
 
 .. _io_realm_DynamicRealm_asFlowable____:
 
-``asFlowable``
-~~~~~~~~~~~~~~
+public <any> asFlowable()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** asFlowable ()
 
@@ -591,8 +591,8 @@ isEmpty
 
 .. _io_realm_DynamicRealm_isEmpty____:
 
-``isEmpty``
-~~~~~~~~~~~
+public boolean isEmpty()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isEmpty ()
 
@@ -604,8 +604,8 @@ getSchema
 
 .. _io_realm_DynamicRealm_getSchema____:
 
-``getSchema``
-~~~~~~~~~~~~~
+public RealmSchema getSchema()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmSchema <io_realm_RealmSchema>` getSchema ()
 
@@ -615,8 +615,8 @@ freeze
 
 .. _io_realm_DynamicRealm_freeze____:
 
-``freeze``
-~~~~~~~~~~
+public DynamicRealm freeze()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`DynamicRealm <io_realm_DynamicRealm>` freeze ()
 

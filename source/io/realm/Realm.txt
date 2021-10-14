@@ -637,8 +637,8 @@ asFlowable
 
 .. _io_realm_Realm_asFlowable____:
 
-``asFlowable``
-~~~~~~~~~~~~~~
+public <any> asFlowable()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** asFlowable ()
 
@@ -650,8 +650,8 @@ isEmpty
 
 .. _io_realm_Realm_isEmpty____:
 
-``isEmpty``
-~~~~~~~~~~~
+public boolean isEmpty()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isEmpty ()
 
@@ -663,8 +663,8 @@ getSchema
 
 .. _io_realm_Realm_getSchema____:
 
-``getSchema``
-~~~~~~~~~~~~~
+public RealmSchema getSchema()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmSchema <io_realm_RealmSchema>` getSchema ()
 
@@ -680,8 +680,8 @@ init
 
 .. _io_realm_Realm_init__Context__:
 
-``init``
-~~~~~~~~
+public static synchronized void init(undefined context)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static synchronized **void (?)** init (**Context (?)** context)
 
@@ -739,8 +739,8 @@ ________
 
 #getDefaultInstance().. _io_realm_Realm_init__Context__String__:
 
-``init``
-~~~~~~~~
+public static synchronized void init(undefined context, undefined userAgent)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static synchronized **void (?)** init (**Context (?)** context, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ userAgent)
 
@@ -805,8 +805,8 @@ ________
 
 .. _io_realm_Realm_getDefaultInstance____:
 
-``getDefaultInstance``
-~~~~~~~~~~~~~~~~~~~~~~
+public static Realm getDefaultInstance()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`Realm <io_realm_Realm>` getDefaultInstance ()
 
@@ -821,8 +821,8 @@ getInstance
 
 .. _io_realm_Realm_getInstance__RealmConfiguration__:
 
-``getInstance``
-~~~~~~~~~~~~~~~
+public static Realm getInstance(undefined configuration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`Realm <io_realm_Realm>` getInstance (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration)
 
@@ -848,8 +848,8 @@ RealmConfiguration for details on how to configure a Realm.getInstanceAsync
 
 .. _io_realm_Realm_getInstanceAsync__RealmConfiguration__Realm_Callback__:
 
-``getInstanceAsync``
-~~~~~~~~~~~~~~~~~~~~
+public static RealmAsyncTask getInstanceAsync(undefined configuration, undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` getInstanceAsync (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration, :ref:`Realm.Callback <io_realm_Realm_Callback>` callback)
 
@@ -877,8 +877,8 @@ Callback for more details.setDefaultConfiguration
 
 .. _io_realm_Realm_setDefaultConfiguration__RealmConfiguration__:
 
-``setDefaultConfiguration``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static void setDefaultConfiguration(undefined configuration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **void (?)** setDefaultConfiguration (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration)
 
@@ -904,8 +904,8 @@ RealmConfiguration for details on how to configure a Realm.getDefaultConfigurati
 
 .. _io_realm_Realm_getDefaultConfiguration____:
 
-``getDefaultConfiguration``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static RealmConfiguration getDefaultConfiguration()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` getDefaultConfiguration ()
 
@@ -917,8 +917,8 @@ removeDefaultConfiguration
 
 .. _io_realm_Realm_removeDefaultConfiguration____:
 
-``removeDefaultConfiguration``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static void removeDefaultConfiguration()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **void (?)** removeDefaultConfiguration ()
 
@@ -930,8 +930,8 @@ createAllFromJson
 
 .. _io_realm_Realm_createAllFromJson__Class_E___JSONArray__:
 
-``createAllFromJson``
-~~~~~~~~~~~~~~~~~~~~~
+public void createAllFromJson<E>(undefined clazz, undefined json)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** createAllFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, **JSONArray (?)** json)
 
@@ -958,8 +958,8 @@ ________
 
 RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createAllFromJson__Class_E___String__:
 
-``createAllFromJson``
-~~~~~~~~~~~~~~~~~~~~~
+public void createAllFromJson<E>(undefined clazz, undefined json)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** createAllFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ json)
 
@@ -984,8 +984,8 @@ ________
 
 RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createAllFromJson__Class_E___InputStream__:
 
-``createAllFromJson``
-~~~~~~~~~~~~~~~~~~~~~
+public void createAllFromJson<E>(undefined clazz, undefined inputStream)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** createAllFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `InputStream <https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html>`__ inputStream)
 
@@ -1015,8 +1015,8 @@ RealmSetRealmDictionaryRealmMapcreateOrUpdateAllFromJson
 
 .. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___JSONArray__:
 
-``createOrUpdateAllFromJson``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public void createOrUpdateAllFromJson<E>(undefined clazz, undefined json)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** createOrUpdateAllFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, **JSONArray (?)** json)
 
@@ -1043,8 +1043,8 @@ ________
 
 #createAllFromJson(Class, org.json.JSONArray)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__:
 
-``createOrUpdateAllFromJson``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public void createOrUpdateAllFromJson<E>(undefined clazz, undefined json)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** createOrUpdateAllFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ json)
 
@@ -1071,8 +1071,8 @@ ________
 
 #createAllFromJson(Class, String)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__:
 
-``createOrUpdateAllFromJson``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public void createOrUpdateAllFromJson<E>(undefined clazz, undefined in)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** createOrUpdateAllFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `InputStream <https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html>`__ in)
 
@@ -1104,8 +1104,8 @@ ________
 
 .. _io_realm_Realm_createObjectFromJson__Class_E___JSONObject__:
 
-``createObjectFromJson``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public E createObjectFromJson<E>(undefined clazz, undefined json)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** createObjectFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, **JSONObject (?)** json)
 
@@ -1130,8 +1130,8 @@ ________
 
 #createOrUpdateObjectFromJson(Class, org.json.JSONObject)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createObjectFromJson__Class_E___String__:
 
-``createObjectFromJson``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public E createObjectFromJson<E>(undefined clazz, undefined json)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** createObjectFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ json)
 
@@ -1156,8 +1156,8 @@ ________
 
 RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createObjectFromJson__Class_E___InputStream__:
 
-``createObjectFromJson``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public E createObjectFromJson<E>(undefined clazz, undefined inputStream)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** createObjectFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `InputStream <https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html>`__ inputStream)
 
@@ -1187,8 +1187,8 @@ RealmSetRealmDictionaryRealmMapcreateOrUpdateObjectFromJson
 
 .. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___JSONObject__:
 
-``createOrUpdateObjectFromJson``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public E createOrUpdateObjectFromJson<E>(undefined clazz, undefined json)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** createOrUpdateObjectFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, **JSONObject (?)** json)
 
@@ -1217,8 +1217,8 @@ ________
 
 #createObjectFromJson(Class, org.json.JSONObject)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__:
 
-``createOrUpdateObjectFromJson``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public E createOrUpdateObjectFromJson<E>(undefined clazz, undefined json)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** createOrUpdateObjectFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ json)
 
@@ -1245,8 +1245,8 @@ ________
 
 #createObjectFromJson(Class, String)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__:
 
-``createOrUpdateObjectFromJson``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public E createOrUpdateObjectFromJson<E>(undefined clazz, undefined in)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** createOrUpdateObjectFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `InputStream <https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html>`__ in)
 
@@ -1280,8 +1280,8 @@ ________
 
 .. _io_realm_Realm_createObject__Class_E___:
 
-``createObject``
-~~~~~~~~~~~~~~~~
+public E createObject<E>(undefined clazz)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** createObject <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz)
 
@@ -1304,8 +1304,8 @@ ________
 
 #createObject(Class, Object).. _io_realm_Realm_createObject__Class_E___Object__:
 
-``createObject``
-~~~~~~~~~~~~~~~~
+public E createObject<E>(undefined clazz, undefined primaryKeyValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** createObject <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ primaryKeyValue)
 
@@ -1330,8 +1330,8 @@ createEmbeddedObject
 
 .. _io_realm_Realm_createEmbeddedObject__Class_E___RealmModel__String__:
 
-``createEmbeddedObject``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public E createEmbeddedObject<E>(undefined clazz, undefined parentObject, undefined parentProperty)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** createEmbeddedObject <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, :ref:`RealmModel <io_realm_RealmModel>` parentObject, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ parentProperty)
 
@@ -1361,8 +1361,8 @@ RealmClass#embedded()copyToRealm
 
 .. _io_realm_Realm_copyToRealm__E__ImportFlag_____:
 
-``copyToRealm``
-~~~~~~~~~~~~~~~
+public E copyToRealm<E>(undefined object, undefined flags)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** copyToRealm <**E (?)** >(**E (?)** object, :ref:`io.realm.ImportFlag[] <io_realm_ImportFlag>` flags)
 
@@ -1384,8 +1384,8 @@ ______
 
 .. _io_realm_Realm_copyToRealm__Iterable_E___ImportFlag_____:
 
-``copyToRealm``
-~~~~~~~~~~~~~~~
+public List copyToRealm<E>(undefined objects, undefined flags)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ copyToRealm <**E (?)** >(`java.lang.Iterable\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html>`__ objects, :ref:`io.realm.ImportFlag[] <io_realm_ImportFlag>` flags)
 
@@ -1408,8 +1408,8 @@ copyToRealmOrUpdate
 
 .. _io_realm_Realm_copyToRealmOrUpdate__E__ImportFlag_____:
 
-``copyToRealmOrUpdate``
-~~~~~~~~~~~~~~~~~~~~~~~
+public E copyToRealmOrUpdate<E>(undefined object, undefined flags)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** copyToRealmOrUpdate <**E (?)** >(**E (?)** object, :ref:`io.realm.ImportFlag[] <io_realm_ImportFlag>` flags)
 
@@ -1436,8 +1436,8 @@ ________
 
 #copyToRealm(RealmModel, ImportFlag...).. _io_realm_Realm_copyToRealmOrUpdate__Iterable_E___ImportFlag_____:
 
-``copyToRealmOrUpdate``
-~~~~~~~~~~~~~~~~~~~~~~~
+public List copyToRealmOrUpdate<E>(undefined objects, undefined flags)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ copyToRealmOrUpdate <**E (?)** >(`java.lang.Iterable\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html>`__ objects, :ref:`io.realm.ImportFlag[] <io_realm_ImportFlag>` flags)
 
@@ -1465,8 +1465,8 @@ ________
 
 .. _io_realm_Realm_insert__Collection___extends_RealmModel___:
 
-``insert``
-~~~~~~~~~~
+public void insert(undefined objects)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** insert (`java.util.Collection\<? extends io.realm.RealmModel> <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ objects)
 
@@ -1502,8 +1502,8 @@ ______
 
 .. _io_realm_Realm_insert__RealmModel__:
 
-``insert``
-~~~~~~~~~~
+public void insert(undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** insert (:ref:`RealmModel <io_realm_RealmModel>` object)
 
@@ -1542,8 +1542,8 @@ insertOrUpdate
 
 .. _io_realm_Realm_insertOrUpdate__Collection___extends_RealmModel___:
 
-``insertOrUpdate``
-~~~~~~~~~~~~~~~~~~
+public void insertOrUpdate(undefined objects)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** insertOrUpdate (`java.util.Collection\<? extends io.realm.RealmModel> <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ objects)
 
@@ -1579,8 +1579,8 @@ ______
 
 .. _io_realm_Realm_insertOrUpdate__RealmModel__:
 
-``insertOrUpdate``
-~~~~~~~~~~~~~~~~~~
+public void insertOrUpdate(undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** insertOrUpdate (:ref:`RealmModel <io_realm_RealmModel>` object)
 
@@ -1619,8 +1619,8 @@ copyFromRealm
 
 .. _io_realm_Realm_copyFromRealm__Iterable_E___:
 
-``copyFromRealm``
-~~~~~~~~~~~~~~~~~
+public List copyFromRealm<E>(undefined realmObjects)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ copyFromRealm <**E (?)** >(`java.lang.Iterable\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html>`__ realmObjects)
 
@@ -1651,8 +1651,8 @@ ________
 
 #copyToRealmOrUpdate(Iterable, ImportFlag...).. _io_realm_Realm_copyFromRealm__Iterable_E___int__:
 
-``copyFromRealm``
-~~~~~~~~~~~~~~~~~
+public List copyFromRealm<E>(undefined realmObjects, undefined maxDepth)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ copyFromRealm <**E (?)** >(`java.lang.Iterable\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html>`__ realmObjects, **int (?)** maxDepth)
 
@@ -1687,8 +1687,8 @@ ________
 
 #copyToRealmOrUpdate(Iterable, ImportFlag...).. _io_realm_Realm_copyFromRealm__E__:
 
-``copyFromRealm``
-~~~~~~~~~~~~~~~~~
+public E copyFromRealm<E>(undefined realmObject)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** copyFromRealm <**E (?)** >(**E (?)** realmObject)
 
@@ -1723,8 +1723,8 @@ ________
 
 #copyToRealmOrUpdate(RealmModel, ImportFlag...).. _io_realm_Realm_copyFromRealm__E__int__:
 
-``copyFromRealm``
-~~~~~~~~~~~~~~~~~
+public E copyFromRealm<E>(undefined realmObject, undefined maxDepth)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** copyFromRealm <**E (?)** >(**E (?)** realmObject, **int (?)** maxDepth)
 
@@ -1766,8 +1766,8 @@ ________
 
 .. _io_realm_Realm_where__Class_E___:
 
-``where``
-~~~~~~~~~
+public RealmQuery where<E>(undefined clazz)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` where <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz)
 
@@ -1786,8 +1786,8 @@ io.realm.RealmQueryaddChangeListener
 
 .. _io_realm_Realm_addChangeListener__RealmChangeListener_Realm___:
 
-``addChangeListener``
-~~~~~~~~~~~~~~~~~~~~~
+public void addChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** addChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.Realm> <io_realm_RealmChangeListener>` listener)
 
@@ -1815,8 +1815,8 @@ io.realm.RealmChangeListener#removeChangeListener(RealmChangeListener)#removeAll
 
 .. _io_realm_Realm_removeChangeListener__RealmChangeListener_Realm___:
 
-``removeChangeListener``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public void removeChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** removeChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.Realm> <io_realm_RealmChangeListener>` listener)
 
@@ -1838,8 +1838,8 @@ io.realm.RealmChangeListenerremoveAllChangeListeners
 
 .. _io_realm_Realm_removeAllChangeListeners____:
 
-``removeAllChangeListeners``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public void removeAllChangeListeners()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** removeAllChangeListeners ()
 
@@ -1855,8 +1855,8 @@ io.realm.RealmChangeListenerexecuteTransaction
 
 .. _io_realm_Realm_executeTransaction__Realm_Transaction__:
 
-``executeTransaction``
-~~~~~~~~~~~~~~~~~~~~~~
+public void executeTransaction(undefined transaction)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** executeTransaction (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
 
@@ -1883,8 +1883,8 @@ executeTransactionAsync
 
 .. _io_realm_Realm_executeTransactionAsync__Realm_Transaction__:
 
-``executeTransactionAsync``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmAsyncTask executeTransactionAsync(undefined transaction)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` executeTransactionAsync (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
 
@@ -1904,8 +1904,8 @@ ______
 
 .. _io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__:
 
-``executeTransactionAsync``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmAsyncTask executeTransactionAsync(undefined transaction, undefined onSuccess)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` executeTransactionAsync (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction, :ref:`Realm.Transaction.OnSuccess <io_realm_Realm_Transaction_OnSuccess>` onSuccess)
 
@@ -1927,8 +1927,8 @@ ______
 
 .. _io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnError__:
 
-``executeTransactionAsync``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmAsyncTask executeTransactionAsync(undefined transaction, undefined onError)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` executeTransactionAsync (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction, :ref:`Realm.Transaction.OnError <io_realm_Realm_Transaction_OnError>` onError)
 
@@ -1950,8 +1950,8 @@ ______
 
 .. _io_realm_Realm_executeTransactionAsync__Realm_Transaction__Realm_Transaction_OnSuccess__Realm_Transaction_OnError__:
 
-``executeTransactionAsync``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmAsyncTask executeTransactionAsync(undefined transaction, undefined onSuccess, undefined onError)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` executeTransactionAsync (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction, :ref:`Realm.Transaction.OnSuccess <io_realm_Realm_Transaction_OnSuccess>` onSuccess, :ref:`Realm.Transaction.OnError <io_realm_Realm_Transaction_OnError>` onError)
 
@@ -1978,8 +1978,8 @@ delete
 
 .. _io_realm_Realm_delete__Class___extends_RealmModel___:
 
-``delete``
-~~~~~~~~~~
+public void delete(undefined clazz)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** delete (`java.lang.Class\<? extends io.realm.RealmModel> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz)
 
@@ -1998,8 +1998,8 @@ migrateRealm
 
 .. _io_realm_Realm_migrateRealm__RealmConfiguration__:
 
-``migrateRealm``
-~~~~~~~~~~~~~~~~
+public static void migrateRealm(undefined configuration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **void (?)** migrateRealm (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration)
 
@@ -2017,8 +2017,8 @@ ______
 
 .. _io_realm_Realm_migrateRealm__RealmConfiguration__RealmMigration__:
 
-``migrateRealm``
-~~~~~~~~~~~~~~~~
+public static void migrateRealm(undefined configuration, undefined migration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **void (?)** migrateRealm (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration, :ref:`RealmMigration <io_realm_RealmMigration>` migration)
 
@@ -2043,8 +2043,8 @@ deleteRealm
 
 .. _io_realm_Realm_deleteRealm__RealmConfiguration__:
 
-``deleteRealm``
-~~~~~~~~~~~~~~~
+public static boolean deleteRealm(undefined configuration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **boolean (?)** deleteRealm (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration)
 
@@ -2073,8 +2073,8 @@ compactRealm
 
 .. _io_realm_Realm_compactRealm__RealmConfiguration__:
 
-``compactRealm``
-~~~~~~~~~~~~~~~~
+public static boolean compactRealm(undefined configuration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **boolean (?)** compactRealm (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration)
 
@@ -2099,8 +2099,8 @@ freeze
 
 .. _io_realm_Realm_freeze____:
 
-``freeze``
-~~~~~~~~~~
+public Realm freeze()
+~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`Realm <io_realm_Realm>` freeze ()
 
@@ -2112,8 +2112,8 @@ getDefaultModule
 
 .. _io_realm_Realm_getDefaultModule____:
 
-``getDefaultModule``
-~~~~~~~~~~~~~~~~~~~~
+public static Object getDefaultModule()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static `Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ getDefaultModule ()
 
@@ -2129,8 +2129,8 @@ io.realm.RealmConfiguration.Builder#modules(Object, Object...)getGlobalInstanceC
 
 .. _io_realm_Realm_getGlobalInstanceCount__RealmConfiguration__:
 
-``getGlobalInstanceCount``
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static int getGlobalInstanceCount(undefined configuration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **int (?)** getGlobalInstanceCount (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration)
 
@@ -2148,8 +2148,8 @@ getLocalInstanceCount
 
 .. _io_realm_Realm_getLocalInstanceCount__RealmConfiguration__:
 
-``getLocalInstanceCount``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+public static int getLocalInstanceCount(undefined configuration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **int (?)** getLocalInstanceCount (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration)
 
@@ -2167,8 +2167,8 @@ getApplicationContext
 
 .. _io_realm_Realm_getApplicationContext____:
 
-``getApplicationContext``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+public static Context getApplicationContext()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **Context (?)** getApplicationContext ()
 

@@ -463,8 +463,8 @@ values
 
 .. _io_realm_FrozenPendingRow_values____:
 
-``values``
-~~~~~~~~~~
+public static FrozenPendingRow values()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`FrozenPendingRow <io_realm_FrozenPendingRow>` values ()
 
@@ -474,8 +474,8 @@ valueOf
 
 .. _io_realm_FrozenPendingRow_valueOf__String__:
 
-``valueOf``
-~~~~~~~~~~~
+public static FrozenPendingRow valueOf(undefined name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`FrozenPendingRow <io_realm_FrozenPendingRow>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
@@ -485,8 +485,8 @@ getColumnCount
 
 .. _io_realm_FrozenPendingRow_getColumnCount____:
 
-``getColumnCount``
-~~~~~~~~~~~~~~~~~~
+public long getColumnCount()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** getColumnCount ()
 
@@ -496,8 +496,8 @@ getColumnNames
 
 .. _io_realm_FrozenPendingRow_getColumnNames____:
 
-``getColumnNames``
-~~~~~~~~~~~~~~~~~~
+public String getColumnNames()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getColumnNames ()
 
@@ -507,8 +507,8 @@ getColumnKey
 
 .. _io_realm_FrozenPendingRow_getColumnKey__String__:
 
-``getColumnKey``
-~~~~~~~~~~~~~~~~
+public long getColumnKey(undefined columnName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** getColumnKey (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ columnName)
 
@@ -518,8 +518,8 @@ getColumnType
 
 .. _io_realm_FrozenPendingRow_getColumnType__long__:
 
-``getColumnType``
-~~~~~~~~~~~~~~~~~
+public RealmFieldType getColumnType(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmFieldType <io_realm_RealmFieldType>` getColumnType (**long (?)** columnKey)
 
@@ -529,8 +529,8 @@ getTable
 
 .. _io_realm_FrozenPendingRow_getTable____:
 
-``getTable``
-~~~~~~~~~~~~
+public Table getTable()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public **Table (?)** getTable ()
 
@@ -540,8 +540,8 @@ getObjectKey
 
 .. _io_realm_FrozenPendingRow_getObjectKey____:
 
-``getObjectKey``
-~~~~~~~~~~~~~~~~
+public long getObjectKey()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** getObjectKey ()
 
@@ -551,8 +551,8 @@ getLong
 
 .. _io_realm_FrozenPendingRow_getLong__long__:
 
-``getLong``
-~~~~~~~~~~~
+public long getLong(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** getLong (**long (?)** columnKey)
 
@@ -562,8 +562,8 @@ getBoolean
 
 .. _io_realm_FrozenPendingRow_getBoolean__long__:
 
-``getBoolean``
-~~~~~~~~~~~~~~
+public boolean getBoolean(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** getBoolean (**long (?)** columnKey)
 
@@ -573,8 +573,8 @@ getFloat
 
 .. _io_realm_FrozenPendingRow_getFloat__long__:
 
-``getFloat``
-~~~~~~~~~~~~
+public float getFloat(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **float (?)** getFloat (**long (?)** columnKey)
 
@@ -584,8 +584,8 @@ getDouble
 
 .. _io_realm_FrozenPendingRow_getDouble__long__:
 
-``getDouble``
-~~~~~~~~~~~~~
+public double getDouble(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **double (?)** getDouble (**long (?)** columnKey)
 
@@ -595,8 +595,8 @@ getDate
 
 .. _io_realm_FrozenPendingRow_getDate__long__:
 
-``getDate``
-~~~~~~~~~~~
+public Date getDate(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ getDate (**long (?)** columnKey)
 
@@ -606,8 +606,8 @@ getString
 
 .. _io_realm_FrozenPendingRow_getString__long__:
 
-``getString``
-~~~~~~~~~~~~~
+public String getString(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getString (**long (?)** columnKey)
 
@@ -617,8 +617,8 @@ getBinaryByteArray
 
 .. _io_realm_FrozenPendingRow_getBinaryByteArray__long__:
 
-``getBinaryByteArray``
-~~~~~~~~~~~~~~~~~~~~~~
+public byte getBinaryByteArray(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **byte (?)** getBinaryByteArray (**long (?)** columnKey)
 
@@ -628,8 +628,8 @@ getDecimal128
 
 .. _io_realm_FrozenPendingRow_getDecimal128__long__:
 
-``getDecimal128``
-~~~~~~~~~~~~~~~~~
+public Decimal128 getDecimal128(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **Decimal128 (?)** getDecimal128 (**long (?)** columnKey)
 
@@ -639,8 +639,8 @@ getObjectId
 
 .. _io_realm_FrozenPendingRow_getObjectId__long__:
 
-``getObjectId``
-~~~~~~~~~~~~~~~
+public ObjectId getObjectId(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **ObjectId (?)** getObjectId (**long (?)** columnKey)
 
@@ -650,8 +650,8 @@ getUUID
 
 .. _io_realm_FrozenPendingRow_getUUID__long__:
 
-``getUUID``
-~~~~~~~~~~~
+public UUID getUUID(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `UUID <https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html>`__ getUUID (**long (?)** columnKey)
 
@@ -661,8 +661,8 @@ getNativeRealmAny
 
 .. _io_realm_FrozenPendingRow_getNativeRealmAny__long__:
 
-``getNativeRealmAny``
-~~~~~~~~~~~~~~~~~~~~~
+public NativeRealmAny getNativeRealmAny(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **NativeRealmAny (?)** getNativeRealmAny (**long (?)** columnKey)
 
@@ -672,8 +672,8 @@ getLink
 
 .. _io_realm_FrozenPendingRow_getLink__long__:
 
-``getLink``
-~~~~~~~~~~~
+public long getLink(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** getLink (**long (?)** columnKey)
 
@@ -683,8 +683,8 @@ isNullLink
 
 .. _io_realm_FrozenPendingRow_isNullLink__long__:
 
-``isNullLink``
-~~~~~~~~~~~~~~
+public boolean isNullLink(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isNullLink (**long (?)** columnKey)
 
@@ -694,8 +694,8 @@ getModelList
 
 .. _io_realm_FrozenPendingRow_getModelList__long__:
 
-``getModelList``
-~~~~~~~~~~~~~~~~
+public OsList getModelList(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **OsList (?)** getModelList (**long (?)** columnKey)
 
@@ -705,8 +705,8 @@ getValueList
 
 .. _io_realm_FrozenPendingRow_getValueList__long__RealmFieldType__:
 
-``getValueList``
-~~~~~~~~~~~~~~~~
+public OsList getValueList(undefined columnKey, undefined fieldType)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **OsList (?)** getValueList (**long (?)** columnKey, :ref:`RealmFieldType <io_realm_RealmFieldType>` fieldType)
 
@@ -716,8 +716,8 @@ getRealmAnyMap
 
 .. _io_realm_FrozenPendingRow_getRealmAnyMap__long__:
 
-``getRealmAnyMap``
-~~~~~~~~~~~~~~~~~~
+public OsMap getRealmAnyMap(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **OsMap (?)** getRealmAnyMap (**long (?)** columnKey)
 
@@ -727,8 +727,8 @@ getModelMap
 
 .. _io_realm_FrozenPendingRow_getModelMap__long__:
 
-``getModelMap``
-~~~~~~~~~~~~~~~
+public OsMap getModelMap(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **OsMap (?)** getModelMap (**long (?)** columnKey)
 
@@ -738,8 +738,8 @@ getValueMap
 
 .. _io_realm_FrozenPendingRow_getValueMap__long__RealmFieldType__:
 
-``getValueMap``
-~~~~~~~~~~~~~~~
+public OsMap getValueMap(undefined columnKey, undefined fieldType)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **OsMap (?)** getValueMap (**long (?)** columnKey, :ref:`RealmFieldType <io_realm_RealmFieldType>` fieldType)
 
@@ -749,8 +749,8 @@ getRealmAnySet
 
 .. _io_realm_FrozenPendingRow_getRealmAnySet__long__:
 
-``getRealmAnySet``
-~~~~~~~~~~~~~~~~~~
+public OsSet getRealmAnySet(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **OsSet (?)** getRealmAnySet (**long (?)** columnKey)
 
@@ -760,8 +760,8 @@ getModelSet
 
 .. _io_realm_FrozenPendingRow_getModelSet__long__:
 
-``getModelSet``
-~~~~~~~~~~~~~~~
+public OsSet getModelSet(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **OsSet (?)** getModelSet (**long (?)** columnKey)
 
@@ -771,8 +771,8 @@ getValueSet
 
 .. _io_realm_FrozenPendingRow_getValueSet__long__RealmFieldType__:
 
-``getValueSet``
-~~~~~~~~~~~~~~~
+public OsSet getValueSet(undefined columnKey, undefined fieldType)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **OsSet (?)** getValueSet (**long (?)** columnKey, :ref:`RealmFieldType <io_realm_RealmFieldType>` fieldType)
 
@@ -782,8 +782,8 @@ setLong
 
 .. _io_realm_FrozenPendingRow_setLong__long__long__:
 
-``setLong``
-~~~~~~~~~~~
+public void setLong(undefined columnKey, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setLong (**long (?)** columnKey, **long (?)** value)
 
@@ -793,8 +793,8 @@ setBoolean
 
 .. _io_realm_FrozenPendingRow_setBoolean__long__boolean__:
 
-``setBoolean``
-~~~~~~~~~~~~~~
+public void setBoolean(undefined columnKey, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setBoolean (**long (?)** columnKey, **boolean (?)** value)
 
@@ -804,8 +804,8 @@ setFloat
 
 .. _io_realm_FrozenPendingRow_setFloat__long__float__:
 
-``setFloat``
-~~~~~~~~~~~~
+public void setFloat(undefined columnKey, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setFloat (**long (?)** columnKey, **float (?)** value)
 
@@ -815,8 +815,8 @@ setDouble
 
 .. _io_realm_FrozenPendingRow_setDouble__long__double__:
 
-``setDouble``
-~~~~~~~~~~~~~
+public void setDouble(undefined columnKey, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setDouble (**long (?)** columnKey, **double (?)** value)
 
@@ -826,8 +826,8 @@ setDate
 
 .. _io_realm_FrozenPendingRow_setDate__long__Date__:
 
-``setDate``
-~~~~~~~~~~~
+public void setDate(undefined columnKey, undefined date)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setDate (**long (?)** columnKey, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ date)
 
@@ -837,8 +837,8 @@ setString
 
 .. _io_realm_FrozenPendingRow_setString__long__String__:
 
-``setString``
-~~~~~~~~~~~~~
+public void setString(undefined columnKey, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setString (**long (?)** columnKey, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
 
@@ -848,8 +848,8 @@ setRealmAny
 
 .. _io_realm_FrozenPendingRow_setRealmAny__long__long__:
 
-``setRealmAny``
-~~~~~~~~~~~~~~~
+public void setRealmAny(undefined columnKey, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setRealmAny (**long (?)** columnKey, **long (?)** value)
 
@@ -859,8 +859,8 @@ setBinaryByteArray
 
 .. _io_realm_FrozenPendingRow_setBinaryByteArray__long__byte[]__:
 
-``setBinaryByteArray``
-~~~~~~~~~~~~~~~~~~~~~~
+public void setBinaryByteArray(undefined columnKey, undefined data)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setBinaryByteArray (**long (?)** columnKey, **byte[] (?)** data)
 
@@ -870,8 +870,8 @@ setLink
 
 .. _io_realm_FrozenPendingRow_setLink__long__long__:
 
-``setLink``
-~~~~~~~~~~~
+public void setLink(undefined columnKey, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setLink (**long (?)** columnKey, **long (?)** value)
 
@@ -881,8 +881,8 @@ nullifyLink
 
 .. _io_realm_FrozenPendingRow_nullifyLink__long__:
 
-``nullifyLink``
-~~~~~~~~~~~~~~~
+public void nullifyLink(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** nullifyLink (**long (?)** columnKey)
 
@@ -892,8 +892,8 @@ isNull
 
 .. _io_realm_FrozenPendingRow_isNull__long__:
 
-``isNull``
-~~~~~~~~~~
+public boolean isNull(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isNull (**long (?)** columnKey)
 
@@ -903,8 +903,8 @@ setNull
 
 .. _io_realm_FrozenPendingRow_setNull__long__:
 
-``setNull``
-~~~~~~~~~~~
+public void setNull(undefined columnKey)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setNull (**long (?)** columnKey)
 
@@ -914,8 +914,8 @@ setDecimal128
 
 .. _io_realm_FrozenPendingRow_setDecimal128__long__Decimal128__:
 
-``setDecimal128``
-~~~~~~~~~~~~~~~~~
+public void setDecimal128(undefined columnKey, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setDecimal128 (**long (?)** columnKey, **Decimal128 (?)** value)
 
@@ -925,8 +925,8 @@ setObjectId
 
 .. _io_realm_FrozenPendingRow_setObjectId__long__ObjectId__:
 
-``setObjectId``
-~~~~~~~~~~~~~~~
+public void setObjectId(undefined columnKey, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setObjectId (**long (?)** columnKey, **ObjectId (?)** value)
 
@@ -936,8 +936,8 @@ setUUID
 
 .. _io_realm_FrozenPendingRow_setUUID__long__UUID__:
 
-``setUUID``
-~~~~~~~~~~~
+public void setUUID(undefined columnKey, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setUUID (**long (?)** columnKey, `UUID <https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html>`__ value)
 
@@ -947,8 +947,8 @@ createEmbeddedObject
 
 .. _io_realm_FrozenPendingRow_createEmbeddedObject__long__RealmFieldType__:
 
-``createEmbeddedObject``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public long createEmbeddedObject(undefined columnKey, undefined parentPropertyType)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** createEmbeddedObject (**long (?)** columnKey, :ref:`RealmFieldType <io_realm_RealmFieldType>` parentPropertyType)
 
@@ -958,8 +958,8 @@ isValid
 
 .. _io_realm_FrozenPendingRow_isValid____:
 
-``isValid``
-~~~~~~~~~~~
+public boolean isValid()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isValid ()
 
@@ -969,8 +969,8 @@ checkIfAttached
 
 .. _io_realm_FrozenPendingRow_checkIfAttached____:
 
-``checkIfAttached``
-~~~~~~~~~~~~~~~~~~~
+public void checkIfAttached()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** checkIfAttached ()
 
@@ -980,8 +980,8 @@ hasColumn
 
 .. _io_realm_FrozenPendingRow_hasColumn__String__:
 
-``hasColumn``
-~~~~~~~~~~~~~
+public boolean hasColumn(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** hasColumn (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -991,8 +991,8 @@ freeze
 
 .. _io_realm_FrozenPendingRow_freeze__OsSharedRealm__:
 
-``freeze``
-~~~~~~~~~~
+public Row freeze(undefined frozenRealm)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **Row (?)** freeze (**OsSharedRealm (?)** frozenRealm)
 
@@ -1002,8 +1002,8 @@ isLoaded
 
 .. _io_realm_FrozenPendingRow_isLoaded____:
 
-``isLoaded``
-~~~~~~~~~~~~
+public boolean isLoaded()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isLoaded ()
 

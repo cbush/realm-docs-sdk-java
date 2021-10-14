@@ -216,8 +216,8 @@ name
 
 .. _io_realm_RealmConfiguration_Builder_name__String__:
 
-``name``
-~~~~~~~~
+public RealmConfiguration.Builder name(undefined filename)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` name (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ filename)
 
@@ -227,8 +227,8 @@ directory
 
 .. _io_realm_RealmConfiguration_Builder_directory__File__:
 
-``directory``
-~~~~~~~~~~~~~
+public RealmConfiguration.Builder directory(undefined directory)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` directory (`File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__ directory)
 
@@ -249,8 +249,8 @@ encryptionKey
 
 .. _io_realm_RealmConfiguration_Builder_encryptionKey__byte[]__:
 
-``encryptionKey``
-~~~~~~~~~~~~~~~~~
+public RealmConfiguration.Builder encryptionKey(undefined key)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` encryptionKey (**byte[] (?)** key)
 
@@ -262,8 +262,8 @@ schemaVersion
 
 .. _io_realm_RealmConfiguration_Builder_schemaVersion__long__:
 
-``schemaVersion``
-~~~~~~~~~~~~~~~~~
+public RealmConfiguration.Builder schemaVersion(undefined schemaVersion)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` schemaVersion (**long (?)** schemaVersion)
 
@@ -280,8 +280,8 @@ ________
 
 .. _io_realm_RealmConfiguration_Builder_migration__RealmMigration__:
 
-``migration``
-~~~~~~~~~~~~~
+public RealmConfiguration.Builder migration(undefined migration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` migration (:ref:`RealmMigration <io_realm_RealmMigration>` migration)
 
@@ -293,8 +293,8 @@ deleteRealmIfMigrationNeeded
 
 .. _io_realm_RealmConfiguration_Builder_deleteRealmIfMigrationNeeded____:
 
-``deleteRealmIfMigrationNeeded``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmConfiguration.Builder deleteRealmIfMigrationNeeded()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` deleteRealmIfMigrationNeeded ()
 
@@ -315,8 +315,8 @@ inMemory
 
 .. _io_realm_RealmConfiguration_Builder_inMemory____:
 
-``inMemory``
-~~~~~~~~~~~~
+public RealmConfiguration.Builder inMemory()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` inMemory ()
 
@@ -328,8 +328,8 @@ modules
 
 .. _io_realm_RealmConfiguration_Builder_modules__Object__Object_____:
 
-``modules``
-~~~~~~~~~~~
+public RealmConfiguration.Builder modules(undefined baseModule, undefined additionalModules)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` modules (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ baseModule, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ additionalModules)
 
@@ -363,8 +363,8 @@ Realm#getDefaultModule()addModule
 
 .. _io_realm_RealmConfiguration_Builder_addModule__Object__:
 
-``addModule``
-~~~~~~~~~~~~~
+public final RealmConfiguration.Builder addModule(undefined module)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` addModule (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ module)
 
@@ -374,8 +374,8 @@ rxFactory
 
 .. _io_realm_RealmConfiguration_Builder_rxFactory__RxObservableFactory__:
 
-``rxFactory``
-~~~~~~~~~~~~~
+public RealmConfiguration.Builder rxFactory(undefined factory)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` rxFactory (:ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` factory)
 
@@ -393,8 +393,8 @@ flowFactory
 
 .. _io_realm_RealmConfiguration_Builder_flowFactory__FlowFactory__:
 
-``flowFactory``
-~~~~~~~~~~~~~~~
+public RealmConfiguration.Builder flowFactory(undefined factory)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` flowFactory (:ref:`FlowFactory <io_realm_coroutines_FlowFactory>` factory)
 
@@ -412,8 +412,8 @@ initialData
 
 .. _io_realm_RealmConfiguration_Builder_initialData__Realm_Transaction__:
 
-``initialData``
-~~~~~~~~~~~~~~~
+public RealmConfiguration.Builder initialData(undefined transaction)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` initialData (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
 
@@ -431,8 +431,8 @@ assetFile
 
 .. _io_realm_RealmConfiguration_Builder_assetFile__String__:
 
-``assetFile``
-~~~~~~~~~~~~~
+public RealmConfiguration.Builder assetFile(undefined assetFile)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` assetFile (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ assetFile)
 
@@ -459,8 +459,8 @@ readOnly
 
 .. _io_realm_RealmConfiguration_Builder_readOnly____:
 
-``readOnly``
-~~~~~~~~~~~~
+public RealmConfiguration.Builder readOnly()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` readOnly ()
 
@@ -476,8 +476,8 @@ compactOnLaunch
 
 .. _io_realm_RealmConfiguration_Builder_compactOnLaunch____:
 
-``compactOnLaunch``
-~~~~~~~~~~~~~~~~~~~
+public RealmConfiguration.Builder compactOnLaunch()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` compactOnLaunch ()
 
@@ -486,8 +486,8 @@ Setting this will cause Realm to compact the Realm file if the Realm file has gr
 
 .. _io_realm_RealmConfiguration_Builder_compactOnLaunch__CompactOnLaunchCallback__:
 
-``compactOnLaunch``
-~~~~~~~~~~~~~~~~~~~
+public RealmConfiguration.Builder compactOnLaunch(undefined compactOnLaunch)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` compactOnLaunch (:ref:`CompactOnLaunchCallback <io_realm_CompactOnLaunchCallback>` compactOnLaunch)
 
@@ -503,8 +503,8 @@ maxNumberOfActiveVersions
 
 .. _io_realm_RealmConfiguration_Builder_maxNumberOfActiveVersions__long__:
 
-``maxNumberOfActiveVersions``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmConfiguration.Builder maxNumberOfActiveVersions(undefined number)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` maxNumberOfActiveVersions (**long (?)** number)
 
@@ -529,8 +529,8 @@ ________
 
 .. _io_realm_RealmConfiguration_Builder_allowWritesOnUiThread__boolean__:
 
-``allowWritesOnUiThread``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmConfiguration.Builder allowWritesOnUiThread(undefined allowWritesOnUiThread)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` allowWritesOnUiThread (**boolean (?)** allowWritesOnUiThread)
 
@@ -546,8 +546,8 @@ allowQueriesOnUiThread
 
 .. _io_realm_RealmConfiguration_Builder_allowQueriesOnUiThread__boolean__:
 
-``allowQueriesOnUiThread``
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmConfiguration.Builder allowQueriesOnUiThread(undefined allowQueriesOnUiThread)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` allowQueriesOnUiThread (**boolean (?)** allowQueriesOnUiThread)
 
@@ -563,8 +563,8 @@ build
 
 .. _io_realm_RealmConfiguration_Builder_build____:
 
-``build``
-~~~~~~~~~
+public RealmConfiguration build()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration <io_realm_RealmConfiguration>` build ()
 

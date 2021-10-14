@@ -117,8 +117,8 @@ getState
 
 .. _io_realm_OrderedCollectionChangeSet_getState____:
 
-``getState``
-~~~~~~~~~~~~
+public OrderedCollectionChangeSet.State getState()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`OrderedCollectionChangeSet.State <io_realm_OrderedCollectionChangeSet_State>` getState ()
 
@@ -133,8 +133,8 @@ StategetDeletions
 
 .. _io_realm_OrderedCollectionChangeSet_getDeletions____:
 
-``getDeletions``
-~~~~~~~~~~~~~~~~
+public int getDeletions()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** getDeletions ()
 
@@ -144,8 +144,8 @@ getInsertions
 
 .. _io_realm_OrderedCollectionChangeSet_getInsertions____:
 
-``getInsertions``
-~~~~~~~~~~~~~~~~~
+public int getInsertions()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** getInsertions ()
 
@@ -155,8 +155,8 @@ getChanges
 
 .. _io_realm_OrderedCollectionChangeSet_getChanges____:
 
-``getChanges``
-~~~~~~~~~~~~~~
+public int getChanges()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** getChanges ()
 
@@ -170,8 +170,8 @@ getDeletionRanges
 
 .. _io_realm_OrderedCollectionChangeSet_getDeletionRanges____:
 
-``getDeletionRanges``
-~~~~~~~~~~~~~~~~~~~~~
+public OrderedCollectionChangeSet.Range getDeletionRanges()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`OrderedCollectionChangeSet.Range <io_realm_OrderedCollectionChangeSet_Range>` getDeletionRanges ()
 
@@ -181,8 +181,8 @@ getInsertionRanges
 
 .. _io_realm_OrderedCollectionChangeSet_getInsertionRanges____:
 
-``getInsertionRanges``
-~~~~~~~~~~~~~~~~~~~~~~
+public OrderedCollectionChangeSet.Range getInsertionRanges()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`OrderedCollectionChangeSet.Range <io_realm_OrderedCollectionChangeSet_Range>` getInsertionRanges ()
 
@@ -192,8 +192,8 @@ getChangeRanges
 
 .. _io_realm_OrderedCollectionChangeSet_getChangeRanges____:
 
-``getChangeRanges``
-~~~~~~~~~~~~~~~~~~~
+public OrderedCollectionChangeSet.Range getChangeRanges()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`OrderedCollectionChangeSet.Range <io_realm_OrderedCollectionChangeSet_Range>` getChangeRanges ()
 
@@ -203,8 +203,8 @@ getError
 
 .. _io_realm_OrderedCollectionChangeSet_getError____:
 
-``getError``
-~~~~~~~~~~~~
+public Throwable getError()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ getError ()
 

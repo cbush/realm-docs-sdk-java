@@ -49,8 +49,8 @@ cancel
 
 .. _io_realm_RealmAsyncTask_cancel____:
 
-``cancel``
-~~~~~~~~~~
+public void cancel()
+~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** cancel ()
 
@@ -60,8 +60,8 @@ isCancelled
 
 .. _io_realm_RealmAsyncTask_isCancelled____:
 
-``isCancelled``
-~~~~~~~~~~~~~~~
+public boolean isCancelled()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isCancelled ()
 

@@ -47,8 +47,8 @@ onChange
 
 .. _io_realm_RealmObjectChangeListener_onChange__T__ObjectChangeSet__:
 
-``onChange``
-~~~~~~~~~~~~
+public void onChange(undefined t, undefined changeSet)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** onChange (**T (?)** t, :ref:`ObjectChangeSet <io_realm_ObjectChangeSet>` changeSet)
 

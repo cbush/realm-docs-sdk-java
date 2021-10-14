@@ -62,8 +62,8 @@ getMatchedCount
 
 .. _io_realm_mongodb_mongo_result_UpdateResult_getMatchedCount____:
 
-``getMatchedCount``
-~~~~~~~~~~~~~~~~~~~
+public long getMatchedCount()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** getMatchedCount ()
 
@@ -73,8 +73,8 @@ getModifiedCount
 
 .. _io_realm_mongodb_mongo_result_UpdateResult_getModifiedCount____:
 
-``getModifiedCount``
-~~~~~~~~~~~~~~~~~~~~
+public long getModifiedCount()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** getModifiedCount ()
 
@@ -84,8 +84,8 @@ getUpsertedId
 
 .. _io_realm_mongodb_mongo_result_UpdateResult_getUpsertedId____:
 
-``getUpsertedId``
-~~~~~~~~~~~~~~~~~
+public BsonValue getUpsertedId()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **BsonValue (?)** getUpsertedId ()
 

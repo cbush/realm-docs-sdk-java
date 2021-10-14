@@ -111,8 +111,8 @@ values
 
 .. _io_realm_mongodb_sync_ProgressMode_values____:
 
-``values``
-~~~~~~~~~~
+public static ProgressMode values()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`ProgressMode <io_realm_mongodb_sync_ProgressMode>` values ()
 
@@ -122,8 +122,8 @@ valueOf
 
 .. _io_realm_mongodb_sync_ProgressMode_valueOf__String__:
 
-``valueOf``
-~~~~~~~~~~~
+public static ProgressMode valueOf(undefined name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`ProgressMode <io_realm_mongodb_sync_ProgressMode>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 

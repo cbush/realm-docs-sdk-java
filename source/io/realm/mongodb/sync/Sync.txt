@@ -111,8 +111,8 @@ getSession
 
 .. _io_realm_mongodb_sync_Sync_getSession__SyncConfiguration__:
 
-``getSession``
-~~~~~~~~~~~~~~
+public synchronized SyncSession getSession(undefined syncConfiguration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` getSession (:ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` syncConfiguration)
 
@@ -133,8 +133,8 @@ getAllSessions
 
 .. _io_realm_mongodb_sync_Sync_getAllSessions____:
 
-``getAllSessions``
-~~~~~~~~~~~~~~~~~~
+public synchronized Collection getAllSessions()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized `Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ getAllSessions ()
 
@@ -146,8 +146,8 @@ getOrCreateSession
 
 .. _io_realm_mongodb_sync_Sync_getOrCreateSession__SyncConfiguration__:
 
-``getOrCreateSession``
-~~~~~~~~~~~~~~~~~~~~~~
+public synchronized SyncSession getOrCreateSession(undefined syncConfiguration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` getOrCreateSession (:ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` syncConfiguration)
 
@@ -168,8 +168,8 @@ reconnect
 
 .. _io_realm_mongodb_sync_Sync_reconnect____:
 
-``reconnect``
-~~~~~~~~~~~~~
+public void reconnect()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** reconnect ()
 

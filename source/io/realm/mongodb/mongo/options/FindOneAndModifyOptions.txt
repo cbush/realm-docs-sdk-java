@@ -110,8 +110,8 @@ getProjection
 
 .. _io_realm_mongodb_mongo_options_FindOneAndModifyOptions_getProjection____:
 
-``getProjection``
-~~~~~~~~~~~~~~~~~
+public Bson getProjection()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **Bson (?)** getProjection ()
 
@@ -121,8 +121,8 @@ projection
 
 .. _io_realm_mongodb_mongo_options_FindOneAndModifyOptions_projection__Bson__:
 
-``projection``
-~~~~~~~~~~~~~~
+public FindOneAndModifyOptions projection(undefined projection)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` projection (**Bson (?)** projection)
 
@@ -138,8 +138,8 @@ getSort
 
 .. _io_realm_mongodb_mongo_options_FindOneAndModifyOptions_getSort____:
 
-``getSort``
-~~~~~~~~~~~
+public Bson getSort()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **Bson (?)** getSort ()
 
@@ -149,8 +149,8 @@ sort
 
 .. _io_realm_mongodb_mongo_options_FindOneAndModifyOptions_sort__Bson__:
 
-``sort``
-~~~~~~~~
+public FindOneAndModifyOptions sort(undefined sort)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` sort (**Bson (?)** sort)
 
@@ -166,8 +166,8 @@ isUpsert
 
 .. _io_realm_mongodb_mongo_options_FindOneAndModifyOptions_isUpsert____:
 
-``isUpsert``
-~~~~~~~~~~~~
+public boolean isUpsert()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isUpsert ()
 
@@ -177,8 +177,8 @@ upsert
 
 .. _io_realm_mongodb_mongo_options_FindOneAndModifyOptions_upsert__boolean__:
 
-``upsert``
-~~~~~~~~~~
+public FindOneAndModifyOptions upsert(undefined upsert)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` upsert (**boolean (?)** upsert)
 
@@ -194,8 +194,8 @@ isReturnNewDocument
 
 .. _io_realm_mongodb_mongo_options_FindOneAndModifyOptions_isReturnNewDocument____:
 
-``isReturnNewDocument``
-~~~~~~~~~~~~~~~~~~~~~~~
+public boolean isReturnNewDocument()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isReturnNewDocument ()
 
@@ -205,8 +205,8 @@ returnNewDocument
 
 .. _io_realm_mongodb_mongo_options_FindOneAndModifyOptions_returnNewDocument__boolean__:
 
-``returnNewDocument``
-~~~~~~~~~~~~~~~~~~~~~
+public FindOneAndModifyOptions returnNewDocument(undefined returnNewDocument)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` returnNewDocument (**boolean (?)** returnNewDocument)
 
@@ -222,8 +222,8 @@ toString
 
 .. _io_realm_mongodb_mongo_options_FindOneAndModifyOptions_toString____:
 
-``toString``
-~~~~~~~~~~~~
+public String toString()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 

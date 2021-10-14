@@ -37,8 +37,8 @@ onSuccess
 
 .. _io_realm_DynamicRealm_Transaction_OnSuccess_onSuccess____:
 
-``onSuccess``
-~~~~~~~~~~~~~
+public void onSuccess()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** onSuccess ()
 

@@ -46,8 +46,8 @@ getDeletedCount
 
 .. _io_realm_mongodb_mongo_result_DeleteResult_getDeletedCount____:
 
-``getDeletedCount``
-~~~~~~~~~~~~~~~~~~~
+public long getDeletedCount()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** getDeletedCount ()
 

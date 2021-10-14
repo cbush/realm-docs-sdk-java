@@ -347,8 +347,8 @@ where
 
 .. _io_realm_RealmResults_where____:
 
-``where``
-~~~~~~~~~
+public RealmQuery where()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` where ()
 
@@ -360,8 +360,8 @@ sort
 
 .. _io_realm_RealmResults_sort__String__Sort__String__Sort__:
 
-``sort``
-~~~~~~~~
+public RealmResults sort(undefined fieldName1, undefined sortOrder1, undefined fieldName2, undefined sortOrder2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
 
@@ -373,8 +373,8 @@ isLoaded
 
 .. _io_realm_RealmResults_isLoaded____:
 
-``isLoaded``
-~~~~~~~~~~~~
+public boolean isLoaded()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isLoaded ()
 
@@ -386,8 +386,8 @@ load
 
 .. _io_realm_RealmResults_load____:
 
-``load``
-~~~~~~~~
+public boolean load()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** load ()
 
@@ -399,8 +399,8 @@ setValue
 
 .. _io_realm_RealmResults_setValue__String__Object__:
 
-``setValue``
-~~~~~~~~~~~~
+public void setValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ value)
 
@@ -431,8 +431,8 @@ setNull
 
 .. _io_realm_RealmResults_setNull__String__:
 
-``setNull``
-~~~~~~~~~~~
+public void setNull(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setNull (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -453,8 +453,8 @@ setBoolean
 
 .. _io_realm_RealmResults_setBoolean__String__boolean__:
 
-``setBoolean``
-~~~~~~~~~~~~~~
+public void setBoolean(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setBoolean (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean (?)** value)
 
@@ -477,8 +477,8 @@ setByte
 
 .. _io_realm_RealmResults_setByte__String__byte__:
 
-``setByte``
-~~~~~~~~~~~
+public void setByte(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setByte (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **byte (?)** value)
 
@@ -501,8 +501,8 @@ setShort
 
 .. _io_realm_RealmResults_setShort__String__short__:
 
-``setShort``
-~~~~~~~~~~~~
+public void setShort(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setShort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **short (?)** value)
 
@@ -525,8 +525,8 @@ setInt
 
 .. _io_realm_RealmResults_setInt__String__int__:
 
-``setInt``
-~~~~~~~~~~
+public void setInt(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setInt (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **int (?)** value)
 
@@ -549,8 +549,8 @@ setLong
 
 .. _io_realm_RealmResults_setLong__String__long__:
 
-``setLong``
-~~~~~~~~~~~
+public void setLong(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setLong (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **long (?)** value)
 
@@ -573,8 +573,8 @@ setFloat
 
 .. _io_realm_RealmResults_setFloat__String__float__:
 
-``setFloat``
-~~~~~~~~~~~~
+public void setFloat(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setFloat (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **float (?)** value)
 
@@ -597,8 +597,8 @@ setDouble
 
 .. _io_realm_RealmResults_setDouble__String__double__:
 
-``setDouble``
-~~~~~~~~~~~~~
+public void setDouble(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setDouble (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **double (?)** value)
 
@@ -621,8 +621,8 @@ setString
 
 .. _io_realm_RealmResults_setString__String__String__:
 
-``setString``
-~~~~~~~~~~~~~
+public void setString(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setString (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
 
@@ -645,8 +645,8 @@ setBlob
 
 .. _io_realm_RealmResults_setBlob__String__byte[]__:
 
-``setBlob``
-~~~~~~~~~~~
+public void setBlob(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setBlob (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **byte[] (?)** value)
 
@@ -667,8 +667,8 @@ setDate
 
 .. _io_realm_RealmResults_setDate__String__Date__:
 
-``setDate``
-~~~~~~~~~~~
+public void setDate(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ value)
 
@@ -691,8 +691,8 @@ setObject
 
 .. _io_realm_RealmResults_setObject__String__RealmModel__:
 
-``setObject``
-~~~~~~~~~~~~~
+public void setObject(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setObject (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`RealmModel <io_realm_RealmModel>` value)
 
@@ -713,8 +713,8 @@ setDecimal128
 
 .. _io_realm_RealmResults_setDecimal128__String__Decimal128__:
 
-``setDecimal128``
-~~~~~~~~~~~~~~~~~
+public void setDecimal128(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setDecimal128 (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **Decimal128 (?)** value)
 
@@ -737,8 +737,8 @@ setObjectId
 
 .. _io_realm_RealmResults_setObjectId__String__ObjectId__:
 
-``setObjectId``
-~~~~~~~~~~~~~~~
+public void setObjectId(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setObjectId (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **ObjectId (?)** value)
 
@@ -761,8 +761,8 @@ setUUID
 
 .. _io_realm_RealmResults_setUUID__String__UUID__:
 
-``setUUID``
-~~~~~~~~~~~
+public void setUUID(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setUUID (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `UUID <https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html>`__ value)
 
@@ -785,8 +785,8 @@ setList
 
 .. _io_realm_RealmResults_setList__String__RealmList_T___:
 
-``setList``
-~~~~~~~~~~~
+public void setList<T>(undefined fieldName, undefined list)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setList <**T (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`io.realm.RealmList\<T> <io_realm_RealmList>` list)
 
@@ -807,8 +807,8 @@ isFrozen
 
 .. _io_realm_RealmResults_isFrozen____:
 
-``isFrozen``
-~~~~~~~~~~~~
+public boolean isFrozen()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isFrozen ()
 
@@ -820,8 +820,8 @@ freeze
 
 .. _io_realm_RealmResults_freeze____:
 
-``freeze``
-~~~~~~~~~~
+public RealmResults freeze()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResults <io_realm_RealmResults>` freeze ()
 
@@ -833,8 +833,8 @@ addChangeListener
 
 .. _io_realm_RealmResults_addChangeListener__RealmChangeListener_RealmResults_E____:
 
-``addChangeListener``
-~~~~~~~~~~~~~~~~~~~~~
+public void addChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** addChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmResults\<E>> <io_realm_RealmChangeListener>` listener)
 
@@ -879,8 +879,8 @@ ______
 
 .. _io_realm_RealmResults_addChangeListener__OrderedRealmCollectionChangeListener_RealmResults_E____:
 
-``addChangeListener``
-~~~~~~~~~~~~~~~~~~~~~
+public void addChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** addChangeListener (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmResults\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
 
@@ -928,8 +928,8 @@ removeAllChangeListeners
 
 .. _io_realm_RealmResults_removeAllChangeListeners____:
 
-``removeAllChangeListeners``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public void removeAllChangeListeners()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** removeAllChangeListeners ()
 
@@ -945,8 +945,8 @@ io.realm.RealmChangeListenerremoveChangeListener
 
 .. _io_realm_RealmResults_removeChangeListener__RealmChangeListener_RealmResults_E____:
 
-``removeChangeListener``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public void removeChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** removeChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmResults\<E>> <io_realm_RealmChangeListener>` listener)
 
@@ -965,8 +965,8 @@ ________
 
 io.realm.RealmChangeListener.. _io_realm_RealmResults_removeChangeListener__OrderedRealmCollectionChangeListener_RealmResults_E____:
 
-``removeChangeListener``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public void removeChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** removeChangeListener (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmResults\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
 
@@ -988,8 +988,8 @@ io.realm.RealmChangeListenerasFlowable
 
 .. _io_realm_RealmResults_asFlowable____:
 
-``asFlowable``
-~~~~~~~~~~~~~~
+public <any> asFlowable()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** asFlowable ()
 
@@ -1045,8 +1045,8 @@ ________
 
 .. _io_realm_RealmResults_asChangesetObservable____:
 
-``asChangesetObservable``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+public <any> asChangesetObservable()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** asChangesetObservable ()
 
@@ -1089,8 +1089,8 @@ ________
 
 .. _io_realm_RealmResults_asJSON____:
 
-``asJSON``
-~~~~~~~~~~
+public String asJSON()
+~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ asJSON ()
 

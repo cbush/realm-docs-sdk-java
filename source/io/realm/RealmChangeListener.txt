@@ -51,8 +51,8 @@ onChange
 
 .. _io_realm_RealmChangeListener_onChange__T__:
 
-``onChange``
-~~~~~~~~~~~~
+public void onChange(undefined t)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** onChange (**T (?)** t)
 

@@ -55,8 +55,8 @@ get
 
 .. _io_realm_mongodb_RealmResultTask_get____:
 
-``get``
-~~~~~~~
+public T get()
+~~~~~~~~~~~~~~
 
 public **T (?)** get ()
 
@@ -66,8 +66,8 @@ getAsync
 
 .. _io_realm_mongodb_RealmResultTask_getAsync__App_Callback_T___:
 
-``getAsync``
-~~~~~~~~~~~~
+public void getAsync(undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** getAsync (:ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
 

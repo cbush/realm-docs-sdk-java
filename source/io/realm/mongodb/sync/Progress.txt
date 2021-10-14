@@ -101,8 +101,8 @@ getTransferredBytes
 
 .. _io_realm_mongodb_sync_Progress_getTransferredBytes____:
 
-``getTransferredBytes``
-~~~~~~~~~~~~~~~~~~~~~~~
+public long getTransferredBytes()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** getTransferredBytes ()
 
@@ -114,8 +114,8 @@ getTransferableBytes
 
 .. _io_realm_mongodb_sync_Progress_getTransferableBytes____:
 
-``getTransferableBytes``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public long getTransferableBytes()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** getTransferableBytes ()
 
@@ -133,8 +133,8 @@ getFractionTransferred
 
 .. _io_realm_mongodb_sync_Progress_getFractionTransferred____:
 
-``getFractionTransferred``
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public double getFractionTransferred()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **double (?)** getFractionTransferred ()
 
@@ -146,8 +146,8 @@ isTransferComplete
 
 .. _io_realm_mongodb_sync_Progress_isTransferComplete____:
 
-``isTransferComplete``
-~~~~~~~~~~~~~~~~~~~~~~
+public boolean isTransferComplete()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isTransferComplete ()
 
@@ -167,8 +167,8 @@ equals
 
 .. _io_realm_mongodb_sync_Progress_equals__Object__:
 
-``equals``
-~~~~~~~~~~
+public boolean equals(undefined o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
@@ -178,8 +178,8 @@ hashCode
 
 .. _io_realm_mongodb_sync_Progress_hashCode____:
 
-``hashCode``
-~~~~~~~~~~~~
+public int hashCode()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** hashCode ()
 
@@ -189,8 +189,8 @@ toString
 
 .. _io_realm_mongodb_sync_Progress_toString____:
 
-``toString``
-~~~~~~~~~~~~
+public String toString()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 

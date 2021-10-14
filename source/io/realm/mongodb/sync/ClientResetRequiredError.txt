@@ -65,8 +65,8 @@ executeClientReset
 
 .. _io_realm_mongodb_sync_ClientResetRequiredError_executeClientReset____:
 
-``executeClientReset``
-~~~~~~~~~~~~~~~~~~~~~~
+public void executeClientReset()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** executeClientReset ()
 
@@ -85,8 +85,8 @@ getBackupFile
 
 .. _io_realm_mongodb_sync_ClientResetRequiredError_getBackupFile____:
 
-``getBackupFile``
-~~~~~~~~~~~~~~~~~
+public File getBackupFile()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__ getBackupFile ()
 
@@ -96,8 +96,8 @@ getBackupRealmConfiguration
 
 .. _io_realm_mongodb_sync_ClientResetRequiredError_getBackupRealmConfiguration____:
 
-``getBackupRealmConfiguration``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmConfiguration getBackupRealmConfiguration()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmConfiguration <io_realm_RealmConfiguration>` getBackupRealmConfiguration ()
 
@@ -109,8 +109,8 @@ getOriginalFile
 
 .. _io_realm_mongodb_sync_ClientResetRequiredError_getOriginalFile____:
 
-``getOriginalFile``
-~~~~~~~~~~~~~~~~~~~
+public File getOriginalFile()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__ getOriginalFile ()
 

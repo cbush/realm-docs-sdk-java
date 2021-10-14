@@ -105,8 +105,8 @@ getErrorCode
 
 .. _io_realm_mongodb_AppException_getErrorCode____:
 
-``getErrorCode``
-~~~~~~~~~~~~~~~~
+public ErrorCode getErrorCode()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` getErrorCode ()
 
@@ -125,8 +125,8 @@ ErrorCodegetErrorType
 
 .. _io_realm_mongodb_AppException_getErrorType____:
 
-``getErrorType``
-~~~~~~~~~~~~~~~~
+public String getErrorType()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getErrorType ()
 
@@ -136,8 +136,8 @@ getErrorIntValue
 
 .. _io_realm_mongodb_AppException_getErrorIntValue____:
 
-``getErrorIntValue``
-~~~~~~~~~~~~~~~~~~~~
+public int getErrorIntValue()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** getErrorIntValue ()
 
@@ -149,8 +149,8 @@ getErrorMessage
 
 .. _io_realm_mongodb_AppException_getErrorMessage____:
 
-``getErrorMessage``
-~~~~~~~~~~~~~~~~~~~
+public String getErrorMessage()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getErrorMessage ()
 
@@ -160,8 +160,8 @@ getException
 
 .. _io_realm_mongodb_AppException_getException____:
 
-``getException``
-~~~~~~~~~~~~~~~~
+public Throwable getException()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ getException ()
 
@@ -171,8 +171,8 @@ getCategory
 
 .. _io_realm_mongodb_AppException_getCategory____:
 
-``getCategory``
-~~~~~~~~~~~~~~~
+public ErrorCode.Category getCategory()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` getCategory ()
 
@@ -184,8 +184,8 @@ toString
 
 .. _io_realm_mongodb_AppException_toString____:
 
-``toString``
-~~~~~~~~~~~~
+public String toString()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 

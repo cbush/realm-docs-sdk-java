@@ -205,8 +205,8 @@ first
 
 .. _io_realm_OrderedRealmCollection_first____:
 
-``first``
-~~~~~~~~~
+public E first()
+~~~~~~~~~~~~~~~~
 
 public **E (?)** first ()
 
@@ -216,8 +216,8 @@ ______
 
 .. _io_realm_OrderedRealmCollection_first__E__:
 
-``first``
-~~~~~~~~~
+public E first(undefined defaultValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** first (**E (?)** defaultValue)
 
@@ -227,8 +227,8 @@ last
 
 .. _io_realm_OrderedRealmCollection_last____:
 
-``last``
-~~~~~~~~
+public E last()
+~~~~~~~~~~~~~~~
 
 public **E (?)** last ()
 
@@ -238,8 +238,8 @@ ______
 
 .. _io_realm_OrderedRealmCollection_last__E__:
 
-``last``
-~~~~~~~~
+public E last(undefined defaultValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** last (**E (?)** defaultValue)
 
@@ -249,8 +249,8 @@ sort
 
 .. _io_realm_OrderedRealmCollection_sort__String__:
 
-``sort``
-~~~~~~~~
+public RealmResults sort(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -266,8 +266,8 @@ ______
 
 .. _io_realm_OrderedRealmCollection_sort__String__Sort__:
 
-``sort``
-~~~~~~~~
+public RealmResults sort(undefined fieldName, undefined sortOrder)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`Sort <io_realm_Sort>` sortOrder)
 
@@ -285,8 +285,8 @@ ______
 
 .. _io_realm_OrderedRealmCollection_sort__String__Sort__String__Sort__:
 
-``sort``
-~~~~~~~~
+public RealmResults sort(undefined fieldName1, undefined sortOrder1, undefined fieldName2, undefined sortOrder2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
 
@@ -308,8 +308,8 @@ ______
 
 .. _io_realm_OrderedRealmCollection_sort__String[]__Sort[]__:
 
-``sort``
-~~~~~~~~
+public RealmResults sort(undefined fieldNames, undefined sortOrders)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (`java.lang.String[] <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldNames, :ref:`io.realm.Sort[] <io_realm_Sort>` sortOrders)
 
@@ -330,8 +330,8 @@ deleteFromRealm
 
 .. _io_realm_OrderedRealmCollection_deleteFromRealm__int__:
 
-``deleteFromRealm``
-~~~~~~~~~~~~~~~~~~~
+public void deleteFromRealm(undefined location)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** deleteFromRealm (**int (?)** location)
 
@@ -350,8 +350,8 @@ deleteFirstFromRealm
 
 .. _io_realm_OrderedRealmCollection_deleteFirstFromRealm____:
 
-``deleteFirstFromRealm``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public boolean deleteFirstFromRealm()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** deleteFirstFromRealm ()
 
@@ -364,8 +364,8 @@ deleteLastFromRealm
 
 .. _io_realm_OrderedRealmCollection_deleteLastFromRealm____:
 
-``deleteLastFromRealm``
-~~~~~~~~~~~~~~~~~~~~~~~
+public boolean deleteLastFromRealm()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** deleteLastFromRealm ()
 
@@ -378,8 +378,8 @@ createSnapshot
 
 .. _io_realm_OrderedRealmCollection_createSnapshot____:
 
-``createSnapshot``
-~~~~~~~~~~~~~~~~~~
+public OrderedRealmCollectionSnapshot createSnapshot()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`OrderedRealmCollectionSnapshot <io_realm_OrderedRealmCollectionSnapshot>` createSnapshot ()
 

@@ -268,8 +268,8 @@ forRecovery
 
 .. _io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__byte[]__Object_____:
 
-``forRecovery``
-~~~~~~~~~~~~~~~
+public static RealmConfiguration forRecovery(undefined canonicalPath, undefined encryptionKey, undefined modules)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[] (?)** encryptionKey, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ modules)
 
@@ -288,8 +288,8 @@ __________
 
 .. _io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__:
 
-``forRecovery``
-~~~~~~~~~~~~~~~
+public static RealmConfiguration forRecovery(undefined canonicalPath)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath)
 
@@ -307,8 +307,8 @@ defaultConfig
 
 .. _io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__String__:
 
-``defaultConfig``
-~~~~~~~~~~~~~~~~~
+public static SyncConfiguration defaultConfig(undefined user, undefined partitionValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ partitionValue)
 
@@ -323,8 +323,8 @@ __________
 
 .. _io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__Long__:
 
-``defaultConfig``
-~~~~~~~~~~~~~~~~~
+public static SyncConfiguration defaultConfig(undefined user, undefined partitionValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, `Long <https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html>`__ partitionValue)
 
@@ -339,8 +339,8 @@ __________
 
 .. _io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__Integer__:
 
-``defaultConfig``
-~~~~~~~~~~~~~~~~~
+public static SyncConfiguration defaultConfig(undefined user, undefined partitionValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, `Integer <https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html>`__ partitionValue)
 
@@ -355,8 +355,8 @@ __________
 
 .. _io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__ObjectId__:
 
-``defaultConfig``
-~~~~~~~~~~~~~~~~~
+public static SyncConfiguration defaultConfig(undefined user, undefined partitionValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, **ObjectId (?)** partitionValue)
 
@@ -374,8 +374,8 @@ getInitialDataTransaction
 
 .. _io_realm_mongodb_sync_SyncConfiguration_getInitialDataTransaction____:
 
-``getInitialDataTransaction``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+protected Realm.Transaction getInitialDataTransaction()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 protected :ref:`Realm.Transaction <io_realm_Realm_Transaction>` getInitialDataTransaction ()
 
@@ -385,8 +385,8 @@ equals
 
 .. _io_realm_mongodb_sync_SyncConfiguration_equals__Object__:
 
-``equals``
-~~~~~~~~~~
+public boolean equals(undefined o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
@@ -396,8 +396,8 @@ hashCode
 
 .. _io_realm_mongodb_sync_SyncConfiguration_hashCode____:
 
-``hashCode``
-~~~~~~~~~~~~
+public int hashCode()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** hashCode ()
 
@@ -407,8 +407,8 @@ toString
 
 .. _io_realm_mongodb_sync_SyncConfiguration_toString____:
 
-``toString``
-~~~~~~~~~~~~
+public String toString()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 
@@ -418,8 +418,8 @@ getUser
 
 .. _io_realm_mongodb_sync_SyncConfiguration_getUser____:
 
-``getUser``
-~~~~~~~~~~~
+public User getUser()
+~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`User <io_realm_mongodb_User>` getUser ()
 
@@ -429,8 +429,8 @@ getServerUrl
 
 .. _io_realm_mongodb_sync_SyncConfiguration_getServerUrl____:
 
-``getServerUrl``
-~~~~~~~~~~~~~~~~
+public URI getServerUrl()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI.html>`__ getServerUrl ()
 
@@ -440,8 +440,8 @@ getErrorHandler
 
 .. _io_realm_mongodb_sync_SyncConfiguration_getErrorHandler____:
 
-``getErrorHandler``
-~~~~~~~~~~~~~~~~~~~
+public SyncSession.ErrorHandler getErrorHandler()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncSession.ErrorHandler <io_realm_mongodb_sync_SyncSession_ErrorHandler>` getErrorHandler ()
 
@@ -451,8 +451,8 @@ getClientResetHandler
 
 .. _io_realm_mongodb_sync_SyncConfiguration_getClientResetHandler____:
 
-``getClientResetHandler``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+public SyncSession.ClientResetHandler getClientResetHandler()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncSession.ClientResetHandler <io_realm_mongodb_sync_SyncSession_ClientResetHandler>` getClientResetHandler ()
 
@@ -462,8 +462,8 @@ shouldDeleteRealmOnLogout
 
 .. _io_realm_mongodb_sync_SyncConfiguration_shouldDeleteRealmOnLogout____:
 
-``shouldDeleteRealmOnLogout``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public boolean shouldDeleteRealmOnLogout()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** shouldDeleteRealmOnLogout ()
 
@@ -475,8 +475,8 @@ shouldWaitForInitialRemoteData
 
 .. _io_realm_mongodb_sync_SyncConfiguration_shouldWaitForInitialRemoteData____:
 
-``shouldWaitForInitialRemoteData``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public boolean shouldWaitForInitialRemoteData()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** shouldWaitForInitialRemoteData ()
 
@@ -488,8 +488,8 @@ getInitialRemoteDataTimeout
 
 .. _io_realm_mongodb_sync_SyncConfiguration_getInitialRemoteDataTimeout__TimeUnit__:
 
-``getInitialRemoteDataTimeout``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public long getInitialRemoteDataTimeout(undefined unit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** getInitialRemoteDataTimeout (`TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
 
@@ -506,8 +506,8 @@ SyncConfiguration.Builder#waitForInitialRemoteData(long, TimeUnit)isSyncConfigur
 
 .. _io_realm_mongodb_sync_SyncConfiguration_isSyncConfiguration____:
 
-``isSyncConfiguration``
-~~~~~~~~~~~~~~~~~~~~~~~
+protected boolean isSyncConfiguration()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 protected **boolean (?)** isSyncConfiguration ()
 
@@ -517,8 +517,8 @@ getSessionStopPolicy
 
 .. _io_realm_mongodb_sync_SyncConfiguration_getSessionStopPolicy____:
 
-``getSessionStopPolicy``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public OsRealmConfig.SyncSessionStopPolicy getSessionStopPolicy()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **OsRealmConfig.SyncSessionStopPolicy (?)** getSessionStopPolicy ()
 
@@ -528,8 +528,8 @@ getUrlPrefix
 
 .. _io_realm_mongodb_sync_SyncConfiguration_getUrlPrefix____:
 
-``getUrlPrefix``
-~~~~~~~~~~~~~~~~
+public String getUrlPrefix()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getUrlPrefix ()
 
@@ -539,8 +539,8 @@ getPartitionValue
 
 .. _io_realm_mongodb_sync_SyncConfiguration_getPartitionValue____:
 
-``getPartitionValue``
-~~~~~~~~~~~~~~~~~~~~~
+public BsonValue getPartitionValue()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **BsonValue (?)** getPartitionValue ()
 
@@ -550,8 +550,8 @@ realmExists
 
 .. _io_realm_mongodb_sync_SyncConfiguration_realmExists____:
 
-``realmExists``
-~~~~~~~~~~~~~~~
+protected boolean realmExists()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 protected **boolean (?)** realmExists ()
 

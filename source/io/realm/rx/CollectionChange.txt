@@ -76,8 +76,8 @@ getCollection
 
 .. _io_realm_rx_CollectionChange_getCollection____:
 
-``getCollection``
-~~~~~~~~~~~~~~~~~
+public E getCollection()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** getCollection ()
 
@@ -87,8 +87,8 @@ getChangeset
 
 .. _io_realm_rx_CollectionChange_getChangeset____:
 
-``getChangeset``
-~~~~~~~~~~~~~~~~
+public OrderedCollectionChangeSet getChangeset()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` getChangeset ()
 
@@ -119,8 +119,8 @@ equals
 
 .. _io_realm_rx_CollectionChange_equals__Object__:
 
-``equals``
-~~~~~~~~~~
+public boolean equals(undefined o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
@@ -130,8 +130,8 @@ hashCode
 
 .. _io_realm_rx_CollectionChange_hashCode____:
 
-``hashCode``
-~~~~~~~~~~~~
+public int hashCode()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** hashCode ()
 

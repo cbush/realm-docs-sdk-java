@@ -2878,8 +2878,8 @@ values
 
 .. _io_realm_mongodb_ErrorCode_values____:
 
-``values``
-~~~~~~~~~~
+public static ErrorCode values()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` values ()
 
@@ -2889,8 +2889,8 @@ valueOf
 
 .. _io_realm_mongodb_ErrorCode_valueOf__String__:
 
-``valueOf``
-~~~~~~~~~~~
+public static ErrorCode valueOf(undefined name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
@@ -2900,8 +2900,8 @@ toString
 
 .. _io_realm_mongodb_ErrorCode_toString____:
 
-``toString``
-~~~~~~~~~~~~
+public String toString()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 
@@ -2911,8 +2911,8 @@ intValue
 
 .. _io_realm_mongodb_ErrorCode_intValue____:
 
-``intValue``
-~~~~~~~~~~~~
+public int intValue()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** intValue ()
 
@@ -2924,8 +2924,8 @@ getCategory
 
 .. _io_realm_mongodb_ErrorCode_getCategory____:
 
-``getCategory``
-~~~~~~~~~~~~~~~
+public ErrorCode.Category getCategory()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` getCategory ()
 
@@ -2943,8 +2943,8 @@ getType
 
 .. _io_realm_mongodb_ErrorCode_getType____:
 
-``getType``
-~~~~~~~~~~~
+public String getType()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getType ()
 
@@ -2956,8 +2956,8 @@ fromNativeError
 
 .. _io_realm_mongodb_ErrorCode_fromNativeError__String__int__:
 
-``fromNativeError``
-~~~~~~~~~~~~~~~~~~~
+public static ErrorCode fromNativeError(undefined type, undefined errorCode)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` fromNativeError (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ type, **int (?)** errorCode)
 

@@ -99,8 +99,8 @@ getId
 
 .. _io_realm_mongodb_auth_ApiKey_getId____:
 
-``getId``
-~~~~~~~~~
+public ObjectId getId()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public **ObjectId (?)** getId ()
 
@@ -110,8 +110,8 @@ getValue
 
 .. _io_realm_mongodb_auth_ApiKey_getValue____:
 
-``getValue``
-~~~~~~~~~~~~
+public String getValue()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getValue ()
 
@@ -121,8 +121,8 @@ getName
 
 .. _io_realm_mongodb_auth_ApiKey_getName____:
 
-``getName``
-~~~~~~~~~~~
+public String getName()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getName ()
 
@@ -132,8 +132,8 @@ isEnabled
 
 .. _io_realm_mongodb_auth_ApiKey_isEnabled____:
 
-``isEnabled``
-~~~~~~~~~~~~~
+public boolean isEnabled()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isEnabled ()
 
@@ -143,8 +143,8 @@ equals
 
 .. _io_realm_mongodb_auth_ApiKey_equals__Object__:
 
-``equals``
-~~~~~~~~~~
+public boolean equals(undefined o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
@@ -154,8 +154,8 @@ hashCode
 
 .. _io_realm_mongodb_auth_ApiKey_hashCode____:
 
-``hashCode``
-~~~~~~~~~~~~
+public int hashCode()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** hashCode ()
 
@@ -165,8 +165,8 @@ toString
 
 .. _io_realm_mongodb_auth_ApiKey_toString____:
 
-``toString``
-~~~~~~~~~~~~
+public String toString()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 

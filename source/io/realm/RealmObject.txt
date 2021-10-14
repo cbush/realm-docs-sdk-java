@@ -354,8 +354,8 @@ deleteFromRealm
 
 .. _io_realm_RealmObject_deleteFromRealm____:
 
-``deleteFromRealm``
-~~~~~~~~~~~~~~~~~~~
+public final void deleteFromRealm()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final **void (?)** deleteFromRealm ()
 
@@ -370,8 +370,8 @@ ________
 
 #isValid().. _io_realm_RealmObject_deleteFromRealm__E__:
 
-``deleteFromRealm``
-~~~~~~~~~~~~~~~~~~~
+public static void deleteFromRealm<E>(undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **void (?)** deleteFromRealm <**E (?)** >(**E (?)** object)
 
@@ -389,8 +389,8 @@ ________
 
 .. _io_realm_RealmObject_isValid____:
 
-``isValid``
-~~~~~~~~~~~
+public final boolean isValid()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final **boolean (?)** isValid ()
 
@@ -418,8 +418,8 @@ ________
 
 <a href="https://github.com/realm/realm-java/tree/master/examples/rxJavaExample">Examples using Realm with RxJava</a>.. _io_realm_RealmObject_isValid__E__:
 
-``isValid``
-~~~~~~~~~~~
+public static boolean isValid<E>(undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **boolean (?)** isValid <**E (?)** >(**E (?)** object)
 
@@ -437,8 +437,8 @@ isFrozen
 
 .. _io_realm_RealmObject_isFrozen____:
 
-``isFrozen``
-~~~~~~~~~~~~
+public final boolean isFrozen()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final **boolean (?)** isFrozen ()
 
@@ -448,8 +448,8 @@ ________
 
 #freeze().. _io_realm_RealmObject_isFrozen__E__:
 
-``isFrozen``
-~~~~~~~~~~~~
+public static boolean isFrozen<E>(undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **boolean (?)** isFrozen <**E (?)** >(**E (?)** object)
 
@@ -462,8 +462,8 @@ ________
 
 .. _io_realm_RealmObject_freeze____:
 
-``freeze``
-~~~~~~~~~~
+public final E freeze<E>()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final **E (?)** freeze <**E (?)** >()
 
@@ -485,8 +485,8 @@ ______
 
 .. _io_realm_RealmObject_freeze__E__:
 
-``freeze``
-~~~~~~~~~~
+public static E freeze<E>(undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **E (?)** freeze <**E (?)** >(**E (?)** object)
 
@@ -511,8 +511,8 @@ isLoaded
 
 .. _io_realm_RealmObject_isLoaded____:
 
-``isLoaded``
-~~~~~~~~~~~~
+public final boolean isLoaded()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final **boolean (?)** isLoaded ()
 
@@ -558,8 +558,8 @@ ________
 
 #isValid().. _io_realm_RealmObject_isLoaded__E__:
 
-``isLoaded``
-~~~~~~~~~~~~
+public static boolean isLoaded<E>(undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **boolean (?)** isLoaded <**E (?)** >(**E (?)** object)
 
@@ -614,8 +614,8 @@ ________
 
 .. _io_realm_RealmObject_isManaged____:
 
-``isManaged``
-~~~~~~~~~~~~~
+public boolean isManaged()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isManaged ()
 
@@ -632,8 +632,8 @@ It is possible to create a managed object from an unmanaged object by using **Re
 
 .. _io_realm_RealmObject_isManaged__E__:
 
-``isManaged``
-~~~~~~~~~~~~~
+public static boolean isManaged<E>(undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **boolean (?)** isManaged <**E (?)** >(**E (?)** object)
 
@@ -653,8 +653,8 @@ getRealm
 
 .. _io_realm_RealmObject_getRealm____:
 
-``getRealm``
-~~~~~~~~~~~~
+public Realm getRealm()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`Realm <io_realm_Realm>` getRealm ()
 
@@ -670,8 +670,8 @@ ______
 
 .. _io_realm_RealmObject_getRealm__RealmModel__:
 
-``getRealm``
-~~~~~~~~~~~~
+public static Realm getRealm(undefined model)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`Realm <io_realm_Realm>` getRealm (:ref:`RealmModel <io_realm_RealmModel>` model)
 
@@ -698,8 +698,8 @@ load
 
 .. _io_realm_RealmObject_load____:
 
-``load``
-~~~~~~~~
+public final boolean load()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final **boolean (?)** load ()
 
@@ -710,8 +710,8 @@ Makes an asynchronous query blocking. This will also trigger any registered list
 
 .. _io_realm_RealmObject_load__E__:
 
-``load``
-~~~~~~~~
+public static boolean load<E>(undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **boolean (?)** load <**E (?)** >(**E (?)** object)
 
@@ -731,8 +731,8 @@ addChangeListener
 
 .. _io_realm_RealmObject_addChangeListener__RealmObjectChangeListener_E___:
 
-``addChangeListener``
-~~~~~~~~~~~~~~~~~~~~~
+public final void addChangeListener<E>(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final **void (?)** addChangeListener <**E (?)** >(:ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
 
@@ -775,8 +775,8 @@ ______
 
 .. _io_realm_RealmObject_addChangeListener__RealmChangeListener_E___:
 
-``addChangeListener``
-~~~~~~~~~~~~~~~~~~~~~
+public final void addChangeListener<E>(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final **void (?)** addChangeListener <**E (?)** >(:ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
 
@@ -819,8 +819,8 @@ ______
 
 .. _io_realm_RealmObject_addChangeListener__E__RealmObjectChangeListener_E___:
 
-``addChangeListener``
-~~~~~~~~~~~~~~~~~~~~~
+public static void addChangeListener<E>(undefined object, undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **void (?)** addChangeListener <**E (?)** >(**E (?)** object, :ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
 
@@ -865,8 +865,8 @@ ______
 
 .. _io_realm_RealmObject_addChangeListener__E__RealmChangeListener_E___:
 
-``addChangeListener``
-~~~~~~~~~~~~~~~~~~~~~
+public static void addChangeListener<E>(undefined object, undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **void (?)** addChangeListener <**E (?)** >(**E (?)** object, :ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
 
@@ -914,8 +914,8 @@ removeChangeListener
 
 .. _io_realm_RealmObject_removeChangeListener__RealmObjectChangeListener__:
 
-``removeChangeListener``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public final void removeChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final **void (?)** removeChangeListener (:ref:`io.realm.RealmObjectChangeListener <io_realm_RealmObjectChangeListener>` listener)
 
@@ -931,8 +931,8 @@ ______
 
 .. _io_realm_RealmObject_removeChangeListener__RealmChangeListener__:
 
-``removeChangeListener``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public final void removeChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final **void (?)** removeChangeListener (:ref:`io.realm.RealmChangeListener <io_realm_RealmChangeListener>` listener)
 
@@ -948,8 +948,8 @@ ______
 
 .. _io_realm_RealmObject_removeChangeListener__E__RealmObjectChangeListener__:
 
-``removeChangeListener``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public static void removeChangeListener<E>(undefined object, undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **void (?)** removeChangeListener <**E (?)** >(**E (?)** object, :ref:`io.realm.RealmObjectChangeListener <io_realm_RealmObjectChangeListener>` listener)
 
@@ -967,8 +967,8 @@ ______
 
 .. _io_realm_RealmObject_removeChangeListener__E__RealmChangeListener_E___:
 
-``removeChangeListener``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public static void removeChangeListener<E>(undefined object, undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **void (?)** removeChangeListener <**E (?)** >(**E (?)** object, :ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
 
@@ -989,16 +989,16 @@ removeAllChangeListeners
 
 .. _io_realm_RealmObject_removeAllChangeListeners____:
 
-``removeAllChangeListeners``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final void removeAllChangeListeners()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final **void (?)** removeAllChangeListeners ()
 
 Removes all registered listeners.
 .. _io_realm_RealmObject_removeAllChangeListeners__E__:
 
-``removeAllChangeListeners``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static void removeAllChangeListeners<E>(undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **void (?)** removeAllChangeListeners <**E (?)** >(**E (?)** object)
 
@@ -1017,8 +1017,8 @@ asFlowable
 
 .. _io_realm_RealmObject_asFlowable____:
 
-``asFlowable``
-~~~~~~~~~~~~~~
+public final <any> asFlowable<E>()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final **<any> (?)** asFlowable <**E (?)** >()
 
@@ -1081,8 +1081,8 @@ ________
 
 <a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>.. _io_realm_RealmObject_asFlowable__E__:
 
-``asFlowable``
-~~~~~~~~~~~~~~
+public static <any> asFlowable<E>(undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **<any> (?)** asFlowable <**E (?)** >(**E (?)** object)
 
@@ -1148,8 +1148,8 @@ ________
 
 .. _io_realm_RealmObject_asChangesetObservable____:
 
-``asChangesetObservable``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+public final <any> asChangesetObservable<E>()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public final **<any> (?)** asChangesetObservable <**E (?)** >()
 
@@ -1189,8 +1189,8 @@ ________
 
 <a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>.. _io_realm_RealmObject_asChangesetObservable__E__:
 
-``asChangesetObservable``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+public static <any> asChangesetObservable<E>(undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **<any> (?)** asChangesetObservable <**E (?)** >(**E (?)** object)
 

@@ -200,8 +200,8 @@ size
 
 .. _io_realm_OrderedRealmCollectionSnapshot_size____:
 
-``size``
-~~~~~~~~
+public int size()
+~~~~~~~~~~~~~~~~~
 
 public **int (?)** size ()
 
@@ -213,8 +213,8 @@ sort
 
 .. _io_realm_OrderedRealmCollectionSnapshot_sort__String__:
 
-``sort``
-~~~~~~~~
+public RealmResults sort(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -226,8 +226,8 @@ ______
 
 .. _io_realm_OrderedRealmCollectionSnapshot_sort__String__Sort__:
 
-``sort``
-~~~~~~~~
+public RealmResults sort(undefined fieldName, undefined sortOrder)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`Sort <io_realm_Sort>` sortOrder)
 
@@ -239,8 +239,8 @@ ______
 
 .. _io_realm_OrderedRealmCollectionSnapshot_sort__String__Sort__String__Sort__:
 
-``sort``
-~~~~~~~~
+public RealmResults sort(undefined fieldName1, undefined sortOrder1, undefined fieldName2, undefined sortOrder2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
 
@@ -252,8 +252,8 @@ ______
 
 .. _io_realm_OrderedRealmCollectionSnapshot_sort__String[]__Sort[]__:
 
-``sort``
-~~~~~~~~
+public RealmResults sort(undefined fieldNames, undefined sortOrders)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResults <io_realm_RealmResults>` sort (`java.lang.String[] <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldNames, :ref:`io.realm.Sort[] <io_realm_Sort>` sortOrders)
 
@@ -268,8 +268,8 @@ where
 
 .. _io_realm_OrderedRealmCollectionSnapshot_where____:
 
-``where``
-~~~~~~~~~
+public RealmQuery where()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` where ()
 
@@ -284,8 +284,8 @@ isLoaded
 
 .. _io_realm_OrderedRealmCollectionSnapshot_isLoaded____:
 
-``isLoaded``
-~~~~~~~~~~~~
+public boolean isLoaded()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isLoaded ()
 
@@ -297,8 +297,8 @@ load
 
 .. _io_realm_OrderedRealmCollectionSnapshot_load____:
 
-``load``
-~~~~~~~~
+public boolean load()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** load ()
 
@@ -310,8 +310,8 @@ createSnapshot
 
 .. _io_realm_OrderedRealmCollectionSnapshot_createSnapshot____:
 
-``createSnapshot``
-~~~~~~~~~~~~~~~~~~
+public OrderedRealmCollectionSnapshot createSnapshot()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`OrderedRealmCollectionSnapshot <io_realm_OrderedRealmCollectionSnapshot>` createSnapshot ()
 
@@ -323,8 +323,8 @@ freeze
 
 .. _io_realm_OrderedRealmCollectionSnapshot_freeze____:
 
-``freeze``
-~~~~~~~~~~
+public OrderedRealmCollection freeze()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`OrderedRealmCollection <io_realm_OrderedRealmCollection>` freeze ()
 
@@ -334,8 +334,8 @@ deleteFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteFromRealm__int__:
 
-``deleteFromRealm``
-~~~~~~~~~~~~~~~~~~~
+public void deleteFromRealm(undefined location)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** deleteFromRealm (**int (?)** location)
 
@@ -354,8 +354,8 @@ deleteFirstFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteFirstFromRealm____:
 
-``deleteFirstFromRealm``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public boolean deleteFirstFromRealm()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** deleteFirstFromRealm ()
 
@@ -368,8 +368,8 @@ deleteLastFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteLastFromRealm____:
 
-``deleteLastFromRealm``
-~~~~~~~~~~~~~~~~~~~~~~~
+public boolean deleteLastFromRealm()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** deleteLastFromRealm ()
 
@@ -382,8 +382,8 @@ deleteAllFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteAllFromRealm____:
 
-``deleteAllFromRealm``
-~~~~~~~~~~~~~~~~~~~~~~
+public boolean deleteAllFromRealm()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** deleteAllFromRealm ()
 
@@ -396,8 +396,8 @@ isFrozen
 
 .. _io_realm_OrderedRealmCollectionSnapshot_isFrozen____:
 
-``isFrozen``
-~~~~~~~~~~~~
+public boolean isFrozen()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isFrozen ()
 

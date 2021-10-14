@@ -53,8 +53,8 @@ isDeleted
 
 .. _io_realm_ObjectChangeSet_isDeleted____:
 
-``isDeleted``
-~~~~~~~~~~~~~
+public boolean isDeleted()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isDeleted ()
 
@@ -64,8 +64,8 @@ getChangedFields
 
 .. _io_realm_ObjectChangeSet_getChangedFields____:
 
-``getChangedFields``
-~~~~~~~~~~~~~~~~~~~~
+public String getChangedFields()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getChangedFields ()
 
@@ -75,8 +75,8 @@ isFieldChanged
 
 .. _io_realm_ObjectChangeSet_isFieldChanged__String__:
 
-``isFieldChanged``
-~~~~~~~~~~~~~~~~~~
+public boolean isFieldChanged(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isFieldChanged (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 

@@ -94,8 +94,8 @@ getLimit
 
 .. _io_realm_mongodb_mongo_options_FindOptions_getLimit____:
 
-``getLimit``
-~~~~~~~~~~~~
+public int getLimit()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** getLimit ()
 
@@ -105,8 +105,8 @@ limit
 
 .. _io_realm_mongodb_mongo_options_FindOptions_limit__int__:
 
-``limit``
-~~~~~~~~~
+public FindOptions limit(undefined limit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` limit (**int (?)** limit)
 
@@ -122,8 +122,8 @@ getProjection
 
 .. _io_realm_mongodb_mongo_options_FindOptions_getProjection____:
 
-``getProjection``
-~~~~~~~~~~~~~~~~~
+public Bson getProjection()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **Bson (?)** getProjection ()
 
@@ -133,8 +133,8 @@ projection
 
 .. _io_realm_mongodb_mongo_options_FindOptions_projection__Bson__:
 
-``projection``
-~~~~~~~~~~~~~~
+public FindOptions projection(undefined projection)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` projection (**Bson (?)** projection)
 
@@ -150,8 +150,8 @@ getSort
 
 .. _io_realm_mongodb_mongo_options_FindOptions_getSort____:
 
-``getSort``
-~~~~~~~~~~~
+public Bson getSort()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **Bson (?)** getSort ()
 
@@ -161,8 +161,8 @@ sort
 
 .. _io_realm_mongodb_mongo_options_FindOptions_sort__Bson__:
 
-``sort``
-~~~~~~~~
+public FindOptions sort(undefined sort)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` sort (**Bson (?)** sort)
 
@@ -178,8 +178,8 @@ toString
 
 .. _io_realm_mongodb_mongo_options_FindOptions_toString____:
 
-``toString``
-~~~~~~~~~~~~
+public String toString()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 

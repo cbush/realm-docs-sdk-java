@@ -43,8 +43,8 @@ onChange
 
 .. _io_realm_OrderedRealmCollectionChangeListener_onChange__T__OrderedCollectionChangeSet__:
 
-``onChange``
-~~~~~~~~~~~~
+public void onChange(undefined t, undefined changeSet)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** onChange (**T (?)** t, :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` changeSet)
 

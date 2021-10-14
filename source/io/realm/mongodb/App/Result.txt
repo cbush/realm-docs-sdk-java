@@ -97,8 +97,8 @@ success
 
 .. _io_realm_mongodb_App_Result_success____:
 
-``success``
-~~~~~~~~~~~
+public static App.Result success<T>()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`App.Result <io_realm_mongodb_App_Result>` success <**T (?)** >()
 
@@ -108,8 +108,8 @@ withResult
 
 .. _io_realm_mongodb_App_Result_withResult__T__:
 
-``withResult``
-~~~~~~~~~~~~~~
+public static App.Result withResult<T>(undefined result)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`App.Result <io_realm_mongodb_App_Result>` withResult <**T (?)** >(**T (?)** result)
 
@@ -125,8 +125,8 @@ withError
 
 .. _io_realm_mongodb_App_Result_withError__AppException__:
 
-``withError``
-~~~~~~~~~~~~~
+public static App.Result withError<T>(undefined exception)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`App.Result <io_realm_mongodb_App_Result>` withError <**T (?)** >(:ref:`AppException <io_realm_mongodb_AppException>` exception)
 
@@ -142,8 +142,8 @@ isSuccess
 
 .. _io_realm_mongodb_App_Result_isSuccess____:
 
-``isSuccess``
-~~~~~~~~~~~~~
+public boolean isSuccess()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isSuccess ()
 
@@ -153,8 +153,8 @@ get
 
 .. _io_realm_mongodb_App_Result_get____:
 
-``get``
-~~~~~~~
+public T get()
+~~~~~~~~~~~~~~
 
 public **T (?)** get ()
 
@@ -164,8 +164,8 @@ getOrDefault
 
 .. _io_realm_mongodb_App_Result_getOrDefault__T__:
 
-``getOrDefault``
-~~~~~~~~~~~~~~~~
+public T getOrDefault(undefined defaultValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **T (?)** getOrDefault (**T (?)** defaultValue)
 
@@ -175,8 +175,8 @@ getOrThrow
 
 .. _io_realm_mongodb_App_Result_getOrThrow____:
 
-``getOrThrow``
-~~~~~~~~~~~~~~
+public T getOrThrow()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **T (?)** getOrThrow ()
 
@@ -189,8 +189,8 @@ getError
 
 .. _io_realm_mongodb_App_Result_getError____:
 
-``getError``
-~~~~~~~~~~~~
+public AppException getError()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppException <io_realm_mongodb_AppException>` getError ()
 

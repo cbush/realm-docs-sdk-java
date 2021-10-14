@@ -21,8 +21,8 @@
    io.realm.mongodb.log.obfuscator <io/realm/mongodb/log/obfuscator>
    io.realm.mongodb.functions <io/realm/mongodb/functions>
    io.realm.mongodb.mongo.iterable <io/realm/mongodb/mongo/iterable>
-   io.realm.mongodb.mongo.options <io/realm/mongodb/mongo/options>
    io.realm.mongodb.mongo <io/realm/mongodb/mongo>
+   io.realm.mongodb.mongo.options <io/realm/mongodb/mongo/options>
    io.realm.mongodb.mongo.result <io/realm/mongodb/mongo/result>
    io.realm.mongodb.push <io/realm/mongodb/push>
    io.realm.mongodb.sync <io/realm/mongodb/sync>
@@ -39,8 +39,8 @@
 - :ref:`io.realm.mongodb.log.obfuscator <io_realm_mongodb_log_obfuscator>`
 - :ref:`io.realm.mongodb.functions <io_realm_mongodb_functions>`
 - :ref:`io.realm.mongodb.mongo.iterable <io_realm_mongodb_mongo_iterable>`
-- :ref:`io.realm.mongodb.mongo.options <io_realm_mongodb_mongo_options>`
 - :ref:`io.realm.mongodb.mongo <io_realm_mongodb_mongo>`
+- :ref:`io.realm.mongodb.mongo.options <io_realm_mongodb_mongo_options>`
 - :ref:`io.realm.mongodb.mongo.result <io_realm_mongodb_mongo_result>`
 - :ref:`io.realm.mongodb.push <io_realm_mongodb_push>`
 - :ref:`io.realm.mongodb.sync <io_realm_mongodb_sync>`

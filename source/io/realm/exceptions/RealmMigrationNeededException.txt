@@ -46,8 +46,8 @@ getPath
 
 .. _io_realm_exceptions_RealmMigrationNeededException_getPath____:
 
-``getPath``
-~~~~~~~~~~~
+public String getPath()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getPath ()
 

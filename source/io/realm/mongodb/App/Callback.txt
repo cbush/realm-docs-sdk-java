@@ -39,8 +39,8 @@ onResult
 
 .. _io_realm_mongodb_App_Callback_onResult__App_Result_T___:
 
-``onResult``
-~~~~~~~~~~~~
+public void onResult(undefined result)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** onResult (:ref:`io.realm.mongodb.App.Result\<T> <io_realm_mongodb_App_Result>` result)
 

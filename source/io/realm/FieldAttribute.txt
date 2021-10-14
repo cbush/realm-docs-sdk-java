@@ -110,8 +110,8 @@ values
 
 .. _io_realm_FieldAttribute_values____:
 
-``values``
-~~~~~~~~~~
+public static FieldAttribute values()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`FieldAttribute <io_realm_FieldAttribute>` values ()
 
@@ -121,8 +121,8 @@ valueOf
 
 .. _io_realm_FieldAttribute_valueOf__String__:
 
-``valueOf``
-~~~~~~~~~~~
+public static FieldAttribute valueOf(undefined name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`FieldAttribute <io_realm_FieldAttribute>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 

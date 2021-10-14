@@ -72,8 +72,8 @@ filter
 
 .. _io_realm_mongodb_mongo_iterable_FindIterable_filter__Bson__:
 
-``filter``
-~~~~~~~~~~
+public FindIterable filter(undefined filter)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` filter (**Bson (?)** filter)
 
@@ -89,8 +89,8 @@ limit
 
 .. _io_realm_mongodb_mongo_iterable_FindIterable_limit__int__:
 
-``limit``
-~~~~~~~~~
+public FindIterable limit(undefined limit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` limit (**int (?)** limit)
 
@@ -106,8 +106,8 @@ projection
 
 .. _io_realm_mongodb_mongo_iterable_FindIterable_projection__Bson__:
 
-``projection``
-~~~~~~~~~~~~~~
+public FindIterable projection(undefined projection)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` projection (**Bson (?)** projection)
 
@@ -123,8 +123,8 @@ sort
 
 .. _io_realm_mongodb_mongo_iterable_FindIterable_sort__Bson__:
 
-``sort``
-~~~~~~~~
+public FindIterable sort(undefined sort)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` sort (**Bson (?)** sort)
 

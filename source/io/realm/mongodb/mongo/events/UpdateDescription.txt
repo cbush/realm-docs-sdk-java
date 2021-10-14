@@ -117,8 +117,8 @@ getUpdatedFields
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_getUpdatedFields____:
 
-``getUpdatedFields``
-~~~~~~~~~~~~~~~~~~~~
+public BsonDocument getUpdatedFields()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **BsonDocument (?)** getUpdatedFields ()
 
@@ -130,8 +130,8 @@ getRemovedFields
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_getRemovedFields____:
 
-``getRemovedFields``
-~~~~~~~~~~~~~~~~~~~~
+public Collection getRemovedFields()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ getRemovedFields ()
 
@@ -143,8 +143,8 @@ toUpdateDocument
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_toUpdateDocument____:
 
-``toUpdateDocument``
-~~~~~~~~~~~~~~~~~~~~
+public BsonDocument toUpdateDocument()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **BsonDocument (?)** toUpdateDocument ()
 
@@ -154,8 +154,8 @@ toBsonDocument
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_toBsonDocument____:
 
-``toBsonDocument``
-~~~~~~~~~~~~~~~~~~
+public BsonDocument toBsonDocument()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **BsonDocument (?)** toBsonDocument ()
 
@@ -165,8 +165,8 @@ fromBsonDocument
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_fromBsonDocument__BsonDocument__:
 
-``fromBsonDocument``
-~~~~~~~~~~~~~~~~~~~~
+public static UpdateDescription fromBsonDocument(undefined document)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`UpdateDescription <io_realm_mongodb_mongo_events_UpdateDescription>` fromBsonDocument (**BsonDocument (?)** document)
 
@@ -182,8 +182,8 @@ merge
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_merge__UpdateDescription__:
 
-``merge``
-~~~~~~~~~
+public UpdateDescription merge(undefined otherDescription)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`UpdateDescription <io_realm_mongodb_mongo_events_UpdateDescription>` merge (:ref:`UpdateDescription <io_realm_mongodb_mongo_events_UpdateDescription>` otherDescription)
 
@@ -199,8 +199,8 @@ diff
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_diff__BsonDocument__BsonDocument__:
 
-``diff``
-~~~~~~~~
+public static UpdateDescription diff(undefined beforeDocument, undefined afterDocument)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`UpdateDescription <io_realm_mongodb_mongo_events_UpdateDescription>` diff (**BsonDocument (?)** beforeDocument, **BsonDocument (?)** afterDocument)
 
@@ -220,8 +220,8 @@ isEmpty
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_isEmpty____:
 
-``isEmpty``
-~~~~~~~~~~~
+public boolean isEmpty()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isEmpty ()
 
@@ -231,8 +231,8 @@ equals
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_equals__Object__:
 
-``equals``
-~~~~~~~~~~
+public boolean equals(undefined obj)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
 
@@ -242,8 +242,8 @@ hashCode
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_hashCode____:
 
-``hashCode``
-~~~~~~~~~~~~
+public int hashCode()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** hashCode ()
 

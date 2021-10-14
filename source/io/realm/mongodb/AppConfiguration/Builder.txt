@@ -156,8 +156,8 @@ encryptionKey
 
 .. _io_realm_mongodb_AppConfiguration_Builder_encryptionKey__byte[]__:
 
-``encryptionKey``
-~~~~~~~~~~~~~~~~~
+public AppConfiguration.Builder encryptionKey(undefined key)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` encryptionKey (**byte[] (?)** key)
 
@@ -178,8 +178,8 @@ baseUrl
 
 .. _io_realm_mongodb_AppConfiguration_Builder_baseUrl__String__:
 
-``baseUrl``
-~~~~~~~~~~~
+public AppConfiguration.Builder baseUrl(undefined baseUrl)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` baseUrl (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ baseUrl)
 
@@ -197,8 +197,8 @@ appName
 
 .. _io_realm_mongodb_AppConfiguration_Builder_appName__String__:
 
-``appName``
-~~~~~~~~~~~
+public AppConfiguration.Builder appName(undefined appName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` appName (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ appName)
 
@@ -214,8 +214,8 @@ appVersion
 
 .. _io_realm_mongodb_AppConfiguration_Builder_appVersion__String__:
 
-``appVersion``
-~~~~~~~~~~~~~~
+public AppConfiguration.Builder appVersion(undefined appVersion)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` appVersion (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ appVersion)
 
@@ -231,8 +231,8 @@ requestTimeout
 
 .. _io_realm_mongodb_AppConfiguration_Builder_requestTimeout__long__TimeUnit__:
 
-``requestTimeout``
-~~~~~~~~~~~~~~~~~~
+public AppConfiguration.Builder requestTimeout(undefined time, undefined unit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` requestTimeout (**long (?)** time, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
 
@@ -252,8 +252,8 @@ authorizationHeaderName
 
 .. _io_realm_mongodb_AppConfiguration_Builder_authorizationHeaderName__String__:
 
-``authorizationHeaderName``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public AppConfiguration.Builder authorizationHeaderName(undefined headerName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` authorizationHeaderName (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ headerName)
 
@@ -279,8 +279,8 @@ ________
 
 .. _io_realm_mongodb_AppConfiguration_Builder_addCustomRequestHeader__String__String__:
 
-``addCustomRequestHeader``
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public AppConfiguration.Builder addCustomRequestHeader(undefined headerName, undefined headerValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` addCustomRequestHeader (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ headerName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ headerValue)
 
@@ -301,8 +301,8 @@ addCustomRequestHeaders
 
 .. _io_realm_mongodb_AppConfiguration_Builder_addCustomRequestHeaders__Map_String__String___:
 
-``addCustomRequestHeaders``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public AppConfiguration.Builder addCustomRequestHeaders(undefined headers)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` addCustomRequestHeaders (`java.util.Map\<java.lang.String, java.lang.String> <https://docs.oracle.com/javase/7/docs/api/java/util/Map.html>`__ headers)
 
@@ -321,8 +321,8 @@ defaultSyncErrorHandler
 
 .. _io_realm_mongodb_AppConfiguration_Builder_defaultSyncErrorHandler__SyncSession_ErrorHandler__:
 
-``defaultSyncErrorHandler``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public AppConfiguration.Builder defaultSyncErrorHandler(undefined errorHandler)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` defaultSyncErrorHandler (:ref:`SyncSession.ErrorHandler <io_realm_mongodb_sync_SyncSession_ErrorHandler>` errorHandler)
 
@@ -342,8 +342,8 @@ defaultClientResetHandler
 
 .. _io_realm_mongodb_AppConfiguration_Builder_defaultClientResetHandler__SyncSession_ClientResetHandler__:
 
-``defaultClientResetHandler``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public AppConfiguration.Builder defaultClientResetHandler(undefined handler)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` defaultClientResetHandler (:ref:`SyncSession.ClientResetHandler <io_realm_mongodb_sync_SyncSession_ClientResetHandler>` handler)
 
@@ -363,8 +363,8 @@ syncRootDirectory
 
 .. _io_realm_mongodb_AppConfiguration_Builder_syncRootDirectory__File__:
 
-``syncRootDirectory``
-~~~~~~~~~~~~~~~~~~~~~
+public AppConfiguration.Builder syncRootDirectory(undefined rootDir)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` syncRootDirectory (`File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__ rootDir)
 
@@ -384,8 +384,8 @@ codecRegistry
 
 .. _io_realm_mongodb_AppConfiguration_Builder_codecRegistry__CodecRegistry__:
 
-``codecRegistry``
-~~~~~~~~~~~~~~~~~
+public AppConfiguration.Builder codecRegistry(undefined codecRegistry)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` codecRegistry (**CodecRegistry (?)** codecRegistry)
 
@@ -410,8 +410,8 @@ ________
 
 .. _io_realm_mongodb_AppConfiguration_Builder_httpLogObfuscator__HttpLogObfuscator__:
 
-``httpLogObfuscator``
-~~~~~~~~~~~~~~~~~~~~~
+public AppConfiguration.Builder httpLogObfuscator(undefined httpLogObfuscator)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder>` httpLogObfuscator (:ref:`HttpLogObfuscator <io_realm_mongodb_log_obfuscator_HttpLogObfuscator>` httpLogObfuscator)
 
@@ -431,8 +431,8 @@ build
 
 .. _io_realm_mongodb_AppConfiguration_Builder_build____:
 
-``build``
-~~~~~~~~~
+public AppConfiguration build()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration <io_realm_mongodb_AppConfiguration>` build ()
 

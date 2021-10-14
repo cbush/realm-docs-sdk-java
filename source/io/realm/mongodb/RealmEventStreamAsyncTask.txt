@@ -51,8 +51,8 @@ get
 
 .. _io_realm_mongodb_RealmEventStreamAsyncTask_get__App_Callback_BaseChangeEvent_T____:
 
-``get``
-~~~~~~~
+public void get(undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** get (:ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.mongo.events.BaseChangeEvent\<T>> <io_realm_mongodb_App_Callback>` callback)
 
@@ -73,8 +73,8 @@ isOpen
 
 .. _io_realm_mongodb_RealmEventStreamAsyncTask_isOpen____:
 
-``isOpen``
-~~~~~~~~~~
+public boolean isOpen()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isOpen ()
 

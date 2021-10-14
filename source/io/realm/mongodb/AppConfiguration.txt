@@ -278,8 +278,8 @@ getAppId
 
 .. _io_realm_mongodb_AppConfiguration_getAppId____:
 
-``getAppId``
-~~~~~~~~~~~~
+public String getAppId()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getAppId ()
 
@@ -289,8 +289,8 @@ getAppName
 
 .. _io_realm_mongodb_AppConfiguration_getAppName____:
 
-``getAppName``
-~~~~~~~~~~~~~~
+public String getAppName()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getAppName ()
 
@@ -300,8 +300,8 @@ getAppVersion
 
 .. _io_realm_mongodb_AppConfiguration_getAppVersion____:
 
-``getAppVersion``
-~~~~~~~~~~~~~~~~~
+public String getAppVersion()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getAppVersion ()
 
@@ -311,8 +311,8 @@ getBaseUrl
 
 .. _io_realm_mongodb_AppConfiguration_getBaseUrl____:
 
-``getBaseUrl``
-~~~~~~~~~~~~~~
+public URL getBaseUrl()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public `URL <https://docs.oracle.com/javase/7/docs/api/java/net/URL.html>`__ getBaseUrl ()
 
@@ -322,8 +322,8 @@ getEncryptionKey
 
 .. _io_realm_mongodb_AppConfiguration_getEncryptionKey____:
 
-``getEncryptionKey``
-~~~~~~~~~~~~~~~~~~~~
+public byte getEncryptionKey()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **byte (?)** getEncryptionKey ()
 
@@ -333,8 +333,8 @@ getRequestTimeoutMs
 
 .. _io_realm_mongodb_AppConfiguration_getRequestTimeoutMs____:
 
-``getRequestTimeoutMs``
-~~~~~~~~~~~~~~~~~~~~~~~
+public long getRequestTimeoutMs()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** getRequestTimeoutMs ()
 
@@ -344,8 +344,8 @@ getAuthorizationHeaderName
 
 .. _io_realm_mongodb_AppConfiguration_getAuthorizationHeaderName____:
 
-``getAuthorizationHeaderName``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public String getAuthorizationHeaderName()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getAuthorizationHeaderName ()
 
@@ -355,8 +355,8 @@ getCustomRequestHeaders
 
 .. _io_realm_mongodb_AppConfiguration_getCustomRequestHeaders____:
 
-``getCustomRequestHeaders``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public Map getCustomRequestHeaders()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Map <https://docs.oracle.com/javase/7/docs/api/java/util/Map.html>`__ getCustomRequestHeaders ()
 
@@ -366,8 +366,8 @@ getDefaultErrorHandler
 
 .. _io_realm_mongodb_AppConfiguration_getDefaultErrorHandler____:
 
-``getDefaultErrorHandler``
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public SyncSession.ErrorHandler getDefaultErrorHandler()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncSession.ErrorHandler <io_realm_mongodb_sync_SyncSession_ErrorHandler>` getDefaultErrorHandler ()
 
@@ -379,8 +379,8 @@ getDefaultClientResetHandler
 
 .. _io_realm_mongodb_AppConfiguration_getDefaultClientResetHandler____:
 
-``getDefaultClientResetHandler``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public SyncSession.ClientResetHandler getDefaultClientResetHandler()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncSession.ClientResetHandler <io_realm_mongodb_sync_SyncSession_ClientResetHandler>` getDefaultClientResetHandler ()
 
@@ -392,8 +392,8 @@ getSyncRootDirectory
 
 .. _io_realm_mongodb_AppConfiguration_getSyncRootDirectory____:
 
-``getSyncRootDirectory``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public File getSyncRootDirectory()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__ getSyncRootDirectory ()
 
@@ -403,8 +403,8 @@ getDefaultCodecRegistry
 
 .. _io_realm_mongodb_AppConfiguration_getDefaultCodecRegistry____:
 
-``getDefaultCodecRegistry``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public CodecRegistry getDefaultCodecRegistry()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **CodecRegistry (?)** getDefaultCodecRegistry ()
 
@@ -419,8 +419,8 @@ ________
 
 .. _io_realm_mongodb_AppConfiguration_getHttpLogObfuscator____:
 
-``getHttpLogObfuscator``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public HttpLogObfuscator getHttpLogObfuscator()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`HttpLogObfuscator <io_realm_mongodb_log_obfuscator_HttpLogObfuscator>` getHttpLogObfuscator ()
 
@@ -432,8 +432,8 @@ equals
 
 .. _io_realm_mongodb_AppConfiguration_equals__Object__:
 
-``equals``
-~~~~~~~~~~
+public boolean equals(undefined o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
@@ -443,8 +443,8 @@ hashCode
 
 .. _io_realm_mongodb_AppConfiguration_hashCode____:
 
-``hashCode``
-~~~~~~~~~~~~
+public int hashCode()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** hashCode ()
 

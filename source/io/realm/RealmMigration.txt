@@ -74,8 +74,8 @@ migrate
 
 .. _io_realm_RealmMigration_migrate__DynamicRealm__long__long__:
 
-``migrate``
-~~~~~~~~~~~
+public void migrate(undefined realm, undefined oldVersion, undefined newVersion)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** migrate (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, **long (?)** oldVersion, **long (?)** newVersion)
 

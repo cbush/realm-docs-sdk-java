@@ -100,8 +100,8 @@ values
 
 .. _io_realm_Sort_values____:
 
-``values``
-~~~~~~~~~~
+public static Sort values()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`Sort <io_realm_Sort>` values ()
 
@@ -111,8 +111,8 @@ valueOf
 
 .. _io_realm_Sort_valueOf__String__:
 
-``valueOf``
-~~~~~~~~~~~
+public static Sort valueOf(undefined name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`Sort <io_realm_Sort>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
@@ -122,8 +122,8 @@ getValue
 
 .. _io_realm_Sort_getValue____:
 
-``getValue``
-~~~~~~~~~~~~
+public boolean getValue()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** getValue ()
 

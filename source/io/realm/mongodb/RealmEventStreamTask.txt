@@ -51,8 +51,8 @@ getNext
 
 .. _io_realm_mongodb_RealmEventStreamTask_getNext____:
 
-``getNext``
-~~~~~~~~~~~
+public BaseChangeEvent getNext()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`BaseChangeEvent <io_realm_mongodb_mongo_events_BaseChangeEvent>` getNext ()
 
@@ -65,8 +65,8 @@ isOpen
 
 .. _io_realm_mongodb_RealmEventStreamTask_isOpen____:
 
-``isOpen``
-~~~~~~~~~~
+public boolean isOpen()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isOpen ()
 

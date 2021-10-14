@@ -76,8 +76,8 @@ hasNext
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_hasNext____:
 
-``hasNext``
-~~~~~~~~~~~
+public boolean hasNext()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** hasNext ()
 
@@ -87,8 +87,8 @@ next
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_next____:
 
-``next``
-~~~~~~~~
+public ResultT next()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **ResultT (?)** next ()
 
@@ -98,8 +98,8 @@ tryNext
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_tryNext____:
 
-``tryNext``
-~~~~~~~~~~~
+public ResultT tryNext()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **ResultT (?)** tryNext ()
 
@@ -111,8 +111,8 @@ close
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_close____:
 
-``close``
-~~~~~~~~~
+public void close()
+~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** close ()
 

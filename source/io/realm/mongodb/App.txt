@@ -326,8 +326,8 @@ currentUser
 
 .. _io_realm_mongodb_App_currentUser____:
 
-``currentUser``
-~~~~~~~~~~~~~~~
+public User currentUser()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`User <io_realm_mongodb_User>` currentUser ()
 
@@ -341,8 +341,8 @@ allUsers
 
 .. _io_realm_mongodb_App_allUsers____:
 
-``allUsers``
-~~~~~~~~~~~~
+public Map allUsers()
+~~~~~~~~~~~~~~~~~~~~~
 
 public `Map <https://docs.oracle.com/javase/7/docs/api/java/util/Map.html>`__ allUsers ()
 
@@ -356,8 +356,8 @@ switchUser
 
 .. _io_realm_mongodb_App_switchUser__User__:
 
-``switchUser``
-~~~~~~~~~~~~~~
+public User switchUser(undefined user)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`User <io_realm_mongodb_User>` switchUser (:ref:`User <io_realm_mongodb_User>` user)
 
@@ -380,8 +380,8 @@ removeUser
 
 .. _io_realm_mongodb_App_removeUser__User__:
 
-``removeUser``
-~~~~~~~~~~~~~~
+public User removeUser(undefined user)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`User <io_realm_mongodb_User>` removeUser (:ref:`User <io_realm_mongodb_User>` user)
 
@@ -400,8 +400,8 @@ login
 
 .. _io_realm_mongodb_App_login__Credentials__:
 
-``login``
-~~~~~~~~~
+public User login(undefined credentials)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`User <io_realm_mongodb_User>` login (:ref:`Credentials <io_realm_mongodb_Credentials>` credentials)
 
@@ -430,8 +430,8 @@ loginAsync
 
 .. _io_realm_mongodb_App_loginAsync__Credentials__App_Callback_User___:
 
-``loginAsync``
-~~~~~~~~~~~~~~
+public RealmAsyncTask loginAsync(undefined credentials, undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` loginAsync (:ref:`Credentials <io_realm_mongodb_Credentials>` credentials, :ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.User> <io_realm_mongodb_App_Callback>` callback)
 
@@ -462,8 +462,8 @@ getEmailPassword
 
 .. _io_realm_mongodb_App_getEmailPassword____:
 
-``getEmailPassword``
-~~~~~~~~~~~~~~~~~~~~
+public EmailPasswordAuth getEmailPassword()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`EmailPasswordAuth <io_realm_mongodb_auth_EmailPasswordAuth>` getEmailPassword ()
 
@@ -475,8 +475,8 @@ addAuthenticationListener
 
 .. _io_realm_mongodb_App_addAuthenticationListener__AuthenticationListener__:
 
-``addAuthenticationListener``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public void addAuthenticationListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** addAuthenticationListener (:ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` listener)
 
@@ -497,8 +497,8 @@ removeAuthenticationListener
 
 .. _io_realm_mongodb_App_removeAuthenticationListener__AuthenticationListener__:
 
-``removeAuthenticationListener``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public void removeAuthenticationListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** removeAuthenticationListener (:ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` listener)
 
@@ -514,8 +514,8 @@ getSync
 
 .. _io_realm_mongodb_App_getSync____:
 
-``getSync``
-~~~~~~~~~~~
+public Sync getSync()
+~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`Sync <io_realm_mongodb_sync_Sync>` getSync ()
 
@@ -525,8 +525,8 @@ getFunctions
 
 .. _io_realm_mongodb_App_getFunctions__User__:
 
-``getFunctions``
-~~~~~~~~~~~~~~~~
+public Functions getFunctions(undefined user)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`Functions <io_realm_mongodb_functions_Functions>` getFunctions (:ref:`User <io_realm_mongodb_User>` user)
 
@@ -538,8 +538,8 @@ ________
 
 FunctionsAppConfiguration#getDefaultCodecRegistry().. _io_realm_mongodb_App_getFunctions__User__CodecRegistry__:
 
-``getFunctions``
-~~~~~~~~~~~~~~~~
+public Functions getFunctions(undefined user, undefined codecRegistry)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`Functions <io_realm_mongodb_functions_Functions>` getFunctions (:ref:`User <io_realm_mongodb_User>` user, **CodecRegistry (?)** codecRegistry)
 
@@ -552,8 +552,8 @@ FunctionsgetConfiguration
 
 .. _io_realm_mongodb_App_getConfiguration____:
 
-``getConfiguration``
-~~~~~~~~~~~~~~~~~~~~
+public AppConfiguration getConfiguration()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`AppConfiguration <io_realm_mongodb_AppConfiguration>` getConfiguration ()
 
@@ -563,8 +563,8 @@ setNetworkTransport
 
 .. _io_realm_mongodb_App_setNetworkTransport__OsJavaNetworkTransport__:
 
-``setNetworkTransport``
-~~~~~~~~~~~~~~~~~~~~~~~
+protected void setNetworkTransport(undefined transport)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 protected **void (?)** setNetworkTransport (**OsJavaNetworkTransport (?)** transport)
 
@@ -576,8 +576,8 @@ equals
 
 .. _io_realm_mongodb_App_equals__Object__:
 
-``equals``
-~~~~~~~~~~
+public boolean equals(undefined o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
@@ -589,8 +589,8 @@ hashCode
 
 .. _io_realm_mongodb_App_hashCode____:
 
-``hashCode``
-~~~~~~~~~~~~
+public int hashCode()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** hashCode ()
 

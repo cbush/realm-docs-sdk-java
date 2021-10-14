@@ -252,8 +252,8 @@ getId
 
 .. _io_realm_mongodb_User_getId____:
 
-``getId``
-~~~~~~~~~
+public String getId()
+~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getId ()
 
@@ -263,8 +263,8 @@ getProfile
 
 .. _io_realm_mongodb_User_getProfile____:
 
-``getProfile``
-~~~~~~~~~~~~~~
+public UserProfile getProfile()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`UserProfile <io_realm_mongodb_UserProfile>` getProfile ()
 
@@ -274,8 +274,8 @@ getIdentities
 
 .. _io_realm_mongodb_User_getIdentities____:
 
-``getIdentities``
-~~~~~~~~~~~~~~~~~
+public List getIdentities()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ getIdentities ()
 
@@ -288,8 +288,8 @@ UserIdentitygetProviderType
 
 .. _io_realm_mongodb_User_getProviderType____:
 
-``getProviderType``
-~~~~~~~~~~~~~~~~~~~
+public Credentials.Provider getProviderType()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`Credentials.Provider <io_realm_mongodb_Credentials_Provider>` getProviderType ()
 
@@ -299,8 +299,8 @@ getAccessToken
 
 .. _io_realm_mongodb_User_getAccessToken____:
 
-``getAccessToken``
-~~~~~~~~~~~~~~~~~~
+public String getAccessToken()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getAccessToken ()
 
@@ -310,8 +310,8 @@ getRefreshToken
 
 .. _io_realm_mongodb_User_getRefreshToken____:
 
-``getRefreshToken``
-~~~~~~~~~~~~~~~~~~~
+public String getRefreshToken()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getRefreshToken ()
 
@@ -321,8 +321,8 @@ getDeviceId
 
 .. _io_realm_mongodb_User_getDeviceId____:
 
-``getDeviceId``
-~~~~~~~~~~~~~~~
+public String getDeviceId()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getDeviceId ()
 
@@ -332,8 +332,8 @@ getApp
 
 .. _io_realm_mongodb_User_getApp____:
 
-``getApp``
-~~~~~~~~~~
+public App getApp()
+~~~~~~~~~~~~~~~~~~~
 
 public :ref:`App <io_realm_mongodb_App>` getApp ()
 
@@ -345,8 +345,8 @@ getState
 
 .. _io_realm_mongodb_User_getState____:
 
-``getState``
-~~~~~~~~~~~~
+public User.State getState()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`User.State <io_realm_mongodb_User_State>` getState ()
 
@@ -358,8 +358,8 @@ getCustomData
 
 .. _io_realm_mongodb_User_getCustomData____:
 
-``getCustomData``
-~~~~~~~~~~~~~~~~~
+public Document getCustomData()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **Document (?)** getCustomData ()
 
@@ -373,8 +373,8 @@ refreshCustomData
 
 .. _io_realm_mongodb_User_refreshCustomData____:
 
-``refreshCustomData``
-~~~~~~~~~~~~~~~~~~~~~
+public Document refreshCustomData()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **Document (?)** refreshCustomData ()
 
@@ -384,8 +384,8 @@ ______
 
 .. _io_realm_mongodb_User_refreshCustomData__App_Callback_Document___:
 
-``refreshCustomData``
-~~~~~~~~~~~~~~~~~~~~~
+public RealmAsyncTask refreshCustomData(undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` refreshCustomData (:ref:`io.realm.mongodb.App.Callback\<Document> <io_realm_mongodb_App_Callback>` callback)
 
@@ -408,8 +408,8 @@ isLoggedIn
 
 .. _io_realm_mongodb_User_isLoggedIn____:
 
-``isLoggedIn``
-~~~~~~~~~~~~~~
+public boolean isLoggedIn()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isLoggedIn ()
 
@@ -419,8 +419,8 @@ linkCredentials
 
 .. _io_realm_mongodb_User_linkCredentials__Credentials__:
 
-``linkCredentials``
-~~~~~~~~~~~~~~~~~~~
+public User linkCredentials(undefined credentials)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`User <io_realm_mongodb_User>` linkCredentials (:ref:`Credentials <io_realm_mongodb_Credentials>` credentials)
 
@@ -456,8 +456,8 @@ linkCredentialsAsync
 
 .. _io_realm_mongodb_User_linkCredentialsAsync__Credentials__App_Callback_User___:
 
-``linkCredentialsAsync``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmAsyncTask linkCredentialsAsync(undefined credentials, undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` linkCredentialsAsync (:ref:`Credentials <io_realm_mongodb_Credentials>` credentials, :ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.User> <io_realm_mongodb_App_Callback>` callback)
 
@@ -495,8 +495,8 @@ logOut
 
 .. _io_realm_mongodb_User_logOut____:
 
-``logOut``
-~~~~~~~~~~
+public void logOut()
+~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** logOut ()
 
@@ -517,8 +517,8 @@ logOutAsync
 
 .. _io_realm_mongodb_User_logOutAsync__App_Callback_User___:
 
-``logOutAsync``
-~~~~~~~~~~~~~~~
+public RealmAsyncTask logOutAsync(undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` logOutAsync (:ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.User> <io_realm_mongodb_App_Callback>` callback)
 
@@ -545,8 +545,8 @@ getApiKeys
 
 .. _io_realm_mongodb_User_getApiKeys____:
 
-``getApiKeys``
-~~~~~~~~~~~~~~
+public synchronized ApiKeyAuth getApiKeys()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized :ref:`ApiKeyAuth <io_realm_mongodb_auth_ApiKeyAuth>` getApiKeys ()
 
@@ -559,8 +559,8 @@ getFunctions
 
 .. _io_realm_mongodb_User_getFunctions____:
 
-``getFunctions``
-~~~~~~~~~~~~~~~~
+public synchronized Functions getFunctions()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized :ref:`Functions <io_realm_mongodb_functions_Functions>` getFunctions ()
 
@@ -572,8 +572,8 @@ ________
 
 Functions.. _io_realm_mongodb_User_getFunctions__CodecRegistry__:
 
-``getFunctions``
-~~~~~~~~~~~~~~~~
+public Functions getFunctions(undefined codecRegistry)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`Functions <io_realm_mongodb_functions_Functions>` getFunctions (**CodecRegistry (?)** codecRegistry)
 
@@ -592,8 +592,8 @@ FunctionsgetPush
 
 .. _io_realm_mongodb_User_getPush__String__:
 
-``getPush``
-~~~~~~~~~~~
+public synchronized Push getPush(undefined serviceName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized :ref:`Push <io_realm_mongodb_push_Push>` getPush (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ serviceName)
 
@@ -611,8 +611,8 @@ getMongoClient
 
 .. _io_realm_mongodb_User_getMongoClient__String__:
 
-``getMongoClient``
-~~~~~~~~~~~~~~~~~~
+public synchronized MongoClient getMongoClient(undefined serviceName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized :ref:`MongoClient <io_realm_mongodb_mongo_MongoClient>` getMongoClient (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ serviceName)
 
@@ -630,8 +630,8 @@ equals
 
 .. _io_realm_mongodb_User_equals__Object__:
 
-``equals``
-~~~~~~~~~~
+public boolean equals(undefined o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
@@ -641,8 +641,8 @@ hashCode
 
 .. _io_realm_mongodb_User_hashCode____:
 
-``hashCode``
-~~~~~~~~~~~~
+public int hashCode()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** hashCode ()
 

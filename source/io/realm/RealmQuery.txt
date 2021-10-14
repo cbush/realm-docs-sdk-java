@@ -1083,8 +1083,8 @@ isValid
 
 .. _io_realm_RealmQuery_isValid____:
 
-``isValid``
-~~~~~~~~~~~
+public boolean isValid()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isValid ()
 
@@ -1096,8 +1096,8 @@ isNull
 
 .. _io_realm_RealmQuery_isNull__String__:
 
-``isNull``
-~~~~~~~~~~
+public RealmQuery isNull(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` isNull (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -1125,8 +1125,8 @@ Required for further infomation.isNotNull
 
 .. _io_realm_RealmQuery_isNotNull__String__:
 
-``isNotNull``
-~~~~~~~~~~~~~
+public RealmQuery isNotNull(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` isNotNull (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -1150,8 +1150,8 @@ Required for further infomation.equalTo
 
 .. _io_realm_RealmQuery_equalTo__String__String__:
 
-``equalTo``
-~~~~~~~~~~~
+public RealmQuery equalTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
 
@@ -1169,8 +1169,8 @@ ______
 
 .. _io_realm_RealmQuery_equalTo__String__String__Case__:
 
-``equalTo``
-~~~~~~~~~~~
+public RealmQuery equalTo(undefined fieldName, undefined value, undefined casing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value, :ref:`Case <io_realm_Case>` casing)
 
@@ -1192,8 +1192,8 @@ ______
 
 .. _io_realm_RealmQuery_equalTo__String__RealmAny__Case__:
 
-``equalTo``
-~~~~~~~~~~~
+public RealmQuery equalTo(undefined fieldName, undefined value, undefined casing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
 
@@ -1215,8 +1215,8 @@ ______
 
 .. _io_realm_RealmQuery_equalTo__String__Decimal128__:
 
-``equalTo``
-~~~~~~~~~~~
+public RealmQuery equalTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **Decimal128 (?)** value)
 
@@ -1234,8 +1234,8 @@ ______
 
 .. _io_realm_RealmQuery_equalTo__String__ObjectId__:
 
-``equalTo``
-~~~~~~~~~~~
+public RealmQuery equalTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **ObjectId (?)** value)
 
@@ -1253,8 +1253,8 @@ ______
 
 .. _io_realm_RealmQuery_equalTo__String__RealmAny__:
 
-``equalTo``
-~~~~~~~~~~~
+public RealmQuery equalTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
 
@@ -1275,8 +1275,8 @@ in
 
 .. _io_realm_RealmQuery_in__String__String[]__:
 
-``in``
-~~~~~~
+public RealmQuery in(undefined fieldName, undefined values)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.String[] <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ values)
 
@@ -1296,8 +1296,8 @@ ______
 
 .. _io_realm_RealmQuery_in__String__String[]__Case__:
 
-``in``
-~~~~~~
+public RealmQuery in(undefined fieldName, undefined values, undefined casing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.String[] <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ values, :ref:`Case <io_realm_Case>` casing)
 
@@ -1321,8 +1321,8 @@ ______
 
 .. _io_realm_RealmQuery_in__String__Byte[]__:
 
-``in``
-~~~~~~
+public RealmQuery in(undefined fieldName, undefined values)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Byte[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Byte.html>`__ values)
 
@@ -1342,8 +1342,8 @@ ______
 
 .. _io_realm_RealmQuery_in__String__Short[]__:
 
-``in``
-~~~~~~
+public RealmQuery in(undefined fieldName, undefined values)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Short[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Short.html>`__ values)
 
@@ -1363,8 +1363,8 @@ ______
 
 .. _io_realm_RealmQuery_in__String__Integer[]__:
 
-``in``
-~~~~~~
+public RealmQuery in(undefined fieldName, undefined values)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Integer[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html>`__ values)
 
@@ -1384,8 +1384,8 @@ ______
 
 .. _io_realm_RealmQuery_in__String__Long[]__:
 
-``in``
-~~~~~~
+public RealmQuery in(undefined fieldName, undefined values)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Long[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html>`__ values)
 
@@ -1405,8 +1405,8 @@ ______
 
 .. _io_realm_RealmQuery_in__String__Double[]__:
 
-``in``
-~~~~~~
+public RealmQuery in(undefined fieldName, undefined values)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Double[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Double.html>`__ values)
 
@@ -1426,8 +1426,8 @@ ______
 
 .. _io_realm_RealmQuery_in__String__Float[]__:
 
-``in``
-~~~~~~
+public RealmQuery in(undefined fieldName, undefined values)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Float[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Float.html>`__ values)
 
@@ -1447,8 +1447,8 @@ ______
 
 .. _io_realm_RealmQuery_in__String__Boolean[]__:
 
-``in``
-~~~~~~
+public RealmQuery in(undefined fieldName, undefined values)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Boolean[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Boolean.html>`__ values)
 
@@ -1468,8 +1468,8 @@ ______
 
 .. _io_realm_RealmQuery_in__String__Date[]__:
 
-``in``
-~~~~~~
+public RealmQuery in(undefined fieldName, undefined values)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.util.Date[] <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ values)
 
@@ -1489,8 +1489,8 @@ ______
 
 .. _io_realm_RealmQuery_in__String__RealmAny[]__:
 
-``in``
-~~~~~~
+public RealmQuery in(undefined fieldName, undefined values)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny[] (?)** values)
 
@@ -1513,8 +1513,8 @@ notEqualTo
 
 .. _io_realm_RealmQuery_notEqualTo__String__String__:
 
-``notEqualTo``
-~~~~~~~~~~~~~~
+public RealmQuery notEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
 
@@ -1532,8 +1532,8 @@ ______
 
 .. _io_realm_RealmQuery_notEqualTo__String__String__Case__:
 
-``notEqualTo``
-~~~~~~~~~~~~~~
+public RealmQuery notEqualTo(undefined fieldName, undefined value, undefined casing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value, :ref:`Case <io_realm_Case>` casing)
 
@@ -1555,8 +1555,8 @@ ______
 
 .. _io_realm_RealmQuery_notEqualTo__String__RealmAny__Case__:
 
-``notEqualTo``
-~~~~~~~~~~~~~~
+public RealmQuery notEqualTo(undefined fieldName, undefined value, undefined casing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
 
@@ -1578,8 +1578,8 @@ ______
 
 .. _io_realm_RealmQuery_notEqualTo__String__Decimal128__:
 
-``notEqualTo``
-~~~~~~~~~~~~~~
+public RealmQuery notEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **Decimal128 (?)** value)
 
@@ -1597,8 +1597,8 @@ ______
 
 .. _io_realm_RealmQuery_notEqualTo__String__ObjectId__:
 
-``notEqualTo``
-~~~~~~~~~~~~~~
+public RealmQuery notEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **ObjectId (?)** value)
 
@@ -1616,8 +1616,8 @@ ______
 
 .. _io_realm_RealmQuery_notEqualTo__String__RealmAny__:
 
-``notEqualTo``
-~~~~~~~~~~~~~~
+public RealmQuery notEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
 
@@ -1638,8 +1638,8 @@ greaterThan
 
 .. _io_realm_RealmQuery_greaterThan__String__int__:
 
-``greaterThan``
-~~~~~~~~~~~~~~~
+public RealmQuery greaterThan(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **int (?)** value)
 
@@ -1657,8 +1657,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThan__String__long__:
 
-``greaterThan``
-~~~~~~~~~~~~~~~
+public RealmQuery greaterThan(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **long (?)** value)
 
@@ -1676,8 +1676,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThan__String__double__:
 
-``greaterThan``
-~~~~~~~~~~~~~~~
+public RealmQuery greaterThan(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **double (?)** value)
 
@@ -1695,8 +1695,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThan__String__float__:
 
-``greaterThan``
-~~~~~~~~~~~~~~~
+public RealmQuery greaterThan(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **float (?)** value)
 
@@ -1714,8 +1714,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThan__String__Date__:
 
-``greaterThan``
-~~~~~~~~~~~~~~~
+public RealmQuery greaterThan(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ value)
 
@@ -1733,8 +1733,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThan__String__RealmAny__:
 
-``greaterThan``
-~~~~~~~~~~~~~~~
+public RealmQuery greaterThan(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
 
@@ -1752,8 +1752,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThan__String__Decimal128__:
 
-``greaterThan``
-~~~~~~~~~~~~~~~
+public RealmQuery greaterThan(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **Decimal128 (?)** value)
 
@@ -1771,8 +1771,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThan__String__ObjectId__:
 
-``greaterThan``
-~~~~~~~~~~~~~~~
+public RealmQuery greaterThan(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **ObjectId (?)** value)
 
@@ -1793,8 +1793,8 @@ greaterThanOrEqualTo
 
 .. _io_realm_RealmQuery_greaterThanOrEqualTo__String__int__:
 
-``greaterThanOrEqualTo``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmQuery greaterThanOrEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **int (?)** value)
 
@@ -1812,8 +1812,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThanOrEqualTo__String__long__:
 
-``greaterThanOrEqualTo``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmQuery greaterThanOrEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **long (?)** value)
 
@@ -1831,8 +1831,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThanOrEqualTo__String__double__:
 
-``greaterThanOrEqualTo``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmQuery greaterThanOrEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **double (?)** value)
 
@@ -1850,8 +1850,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThanOrEqualTo__String__float__:
 
-``greaterThanOrEqualTo``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmQuery greaterThanOrEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **float (?)** value)
 
@@ -1869,8 +1869,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThanOrEqualTo__String__Date__:
 
-``greaterThanOrEqualTo``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmQuery greaterThanOrEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ value)
 
@@ -1888,8 +1888,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThanOrEqualTo__String__Decimal128__:
 
-``greaterThanOrEqualTo``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmQuery greaterThanOrEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **Decimal128 (?)** value)
 
@@ -1907,8 +1907,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThanOrEqualTo__String__ObjectId__:
 
-``greaterThanOrEqualTo``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmQuery greaterThanOrEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **ObjectId (?)** value)
 
@@ -1926,8 +1926,8 @@ ______
 
 .. _io_realm_RealmQuery_greaterThanOrEqualTo__String__RealmAny__:
 
-``greaterThanOrEqualTo``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public RealmQuery greaterThanOrEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
 
@@ -1948,8 +1948,8 @@ lessThan
 
 .. _io_realm_RealmQuery_lessThan__String__int__:
 
-``lessThan``
-~~~~~~~~~~~~
+public RealmQuery lessThan(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThan (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **int (?)** value)
 
@@ -1967,8 +1967,8 @@ ______
 
 .. _io_realm_RealmQuery_lessThan__String__long__:
 
-``lessThan``
-~~~~~~~~~~~~
+public RealmQuery lessThan(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThan (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **long (?)** value)
 
@@ -1986,8 +1986,8 @@ ______
 
 .. _io_realm_RealmQuery_lessThan__String__Decimal128__:
 
-``lessThan``
-~~~~~~~~~~~~
+public RealmQuery lessThan(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThan (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **Decimal128 (?)** value)
 
@@ -2005,8 +2005,8 @@ ______
 
 .. _io_realm_RealmQuery_lessThan__String__ObjectId__:
 
-``lessThan``
-~~~~~~~~~~~~
+public RealmQuery lessThan(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThan (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **ObjectId (?)** value)
 
@@ -2024,8 +2024,8 @@ ______
 
 .. _io_realm_RealmQuery_lessThan__String__RealmAny__:
 
-``lessThan``
-~~~~~~~~~~~~
+public RealmQuery lessThan(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThan (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
 
@@ -2046,8 +2046,8 @@ lessThanOrEqualTo
 
 .. _io_realm_RealmQuery_lessThanOrEqualTo__String__int__:
 
-``lessThanOrEqualTo``
-~~~~~~~~~~~~~~~~~~~~~
+public RealmQuery lessThanOrEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThanOrEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **int (?)** value)
 
@@ -2065,8 +2065,8 @@ ______
 
 .. _io_realm_RealmQuery_lessThanOrEqualTo__String__long__:
 
-``lessThanOrEqualTo``
-~~~~~~~~~~~~~~~~~~~~~
+public RealmQuery lessThanOrEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThanOrEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **long (?)** value)
 
@@ -2084,8 +2084,8 @@ ______
 
 .. _io_realm_RealmQuery_lessThanOrEqualTo__String__Decimal128__:
 
-``lessThanOrEqualTo``
-~~~~~~~~~~~~~~~~~~~~~
+public RealmQuery lessThanOrEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThanOrEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **Decimal128 (?)** value)
 
@@ -2103,8 +2103,8 @@ ______
 
 .. _io_realm_RealmQuery_lessThanOrEqualTo__String__ObjectId__:
 
-``lessThanOrEqualTo``
-~~~~~~~~~~~~~~~~~~~~~
+public RealmQuery lessThanOrEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThanOrEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **ObjectId (?)** value)
 
@@ -2122,8 +2122,8 @@ ______
 
 .. _io_realm_RealmQuery_lessThanOrEqualTo__String__RealmAny__:
 
-``lessThanOrEqualTo``
-~~~~~~~~~~~~~~~~~~~~~
+public RealmQuery lessThanOrEqualTo(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` lessThanOrEqualTo (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
 
@@ -2144,8 +2144,8 @@ between
 
 .. _io_realm_RealmQuery_between__String__int__int__:
 
-``between``
-~~~~~~~~~~~
+public RealmQuery between(undefined fieldName, undefined from, undefined to)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **int (?)** from, **int (?)** to)
 
@@ -2165,8 +2165,8 @@ ______
 
 .. _io_realm_RealmQuery_between__String__long__long__:
 
-``between``
-~~~~~~~~~~~
+public RealmQuery between(undefined fieldName, undefined from, undefined to)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **long (?)** from, **long (?)** to)
 
@@ -2186,8 +2186,8 @@ ______
 
 .. _io_realm_RealmQuery_between__String__double__double__:
 
-``between``
-~~~~~~~~~~~
+public RealmQuery between(undefined fieldName, undefined from, undefined to)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **double (?)** from, **double (?)** to)
 
@@ -2207,8 +2207,8 @@ ______
 
 .. _io_realm_RealmQuery_between__String__float__float__:
 
-``between``
-~~~~~~~~~~~
+public RealmQuery between(undefined fieldName, undefined from, undefined to)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **float (?)** from, **float (?)** to)
 
@@ -2228,8 +2228,8 @@ ______
 
 .. _io_realm_RealmQuery_between__String__Date__Date__:
 
-``between``
-~~~~~~~~~~~
+public RealmQuery between(undefined fieldName, undefined from, undefined to)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ from, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ to)
 
@@ -2249,8 +2249,8 @@ ______
 
 .. _io_realm_RealmQuery_between__String__RealmAny__RealmAny__:
 
-``between``
-~~~~~~~~~~~
+public RealmQuery between(undefined fieldName, undefined from, undefined to)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** from, **RealmAny (?)** to)
 
@@ -2270,8 +2270,8 @@ ______
 
 .. _io_realm_RealmQuery_between__String__Decimal128__Decimal128__:
 
-``between``
-~~~~~~~~~~~
+public RealmQuery between(undefined fieldName, undefined from, undefined to)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` between (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **Decimal128 (?)** from, **Decimal128 (?)** to)
 
@@ -2294,8 +2294,8 @@ contains
 
 .. _io_realm_RealmQuery_contains__String__String__:
 
-``contains``
-~~~~~~~~~~~~
+public RealmQuery contains(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` contains (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
 
@@ -2313,8 +2313,8 @@ ______
 
 .. _io_realm_RealmQuery_contains__String__RealmAny__:
 
-``contains``
-~~~~~~~~~~~~
+public RealmQuery contains(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` contains (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
 
@@ -2332,8 +2332,8 @@ ______
 
 .. _io_realm_RealmQuery_contains__String__String__Case__:
 
-``contains``
-~~~~~~~~~~~~
+public RealmQuery contains(undefined fieldName, undefined value, undefined casing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` contains (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value, :ref:`Case <io_realm_Case>` casing)
 
@@ -2355,8 +2355,8 @@ ______
 
 .. _io_realm_RealmQuery_contains__String__RealmAny__Case__:
 
-``contains``
-~~~~~~~~~~~~
+public RealmQuery contains(undefined fieldName, undefined value, undefined casing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` contains (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
 
@@ -2381,8 +2381,8 @@ beginsWith
 
 .. _io_realm_RealmQuery_beginsWith__String__String__:
 
-``beginsWith``
-~~~~~~~~~~~~~~
+public RealmQuery beginsWith(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` beginsWith (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
 
@@ -2400,8 +2400,8 @@ ______
 
 .. _io_realm_RealmQuery_beginsWith__String__RealmAny__:
 
-``beginsWith``
-~~~~~~~~~~~~~~
+public RealmQuery beginsWith(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` beginsWith (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
 
@@ -2419,8 +2419,8 @@ ______
 
 .. _io_realm_RealmQuery_beginsWith__String__String__Case__:
 
-``beginsWith``
-~~~~~~~~~~~~~~
+public RealmQuery beginsWith(undefined fieldName, undefined value, undefined casing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` beginsWith (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value, :ref:`Case <io_realm_Case>` casing)
 
@@ -2442,8 +2442,8 @@ ______
 
 .. _io_realm_RealmQuery_beginsWith__String__RealmAny__Case__:
 
-``beginsWith``
-~~~~~~~~~~~~~~
+public RealmQuery beginsWith(undefined fieldName, undefined value, undefined casing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` beginsWith (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
 
@@ -2468,8 +2468,8 @@ endsWith
 
 .. _io_realm_RealmQuery_endsWith__String__String__:
 
-``endsWith``
-~~~~~~~~~~~~
+public RealmQuery endsWith(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` endsWith (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
 
@@ -2487,8 +2487,8 @@ ______
 
 .. _io_realm_RealmQuery_endsWith__String__RealmAny__:
 
-``endsWith``
-~~~~~~~~~~~~
+public RealmQuery endsWith(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` endsWith (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
 
@@ -2506,8 +2506,8 @@ ______
 
 .. _io_realm_RealmQuery_endsWith__String__String__Case__:
 
-``endsWith``
-~~~~~~~~~~~~
+public RealmQuery endsWith(undefined fieldName, undefined value, undefined casing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` endsWith (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value, :ref:`Case <io_realm_Case>` casing)
 
@@ -2529,8 +2529,8 @@ ______
 
 .. _io_realm_RealmQuery_endsWith__String__RealmAny__Case__:
 
-``endsWith``
-~~~~~~~~~~~~
+public RealmQuery endsWith(undefined fieldName, undefined value, undefined casing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` endsWith (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
 
@@ -2555,8 +2555,8 @@ like
 
 .. _io_realm_RealmQuery_like__String__String__:
 
-``like``
-~~~~~~~~
+public RealmQuery like(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` like (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
 
@@ -2581,8 +2581,8 @@ ______
 
 .. _io_realm_RealmQuery_like__String__RealmAny__:
 
-``like``
-~~~~~~~~
+public RealmQuery like(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` like (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
 
@@ -2607,8 +2607,8 @@ ______
 
 .. _io_realm_RealmQuery_like__String__String__Case__:
 
-``like``
-~~~~~~~~
+public RealmQuery like(undefined fieldName, undefined value, undefined casing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` like (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value, :ref:`Case <io_realm_Case>` casing)
 
@@ -2637,8 +2637,8 @@ ______
 
 .. _io_realm_RealmQuery_like__String__RealmAny__Case__:
 
-``like``
-~~~~~~~~
+public RealmQuery like(undefined fieldName, undefined value, undefined casing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` like (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
 
@@ -2670,8 +2670,8 @@ beginGroup
 
 .. _io_realm_RealmQuery_beginGroup____:
 
-``beginGroup``
-~~~~~~~~~~~~~~
+public RealmQuery beginGroup()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` beginGroup ()
 
@@ -2686,8 +2686,8 @@ ________
 
 .. _io_realm_RealmQuery_endGroup____:
 
-``endGroup``
-~~~~~~~~~~~~
+public RealmQuery endGroup()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` endGroup ()
 
@@ -2702,8 +2702,8 @@ ________
 
 .. _io_realm_RealmQuery_or____:
 
-``or``
-~~~~~~
+public RealmQuery or()
+~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` or ()
 
@@ -2713,8 +2713,8 @@ and
 
 .. _io_realm_RealmQuery_and____:
 
-``and``
-~~~~~~~
+public RealmQuery and()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` and ()
 
@@ -2724,8 +2724,8 @@ not
 
 .. _io_realm_RealmQuery_not____:
 
-``not``
-~~~~~~~
+public RealmQuery not()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` not ()
 
@@ -2735,8 +2735,8 @@ isEmpty
 
 .. _io_realm_RealmQuery_isEmpty__String__:
 
-``isEmpty``
-~~~~~~~~~~~
+public RealmQuery isEmpty(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` isEmpty (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -2755,8 +2755,8 @@ isNotEmpty
 
 .. _io_realm_RealmQuery_isNotEmpty__String__:
 
-``isNotEmpty``
-~~~~~~~~~~~~~~
+public RealmQuery isNotEmpty(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` isNotEmpty (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -2775,8 +2775,8 @@ containsKey
 
 .. _io_realm_RealmQuery_containsKey__String__String__:
 
-``containsKey``
-~~~~~~~~~~~~~~~
+public RealmQuery containsKey(undefined fieldName, undefined key)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsKey (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ key)
 
@@ -2797,8 +2797,8 @@ containsValue
 
 .. _io_realm_RealmQuery_containsValue__String__Boolean__:
 
-``containsValue``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Boolean <https://docs.oracle.com/javase/7/docs/api/java/lang/Boolean.html>`__ value)
 
@@ -2816,8 +2816,8 @@ ______
 
 .. _io_realm_RealmQuery_containsValue__String__Byte__:
 
-``containsValue``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Byte <https://docs.oracle.com/javase/7/docs/api/java/lang/Byte.html>`__ value)
 
@@ -2835,8 +2835,8 @@ ______
 
 .. _io_realm_RealmQuery_containsValue__String__Short__:
 
-``containsValue``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Short <https://docs.oracle.com/javase/7/docs/api/java/lang/Short.html>`__ value)
 
@@ -2854,8 +2854,8 @@ ______
 
 .. _io_realm_RealmQuery_containsValue__String__Integer__:
 
-``containsValue``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Integer <https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html>`__ value)
 
@@ -2873,8 +2873,8 @@ ______
 
 .. _io_realm_RealmQuery_containsValue__String__Long__:
 
-``containsValue``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Long <https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html>`__ value)
 
@@ -2892,8 +2892,8 @@ ______
 
 .. _io_realm_RealmQuery_containsValue__String__Double__:
 
-``containsValue``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Double <https://docs.oracle.com/javase/7/docs/api/java/lang/Double.html>`__ value)
 
@@ -2911,8 +2911,8 @@ ______
 
 .. _io_realm_RealmQuery_containsValue__String__Float__:
 
-``containsValue``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Float <https://docs.oracle.com/javase/7/docs/api/java/lang/Float.html>`__ value)
 
@@ -2930,8 +2930,8 @@ ______
 
 .. _io_realm_RealmQuery_containsValue__String__String__:
 
-``containsValue``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
 
@@ -2949,8 +2949,8 @@ ______
 
 .. _io_realm_RealmQuery_containsValue__String__byte[]__:
 
-``containsValue``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **byte[] (?)** value)
 
@@ -2968,8 +2968,8 @@ ______
 
 .. _io_realm_RealmQuery_containsValue__String__Date__:
 
-``containsValue``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ value)
 
@@ -2987,8 +2987,8 @@ ______
 
 .. _io_realm_RealmQuery_containsValue__String__Decimal128__:
 
-``containsValue``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **Decimal128 (?)** value)
 
@@ -3006,8 +3006,8 @@ ______
 
 .. _io_realm_RealmQuery_containsValue__String__ObjectId__:
 
-``containsValue``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **ObjectId (?)** value)
 
@@ -3025,8 +3025,8 @@ ______
 
 .. _io_realm_RealmQuery_containsValue__String__RealmAny__:
 
-``containsValue``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsValue(undefined fieldName, undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
 
@@ -3047,8 +3047,8 @@ containsEntry
 
 .. _io_realm_RealmQuery_containsEntry__String__Map_Entry_String______:
 
-``containsEntry``
-~~~~~~~~~~~~~~~~~
+public RealmQuery containsEntry(undefined fieldName, undefined entry)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` containsEntry (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.util.Map.Entry\<java.lang.String, ?> <https://docs.oracle.com/javase/7/docs/api/java/util/Map/Entry.html>`__ entry)
 
@@ -3069,8 +3069,8 @@ sum
 
 .. _io_realm_RealmQuery_sum__String__:
 
-``sum``
-~~~~~~~
+public Number sum(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ sum (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -3089,8 +3089,8 @@ average
 
 .. _io_realm_RealmQuery_average__String__:
 
-``average``
-~~~~~~~~~~~
+public double average(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **double (?)** average (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -3109,8 +3109,8 @@ averageDecimal128
 
 .. _io_realm_RealmQuery_averageDecimal128__String__:
 
-``averageDecimal128``
-~~~~~~~~~~~~~~~~~~~~~
+public Decimal128 averageDecimal128(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **Decimal128 (?)** averageDecimal128 (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -3131,8 +3131,8 @@ averageRealmAny
 
 .. _io_realm_RealmQuery_averageRealmAny__String__:
 
-``averageRealmAny``
-~~~~~~~~~~~~~~~~~~~
+public Decimal128 averageRealmAny(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **Decimal128 (?)** averageRealmAny (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -3153,8 +3153,8 @@ min
 
 .. _io_realm_RealmQuery_min__String__:
 
-``min``
-~~~~~~~
+public Number min(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ min (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -3173,8 +3173,8 @@ minimumDate
 
 .. _io_realm_RealmQuery_minimumDate__String__:
 
-``minimumDate``
-~~~~~~~~~~~~~~~
+public Date minimumDate(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ minimumDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -3193,8 +3193,8 @@ minRealmAny
 
 .. _io_realm_RealmQuery_minRealmAny__String__:
 
-``minRealmAny``
-~~~~~~~~~~~~~~~
+public RealmAny minRealmAny(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **RealmAny (?)** minRealmAny (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -3215,8 +3215,8 @@ max
 
 .. _io_realm_RealmQuery_max__String__:
 
-``max``
-~~~~~~~
+public Number max(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ max (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -3235,8 +3235,8 @@ maximumDate
 
 .. _io_realm_RealmQuery_maximumDate__String__:
 
-``maximumDate``
-~~~~~~~~~~~~~~~
+public Date maximumDate(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ maximumDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -3255,8 +3255,8 @@ maxRealmAny
 
 .. _io_realm_RealmQuery_maxRealmAny__String__:
 
-``maxRealmAny``
-~~~~~~~~~~~~~~~
+public RealmAny maxRealmAny(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **RealmAny (?)** maxRealmAny (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -3277,8 +3277,8 @@ count
 
 .. _io_realm_RealmQuery_count____:
 
-``count``
-~~~~~~~~~
+public long count()
+~~~~~~~~~~~~~~~~~~~
 
 public **long (?)** count ()
 
@@ -3291,8 +3291,8 @@ findAll
 
 .. _io_realm_RealmQuery_findAll____:
 
-``findAll``
-~~~~~~~~~~~
+public RealmResults findAll()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResults <io_realm_RealmResults>` findAll ()
 
@@ -3312,8 +3312,8 @@ io.realm.RealmResultsfindAllAsync
 
 .. _io_realm_RealmQuery_findAllAsync____:
 
-``findAllAsync``
-~~~~~~~~~~~~~~~~
+public RealmResults findAllAsync()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResults <io_realm_RealmResults>` findAllAsync ()
 
@@ -3326,8 +3326,8 @@ io.realm.RealmResultssort
 
 .. _io_realm_RealmQuery_sort__String__:
 
-``sort``
-~~~~~~~~
+public RealmQuery sort(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -3345,8 +3345,8 @@ ______
 
 .. _io_realm_RealmQuery_sort__String__Sort__:
 
-``sort``
-~~~~~~~~
+public RealmQuery sort(undefined fieldName, undefined sortOrder)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`Sort <io_realm_Sort>` sortOrder)
 
@@ -3366,8 +3366,8 @@ ______
 
 .. _io_realm_RealmQuery_sort__String__Sort__String__Sort__:
 
-``sort``
-~~~~~~~~
+public RealmQuery sort(undefined fieldName1, undefined sortOrder1, undefined fieldName2, undefined sortOrder2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
 
@@ -3393,8 +3393,8 @@ ______
 
 .. _io_realm_RealmQuery_sort__String[]__Sort[]__:
 
-``sort``
-~~~~~~~~
+public RealmQuery sort(undefined fieldNames, undefined sortOrders)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` sort (`java.lang.String[] <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldNames, :ref:`io.realm.Sort[] <io_realm_Sort>` sortOrders)
 
@@ -3417,8 +3417,8 @@ distinct
 
 .. _io_realm_RealmQuery_distinct__String__String_____:
 
-``distinct``
-~~~~~~~~~~~~
+public RealmQuery distinct(undefined firstFieldName, undefined remainingFieldNames)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` distinct (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ firstFieldName, `java.lang.String[] <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ remainingFieldNames)
 
@@ -3439,8 +3439,8 @@ limit
 
 .. _io_realm_RealmQuery_limit__long__:
 
-``limit``
-~~~~~~~~~
+public RealmQuery limit(undefined limit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` limit (**long (?)** limit)
 
@@ -3465,8 +3465,8 @@ alwaysTrue
 
 .. _io_realm_RealmQuery_alwaysTrue____:
 
-``alwaysTrue``
-~~~~~~~~~~~~~~
+public RealmQuery alwaysTrue()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` alwaysTrue ()
 
@@ -3476,8 +3476,8 @@ alwaysFalse
 
 .. _io_realm_RealmQuery_alwaysFalse____:
 
-``alwaysFalse``
-~~~~~~~~~~~~~~~
+public RealmQuery alwaysFalse()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` alwaysFalse ()
 
@@ -3487,8 +3487,8 @@ rawPredicate
 
 .. _io_realm_RealmQuery_rawPredicate__String__Object_____:
 
-``rawPredicate``
-~~~~~~~~~~~~~~~~
+public RealmQuery rawPredicate(undefined predicate, undefined arguments)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` rawPredicate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ predicate, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ arguments)
 
@@ -3548,8 +3548,8 @@ getRealm
 
 .. _io_realm_RealmQuery_getRealm____:
 
-``getRealm``
-~~~~~~~~~~~~
+public Realm getRealm()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`Realm <io_realm_Realm>` getRealm ()
 
@@ -3568,8 +3568,8 @@ getDescription
 
 .. _io_realm_RealmQuery_getDescription____:
 
-``getDescription``
-~~~~~~~~~~~~~~~~~~
+public String getDescription()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getDescription ()
 
@@ -3579,8 +3579,8 @@ getTypeQueried
 
 .. _io_realm_RealmQuery_getTypeQueried____:
 
-``getTypeQueried``
-~~~~~~~~~~~~~~~~~~
+public String getTypeQueried()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getTypeQueried ()
 
@@ -3590,8 +3590,8 @@ findFirst
 
 .. _io_realm_RealmQuery_findFirst____:
 
-``findFirst``
-~~~~~~~~~~~~~
+public E findFirst()
+~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** findFirst ()
 
@@ -3611,8 +3611,8 @@ io.realm.RealmObjectfindFirstAsync
 
 .. _io_realm_RealmQuery_findFirstAsync____:
 
-``findFirstAsync``
-~~~~~~~~~~~~~~~~~~
+public E findFirstAsync()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **E (?)** findFirstAsync ()
 

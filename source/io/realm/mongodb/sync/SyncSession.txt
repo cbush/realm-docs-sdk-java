@@ -220,8 +220,8 @@ getConfiguration
 
 .. _io_realm_mongodb_sync_SyncSession_getConfiguration____:
 
-``getConfiguration``
-~~~~~~~~~~~~~~~~~~~~
+public SyncConfiguration getConfiguration()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` getConfiguration ()
 
@@ -233,8 +233,8 @@ getUser
 
 .. _io_realm_mongodb_sync_SyncSession_getUser____:
 
-``getUser``
-~~~~~~~~~~~
+public User getUser()
+~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`User <io_realm_mongodb_User>` getUser ()
 
@@ -246,8 +246,8 @@ getServerUrl
 
 .. _io_realm_mongodb_sync_SyncSession_getServerUrl____:
 
-``getServerUrl``
-~~~~~~~~~~~~~~~~
+public URI getServerUrl()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI.html>`__ getServerUrl ()
 
@@ -259,8 +259,8 @@ getState
 
 .. _io_realm_mongodb_sync_SyncSession_getState____:
 
-``getState``
-~~~~~~~~~~~~
+public SyncSession.State getState()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncSession.State <io_realm_mongodb_sync_SyncSession_State>` getState ()
 
@@ -277,8 +277,8 @@ SyncSession.StategetConnectionState
 
 .. _io_realm_mongodb_sync_SyncSession_getConnectionState____:
 
-``getConnectionState``
-~~~~~~~~~~~~~~~~~~~~~~
+public ConnectionState getConnectionState()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>` getConnectionState ()
 
@@ -293,8 +293,8 @@ ConnectionStateisConnected
 
 .. _io_realm_mongodb_sync_SyncSession_isConnected____:
 
-``isConnected``
-~~~~~~~~~~~~~~~
+public boolean isConnected()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isConnected ()
 
@@ -306,8 +306,8 @@ addDownloadProgressListener
 
 .. _io_realm_mongodb_sync_SyncSession_addDownloadProgressListener__ProgressMode__ProgressListener__:
 
-``addDownloadProgressListener``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public synchronized void addDownloadProgressListener(undefined mode, undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized **void (?)** addDownloadProgressListener (:ref:`ProgressMode <io_realm_mongodb_sync_ProgressMode>` mode, :ref:`ProgressListener <io_realm_mongodb_sync_ProgressListener>` listener)
 
@@ -331,8 +331,8 @@ addUploadProgressListener
 
 .. _io_realm_mongodb_sync_SyncSession_addUploadProgressListener__ProgressMode__ProgressListener__:
 
-``addUploadProgressListener``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public synchronized void addUploadProgressListener(undefined mode, undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized **void (?)** addUploadProgressListener (:ref:`ProgressMode <io_realm_mongodb_sync_ProgressMode>` mode, :ref:`ProgressListener <io_realm_mongodb_sync_ProgressListener>` listener)
 
@@ -356,8 +356,8 @@ removeProgressListener
 
 .. _io_realm_mongodb_sync_SyncSession_removeProgressListener__ProgressListener__:
 
-``removeProgressListener``
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public synchronized void removeProgressListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized **void (?)** removeProgressListener (:ref:`ProgressListener <io_realm_mongodb_sync_ProgressListener>` listener)
 
@@ -373,8 +373,8 @@ addConnectionChangeListener
 
 .. _io_realm_mongodb_sync_SyncSession_addConnectionChangeListener__ConnectionListener__:
 
-``addConnectionChangeListener``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public synchronized void addConnectionChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized **void (?)** addConnectionChangeListener (:ref:`ConnectionListener <io_realm_mongodb_sync_ConnectionListener>` listener)
 
@@ -398,8 +398,8 @@ ConnectionStateremoveConnectionChangeListener
 
 .. _io_realm_mongodb_sync_SyncSession_removeConnectionChangeListener__ConnectionListener__:
 
-``removeConnectionChangeListener``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public synchronized void removeConnectionChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized **void (?)** removeConnectionChangeListener (:ref:`ConnectionListener <io_realm_mongodb_sync_ConnectionListener>` listener)
 
@@ -420,8 +420,8 @@ downloadAllServerChanges
 
 .. _io_realm_mongodb_sync_SyncSession_downloadAllServerChanges____:
 
-``downloadAllServerChanges``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public void downloadAllServerChanges()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** downloadAllServerChanges ()
 
@@ -435,8 +435,8 @@ ______
 
 .. _io_realm_mongodb_sync_SyncSession_downloadAllServerChanges__long__TimeUnit__:
 
-``downloadAllServerChanges``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public boolean downloadAllServerChanges(undefined timeout, undefined unit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** downloadAllServerChanges (**long (?)** timeout, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
 
@@ -451,8 +451,8 @@ uploadAllLocalChanges
 
 .. _io_realm_mongodb_sync_SyncSession_uploadAllLocalChanges____:
 
-``uploadAllLocalChanges``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+public void uploadAllLocalChanges()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** uploadAllLocalChanges ()
 
@@ -466,8 +466,8 @@ ______
 
 .. _io_realm_mongodb_sync_SyncSession_uploadAllLocalChanges__long__TimeUnit__:
 
-``uploadAllLocalChanges``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+public boolean uploadAllLocalChanges(undefined timeout, undefined unit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** uploadAllLocalChanges (**long (?)** timeout, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
 
@@ -482,8 +482,8 @@ start
 
 .. _io_realm_mongodb_sync_SyncSession_start____:
 
-``start``
-~~~~~~~~~
+public synchronized void start()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized **void (?)** start ()
 
@@ -506,8 +506,8 @@ ________
 
 .. _io_realm_mongodb_sync_SyncSession_stop____:
 
-``stop``
-~~~~~~~~
+public synchronized void stop()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public synchronized **void (?)** stop ()
 

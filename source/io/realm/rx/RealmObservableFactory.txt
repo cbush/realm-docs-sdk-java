@@ -186,80 +186,80 @@ from
 
 .. _io_realm_rx_RealmObservableFactory_from__Realm__:
 
-``from``
-~~~~~~~~
+public <any> from(undefined realm)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** from (:ref:`Realm <io_realm_Realm>` realm)
 
 
 .. _io_realm_rx_RealmObservableFactory_from__DynamicRealm__:
 
-``from``
-~~~~~~~~
+public <any> from(undefined realm)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** from (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
 
 
 .. _io_realm_rx_RealmObservableFactory_from__Realm__RealmResults_E___:
 
-``from``
-~~~~~~~~
+public <any> from<E>(undefined realm, undefined results)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** from <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
 
 
 .. _io_realm_rx_RealmObservableFactory_from__DynamicRealm__RealmResults_E___:
 
-``from``
-~~~~~~~~
+public <any> from<E>(undefined realm, undefined results)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** from <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
 
 
 .. _io_realm_rx_RealmObservableFactory_from__Realm__RealmList_E___:
 
-``from``
-~~~~~~~~
+public <any> from<E>(undefined realm, undefined list)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** from <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 
 
 .. _io_realm_rx_RealmObservableFactory_from__DynamicRealm__RealmList_E___:
 
-``from``
-~~~~~~~~
+public <any> from<E>(undefined realm, undefined list)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** from <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 
 
 .. _io_realm_rx_RealmObservableFactory_from__Realm__E__:
 
-``from``
-~~~~~~~~
+public <any> from<E>(undefined realm, undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** from <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, **E (?)** object)
 
 
 .. _io_realm_rx_RealmObservableFactory_from__DynamicRealm__DynamicRealmObject__:
 
-``from``
-~~~~~~~~
+public <any> from(undefined realm, undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** from (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object)
 
 
 .. _io_realm_rx_RealmObservableFactory_from__Realm__RealmQuery_E___:
 
-``from``
-~~~~~~~~
+public <any> from<E>(undefined realm, undefined query)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** from <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmQuery\<E> <io_realm_RealmQuery>` query)
 
 
 .. _io_realm_rx_RealmObservableFactory_from__DynamicRealm__RealmQuery_E___:
 
-``from``
-~~~~~~~~
+public <any> from<E>(undefined realm, undefined query)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** from <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmQuery\<E> <io_realm_RealmQuery>` query)
 
@@ -269,48 +269,48 @@ changesetsFrom
 
 .. _io_realm_rx_RealmObservableFactory_changesetsFrom__Realm__RealmResults_E___:
 
-``changesetsFrom``
-~~~~~~~~~~~~~~~~~~
+public <any> changesetsFrom<E>(undefined realm, undefined results)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
 
 
 .. _io_realm_rx_RealmObservableFactory_changesetsFrom__DynamicRealm__RealmResults_E___:
 
-``changesetsFrom``
-~~~~~~~~~~~~~~~~~~
+public <any> changesetsFrom<E>(undefined realm, undefined results)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
 
 
 .. _io_realm_rx_RealmObservableFactory_changesetsFrom__Realm__RealmList_E___:
 
-``changesetsFrom``
-~~~~~~~~~~~~~~~~~~
+public <any> changesetsFrom<E>(undefined realm, undefined list)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 
 
 .. _io_realm_rx_RealmObservableFactory_changesetsFrom__DynamicRealm__RealmList_E___:
 
-``changesetsFrom``
-~~~~~~~~~~~~~~~~~~
+public <any> changesetsFrom<E>(undefined realm, undefined list)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 
 
 .. _io_realm_rx_RealmObservableFactory_changesetsFrom__Realm__E__:
 
-``changesetsFrom``
-~~~~~~~~~~~~~~~~~~
+public <any> changesetsFrom<E>(undefined realm, undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, **E (?)** object)
 
 
 .. _io_realm_rx_RealmObservableFactory_changesetsFrom__DynamicRealm__DynamicRealmObject__:
 
-``changesetsFrom``
-~~~~~~~~~~~~~~~~~~
+public <any> changesetsFrom(undefined realm, undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **<any> (?)** changesetsFrom (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object)
 
@@ -320,8 +320,8 @@ equals
 
 .. _io_realm_rx_RealmObservableFactory_equals__Object__:
 
-``equals``
-~~~~~~~~~~
+public boolean equals(undefined o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
@@ -331,8 +331,8 @@ hashCode
 
 .. _io_realm_rx_RealmObservableFactory_hashCode____:
 
-``hashCode``
-~~~~~~~~~~~~
+public int hashCode()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** hashCode ()
 

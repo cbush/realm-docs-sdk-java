@@ -186,8 +186,8 @@ getUser
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_getUser____:
 
-``getUser``
-~~~~~~~~~~~
+public User getUser()
+~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`User <io_realm_mongodb_User>` getUser ()
 
@@ -199,8 +199,8 @@ getApp
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_getApp____:
 
-``getApp``
-~~~~~~~~~~
+public App getApp()
+~~~~~~~~~~~~~~~~~~~
 
 public :ref:`App <io_realm_mongodb_App>` getApp ()
 
@@ -212,8 +212,8 @@ create
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_create__String__:
 
-``create``
-~~~~~~~~~~
+public ApiKey create(undefined name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`ApiKey <io_realm_mongodb_auth_ApiKey>` create (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
@@ -238,8 +238,8 @@ createAsync
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_createAsync__String__App_Callback_ApiKey___:
 
-``createAsync``
-~~~~~~~~~~~~~~~
+public RealmAsyncTask createAsync(undefined name, undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` createAsync (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name, :ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.auth.ApiKey> <io_realm_mongodb_App_Callback>` callback)
 
@@ -266,8 +266,8 @@ fetch
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_fetch__ObjectId__:
 
-``fetch``
-~~~~~~~~~
+public ApiKey fetch(undefined id)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`ApiKey <io_realm_mongodb_auth_ApiKey>` fetch (**ObjectId (?)** id)
 
@@ -286,8 +286,8 @@ fetchAsync
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_fetchAsync__ObjectId__App_Callback_ApiKey___:
 
-``fetchAsync``
-~~~~~~~~~~~~~~
+public RealmAsyncTask fetchAsync(undefined id, undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` fetchAsync (**ObjectId (?)** id, :ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.auth.ApiKey> <io_realm_mongodb_App_Callback>` callback)
 
@@ -308,8 +308,8 @@ fetchAll
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_fetchAll____:
 
-``fetchAll``
-~~~~~~~~~~~~
+public List fetchAll()
+~~~~~~~~~~~~~~~~~~~~~~
 
 public `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ fetchAll ()
 
@@ -319,8 +319,8 @@ ______
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_fetchAll__App_Callback_List_ApiKey____:
 
-``fetchAll``
-~~~~~~~~~~~~
+public RealmAsyncTask fetchAll(undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` fetchAll (:ref:`io.realm.mongodb.App.Callback\<java.util.List\<io.realm.mongodb.auth.ApiKey>> <io_realm_mongodb_App_Callback>` callback)
 
@@ -339,8 +339,8 @@ delete
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_delete__ObjectId__:
 
-``delete``
-~~~~~~~~~~
+public void delete(undefined id)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** delete (**ObjectId (?)** id)
 
@@ -359,8 +359,8 @@ deleteAsync
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_deleteAsync__ObjectId__App_Callback_Void___:
 
-``deleteAsync``
-~~~~~~~~~~~~~~~
+public RealmAsyncTask deleteAsync(undefined id, undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` deleteAsync (**ObjectId (?)** id, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
 
@@ -381,8 +381,8 @@ disable
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_disable__ObjectId__:
 
-``disable``
-~~~~~~~~~~~
+public void disable(undefined id)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** disable (**ObjectId (?)** id)
 
@@ -401,8 +401,8 @@ disableAsync
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_disableAsync__ObjectId__App_Callback_Void___:
 
-``disableAsync``
-~~~~~~~~~~~~~~~~
+public RealmAsyncTask disableAsync(undefined id, undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` disableAsync (**ObjectId (?)** id, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
 
@@ -423,8 +423,8 @@ enable
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_enable__ObjectId__:
 
-``enable``
-~~~~~~~~~~
+public void enable(undefined id)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** enable (**ObjectId (?)** id)
 
@@ -443,8 +443,8 @@ enableAsync
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_enableAsync__ObjectId__App_Callback_Void___:
 
-``enableAsync``
-~~~~~~~~~~~~~~~
+public RealmAsyncTask enableAsync(undefined id, undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` enableAsync (**ObjectId (?)** id, :ref:`io.realm.mongodb.App.Callback\<java.lang.Void> <io_realm_mongodb_App_Callback>` callback)
 
@@ -465,8 +465,8 @@ equals
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_equals__Object__:
 
-``equals``
-~~~~~~~~~~
+public boolean equals(undefined o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
@@ -476,8 +476,8 @@ hashCode
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_hashCode____:
 
-``hashCode``
-~~~~~~~~~~~~
+public int hashCode()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** hashCode ()
 
@@ -487,8 +487,8 @@ toString
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_toString____:
 
-``toString``
-~~~~~~~~~~~~
+public String toString()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 
@@ -498,8 +498,8 @@ call
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_call__int__String__OsJavaNetworkTransport_NetworkTransportJNIResultCallback__:
 
-``call``
-~~~~~~~~
+protected abstract void call(undefined functionType, undefined arg, undefined callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 protected abstract **void (?)** call (**int (?)** functionType, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ arg, **OsJavaNetworkTransport.NetworkTransportJNIResultCallback (?)** callback)
 

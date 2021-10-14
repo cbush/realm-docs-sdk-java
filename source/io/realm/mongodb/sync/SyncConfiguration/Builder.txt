@@ -227,8 +227,8 @@ encryptionKey
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_encryptionKey__byte[]__:
 
-``encryptionKey``
-~~~~~~~~~~~~~~~~~
+public SyncConfiguration.Builder encryptionKey(undefined key)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` encryptionKey (**byte[] (?)** key)
 
@@ -249,8 +249,8 @@ schemaVersion
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_schemaVersion__long__:
 
-``schemaVersion``
-~~~~~~~~~~~~~~~~~
+public SyncConfiguration.Builder schemaVersion(undefined schemaVersion)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` schemaVersion (**long (?)** schemaVersion)
 
@@ -284,8 +284,8 @@ modules
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_modules__Object__Object_____:
 
-``modules``
-~~~~~~~~~~~
+public SyncConfiguration.Builder modules(undefined baseModule, undefined additionalModules)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` modules (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ baseModule, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ additionalModules)
 
@@ -316,8 +316,8 @@ ________
 
 Realm#getDefaultModule().. _io_realm_mongodb_sync_SyncConfiguration_Builder_modules__Iterable_Object___:
 
-``modules``
-~~~~~~~~~~~
+public SyncConfiguration.Builder modules(undefined modules)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` modules (`java.lang.Iterable\<java.lang.Object> <https://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html>`__ modules)
 
@@ -349,8 +349,8 @@ Realm#getDefaultModule()addModule
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_addModule__Object__:
 
-``addModule``
-~~~~~~~~~~~~~
+public SyncConfiguration.Builder addModule(undefined module)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` addModule (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ module)
 
@@ -360,8 +360,8 @@ rxFactory
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_rxFactory__RxObservableFactory__:
 
-``rxFactory``
-~~~~~~~~~~~~~
+public SyncConfiguration.Builder rxFactory(undefined factory)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` rxFactory (:ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` factory)
 
@@ -379,8 +379,8 @@ flowFactory
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_flowFactory__FlowFactory__:
 
-``flowFactory``
-~~~~~~~~~~~~~~~
+public SyncConfiguration.Builder flowFactory(undefined factory)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` flowFactory (:ref:`FlowFactory <io_realm_coroutines_FlowFactory>` factory)
 
@@ -398,8 +398,8 @@ initialData
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_initialData__Realm_Transaction__:
 
-``initialData``
-~~~~~~~~~~~~~~~
+public SyncConfiguration.Builder initialData(undefined transaction)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` initialData (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
 
@@ -417,8 +417,8 @@ inMemory
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_inMemory____:
 
-``inMemory``
-~~~~~~~~~~~~
+public SyncConfiguration.Builder inMemory()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` inMemory ()
 
@@ -430,8 +430,8 @@ errorHandler
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_errorHandler__SyncSession_ErrorHandler__:
 
-``errorHandler``
-~~~~~~~~~~~~~~~~
+public SyncConfiguration.Builder errorHandler(undefined errorHandler)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` errorHandler (:ref:`SyncSession.ErrorHandler <io_realm_mongodb_sync_SyncSession_ErrorHandler>` errorHandler)
 
@@ -454,8 +454,8 @@ clientResetHandler
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_clientResetHandler__SyncSession_ClientResetHandler__:
 
-``clientResetHandler``
-~~~~~~~~~~~~~~~~~~~~~~
+public SyncConfiguration.Builder clientResetHandler(undefined handler)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` clientResetHandler (:ref:`SyncSession.ClientResetHandler <io_realm_mongodb_sync_SyncSession_ClientResetHandler>` handler)
 
@@ -471,8 +471,8 @@ waitForInitialRemoteData
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_waitForInitialRemoteData____:
 
-``waitForInitialRemoteData``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public SyncConfiguration.Builder waitForInitialRemoteData()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` waitForInitialRemoteData ()
 
@@ -487,8 +487,8 @@ This check is only enforced the first time a Realm is created. If you otherwise 
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_waitForInitialRemoteData__long__TimeUnit__:
 
-``waitForInitialRemoteData``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public SyncConfiguration.Builder waitForInitialRemoteData(undefined timeout, undefined unit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` waitForInitialRemoteData (**long (?)** timeout, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
 
@@ -516,8 +516,8 @@ readOnly
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_readOnly____:
 
-``readOnly``
-~~~~~~~~~~~~
+public SyncConfiguration.Builder readOnly()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` readOnly ()
 
@@ -533,8 +533,8 @@ compactOnLaunch
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_compactOnLaunch____:
 
-``compactOnLaunch``
-~~~~~~~~~~~~~~~~~~~
+public SyncConfiguration.Builder compactOnLaunch()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` compactOnLaunch ()
 
@@ -543,8 +543,8 @@ Setting this will cause Realm to compact the Realm file if the Realm file has gr
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_compactOnLaunch__CompactOnLaunchCallback__:
 
-``compactOnLaunch``
-~~~~~~~~~~~~~~~~~~~
+public SyncConfiguration.Builder compactOnLaunch(undefined compactOnLaunch)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` compactOnLaunch (:ref:`CompactOnLaunchCallback <io_realm_CompactOnLaunchCallback>` compactOnLaunch)
 
@@ -560,8 +560,8 @@ urlPrefix
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_urlPrefix__String__:
 
-``urlPrefix``
-~~~~~~~~~~~~~
+public SyncConfiguration.Builder urlPrefix(undefined urlPrefix)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` urlPrefix (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ urlPrefix)
 
@@ -580,8 +580,8 @@ ________
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_maxNumberOfActiveVersions__long__:
 
-``maxNumberOfActiveVersions``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public SyncConfiguration.Builder maxNumberOfActiveVersions(undefined number)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` maxNumberOfActiveVersions (**long (?)** number)
 
@@ -608,8 +608,8 @@ ________
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_allowWritesOnUiThread__boolean__:
 
-``allowWritesOnUiThread``
-~~~~~~~~~~~~~~~~~~~~~~~~~
+public SyncConfiguration.Builder allowWritesOnUiThread(undefined allowWritesOnUiThread)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` allowWritesOnUiThread (**boolean (?)** allowWritesOnUiThread)
 
@@ -625,8 +625,8 @@ allowQueriesOnUiThread
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_allowQueriesOnUiThread__boolean__:
 
-``allowQueriesOnUiThread``
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public SyncConfiguration.Builder allowQueriesOnUiThread(undefined allowQueriesOnUiThread)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` allowQueriesOnUiThread (**boolean (?)** allowQueriesOnUiThread)
 
@@ -642,8 +642,8 @@ build
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_build____:
 
-``build``
-~~~~~~~~~
+public SyncConfiguration build()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` build ()
 

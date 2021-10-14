@@ -72,8 +72,8 @@ getKind
 
 .. _io_realm_exceptions_RealmFileException_getKind____:
 
-``getKind``
-~~~~~~~~~~~
+public RealmFileException.Kind getKind()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmFileException.Kind <io_realm_exceptions_RealmFileException_Kind>` getKind ()
 
@@ -85,8 +85,8 @@ toString
 
 .. _io_realm_exceptions_RealmFileException_toString____:
 
-``toString``
-~~~~~~~~~~~~
+public String toString()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 

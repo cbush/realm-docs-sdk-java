@@ -56,8 +56,8 @@ getDatabase
 
 .. _io_realm_mongodb_mongo_MongoClient_getDatabase__String__:
 
-``getDatabase``
-~~~~~~~~~~~~~~~
+public MongoDatabase getDatabase(undefined databaseName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`MongoDatabase <io_realm_mongodb_mongo_MongoDatabase>` getDatabase (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ databaseName)
 
@@ -75,8 +75,8 @@ getServiceName
 
 .. _io_realm_mongodb_mongo_MongoClient_getServiceName____:
 
-``getServiceName``
-~~~~~~~~~~~~~~~~~~
+public String getServiceName()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getServiceName ()
 

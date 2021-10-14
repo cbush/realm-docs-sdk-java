@@ -100,8 +100,8 @@ values
 
 .. _io_realm_Case_values____:
 
-``values``
-~~~~~~~~~~
+public static Case values()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`Case <io_realm_Case>` values ()
 
@@ -111,8 +111,8 @@ valueOf
 
 .. _io_realm_Case_valueOf__String__:
 
-``valueOf``
-~~~~~~~~~~~
+public static Case valueOf(undefined name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`Case <io_realm_Case>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
@@ -122,8 +122,8 @@ getValue
 
 .. _io_realm_Case_getValue____:
 
-``getValue``
-~~~~~~~~~~~~
+public boolean getValue()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** getValue ()
 

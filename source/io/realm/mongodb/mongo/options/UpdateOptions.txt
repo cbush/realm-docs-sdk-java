@@ -62,8 +62,8 @@ isUpsert
 
 .. _io_realm_mongodb_mongo_options_UpdateOptions_isUpsert____:
 
-``isUpsert``
-~~~~~~~~~~~~
+public boolean isUpsert()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isUpsert ()
 
@@ -73,8 +73,8 @@ upsert
 
 .. _io_realm_mongodb_mongo_options_UpdateOptions_upsert__boolean__:
 
-``upsert``
-~~~~~~~~~~
+public UpdateOptions upsert(undefined upsert)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>` upsert (**boolean (?)** upsert)
 
@@ -90,8 +90,8 @@ toString
 
 .. _io_realm_mongodb_mongo_options_UpdateOptions_toString____:
 
-``toString``
-~~~~~~~~~~~~
+public String toString()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 

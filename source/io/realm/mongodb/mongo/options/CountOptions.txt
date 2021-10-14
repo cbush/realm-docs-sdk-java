@@ -62,8 +62,8 @@ getLimit
 
 .. _io_realm_mongodb_mongo_options_CountOptions_getLimit____:
 
-``getLimit``
-~~~~~~~~~~~~
+public int getLimit()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** getLimit ()
 
@@ -73,8 +73,8 @@ limit
 
 .. _io_realm_mongodb_mongo_options_CountOptions_limit__int__:
 
-``limit``
-~~~~~~~~~
+public CountOptions limit(undefined limit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`CountOptions <io_realm_mongodb_mongo_options_CountOptions>` limit (**int (?)** limit)
 
@@ -90,8 +90,8 @@ toString
 
 .. _io_realm_mongodb_mongo_options_CountOptions_toString____:
 
-``toString``
-~~~~~~~~~~~~
+public String toString()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 

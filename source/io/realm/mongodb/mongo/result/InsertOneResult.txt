@@ -46,8 +46,8 @@ getInsertedId
 
 .. _io_realm_mongodb_mongo_result_InsertOneResult_getInsertedId____:
 
-``getInsertedId``
-~~~~~~~~~~~~~~~~~
+public BsonValue getInsertedId()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **BsonValue (?)** getInsertedId ()
 

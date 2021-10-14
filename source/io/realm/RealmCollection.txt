@@ -149,8 +149,8 @@ where
 
 .. _io_realm_RealmCollection_where____:
 
-``where``
-~~~~~~~~~
+public RealmQuery where()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmQuery <io_realm_RealmQuery>` where ()
 
@@ -168,8 +168,8 @@ io.realm.RealmQuerymin
 
 .. _io_realm_RealmCollection_min__String__:
 
-``min``
-~~~~~~~
+public Number min(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ min (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -188,8 +188,8 @@ max
 
 .. _io_realm_RealmCollection_max__String__:
 
-``max``
-~~~~~~~
+public Number max(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ max (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -208,8 +208,8 @@ sum
 
 .. _io_realm_RealmCollection_sum__String__:
 
-``sum``
-~~~~~~~
+public Number sum(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>`__ sum (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -228,8 +228,8 @@ average
 
 .. _io_realm_RealmCollection_average__String__:
 
-``average``
-~~~~~~~~~~~
+public double average(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **double (?)** average (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -248,8 +248,8 @@ maxDate
 
 .. _io_realm_RealmCollection_maxDate__String__:
 
-``maxDate``
-~~~~~~~~~~~
+public Date maxDate(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ maxDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -268,8 +268,8 @@ minDate
 
 .. _io_realm_RealmCollection_minDate__String__:
 
-``minDate``
-~~~~~~~~~~~
+public Date minDate(undefined fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ minDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 
@@ -288,8 +288,8 @@ deleteAllFromRealm
 
 .. _io_realm_RealmCollection_deleteAllFromRealm____:
 
-``deleteAllFromRealm``
-~~~~~~~~~~~~~~~~~~~~~~
+public boolean deleteAllFromRealm()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** deleteAllFromRealm ()
 
@@ -302,8 +302,8 @@ isLoaded
 
 .. _io_realm_RealmCollection_isLoaded____:
 
-``isLoaded``
-~~~~~~~~~~~~
+public boolean isLoaded()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isLoaded ()
 
@@ -313,8 +313,8 @@ load
 
 .. _io_realm_RealmCollection_load____:
 
-``load``
-~~~~~~~~
+public boolean load()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** load ()
 
@@ -324,8 +324,8 @@ isValid
 
 .. _io_realm_RealmCollection_isValid____:
 
-``isValid``
-~~~~~~~~~~~
+public boolean isValid()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isValid ()
 
@@ -337,8 +337,8 @@ isManaged
 
 .. _io_realm_RealmCollection_isManaged____:
 
-``isManaged``
-~~~~~~~~~~~~~
+public boolean isManaged()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isManaged ()
 
@@ -352,8 +352,8 @@ contains
 
 .. _io_realm_RealmCollection_contains__Object__:
 
-``contains``
-~~~~~~~~~~~~
+public boolean contains(undefined object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** contains (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
 

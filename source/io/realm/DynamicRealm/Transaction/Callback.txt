@@ -54,8 +54,8 @@ onSuccess
 
 .. _io_realm_DynamicRealm_Transaction_Callback_onSuccess____:
 
-``onSuccess``
-~~~~~~~~~~~~~
+public void onSuccess()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** onSuccess ()
 
@@ -65,8 +65,8 @@ onError
 
 .. _io_realm_DynamicRealm_Transaction_Callback_onError__Exception__:
 
-``onError``
-~~~~~~~~~~~
+public void onError(undefined ignore)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** onError (`Exception <https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html>`__ ignore)
 

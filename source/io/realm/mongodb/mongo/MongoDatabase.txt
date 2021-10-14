@@ -59,8 +59,8 @@ getName
 
 .. _io_realm_mongodb_mongo_MongoDatabase_getName____:
 
-``getName``
-~~~~~~~~~~~
+public String getName()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getName ()
 
@@ -70,8 +70,8 @@ getCollection
 
 .. _io_realm_mongodb_mongo_MongoDatabase_getCollection__String__:
 
-``getCollection``
-~~~~~~~~~~~~~~~~~
+public MongoCollection getCollection(undefined collectionName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>` getCollection (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ collectionName)
 
@@ -84,8 +84,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoDatabase_getCollection__String__Class_DocumentT___:
 
-``getCollection``
-~~~~~~~~~~~~~~~~~
+public MongoCollection getCollection<DocumentT>(undefined collectionName, undefined documentClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>` getCollection <**DocumentT (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ collectionName, `java.lang.Class\<DocumentT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ documentClass)
 

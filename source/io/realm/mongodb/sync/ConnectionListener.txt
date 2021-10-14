@@ -43,8 +43,8 @@ onChange
 
 .. _io_realm_mongodb_sync_ConnectionListener_onChange__ConnectionState__ConnectionState__:
 
-``onChange``
-~~~~~~~~~~~~
+public void onChange(undefined oldState, undefined newState)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** onChange (:ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>` oldState, :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>` newState)
 

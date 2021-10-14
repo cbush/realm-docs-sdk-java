@@ -58,8 +58,8 @@ onClientReset
 
 .. _io_realm_mongodb_sync_SyncSession_ClientResetHandler_onClientReset__SyncSession__ClientResetRequiredError__:
 
-``onClientReset``
-~~~~~~~~~~~~~~~~~
+public void onClientReset(undefined session, undefined error)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** onClientReset (:ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` session, :ref:`ClientResetRequiredError <io_realm_mongodb_sync_ClientResetRequiredError>` error)
 

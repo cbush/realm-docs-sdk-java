@@ -177,8 +177,8 @@ getRealm$realm
 
 .. _io_realm_ProxyState_getRealm_realm____:
 
-``getRealm$realm``
-~~~~~~~~~~~~~~~~~~
+public BaseRealm getRealm$realm()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **BaseRealm (?)** getRealm$realm ()
 
@@ -188,8 +188,8 @@ setRealm$realm
 
 .. _io_realm_ProxyState_setRealm_realm__BaseRealm__:
 
-``setRealm$realm``
-~~~~~~~~~~~~~~~~~~
+public void setRealm$realm(undefined realm)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setRealm$realm (**BaseRealm (?)** realm)
 
@@ -199,8 +199,8 @@ getRow$realm
 
 .. _io_realm_ProxyState_getRow_realm____:
 
-``getRow$realm``
-~~~~~~~~~~~~~~~~
+public Row getRow$realm()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **Row (?)** getRow$realm ()
 
@@ -210,8 +210,8 @@ setRow$realm
 
 .. _io_realm_ProxyState_setRow_realm__Row__:
 
-``setRow$realm``
-~~~~~~~~~~~~~~~~
+public void setRow$realm(undefined row)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setRow$realm (**Row (?)** row)
 
@@ -221,8 +221,8 @@ getAcceptDefaultValue$realm
 
 .. _io_realm_ProxyState_getAcceptDefaultValue_realm____:
 
-``getAcceptDefaultValue$realm``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public boolean getAcceptDefaultValue$realm()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** getAcceptDefaultValue$realm ()
 
@@ -232,8 +232,8 @@ setAcceptDefaultValue$realm
 
 .. _io_realm_ProxyState_setAcceptDefaultValue_realm__boolean__:
 
-``setAcceptDefaultValue$realm``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public void setAcceptDefaultValue$realm(undefined acceptDefaultValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setAcceptDefaultValue$realm (**boolean (?)** acceptDefaultValue)
 
@@ -243,8 +243,8 @@ getExcludeFields$realm
 
 .. _io_realm_ProxyState_getExcludeFields_realm____:
 
-``getExcludeFields$realm``
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public List getExcludeFields$realm()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ getExcludeFields$realm ()
 
@@ -254,8 +254,8 @@ setExcludeFields$realm
 
 .. _io_realm_ProxyState_setExcludeFields_realm__List_String___:
 
-``setExcludeFields$realm``
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public void setExcludeFields$realm(undefined excludeFields)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setExcludeFields$realm (`java.util.List\<java.lang.String> <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ excludeFields)
 
@@ -265,8 +265,8 @@ addChangeListener
 
 .. _io_realm_ProxyState_addChangeListener__RealmObjectChangeListener_E___:
 
-``addChangeListener``
-~~~~~~~~~~~~~~~~~~~~~
+public void addChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** addChangeListener (:ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
 
@@ -276,8 +276,8 @@ removeChangeListener
 
 .. _io_realm_ProxyState_removeChangeListener__RealmObjectChangeListener_E___:
 
-``removeChangeListener``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public void removeChangeListener(undefined listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** removeChangeListener (:ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
 
@@ -287,8 +287,8 @@ removeAllChangeListeners
 
 .. _io_realm_ProxyState_removeAllChangeListeners____:
 
-``removeAllChangeListeners``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public void removeAllChangeListeners()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** removeAllChangeListeners ()
 
@@ -298,8 +298,8 @@ isUnderConstruction
 
 .. _io_realm_ProxyState_isUnderConstruction____:
 
-``isUnderConstruction``
-~~~~~~~~~~~~~~~~~~~~~~~
+public boolean isUnderConstruction()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isUnderConstruction ()
 
@@ -309,8 +309,8 @@ setConstructionFinished
 
 .. _io_realm_ProxyState_setConstructionFinished____:
 
-``setConstructionFinished``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public void setConstructionFinished()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** setConstructionFinished ()
 
@@ -320,8 +320,8 @@ isLoaded
 
 .. _io_realm_ProxyState_isLoaded____:
 
-``isLoaded``
-~~~~~~~~~~~~
+public boolean isLoaded()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** isLoaded ()
 
@@ -331,8 +331,8 @@ load
 
 .. _io_realm_ProxyState_load____:
 
-``load``
-~~~~~~~~
+public void load()
+~~~~~~~~~~~~~~~~~~
 
 public **void (?)** load ()
 
@@ -342,8 +342,8 @@ onQueryFinished
 
 .. _io_realm_ProxyState_onQueryFinished__Row__:
 
-``onQueryFinished``
-~~~~~~~~~~~~~~~~~~~
+public void onQueryFinished(undefined row)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** onQueryFinished (**Row (?)** row)
 
@@ -353,8 +353,8 @@ checkValidObject
 
 .. _io_realm_ProxyState_checkValidObject__RealmModel__:
 
-``checkValidObject``
-~~~~~~~~~~~~~~~~~~~~
+public void checkValidObject(undefined value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** checkValidObject (:ref:`RealmModel <io_realm_RealmModel>` value)
 

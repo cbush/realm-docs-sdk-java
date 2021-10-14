@@ -99,8 +99,8 @@ getOperationType
 
 .. _io_realm_mongodb_mongo_events_BaseChangeEvent_getOperationType____:
 
-``getOperationType``
-~~~~~~~~~~~~~~~~~~~~
+public BaseChangeEvent.OperationType getOperationType()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`BaseChangeEvent.OperationType <io_realm_mongodb_mongo_events_BaseChangeEvent_OperationType>` getOperationType ()
 
@@ -110,8 +110,8 @@ getFullDocument
 
 .. _io_realm_mongodb_mongo_events_BaseChangeEvent_getFullDocument____:
 
-``getFullDocument``
-~~~~~~~~~~~~~~~~~~~
+public DocumentT getFullDocument()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **DocumentT (?)** getFullDocument ()
 
@@ -121,8 +121,8 @@ getDocumentKey
 
 .. _io_realm_mongodb_mongo_events_BaseChangeEvent_getDocumentKey____:
 
-``getDocumentKey``
-~~~~~~~~~~~~~~~~~~
+public BsonDocument getDocumentKey()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **BsonDocument (?)** getDocumentKey ()
 
@@ -132,8 +132,8 @@ getUpdateDescription
 
 .. _io_realm_mongodb_mongo_events_BaseChangeEvent_getUpdateDescription____:
 
-``getUpdateDescription``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public UpdateDescription getUpdateDescription()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`UpdateDescription <io_realm_mongodb_mongo_events_UpdateDescription>` getUpdateDescription ()
 
@@ -143,8 +143,8 @@ hasUncommittedWrites
 
 .. _io_realm_mongodb_mongo_events_BaseChangeEvent_hasUncommittedWrites____:
 
-``hasUncommittedWrites``
-~~~~~~~~~~~~~~~~~~~~~~~~
+public boolean hasUncommittedWrites()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** hasUncommittedWrites ()
 
@@ -154,8 +154,8 @@ toBsonDocument
 
 .. _io_realm_mongodb_mongo_events_BaseChangeEvent_toBsonDocument____:
 
-``toBsonDocument``
-~~~~~~~~~~~~~~~~~~
+public abstract BsonDocument toBsonDocument()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public abstract **BsonDocument (?)** toBsonDocument ()
 

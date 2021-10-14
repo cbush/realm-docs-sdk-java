@@ -62,8 +62,8 @@ obfuscate
 
 .. _io_realm_mongodb_log_obfuscator_HttpLogObfuscator_obfuscate__List_String___String__:
 
-``obfuscate``
-~~~~~~~~~~~~~
+public String obfuscate(undefined urlSegments, undefined input)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ obfuscate (`java.util.List\<java.lang.String> <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ urlSegments, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ input)
 
@@ -81,8 +81,8 @@ equals
 
 .. _io_realm_mongodb_log_obfuscator_HttpLogObfuscator_equals__Object__:
 
-``equals``
-~~~~~~~~~~
+public boolean equals(undefined o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
@@ -92,8 +92,8 @@ hashCode
 
 .. _io_realm_mongodb_log_obfuscator_HttpLogObfuscator_hashCode____:
 
-``hashCode``
-~~~~~~~~~~~~
+public int hashCode()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** hashCode ()
 

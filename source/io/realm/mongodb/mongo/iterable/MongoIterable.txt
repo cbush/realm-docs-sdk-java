@@ -94,8 +94,8 @@ iterator
 
 .. _io_realm_mongodb_mongo_iterable_MongoIterable_iterator____:
 
-``iterator``
-~~~~~~~~~~~~
+public RealmResultTask iterator()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` iterator ()
 
@@ -109,8 +109,8 @@ first
 
 .. _io_realm_mongodb_mongo_iterable_MongoIterable_first____:
 
-``first``
-~~~~~~~~~
+public RealmResultTask first()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` first ()
 

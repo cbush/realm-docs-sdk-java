@@ -37,8 +37,8 @@ apply
 
 .. _io_realm_RealmObjectSchema_Function_apply__DynamicRealmObject__:
 
-``apply``
-~~~~~~~~~
+public void apply(undefined obj)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **void (?)** apply (:ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` obj)
 

@@ -131,8 +131,8 @@ checkDatabaseNameValidity
 
 .. _io_realm_mongodb_mongo_MongoNamespace_checkDatabaseNameValidity__String__:
 
-``checkDatabaseNameValidity``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static void checkDatabaseNameValidity(undefined databaseName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **void (?)** checkDatabaseNameValidity (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ databaseName)
 
@@ -153,8 +153,8 @@ checkCollectionNameValidity
 
 .. _io_realm_mongodb_mongo_MongoNamespace_checkCollectionNameValidity__String__:
 
-``checkCollectionNameValidity``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static void checkCollectionNameValidity(undefined collectionName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static **void (?)** checkCollectionNameValidity (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ collectionName)
 
@@ -173,8 +173,8 @@ getDatabaseName
 
 .. _io_realm_mongodb_mongo_MongoNamespace_getDatabaseName____:
 
-``getDatabaseName``
-~~~~~~~~~~~~~~~~~~~
+public String getDatabaseName()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getDatabaseName ()
 
@@ -184,8 +184,8 @@ getCollectionName
 
 .. _io_realm_mongodb_mongo_MongoNamespace_getCollectionName____:
 
-``getCollectionName``
-~~~~~~~~~~~~~~~~~~~~~
+public String getCollectionName()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getCollectionName ()
 
@@ -195,8 +195,8 @@ getFullName
 
 .. _io_realm_mongodb_mongo_MongoNamespace_getFullName____:
 
-``getFullName``
-~~~~~~~~~~~~~~~
+public String getFullName()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getFullName ()
 
@@ -206,8 +206,8 @@ equals
 
 .. _io_realm_mongodb_mongo_MongoNamespace_equals__Object__:
 
-``equals``
-~~~~~~~~~~
+public boolean equals(undefined o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 
@@ -217,8 +217,8 @@ toString
 
 .. _io_realm_mongodb_mongo_MongoNamespace_toString____:
 
-``toString``
-~~~~~~~~~~~~
+public String toString()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 
@@ -230,8 +230,8 @@ hashCode
 
 .. _io_realm_mongodb_mongo_MongoNamespace_hashCode____:
 
-``hashCode``
-~~~~~~~~~~~~
+public int hashCode()
+~~~~~~~~~~~~~~~~~~~~~
 
 public **int (?)** hashCode ()
 

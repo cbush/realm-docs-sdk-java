@@ -267,8 +267,8 @@ values
 
 .. _io_realm_annotations_RealmNamingPolicy_values____:
 
-``values``
-~~~~~~~~~~
+public static RealmNamingPolicy values()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`RealmNamingPolicy <io_realm_annotations_RealmNamingPolicy>` values ()
 
@@ -278,8 +278,8 @@ valueOf
 
 .. _io_realm_annotations_RealmNamingPolicy_valueOf__String__:
 
-``valueOf``
-~~~~~~~~~~~
+public static RealmNamingPolicy valueOf(undefined name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`RealmNamingPolicy <io_realm_annotations_RealmNamingPolicy>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 

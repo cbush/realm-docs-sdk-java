@@ -142,8 +142,8 @@ values
 
 .. _io_realm_mongodb_sync_SyncSession_State_values____:
 
-``values``
-~~~~~~~~~~
+public static SyncSession.State values()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`SyncSession.State <io_realm_mongodb_sync_SyncSession_State>` values ()
 
@@ -153,8 +153,8 @@ valueOf
 
 .. _io_realm_mongodb_sync_SyncSession_State_valueOf__String__:
 
-``valueOf``
-~~~~~~~~~~~
+public static SyncSession.State valueOf(undefined name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 public static :ref:`SyncSession.State <io_realm_mongodb_sync_SyncSession_State>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 
