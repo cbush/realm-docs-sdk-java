@@ -126,7 +126,9 @@ Returns the state represented by this change. See **State (?)**for a description
 See Also
 ________
 
-StategetDeletions
+State
+
+getDeletions
 ------------
 
 .. _io_realm_OrderedCollectionChangeSet_getDeletions____:

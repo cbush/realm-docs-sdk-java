@@ -501,7 +501,9 @@ public **boolean (?)** isRecoveryConfiguration ()
 See Also
 ________
 
-<a href="https://realm.io/docs/java/latest/api/io/realm/ClientResetRequiredError.html">ClientResetRequiredError</a>getMaxNumberOfActiveVersions
+<a href="https://realm.io/docs/java/latest/api/io/realm/ClientResetRequiredError.html">ClientResetRequiredError</a>
+
+getMaxNumberOfActiveVersions
 ----------------------------
 
 .. _io_realm_RealmConfiguration_getMaxNumberOfActiveVersions____:

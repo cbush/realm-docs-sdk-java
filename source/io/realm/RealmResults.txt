@@ -888,7 +888,9 @@ ______
 See Also
 ________
 
-io.realm.RealmChangeListenerremoveChangeListener
+io.realm.RealmChangeListener
+
+removeChangeListener
 --------------------
 
 .. _io_realm_RealmResults_removeChangeListener__RealmChangeListener_RealmResults_E____:
@@ -909,7 +911,9 @@ ______
 See Also
 ________
 
-io.realm.RealmChangeListener.. _io_realm_RealmResults_removeChangeListener__OrderedRealmCollectionChangeListener_RealmResults_E____:
+io.realm.RealmChangeListener
+
+.. _io_realm_RealmResults_removeChangeListener__OrderedRealmCollectionChangeListener_RealmResults_E____:
 
 public **void (?)** removeChangeListener (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmResults\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -927,7 +931,9 @@ ______
 See Also
 ________
 
-io.realm.RealmChangeListenerasFlowable
+io.realm.RealmChangeListener
+
+asFlowable
 ----------
 
 .. _io_realm_RealmResults_asFlowable____:
@@ -982,7 +988,9 @@ ______
 See Also
 ________
 
-<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>asChangesetObservable
+<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>
+
+asChangesetObservable
 ---------------------
 
 .. _io_realm_RealmResults_asChangesetObservable____:
@@ -1024,7 +1032,9 @@ ______
 See Also
 ________
 
-<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>asJSON
+<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>
+
+asJSON
 ------
 
 .. _io_realm_RealmResults_asJSON____:

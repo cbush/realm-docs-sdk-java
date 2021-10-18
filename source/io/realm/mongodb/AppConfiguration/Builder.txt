@@ -262,7 +262,9 @@ ______
 See Also
 ________
 
-<a href="https://docs.realm.io/platform/guides/learn-realm-sync-and-integrate-with-a-proxy#adding-a-custom-proxy">Adding a custom proxy</a>addCustomRequestHeader
+<a href="https://docs.realm.io/platform/guides/learn-realm-sync-and-integrate-with-a-proxy#adding-a-custom-proxy">Adding a custom proxy</a>
+
+addCustomRequestHeader
 ----------------------
 
 .. _io_realm_mongodb_AppConfiguration_Builder_addCustomRequestHeader__String__String__:
@@ -381,7 +383,11 @@ __________
 See Also
 ________
 
-#DEFAULT_BSON_CODEC_REGISTRYBuilder#getDefaultCodecRegistry()httpLogObfuscator
+#DEFAULT_BSON_CODEC_REGISTRY
+
+Builder#getDefaultCodecRegistry()
+
+httpLogObfuscator
 -----------------
 
 .. _io_realm_mongodb_AppConfiguration_Builder_httpLogObfuscator__HttpLogObfuscator__:

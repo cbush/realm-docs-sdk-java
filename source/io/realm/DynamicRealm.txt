@@ -245,7 +245,9 @@ ______
 See Also
 ________
 
-RealmConfiguration for details on how to configure a Realm.getInstanceAsync
+RealmConfiguration for details on how to configure a Realm.
+
+getInstanceAsync
 ----------------
 
 .. _io_realm_DynamicRealm_getInstanceAsync__RealmConfiguration__DynamicRealm_Callback__:
@@ -272,7 +274,9 @@ ______
 See Also
 ________
 
-Callback for more details.createObject
+Callback for more details.
+
+createObject
 ------------
 
 .. _io_realm_DynamicRealm_createObject__String__:
@@ -328,7 +332,9 @@ ______
 See Also
 ________
 
-RealmClass#embedded()where
+RealmClass#embedded()
+
+where
 -----
 
 .. _io_realm_DynamicRealm_where__String__:
@@ -349,7 +355,9 @@ ______
 See Also
 ________
 
-io.realm.RealmQueryaddChangeListener
+io.realm.RealmQuery
+
+addChangeListener
 -----------------
 
 .. _io_realm_DynamicRealm_addChangeListener__RealmChangeListener_DynamicRealm___:
@@ -376,7 +384,15 @@ ______
 See Also
 ________
 
-io.realm.RealmChangeListener#removeChangeListener(RealmChangeListener)#removeAllChangeListeners()#refresh()removeChangeListener
+io.realm.RealmChangeListener
+
+#removeChangeListener(RealmChangeListener)
+
+#removeAllChangeListeners()
+
+#refresh()
+
+removeChangeListener
 --------------------
 
 .. _io_realm_DynamicRealm_removeChangeListener__RealmChangeListener_DynamicRealm___:
@@ -397,7 +413,9 @@ ______
 See Also
 ________
 
-io.realm.RealmChangeListenerremoveAllChangeListeners
+io.realm.RealmChangeListener
+
+removeAllChangeListeners
 ------------------------
 
 .. _io_realm_DynamicRealm_removeAllChangeListeners____:
@@ -412,7 +430,9 @@ ______
 See Also
 ________
 
-io.realm.RealmChangeListenerdelete
+io.realm.RealmChangeListener
+
+delete
 ------
 
 .. _io_realm_DynamicRealm_delete__String__:

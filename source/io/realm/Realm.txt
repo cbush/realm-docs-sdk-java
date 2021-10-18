@@ -729,7 +729,9 @@ ______
 See Also
 ________
 
-#getDefaultInstance().. _io_realm_Realm_init__Context__String__:
+#getDefaultInstance()
+
+.. _io_realm_Realm_init__Context__String__:
 
 public static synchronized **void (?)** init (**Context (?)** context, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ userAgent)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -790,7 +792,9 @@ ______
 See Also
 ________
 
-#getDefaultInstance()getDefaultInstance
+#getDefaultInstance()
+
+getDefaultInstance
 ------------------
 
 .. _io_realm_Realm_getDefaultInstance____:
@@ -829,7 +833,9 @@ ______
 See Also
 ________
 
-RealmConfiguration for details on how to configure a Realm.getInstanceAsync
+RealmConfiguration for details on how to configure a Realm.
+
+getInstanceAsync
 ----------------
 
 .. _io_realm_Realm_getInstanceAsync__RealmConfiguration__Realm_Callback__:
@@ -856,7 +862,9 @@ ______
 See Also
 ________
 
-Callback for more details.setDefaultConfiguration
+Callback for more details.
+
+setDefaultConfiguration
 -----------------------
 
 .. _io_realm_Realm_setDefaultConfiguration__RealmConfiguration__:
@@ -881,7 +889,9 @@ ______
 See Also
 ________
 
-RealmConfiguration for details on how to configure a Realm.getDefaultConfiguration
+RealmConfiguration for details on how to configure a Realm.
+
+getDefaultConfiguration
 -----------------------
 
 .. _io_realm_Realm_getDefaultConfiguration____:
@@ -932,7 +942,13 @@ ______
 See Also
 ________
 
-RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createAllFromJson__Class_E___String__:
+RealmSet
+
+RealmDictionary
+
+RealmMap
+
+.. _io_realm_Realm_createAllFromJson__Class_E___String__:
 
 public **void (?)** createAllFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ json)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -956,7 +972,13 @@ ______
 See Also
 ________
 
-RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createAllFromJson__Class_E___InputStream__:
+RealmSet
+
+RealmDictionary
+
+RealmMap
+
+.. _io_realm_Realm_createAllFromJson__Class_E___InputStream__:
 
 public **void (?)** createAllFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `InputStream <https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html>`__ inputStream)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -982,7 +1004,13 @@ ______
 See Also
 ________
 
-RealmSetRealmDictionaryRealmMapcreateOrUpdateAllFromJson
+RealmSet
+
+RealmDictionary
+
+RealmMap
+
+createOrUpdateAllFromJson
 -------------------------
 
 .. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___JSONArray__:
@@ -1011,7 +1039,15 @@ ______
 See Also
 ________
 
-#createAllFromJson(Class, org.json.JSONArray)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__:
+#createAllFromJson(Class, org.json.JSONArray)
+
+RealmSet
+
+RealmDictionary
+
+RealmMap
+
+.. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___String__:
 
 public **void (?)** createOrUpdateAllFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ json)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1037,7 +1073,15 @@ ______
 See Also
 ________
 
-#createAllFromJson(Class, String)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__:
+#createAllFromJson(Class, String)
+
+RealmSet
+
+RealmDictionary
+
+RealmMap
+
+.. _io_realm_Realm_createOrUpdateAllFromJson__Class_E___InputStream__:
 
 public **void (?)** createOrUpdateAllFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `InputStream <https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html>`__ in)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1065,7 +1109,15 @@ ______
 See Also
 ________
 
-#createOrUpdateAllFromJson(Class, java.io.InputStream)RealmSetRealmDictionaryRealmMapcreateObjectFromJson
+#createOrUpdateAllFromJson(Class, java.io.InputStream)
+
+RealmSet
+
+RealmDictionary
+
+RealmMap
+
+createObjectFromJson
 --------------------
 
 .. _io_realm_Realm_createObjectFromJson__Class_E___JSONObject__:
@@ -1092,7 +1144,15 @@ ______
 See Also
 ________
 
-#createOrUpdateObjectFromJson(Class, org.json.JSONObject)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createObjectFromJson__Class_E___String__:
+#createOrUpdateObjectFromJson(Class, org.json.JSONObject)
+
+RealmSet
+
+RealmDictionary
+
+RealmMap
+
+.. _io_realm_Realm_createObjectFromJson__Class_E___String__:
 
 public **E (?)** createObjectFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ json)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1116,7 +1176,13 @@ ______
 See Also
 ________
 
-RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createObjectFromJson__Class_E___InputStream__:
+RealmSet
+
+RealmDictionary
+
+RealmMap
+
+.. _io_realm_Realm_createObjectFromJson__Class_E___InputStream__:
 
 public **E (?)** createObjectFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `InputStream <https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html>`__ inputStream)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1142,7 +1208,13 @@ ______
 See Also
 ________
 
-RealmSetRealmDictionaryRealmMapcreateOrUpdateObjectFromJson
+RealmSet
+
+RealmDictionary
+
+RealmMap
+
+createOrUpdateObjectFromJson
 ----------------------------
 
 .. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___JSONObject__:
@@ -1173,7 +1245,15 @@ ______
 See Also
 ________
 
-#createObjectFromJson(Class, org.json.JSONObject)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__:
+#createObjectFromJson(Class, org.json.JSONObject)
+
+RealmSet
+
+RealmDictionary
+
+RealmMap
+
+.. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___String__:
 
 public **E (?)** createOrUpdateObjectFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ json)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1199,7 +1279,15 @@ ______
 See Also
 ________
 
-#createObjectFromJson(Class, String)RealmSetRealmDictionaryRealmMap.. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__:
+#createObjectFromJson(Class, String)
+
+RealmSet
+
+RealmDictionary
+
+RealmMap
+
+.. _io_realm_Realm_createOrUpdateObjectFromJson__Class_E___InputStream__:
 
 public **E (?)** createOrUpdateObjectFromJson <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `InputStream <https://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html>`__ in)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1229,7 +1317,15 @@ ______
 See Also
 ________
 
-#createObjectFromJson(Class, java.io.InputStream)RealmSetRealmDictionaryRealmMapcreateObject
+#createObjectFromJson(Class, java.io.InputStream)
+
+RealmSet
+
+RealmDictionary
+
+RealmMap
+
+createObject
 ------------
 
 .. _io_realm_Realm_createObject__Class_E___:
@@ -1254,7 +1350,9 @@ ______
 See Also
 ________
 
-#createObject(Class, Object).. _io_realm_Realm_createObject__Class_E___Object__:
+#createObject(Class, Object)
+
+.. _io_realm_Realm_createObject__Class_E___Object__:
 
 public **E (?)** createObject <**E (?)** >(`java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz, `Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ primaryKeyValue)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1304,7 +1402,9 @@ ______
 See Also
 ________
 
-RealmClass#embedded()copyToRealm
+RealmClass#embedded()
+
+copyToRealm
 -----------
 
 .. _io_realm_Realm_copyToRealm__E__ImportFlag_____:
@@ -1376,7 +1476,9 @@ ______
 See Also
 ________
 
-#copyToRealm(RealmModel, ImportFlag...).. _io_realm_Realm_copyToRealmOrUpdate__Iterable_E___ImportFlag_____:
+#copyToRealm(RealmModel, ImportFlag...)
+
+.. _io_realm_Realm_copyToRealmOrUpdate__Iterable_E___ImportFlag_____:
 
 public `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ copyToRealmOrUpdate <**E (?)** >(`java.lang.Iterable\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html>`__ objects, :ref:`io.realm.ImportFlag[] <io_realm_ImportFlag>` flags)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1400,7 +1502,9 @@ ______
 See Also
 ________
 
-#copyToRealm(Iterable, ImportFlag...)insert
+#copyToRealm(Iterable, ImportFlag...)
+
+insert
 ------
 
 .. _io_realm_Realm_insert__Collection___extends_RealmModel___:
@@ -1579,7 +1683,9 @@ ______
 See Also
 ________
 
-#copyToRealmOrUpdate(Iterable, ImportFlag...).. _io_realm_Realm_copyFromRealm__Iterable_E___int__:
+#copyToRealmOrUpdate(Iterable, ImportFlag...)
+
+.. _io_realm_Realm_copyFromRealm__Iterable_E___int__:
 
 public `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ copyFromRealm <**E (?)** >(`java.lang.Iterable\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html>`__ realmObjects, **int (?)** maxDepth)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1613,7 +1719,9 @@ ______
 See Also
 ________
 
-#copyToRealmOrUpdate(Iterable, ImportFlag...).. _io_realm_Realm_copyFromRealm__E__:
+#copyToRealmOrUpdate(Iterable, ImportFlag...)
+
+.. _io_realm_Realm_copyFromRealm__E__:
 
 public **E (?)** copyFromRealm <**E (?)** >(**E (?)** realmObject)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1647,7 +1755,9 @@ ______
 See Also
 ________
 
-#copyToRealmOrUpdate(RealmModel, ImportFlag...).. _io_realm_Realm_copyFromRealm__E__int__:
+#copyToRealmOrUpdate(RealmModel, ImportFlag...)
+
+.. _io_realm_Realm_copyFromRealm__E__int__:
 
 public **E (?)** copyFromRealm <**E (?)** >(**E (?)** realmObject, **int (?)** maxDepth)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1685,7 +1795,9 @@ ______
 See Also
 ________
 
-#copyToRealmOrUpdate(RealmModel, ImportFlag...)where
+#copyToRealmOrUpdate(RealmModel, ImportFlag...)
+
+where
 -----
 
 .. _io_realm_Realm_where__Class_E___:
@@ -1703,7 +1815,9 @@ __________
 See Also
 ________
 
-io.realm.RealmQueryaddChangeListener
+io.realm.RealmQuery
+
+addChangeListener
 -----------------
 
 .. _io_realm_Realm_addChangeListener__RealmChangeListener_Realm___:
@@ -1730,7 +1844,13 @@ ______
 See Also
 ________
 
-io.realm.RealmChangeListener#removeChangeListener(RealmChangeListener)#removeAllChangeListeners()removeChangeListener
+io.realm.RealmChangeListener
+
+#removeChangeListener(RealmChangeListener)
+
+#removeAllChangeListeners()
+
+removeChangeListener
 --------------------
 
 .. _io_realm_Realm_removeChangeListener__RealmChangeListener_Realm___:
@@ -1751,7 +1871,9 @@ ______
 See Also
 ________
 
-io.realm.RealmChangeListenerremoveAllChangeListeners
+io.realm.RealmChangeListener
+
+removeAllChangeListeners
 ------------------------
 
 .. _io_realm_Realm_removeAllChangeListeners____:
@@ -1766,7 +1888,9 @@ ______
 See Also
 ________
 
-io.realm.RealmChangeListenerexecuteTransaction
+io.realm.RealmChangeListener
+
+executeTransaction
 ------------------
 
 .. _io_realm_Realm_executeTransaction__Realm_Transaction__:
@@ -2016,7 +2140,9 @@ ______
 See Also
 ________
 
-io.realm.RealmConfiguration.Builder#modules(Object, Object...)getGlobalInstanceCount
+io.realm.RealmConfiguration.Builder#modules(Object, Object...)
+
+getGlobalInstanceCount
 ----------------------
 
 .. _io_realm_Realm_getGlobalInstanceCount__RealmConfiguration__:

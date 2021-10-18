@@ -1116,7 +1116,9 @@ ______
 See Also
 ________
 
-Required for further infomation.isNotNull
+Required for further infomation.
+
+isNotNull
 ---------
 
 .. _io_realm_RealmQuery_isNotNull__String__:
@@ -1139,7 +1141,9 @@ ______
 See Also
 ________
 
-Required for further infomation.equalTo
+Required for further infomation.
+
+equalTo
 -------
 
 .. _io_realm_RealmQuery_equalTo__String__String__:
@@ -2529,7 +2533,9 @@ Begin grouping of conditions ("left parenthesis"). A group must be closed with a
 See Also
 ________
 
-#endGroup()endGroup
+#endGroup()
+
+endGroup
 --------
 
 .. _io_realm_RealmQuery_endGroup____:
@@ -2543,7 +2549,9 @@ End grouping of conditions ("right parenthesis") which was opened by a call to `
 See Also
 ________
 
-#beginGroup()or
+#beginGroup()
+
+or
 ----
 
 .. _io_realm_RealmQuery_or____:
@@ -3089,7 +3097,9 @@ ______
 See Also
 ________
 
-io.realm.RealmResultsfindAllAsync
+io.realm.RealmResults
+
+findAllAsync
 ------------
 
 .. _io_realm_RealmQuery_findAllAsync____:
@@ -3101,7 +3111,9 @@ Finds all objects that fulfill the query conditions. This method is only availab
 See Also
 ________
 
-io.realm.RealmResultssort
+io.realm.RealmResults
+
+sort
 ----
 
 .. _io_realm_RealmQuery_sort__String__:
@@ -3360,7 +3372,9 @@ ______
 See Also
 ________
 
-io.realm.RealmObjectfindFirstAsync
+io.realm.RealmObject
+
+findFirstAsync
 --------------
 
 .. _io_realm_RealmQuery_findFirstAsync____:

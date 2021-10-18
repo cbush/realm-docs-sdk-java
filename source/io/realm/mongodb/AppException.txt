@@ -118,7 +118,9 @@ If :ref:`ErrorCode#UNKNOWN <io_realm_mongodb_ErrorCode_UNKNOWN>`is returned, it 
 See Also
 ________
 
-ErrorCodegetErrorType
+ErrorCode
+
+getErrorType
 ------------
 
 .. _io_realm_mongodb_AppException_getErrorType____:

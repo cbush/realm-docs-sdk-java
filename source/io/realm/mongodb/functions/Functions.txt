@@ -184,7 +184,11 @@ ______
 See Also
 ________
 
-#callFunctionAsync(String, List, Class, CodecRegistry, App.Callback)AppConfiguration#getDefaultCodecRegistry().. _io_realm_mongodb_functions_Functions_callFunction__String__List_____Class_ResultT___:
+#callFunctionAsync(String, List, Class, CodecRegistry, App.Callback)
+
+AppConfiguration#getDefaultCodecRegistry()
+
+.. _io_realm_mongodb_functions_Functions_callFunction__String__List_____Class_ResultT___:
 
 public **ResultT (?)** callFunction <**ResultT (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name, `java.util.List\<?> <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ args, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -212,7 +216,11 @@ ______
 See Also
 ________
 
-#callFunction(String, List, Class, CodecRegistry)AppConfiguration#getDefaultCodecRegistry().. _io_realm_mongodb_functions_Functions_callFunction__String__List______any___:
+#callFunction(String, List, Class, CodecRegistry)
+
+AppConfiguration#getDefaultCodecRegistry()
+
+.. _io_realm_mongodb_functions_Functions_callFunction__String__List______any___:
 
 public **ResultT (?)** callFunction <**ResultT (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name, `java.util.List\<?> <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ args, **<any> (?)** resultDecoder)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -244,7 +252,11 @@ ______
 See Also
 ________
 
-#callFunction(String, List, Class, CodecRegistry)AppConfiguration#getDefaultCodecRegistry()callFunctionAsync
+#callFunction(String, List, Class, CodecRegistry)
+
+AppConfiguration#getDefaultCodecRegistry()
+
+callFunctionAsync
 -----------------
 
 .. _io_realm_mongodb_functions_Functions_callFunctionAsync__String__List_____Class_T___CodecRegistry__App_Callback_T___:
@@ -283,7 +295,13 @@ ______
 See Also
 ________
 
-#callFunction(String, List, Class, CodecRegistry)#callFunctionAsync(String, List, Class, CodecRegistry, App.Callback)AppConfiguration#getDefaultCodecRegistry().. _io_realm_mongodb_functions_Functions_callFunctionAsync__String__List_____Class_T___App_Callback_T___:
+#callFunction(String, List, Class, CodecRegistry)
+
+#callFunctionAsync(String, List, Class, CodecRegistry, App.Callback)
+
+AppConfiguration#getDefaultCodecRegistry()
+
+.. _io_realm_mongodb_functions_Functions_callFunctionAsync__String__List_____Class_T___App_Callback_T___:
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` callFunctionAsync <**T (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name, `java.util.List\<?> <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ args, `java.lang.Class\<T> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass, :ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -317,7 +335,13 @@ ______
 See Also
 ________
 
-#callFunction(String, List, Class)#callFunctionAsync(String, List, Class, CodecRegistry, App.Callback)AppConfiguration#getDefaultCodecRegistry().. _io_realm_mongodb_functions_Functions_callFunctionAsync__String__List______any___App_Callback_T___:
+#callFunction(String, List, Class)
+
+#callFunctionAsync(String, List, Class, CodecRegistry, App.Callback)
+
+AppConfiguration#getDefaultCodecRegistry()
+
+.. _io_realm_mongodb_functions_Functions_callFunctionAsync__String__List______any___App_Callback_T___:
 
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` callFunctionAsync <**T (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name, `java.util.List\<?> <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ args, **<any> (?)** resultDecoder, :ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -353,7 +377,13 @@ ______
 See Also
 ________
 
-#callFunction(String, List, Class)#callFunctionAsync(String, List, Class, CodecRegistry, App.Callback)AppConfiguration#getDefaultCodecRegistry()getDefaultCodecRegistry
+#callFunction(String, List, Class)
+
+#callFunctionAsync(String, List, Class, CodecRegistry, App.Callback)
+
+AppConfiguration#getDefaultCodecRegistry()
+
+getDefaultCodecRegistry
 -----------------------
 
 .. _io_realm_mongodb_functions_Functions_getDefaultCodecRegistry____:

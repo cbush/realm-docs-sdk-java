@@ -308,7 +308,9 @@ ______
 See Also
 ________
 
-Realm#getDefaultModule().. _io_realm_mongodb_sync_SyncConfiguration_Builder_modules__Iterable_Object___:
+Realm#getDefaultModule()
+
+.. _io_realm_mongodb_sync_SyncConfiguration_Builder_modules__Iterable_Object___:
 
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` modules (`java.lang.Iterable\<java.lang.Object> <https://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html>`__ modules)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -336,7 +338,9 @@ ______
 See Also
 ________
 
-Realm#getDefaultModule()addModule
+Realm#getDefaultModule()
+
+addModule
 ---------
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_addModule__Object__:
@@ -541,7 +545,9 @@ __________
 See Also
 ________
 
-<a href="https://docs.realm.io/platform/guides/learn-realm-sync-and-integrate-with-a-proxy#adding-a-custom-proxy">Adding a custom proxy</a>maxNumberOfActiveVersions
+<a href="https://docs.realm.io/platform/guides/learn-realm-sync-and-integrate-with-a-proxy#adding-a-custom-proxy">Adding a custom proxy</a>
+
+maxNumberOfActiveVersions
 -------------------------
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_maxNumberOfActiveVersions__long__:
@@ -567,7 +573,9 @@ __________
 See Also
 ________
 
-<a href="https://realm.io/docs/java/latest/#faq-large-realm-file-size">FAQ</a>allowWritesOnUiThread
+<a href="https://realm.io/docs/java/latest/#faq-large-realm-file-size">FAQ</a>
+
+allowWritesOnUiThread
 ---------------------
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_allowWritesOnUiThread__boolean__:

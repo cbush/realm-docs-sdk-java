@@ -366,7 +366,9 @@ ______
 See Also
 ________
 
-#isValid().. _io_realm_RealmObject_deleteFromRealm__E__:
+#isValid()
+
+.. _io_realm_RealmObject_deleteFromRealm__E__:
 
 public static **void (?)** deleteFromRealm <**E (?)** >(**E (?)** object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -380,7 +382,9 @@ ______
 See Also
 ________
 
-#isValid()isValid
+#isValid()
+
+isValid
 -------
 
 .. _io_realm_RealmObject_isValid____:
@@ -410,7 +414,9 @@ Note that this can be used to check the validity of certain conditions such as b
 See Also
 ________
 
-<a href="https://github.com/realm/realm-java/tree/master/examples/rxJavaExample">Examples using Realm with RxJava</a>.. _io_realm_RealmObject_isValid__E__:
+<a href="https://github.com/realm/realm-java/tree/master/examples/rxJavaExample">Examples using Realm with RxJava</a>
+
+.. _io_realm_RealmObject_isValid__E__:
 
 public static **boolean (?)** isValid <**E (?)** >(**E (?)** object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -436,7 +442,9 @@ Returns whether or not this RealmObject is frozen.
 See Also
 ________
 
-#freeze().. _io_realm_RealmObject_isFrozen__E__:
+#freeze()
+
+.. _io_realm_RealmObject_isFrozen__E__:
 
 public static **boolean (?)** isFrozen <**E (?)** >(**E (?)** object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -445,7 +453,9 @@ Returns whether or not this RealmObject is frozen.
 See Also
 ________
 
-#freeze()freeze
+#freeze()
+
+freeze
 ------
 
 .. _io_realm_RealmObject_freeze____:
@@ -538,7 +548,9 @@ Synchronous RealmObjects are by definition blocking hence this method will alway
 See Also
 ________
 
-#isValid().. _io_realm_RealmObject_isLoaded__E__:
+#isValid()
+
+.. _io_realm_RealmObject_isLoaded__E__:
 
 public static **boolean (?)** isLoaded <**E (?)** >(**E (?)** object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -589,7 +601,9 @@ __________
 See Also
 ________
 
-#isValid(RealmModel)isManaged
+#isValid(RealmModel)
+
+isManaged
 ---------
 
 .. _io_realm_RealmObject_isManaged____:
@@ -1025,7 +1039,9 @@ ______
 See Also
 ________
 
-<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>.. _io_realm_RealmObject_asFlowable__E__:
+<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>
+
+.. _io_realm_RealmObject_asFlowable__E__:
 
 public static **<any> (?)** asFlowable <**E (?)** >(**E (?)** object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1087,7 +1103,9 @@ ______
 See Also
 ________
 
-<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>asChangesetObservable
+<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>
+
+asChangesetObservable
 ---------------------
 
 .. _io_realm_RealmObject_asChangesetObservable____:
@@ -1129,7 +1147,9 @@ ______
 See Also
 ________
 
-<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>.. _io_realm_RealmObject_asChangesetObservable__E__:
+<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>
+
+.. _io_realm_RealmObject_asChangesetObservable__E__:
 
 public static **<any> (?)** asChangesetObservable <**E (?)** >(**E (?)** object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1175,3 +1195,5 @@ See Also
 ________
 
 <a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>
+
+

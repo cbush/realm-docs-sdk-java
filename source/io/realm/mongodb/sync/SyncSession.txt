@@ -264,7 +264,9 @@ Note that the state may change after this method returns.
 See Also
 ________
 
-SyncSession.StategetConnectionState
+SyncSession.State
+
+getConnectionState
 ------------------
 
 .. _io_realm_mongodb_sync_SyncSession_getConnectionState____:
@@ -278,7 +280,9 @@ Get the current state of the connection used by the session as defined in **Conn
 See Also
 ________
 
-ConnectionStateisConnected
+ConnectionState
+
+isConnected
 -----------
 
 .. _io_realm_mongodb_sync_SyncSession_isConnected____:
@@ -373,7 +377,9 @@ ______
 See Also
 ________
 
-ConnectionStateremoveConnectionChangeListener
+ConnectionState
+
+removeConnectionChangeListener
 ------------------------------
 
 .. _io_realm_mongodb_sync_SyncSession_removeConnectionChangeListener__ConnectionListener__:
@@ -469,7 +475,11 @@ A session is considered started if **#getState() (?)**returns :ref:`State#ACTIVE
 See Also
 ________
 
-#getState()#stop()stop
+#getState()
+
+#stop()
+
+stop
 ----
 
 .. _io_realm_mongodb_sync_SyncSession_stop____:

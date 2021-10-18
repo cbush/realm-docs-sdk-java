@@ -741,7 +741,13 @@ ______
 See Also
 ________
 
-List#isEmptyList#size#deleteAllFromRealm()remove
+List#isEmpty
+
+List#size
+
+#deleteAllFromRealm()
+
+remove
 ------
 
 .. _io_realm_RealmList_remove__int__:
@@ -953,7 +959,9 @@ ______
 See Also
 ________
 
-io.realm.RealmQuerymin
+io.realm.RealmQuery
+
+min
 ----
 
 .. _io_realm_RealmList_min__String__:
@@ -1195,7 +1203,9 @@ ______
 See Also
 ________
 
-<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>asChangesetObservable
+<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>
+
+asChangesetObservable
 ---------------------
 
 .. _io_realm_RealmList_asChangesetObservable____:
@@ -1237,7 +1247,9 @@ ______
 See Also
 ________
 
-<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>addChangeListener
+<a href="https://realm.io/docs/java/latest/#rxjava">RxJava and Realm</a>
+
+addChangeListener
 -----------------
 
 .. _io_realm_RealmList_addChangeListener__OrderedRealmCollectionChangeListener_RealmList_E____:
@@ -1349,7 +1361,9 @@ ______
 See Also
 ________
 
-io.realm.RealmChangeListener.. _io_realm_RealmList_removeChangeListener__RealmChangeListener_RealmList_E____:
+io.realm.RealmChangeListener
+
+.. _io_realm_RealmList_removeChangeListener__RealmChangeListener_RealmList_E____:
 
 public **void (?)** removeChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmList\<E>> <io_realm_RealmChangeListener>` listener)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1367,7 +1381,9 @@ ______
 See Also
 ________
 
-io.realm.RealmChangeListenerremoveAllChangeListeners
+io.realm.RealmChangeListener
+
+removeAllChangeListeners
 ------------------------
 
 .. _io_realm_RealmList_removeAllChangeListeners____:
@@ -1383,3 +1399,5 @@ See Also
 ________
 
 io.realm.RealmChangeListener
+
+

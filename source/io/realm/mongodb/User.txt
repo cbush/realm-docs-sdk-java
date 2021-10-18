@@ -277,7 +277,9 @@ Returns a new list of the user's identities.
 See Also
 ________
 
-UserIdentitygetProviderType
+UserIdentity
+
+getProviderType
 ---------------
 
 .. _io_realm_mongodb_User_getProviderType____:
@@ -532,7 +534,9 @@ Returns a *functions* manager for invoking MongoDB Realm Functions.This will use
 See Also
 ________
 
-Functions.. _io_realm_mongodb_User_getFunctions__CodecRegistry__:
+Functions
+
+.. _io_realm_mongodb_User_getFunctions__CodecRegistry__:
 
 public :ref:`Functions <io_realm_mongodb_functions_Functions>` getFunctions (**CodecRegistry (?)** codecRegistry)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -547,7 +551,9 @@ __________
 See Also
 ________
 
-FunctionsgetPush
+Functions
+
+getPush
 -------
 
 .. _io_realm_mongodb_User_getPush__String__:

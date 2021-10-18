@@ -1564,7 +1564,9 @@ Note that a **RealmObject (?)**is a live object, and it might be updated by chan
 See Also
 ________
 
-#equalsequals
+#equals
+
+equals
 ------
 
 .. _io_realm_DynamicRealmObject_equals__Object__:

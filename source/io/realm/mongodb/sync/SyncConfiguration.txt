@@ -467,7 +467,9 @@ Returns the timeout defined when downloading any initial data the first time the
 See Also
 ________
 
-SyncConfiguration.Builder#waitForInitialRemoteData(long, TimeUnit)isSyncConfiguration
+SyncConfiguration.Builder#waitForInitialRemoteData(long, TimeUnit)
+
+isSyncConfiguration
 -------------------
 
 .. _io_realm_mongodb_sync_SyncConfiguration_isSyncConfiguration____:

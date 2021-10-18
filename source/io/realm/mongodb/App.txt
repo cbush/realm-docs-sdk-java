@@ -514,7 +514,11 @@ Returns a *Functions* manager for invoking the Realm App's Realm Functions.This 
 See Also
 ________
 
-FunctionsAppConfiguration#getDefaultCodecRegistry().. _io_realm_mongodb_App_getFunctions__User__CodecRegistry__:
+Functions
+
+AppConfiguration#getDefaultCodecRegistry()
+
+.. _io_realm_mongodb_App_getFunctions__User__CodecRegistry__:
 
 public :ref:`Functions <io_realm_mongodb_functions_Functions>` getFunctions (:ref:`User <io_realm_mongodb_User>` user, **CodecRegistry (?)** codecRegistry)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -523,7 +527,9 @@ Returns a *Functions* manager for invoking the Realm App's Realm Functions with 
 See Also
 ________
 
-FunctionsgetConfiguration
+Functions
+
+getConfiguration
 ----------------
 
 .. _io_realm_mongodb_App_getConfiguration____:

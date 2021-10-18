@@ -161,7 +161,9 @@ ______
 See Also
 ________
 
-io.realm.RealmQuerymin
+io.realm.RealmQuery
+
+min
 ----
 
 .. _io_realm_RealmCollection_min__String__:

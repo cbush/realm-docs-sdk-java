@@ -353,7 +353,9 @@ ______
 See Also
 ________
 
-RealmSchema#rename(String, String)addField
+RealmSchema#rename(String, String)
+
+addField
 --------
 
 .. _io_realm_RealmObjectSchema_addField__String__Class_____FieldAttribute_____:
@@ -697,7 +699,9 @@ ______
 See Also
 ________
 
-io.realm.annotations.IndexremoveIndex
+io.realm.annotations.Index
+
+removeIndex
 -----------
 
 .. _io_realm_RealmObjectSchema_removeIndex__String__:
@@ -782,7 +786,9 @@ ______
 See Also
 ________
 
-RequiredsetNullable
+Required
+
+setNullable
 -----------
 
 .. _io_realm_RealmObjectSchema_setNullable__String__boolean__:
@@ -833,7 +839,9 @@ ______
 See Also
 ________
 
-#setRequired(String, boolean)isNullable
+#setRequired(String, boolean)
+
+isNullable
 ----------
 
 .. _io_realm_RealmObjectSchema_isNullable__String__:
@@ -856,7 +864,9 @@ ______
 See Also
 ________
 
-#setNullable(String, boolean)isPrimaryKey
+#setNullable(String, boolean)
+
+isPrimaryKey
 ------------
 
 .. _io_realm_RealmObjectSchema_isPrimaryKey__String__:
@@ -877,7 +887,9 @@ ______
 See Also
 ________
 
-#addPrimaryKey(String)hasPrimaryKey
+#addPrimaryKey(String)
+
+hasPrimaryKey
 -------------
 
 .. _io_realm_RealmObjectSchema_hasPrimaryKey____:
@@ -889,7 +901,9 @@ Checks if the class has a primary key defined.
 See Also
 ________
 
-io.realm.annotations.PrimaryKeygetPrimaryKey
+io.realm.annotations.PrimaryKey
+
+getPrimaryKey
 -------------
 
 .. _io_realm_RealmObjectSchema_getPrimaryKey____:
@@ -985,3 +999,5 @@ See Also
 ________
 
 RealmClass#embedded()
+
+
