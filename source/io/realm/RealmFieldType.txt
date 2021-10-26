@@ -354,7 +354,7 @@ Method Summary
        
        
    
-   * - public **int (?)**
+   * - public **int**
      - :ref:`getNativeValue <io_realm_RealmFieldType_getNativeValue____>` ()
        
        Returns the native value representing this type.
@@ -362,7 +362,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isValid <io_realm_RealmFieldType_isValid__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
        
        Checks if the given Java object can be converted to the underlying Realm type.
@@ -371,7 +371,7 @@ Method Summary
        
    
    * - public static :ref:`RealmFieldType <io_realm_RealmFieldType>`
-     - :ref:`fromNativeValue <io_realm_RealmFieldType_fromNativeValue__int__>` (**int (?)** value)
+     - :ref:`fromNativeValue <io_realm_RealmFieldType_fromNativeValue__int__>` (**int** value)
        
        Converts the underlying value used by the storage engine to the proper Realm type.
        
@@ -858,8 +858,8 @@ getNativeValue
 
 .. _io_realm_RealmFieldType_getNativeValue____:
 
-public **int (?)** getNativeValue ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **int** getNativeValue ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the native value representing this type.
 isValid
@@ -867,8 +867,8 @@ isValid
 
 .. _io_realm_RealmFieldType_isValid__Object__:
 
-public **boolean (?)** isValid (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isValid (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the given Java object can be converted to the underlying Realm type.
 Parameters
@@ -882,8 +882,8 @@ fromNativeValue
 
 .. _io_realm_RealmFieldType_fromNativeValue__int__:
 
-public static :ref:`RealmFieldType <io_realm_RealmFieldType>` fromNativeValue (**int (?)** value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static :ref:`RealmFieldType <io_realm_RealmFieldType>` fromNativeValue (**int** value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Converts the underlying value used by the storage engine to the proper Realm type.
 Parameters

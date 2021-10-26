@@ -162,15 +162,15 @@ Method Summary
        
        
    
-   * - public **void (?)**
-     - :ref:`deleteFromRealm <io_realm_OrderedRealmCollection_deleteFromRealm__int__>` (**int (?)** location)
+   * - public **void**
+     - :ref:`deleteFromRealm <io_realm_OrderedRealmCollection_deleteFromRealm__int__>` (**int** location)
        
        Deletes the object at the given index from the Realm.
        
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`deleteFirstFromRealm <io_realm_OrderedRealmCollection_deleteFirstFromRealm____>` ()
        
        Deletes the first object from the Realm.
@@ -178,7 +178,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`deleteLastFromRealm <io_realm_OrderedRealmCollection_deleteLastFromRealm____>` ()
        
        Deletes the last object from the Realm.
@@ -314,8 +314,8 @@ deleteFromRealm
 
 .. _io_realm_OrderedRealmCollection_deleteFromRealm__int__:
 
-public **void (?)** deleteFromRealm (**int (?)** location)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** deleteFromRealm (**int** location)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the object at the given index from the Realm. This also removes it from the collection.
 Parameters
@@ -332,8 +332,8 @@ deleteFirstFromRealm
 
 .. _io_realm_OrderedRealmCollection_deleteFirstFromRealm____:
 
-public **boolean (?)** deleteFirstFromRealm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** deleteFirstFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the first object from the Realm. This also removes it from this collection.
 Throws
@@ -344,8 +344,8 @@ deleteLastFromRealm
 
 .. _io_realm_OrderedRealmCollection_deleteLastFromRealm____:
 
-public **boolean (?)** deleteLastFromRealm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** deleteLastFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the last object from the Realm. This also removes it from this collection.
 Throws

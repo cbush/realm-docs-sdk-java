@@ -40,7 +40,7 @@ Method Summary
        
    
    * - public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>`
-     - :ref:`limit <io_realm_mongodb_mongo_iterable_FindIterable_limit__int__>` (**int (?)** limit)
+     - :ref:`limit <io_realm_mongodb_mongo_iterable_FindIterable_limit__int__>` (**int** limit)
        
        Sets the limit to apply.
        
@@ -87,8 +87,8 @@ limit
 
 .. _io_realm_mongodb_mongo_iterable_FindIterable_limit__int__:
 
-public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` limit (**int (?)** limit)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` limit (**int** limit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the limit to apply.
 Parameters

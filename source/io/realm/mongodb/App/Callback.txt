@@ -22,7 +22,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **void (?)**
+   * - public **void**
      - :ref:`onResult <io_realm_mongodb_App_Callback_onResult__App_Result_T___>` (:ref:`io.realm.mongodb.App.Result\<T> <io_realm_mongodb_App_Result>` result)
        
        Returns the result of the request when available.
@@ -39,8 +39,8 @@ onResult
 
 .. _io_realm_mongodb_App_Callback_onResult__App_Result_T___:
 
-public **void (?)** onResult (:ref:`io.realm.mongodb.App.Result\<T> <io_realm_mongodb_App_Result>` result)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** onResult (:ref:`io.realm.mongodb.App.Result\<T> <io_realm_mongodb_App_Result>` result)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the result of the request when available.
 Parameters

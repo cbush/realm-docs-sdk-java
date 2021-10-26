@@ -66,7 +66,7 @@ Method Summary
        
        
    
-   * - public abstract **void (?)**
+   * - public abstract **void**
      - :ref:`remove <io_realm_RealmSchema_remove__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
        
        Removes a class from the Realm.
@@ -82,7 +82,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`contains <io_realm_RealmSchema_contains__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
        
        Checks if a given class already exists in the schema.
@@ -98,7 +98,7 @@ Method Summary
        
        
    
-   * - public **void (?)**
+   * - public **void**
      - :ref:`createKeyPathMapping <io_realm_RealmSchema_createKeyPathMapping____>` ()
        
        Create the underlying keypath mapping.
@@ -189,8 +189,8 @@ remove
 
 .. _io_realm_RealmSchema_remove__String__:
 
-public abstract **void (?)** remove (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public abstract **void** remove (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes a class from the Realm. All data will be removed. Removing a class while other classes point to it will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__. Removes those classes or fields first.
 
@@ -229,8 +229,8 @@ contains
 
 .. _io_realm_RealmSchema_contains__String__:
 
-public **boolean (?)** contains (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** contains (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given class already exists in the schema.
 Parameters
@@ -253,8 +253,8 @@ createKeyPathMapping
 
 .. _io_realm_RealmSchema_createKeyPathMapping____:
 
-public **void (?)** createKeyPathMapping ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** createKeyPathMapping ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Create the underlying keypath mapping. Should only be called by typed Realms.
 

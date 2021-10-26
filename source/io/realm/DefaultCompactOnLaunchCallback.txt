@@ -33,8 +33,8 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **boolean (?)**
-     - :ref:`shouldCompact <io_realm_DefaultCompactOnLaunchCallback_shouldCompact__long__long__>` (**long (?)** totalBytes, **long (?)** usedBytes)
+   * - public **boolean**
+     - :ref:`shouldCompact <io_realm_DefaultCompactOnLaunchCallback_shouldCompact__long__long__>` (**long** totalBytes, **long** usedBytes)
        
        
        
@@ -50,8 +50,8 @@ shouldCompact
 
 .. _io_realm_DefaultCompactOnLaunchCallback_shouldCompact__long__long__:
 
-public **boolean (?)** shouldCompact (**long (?)** totalBytes, **long (?)** usedBytes)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** shouldCompact (**long** totalBytes, **long** usedBytes)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

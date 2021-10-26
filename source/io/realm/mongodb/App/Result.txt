@@ -48,7 +48,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isSuccess <io_realm_mongodb_App_Result_isSuccess____>` ()
        
        Returns whether or not request was successful
@@ -136,8 +136,8 @@ isSuccess
 
 .. _io_realm_mongodb_App_Result_isSuccess____:
 
-public **boolean (?)** isSuccess ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isSuccess ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns whether or not request was successful
 get

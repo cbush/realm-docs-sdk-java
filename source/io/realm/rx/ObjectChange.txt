@@ -51,7 +51,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`equals <io_realm_rx_ObjectChange_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
@@ -59,7 +59,7 @@ Method Summary
        
        
    
-   * - public **int (?)**
+   * - public **int**
      - :ref:`hashCode <io_realm_rx_ObjectChange_hashCode____>` ()
        
        
@@ -123,8 +123,8 @@ equals
 
 .. _io_realm_rx_ObjectChange_equals__Object__:
 
-public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 hashCode
@@ -132,8 +132,8 @@ hashCode
 
 .. _io_realm_rx_ObjectChange_hashCode____:
 
-public **int (?)** hashCode ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **int** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 toString

@@ -53,7 +53,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **int (?)**
+   * - public **int**
      - :ref:`size <io_realm_OrderedRealmCollectionSnapshot_size____>` ()
        
        
@@ -113,7 +113,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isLoaded <io_realm_OrderedRealmCollectionSnapshot_isLoaded____>` ()
        
        
@@ -123,7 +123,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`load <io_realm_OrderedRealmCollectionSnapshot_load____>` ()
        
        
@@ -151,15 +151,15 @@ Method Summary
        
        
    
-   * - public **void (?)**
-     - :ref:`deleteFromRealm <io_realm_OrderedRealmCollectionSnapshot_deleteFromRealm__int__>` (**int (?)** location)
+   * - public **void**
+     - :ref:`deleteFromRealm <io_realm_OrderedRealmCollectionSnapshot_deleteFromRealm__int__>` (**int** location)
        
        Deletes the object at the given index from the Realm.
        
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`deleteFirstFromRealm <io_realm_OrderedRealmCollectionSnapshot_deleteFirstFromRealm____>` ()
        
        Deletes the first object from the Realm.
@@ -167,7 +167,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`deleteLastFromRealm <io_realm_OrderedRealmCollectionSnapshot_deleteLastFromRealm____>` ()
        
        Deletes the last object from the Realm.
@@ -175,7 +175,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`deleteAllFromRealm <io_realm_OrderedRealmCollectionSnapshot_deleteAllFromRealm____>` ()
        
        This deletes all objects in the collection from the underlying Realm.
@@ -183,7 +183,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isFrozen <io_realm_OrderedRealmCollectionSnapshot_isFrozen____>` ()
        
        
@@ -200,8 +200,8 @@ size
 
 .. _io_realm_OrderedRealmCollectionSnapshot_size____:
 
-public **int (?)** size ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **int** size ()
+~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -272,8 +272,8 @@ isLoaded
 
 .. _io_realm_OrderedRealmCollectionSnapshot_isLoaded____:
 
-public **boolean (?)** isLoaded ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isLoaded ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -283,8 +283,8 @@ load
 
 .. _io_realm_OrderedRealmCollectionSnapshot_load____:
 
-public **boolean (?)** load ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** load ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -314,8 +314,8 @@ deleteFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteFromRealm__int__:
 
-public **void (?)** deleteFromRealm (**int (?)** location)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** deleteFromRealm (**int** location)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the object at the given index from the Realm. The object at the given index will become invalid. Just returns if the object is invalid already.
 Parameters
@@ -332,8 +332,8 @@ deleteFirstFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteFirstFromRealm____:
 
-public **boolean (?)** deleteFirstFromRealm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** deleteFirstFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the first object from the Realm. The first object will become invalid.
 Throws
@@ -344,8 +344,8 @@ deleteLastFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteLastFromRealm____:
 
-public **boolean (?)** deleteLastFromRealm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** deleteLastFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the last object from the Realm. The last object will become invalid.
 Throws
@@ -356,8 +356,8 @@ deleteAllFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteAllFromRealm____:
 
-public **boolean (?)** deleteAllFromRealm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** deleteAllFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This deletes all objects in the collection from the underlying Realm. All objects in the collection snapshot will become invalid.
 Throws
@@ -368,8 +368,8 @@ isFrozen
 
 .. _io_realm_OrderedRealmCollectionSnapshot_isFrozen____:
 
-public **boolean (?)** isFrozen ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isFrozen ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

@@ -151,7 +151,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`hasField <io_realm_RealmObjectSchema_hasField__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Tests if the class has field defined with the given name.
@@ -167,7 +167,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`hasIndex <io_realm_RealmObjectSchema_hasIndex__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Checks if a given field has an index defined.
@@ -200,7 +200,7 @@ Method Summary
        
    
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
-     - :ref:`setRequired <io_realm_RealmObjectSchema_setRequired__String__boolean__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean (?)** required)
+     - :ref:`setRequired <io_realm_RealmObjectSchema_setRequired__String__boolean__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean** required)
        
        Sets a field to be required i.e., it is not allowed to hold ``null``values.
        
@@ -210,7 +210,7 @@ Method Summary
        
    
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
-     - :ref:`setNullable <io_realm_RealmObjectSchema_setNullable__String__boolean__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean (?)** nullable)
+     - :ref:`setNullable <io_realm_RealmObjectSchema_setNullable__String__boolean__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean** nullable)
        
        Sets a field to be nullable i.e., it should be able to hold ``null``values.
        
@@ -219,7 +219,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isRequired <io_realm_RealmObjectSchema_isRequired__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Checks if a given field is required i.e., it is not allowed to contain ``null``values.
@@ -229,7 +229,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isNullable <io_realm_RealmObjectSchema_isNullable__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Checks if a given field is nullable i.e., it is allowed to contain ``null``values.
@@ -239,7 +239,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isPrimaryKey <io_realm_RealmObjectSchema_isPrimaryKey__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Checks if a given field is the primary key field.
@@ -247,7 +247,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`hasPrimaryKey <io_realm_RealmObjectSchema_hasPrimaryKey____>` ()
        
        Checks if the class has a primary key defined.
@@ -287,7 +287,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isEmbedded <io_realm_RealmObjectSchema_isEmbedded____>` ()
        
        Returns ``true``if objects of this type are considered "embedded".
@@ -297,8 +297,8 @@ Method Summary
        
        
    
-   * - public **void (?)**
-     - :ref:`setEmbedded <io_realm_RealmObjectSchema_setEmbedded__boolean__>` (**boolean (?)** embedded)
+   * - public **void**
+     - :ref:`setEmbedded <io_realm_RealmObjectSchema_setEmbedded__boolean__>` (**boolean** embedded)
        
        Converts the class to be embedded or not.
        
@@ -648,8 +648,8 @@ hasField
 
 .. _io_realm_RealmObjectSchema_hasField__String__:
 
-public **boolean (?)** hasField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** hasField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Tests if the class has field defined with the given name.
 Parameters
@@ -683,8 +683,8 @@ hasIndex
 
 .. _io_realm_RealmObjectSchema_hasIndex__String__:
 
-public **boolean (?)** hasIndex (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** hasIndex (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given field has an index defined.
 Parameters
@@ -760,8 +760,8 @@ setRequired
 
 .. _io_realm_RealmObjectSchema_setRequired__String__boolean__:
 
-public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setRequired (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean (?)** required)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setRequired (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean** required)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets a field to be required i.e., it is not allowed to hold ``null``values. This is equivalent to switching between boxed types and their primitive variant e.g., ``Integer``to ``int``.
 
@@ -793,8 +793,8 @@ setNullable
 
 .. _io_realm_RealmObjectSchema_setNullable__String__boolean__:
 
-public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setNullable (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean (?)** nullable)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setNullable (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean** nullable)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets a field to be nullable i.e., it should be able to hold ``null``values. This is equivalent to switching between primitive types and their boxed variant e.g., ``int``to ``Integer``.
 
@@ -821,8 +821,8 @@ isRequired
 
 .. _io_realm_RealmObjectSchema_isRequired__String__:
 
-public **boolean (?)** isRequired (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isRequired (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given field is required i.e., it is not allowed to contain ``null``values.
 
@@ -846,8 +846,8 @@ isNullable
 
 .. _io_realm_RealmObjectSchema_isNullable__String__:
 
-public **boolean (?)** isNullable (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isNullable (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given field is nullable i.e., it is allowed to contain ``null``values.
 
@@ -871,8 +871,8 @@ isPrimaryKey
 
 .. _io_realm_RealmObjectSchema_isPrimaryKey__String__:
 
-public **boolean (?)** isPrimaryKey (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isPrimaryKey (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given field is the primary key field.
 Parameters
@@ -894,8 +894,8 @@ hasPrimaryKey
 
 .. _io_realm_RealmObjectSchema_hasPrimaryKey____:
 
-public **boolean (?)** hasPrimaryKey ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** hasPrimaryKey ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the class has a primary key defined.
 See Also
@@ -966,8 +966,8 @@ isEmbedded
 
 .. _io_realm_RealmObjectSchema_isEmbedded____:
 
-public **boolean (?)** isEmbedded ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isEmbedded ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns ``true``if objects of this type are considered "embedded". See **RealmClass#embedded() (?)**for further details.
 
@@ -977,8 +977,8 @@ setEmbedded
 
 .. _io_realm_RealmObjectSchema_setEmbedded__boolean__:
 
-public **void (?)** setEmbedded (**boolean (?)** embedded)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** setEmbedded (**boolean** embedded)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Converts the class to be embedded or not.A class can only be marked as embedded if the following invariants are satisfied:
 

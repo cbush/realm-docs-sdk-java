@@ -64,7 +64,7 @@ Method Summary
        
        
    
-   * - public **double (?)**
+   * - public **double**
      - :ref:`average <io_realm_RealmCollection_average__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the average of a given field.
@@ -88,7 +88,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`deleteAllFromRealm <io_realm_RealmCollection_deleteAllFromRealm____>` ()
        
        This deletes all objects in the collection from the underlying Realm as well as from the collection.
@@ -96,7 +96,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isLoaded <io_realm_RealmCollection_isLoaded____>` ()
        
        Checks if a collection has finished loading its data yet.
@@ -104,7 +104,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`load <io_realm_RealmCollection_load____>` ()
        
        Blocks the collection until all data are available.
@@ -112,7 +112,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isValid <io_realm_RealmCollection_isValid____>` ()
        
        Checks if the collection is still valid to use, i.e., the :ref:`io.realm.Realm <io_realm_Realm>`instance hasn't been closed.
@@ -122,7 +122,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isManaged <io_realm_RealmCollection_isManaged____>` ()
        
        Checks if the collection is managed by Realm.
@@ -130,7 +130,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`contains <io_realm_RealmCollection_contains__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
        
        Tests whether this ``Collection``contains the specified object.
@@ -222,8 +222,8 @@ average
 
 .. _io_realm_RealmCollection_average__String__:
 
-public **double (?)** average (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **double** average (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the average of a given field.
 Parameters
@@ -276,8 +276,8 @@ deleteAllFromRealm
 
 .. _io_realm_RealmCollection_deleteAllFromRealm____:
 
-public **boolean (?)** deleteAllFromRealm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** deleteAllFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This deletes all objects in the collection from the underlying Realm as well as from the collection.
 Throws
@@ -288,8 +288,8 @@ isLoaded
 
 .. _io_realm_RealmCollection_isLoaded____:
 
-public **boolean (?)** isLoaded ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isLoaded ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a collection has finished loading its data yet.
 load
@@ -297,8 +297,8 @@ load
 
 .. _io_realm_RealmCollection_load____:
 
-public **boolean (?)** load ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** load ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Blocks the collection until all data are available.
 isValid
@@ -306,8 +306,8 @@ isValid
 
 .. _io_realm_RealmCollection_isValid____:
 
-public **boolean (?)** isValid ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isValid ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the collection is still valid to use, i.e., the :ref:`io.realm.Realm <io_realm_Realm>`instance hasn't been closed. It will always return ``true``for an unmanaged collection.
 
@@ -317,8 +317,8 @@ isManaged
 
 .. _io_realm_RealmCollection_isManaged____:
 
-public **boolean (?)** isManaged ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isManaged ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the collection is managed by Realm. A managed collection is just a wrapper around the data in the underlying Realm file. On Looper threads, a managed collection will be live-updated so it always points to the latest data. Managed collections are thread confined so that they cannot be accessed from other threads than the one that created them.If this method returns ``false``, the collection is unmanaged. An unmanaged collection is just a normal java collection, so it will not be live updated.
 
@@ -330,8 +330,8 @@ contains
 
 .. _io_realm_RealmCollection_contains__Object__:
 
-public **boolean (?)** contains (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** contains (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Tests whether this ``Collection``contains the specified object. Returns ``true``if and only if at least one element ``elem``in this ``Collection``meets following requirement: ``(object==null ? elem==null : object.equals(elem))``.
 

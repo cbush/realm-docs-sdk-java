@@ -58,7 +58,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isEnabled <io_realm_mongodb_auth_ApiKey_isEnabled____>` ()
        
        Returns whether or not this key is currently enabled.
@@ -66,7 +66,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`equals <io_realm_mongodb_auth_ApiKey_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
@@ -74,7 +74,7 @@ Method Summary
        
        
    
-   * - public **int (?)**
+   * - public **int**
      - :ref:`hashCode <io_realm_mongodb_auth_ApiKey_hashCode____>` ()
        
        
@@ -126,8 +126,8 @@ isEnabled
 
 .. _io_realm_mongodb_auth_ApiKey_isEnabled____:
 
-public **boolean (?)** isEnabled ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isEnabled ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns whether or not this key is currently enabled.
 equals
@@ -135,8 +135,8 @@ equals
 
 .. _io_realm_mongodb_auth_ApiKey_equals__Object__:
 
-public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 hashCode
@@ -144,8 +144,8 @@ hashCode
 
 .. _io_realm_mongodb_auth_ApiKey_hashCode____:
 
-public **int (?)** hashCode ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **int** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 toString

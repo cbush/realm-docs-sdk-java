@@ -132,7 +132,7 @@ Method Summary
        
        
    
-   * - public **byte (?)**
+   * - public **byte**
      - :ref:`getEncryptionKey <io_realm_mongodb_AppConfiguration_getEncryptionKey____>` ()
        
        Returns the encryption key, if any, that is used to encrypt Realm users meta data on this device.
@@ -140,7 +140,7 @@ Method Summary
        
        
    
-   * - public **long (?)**
+   * - public **long**
      - :ref:`getRequestTimeoutMs <io_realm_mongodb_AppConfiguration_getRequestTimeoutMs____>` ()
        
        Returns the default timeout for network requests against the Realm application in milliseconds.
@@ -212,7 +212,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`equals <io_realm_mongodb_AppConfiguration_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
@@ -220,7 +220,7 @@ Method Summary
        
        
    
-   * - public **int (?)**
+   * - public **int**
      - :ref:`hashCode <io_realm_mongodb_AppConfiguration_hashCode____>` ()
        
        
@@ -314,8 +314,8 @@ getEncryptionKey
 
 .. _io_realm_mongodb_AppConfiguration_getEncryptionKey____:
 
-public **byte (?)** getEncryptionKey ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **byte** getEncryptionKey ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the encryption key, if any, that is used to encrypt Realm users meta data on this device. If no key is returned, the data is not encrypted.
 getRequestTimeoutMs
@@ -323,8 +323,8 @@ getRequestTimeoutMs
 
 .. _io_realm_mongodb_AppConfiguration_getRequestTimeoutMs____:
 
-public **long (?)** getRequestTimeoutMs ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **long** getRequestTimeoutMs ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the default timeout for network requests against the Realm application in milliseconds.
 getAuthorizationHeaderName
@@ -410,8 +410,8 @@ equals
 
 .. _io_realm_mongodb_AppConfiguration_equals__Object__:
 
-public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 hashCode
@@ -419,8 +419,8 @@ hashCode
 
 .. _io_realm_mongodb_AppConfiguration_hashCode____:
 
-public **int (?)** hashCode ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **int** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

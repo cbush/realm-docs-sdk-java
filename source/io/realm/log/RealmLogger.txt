@@ -22,8 +22,8 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **void (?)**
-     - :ref:`log <io_realm_log_RealmLogger_log__int__String__Throwable__String__>` (**int (?)** level, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ tag, `Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message)
+   * - public **void**
+     - :ref:`log <io_realm_log_RealmLogger_log__int__String__Throwable__String__>` (**int** level, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ tag, `Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message)
        
        Handles a log event.
        
@@ -39,8 +39,8 @@ log
 
 .. _io_realm_log_RealmLogger_log__int__String__Throwable__String__:
 
-public **void (?)** log (**int (?)** level, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ tag, `Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** log (**int** level, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ tag, `Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ throwable, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ message)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Handles a log event.
 Parameters

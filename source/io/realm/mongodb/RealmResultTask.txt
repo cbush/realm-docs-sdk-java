@@ -38,7 +38,7 @@ Method Summary
        
        
    
-   * - public **void (?)**
+   * - public **void**
      - :ref:`getAsync <io_realm_mongodb_RealmResultTask_getAsync__App_Callback_T___>` (:ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
        
        Provides a way to subscribe to asynchronous operations via a callback, which handles both results and errors.
@@ -64,8 +64,8 @@ getAsync
 
 .. _io_realm_mongodb_RealmResultTask_getAsync__App_Callback_T___:
 
-public **void (?)** getAsync (:ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** getAsync (:ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Provides a way to subscribe to asynchronous operations via a callback, which handles both results and errors.
 Parameters

@@ -74,7 +74,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`hasUncommittedWrites <io_realm_mongodb_mongo_events_BaseChangeEvent_hasUncommittedWrites____>` ()
        
        Indicates a local change event that has not yet been synchronized with a remote data store.
@@ -135,8 +135,8 @@ hasUncommittedWrites
 
 .. _io_realm_mongodb_mongo_events_BaseChangeEvent_hasUncommittedWrites____:
 
-public **boolean (?)** hasUncommittedWrites ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** hasUncommittedWrites ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Indicates a local change event that has not yet been synchronized with a remote data store. Used only for the sync use case.
 toBsonDocument

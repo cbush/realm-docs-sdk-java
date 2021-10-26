@@ -84,7 +84,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isEmpty <io_realm_mongodb_mongo_events_UpdateDescription_isEmpty____>` ()
        
        Determines whether this update description is empty.
@@ -92,7 +92,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`equals <io_realm_mongodb_mongo_events_UpdateDescription_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
        
        
@@ -100,7 +100,7 @@ Method Summary
        
        
    
-   * - public **int (?)**
+   * - public **int**
      - :ref:`hashCode <io_realm_mongodb_mongo_events_UpdateDescription_hashCode____>` ()
        
        
@@ -206,8 +206,8 @@ isEmpty
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_isEmpty____:
 
-public **boolean (?)** isEmpty ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isEmpty ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Determines whether this update description is empty.
 equals
@@ -215,8 +215,8 @@ equals
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_equals__Object__:
 
-public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 hashCode
@@ -224,8 +224,8 @@ hashCode
 
 .. _io_realm_mongodb_mongo_events_UpdateDescription_hashCode____:
 
-public **int (?)** hashCode ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **int** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

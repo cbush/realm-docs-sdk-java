@@ -43,7 +43,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **void (?)**
+   * - public **void**
      - :ref:`execute <io_realm_DynamicRealm_Transaction_execute__DynamicRealm__>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
        
        
@@ -60,8 +60,8 @@ execute
 
 .. _io_realm_DynamicRealm_Transaction_execute__DynamicRealm__:
 
-public **void (?)** execute (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** execute (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

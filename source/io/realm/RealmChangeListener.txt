@@ -34,7 +34,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **void (?)**
+   * - public **void**
      - :ref:`onChange <io_realm_RealmChangeListener_onChange__T__>` (**T (?)** t)
        
        Called when a transaction is committed.
@@ -51,8 +51,8 @@ onChange
 
 .. _io_realm_RealmChangeListener_onChange__T__:
 
-public **void (?)** onChange (**T (?)** t)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** onChange (**T (?)** t)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Called when a transaction is committed.
 

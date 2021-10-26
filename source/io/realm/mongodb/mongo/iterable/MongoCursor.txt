@@ -33,7 +33,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`hasNext <io_realm_mongodb_mongo_iterable_MongoCursor_hasNext____>` ()
        
        
@@ -59,7 +59,7 @@ Method Summary
        
        
    
-   * - public **void (?)**
+   * - public **void**
      - :ref:`close <io_realm_mongodb_mongo_iterable_MongoCursor_close____>` ()
        
        
@@ -76,8 +76,8 @@ hasNext
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_hasNext____:
 
-public **boolean (?)** hasNext ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** hasNext ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 next
@@ -105,8 +105,8 @@ close
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_close____:
 
-public **void (?)** close ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** close ()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

@@ -232,7 +232,7 @@ Method Summary
        
        
    
-   * - public **void (?)**
+   * - public **void**
      - :ref:`addAuthenticationListener <io_realm_mongodb_App_addAuthenticationListener__AuthenticationListener__>` (:ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` listener)
        
        Sets a global authentication listener that will be notified about User events like login and logout.
@@ -240,7 +240,7 @@ Method Summary
        
        
    
-   * - public **void (?)**
+   * - public **void**
      - :ref:`removeAuthenticationListener <io_realm_mongodb_App_removeAuthenticationListener__AuthenticationListener__>` (:ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` listener)
        
        Removes the provided global authentication listener.
@@ -280,7 +280,7 @@ Method Summary
        
        
    
-   * - protected **void (?)**
+   * - protected **void**
      - :ref:`setNetworkTransport <io_realm_mongodb_App_setNetworkTransport__OsJavaNetworkTransport__>` (**OsJavaNetworkTransport (?)** transport)
        
        Exposed for testing.
@@ -288,7 +288,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`equals <io_realm_mongodb_App_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        Two Apps are considered equal and will share their underlying state if they both refer to the same **AppConfiguration#getAppId() (?)**.
@@ -298,7 +298,7 @@ Method Summary
        
        
    
-   * - public **int (?)**
+   * - public **int**
      - :ref:`hashCode <io_realm_mongodb_App_hashCode____>` ()
        
        
@@ -461,8 +461,8 @@ addAuthenticationListener
 
 .. _io_realm_mongodb_App_addAuthenticationListener__AuthenticationListener__:
 
-public **void (?)** addAuthenticationListener (:ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** addAuthenticationListener (:ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets a global authentication listener that will be notified about User events like login and logout.Callbacks to authentication listeners will happen on the UI thread.
 
@@ -481,8 +481,8 @@ removeAuthenticationListener
 
 .. _io_realm_mongodb_App_removeAuthenticationListener__AuthenticationListener__:
 
-public **void (?)** removeAuthenticationListener (:ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** removeAuthenticationListener (:ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes the provided global authentication listener.
 Parameters
@@ -543,8 +543,8 @@ setNetworkTransport
 
 .. _io_realm_mongodb_App_setNetworkTransport__OsJavaNetworkTransport__:
 
-protected **void (?)** setNetworkTransport (**OsJavaNetworkTransport (?)** transport)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+protected **void** setNetworkTransport (**OsJavaNetworkTransport (?)** transport)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Exposed for testing.Swap the currently configured network transport with the provided one. This should only be done if no network requests are currently running.
 
@@ -554,8 +554,8 @@ equals
 
 .. _io_realm_mongodb_App_equals__Object__:
 
-public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Two Apps are considered equal and will share their underlying state if they both refer to the same **AppConfiguration#getAppId() (?)**.
 
@@ -565,8 +565,8 @@ hashCode
 
 .. _io_realm_mongodb_App_hashCode____:
 
-public **int (?)** hashCode ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **int** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

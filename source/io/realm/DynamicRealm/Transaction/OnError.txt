@@ -22,7 +22,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **void (?)**
+   * - public **void**
      - :ref:`onError <io_realm_DynamicRealm_Transaction_OnError_onError__Throwable__>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ error)
        
        
@@ -39,8 +39,8 @@ onError
 
 .. _io_realm_DynamicRealm_Transaction_OnError_onError__Throwable__:
 
-public **void (?)** onError (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ error)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** onError (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ error)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

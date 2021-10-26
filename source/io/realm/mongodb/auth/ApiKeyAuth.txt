@@ -97,7 +97,7 @@ Method Summary
        
        
    
-   * - public **void (?)**
+   * - public **void**
      - :ref:`delete <io_realm_mongodb_auth_ApiKeyAuth_delete__ObjectId__>` (**ObjectId (?)** id)
        
        Deletes a specific API key created by the user.
@@ -113,7 +113,7 @@ Method Summary
        
        
    
-   * - public **void (?)**
+   * - public **void**
      - :ref:`disable <io_realm_mongodb_auth_ApiKeyAuth_disable__ObjectId__>` (**ObjectId (?)** id)
        
        Disables a specific API key created by the user.
@@ -129,7 +129,7 @@ Method Summary
        
        
    
-   * - public **void (?)**
+   * - public **void**
      - :ref:`enable <io_realm_mongodb_auth_ApiKeyAuth_enable__ObjectId__>` (**ObjectId (?)** id)
        
        Enables a specific API key created by the user.
@@ -145,7 +145,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`equals <io_realm_mongodb_auth_ApiKeyAuth_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
@@ -153,7 +153,7 @@ Method Summary
        
        
    
-   * - public **int (?)**
+   * - public **int**
      - :ref:`hashCode <io_realm_mongodb_auth_ApiKeyAuth_hashCode____>` ()
        
        
@@ -169,8 +169,8 @@ Method Summary
        
        
    
-   * - protected abstract **void (?)**
-     - :ref:`call <io_realm_mongodb_auth_ApiKeyAuth_call__int__String__OsJavaNetworkTransport_NetworkTransportJNIResultCallback__>` (**int (?)** functionType, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ arg, **OsJavaNetworkTransport.NetworkTransportJNIResultCallback (?)** callback)
+   * - protected abstract **void**
+     - :ref:`call <io_realm_mongodb_auth_ApiKeyAuth_call__int__String__OsJavaNetworkTransport_NetworkTransportJNIResultCallback__>` (**int** functionType, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ arg, **OsJavaNetworkTransport.NetworkTransportJNIResultCallback (?)** callback)
        
        
        
@@ -323,8 +323,8 @@ delete
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_delete__ObjectId__:
 
-public **void (?)** delete (**ObjectId (?)** id)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** delete (**ObjectId (?)** id)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes a specific API key created by the user.
 Parameters
@@ -361,8 +361,8 @@ disable
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_disable__ObjectId__:
 
-public **void (?)** disable (**ObjectId (?)** id)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** disable (**ObjectId (?)** id)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Disables a specific API key created by the user.
 Parameters
@@ -399,8 +399,8 @@ enable
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_enable__ObjectId__:
 
-public **void (?)** enable (**ObjectId (?)** id)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** enable (**ObjectId (?)** id)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Enables a specific API key created by the user.
 Parameters
@@ -437,8 +437,8 @@ equals
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_equals__Object__:
 
-public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 hashCode
@@ -446,8 +446,8 @@ hashCode
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_hashCode____:
 
-public **int (?)** hashCode ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **int** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 toString
@@ -464,8 +464,8 @@ call
 
 .. _io_realm_mongodb_auth_ApiKeyAuth_call__int__String__OsJavaNetworkTransport_NetworkTransportJNIResultCallback__:
 
-protected abstract **void (?)** call (**int (?)** functionType, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ arg, **OsJavaNetworkTransport.NetworkTransportJNIResultCallback (?)** callback)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+protected abstract **void** call (**int** functionType, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ arg, **OsJavaNetworkTransport.NetworkTransportJNIResultCallback (?)** callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

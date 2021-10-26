@@ -34,7 +34,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isOpen <io_realm_mongodb_RealmEventStreamTask_isOpen____>` ()
        
        Whether or not the stream is currently open.
@@ -63,8 +63,8 @@ isOpen
 
 .. _io_realm_mongodb_RealmEventStreamTask_isOpen____:
 
-public **boolean (?)** isOpen ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isOpen ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Whether or not the stream is currently open.
 

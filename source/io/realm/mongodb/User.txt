@@ -143,7 +143,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`isLoggedIn <io_realm_mongodb_User_isLoggedIn____>` ()
        
        Returns true if the user is currently logged in.
@@ -167,7 +167,7 @@ Method Summary
        
        
    
-   * - public **void (?)**
+   * - public **void**
      - :ref:`logOut <io_realm_mongodb_User_logOut____>` ()
        
        Log the user out of the Realm App.
@@ -227,7 +227,7 @@ Method Summary
        
        
    
-   * - public **boolean (?)**
+   * - public **boolean**
      - :ref:`equals <io_realm_mongodb_User_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        Two Users are considered equal if they have the same user identity and are associated with the same app.
@@ -235,7 +235,7 @@ Method Summary
        
        
    
-   * - public **int (?)**
+   * - public **int**
      - :ref:`hashCode <io_realm_mongodb_User_hashCode____>` ()
        
        
@@ -386,8 +386,8 @@ isLoggedIn
 
 .. _io_realm_mongodb_User_isLoggedIn____:
 
-public **boolean (?)** isLoggedIn ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isLoggedIn ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns true if the user is currently logged in. Returns whether or not this user is still logged into the MongoDB Realm App.
 linkCredentials
@@ -467,8 +467,8 @@ logOut
 
 .. _io_realm_mongodb_User_logOut____:
 
-public **void (?)** logOut ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** logOut ()
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Log the user out of the Realm App. This will unregister them on the device, stop any synchronization to and from the users' Realms, and those Realms will be deleted next time the app restarts. Therefor logging out should not be done until all changes to Realms have been uploaded to the server.Once the Realm App has confirmed the logout any registered :ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>`will be notified and user credentials will be deleted from this device.
 
@@ -592,8 +592,8 @@ equals
 
 .. _io_realm_mongodb_User_equals__Object__:
 
-public **boolean (?)** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Two Users are considered equal if they have the same user identity and are associated with the same app.
 hashCode
@@ -601,8 +601,8 @@ hashCode
 
 .. _io_realm_mongodb_User_hashCode____:
 
-public **int (?)** hashCode ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **int** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
