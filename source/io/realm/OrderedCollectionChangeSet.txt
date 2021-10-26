@@ -10,11 +10,11 @@ io.realm.OrderedCollectionChangeSet
 
 .. _io_realm_OrderedCollectionChangeSet:
 
-This interface describes the changes made to a collection during the last update.**OrderedCollectionChangeSet (?)**is passed to the **OrderedRealmCollectionChangeListener (?)**which is registered by **RealmResults#addChangeListener(OrderedRealmCollectionChangeListener) (?)**.
+This interface describes the changes made to a collection during the last update.:ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>`is passed to the :ref:`OrderedRealmCollectionChangeListener <io_realm_OrderedRealmCollectionChangeListener>`which is registered by **RealmResults#addChangeListener(OrderedRealmCollectionChangeListener) (?)**.
 
 
 
-The change information is available in two formats: a simple array of row indices in the collection for each type of change, or an array of **Range (?)**s.
+The change information is available in two formats: a simple array of row indices in the collection for each type of change, or an array of :ref:`Range <io_realm_OrderedCollectionChangeSet_Range>`s.
 
 
 
@@ -120,7 +120,7 @@ getState
 public :ref:`OrderedCollectionChangeSet.State <io_realm_OrderedCollectionChangeSet_State>` getState ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the state represented by this change. See **State (?)**for a description of the different states a changeset can be in.
+Returns the state represented by this change. See :ref:`State <io_realm_OrderedCollectionChangeSet_State>`for a description of the different states a changeset can be in.
 
 
 See Also
@@ -154,7 +154,7 @@ getChanges
 public **int (?)** getChanges ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The modified indices in the new version of the collection.For **RealmResults (?)**, this means that one or more of the properties of the object at the given index were modified (or an object linked to by that object was modified).
+The modified indices in the new version of the collection.For :ref:`RealmResults <io_realm_RealmResults>`, this means that one or more of the properties of the object at the given index were modified (or an object linked to by that object was modified).
 
 
 

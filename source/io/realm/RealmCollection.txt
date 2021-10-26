@@ -33,7 +33,7 @@ Method Summary
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`where <io_realm_RealmCollection_where____>` ()
        
-       Returns a **RealmQuery (?)**, which can be used to query for specific objects from this collection.
+       Returns a :ref:`RealmQuery <io_realm_RealmQuery>`, which can be used to query for specific objects from this collection.
        
        
        
@@ -115,7 +115,7 @@ Method Summary
    * - public **boolean (?)**
      - :ref:`isValid <io_realm_RealmCollection_isValid____>` ()
        
-       Checks if the collection is still valid to use, i.e., the **io.realm.Realm (?)**instance hasn't been closed.
+       Checks if the collection is still valid to use, i.e., the :ref:`io.realm.Realm <io_realm_Realm>`instance hasn't been closed.
        
        
        
@@ -152,7 +152,7 @@ where
 public :ref:`RealmQuery <io_realm_RealmQuery>` where ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns a **RealmQuery (?)**, which can be used to query for specific objects from this collection.
+Returns a :ref:`RealmQuery <io_realm_RealmQuery>`, which can be used to query for specific objects from this collection.
 
 
 Throws
@@ -309,7 +309,7 @@ isValid
 public **boolean (?)** isValid ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Checks if the collection is still valid to use, i.e., the **io.realm.Realm (?)**instance hasn't been closed. It will always return ``true``for an unmanaged collection.
+Checks if the collection is still valid to use, i.e., the :ref:`io.realm.Realm <io_realm_Realm>`instance hasn't been closed. It will always return ``true``for an unmanaged collection.
 
 
 isManaged

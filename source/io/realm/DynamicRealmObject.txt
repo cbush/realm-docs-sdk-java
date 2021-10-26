@@ -188,7 +188,7 @@ Method Summary
    * - public :ref:`RealmList <io_realm_RealmList>`
      - :ref:`getList <io_realm_DynamicRealmObject_getList__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
-       Returns the **RealmList (?)**of **DynamicRealmObject (?)**s being linked from the given field.
+       Returns the :ref:`RealmList <io_realm_RealmList>`of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
        
        
        
@@ -198,7 +198,7 @@ Method Summary
    * - public :ref:`RealmList <io_realm_RealmList>`
      - :ref:`getList <io_realm_DynamicRealmObject_getList__String__Class_E___>` <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
        
-       Returns the **RealmList (?)**containing only primitive values.
+       Returns the :ref:`RealmList <io_realm_RealmList>`containing only primitive values.
        
        
        
@@ -208,7 +208,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`getDictionary <io_realm_DynamicRealmObject_getDictionary__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
-       Returns the **RealmDictionary (?)**of **DynamicRealmObject (?)**s being linked from the given field.
+       Returns the **RealmDictionary (?)**of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
        
        
        
@@ -228,7 +228,7 @@ Method Summary
    * - public **<any> (?)**
      - :ref:`getRealmSet <io_realm_DynamicRealmObject_getRealmSet__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
-       Returns the **RealmSet (?)**of **DynamicRealmObject (?)**s being linked from the given field.
+       Returns the **RealmSet (?)**of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
        
        
        
@@ -428,7 +428,7 @@ Method Summary
    * - public **void (?)**
      - :ref:`setList <io_realm_DynamicRealmObject_setList__String__RealmList_E___>` <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
        
-       Sets the reference to a **RealmList (?)**on the given field.
+       Sets the reference to a :ref:`RealmList <io_realm_RealmList>`on the given field.
        
        
        
@@ -484,7 +484,7 @@ Method Summary
    * - public **int (?)**
      - :ref:`hashCode <io_realm_DynamicRealmObject_hashCode____>` ()
        
-       Returns a hash code value for the **DynamicRealmObject (?)**object.
+       Returns a hash code value for the :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`object.
        
        
        
@@ -510,7 +510,7 @@ Method Summary
    * - public :ref:`RealmResults <io_realm_RealmResults>`
      - :ref:`linkingObjects <io_realm_DynamicRealmObject_linkingObjects__String__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ srcClassName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ srcFieldName)
        
-       Returns **RealmResults (?)**containing all ``srcClassName``class objects that have a relationship to this object from ``srcFieldName``field.
+       Returns :ref:`RealmResults <io_realm_RealmResults>`containing all ``srcClassName``class objects that have a relationship to this object from ``srcFieldName``field.
        
        
        
@@ -520,7 +520,7 @@ Method Summary
    * - public :ref:`DynamicRealm <io_realm_DynamicRealm>`
      - :ref:`getDynamicRealm <io_realm_DynamicRealmObject_getDynamicRealm____>` ()
        
-       Returns **DynamicRealm (?)**instance where this **DynamicRealmObject (?)**belongs.
+       Returns :ref:`DynamicRealm <io_realm_DynamicRealm>`instance where this :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`belongs.
        
        
        
@@ -899,7 +899,7 @@ getList
 public :ref:`RealmList <io_realm_RealmList>` getList (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **RealmList (?)**of **DynamicRealmObject (?)**s being linked from the given field.
+Returns the :ref:`RealmList <io_realm_RealmList>`of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
 
 If the list contains primitive types, use **#getList(String, Class) (?)**instead.
 
@@ -920,7 +920,7 @@ ______
 public :ref:`RealmList <io_realm_RealmList>` getList <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **RealmList (?)**containing only primitive values.
+Returns the :ref:`RealmList <io_realm_RealmList>`containing only primitive values.
 
 If the list contains references to other Realm objects, use **#getList(String) (?)**instead.
 
@@ -946,7 +946,7 @@ getDictionary
 public **<any> (?)** getDictionary (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **RealmDictionary (?)**of **DynamicRealmObject (?)**s being linked from the given field.
+Returns the **RealmDictionary (?)**of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
 
 If the dictionary contains primitive types, use **#getDictionary(String, Class) (?)**instead.
 
@@ -993,7 +993,7 @@ getRealmSet
 public **<any> (?)** getRealmSet (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **RealmSet (?)**of **DynamicRealmObject (?)**s being linked from the given field.
+Returns the **RealmSet (?)**of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
 
 If the set contains primitive types, use **#getRealmSet(String, Class) (?)**instead.
 
@@ -1426,7 +1426,7 @@ setList
 public **void (?)** setList <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sets the reference to a **RealmList (?)**on the given field.
+Sets the reference to a :ref:`RealmList <io_realm_RealmList>`on the given field.
 
 This will copy all the elements in the list into Realm, but any further changes to the list will not be reflected in the Realm. Use **#getList(String) (?)**in order to get a reference to the managed list.
 
@@ -1438,7 +1438,7 @@ __________
 
 - ``fieldName - ``field name.
    
-- ``list - ``list of objects. Must either be primitive types or **DynamicRealmObject (?)**s.
+- ``list - ``list of objects. Must either be primitive types or :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s.
    
    
    
@@ -1466,7 +1466,7 @@ __________
 
 - ``fieldName - ``field name.
    
-- ``dictionary - ``dictionary of objects. Must either be primitive types or **DynamicRealmObject (?)**s.
+- ``dictionary - ``dictionary of objects. Must either be primitive types or :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s.
    
    
    
@@ -1494,7 +1494,7 @@ __________
 
 - ``fieldName - ``field name.
    
-- ``set - ``set of objects. Must either be primitive types or **DynamicRealmObject (?)**s.
+- ``set - ``set of objects. Must either be primitive types or :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s.
    
    
    
@@ -1530,7 +1530,7 @@ getType
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getType ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the type of object. This will normally correspond to the name of a class that is extending **RealmObject (?)**.
+Returns the type of object. This will normally correspond to the name of a class that is extending :ref:`RealmObject <io_realm_RealmObject>`.
 
 
 getFieldType
@@ -1550,13 +1550,13 @@ hashCode
 public **int (?)** hashCode ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns a hash code value for the **DynamicRealmObject (?)**object.
+Returns a hash code value for the :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`object.
 
 By the general contract of `Object#hashCode() <https://docs.oracle.com/javase/7/docs/api/java/lang/Object/hashCode().html>`__, any two objects for which **#equals (?)**returns ``true``must return the same hash code value.
 
 
 
-Note that a **RealmObject (?)**is a live object, and it might be updated by changes from other threads. This means that a hash code value of the object is not stable, and the value should be neither used as a key in HashMap nor saved in HashSet.
+Note that a :ref:`RealmObject <io_realm_RealmObject>`is a live object, and it might be updated by changes from other threads. This means that a hash code value of the object is not stable, and the value should be neither used as a key in HashMap nor saved in HashSet.
 
 
 
@@ -1592,7 +1592,7 @@ linkingObjects
 public :ref:`RealmResults <io_realm_RealmResults>` linkingObjects (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ srcClassName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ srcFieldName)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns **RealmResults (?)**containing all ``srcClassName``class objects that have a relationship to this object from ``srcFieldName``field.
+Returns :ref:`RealmResults <io_realm_RealmResults>`containing all ``srcClassName``class objects that have a relationship to this object from ``srcFieldName``field.
 
 An entry is added for each reference, e.g. if the same reference is in a list multiple times, the src object will show up here multiple times.
 
@@ -1618,7 +1618,7 @@ getDynamicRealm
 public :ref:`DynamicRealm <io_realm_DynamicRealm>` getDynamicRealm ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns **DynamicRealm (?)**instance where this **DynamicRealmObject (?)**belongs.
+Returns :ref:`DynamicRealm <io_realm_DynamicRealm>`instance where this :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`belongs.
 
 You **must not**call **DynamicRealm#close() (?)**against returned instance.
 

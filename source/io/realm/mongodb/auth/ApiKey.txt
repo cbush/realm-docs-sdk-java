@@ -14,7 +14,7 @@ io.realm.mongodb.auth.ApiKey
 
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
-Class representing an API key for a **User (?)**. An API can be used to represent the user when logging instead of using email and password.
+Class representing an API key for a :ref:`User <io_realm_mongodb_User>`. An API can be used to represent the user when logging instead of using email and password.
 
 These keys are created or fetched through **ApiKeyAuth#create(String) (?)**or the various ``fetch``-methods.
 

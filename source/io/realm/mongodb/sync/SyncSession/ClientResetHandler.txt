@@ -65,11 +65,11 @@ Callback that indicates a Client Reset has happened. This should be handled as q
 Parameters
 __________
 
-- ``session - ``**SyncSession (?)**this error happened on.
+- ``session - ``:ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`this error happened on.
    
    
    
-- ``error - ``**ClientResetRequiredError (?)**the specific Client Reset error.
+- ``error - ``:ref:`ClientResetRequiredError <io_realm_mongodb_sync_ClientResetRequiredError>`the specific Client Reset error.
    
    
    

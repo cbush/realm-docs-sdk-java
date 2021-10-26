@@ -14,17 +14,17 @@ io.realm.RealmQuery<E>
 
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
-A RealmQuery encapsulates a query on a **io.realm.Realm (?)**or a **io.realm.RealmResults (?)**using the Builder pattern. The query is executed using either **#findAll() (?)**or **#findFirst() (?)**.
+A RealmQuery encapsulates a query on a :ref:`io.realm.Realm <io_realm_Realm>`or a :ref:`io.realm.RealmResults <io_realm_RealmResults>`using the Builder pattern. The query is executed using either **#findAll() (?)**or **#findFirst() (?)**.
 
 The input to many of the query functions take a field name as String. Note that this is not type safe. If a RealmObject class is refactored care has to be taken to not break any queries.
 
-A **io.realm.Realm (?)**is unordered, which means that there is no guarantee that querying a Realm will return the objects in the order they where inserted. Use **#sort(String) (?)**(String)} and similar methods if a specific order is required.
+A :ref:`io.realm.Realm <io_realm_Realm>`is unordered, which means that there is no guarantee that querying a Realm will return the objects in the order they where inserted. Use **#sort(String) (?)**(String)} and similar methods if a specific order is required.
 
 
 
 A RealmQuery cannot be passed between different threads.
 
-Results are obtained quickly most of the times. However, launching heavy queries from the UI thread may result in a drop of frames or even ANRs. If you want to prevent these behaviors, you can instantiate a Realm using a **RealmConfiguration (?)**that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)**to ``false``. This way queries will be forced to be launched from a non-UI thread. Alternatively, you can also use **#findAllAsync() (?)**or **#findFirstAsync() (?)**.
+Results are obtained quickly most of the times. However, launching heavy queries from the UI thread may result in a drop of frames or even ANRs. If you want to prevent these behaviors, you can instantiate a Realm using a :ref:`RealmConfiguration <io_realm_RealmConfiguration>`that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)**to ``false``. This way queries will be forced to be launched from a non-UI thread. Alternatively, you can also use **#findAllAsync() (?)**or **#findFirstAsync() (?)**.
 
 
 
@@ -41,7 +41,7 @@ Method Summary
    * - public **boolean (?)**
      - :ref:`isValid <io_realm_RealmQuery_isValid____>` ()
        
-       Checks if **io.realm.RealmQuery (?)**is still valid to use i.e., the **io.realm.Realm (?)**instance hasn't been closed and any parent **io.realm.RealmResults (?)**is still valid.
+       Checks if :ref:`io.realm.RealmQuery <io_realm_RealmQuery>`is still valid to use i.e., the :ref:`io.realm.Realm <io_realm_Realm>`instance hasn't been closed and any parent :ref:`io.realm.RealmResults <io_realm_RealmResults>`is still valid.
        
        
        
@@ -1033,7 +1033,7 @@ Method Summary
    * - public :ref:`Realm <io_realm_Realm>`
      - :ref:`getRealm <io_realm_RealmQuery_getRealm____>` ()
        
-       Returns the **Realm (?)**instance to which this query belongs.
+       Returns the :ref:`Realm <io_realm_Realm>`instance to which this query belongs.
        
        
        
@@ -1086,7 +1086,7 @@ isValid
 public **boolean (?)** isValid ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Checks if **io.realm.RealmQuery (?)**is still valid to use i.e., the **io.realm.Realm (?)**instance hasn't been closed and any parent **io.realm.RealmResults (?)**is still valid.
+Checks if :ref:`io.realm.RealmQuery <io_realm_RealmQuery>`is still valid to use i.e., the :ref:`io.realm.Realm <io_realm_Realm>`instance hasn't been closed and any parent :ref:`io.realm.RealmResults <io_realm_RealmResults>`is still valid.
 
 
 isNull
@@ -3086,7 +3086,7 @@ findAll
 public :ref:`RealmResults <io_realm_RealmResults>` findAll ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Finds all objects that fulfill the query conditions.Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so and therefore it is not allowed by default.**If you want to prevent these behaviors you can obtain a Realm using a **RealmConfiguration (?)**that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)**to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a **RealmException (?)**. Alternatively, you can use **#findAllAsync() (?)**.
+Finds all objects that fulfill the query conditions.Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so and therefore it is not allowed by default.**If you want to prevent these behaviors you can obtain a Realm using a :ref:`RealmConfiguration <io_realm_RealmConfiguration>`that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)**to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a :ref:`RealmException <io_realm_exceptions_RealmException>`. Alternatively, you can use **#findAllAsync() (?)**.
 
 
 
@@ -3266,7 +3266,7 @@ rawPredicate
 public :ref:`RealmQuery <io_realm_RealmQuery>` rawPredicate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ predicate, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ arguments)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Create a text-based predicate using the Realm Query Language. This predicate can be combined with other raw or type safe predicates, it accepts Realm values as arguments.Class and property names used in the raw predicate can be either the names defined in the Realm Model classes or the internal names defined using the **io.realm.annotations.RealmClass (?)**or **io.realm.annotations.RealmField (?)**annotations. If a class or property name contains spaces those must be escaped.
+Create a text-based predicate using the Realm Query Language. This predicate can be combined with other raw or type safe predicates, it accepts Realm values as arguments.Class and property names used in the raw predicate can be either the names defined in the Realm Model classes or the internal names defined using the :ref:`io.realm.annotations.RealmClass <io_realm_annotations_RealmClass>`or :ref:`io.realm.annotations.RealmField <io_realm_annotations_RealmField>`annotations. If a class or property name contains spaces those must be escaped.
 
 
 
@@ -3325,7 +3325,7 @@ getRealm
 public :ref:`Realm <io_realm_Realm>` getRealm ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **Realm (?)**instance to which this query belongs.
+Returns the :ref:`Realm <io_realm_Realm>`instance to which this query belongs.
 
 Calling **Realm#close() (?)**on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the query.
 
@@ -3361,7 +3361,7 @@ findFirst
 public **E (?)** findFirst ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Finds the first object that fulfills the query conditions.Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so, but it is allowed by default.**If you want to prevent these behaviors you can obtain a Realm using a **RealmConfiguration (?)**that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)**to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a **RealmException (?)**. Alternatively, you can use **#findFirstAsync() (?)**.
+Finds the first object that fulfills the query conditions.Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so, but it is allowed by default.**If you want to prevent these behaviors you can obtain a Realm using a :ref:`RealmConfiguration <io_realm_RealmConfiguration>`that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)**to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a :ref:`RealmException <io_realm_exceptions_RealmException>`. Alternatively, you can use **#findFirstAsync() (?)**.
 
 
 
@@ -3382,7 +3382,7 @@ findFirstAsync
 public **E (?)** findFirstAsync ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Similar to **#findFirst() (?)**but runs asynchronously on a worker thread. An listener should be registered to the returned **RealmObject (?)**to get the notification when query completes. The registered listener will also be triggered if there are changes made to the queried **RealmObject (?)**. If the **RealmObject (?)**is deleted, the listener will be called one last time and then stop. The query will not be re-run.
+Similar to **#findFirst() (?)**but runs asynchronously on a worker thread. An listener should be registered to the returned :ref:`RealmObject <io_realm_RealmObject>`to get the notification when query completes. The registered listener will also be triggered if there are changes made to the queried :ref:`RealmObject <io_realm_RealmObject>`. If the :ref:`RealmObject <io_realm_RealmObject>`is deleted, the listener will be called one last time and then stop. The query will not be re-run.
 
 
 Throws

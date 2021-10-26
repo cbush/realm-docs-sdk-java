@@ -33,7 +33,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`get <io_realm_RealmSchema_get__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
        
-       Returns the **RealmObjectSchema (?)**for a given class.
+       Returns the :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`for a given class.
        
        
        
@@ -43,7 +43,7 @@ Method Summary
    * - public abstract `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__
      - :ref:`getAll <io_realm_RealmSchema_getAll____>` ()
        
-       Returns the **RealmObjectSchema (?)**s for all RealmObject classes that can be saved in this Realm.
+       Returns the :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`s for all RealmObject classes that can be saved in this Realm.
        
        
        
@@ -118,7 +118,7 @@ get
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` get (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **RealmObjectSchema (?)**for a given class. If this **RealmSchema (?)**is immutable, an immutable **RealmObjectSchema (?)**will be returned. Otherwise, it returns an mutable **RealmObjectSchema (?)**.
+Returns the :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`for a given class. If this :ref:`RealmSchema <io_realm_RealmSchema>`is immutable, an immutable :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`will be returned. Otherwise, it returns an mutable :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`.
 
 
 Parameters
@@ -135,7 +135,7 @@ getAll
 public abstract `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ getAll ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **RealmObjectSchema (?)**s for all RealmObject classes that can be saved in this Realm. If this **RealmSchema (?)**is immutable, an immutable **RealmObjectSchema (?)**set will be returned. Otherwise, it returns an mutable **RealmObjectSchema (?)**set.
+Returns the :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`s for all RealmObject classes that can be saved in this Realm. If this :ref:`RealmSchema <io_realm_RealmSchema>`is immutable, an immutable :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`set will be returned. Otherwise, it returns an mutable :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`set.
 
 
 create
@@ -192,7 +192,7 @@ remove
 public abstract **void (?)** remove (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removes a class from the Realm. All data will be removed. Removing a class while other classes point to it will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__. Removes those classes or fields first.
+Removes a class from the Realm. All data will be removed. Removing a class while other classes point to it will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__. Removes those classes or fields first.
 
 
 Parameters

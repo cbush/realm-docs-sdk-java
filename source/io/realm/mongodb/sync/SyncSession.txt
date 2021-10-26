@@ -14,11 +14,11 @@ io.realm.mongodb.sync.SyncSession
 
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
-A session controls how data is synchronized between a single Realm on the device and the server Realm on the Realm Object Server.A Session is created by opening a Realm instance using a **SyncConfiguration (?)**. Once a session has been created, it will continue to exist until the app is closed or all threads using this **SyncConfiguration (?)**closes their respective **Realm (?)**s.
+A session controls how data is synchronized between a single Realm on the device and the server Realm on the Realm Object Server.A Session is created by opening a Realm instance using a :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`. Once a session has been created, it will continue to exist until the app is closed or all threads using this :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`closes their respective :ref:`Realm <io_realm_Realm>`s.
 
 
 
-A session is controlled by Realm, but can provide additional information in case of errors. These errors are passed along in the **SyncSession.ErrorHandler (?)**.
+A session is controlled by Realm, but can provide additional information in case of errors. These errors are passed along in the :ref:`SyncSession.ErrorHandler <io_realm_mongodb_sync_SyncSession_ErrorHandler>`.
 
 
 
@@ -30,7 +30,7 @@ The session itself has a different lifecycle than the underlying connection. The
 
 
 
-The **SyncSession (?)**object is thread safe.
+The :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`object is thread safe.
 
 
 
@@ -66,7 +66,7 @@ Method Summary
    * - public :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`
      - :ref:`getConfiguration <io_realm_mongodb_sync_SyncSession_getConfiguration____>` ()
        
-       Returns the **SyncConfiguration (?)**that is responsible for controlling the session.
+       Returns the :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`that is responsible for controlling the session.
        
        
        
@@ -76,7 +76,7 @@ Method Summary
    * - public :ref:`User <io_realm_mongodb_User>`
      - :ref:`getUser <io_realm_mongodb_sync_SyncSession_getUser____>` ()
        
-       Returns the **User (?)**defined by the **SyncConfiguration (?)**that is used to connect to MongoDB Realm.
+       Returns the :ref:`User <io_realm_mongodb_User>`defined by the :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`that is used to connect to MongoDB Realm.
        
        
        
@@ -86,7 +86,7 @@ Method Summary
    * - public `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI.html>`__
      - :ref:`getServerUrl <io_realm_mongodb_sync_SyncSession_getServerUrl____>` ()
        
-       Returns the `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI/.html>`__describing the remote Realm which this session connects to and synchronizes changes with.
+       Returns the `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI.html>`__describing the remote Realm which this session connects to and synchronizes changes with.
        
        
        
@@ -96,7 +96,7 @@ Method Summary
    * - public :ref:`SyncSession.State <io_realm_mongodb_sync_SyncSession_State>`
      - :ref:`getState <io_realm_mongodb_sync_SyncSession_getState____>` ()
        
-       Get the current session's state, as defined in **SyncSession.State (?)**.
+       Get the current session's state, as defined in :ref:`SyncSession.State <io_realm_mongodb_sync_SyncSession_State>`.
        
        
        
@@ -106,7 +106,7 @@ Method Summary
    * - public :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>`
      - :ref:`getConnectionState <io_realm_mongodb_sync_SyncSession_getConnectionState____>` ()
        
-       Get the current state of the connection used by the session as defined in **ConnectionState (?)**.
+       Get the current state of the connection used by the session as defined in :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>`.
        
        
        
@@ -156,7 +156,7 @@ Method Summary
    * - public synchronized **void (?)**
      - :ref:`removeConnectionChangeListener <io_realm_mongodb_sync_SyncSession_removeConnectionChangeListener__ConnectionListener__>` (:ref:`ConnectionListener <io_realm_mongodb_sync_ConnectionListener>` listener)
        
-       Removes a previously registered **ConnectionListener (?)**.
+       Removes a previously registered :ref:`ConnectionListener <io_realm_mongodb_sync_ConnectionListener>`.
        
        
        
@@ -223,7 +223,7 @@ getConfiguration
 public :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` getConfiguration ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **SyncConfiguration (?)**that is responsible for controlling the session.
+Returns the :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`that is responsible for controlling the session.
 
 
 getUser
@@ -234,7 +234,7 @@ getUser
 public :ref:`User <io_realm_mongodb_User>` getUser ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **User (?)**defined by the **SyncConfiguration (?)**that is used to connect to MongoDB Realm.
+Returns the :ref:`User <io_realm_mongodb_User>`defined by the :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`that is used to connect to MongoDB Realm.
 
 
 getServerUrl
@@ -245,7 +245,7 @@ getServerUrl
 public `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI.html>`__ getServerUrl ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI/.html>`__describing the remote Realm which this session connects to and synchronizes changes with.
+Returns the `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI.html>`__describing the remote Realm which this session connects to and synchronizes changes with.
 
 
 getState
@@ -256,7 +256,7 @@ getState
 public :ref:`SyncSession.State <io_realm_mongodb_sync_SyncSession_State>` getState ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Get the current session's state, as defined in **SyncSession.State (?)**.
+Get the current session's state, as defined in :ref:`SyncSession.State <io_realm_mongodb_sync_SyncSession_State>`.
 
 Note that the state may change after this method returns.
 
@@ -274,7 +274,7 @@ getConnectionState
 public :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>` getConnectionState ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Get the current state of the connection used by the session as defined in **ConnectionState (?)**.
+Get the current state of the connection used by the session as defined in :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>`.
 
 
 See Also
@@ -301,7 +301,7 @@ addDownloadProgressListener
 public synchronized **void (?)** addDownloadProgressListener (:ref:`ProgressMode <io_realm_mongodb_sync_ProgressMode>` mode, :ref:`ProgressListener <io_realm_mongodb_sync_ProgressListener>` listener)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Adds a progress listener tracking changes that need to be downloaded from the Realm Object Server.The **ProgressListener (?)**will be triggered immediately when registered, and periodically afterwards.
+Adds a progress listener tracking changes that need to be downloaded from the Realm Object Server.The :ref:`ProgressListener <io_realm_mongodb_sync_ProgressListener>`will be triggered immediately when registered, and periodically afterwards.
 
 
 
@@ -309,7 +309,7 @@ Adds a progress listener tracking changes that need to be downloaded from the Re
 Parameters
 __________
 
-- ``mode - ``type of mode used. See **ProgressMode (?)**for more information.
+- ``mode - ``type of mode used. See :ref:`ProgressMode <io_realm_mongodb_sync_ProgressMode>`for more information.
    
    
    
@@ -324,7 +324,7 @@ addUploadProgressListener
 public synchronized **void (?)** addUploadProgressListener (:ref:`ProgressMode <io_realm_mongodb_sync_ProgressMode>` mode, :ref:`ProgressListener <io_realm_mongodb_sync_ProgressListener>` listener)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Adds a progress listener tracking changes that need to be uploaded from the device to the Realm Object Server.The **ProgressListener (?)**will be triggered immediately when registered, and periodically afterwards.
+Adds a progress listener tracking changes that need to be uploaded from the device to the Realm Object Server.The :ref:`ProgressListener <io_realm_mongodb_sync_ProgressListener>`will be triggered immediately when registered, and periodically afterwards.
 
 
 
@@ -332,7 +332,7 @@ Adds a progress listener tracking changes that need to be uploaded from the devi
 Parameters
 __________
 
-- ``mode - ``type of mode used. See **ProgressMode (?)**for more information.
+- ``mode - ``type of mode used. See :ref:`ProgressMode <io_realm_mongodb_sync_ProgressMode>`for more information.
    
    
    
@@ -362,7 +362,7 @@ addConnectionChangeListener
 public synchronized **void (?)** addConnectionChangeListener (:ref:`ConnectionListener <io_realm_mongodb_sync_ConnectionListener>` listener)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Adds a listener tracking changes to the connection backing this session. See **ConnectionState (?)**for further details.
+Adds a listener tracking changes to the connection backing this session. See :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>`for further details.
 
 
 Parameters
@@ -387,7 +387,7 @@ removeConnectionChangeListener
 public synchronized **void (?)** removeConnectionChangeListener (:ref:`ConnectionListener <io_realm_mongodb_sync_ConnectionListener>` listener)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Removes a previously registered **ConnectionListener (?)**.
+Removes a previously registered :ref:`ConnectionListener <io_realm_mongodb_sync_ConnectionListener>`.
 
 
 Parameters

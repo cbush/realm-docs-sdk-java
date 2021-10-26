@@ -14,7 +14,7 @@ io.realm.mongodb.UserIdentity
 
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
-Each User is represented by 1 or more identities each defined by an **Credentials.Provider (?)**. This class represents the identity defined by a specific provider.
+Each User is represented by 1 or more identities each defined by an :ref:`Credentials.Provider <io_realm_mongodb_Credentials_Provider>`. This class represents the identity defined by a specific provider.
 
 
 Method Summary

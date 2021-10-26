@@ -18,9 +18,9 @@ io.realm.RealmList<E>
 
 - :ref:`io.realm.OrderedRealmCollection <io_realm_OrderedRealmCollection>`
 
-RealmList is used to model one-to-many relationships in a **io.realm.RealmObject (?)**. RealmList has two modes: A managed and unmanaged mode. In managed mode all objects are persisted inside a Realm, in unmanaged mode it works as a normal ArrayList.
+RealmList is used to model one-to-many relationships in a :ref:`io.realm.RealmObject <io_realm_RealmObject>`. RealmList has two modes: A managed and unmanaged mode. In managed mode all objects are persisted inside a Realm, in unmanaged mode it works as a normal ArrayList.
 
-Only Realm can create managed RealmLists. Managed RealmLists will automatically update the content whenever the underlying Realm is updated, and can only be accessed using the getter of a **io.realm.RealmObject (?)**.
+Only Realm can create managed RealmLists. Managed RealmLists will automatically update the content whenever the underlying Realm is updated, and can only be accessed using the getter of a :ref:`io.realm.RealmObject <io_realm_RealmObject>`.
 
 
 
@@ -28,7 +28,7 @@ Unmanaged RealmLists can be created by the user and can contain both managed and
 
 
 
-**RealmList (?)**can contain more elements than ``Integer.MAX_VALUE``. In that case, you can access only first ``Integer.MAX_VALUE``elements in it.
+:ref:`RealmList <io_realm_RealmList>`can contain more elements than ``Integer.MAX_VALUE``. In that case, you can access only first ``Integer.MAX_VALUE``elements in it.
 
 
 
@@ -468,7 +468,7 @@ Method Summary
    * - public :ref:`Realm <io_realm_Realm>`
      - :ref:`getRealm <io_realm_RealmList_getRealm____>` ()
        
-       Returns the **Realm (?)**instance to which this collection belongs.
+       Returns the :ref:`Realm <io_realm_Realm>`instance to which this collection belongs.
        
        
        
@@ -502,7 +502,7 @@ Method Summary
    * - public **void (?)**
      - :ref:`addChangeListener <io_realm_RealmList_addChangeListener__OrderedRealmCollectionChangeListener_RealmList_E____>` (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmList\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
        
-       Adds a change listener to this **RealmList (?)**.
+       Adds a change listener to this :ref:`RealmList <io_realm_RealmList>`.
        
        
        
@@ -520,7 +520,7 @@ Method Summary
    * - public **void (?)**
      - :ref:`addChangeListener <io_realm_RealmList_addChangeListener__RealmChangeListener_RealmList_E____>` (:ref:`io.realm.RealmChangeListener\<io.realm.RealmList\<E>> <io_realm_RealmChangeListener>` listener)
        
-       Adds a change listener to this **RealmList (?)**.
+       Adds a change listener to this :ref:`RealmList <io_realm_RealmList>`.
        
        
        
@@ -1130,7 +1130,7 @@ getRealm
 public :ref:`Realm <io_realm_Realm>` getRealm ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **Realm (?)**instance to which this collection belongs.
+Returns the :ref:`Realm <io_realm_Realm>`instance to which this collection belongs.
 
 Calling **Realm#close() (?)**on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the list.
 
@@ -1213,7 +1213,7 @@ asChangesetObservable
 public **<any> (?)** asChangesetObservable ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns an Rx Observable that monitors changes to this RealmList. It will emit the current RealmList when subscribed. For each update to the RealmList a pair consisting of the RealmList and the **OrderedCollectionChangeSet (?)**will be sent. The changeset will be ``null``the first time an RealmList is emitted.
+Returns an Rx Observable that monitors changes to this RealmList. It will emit the current RealmList when subscribed. For each update to the RealmList a pair consisting of the RealmList and the :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>`will be sent. The changeset will be ``null``the first time an RealmList is emitted.
 
 RealmList will continually be emitted as the RealmList is updated - ``onComplete``will never be called.
 
@@ -1257,7 +1257,7 @@ addChangeListener
 public **void (?)** addChangeListener (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmList\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Adds a change listener to this **RealmList (?)**.
+Adds a change listener to this :ref:`RealmList <io_realm_RealmList>`.
 
 Registering a change listener will not prevent the underlying RealmList from being garbage collected. If the RealmList is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
@@ -1301,7 +1301,7 @@ ______
 public **void (?)** addChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmList\<E>> <io_realm_RealmChangeListener>` listener)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Adds a change listener to this **RealmList (?)**.
+Adds a change listener to this :ref:`RealmList <io_realm_RealmList>`.
 
 Registering a change listener will not prevent the underlying RealmList from being garbage collected. If the RealmList is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 

@@ -14,15 +14,15 @@ io.realm.DynamicRealm
 
 - **io.realm.BaseRealm (?)**
 
-DynamicRealm is a dynamic variant of **io.realm.Realm (?)**. This means that all access to data and/or queries are done using string based class names instead of class type references.
+DynamicRealm is a dynamic variant of :ref:`io.realm.Realm <io_realm_Realm>`. This means that all access to data and/or queries are done using string based class names instead of class type references.
 
 This is useful during migrations or when working with string-based data like CSV or XML files.
 
-The same **io.realm.RealmConfiguration (?)**can be used to open a Realm file in both dynamic and typed mode, but modifying the schema while having both a typed and dynamic version open is highly discouraged and will most likely crash the typed Realm. During migrations only a DynamicRealm will be open.
+The same :ref:`io.realm.RealmConfiguration <io_realm_RealmConfiguration>`can be used to open a Realm file in both dynamic and typed mode, but modifying the schema while having both a typed and dynamic version open is highly discouraged and will most likely crash the typed Realm. During migrations only a DynamicRealm will be open.
 
 
 
-Dynamic Realms do not enforce schemas or schema versions and **RealmMigration (?)**code is not used even if it has been defined in the **RealmConfiguration (?)**.
+Dynamic Realms do not enforce schemas or schema versions and :ref:`RealmMigration <io_realm_RealmMigration>`code is not used even if it has been defined in the :ref:`RealmConfiguration <io_realm_RealmConfiguration>`.
 
 
 
@@ -57,7 +57,7 @@ Method Summary
    * - public static :ref:`DynamicRealm <io_realm_DynamicRealm>`
      - :ref:`getInstance <io_realm_DynamicRealm_getInstance__RealmConfiguration__>` (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration)
        
-       Realm static constructor that returns a dynamic variant of the Realm instance defined by provided **io.realm.RealmConfiguration (?)**.
+       Realm static constructor that returns a dynamic variant of the Realm instance defined by provided :ref:`io.realm.RealmConfiguration <io_realm_RealmConfiguration>`.
        
        
        
@@ -67,7 +67,7 @@ Method Summary
    * - public static :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
      - :ref:`getInstanceAsync <io_realm_DynamicRealm_getInstanceAsync__RealmConfiguration__DynamicRealm_Callback__>` (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration, :ref:`DynamicRealm.Callback <io_realm_DynamicRealm_Callback>` callback)
        
-       The creation of the first Realm instance per **RealmConfiguration (?)**in a process can take some time as all initialization code need to run at that point (Setting up the Realm, validating schemas and creating initial data).
+       The creation of the first Realm instance per :ref:`RealmConfiguration <io_realm_RealmConfiguration>`in a process can take some time as all initialization code need to run at that point (Setting up the Realm, validating schemas and creating initial data).
        
        
        
@@ -236,7 +236,7 @@ getInstance
 public static :ref:`DynamicRealm <io_realm_DynamicRealm>` getInstance (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Realm static constructor that returns a dynamic variant of the Realm instance defined by provided **io.realm.RealmConfiguration (?)**. Dynamic Realms do not care about schemaVersion and schemas, so opening a DynamicRealm will never trigger a migration.
+Realm static constructor that returns a dynamic variant of the Realm instance defined by provided :ref:`io.realm.RealmConfiguration <io_realm_RealmConfiguration>`. Dynamic Realms do not care about schemaVersion and schemas, so opening a DynamicRealm will never trigger a migration.
 
 
 Throws
@@ -255,13 +255,13 @@ getInstanceAsync
 public static :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` getInstanceAsync (:ref:`RealmConfiguration <io_realm_RealmConfiguration>` configuration, :ref:`DynamicRealm.Callback <io_realm_DynamicRealm_Callback>` callback)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The creation of the first Realm instance per **RealmConfiguration (?)**in a process can take some time as all initialization code need to run at that point (Setting up the Realm, validating schemas and creating initial data). This method places the initialization work in a background thread and deliver the Realm instance to the caller thread asynchronously after the initialization is finished.
+The creation of the first Realm instance per :ref:`RealmConfiguration <io_realm_RealmConfiguration>`in a process can take some time as all initialization code need to run at that point (Setting up the Realm, validating schemas and creating initial data). This method places the initialization work in a background thread and deliver the Realm instance to the caller thread asynchronously after the initialization is finished.
 
 
 Parameters
 __________
 
-- ``configuration - ``**RealmConfiguration (?)**used to open the Realm.
+- ``configuration - ``:ref:`RealmConfiguration <io_realm_RealmConfiguration>`used to open the Realm.
    
    
    
@@ -460,7 +460,7 @@ public **void (?)** executeTransaction (:ref:`DynamicRealm.Transaction <io_realm
 
 Executes a given transaction on the DynamicRealm. **#beginTransaction() (?)**and **#commitTransaction() (?)**will be called automatically. If any exception is thrown during the transaction **#cancelTransaction() (?)**will be called instead of **#commitTransaction() (?)**.
 
-Calling this method from the UI thread will throw a **RealmException (?)**. Doing so may result in a drop of frames or even ANRs. We recommend calling this method from a non-UI thread or using **#executeTransactionAsync(Transaction) (?)**instead.
+Calling this method from the UI thread will throw a :ref:`RealmException <io_realm_exceptions_RealmException>`. Doing so may result in a drop of frames or even ANRs. We recommend calling this method from a non-UI thread or using **#executeTransactionAsync(Transaction) (?)**instead.
 
 
 
@@ -468,7 +468,7 @@ Calling this method from the UI thread will throw a **RealmException (?)**. Doin
 Parameters
 __________
 
-- ``transaction - ``**Transaction (?)**to execute.
+- ``transaction - ``:ref:`Transaction <io_realm_DynamicRealm_Transaction>`to execute.
    
    
    
@@ -490,7 +490,7 @@ Similar to **#executeTransaction(Transaction) (?)**but runs asynchronously on a 
 Parameters
 __________
 
-- ``transaction - ``**Transaction (?)**to execute.
+- ``transaction - ``:ref:`Transaction <io_realm_DynamicRealm_Transaction>`to execute.
    
    
    
@@ -509,7 +509,7 @@ Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an On
 Parameters
 __________
 
-- ``transaction - ``**Transaction (?)**to execute.
+- ``transaction - ``:ref:`Transaction <io_realm_DynamicRealm_Transaction>`to execute.
    
    
    
@@ -530,7 +530,7 @@ Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an On
 Parameters
 __________
 
-- ``transaction - ``**Transaction (?)**to execute.
+- ``transaction - ``:ref:`Transaction <io_realm_DynamicRealm_Transaction>`to execute.
    
    
    
@@ -551,7 +551,7 @@ Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an On
 Parameters
 __________
 
-- ``transaction - ``**Transaction (?)**to execute.
+- ``transaction - ``:ref:`Transaction <io_realm_DynamicRealm_Transaction>`to execute.
    
    
    

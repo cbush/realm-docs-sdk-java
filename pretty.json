@@ -1,0 +1,895 @@
+{
+   "path" : "/io.realm.annotations.LinkingObjects",
+   "root" : {
+      "type" : "root",
+      "children" : [
+         {
+            "type" : "heading",
+            "depth" : 1,
+            "children" : [
+               {
+                  "type" : "text",
+                  "value" : "io.realm.annotations.LinkingObjects"
+               }
+            ]
+         },
+         {
+            "value" : "<a name=\"io_realm_annotations_LinkingObjects\" ></a>",
+            "entity" : {
+               "pageUri" : "/io.realm.annotations.LinkingObjects",
+               "canonicalName" : "io.realm.annotations.LinkingObjects",
+               "data" : {
+                  "category" : "class"
+               }
+            },
+            "anchorName" : "io_realm_annotations_LinkingObjects",
+            "type" : "html"
+         },
+         {
+            "type" : "paragraph",
+            "children" : [
+               {
+                  "children" : [
+                     {
+                        "value" : "Implemented interfaces:",
+                        "type" : "text"
+                     }
+                  ],
+                  "type" : "emphasis"
+               }
+            ]
+         },
+         {
+            "type" : "list",
+            "ordered" : false,
+            "children" : [
+               {
+                  "children" : [
+                     {
+                        "children" : [
+                           {
+                              "value" : "java.lang.annotation.Annotation",
+                              "type" : "text"
+                           },
+                           {
+                              "value" : " (?)",
+                              "type" : "text"
+                           }
+                        ],
+                        "isPending" : true,
+                        "targetCanonicalName" : "java.lang.annotation.Annotation",
+                        "linkText" : "java.lang.annotation.Annotation",
+                        "type" : "strong"
+                     }
+                  ],
+                  "type" : "listItem"
+               }
+            ]
+         },
+         {
+            "type" : "root",
+            "children" : [
+               {
+                  "type" : "paragraph",
+                  "children" : [
+                     {
+                        "value" : "Annotation for defining a reverse relationship from one class to another. This annotation can only be added to a field of the type ",
+                        "type" : "text"
+                     },
+                     {
+                        "value" : "RealmResults",
+                        "type" : "inlineCode"
+                     },
+                     {
+                        "value" : ".",
+                        "type" : "text"
+                     }
+                  ]
+               },
+               {
+                  "children" : [
+                     {
+                        "value" : " To expose reverse relationships for use, create a declaration as follows:\n ",
+                        "type" : "text"
+                     },
+                     {
+                        "type" : "code",
+                        "lang" : "java",
+                        "value" : "\n\n public class Person extends RealmObject {\n   String name;\n   Dog dog; // Normal relation\n }\n\n public class Dog extends RealmObject {\n   // This holds all Person objects with a relation to this Dog object (= linking objects)\n   \\@LinkingObjects(\"dog\")\n   final RealmResults>Person< owners = null;\n }\n\n // Find all Dogs with at least one owner named John\n realm.where(Dog.class).equalTo(\"owners.name\", \"John\").findAll();\n "
+                     },
+                     {
+                        "value" : "\n ",
+                        "type" : "text"
+                     }
+                  ],
+                  "type" : "paragraph"
+               },
+               {
+                  "type" : "text",
+                  "value" : "In the above example `Person` is related to `Dog` through the field `dog`. This in turn means that an implicit reverse relationship exists between the class `Dog` and the class `Person`. This inverse relationship is made public and queryable by the `RealmResults` field annotated with `@LinkingObject`. This makes it possible to query properties of the dogs owner without having to manually maintain a \"owner\" field in the `Dog` class.",
+                  "position" : {
+                     "end" : {
+                        "offset" : 3208,
+                        "line" : 12,
+                        "column" : 2
+                     },
+                     "start" : {
+                        "column" : 8,
+                        "offset" : 2765,
+                        "line" : 6
+                     }
+                  }
+               },
+               {
+                  "children" : [
+                     {
+                        "position" : {
+                           "start" : {
+                              "offset" : 3211,
+                              "line" : 12,
+                              "column" : 5
+                           },
+                           "end" : {
+                              "offset" : 3261,
+                              "line" : 14,
+                              "column" : 2
+                           }
+                        },
+                        "value" : "Linking objects have the following properties:",
+                        "type" : "text"
+                     }
+                  ],
+                  "position" : {
+                     "start" : {
+                        "line" : 12,
+                        "offset" : 3208,
+                        "column" : 2
+                     },
+                     "end" : {
+                        "column" : 2,
+                        "offset" : 3261,
+                        "line" : 14
+                     }
+                  },
+                  "type" : "paragraph"
+               },
+               {
+                  "ordered" : false,
+                  "children" : [
+                     {
+                        "children" : [
+                           {
+                              "children" : [
+                                 {
+                                    "type" : "text",
+                                    "position" : {
+                                       "start" : {
+                                          "offset" : 3275,
+                                          "line" : 15,
+                                          "column" : 10
+                                       },
+                                       "end" : {
+                                          "column" : 77,
+                                          "offset" : 3342,
+                                          "line" : 15
+                                       }
+                                    },
+                                    "value" : "The link is maintained by Realm and only works for managed objects."
+                                 }
+                              ],
+                              "type" : "paragraph"
+                           }
+                        ],
+                        "checked" : null,
+                        "position" : {
+                           "start" : {
+                              "column" : 6,
+                              "offset" : 3271,
+                              "line" : 15
+                           },
+                           "end" : {
+                              "offset" : 3347,
+                              "line" : 15,
+                              "column" : 82
+                           }
+                        },
+                        "spread" : false,
+                        "type" : "listItem"
+                     },
+                     {
+                        "children" : [
+                           {
+                              "type" : "paragraph",
+                              "children" : [
+                                 {
+                                    "type" : "text",
+                                    "position" : {
+                                       "start" : {
+                                          "column" : 10,
+                                          "offset" : 3357,
+                                          "line" : 16
+                                       },
+                                       "end" : {
+                                          "column" : 56,
+                                          "offset" : 3403,
+                                          "line" : 16
+                                       }
+                                    },
+                                    "value" : "They can be queried just like normal relation."
+                                 }
+                              ]
+                           }
+                        ],
+                        "checked" : null,
+                        "position" : {
+                           "end" : {
+                              "column" : 61,
+                              "line" : 16,
+                              "offset" : 3408
+                           },
+                           "start" : {
+                              "offset" : 3353,
+                              "line" : 16,
+                              "column" : 6
+                           }
+                        },
+                        "type" : "listItem",
+                        "spread" : false
+                     },
+                     {
+                        "type" : "listItem",
+                        "spread" : false,
+                        "position" : {
+                           "start" : {
+                              "offset" : 3414,
+                              "line" : 17,
+                              "column" : 6
+                           },
+                           "end" : {
+                              "offset" : 3470,
+                              "line" : 17,
+                              "column" : 62
+                           }
+                        },
+                        "checked" : null,
+                        "children" : [
+                           {
+                              "type" : "paragraph",
+                              "children" : [
+                                 {
+                                    "position" : {
+                                       "start" : {
+                                          "column" : 10,
+                                          "offset" : 3418,
+                                          "line" : 17
+                                       },
+                                       "end" : {
+                                          "offset" : 3465,
+                                          "line" : 17,
+                                          "column" : 57
+                                       }
+                                    },
+                                    "value" : "They can be followed just like normal relation.",
+                                    "type" : "text"
+                                 }
+                              ]
+                           }
+                        ]
+                     },
+                     {
+                        "position" : {
+                           "end" : {
+                              "line" : 18,
+                              "offset" : 3531,
+                              "column" : 61
+                           },
+                           "start" : {
+                              "column" : 6,
+                              "line" : 18,
+                              "offset" : 3476
+                           }
+                        },
+                        "checked" : null,
+                        "children" : [
+                           {
+                              "children" : [
+                                 {
+                                    "value" : "They are ignored when doing a `copyToRealm().`",
+                                    "position" : {
+                                       "end" : {
+                                          "offset" : 3526,
+                                          "line" : 18,
+                                          "column" : 56
+                                       },
+                                       "start" : {
+                                          "column" : 10,
+                                          "offset" : 3480,
+                                          "line" : 18
+                                       }
+                                    },
+                                    "type" : "text"
+                                 }
+                              ],
+                              "type" : "paragraph"
+                           }
+                        ],
+                        "spread" : false,
+                        "type" : "listItem"
+                     },
+                     {
+                        "position" : {
+                           "start" : {
+                              "offset" : 3537,
+                              "line" : 19,
+                              "column" : 6
+                           },
+                           "end" : {
+                              "line" : 19,
+                              "offset" : 3594,
+                              "column" : 63
+                           }
+                        },
+                        "checked" : null,
+                        "children" : [
+                           {
+                              "children" : [
+                                 {
+                                    "value" : "They are ignored when doing a `copyFromRealm().`",
+                                    "position" : {
+                                       "start" : {
+                                          "offset" : 3541,
+                                          "line" : 19,
+                                          "column" : 10
+                                       },
+                                       "end" : {
+                                          "column" : 58,
+                                          "offset" : 3589,
+                                          "line" : 19
+                                       }
+                                    },
+                                    "type" : "text"
+                                 }
+                              ],
+                              "type" : "paragraph"
+                           }
+                        ],
+                        "spread" : false,
+                        "type" : "listItem"
+                     },
+                     {
+                        "position" : {
+                           "start" : {
+                              "column" : 6,
+                              "line" : 20,
+                              "offset" : 3600
+                           },
+                           "end" : {
+                              "line" : 20,
+                              "offset" : 3706,
+                              "column" : 112
+                           }
+                        },
+                        "children" : [
+                           {
+                              "children" : [
+                                 {
+                                    "value" : "They are ignored when using the various `createObjectFromJson*` and `createAllFromJson*` methods.",
+                                    "position" : {
+                                       "start" : {
+                                          "column" : 10,
+                                          "line" : 20,
+                                          "offset" : 3604
+                                       },
+                                       "end" : {
+                                          "column" : 107,
+                                          "offset" : 3701,
+                                          "line" : 20
+                                       }
+                                    },
+                                    "type" : "text"
+                                 }
+                              ],
+                              "type" : "paragraph"
+                           }
+                        ],
+                        "checked" : null,
+                        "type" : "listItem",
+                        "spread" : false
+                     },
+                     {
+                        "children" : [
+                           {
+                              "type" : "paragraph",
+                              "children" : [
+                                 {
+                                    "type" : "text",
+                                    "position" : {
+                                       "end" : {
+                                          "column" : 62,
+                                          "line" : 22,
+                                          "offset" : 3883
+                                       },
+                                       "start" : {
+                                          "offset" : 3716,
+                                          "line" : 21,
+                                          "column" : 10
+                                       }
+                                    },
+                                    "value" : "Listeners on an object with a `@LinkingObject` field will not be triggered if the linking objects change, e.g: if another object drops a reference to this object."
+                                 }
+                              ]
+                           }
+                        ],
+                        "checked" : null,
+                        "position" : {
+                           "end" : {
+                              "column" : 67,
+                              "line" : 22,
+                              "offset" : 3888
+                           },
+                           "start" : {
+                              "column" : 6,
+                              "offset" : 3712,
+                              "line" : 21
+                           }
+                        },
+                        "spread" : false,
+                        "type" : "listItem"
+                     }
+                  ],
+                  "start" : null,
+                  "position" : {
+                     "start" : {
+                        "line" : 14,
+                        "offset" : 3261,
+                        "column" : 2
+                     },
+                     "end" : {
+                        "offset" : 3895,
+                        "line" : 23,
+                        "column" : 7
+                     }
+                  },
+                  "type" : "list",
+                  "spread" : false
+               },
+               {
+                  "children" : [
+                     {
+                        "type" : "text",
+                        "position" : {
+                           "end" : {
+                              "line" : 26,
+                              "offset" : 3954,
+                              "column" : 2
+                           },
+                           "start" : {
+                              "column" : 5,
+                              "line" : 24,
+                              "offset" : 3900
+                           }
+                        },
+                        "value" : "In addition, they have the following restrictions:"
+                     }
+                  ],
+                  "position" : {
+                     "end" : {
+                        "column" : 2,
+                        "offset" : 3954,
+                        "line" : 26
+                     },
+                     "start" : {
+                        "column" : 2,
+                        "offset" : 3897,
+                        "line" : 24
+                     }
+                  },
+                  "type" : "paragraph"
+               },
+               {
+                  "position" : {
+                     "end" : {
+                        "offset" : 6613,
+                        "line" : 33,
+                        "column" : 7
+                     },
+                     "start" : {
+                        "offset" : 3954,
+                        "line" : 26,
+                        "column" : 2
+                     }
+                  },
+                  "start" : null,
+                  "children" : [
+                     {
+                        "type" : "listItem",
+                        "spread" : false,
+                        "position" : {
+                           "end" : {
+                              "offset" : 5655,
+                              "line" : 27,
+                              "column" : 1697
+                           },
+                           "start" : {
+                              "column" : 6,
+                              "line" : 27,
+                              "offset" : 3964
+                           }
+                        },
+                        "children" : [
+                           {
+                              "children" : [
+                                 {
+                                    "children" : [
+                                       {
+                                          "value" : "@",
+                                          "type" : "text"
+                                       },
+                                       {
+                                          "value" : "Ignore takes precedence. A ",
+                                          "type" : "text"
+                                       },
+                                       {
+                                          "value" : "@",
+                                          "type" : "text"
+                                       },
+                                       {
+                                          "value" : "LinkingObjects annotation on ",
+                                          "type" : "text"
+                                       },
+                                       {
+                                          "type" : "text",
+                                          "value" : "@"
+                                       },
+                                       {
+                                          "value" : "Ignore field will be ignored.",
+                                          "type" : "text"
+                                       }
+                                    ],
+                                    "type" : "paragraph"
+                                 }
+                              ],
+                              "type" : "paragraph"
+                           }
+                        ],
+                        "checked" : null
+                     },
+                     {
+                        "position" : {
+                           "end" : {
+                              "column" : 586,
+                              "offset" : 6241,
+                              "line" : 28
+                           },
+                           "start" : {
+                              "offset" : 5661,
+                              "line" : 28,
+                              "column" : 6
+                           }
+                        },
+                        "checked" : null,
+                        "children" : [
+                           {
+                              "type" : "paragraph",
+                              "children" : [
+                                 {
+                                    "type" : "paragraph",
+                                    "children" : [
+                                       {
+                                          "value" : "The annotated field cannot be ",
+                                          "type" : "text"
+                                       },
+                                       {
+                                          "type" : "text",
+                                          "value" : "@"
+                                       },
+                                       {
+                                          "type" : "text",
+                                          "value" : "Required."
+                                       }
+                                    ]
+                                 }
+                              ]
+                           }
+                        ],
+                        "type" : "listItem",
+                        "spread" : false
+                     },
+                     {
+                        "checked" : null,
+                        "children" : [
+                           {
+                              "type" : "paragraph",
+                              "children" : [
+                                 {
+                                    "type" : "text",
+                                    "position" : {
+                                       "end" : {
+                                          "column" : 46,
+                                          "line" : 29,
+                                          "offset" : 6287
+                                       },
+                                       "start" : {
+                                          "offset" : 6251,
+                                          "line" : 29,
+                                          "column" : 10
+                                       }
+                                    },
+                                    "value" : "The annotated field must be `final`."
+                                 }
+                              ]
+                           }
+                        ],
+                        "position" : {
+                           "end" : {
+                              "line" : 29,
+                              "offset" : 6292,
+                              "column" : 51
+                           },
+                           "start" : {
+                              "line" : 29,
+                              "offset" : 6247,
+                              "column" : 6
+                           }
+                        },
+                        "type" : "listItem",
+                        "spread" : false
+                     },
+                     {
+                        "spread" : false,
+                        "type" : "listItem",
+                        "position" : {
+                           "start" : {
+                              "column" : 6,
+                              "offset" : 6298,
+                              "line" : 30
+                           },
+                           "end" : {
+                              "column" : 86,
+                              "offset" : 6378,
+                              "line" : 30
+                           }
+                        },
+                        "children" : [
+                           {
+                              "type" : "paragraph",
+                              "children" : [
+                                 {
+                                    "type" : "text",
+                                    "position" : {
+                                       "start" : {
+                                          "line" : 30,
+                                          "offset" : 6302,
+                                          "column" : 10
+                                       },
+                                       "end" : {
+                                          "offset" : 6373,
+                                          "line" : 30,
+                                          "column" : 81
+                                       }
+                                    },
+                                    "value" : "The annotation argument (the name of the backlinked field) is required."
+                                 }
+                              ]
+                           }
+                        ],
+                        "checked" : null
+                     },
+                     {
+                        "position" : {
+                           "start" : {
+                              "offset" : 6384,
+                              "line" : 31,
+                              "column" : 6
+                           },
+                           "end" : {
+                              "column" : 101,
+                              "line" : 31,
+                              "offset" : 6479
+                           }
+                        },
+                        "children" : [
+                           {
+                              "type" : "paragraph",
+                              "children" : [
+                                 {
+                                    "position" : {
+                                       "start" : {
+                                          "column" : 10,
+                                          "offset" : 6388,
+                                          "line" : 31
+                                       },
+                                       "end" : {
+                                          "column" : 96,
+                                          "offset" : 6474,
+                                          "line" : 31
+                                       }
+                                    },
+                                    "value" : "The annotation argument must be a simple field name. It cannot contain periods ('.').",
+                                    "type" : "text"
+                                 }
+                              ]
+                           }
+                        ],
+                        "checked" : null,
+                        "spread" : false,
+                        "type" : "listItem"
+                     },
+                     {
+                        "children" : [
+                           {
+                              "type" : "paragraph",
+                              "children" : [
+                                 {
+                                    "type" : "text",
+                                    "value" : "The annotated field must be of type `RealmResults<T>` where T is concrete class that extends `RealmModel`.",
+                                    "position" : {
+                                       "end" : {
+                                          "column" : 122,
+                                          "offset" : 6601,
+                                          "line" : 32
+                                       },
+                                       "start" : {
+                                          "column" : 10,
+                                          "offset" : 6489,
+                                          "line" : 32
+                                       }
+                                    }
+                                 }
+                              ]
+                           }
+                        ],
+                        "checked" : null,
+                        "position" : {
+                           "end" : {
+                              "column" : 127,
+                              "offset" : 6606,
+                              "line" : 32
+                           },
+                           "start" : {
+                              "column" : 6,
+                              "offset" : 6485,
+                              "line" : 32
+                           }
+                        },
+                        "spread" : false,
+                        "type" : "listItem"
+                     }
+                  ],
+                  "ordered" : false,
+                  "spread" : false,
+                  "type" : "list"
+               },
+               {
+                  "type" : "paragraph",
+                  "children" : [
+                     {
+                        "value" : "Note that when the source of the reverse reference (`dog` in the case above) is a `List`, there is a reverse reference for each forward reference, even if both forward references are to the same object. If the `Person` class above were defined as: ",
+                        "type" : "text"
+                     },
+                     {
+                        "type" : "code",
+                        "lang" : "java",
+                        "value" : "public class DogLover extends RealmObject {\n String name;\n List<Dog> dogs = new ArrayList<Dog>;\n }\n "
+                     },
+                     {
+                        "type" : "text",
+                        "value" : " then the following code executes without error "
+                     },
+                     {
+                        "lang" : "java",
+                        "type" : "code",
+                        "value" : "Dog fido = new Dog();\n DogLover john = new DogLover()\n john.dogs.add(fido);\n john.dogs.add(fido);\n assert john.dogs.size() == 2;\n assert fido.owners.size() == 2;\n "
+                     }
+                  ]
+               },
+               {
+                  "type" : "paragraph",
+                  "position" : {
+                     "start" : {
+                        "offset" : 8826,
+                        "line" : 41,
+                        "column" : 2
+                     },
+                     "end" : {
+                        "column" : 18,
+                        "offset" : 10250,
+                        "line" : 45
+                     }
+                  },
+                  "children" : [
+                     {
+                        "children" : [
+                           {
+                              "value" : "Querying inverse relationship is like querying any ",
+                              "type" : "text"
+                           },
+                           {
+                              "type" : "inlineCode",
+                              "value" : "RealmResults"
+                           },
+                           {
+                              "type" : "text",
+                              "value" : ". This means that an inverse relationship cannot be "
+                           },
+                           {
+                              "value" : "null",
+                              "type" : "inlineCode"
+                           },
+                           {
+                              "value" : " but it can be empty (length is 0). It is possible to query fields in the source class. This is equivalent to link queries. Please read ",
+                              "type" : "text"
+                           }
+                        ],
+                        "type" : "paragraph"
+                     },
+                     {
+                        "type" : "link",
+                        "url" : "https://realm.io/docs/java/latest/#link-queries",
+                        "children" : [
+                           {
+                              "type" : "text",
+                              "value" : "for more information",
+                              "position" : {
+                                 "end" : {
+                                    "column" : 13,
+                                    "offset" : 10245,
+                                    "line" : 45
+                                 },
+                                 "start" : {
+                                    "column" : 100,
+                                    "offset" : 10224,
+                                    "line" : 44
+                                 }
+                              }
+                           }
+                        ],
+                        "position" : {
+                           "end" : {
+                              "column" : 17,
+                              "offset" : 10249,
+                              "line" : 45
+                           },
+                           "start" : {
+                              "line" : 44,
+                              "offset" : 10166,
+                              "column" : 42
+                           }
+                        },
+                        "title" : null
+                     },
+                     {
+                        "position" : {
+                           "end" : {
+                              "column" : 18,
+                              "offset" : 10250,
+                              "line" : 45
+                           },
+                           "start" : {
+                              "line" : 45,
+                              "offset" : 10249,
+                              "column" : 17
+                           }
+                        },
+                        "value" : ".",
+                        "type" : "text"
+                     }
+                  ]
+               }
+            ],
+            "position" : {
+               "start" : {
+                  "offset" : 0,
+                  "line" : 1,
+                  "column" : 1
+               },
+               "end" : {
+                  "line" : 45,
+                  "offset" : 10250,
+                  "column" : 18
+               }
+            }
+         }
+      ]
+   }
+}

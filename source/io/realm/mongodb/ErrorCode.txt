@@ -2921,7 +2921,7 @@ public :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` getCatego
 
 Returns the getCategory of the error.Errors come in 2 categories: FATAL, RECOVERABLE
 
-FATAL: The session cannot be recovered and needs to be re-created. A likely cause is that the User does not have access to this Realm. Check that the **SyncConfiguration (?)**is correct.
+FATAL: The session cannot be recovered and needs to be re-created. A likely cause is that the User does not have access to this Realm. Check that the :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`is correct.
 
 
 

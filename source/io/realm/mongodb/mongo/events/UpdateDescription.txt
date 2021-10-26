@@ -37,7 +37,7 @@ Method Summary
    * - public `Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__
      - :ref:`getRemovedFields <io_realm_mongodb_mongo_events_UpdateDescription_getRemovedFields____>` ()
        
-       Returns a `List <https://docs.oracle.com/javase/7/docs/api/java/util/List/.html>`__containing the field names that have been removed in the corresponding update.
+       Returns a `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__containing the field names that have been removed in the corresponding update.
        
        
        
@@ -131,7 +131,7 @@ getRemovedFields
 public `Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ getRemovedFields ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns a `List <https://docs.oracle.com/javase/7/docs/api/java/util/List/.html>`__containing the field names that have been removed in the corresponding update.
+Returns a `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__containing the field names that have been removed in the corresponding update.
 
 
 toUpdateDocument

@@ -14,7 +14,7 @@ io.realm.RealmResults<E>
 
 - **io.realm.OrderedRealmCollectionImpl (?)**
 
-This class holds all the matches of a **RealmQuery (?)**for a given Realm. The objects are not copied from the Realm to the RealmResults list, but are just referenced from the RealmResult instead. This saves memory and increases speed.
+This class holds all the matches of a :ref:`RealmQuery <io_realm_RealmQuery>`for a given Realm. The objects are not copied from the Realm to the RealmResults list, but are just referenced from the RealmResult instead. This saves memory and increases speed.
 
 RealmResults are live views, which means that if it is on an **Looper (?)**thread, it will automatically update its query results after a transaction has been committed. If on a non-looper thread, **Realm#refresh() (?)**must be called to update the results.
 
@@ -32,7 +32,7 @@ If a RealmResults is built on RealmList through **RealmList#where() (?)**, it wi
 
 
 
-**RealmResults (?)**can contain more elements than ``Integer.MAX_VALUE``. In that case, you can access only first ``Integer.MAX_VALUE``elements in it.
+:ref:`RealmResults <io_realm_RealmResults>`can contain more elements than ``Integer.MAX_VALUE``. In that case, you can access only first ``Integer.MAX_VALUE``elements in it.
 
 
 
@@ -271,7 +271,7 @@ Method Summary
    * - public **void (?)**
      - :ref:`addChangeListener <io_realm_RealmResults_addChangeListener__RealmChangeListener_RealmResults_E____>` (:ref:`io.realm.RealmChangeListener\<io.realm.RealmResults\<E>> <io_realm_RealmChangeListener>` listener)
        
-       Adds a change listener to this **RealmResults (?)**.
+       Adds a change listener to this :ref:`RealmResults <io_realm_RealmResults>`.
        
        
        
@@ -281,7 +281,7 @@ Method Summary
    * - public **void (?)**
      - :ref:`addChangeListener <io_realm_RealmResults_addChangeListener__OrderedRealmCollectionChangeListener_RealmResults_E____>` (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmResults\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
        
-       Adds a change listener to this **RealmResults (?)**.
+       Adds a change listener to this :ref:`RealmResults <io_realm_RealmResults>`.
        
        
        
@@ -331,7 +331,7 @@ Method Summary
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
      - :ref:`asJSON <io_realm_RealmResults_asJSON____>` ()
        
-       Returns a JSON representation of the matches of a **RealmQuery (?)**.
+       Returns a JSON representation of the matches of a :ref:`RealmQuery <io_realm_RealmQuery>`.
        
        
        
@@ -383,7 +383,7 @@ load
 public **boolean (?)** load ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Makes an asynchronous query blocking. This will also trigger any registered **RealmChangeListener (?)**when the query completes.
+Makes an asynchronous query blocking. This will also trigger any registered :ref:`RealmChangeListener <io_realm_RealmChangeListener>`when the query completes.
 
 
 setValue
@@ -790,7 +790,7 @@ addChangeListener
 public **void (?)** addChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmResults\<E>> <io_realm_RealmChangeListener>` listener)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Adds a change listener to this **RealmResults (?)**.
+Adds a change listener to this :ref:`RealmResults <io_realm_RealmResults>`.
 
 Registering a change listener will not prevent the underlying RealmResults from being garbage collected. If the RealmResults is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
@@ -834,7 +834,7 @@ ______
 public **void (?)** addChangeListener (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmResults\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Adds a change listener to this **RealmResults (?)**.
+Adds a change listener to this :ref:`RealmResults <io_realm_RealmResults>`.
 
 Registering a change listener will not prevent the underlying RealmResults from being garbage collected. If the RealmResults is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
@@ -998,7 +998,7 @@ asChangesetObservable
 public **<any> (?)** asChangesetObservable ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns an Rx Observable that monitors changes to this RealmResults. It will emit the current RealmResults when subscribed. For each update to the RealmResult a pair consisting of the RealmResults and the **OrderedCollectionChangeSet (?)**will be sent. The changeset will be ``null``the first time an RealmResults is emitted.
+Returns an Rx Observable that monitors changes to this RealmResults. It will emit the current RealmResults when subscribed. For each update to the RealmResult a pair consisting of the RealmResults and the :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>`will be sent. The changeset will be ``null``the first time an RealmResults is emitted.
 
 RealmResults will continually be emitted as the RealmResults are updated - ``onComplete``will never be called.
 
@@ -1042,7 +1042,7 @@ asJSON
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ asJSON ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns a JSON representation of the matches of a **RealmQuery (?)**. Cycles will be returned as row indices. This is a helper method used to inspect data, or for debugging purpose, this method could pull a large string which could cause an OutOfMemory error.
+Returns a JSON representation of the matches of a :ref:`RealmQuery <io_realm_RealmQuery>`. Cycles will be returned as row indices. This is a helper method used to inspect data, or for debugging purpose, this method could pull a large string which could cause an OutOfMemory error.
 
 
 

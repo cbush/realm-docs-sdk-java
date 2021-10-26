@@ -16,7 +16,7 @@ io.realm.mongodb.App
 
 An *App* is the main client-side entry point for interacting with a *MongoDB Realm App*.The *App* can be used to:
 
-- Register uses and perform various user-related operations through authentication providers (**io.realm.mongodb.auth.ApiKeyAuth (?)**, **EmailPasswordAuthImpl (?)**)
+- Register uses and perform various user-related operations through authentication providers (:ref:`io.realm.mongodb.auth.ApiKeyAuth <io_realm_mongodb_auth_ApiKeyAuth>`, **EmailPasswordAuthImpl (?)**)
    
    
    
@@ -24,12 +24,12 @@ An *App* is the main client-side entry point for interacting with a *MongoDB Rea
 - Synchronize data between the local device and a remote Realm App with Synchronized Realms
    
    
-- Invoke Realm App functions with **Functions (?)**
+- Invoke Realm App functions with :ref:`Functions <io_realm_mongodb_functions_Functions>`
    
    
    
    
-- Access remote data from MongoDB databases with a **io.realm.mongodb.mongo.MongoClient (?)**
+- Access remote data from MongoDB databases with a :ref:`io.realm.mongodb.mongo.MongoClient <io_realm_mongodb_mongo_MongoClient>`
    
    
    
@@ -77,7 +77,7 @@ To register a new user and/or login with an existing user do as shown below:
         User user = APP.login(Credentials.emailPassword(username, password))
     
 
-With an authorized user you can synchronize data between the local device and the remote Realm App by opening a Realm with a **io.realm.mongodb.sync.SyncConfiguration (?)**as indicated below:
+With an authorized user you can synchronize data between the local device and the remote Realm App by opening a Realm with a :ref:`io.realm.mongodb.sync.SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`as indicated below:
 
 
 

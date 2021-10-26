@@ -25,7 +25,7 @@ Enum Constant Summary
      - Description
    
    * - :ref:`CURRENT_CHANGES <io_realm_mongodb_sync_ProgressMode_CURRENT_CHANGES>`
-     - When registering the **ProgressListener (?)**, it will record the current size of changes, and will only continue to report progress updates until those changes have been either downloaded or uploaded.
+     - When registering the :ref:`ProgressListener <io_realm_mongodb_sync_ProgressListener>`, it will record the current size of changes, and will only continue to report progress updates until those changes have been either downloaded or uploaded.
        
        
        
@@ -33,7 +33,7 @@ Enum Constant Summary
        
    
    * - :ref:`INDEFINITELY <io_realm_mongodb_sync_ProgressMode_INDEFINITELY>`
-     - A **ProgressListener (?)**registered in this mode, will continue to report progress changes, even if changes are being added after the listener was registered.
+     - A :ref:`ProgressListener <io_realm_mongodb_sync_ProgressListener>`registered in this mode, will continue to report progress changes, even if changes are being added after the listener was registered.
        
        
        

@@ -72,11 +72,11 @@ The types ``short``, ``int``, and ``long`` are mapped to ``long`` when storing w
 
 The only restriction a RealmObject has is that fields are not allowed to be final or volatile. Any method as well as public fields are allowed. When providing custom constructors, a public constructor with no arguments must be declared.
 
-Fields annotated with **io.realm.annotations.Ignore (?)**don't have these restrictions and don't require either a getter or setter.
+Fields annotated with :ref:`io.realm.annotations.Ignore <io_realm_annotations_Ignore>`don't have these restrictions and don't require either a getter or setter.
 
 
 
-Realm will create indexes for fields annotated with **io.realm.annotations.Index (?)**. This will speedup queries but will have a negative impact on inserts and updates.
+Realm will create indexes for fields annotated with :ref:`io.realm.annotations.Index <io_realm_annotations_Index>`. This will speedup queries but will have a negative impact on inserts and updates.
 
 
 
@@ -116,7 +116,7 @@ Method Summary
    * - public final **boolean (?)**
      - :ref:`isValid <io_realm_RealmObject_isValid____>` ()
        
-       Checks if the RealmObject is still valid to use i.e., the RealmObject hasn't been deleted nor has the **io.realm.Realm (?)**been closed.
+       Checks if the RealmObject is still valid to use i.e., the RealmObject hasn't been deleted nor has the :ref:`io.realm.Realm <io_realm_Realm>`been closed.
        
        
        
@@ -126,7 +126,7 @@ Method Summary
    * - public static **boolean (?)**
      - :ref:`isValid <io_realm_RealmObject_isValid__E__>` <**E (?)** >(**E (?)** object)
        
-       Checks if the RealmObject is still valid to use i.e., the RealmObject hasn't been deleted nor has the **io.realm.Realm (?)**been closed.
+       Checks if the RealmObject is still valid to use i.e., the RealmObject hasn't been deleted nor has the :ref:`io.realm.Realm <io_realm_Realm>`been closed.
        
        
        
@@ -200,7 +200,7 @@ Method Summary
    * - public :ref:`Realm <io_realm_Realm>`
      - :ref:`getRealm <io_realm_RealmObject_getRealm____>` ()
        
-       Returns **Realm (?)**instance where this **RealmObject (?)**belongs.
+       Returns :ref:`Realm <io_realm_Realm>`instance where this :ref:`RealmObject <io_realm_RealmObject>`belongs.
        
        
        
@@ -210,7 +210,7 @@ Method Summary
    * - public static :ref:`Realm <io_realm_Realm>`
      - :ref:`getRealm <io_realm_RealmObject_getRealm__RealmModel__>` (:ref:`RealmModel <io_realm_RealmModel>` model)
        
-       returns **Realm (?)**instance where the ``model``belongs.
+       returns :ref:`Realm <io_realm_Realm>`instance where the ``model``belongs.
        
        
        
@@ -392,7 +392,7 @@ isValid
 public final **boolean (?)** isValid ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Checks if the RealmObject is still valid to use i.e., the RealmObject hasn't been deleted nor has the **io.realm.Realm (?)**been closed. It will always return ``true``for unmanaged objects.
+Checks if the RealmObject is still valid to use i.e., the RealmObject hasn't been deleted nor has the :ref:`io.realm.Realm <io_realm_Realm>`been closed. It will always return ``true``for unmanaged objects.
 
 Note that this can be used to check the validity of certain conditions such as being ``null``when observed.
 
@@ -421,7 +421,7 @@ ________
 public static **boolean (?)** isValid <**E (?)** >(**E (?)** object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Checks if the RealmObject is still valid to use i.e., the RealmObject hasn't been deleted nor has the **io.realm.Realm (?)**been closed. It will always return ``true``for unmanaged objects.
+Checks if the RealmObject is still valid to use i.e., the RealmObject hasn't been deleted nor has the :ref:`io.realm.Realm <io_realm_Realm>`been closed. It will always return ``true``for unmanaged objects.
 
 
 Parameters
@@ -463,11 +463,11 @@ freeze
 public final **E (?)** freeze <**E (?)** >()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns a frozen snapshot of this object. The frozen copy can be read and queried from any thread without throwing an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__.
+Returns a frozen snapshot of this object. The frozen copy can be read and queried from any thread without throwing an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__.
 
 Freezing a RealmObject also creates a frozen Realm which has its own lifecycle, but if the live Realm that spawned the original collection is fully closed (i.e. all instances across all threads are closed), the frozen Realm and object will be closed as well.
 
-Frozen objects can be queried as normal, but trying to mutate it in any way or attempting to register a listener will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__.
+Frozen objects can be queried as normal, but trying to mutate it in any way or attempting to register a listener will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__.
 
 
 
@@ -484,11 +484,11 @@ ______
 public static **E (?)** freeze <**E (?)** >(**E (?)** object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns a frozen snapshot of this object. The frozen copy can be read and queried from any thread without throwing an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__.
+Returns a frozen snapshot of this object. The frozen copy can be read and queried from any thread without throwing an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__.
 
 Freezing a RealmObject also creates a frozen Realm which has its own lifecycle, but if the live Realm that spawned the original collection is fully closed (i.e. all instances across all threads are closed), the frozen Realm and object will be closed as well.
 
-Frozen objects can be queried as normal, but trying to mutate it in any way or attempting to register a listener will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException/.html>`__.
+Frozen objects can be queried as normal, but trying to mutate it in any way or attempting to register a listener will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__.
 
 
 
@@ -508,11 +508,11 @@ isLoaded
 public final **boolean (?)** isLoaded ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Checks if the query used to find this RealmObject has completed.Async methods like **RealmQuery#findFirstAsync() (?)**return an **RealmObject (?)**that represents the future result of the **RealmQuery (?)**. It can be considered similar to a `java.util.concurrent.Future <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Future/.html>`__in this regard.
+Checks if the query used to find this RealmObject has completed.Async methods like **RealmQuery#findFirstAsync() (?)**return an :ref:`RealmObject <io_realm_RealmObject>`that represents the future result of the :ref:`RealmQuery <io_realm_RealmQuery>`. It can be considered similar to a `java.util.concurrent.Future <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Future.html>`__in this regard.
 
 
 
-Once ``isLoaded()``returns ``true``, the object represents the query result even if the query didn't find any object matching the query parameters. In this case the **RealmObject (?)**will become a "null" object.
+Once ``isLoaded()``returns ``true``, the object represents the query result even if the query didn't find any object matching the query parameters. In this case the :ref:`RealmObject <io_realm_RealmObject>`will become a "null" object.
 
 
 
@@ -555,11 +555,11 @@ ________
 public static **boolean (?)** isLoaded <**E (?)** >(**E (?)** object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Checks if the query used to find this RealmObject has completed.Async methods like **RealmQuery#findFirstAsync() (?)**return an **RealmObject (?)**that represents the future result of the **RealmQuery (?)**. It can be considered similar to a `java.util.concurrent.Future <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Future/.html>`__in this regard.
+Checks if the query used to find this RealmObject has completed.Async methods like **RealmQuery#findFirstAsync() (?)**return an :ref:`RealmObject <io_realm_RealmObject>`that represents the future result of the :ref:`RealmQuery <io_realm_RealmQuery>`. It can be considered similar to a `java.util.concurrent.Future <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Future.html>`__in this regard.
 
 
 
-Once ``isLoaded()``returns ``true``, the object represents the query result even if the query didn't find any object matching the query parameters. In this case the **RealmObject (?)**will become a "null" object.
+Once ``isLoaded()``returns ``true``, the object represents the query result even if the query didn't find any object matching the query parameters. In this case the :ref:`RealmObject <io_realm_RealmObject>`will become a "null" object.
 
 
 
@@ -646,7 +646,7 @@ getRealm
 public :ref:`Realm <io_realm_Realm>` getRealm ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns **Realm (?)**instance where this **RealmObject (?)**belongs.
+Returns :ref:`Realm <io_realm_Realm>`instance where this :ref:`RealmObject <io_realm_RealmObject>`belongs.
 
 You **must not**call **Realm#close() (?)**against returned instance.
 
@@ -661,7 +661,7 @@ ______
 public static :ref:`Realm <io_realm_Realm>` getRealm (:ref:`RealmModel <io_realm_RealmModel>` model)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-returns **Realm (?)**instance where the ``model``belongs.
+returns :ref:`Realm <io_realm_Realm>`instance where the ``model``belongs.
 
 You **must not**call **Realm#close() (?)**against returned instance.
 
@@ -671,7 +671,7 @@ You **must not**call **Realm#close() (?)**against returned instance.
 Parameters
 __________
 
-- ``model - ``an **RealmModel (?)**instance other than **DynamicRealmObject (?)**.
+- ``model - ``an :ref:`RealmModel <io_realm_RealmModel>`instance other than :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`.
    
    
    
@@ -1113,7 +1113,7 @@ asChangesetObservable
 public final **<any> (?)** asChangesetObservable <**E (?)** >()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns an Rx Observable that monitors changes to this RealmObject. It will emit the current RealmObject when subscribed to. For each update to the RealmObject a pair consisting of the RealmObject and the **ObjectChangeSet (?)**will be sent. The changeset will be ``null``the first time the RealmObject is emitted.
+Returns an Rx Observable that monitors changes to this RealmObject. It will emit the current RealmObject when subscribed to. For each update to the RealmObject a pair consisting of the RealmObject and the :ref:`ObjectChangeSet <io_realm_ObjectChangeSet>`will be sent. The changeset will be ``null``the first time the RealmObject is emitted.
 
 The RealmObject will continually be emitted as it is updated - ``onComplete``will never be called.
 
@@ -1154,7 +1154,7 @@ ________
 public static **<any> (?)** asChangesetObservable <**E (?)** >(**E (?)** object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns an Rx Observable that monitors changes to this RealmObject. It will emit the current RealmObject when subscribed to. For each update to the RealmObject a pair consisting of the RealmObject and the **ObjectChangeSet (?)**will be sent. The changeset will be ``null``the first time the RealmObject is emitted.
+Returns an Rx Observable that monitors changes to this RealmObject. It will emit the current RealmObject when subscribed to. For each update to the RealmObject a pair consisting of the RealmObject and the :ref:`ObjectChangeSet <io_realm_ObjectChangeSet>`will be sent. The changeset will be ``null``the first time the RealmObject is emitted.
 
 The RealmObject will continually be emitted as it is updated - ``onComplete``will never be called.
 

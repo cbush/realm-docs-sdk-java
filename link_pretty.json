@@ -1,0 +1,924 @@
+{
+   "modifierSpecifier" : 513,
+   "fields" : [],
+   "asString" : "io.realm.annotations.LinkingObjects",
+   "commentText" : "Annotation for defining a reverse relationship from one class to another. This annotation can\n only be added to a field of the type {@code RealmResults}.\n<pre>\n To expose reverse relationships for use, create a declaration as follows:\n {@code\n\n public class Person extends RealmObject {\n   String name;\n   Dog dog; // Normal relation\n }\n\n public class Dog extends RealmObject {\n   // This holds all Person objects with a relation to this Dog object (= linking objects)\n   \\@LinkingObjects(\"dog\")\n   final RealmResults&gt;Person&lt; owners = null;\n }\n\n // Find all Dogs with at least one owner named John\n realm.where(Dog.class).equalTo(\"owners.name\", \"John\").findAll();\n }\n </pre>\n In the above example `Person` is related to `Dog` through the field `dog`.\n This in turn means that an implicit reverse relationship exists between the class `Dog`\n and the class `Person`. This inverse relationship is made public and queryable by the `RealmResults`\n field annotated with `@LinkingObject`. This makes it possible to query properties of the dogs owner\n without having to manually maintain a \"owner\" field in the `Dog` class.\n <p>\n Linking objects have the following properties:\n <ul>\n     <li>The link is maintained by Realm and only works for managed objects.</li>\n     <li>They can be queried just like normal relation.</li>\n     <li>They can be followed just like normal relation.</li>\n     <li>They are ignored when doing a `copyToRealm().`</li>\n     <li>They are ignored when doing a `copyFromRealm().`</li>\n     <li>They are ignored when using the various `createObjectFromJson*` and `createAllFromJson*` methods.</li>\n     <li>Listeners on an object with a `@LinkingObject` field will not be triggered if the linking objects change,\n     e.g: if another object drops a reference to this object.</li>\n </ul>\n <p>\n In addition, they have the following restrictions:\n <ul>\n     <li>{@literal @}Ignore takes precedence.  A {@literal @}LinkingObjects annotation on {@literal @}Ignore field will be ignored.</li>\n     <li>The annotated field cannot be {@literal @}Required.</li>\n     <li>The annotated field must be `final`.</li>\n     <li>The annotation argument (the name of the backlinked field) is required.</li>\n     <li>The annotation argument must be a simple field name.  It cannot contain periods ('.').</li>\n     <li>The annotated field must be of type `RealmResults&lt;T&gt;` where T is concrete class that extends `RealmModel`.</li>\n </ul>\n\n Note that when the source of the reverse reference (`dog` in the case above) is a `List`, there is a reverse\n reference for each forward reference, even if both forward references are to the same object.\n If the `Person` class above were defined as:\n {@code\n\n public class DogLover extends RealmObject {\n   String name;\n   List<Dog> dogs = new ArrayList<Dog>;\n }\n }\n then the following code executes without error\n {@code\n\n Dog fido = new Dog();\n DogLover john = new DogLover()\n john.dogs.add(fido);\n john.dogs.add(fido);\n assert john.dogs.size() == 2;\n assert fido.owners.size() == 2;\n }\n <p>\n Querying inverse relationship is like querying any {@code RealmResults}. This means that an inverse relationship\n cannot be {@code null} but it can be empty (length is 0). It is possible to query fields in the source class. This is\n equivalent to link queries. Please read <a href=\"https://realm.io/docs/java/latest/#link-queries\">for more\n information</a>.",
+   "modifiers" : "public interface",
+   "firstSentenceTags" : [
+      {
+         "_class" : "Tag",
+         "text" : "Annotation for defining a reverse relationship from one class to another.",
+         "kind" : "Text",
+         "name" : "Text",
+         "firstSentenceTags" : [
+            {
+               "name" : "Text",
+               "_class" : "Tag",
+               "text" : "Annotation for defining a reverse relationship from one class to another.",
+               "kind" : "Text"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "name" : "Text",
+               "kind" : "Text",
+               "_class" : "Tag",
+               "text" : "Annotation for defining a reverse relationship from one class to another."
+            }
+         ]
+      }
+   ],
+   "typeParamTags" : [],
+   "typeParameters" : [],
+   "isEnum" : false,
+   "constructors" : [],
+   "isPrimitive" : false,
+   "interfaceTypes" : [
+      {
+         "isClass" : true,
+         "asString" : "java.lang.annotation.Annotation",
+         "qualifiedTypeName" : "java.lang.annotation.Annotation",
+         "typeName" : "Annotation",
+         "_class" : "ClassDoc",
+         "dimension" : "",
+         "isAnnotationType" : false,
+         "isPrimitive" : false,
+         "simpleTypeName" : "Annotation"
+      }
+   ],
+   "isIncluded" : true,
+   "isPackagePrivate" : false,
+   "elements" : [
+      {
+         "_class" : "AnnotationTypeElementDoc",
+         "isConstructor" : false,
+         "isPrivate" : false,
+         "isClass" : false,
+         "paramTags" : [],
+         "isNative" : false,
+         "isPublic" : true,
+         "seeTags" : [],
+         "position" : {
+            "file" : "./realm-annotations/src/main/java/io/realm/annotations/LinkingObjects.java",
+            "line" : 108,
+            "column" : 12
+         },
+         "qualifiedName" : "io.realm.annotations.LinkingObjects.value",
+         "isEnumConstant" : false,
+         "isAbstract" : false,
+         "defaultValue" : "\"\"",
+         "isField" : false,
+         "isException" : false,
+         "parameters" : [],
+         "isError" : false,
+         "isSynthetic" : false,
+         "isVarArgs" : false,
+         "containingClass" : {
+            "simpleTypeName" : "LinkingObjects",
+            "isPrimitive" : false,
+            "isAnnotationType" : true,
+            "dimension" : "",
+            "typeName" : "LinkingObjects",
+            "_class" : "ClassDoc",
+            "qualifiedTypeName" : "io.realm.annotations.LinkingObjects",
+            "modifiers" : "public interface",
+            "asString" : "io.realm.annotations.LinkingObjects",
+            "isClass" : true
+         },
+         "thrownExceptionTypes" : [],
+         "containingPackage" : {
+            "name" : "io.realm.annotations",
+            "_class" : "PackageDoc"
+         },
+         "isOrdinaryClass" : false,
+         "isMethod" : false,
+         "annotations" : [],
+         "isProtected" : false,
+         "isAnnotationType" : false,
+         "isStatic" : false,
+         "throwsTags" : [],
+         "tags" : [],
+         "isDefault" : false,
+         "isPackagePrivate" : false,
+         "returnType" : {
+            "typeName" : "String",
+            "_class" : "ClassDoc",
+            "qualifiedTypeName" : "java.lang.String",
+            "asString" : "java.lang.String",
+            "isClass" : true,
+            "simpleTypeName" : "String",
+            "isPrimitive" : false,
+            "isAnnotationType" : false,
+            "dimension" : ""
+         },
+         "name" : "value",
+         "isInterface" : false,
+         "signature" : "()",
+         "isFinal" : false,
+         "inlineTags" : [
+            {
+               "firstSentenceTags" : [
+                  {
+                     "kind" : "Text",
+                     "_class" : "Tag",
+                     "text" : "The name of a field that contains a relation to an instance of the\n class containing this annotation.",
+                     "name" : "Text"
+                  }
+               ],
+               "inlineTags" : [
+                  {
+                     "name" : "Text",
+                     "_class" : "Tag",
+                     "text" : "The name of a field that contains a relation to an instance of the\n class containing this annotation.  If this argument is not provided\n the annotation processor will abort with an ",
+                     "kind" : "Text"
+                  }
+               ],
+               "_class" : "Tag",
+               "text" : "The name of a field that contains a relation to an instance of the\n class containing this annotation.  If this argument is not provided\n the annotation processor will abort with an ",
+               "kind" : "Text",
+               "name" : "Text"
+            },
+            {
+               "kind" : "@code",
+               "text" : "IllegalArgumentException",
+               "_class" : "Tag",
+               "name" : "@code",
+               "firstSentenceTags" : [
+                  {
+                     "name" : "Text",
+                     "_class" : "Tag",
+                     "text" : "IllegalArgumentException",
+                     "kind" : "Text"
+                  }
+               ],
+               "inlineTags" : [
+                  {
+                     "name" : "Text",
+                     "kind" : "Text",
+                     "_class" : "Tag",
+                     "text" : "IllegalArgumentException"
+                  }
+               ]
+            },
+            {
+               "kind" : "Text",
+               "text" : ".",
+               "_class" : "Tag",
+               "name" : "Text",
+               "firstSentenceTags" : [
+                  {
+                     "kind" : "Text",
+                     "text" : ".",
+                     "_class" : "Tag",
+                     "name" : "Text"
+                  }
+               ],
+               "inlineTags" : [
+                  {
+                     "name" : "Text",
+                     "_class" : "Tag",
+                     "text" : ".",
+                     "kind" : "Text"
+                  }
+               ]
+            }
+         ],
+         "isAnnotationTypeElement" : true,
+         "flatSignature" : "()",
+         "typeParamTags" : [],
+         "modifierSpecifier" : 1025,
+         "modifiers" : "public",
+         "commentText" : "The name of a field that contains a relation to an instance of the\n class containing this annotation.  If this argument is not provided\n the annotation processor will abort with an {@code IllegalArgumentException}.",
+         "firstSentenceTags" : [
+            {
+               "_class" : "Tag",
+               "text" : "The name of a field that contains a relation to an instance of the\n class containing this annotation.",
+               "kind" : "Text",
+               "name" : "Text",
+               "firstSentenceTags" : [
+                  {
+                     "kind" : "Text",
+                     "_class" : "Tag",
+                     "text" : "The name of a field that contains a relation to an instance of the\n class containing this annotation.",
+                     "name" : "Text"
+                  }
+               ],
+               "inlineTags" : [
+                  {
+                     "text" : "The name of a field that contains a relation to an instance of the\n class containing this annotation.",
+                     "_class" : "Tag",
+                     "kind" : "Text",
+                     "name" : "Text"
+                  }
+               ]
+            }
+         ],
+         "isIncluded" : true,
+         "isSynchronized" : false,
+         "typeParameters" : [],
+         "isEnum" : false
+      }
+   ],
+   "isSerializable" : false,
+   "isStatic" : false,
+   "serializableFields" : [],
+   "serializationMethods" : [],
+   "enumConstants" : [],
+   "tags" : [],
+   "isExternalizable" : false,
+   "typeName" : "LinkingObjects",
+   "inlineTags" : [
+      {
+         "kind" : "Text",
+         "_class" : "Tag",
+         "text" : "Annotation for defining a reverse relationship from one class to another. This annotation can\n only be added to a field of the type ",
+         "name" : "Text",
+         "firstSentenceTags" : [
+            {
+               "name" : "Text",
+               "kind" : "Text",
+               "text" : "Annotation for defining a reverse relationship from one class to another.",
+               "_class" : "Tag"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "_class" : "Tag",
+               "text" : "Annotation for defining a reverse relationship from one class to another. This annotation can\n only be added to a field of the type ",
+               "kind" : "Text",
+               "name" : "Text"
+            }
+         ]
+      },
+      {
+         "text" : "RealmResults",
+         "_class" : "Tag",
+         "kind" : "@code",
+         "name" : "@code",
+         "firstSentenceTags" : [
+            {
+               "name" : "Text",
+               "text" : "RealmResults",
+               "_class" : "Tag",
+               "kind" : "Text"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "name" : "Text",
+               "kind" : "Text",
+               "_class" : "Tag",
+               "text" : "RealmResults"
+            }
+         ]
+      },
+      {
+         "kind" : "Text",
+         "_class" : "Tag",
+         "text" : ".\n<pre>\n To expose reverse relationships for use, create a declaration as follows:\n ",
+         "name" : "Text",
+         "firstSentenceTags" : [
+            {
+               "name" : "Text",
+               "kind" : "Text",
+               "text" : ".",
+               "_class" : "Tag"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "_class" : "Tag",
+               "text" : ".\n<pre>\n To expose reverse relationships for use, create a declaration as follows:\n ",
+               "kind" : "Text",
+               "name" : "Text"
+            }
+         ]
+      },
+      {
+         "kind" : "@code",
+         "_class" : "Tag",
+         "text" : "\n\n public class Person extends RealmObject {\n   String name;\n   Dog dog; // Normal relation\n }\n\n public class Dog extends RealmObject {\n   // This holds all Person objects with a relation to this Dog object (= linking objects)\n   \\@LinkingObjects(\"dog\")\n   final RealmResults&gt;Person&lt; owners = null;\n }\n\n // Find all Dogs with at least one owner named John\n realm.where(Dog.class).equalTo(\"owners.name\", \"John\").findAll();\n ",
+         "name" : "@code",
+         "firstSentenceTags" : [
+            {
+               "kind" : "Text",
+               "_class" : "Tag",
+               "text" : "public class Person extends RealmObject {\n   String name;\n   Dog dog; // Normal relation\n }\n\n public class Dog extends RealmObject {\n   // This holds all Person objects with a relation to this Dog object (= linking objects)\n   \\@LinkingObjects(\"dog\")\n   final RealmResults&gt;Person&lt; owners = null;\n }\n\n // Find all Dogs with at least one owner named John\n realm.where(Dog.class).equalTo(\"owners.name\", \"John\").findAll();",
+               "name" : "Text"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "text" : "\n\n public class Person extends RealmObject {\n   String name;\n   Dog dog; // Normal relation\n }\n\n public class Dog extends RealmObject {\n   // This holds all Person objects with a relation to this Dog object (= linking objects)\n   \\@LinkingObjects(\"dog\")\n   final RealmResults&gt;Person&lt; owners = null;\n }\n\n // Find all Dogs with at least one owner named John\n realm.where(Dog.class).equalTo(\"owners.name\", \"John\").findAll();\n ",
+               "_class" : "Tag",
+               "kind" : "Text",
+               "name" : "Text"
+            }
+         ]
+      },
+      {
+         "text" : "\n </pre>\n In the above example `Person` is related to `Dog` through the field `dog`.\n This in turn means that an implicit reverse relationship exists between the class `Dog`\n and the class `Person`. This inverse relationship is made public and queryable by the `RealmResults`\n field annotated with `@LinkingObject`. This makes it possible to query properties of the dogs owner\n without having to manually maintain a \"owner\" field in the `Dog` class.\n <p>\n Linking objects have the following properties:\n <ul>\n     <li>The link is maintained by Realm and only works for managed objects.</li>\n     <li>They can be queried just like normal relation.</li>\n     <li>They can be followed just like normal relation.</li>\n     <li>They are ignored when doing a `copyToRealm().`</li>\n     <li>They are ignored when doing a `copyFromRealm().`</li>\n     <li>They are ignored when using the various `createObjectFromJson*` and `createAllFromJson*` methods.</li>\n     <li>Listeners on an object with a `@LinkingObject` field will not be triggered if the linking objects change,\n     e.g: if another object drops a reference to this object.</li>\n </ul>\n <p>\n In addition, they have the following restrictions:\n <ul>\n     <li>",
+         "_class" : "Tag",
+         "kind" : "Text",
+         "name" : "Text",
+         "firstSentenceTags" : [],
+         "inlineTags" : [
+            {
+               "name" : "Text",
+               "kind" : "Text",
+               "text" : "\n </pre>\n In the above example `Person` is related to `Dog` through the field `dog`.\n This in turn means that an implicit reverse relationship exists between the class `Dog`\n and the class `Person`. This inverse relationship is made public and queryable by the `RealmResults`\n field annotated with `@LinkingObject`. This makes it possible to query properties of the dogs owner\n without having to manually maintain a \"owner\" field in the `Dog` class.\n <p>\n Linking objects have the following properties:\n <ul>\n     <li>The link is maintained by Realm and only works for managed objects.</li>\n     <li>They can be queried just like normal relation.</li>\n     <li>They can be followed just like normal relation.</li>\n     <li>They are ignored when doing a `copyToRealm().`</li>\n     <li>They are ignored when doing a `copyFromRealm().`</li>\n     <li>They are ignored when using the various `createObjectFromJson*` and `createAllFromJson*` methods.</li>\n     <li>Listeners on an object with a `@LinkingObject` field will not be triggered if the linking objects change,\n     e.g: if another object drops a reference to this object.</li>\n </ul>\n <p>\n In addition, they have the following restrictions:\n <ul>\n     <li>",
+               "_class" : "Tag"
+            }
+         ]
+      },
+      {
+         "inlineTags" : [
+            {
+               "name" : "Text",
+               "kind" : "Text",
+               "text" : "@",
+               "_class" : "Tag"
+            }
+         ],
+         "firstSentenceTags" : [
+            {
+               "_class" : "Tag",
+               "text" : "@",
+               "kind" : "Text",
+               "name" : "Text"
+            }
+         ],
+         "name" : "@literal",
+         "_class" : "Tag",
+         "text" : "@",
+         "kind" : "@literal"
+      },
+      {
+         "firstSentenceTags" : [
+            {
+               "name" : "Text",
+               "kind" : "Text",
+               "text" : "Ignore takes precedence.",
+               "_class" : "Tag"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "kind" : "Text",
+               "text" : "Ignore takes precedence.  A ",
+               "_class" : "Tag",
+               "name" : "Text"
+            }
+         ],
+         "kind" : "Text",
+         "_class" : "Tag",
+         "text" : "Ignore takes precedence.  A ",
+         "name" : "Text"
+      },
+      {
+         "firstSentenceTags" : [
+            {
+               "name" : "Text",
+               "text" : "@",
+               "_class" : "Tag",
+               "kind" : "Text"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "kind" : "Text",
+               "_class" : "Tag",
+               "text" : "@",
+               "name" : "Text"
+            }
+         ],
+         "_class" : "Tag",
+         "text" : "@",
+         "kind" : "@literal",
+         "name" : "@literal"
+      },
+      {
+         "kind" : "Text",
+         "_class" : "Tag",
+         "text" : "LinkingObjects annotation on ",
+         "name" : "Text",
+         "firstSentenceTags" : [
+            {
+               "kind" : "Text",
+               "_class" : "Tag",
+               "text" : "LinkingObjects annotation on",
+               "name" : "Text"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "kind" : "Text",
+               "text" : "LinkingObjects annotation on ",
+               "_class" : "Tag",
+               "name" : "Text"
+            }
+         ]
+      },
+      {
+         "firstSentenceTags" : [
+            {
+               "name" : "Text",
+               "text" : "@",
+               "_class" : "Tag",
+               "kind" : "Text"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "kind" : "Text",
+               "text" : "@",
+               "_class" : "Tag",
+               "name" : "Text"
+            }
+         ],
+         "text" : "@",
+         "_class" : "Tag",
+         "kind" : "@literal",
+         "name" : "@literal"
+      },
+      {
+         "inlineTags" : [
+            {
+               "name" : "Text",
+               "text" : "Ignore field will be ignored.</li>\n     <li>The annotated field cannot be ",
+               "_class" : "Tag",
+               "kind" : "Text"
+            }
+         ],
+         "firstSentenceTags" : [
+            {
+               "name" : "Text",
+               "_class" : "Tag",
+               "text" : "Ignore field will be ignored.</li>\n     <li>The annotated field cannot be",
+               "kind" : "Text"
+            }
+         ],
+         "name" : "Text",
+         "text" : "Ignore field will be ignored.</li>\n     <li>The annotated field cannot be ",
+         "_class" : "Tag",
+         "kind" : "Text"
+      },
+      {
+         "name" : "@literal",
+         "_class" : "Tag",
+         "text" : "@",
+         "kind" : "@literal",
+         "inlineTags" : [
+            {
+               "kind" : "Text",
+               "text" : "@",
+               "_class" : "Tag",
+               "name" : "Text"
+            }
+         ],
+         "firstSentenceTags" : [
+            {
+               "name" : "Text",
+               "kind" : "Text",
+               "text" : "@",
+               "_class" : "Tag"
+            }
+         ]
+      },
+      {
+         "inlineTags" : [
+            {
+               "kind" : "Text",
+               "_class" : "Tag",
+               "text" : "Required.</li>\n     <li>The annotated field must be `final`.</li>\n     <li>The annotation argument (the name of the backlinked field) is required.</li>\n     <li>The annotation argument must be a simple field name.  It cannot contain periods ('.').</li>\n     <li>The annotated field must be of type `RealmResults&lt;T&gt;` where T is concrete class that extends `RealmModel`.</li>\n </ul>\n\n Note that when the source of the reverse reference (`dog` in the case above) is a `List`, there is a reverse\n reference for each forward reference, even if both forward references are to the same object.\n If the `Person` class above were defined as:\n ",
+               "name" : "Text"
+            }
+         ],
+         "firstSentenceTags" : [
+            {
+               "text" : "Required.</li>\n     <li>The annotated field must be `final`.</li>\n     <li>The annotation argument (the name of the backlinked field) is required.</li>\n     <li>The annotation argument must be a simple field name.",
+               "_class" : "Tag",
+               "kind" : "Text",
+               "name" : "Text"
+            }
+         ],
+         "name" : "Text",
+         "_class" : "Tag",
+         "text" : "Required.</li>\n     <li>The annotated field must be `final`.</li>\n     <li>The annotation argument (the name of the backlinked field) is required.</li>\n     <li>The annotation argument must be a simple field name.  It cannot contain periods ('.').</li>\n     <li>The annotated field must be of type `RealmResults&lt;T&gt;` where T is concrete class that extends `RealmModel`.</li>\n </ul>\n\n Note that when the source of the reverse reference (`dog` in the case above) is a `List`, there is a reverse\n reference for each forward reference, even if both forward references are to the same object.\n If the `Person` class above were defined as:\n ",
+         "kind" : "Text"
+      },
+      {
+         "name" : "@code",
+         "kind" : "@code",
+         "_class" : "Tag",
+         "text" : "public class DogLover extends RealmObject {\n   String name;\n   List<Dog> dogs = new ArrayList<Dog>;\n }\n ",
+         "inlineTags" : [
+            {
+               "name" : "Text",
+               "kind" : "Text",
+               "_class" : "Tag",
+               "text" : "public class DogLover extends RealmObject {\n   String name;\n   List<Dog> dogs = new ArrayList<Dog>;\n }\n "
+            }
+         ],
+         "firstSentenceTags" : [
+            {
+               "kind" : "Text",
+               "text" : "public class DogLover extends RealmObject {\n   String name;\n   List<Dog> dogs = new ArrayList<Dog>;\n }",
+               "_class" : "Tag",
+               "name" : "Text"
+            }
+         ]
+      },
+      {
+         "kind" : "Text",
+         "_class" : "Tag",
+         "text" : "\n then the following code executes without error\n ",
+         "name" : "Text",
+         "firstSentenceTags" : [
+            {
+               "name" : "Text",
+               "text" : "then the following code executes without error",
+               "_class" : "Tag",
+               "kind" : "Text"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "name" : "Text",
+               "_class" : "Tag",
+               "text" : "\n then the following code executes without error\n ",
+               "kind" : "Text"
+            }
+         ]
+      },
+      {
+         "kind" : "@code",
+         "_class" : "Tag",
+         "text" : "Dog fido = new Dog();\n DogLover john = new DogLover()\n john.dogs.add(fido);\n john.dogs.add(fido);\n assert john.dogs.size() == 2;\n assert fido.owners.size() == 2;\n ",
+         "name" : "@code",
+         "firstSentenceTags" : [
+            {
+               "kind" : "Text",
+               "text" : "Dog fido = new Dog();\n DogLover john = new DogLover()\n john.dogs.add(fido);\n john.dogs.add(fido);\n assert john.dogs.size() == 2;\n assert fido.owners.size() == 2;",
+               "_class" : "Tag",
+               "name" : "Text"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "kind" : "Text",
+               "text" : "Dog fido = new Dog();\n DogLover john = new DogLover()\n john.dogs.add(fido);\n john.dogs.add(fido);\n assert john.dogs.size() == 2;\n assert fido.owners.size() == 2;\n ",
+               "_class" : "Tag",
+               "name" : "Text"
+            }
+         ]
+      },
+      {
+         "firstSentenceTags" : [],
+         "inlineTags" : [
+            {
+               "_class" : "Tag",
+               "text" : "\n <p>\n Querying inverse relationship is like querying any ",
+               "kind" : "Text",
+               "name" : "Text"
+            }
+         ],
+         "kind" : "Text",
+         "text" : "\n <p>\n Querying inverse relationship is like querying any ",
+         "_class" : "Tag",
+         "name" : "Text"
+      },
+      {
+         "firstSentenceTags" : [
+            {
+               "name" : "Text",
+               "_class" : "Tag",
+               "text" : "RealmResults",
+               "kind" : "Text"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "name" : "Text",
+               "kind" : "Text",
+               "_class" : "Tag",
+               "text" : "RealmResults"
+            }
+         ],
+         "text" : "RealmResults",
+         "_class" : "Tag",
+         "kind" : "@code",
+         "name" : "@code"
+      },
+      {
+         "_class" : "Tag",
+         "text" : ". This means that an inverse relationship\n cannot be ",
+         "kind" : "Text",
+         "name" : "Text",
+         "firstSentenceTags" : [
+            {
+               "name" : "Text",
+               "kind" : "Text",
+               "text" : ".",
+               "_class" : "Tag"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "text" : ". This means that an inverse relationship\n cannot be ",
+               "_class" : "Tag",
+               "kind" : "Text",
+               "name" : "Text"
+            }
+         ]
+      },
+      {
+         "name" : "@code",
+         "kind" : "@code",
+         "_class" : "Tag",
+         "text" : "null",
+         "inlineTags" : [
+            {
+               "name" : "Text",
+               "kind" : "Text",
+               "text" : "null",
+               "_class" : "Tag"
+            }
+         ],
+         "firstSentenceTags" : [
+            {
+               "kind" : "Text",
+               "text" : "null",
+               "_class" : "Tag",
+               "name" : "Text"
+            }
+         ]
+      },
+      {
+         "kind" : "Text",
+         "_class" : "Tag",
+         "text" : " but it can be empty (length is 0). It is possible to query fields in the source class. This is\n equivalent to link queries. Please read <a href=\"https://realm.io/docs/java/latest/#link-queries\">for more\n information</a>.",
+         "name" : "Text",
+         "firstSentenceTags" : [
+            {
+               "name" : "Text",
+               "text" : "but it can be empty (length is 0).",
+               "_class" : "Tag",
+               "kind" : "Text"
+            }
+         ],
+         "inlineTags" : [
+            {
+               "name" : "Text",
+               "kind" : "Text",
+               "_class" : "Tag",
+               "text" : " but it can be empty (length is 0). It is possible to query fields in the source class. This is\n equivalent to link queries. Please read <a href=\"https://realm.io/docs/java/latest/#link-queries\">for more\n information</a>."
+            }
+         ]
+      }
+   ],
+   "isAnnotationTypeElement" : false,
+   "name" : "LinkingObjects",
+   "isInterface" : false,
+   "isFinal" : false,
+   "isException" : false,
+   "isField" : false,
+   "qualifiedTypeName" : "io.realm.annotations.LinkingObjects",
+   "isError" : false,
+   "annotations" : [
+      {
+         "elementValues" : [
+            {
+               "value" : "java.lang.annotation.RetentionPolicy.RUNTIME",
+               "element" : {
+                  "modifiers" : "public",
+                  "commentText" : "",
+                  "firstSentenceTags" : [],
+                  "modifierSpecifier" : 1025,
+                  "typeParamTags" : [],
+                  "flatSignature" : "()",
+                  "isEnum" : false,
+                  "typeParameters" : [],
+                  "isIncluded" : false,
+                  "isSynchronized" : false,
+                  "isPackagePrivate" : false,
+                  "tags" : [],
+                  "isDefault" : false,
+                  "isStatic" : false,
+                  "throwsTags" : [],
+                  "isAnnotationTypeElement" : true,
+                  "inlineTags" : [],
+                  "isFinal" : false,
+                  "returnType" : {
+                     "dimension" : "",
+                     "isAnnotationType" : false,
+                     "isPrimitive" : false,
+                     "simpleTypeName" : "RetentionPolicy",
+                     "isClass" : true,
+                     "asString" : "java.lang.annotation.RetentionPolicy",
+                     "qualifiedTypeName" : "java.lang.annotation.RetentionPolicy",
+                     "typeName" : "RetentionPolicy",
+                     "_class" : "ClassDoc"
+                  },
+                  "name" : "value",
+                  "isInterface" : false,
+                  "signature" : "()",
+                  "isVarArgs" : false,
+                  "containingClass" : {
+                     "isPrimitive" : false,
+                     "simpleTypeName" : "Retention",
+                     "dimension" : "",
+                     "isAnnotationType" : true,
+                     "qualifiedTypeName" : "java.lang.annotation.Retention",
+                     "_class" : "ClassDoc",
+                     "typeName" : "Retention",
+                     "isClass" : true,
+                     "asString" : "java.lang.annotation.Retention",
+                     "modifiers" : "public interface"
+                  },
+                  "thrownExceptionTypes" : [],
+                  "isSynthetic" : false,
+                  "isError" : false,
+                  "isException" : false,
+                  "isField" : false,
+                  "parameters" : [],
+                  "isAnnotationType" : false,
+                  "isProtected" : false,
+                  "annotations" : [],
+                  "isOrdinaryClass" : false,
+                  "isMethod" : false,
+                  "containingPackage" : {
+                     "name" : "java.lang.annotation",
+                     "_class" : "PackageDoc"
+                  },
+                  "paramTags" : [],
+                  "isClass" : false,
+                  "_class" : "AnnotationTypeElementDoc",
+                  "isPrivate" : false,
+                  "isConstructor" : false,
+                  "isAbstract" : false,
+                  "seeTags" : [],
+                  "qualifiedName" : "java.lang.annotation.Retention.value",
+                  "position" : {
+                     "line" : 0,
+                     "column" : 0,
+                     "file" : "Retention.java"
+                  },
+                  "isPublic" : true,
+                  "isEnumConstant" : false,
+                  "isNative" : false
+               }
+            }
+         ],
+         "isSynthesized" : false,
+         "annotationType" : {
+            "typeName" : "Retention",
+            "_class" : "ClassDoc",
+            "qualifiedTypeName" : "java.lang.annotation.Retention",
+            "modifiers" : "public interface",
+            "asString" : "java.lang.annotation.Retention",
+            "isClass" : true,
+            "simpleTypeName" : "Retention",
+            "isPrimitive" : false,
+            "isAnnotationType" : true,
+            "dimension" : ""
+         }
+      },
+      {
+         "isSynthesized" : false,
+         "elementValues" : [
+            {
+               "value" : "java.lang.annotation.ElementType.FIELD",
+               "element" : {
+                  "inlineTags" : [],
+                  "isAnnotationTypeElement" : true,
+                  "signature" : "()",
+                  "name" : "value",
+                  "returnType" : {
+                     "elementType" : {
+                        "simpleTypeName" : "ElementType",
+                        "isPrimitive" : false,
+                        "isAnnotationType" : false,
+                        "dimension" : "",
+                        "_class" : "ClassDoc",
+                        "typeName" : "ElementType",
+                        "qualifiedTypeName" : "java.lang.annotation.ElementType",
+                        "asString" : "java.lang.annotation.ElementType",
+                        "isClass" : true
+                     },
+                     "isAnnotationType" : false,
+                     "dimension" : "[]",
+                     "simpleTypeName" : "ElementType",
+                     "isPrimitive" : false,
+                     "asString" : "java.lang.annotation.ElementType[]",
+                     "isClass" : false,
+                     "typeName" : "ElementType",
+                     "_class" : "Type",
+                     "qualifiedTypeName" : "java.lang.annotation.ElementType"
+                  },
+                  "isInterface" : false,
+                  "isFinal" : false,
+                  "isPackagePrivate" : false,
+                  "throwsTags" : [],
+                  "isStatic" : false,
+                  "isDefault" : false,
+                  "tags" : [],
+                  "typeParameters" : [],
+                  "isEnum" : false,
+                  "isSynchronized" : false,
+                  "isIncluded" : false,
+                  "modifierSpecifier" : 1025,
+                  "firstSentenceTags" : [],
+                  "modifiers" : "public",
+                  "commentText" : "",
+                  "flatSignature" : "()",
+                  "typeParamTags" : [],
+                  "isEnumConstant" : false,
+                  "position" : {
+                     "file" : "Target.java",
+                     "line" : 0,
+                     "column" : 0
+                  },
+                  "isPublic" : true,
+                  "seeTags" : [],
+                  "qualifiedName" : "java.lang.annotation.Target.value",
+                  "isAbstract" : false,
+                  "isNative" : false,
+                  "isClass" : false,
+                  "paramTags" : [],
+                  "isPrivate" : false,
+                  "isConstructor" : false,
+                  "_class" : "AnnotationTypeElementDoc",
+                  "annotations" : [],
+                  "isProtected" : false,
+                  "isAnnotationType" : false,
+                  "containingPackage" : {
+                     "_class" : "PackageDoc",
+                     "name" : "java.lang.annotation"
+                  },
+                  "isMethod" : false,
+                  "isOrdinaryClass" : false,
+                  "isSynthetic" : false,
+                  "isVarArgs" : false,
+                  "containingClass" : {
+                     "simpleTypeName" : "Target",
+                     "isPrimitive" : false,
+                     "isAnnotationType" : true,
+                     "dimension" : "",
+                     "typeName" : "Target",
+                     "_class" : "ClassDoc",
+                     "qualifiedTypeName" : "java.lang.annotation.Target",
+                     "asString" : "java.lang.annotation.Target",
+                     "modifiers" : "public interface",
+                     "isClass" : true
+                  },
+                  "thrownExceptionTypes" : [],
+                  "parameters" : [],
+                  "isException" : false,
+                  "isField" : false,
+                  "isError" : false
+               }
+            }
+         ],
+         "annotationType" : {
+            "simpleTypeName" : "Target",
+            "isPrimitive" : false,
+            "isAnnotationType" : true,
+            "dimension" : "",
+            "_class" : "ClassDoc",
+            "typeName" : "Target",
+            "qualifiedTypeName" : "java.lang.annotation.Target",
+            "asString" : "java.lang.annotation.Target",
+            "modifiers" : "public interface",
+            "isClass" : true
+         }
+      }
+   ],
+   "dimension" : "",
+   "definesSerializableFields" : false,
+   "isAnnotationType" : true,
+   "isProtected" : false,
+   "containingPackage" : {
+      "_class" : "PackageDoc",
+      "name" : "io.realm.annotations"
+   },
+   "isMethod" : false,
+   "isOrdinaryClass" : false,
+   "isClass" : true,
+   "_class" : "ParsedClassDoc",
+   "innerClasses" : [],
+   "isConstructor" : false,
+   "isPrivate" : false,
+   "qualifiedName" : "io.realm.annotations.LinkingObjects",
+   "seeTags" : [],
+   "position" : {
+      "file" : "./realm-annotations/src/main/java/io/realm/annotations/LinkingObjects.java",
+      "column" : 9,
+      "line" : 102
+   },
+   "isPublic" : true,
+   "isEnumConstant" : false,
+   "methods" : [],
+   "isAbstract" : true,
+   "simpleTypeName" : "LinkingObjects"
+}

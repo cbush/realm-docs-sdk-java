@@ -14,7 +14,7 @@ io.realm.log.RealmLog
 
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
-Global logger used by all Realm components. Custom loggers can be added by registering classes implementing **RealmLogger (?)**.
+Global logger used by all Realm components. Custom loggers can be added by registering classes implementing :ref:`RealmLogger <io_realm_log_RealmLogger>`.
 
 
 Constructors
@@ -42,7 +42,7 @@ Method Summary
    * - public static **void (?)**
      - :ref:`setLevel <io_realm_log_RealmLog_setLevel__int__>` (**int (?)** level)
        
-       Sets the current **LogLevel (?)**.
+       Sets the current :ref:`LogLevel <io_realm_log_LogLevel>`.
        
        
        
@@ -52,7 +52,7 @@ Method Summary
    * - public static **int (?)**
      - :ref:`getLevel <io_realm_log_RealmLog_getLevel____>` ()
        
-       Get the current **LogLevel (?)**.
+       Get the current :ref:`LogLevel <io_realm_log_LogLevel>`.
        
        
        
@@ -279,7 +279,7 @@ Adds a logger implementation that will be notified on log events.
 Parameters
 __________
 
-- ``logger - ``the reference to a **RealmLogger (?)**implementation.
+- ``logger - ``the reference to a :ref:`RealmLogger <io_realm_log_RealmLogger>`implementation.
    
    
    
@@ -292,13 +292,13 @@ setLevel
 public static **void (?)** setLevel (**int (?)** level)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sets the current **LogLevel (?)**. Setting this will affect all registered loggers.
+Sets the current :ref:`LogLevel <io_realm_log_LogLevel>`. Setting this will affect all registered loggers.
 
 
 Parameters
 __________
 
-- ``level - ``see **LogLevel (?)**.
+- ``level - ``see :ref:`LogLevel <io_realm_log_LogLevel>`.
    
    
    
@@ -311,7 +311,7 @@ getLevel
 public static **int (?)** getLevel ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Get the current **LogLevel (?)**.
+Get the current :ref:`LogLevel <io_realm_log_LogLevel>`.
 
 
 remove
