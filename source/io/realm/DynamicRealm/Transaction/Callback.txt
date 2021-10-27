@@ -30,7 +30,7 @@ Method Summary
      - Method and Description
    
    * - public **void**
-     - :ref:`onSuccess <io_realm_DynamicRealm_Transaction_Callback_onSuccess____>` ()
+     - :ref:`onSuccess <io_realm_DynamicRealm_Transaction_Callback_onSuccess__>` ()
        
        
        
@@ -38,7 +38,7 @@ Method Summary
        
    
    * - public **void**
-     - :ref:`onError <io_realm_DynamicRealm_Transaction_Callback_onError__Exception__>` (`Exception <https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html>`__ ignore)
+     - :ref:`onError <io_realm_DynamicRealm_Transaction_Callback_onError_Exception_>` (`Exception <https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html>`__ ignore)
        
        
        
@@ -52,7 +52,7 @@ Method Detail
 onSuccess
 ---------
 
-.. _io_realm_DynamicRealm_Transaction_Callback_onSuccess____:
+.. _io_realm_DynamicRealm_Transaction_Callback_onSuccess__:
 
 public **void** onSuccess ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,7 +61,7 @@ public **void** onSuccess ()
 onError
 -------
 
-.. _io_realm_DynamicRealm_Transaction_Callback_onError__Exception__:
+.. _io_realm_DynamicRealm_Transaction_Callback_onError_Exception_:
 
 public **void** onError (`Exception <https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html>`__ ignore)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

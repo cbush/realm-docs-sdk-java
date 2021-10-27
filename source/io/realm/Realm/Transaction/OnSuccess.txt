@@ -21,7 +21,7 @@ Method Summary
      - Method and Description
    
    * - public **void**
-     - :ref:`onSuccess <io_realm_Realm_Transaction_OnSuccess_onSuccess____>` ()
+     - :ref:`onSuccess <io_realm_Realm_Transaction_OnSuccess_onSuccess__>` ()
        
        
        
@@ -35,7 +35,7 @@ Method Detail
 onSuccess
 ---------
 
-.. _io_realm_Realm_Transaction_OnSuccess_onSuccess____:
+.. _io_realm_Realm_Transaction_OnSuccess_onSuccess__:
 
 public **void** onSuccess ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

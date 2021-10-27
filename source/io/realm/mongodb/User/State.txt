@@ -53,7 +53,7 @@ Method Summary
      - Method and Description
    
    * - public static :ref:`User.State <io_realm_mongodb_User_State>`
-     - :ref:`values <io_realm_mongodb_User_State_values____>` ()
+     - :ref:`values <io_realm_mongodb_User_State_values__>` ()
        
        
        
@@ -61,7 +61,7 @@ Method Summary
        
    
    * - public static :ref:`User.State <io_realm_mongodb_User_State>`
-     - :ref:`valueOf <io_realm_mongodb_User_State_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
+     - :ref:`valueOf <io_realm_mongodb_User_State_valueOf_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
@@ -105,7 +105,7 @@ Method Detail
 values
 ------
 
-.. _io_realm_mongodb_User_State_values____:
+.. _io_realm_mongodb_User_State_values__:
 
 public static :ref:`User.State <io_realm_mongodb_User_State>` values ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,7 +114,7 @@ public static :ref:`User.State <io_realm_mongodb_User_State>` values ()
 valueOf
 -------
 
-.. _io_realm_mongodb_User_State_valueOf__String__:
+.. _io_realm_mongodb_User_State_valueOf_String_:
 
 public static :ref:`User.State <io_realm_mongodb_User_State>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -339,7 +339,7 @@ Method Summary
      - Method and Description
    
    * - public static :ref:`RealmFieldType <io_realm_RealmFieldType>`
-     - :ref:`values <io_realm_RealmFieldType_values____>` ()
+     - :ref:`values <io_realm_RealmFieldType_values__>` ()
        
        
        
@@ -347,7 +347,7 @@ Method Summary
        
    
    * - public static :ref:`RealmFieldType <io_realm_RealmFieldType>`
-     - :ref:`valueOf <io_realm_RealmFieldType_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
+     - :ref:`valueOf <io_realm_RealmFieldType_valueOf_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
@@ -355,7 +355,7 @@ Method Summary
        
    
    * - public **int**
-     - :ref:`getNativeValue <io_realm_RealmFieldType_getNativeValue____>` ()
+     - :ref:`getNativeValue <io_realm_RealmFieldType_getNativeValue__>` ()
        
        Returns the native value representing this type.
        
@@ -363,7 +363,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`isValid <io_realm_RealmFieldType_isValid__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
+     - :ref:`isValid <io_realm_RealmFieldType_isValid_Object_>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
        
        Checks if the given Java object can be converted to the underlying Realm type.
        
@@ -371,7 +371,7 @@ Method Summary
        
    
    * - public static :ref:`RealmFieldType <io_realm_RealmFieldType>`
-     - :ref:`fromNativeValue <io_realm_RealmFieldType_fromNativeValue__int__>` (**int** value)
+     - :ref:`fromNativeValue <io_realm_RealmFieldType_fromNativeValue_int_>` (**int** value)
        
        Converts the underlying value used by the storage engine to the proper Realm type.
        
@@ -838,7 +838,7 @@ Method Detail
 values
 ------
 
-.. _io_realm_RealmFieldType_values____:
+.. _io_realm_RealmFieldType_values__:
 
 public static :ref:`RealmFieldType <io_realm_RealmFieldType>` values ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -847,7 +847,7 @@ public static :ref:`RealmFieldType <io_realm_RealmFieldType>` values ()
 valueOf
 -------
 
-.. _io_realm_RealmFieldType_valueOf__String__:
+.. _io_realm_RealmFieldType_valueOf_String_:
 
 public static :ref:`RealmFieldType <io_realm_RealmFieldType>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -856,7 +856,7 @@ public static :ref:`RealmFieldType <io_realm_RealmFieldType>` valueOf (`String <
 getNativeValue
 --------------
 
-.. _io_realm_RealmFieldType_getNativeValue____:
+.. _io_realm_RealmFieldType_getNativeValue__:
 
 public **int** getNativeValue ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -865,7 +865,7 @@ Returns the native value representing this type.
 isValid
 -------
 
-.. _io_realm_RealmFieldType_isValid__Object__:
+.. _io_realm_RealmFieldType_isValid_Object_:
 
 public **boolean** isValid (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -880,7 +880,7 @@ __________
 fromNativeValue
 ---------------
 
-.. _io_realm_RealmFieldType_fromNativeValue__int__:
+.. _io_realm_RealmFieldType_fromNativeValue_int_:
 
 public static :ref:`RealmFieldType <io_realm_RealmFieldType>` fromNativeValue (**int** value)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

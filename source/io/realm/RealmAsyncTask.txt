@@ -10,7 +10,7 @@ io.realm.RealmAsyncTask
 
 .. _io_realm_RealmAsyncTask:
 
-Represents a pending asynchronous Realm task, like asynchronous transactions.Users are responsible for maintaining a reference to ``RealmAsyncTask`` in order to call **#cancel() (?)** in case of a configuration change for example (to avoid memory leak, as the transaction will post the result to the caller's thread callback).
+Represents a pending asynchronous Realm task, like asynchronous transactions.Users are responsible for maintaining a reference to ``RealmAsyncTask`` in order to call :ref:`#cancel() <io_realm_RealmAsyncTask_cancel__>` in case of a configuration change for example (to avoid memory leak, as the transaction will post the result to the caller's thread callback).
 
 
 
@@ -25,7 +25,7 @@ Method Summary
      - Method and Description
    
    * - public **void**
-     - :ref:`cancel <io_realm_RealmAsyncTask_cancel____>` ()
+     - :ref:`cancel <io_realm_RealmAsyncTask_cancel__>` ()
        
        Attempts to cancel execution of this transaction (if it hasn't already completed or previously cancelled).
        
@@ -33,7 +33,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`isCancelled <io_realm_RealmAsyncTask_isCancelled____>` ()
+     - :ref:`isCancelled <io_realm_RealmAsyncTask_isCancelled__>` ()
        
        Checks whether an attempt to cancel the transaction was performed.
        
@@ -47,7 +47,7 @@ Method Detail
 cancel
 ------
 
-.. _io_realm_RealmAsyncTask_cancel____:
+.. _io_realm_RealmAsyncTask_cancel__:
 
 public **void** cancel ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,7 +56,7 @@ Attempts to cancel execution of this transaction (if it hasn't already completed
 isCancelled
 -----------
 
-.. _io_realm_RealmAsyncTask_isCancelled____:
+.. _io_realm_RealmAsyncTask_isCancelled__:
 
 public **boolean** isCancelled ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

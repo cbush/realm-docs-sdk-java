@@ -51,7 +51,7 @@ Synchronized Realms only support additive migrations which can be detected and p
    
    
 
-Synchronized Realms are created by using **Realm#getInstance(RealmConfiguration) (?)** and **Realm#getDefaultInstance() (?)** like ordinary unsynchronized Realms.
+Synchronized Realms are created by using :ref:`Realm#getInstance(RealmConfiguration) <io_realm_Realm_getInstance_RealmConfiguration_>` and :ref:`Realm#getDefaultInstance() <io_realm_Realm_getDefaultInstance__>` like ordinary unsynchronized Realms.
 
 
 Nested Class Summary
@@ -77,7 +77,7 @@ Method Summary
      - Method and Description
    
    * - public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>`
-     - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__byte[]__Object_____>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[]** encryptionKey, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ modules)
+     - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery_String__byte[]__Object____>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[]** encryptionKey, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ modules)
        
        Returns a :ref:`RealmConfiguration <io_realm_RealmConfiguration>` appropriate to open a read-only, non-synced Realm to recover any pending changes.
        
@@ -87,7 +87,7 @@ Method Summary
        
    
    * - public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`
-     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__String__>` (:ref:`User <io_realm_mongodb_User>` user, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ partitionValue)
+     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig_User__String_>` (:ref:`User <io_realm_mongodb_User>` user, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ partitionValue)
        
        Returns a default configuration for the given user and partition value.
        
@@ -95,7 +95,7 @@ Method Summary
        
    
    * - public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`
-     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__Long__>` (:ref:`User <io_realm_mongodb_User>` user, `Long <https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html>`__ partitionValue)
+     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig_User__Long_>` (:ref:`User <io_realm_mongodb_User>` user, `Long <https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html>`__ partitionValue)
        
        Returns a default configuration for the given user and partition value.
        
@@ -103,7 +103,7 @@ Method Summary
        
    
    * - public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`
-     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__Integer__>` (:ref:`User <io_realm_mongodb_User>` user, `Integer <https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html>`__ partitionValue)
+     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig_User__Integer_>` (:ref:`User <io_realm_mongodb_User>` user, `Integer <https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html>`__ partitionValue)
        
        Returns a default configuration for the given user and partition value.
        
@@ -111,7 +111,7 @@ Method Summary
        
    
    * - public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`
-     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__ObjectId__>` (:ref:`User <io_realm_mongodb_User>` user, **ObjectId (?)** partitionValue)
+     - :ref:`defaultConfig <io_realm_mongodb_sync_SyncConfiguration_defaultConfig_User__ObjectId_>` (:ref:`User <io_realm_mongodb_User>` user, **ObjectId (?)** partitionValue)
        
        Returns a default configuration for the given user and partition value.
        
@@ -119,7 +119,7 @@ Method Summary
        
    
    * - public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>`
-     - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath)
+     - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath)
        
        Returns a :ref:`RealmConfiguration <io_realm_RealmConfiguration>` appropriate to open a read-only, non-synced Realm to recover any pending changes.
        
@@ -129,7 +129,7 @@ Method Summary
        
    
    * - protected :ref:`Realm.Transaction <io_realm_Realm_Transaction>`
-     - :ref:`getInitialDataTransaction <io_realm_mongodb_sync_SyncConfiguration_getInitialDataTransaction____>` ()
+     - :ref:`getInitialDataTransaction <io_realm_mongodb_sync_SyncConfiguration_getInitialDataTransaction__>` ()
        
        
        
@@ -137,7 +137,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`equals <io_realm_mongodb_sync_SyncConfiguration_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+     - :ref:`equals <io_realm_mongodb_sync_SyncConfiguration_equals_Object_>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
        
@@ -145,7 +145,7 @@ Method Summary
        
    
    * - public **int**
-     - :ref:`hashCode <io_realm_mongodb_sync_SyncConfiguration_hashCode____>` ()
+     - :ref:`hashCode <io_realm_mongodb_sync_SyncConfiguration_hashCode__>` ()
        
        
        
@@ -153,7 +153,7 @@ Method Summary
        
    
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
-     - :ref:`toString <io_realm_mongodb_sync_SyncConfiguration_toString____>` ()
+     - :ref:`toString <io_realm_mongodb_sync_SyncConfiguration_toString__>` ()
        
        
        
@@ -161,7 +161,7 @@ Method Summary
        
    
    * - public :ref:`User <io_realm_mongodb_User>`
-     - :ref:`getUser <io_realm_mongodb_sync_SyncConfiguration_getUser____>` ()
+     - :ref:`getUser <io_realm_mongodb_sync_SyncConfiguration_getUser__>` ()
        
        Returns the user.
        
@@ -169,7 +169,7 @@ Method Summary
        
    
    * - public `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI.html>`__
-     - :ref:`getServerUrl <io_realm_mongodb_sync_SyncConfiguration_getServerUrl____>` ()
+     - :ref:`getServerUrl <io_realm_mongodb_sync_SyncConfiguration_getServerUrl__>` ()
        
        Returns the server URI for the remote MongoDB Realm the local Realm is synchronizing with.
        
@@ -177,7 +177,7 @@ Method Summary
        
    
    * - public :ref:`SyncSession.ErrorHandler <io_realm_mongodb_sync_SyncSession_ErrorHandler>`
-     - :ref:`getErrorHandler <io_realm_mongodb_sync_SyncConfiguration_getErrorHandler____>` ()
+     - :ref:`getErrorHandler <io_realm_mongodb_sync_SyncConfiguration_getErrorHandler__>` ()
        
        Returns the error handler for this *SyncConfiguration*.
        
@@ -185,7 +185,7 @@ Method Summary
        
    
    * - public :ref:`SyncSession.ClientResetHandler <io_realm_mongodb_sync_SyncSession_ClientResetHandler>`
-     - :ref:`getClientResetHandler <io_realm_mongodb_sync_SyncConfiguration_getClientResetHandler____>` ()
+     - :ref:`getClientResetHandler <io_realm_mongodb_sync_SyncConfiguration_getClientResetHandler__>` ()
        
        Returns the Client Reset handler for this *SyncConfiguration*.
        
@@ -193,7 +193,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`shouldDeleteRealmOnLogout <io_realm_mongodb_sync_SyncConfiguration_shouldDeleteRealmOnLogout____>` ()
+     - :ref:`shouldDeleteRealmOnLogout <io_realm_mongodb_sync_SyncConfiguration_shouldDeleteRealmOnLogout__>` ()
        
        Returns ``true`` if the Realm file must be deleted once the :ref:`User <io_realm_mongodb_User>` owning it logs out.
        
@@ -203,7 +203,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`shouldWaitForInitialRemoteData <io_realm_mongodb_sync_SyncConfiguration_shouldWaitForInitialRemoteData____>` ()
+     - :ref:`shouldWaitForInitialRemoteData <io_realm_mongodb_sync_SyncConfiguration_shouldWaitForInitialRemoteData__>` ()
        
        Returns ``true`` if the Realm will download all known changes from the remote server before being opened the first time.
        
@@ -213,7 +213,7 @@ Method Summary
        
    
    * - public **long**
-     - :ref:`getInitialRemoteDataTimeout <io_realm_mongodb_sync_SyncConfiguration_getInitialRemoteDataTimeout__TimeUnit__>` (`TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
+     - :ref:`getInitialRemoteDataTimeout <io_realm_mongodb_sync_SyncConfiguration_getInitialRemoteDataTimeout_TimeUnit_>` (`TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
        
        Returns the timeout defined when downloading any initial data the first time the Realm is opened.
        
@@ -221,7 +221,7 @@ Method Summary
        
    
    * - protected **boolean**
-     - :ref:`isSyncConfiguration <io_realm_mongodb_sync_SyncConfiguration_isSyncConfiguration____>` ()
+     - :ref:`isSyncConfiguration <io_realm_mongodb_sync_SyncConfiguration_isSyncConfiguration__>` ()
        
        
        
@@ -229,7 +229,7 @@ Method Summary
        
    
    * - public **OsRealmConfig.SyncSessionStopPolicy (?)**
-     - :ref:`getSessionStopPolicy <io_realm_mongodb_sync_SyncConfiguration_getSessionStopPolicy____>` ()
+     - :ref:`getSessionStopPolicy <io_realm_mongodb_sync_SyncConfiguration_getSessionStopPolicy__>` ()
        
        NOTE: Only for internal usage.
        
@@ -237,7 +237,7 @@ Method Summary
        
    
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
-     - :ref:`getUrlPrefix <io_realm_mongodb_sync_SyncConfiguration_getUrlPrefix____>` ()
+     - :ref:`getUrlPrefix <io_realm_mongodb_sync_SyncConfiguration_getUrlPrefix__>` ()
        
        Returns the url prefix used when establishing a sync connection to the Realm Object Server.
        
@@ -245,7 +245,7 @@ Method Summary
        
    
    * - public **BsonValue (?)**
-     - :ref:`getPartitionValue <io_realm_mongodb_sync_SyncConfiguration_getPartitionValue____>` ()
+     - :ref:`getPartitionValue <io_realm_mongodb_sync_SyncConfiguration_getPartitionValue__>` ()
        
        Returns the value this Realm is partitioned on.
        
@@ -253,7 +253,7 @@ Method Summary
        
    
    * - protected **boolean**
-     - :ref:`realmExists <io_realm_mongodb_sync_SyncConfiguration_realmExists____>` ()
+     - :ref:`realmExists <io_realm_mongodb_sync_SyncConfiguration_realmExists__>` ()
        
        
        
@@ -267,7 +267,7 @@ Method Detail
 forRecovery
 -----------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__byte[]__Object_____:
+.. _io_realm_mongodb_sync_SyncConfiguration_forRecovery_String__byte[]__Object____:
 
 public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[]** encryptionKey, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ modules)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -285,7 +285,7 @@ __________
 - ``modules - ``if specified it will restricts Realm schema to the provided module.
    
 
-.. _io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__:
+.. _io_realm_mongodb_sync_SyncConfiguration_forRecovery_String_:
 
 public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -302,7 +302,7 @@ __________
 defaultConfig
 -------------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__String__:
+.. _io_realm_mongodb_sync_SyncConfiguration_defaultConfig_User__String_:
 
 public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ partitionValue)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -316,7 +316,7 @@ __________
 - ``partitionValue - ``The partition value identifying the remote Realm that will be synchronized.
    
 
-.. _io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__Long__:
+.. _io_realm_mongodb_sync_SyncConfiguration_defaultConfig_User__Long_:
 
 public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, `Long <https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html>`__ partitionValue)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -330,7 +330,7 @@ __________
 - ``partitionValue - ``The partition value identifying the remote Realm that will be synchronized.
    
 
-.. _io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__Integer__:
+.. _io_realm_mongodb_sync_SyncConfiguration_defaultConfig_User__Integer_:
 
 public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, `Integer <https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html>`__ partitionValue)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -344,7 +344,7 @@ __________
 - ``partitionValue - ``The partition value identifying the remote Realm that will be synchronized.
    
 
-.. _io_realm_mongodb_sync_SyncConfiguration_defaultConfig__User__ObjectId__:
+.. _io_realm_mongodb_sync_SyncConfiguration_defaultConfig_User__ObjectId_:
 
 public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` defaultConfig (:ref:`User <io_realm_mongodb_User>` user, **ObjectId (?)** partitionValue)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -361,7 +361,7 @@ __________
 getInitialDataTransaction
 -------------------------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_getInitialDataTransaction____:
+.. _io_realm_mongodb_sync_SyncConfiguration_getInitialDataTransaction__:
 
 protected :ref:`Realm.Transaction <io_realm_Realm_Transaction>` getInitialDataTransaction ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -370,7 +370,7 @@ protected :ref:`Realm.Transaction <io_realm_Realm_Transaction>` getInitialDataTr
 equals
 ------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_equals__Object__:
+.. _io_realm_mongodb_sync_SyncConfiguration_equals_Object_:
 
 public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -379,7 +379,7 @@ public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/ja
 hashCode
 --------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_hashCode____:
+.. _io_realm_mongodb_sync_SyncConfiguration_hashCode__:
 
 public **int** hashCode ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -388,7 +388,7 @@ public **int** hashCode ()
 toString
 --------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_toString____:
+.. _io_realm_mongodb_sync_SyncConfiguration_toString__:
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -397,7 +397,7 @@ public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>
 getUser
 -------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_getUser____:
+.. _io_realm_mongodb_sync_SyncConfiguration_getUser__:
 
 public :ref:`User <io_realm_mongodb_User>` getUser ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -406,7 +406,7 @@ Returns the user.
 getServerUrl
 ------------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_getServerUrl____:
+.. _io_realm_mongodb_sync_SyncConfiguration_getServerUrl__:
 
 public `URI <https://docs.oracle.com/javase/7/docs/api/java/net/URI.html>`__ getServerUrl ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -415,7 +415,7 @@ Returns the server URI for the remote MongoDB Realm the local Realm is synchroni
 getErrorHandler
 ---------------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_getErrorHandler____:
+.. _io_realm_mongodb_sync_SyncConfiguration_getErrorHandler__:
 
 public :ref:`SyncSession.ErrorHandler <io_realm_mongodb_sync_SyncSession_ErrorHandler>` getErrorHandler ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -424,7 +424,7 @@ Returns the error handler for this *SyncConfiguration*.
 getClientResetHandler
 ---------------------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_getClientResetHandler____:
+.. _io_realm_mongodb_sync_SyncConfiguration_getClientResetHandler__:
 
 public :ref:`SyncSession.ClientResetHandler <io_realm_mongodb_sync_SyncSession_ClientResetHandler>` getClientResetHandler ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -433,7 +433,7 @@ Returns the Client Reset handler for this *SyncConfiguration*.
 shouldDeleteRealmOnLogout
 -------------------------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_shouldDeleteRealmOnLogout____:
+.. _io_realm_mongodb_sync_SyncConfiguration_shouldDeleteRealmOnLogout__:
 
 public **boolean** shouldDeleteRealmOnLogout ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -444,7 +444,7 @@ Returns ``true`` if the Realm file must be deleted once the :ref:`User <io_realm
 shouldWaitForInitialRemoteData
 ------------------------------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_shouldWaitForInitialRemoteData____:
+.. _io_realm_mongodb_sync_SyncConfiguration_shouldWaitForInitialRemoteData__:
 
 public **boolean** shouldWaitForInitialRemoteData ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -455,12 +455,12 @@ Returns ``true`` if the Realm will download all known changes from the remote se
 getInitialRemoteDataTimeout
 ---------------------------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_getInitialRemoteDataTimeout__TimeUnit__:
+.. _io_realm_mongodb_sync_SyncConfiguration_getInitialRemoteDataTimeout_TimeUnit_:
 
 public **long** getInitialRemoteDataTimeout (`TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the timeout defined when downloading any initial data the first time the Realm is opened.This value is only applicable if **#shouldWaitForInitialRemoteData() (?)** returns ``true``.
+Returns the timeout defined when downloading any initial data the first time the Realm is opened.This value is only applicable if :ref:`#shouldWaitForInitialRemoteData() <io_realm_mongodb_sync_SyncConfiguration_shouldWaitForInitialRemoteData__>` returns ``true``.
 
 
 
@@ -473,7 +473,7 @@ SyncConfiguration.Builder#waitForInitialRemoteData(long, TimeUnit)
 isSyncConfiguration
 -------------------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_isSyncConfiguration____:
+.. _io_realm_mongodb_sync_SyncConfiguration_isSyncConfiguration__:
 
 protected **boolean** isSyncConfiguration ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -482,7 +482,7 @@ protected **boolean** isSyncConfiguration ()
 getSessionStopPolicy
 --------------------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_getSessionStopPolicy____:
+.. _io_realm_mongodb_sync_SyncConfiguration_getSessionStopPolicy__:
 
 public **OsRealmConfig.SyncSessionStopPolicy (?)** getSessionStopPolicy ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -491,7 +491,7 @@ NOTE: Only for internal usage. May change without warning. Returns the stop poli
 getUrlPrefix
 ------------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_getUrlPrefix____:
+.. _io_realm_mongodb_sync_SyncConfiguration_getUrlPrefix__:
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getUrlPrefix ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -500,7 +500,7 @@ Returns the url prefix used when establishing a sync connection to the Realm Obj
 getPartitionValue
 -----------------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_getPartitionValue____:
+.. _io_realm_mongodb_sync_SyncConfiguration_getPartitionValue__:
 
 public **BsonValue (?)** getPartitionValue ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -509,7 +509,7 @@ Returns the value this Realm is partitioned on. The partition key is a property 
 realmExists
 -----------
 
-.. _io_realm_mongodb_sync_SyncConfiguration_realmExists____:
+.. _io_realm_mongodb_sync_SyncConfiguration_realmExists__:
 
 protected **boolean** realmExists ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

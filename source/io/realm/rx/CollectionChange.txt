@@ -16,7 +16,7 @@ io.realm.rx.CollectionChange<E extends io.realm.OrderedRealmCollection>
 
 Container wrapping the result of a :ref:`io.realm.OrderedRealmCollectionChangeListener <io_realm_OrderedRealmCollectionChangeListener>` being triggered.
 
-This is used by **RealmResults#asChangesetObservable() (?)**} and **RealmList#asChangesetObservable() (?)** as RxJava is only capable of emitting one item, not multiple.
+This is used by :ref:`RealmResults#asChangesetObservable() <io_realm_RealmResults_asChangesetObservable__>`} and :ref:`RealmList#asChangesetObservable() <io_realm_RealmList_asChangesetObservable__>` as RxJava is only capable of emitting one item, not multiple.
 
 
 
@@ -36,7 +36,7 @@ Method Summary
      - Method and Description
    
    * - public **E (?)**
-     - :ref:`getCollection <io_realm_rx_CollectionChange_getCollection____>` ()
+     - :ref:`getCollection <io_realm_rx_CollectionChange_getCollection__>` ()
        
        Returns the collection that was updated.
        
@@ -44,7 +44,7 @@ Method Summary
        
    
    * - public :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>`
-     - :ref:`getChangeset <io_realm_rx_CollectionChange_getChangeset____>` ()
+     - :ref:`getChangeset <io_realm_rx_CollectionChange_getChangeset__>` ()
        
        Returns the changeset describing the update.
        
@@ -52,7 +52,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`equals <io_realm_rx_CollectionChange_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+     - :ref:`equals <io_realm_rx_CollectionChange_equals_Object_>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
        
@@ -60,7 +60,7 @@ Method Summary
        
    
    * - public **int**
-     - :ref:`hashCode <io_realm_rx_CollectionChange_hashCode____>` ()
+     - :ref:`hashCode <io_realm_rx_CollectionChange_hashCode__>` ()
        
        
        
@@ -74,7 +74,7 @@ Method Detail
 getCollection
 -------------
 
-.. _io_realm_rx_CollectionChange_getCollection____:
+.. _io_realm_rx_CollectionChange_getCollection__:
 
 public **E (?)** getCollection ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -83,7 +83,7 @@ Returns the collection that was updated.
 getChangeset
 ------------
 
-.. _io_realm_rx_CollectionChange_getChangeset____:
+.. _io_realm_rx_CollectionChange_getChangeset__:
 
 public :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` getChangeset ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,7 +114,7 @@ Returns the changeset describing the update.This will be ``null`` the first time
 equals
 ------
 
-.. _io_realm_rx_CollectionChange_equals__Object__:
+.. _io_realm_rx_CollectionChange_equals_Object_:
 
 public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -123,7 +123,7 @@ public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/ja
 hashCode
 --------
 
-.. _io_realm_rx_CollectionChange_hashCode____:
+.. _io_realm_rx_CollectionChange_hashCode__:
 
 public **int** hashCode ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

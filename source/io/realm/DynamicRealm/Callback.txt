@@ -32,7 +32,7 @@ Method Summary
      - Method and Description
    
    * - public abstract **void**
-     - :ref:`onSuccess <io_realm_DynamicRealm_Callback_onSuccess__DynamicRealm__>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
+     - :ref:`onSuccess <io_realm_DynamicRealm_Callback_onSuccess_DynamicRealm_>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
        
        
        
@@ -42,7 +42,7 @@ Method Summary
        
    
    * - public **void**
-     - :ref:`onError <io_realm_DynamicRealm_Callback_onError__Throwable__>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ exception)
+     - :ref:`onError <io_realm_DynamicRealm_Callback_onError_Throwable_>` (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ exception)
        
        
        
@@ -58,7 +58,7 @@ Method Detail
 onSuccess
 ---------
 
-.. _io_realm_DynamicRealm_Callback_onSuccess__DynamicRealm__:
+.. _io_realm_DynamicRealm_Callback_onSuccess_DynamicRealm_:
 
 public abstract **void** onSuccess (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ public abstract **void** onSuccess (:ref:`DynamicRealm <io_realm_DynamicRealm>` 
 onError
 -------
 
-.. _io_realm_DynamicRealm_Callback_onError__Throwable__:
+.. _io_realm_DynamicRealm_Callback_onError_Throwable_:
 
 public **void** onError (`Throwable <https://docs.oracle.com/javase/7/docs/api/java/lang/Throwable.html>`__ exception)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

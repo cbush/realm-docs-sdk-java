@@ -44,7 +44,7 @@ Method Summary
      - Method and Description
    
    * - public **void**
-     - :ref:`execute <io_realm_Realm_Transaction_execute__Realm__>` (:ref:`Realm <io_realm_Realm>` realm)
+     - :ref:`execute <io_realm_Realm_Transaction_execute_Realm_>` (:ref:`Realm <io_realm_Realm>` realm)
        
        
        
@@ -58,7 +58,7 @@ Method Detail
 execute
 -------
 
-.. _io_realm_Realm_Transaction_execute__Realm__:
+.. _io_realm_Realm_Transaction_execute_Realm_:
 
 public **void** execute (:ref:`Realm <io_realm_Realm>` realm)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

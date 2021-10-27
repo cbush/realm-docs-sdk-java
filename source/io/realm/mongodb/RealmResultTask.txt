@@ -31,7 +31,7 @@ Method Summary
      - Method and Description
    
    * - public **T (?)**
-     - :ref:`get <io_realm_mongodb_RealmResultTask_get____>` ()
+     - :ref:`get <io_realm_mongodb_RealmResultTask_get__>` ()
        
        Blocks the thread on which the call is made until the result of the operation arrives.
        
@@ -39,7 +39,7 @@ Method Summary
        
    
    * - public **void**
-     - :ref:`getAsync <io_realm_mongodb_RealmResultTask_getAsync__App_Callback_T___>` (:ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
+     - :ref:`getAsync <io_realm_mongodb_RealmResultTask_getAsync_App_Callback_T__>` (:ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
        
        Provides a way to subscribe to asynchronous operations via a callback, which handles both results and errors.
        
@@ -53,7 +53,7 @@ Method Detail
 get
 ----
 
-.. _io_realm_mongodb_RealmResultTask_get____:
+.. _io_realm_mongodb_RealmResultTask_get__:
 
 public **T (?)** get ()
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,7 +62,7 @@ Blocks the thread on which the call is made until the result of the operation ar
 getAsync
 --------
 
-.. _io_realm_mongodb_RealmResultTask_getAsync__App_Callback_T___:
+.. _io_realm_mongodb_RealmResultTask_getAsync_App_Callback_T__:
 
 public **void** getAsync (:ref:`io.realm.mongodb.App.Callback\<T> <io_realm_mongodb_App_Callback>` callback)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

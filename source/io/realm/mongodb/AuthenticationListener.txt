@@ -21,7 +21,7 @@ Method Summary
      - Method and Description
    
    * - public **void**
-     - :ref:`loggedIn <io_realm_mongodb_AuthenticationListener_loggedIn__User__>` (:ref:`User <io_realm_mongodb_User>` user)
+     - :ref:`loggedIn <io_realm_mongodb_AuthenticationListener_loggedIn_User_>` (:ref:`User <io_realm_mongodb_User>` user)
        
        A user was logged into the Object Server
        
@@ -29,7 +29,7 @@ Method Summary
        
    
    * - public **void**
-     - :ref:`loggedOut <io_realm_mongodb_AuthenticationListener_loggedOut__User__>` (:ref:`User <io_realm_mongodb_User>` user)
+     - :ref:`loggedOut <io_realm_mongodb_AuthenticationListener_loggedOut_User_>` (:ref:`User <io_realm_mongodb_User>` user)
        
        A user was successfully logged out from the Object Server.
        
@@ -43,7 +43,7 @@ Method Detail
 loggedIn
 --------
 
-.. _io_realm_mongodb_AuthenticationListener_loggedIn__User__:
+.. _io_realm_mongodb_AuthenticationListener_loggedIn_User_:
 
 public **void** loggedIn (:ref:`User <io_realm_mongodb_User>` user)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,7 +60,7 @@ __________
 loggedOut
 ---------
 
-.. _io_realm_mongodb_AuthenticationListener_loggedOut__User__:
+.. _io_realm_mongodb_AuthenticationListener_loggedOut_User_:
 
 public **void** loggedOut (:ref:`User <io_realm_mongodb_User>` user)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

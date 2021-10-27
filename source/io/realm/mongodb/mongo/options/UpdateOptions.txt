@@ -30,7 +30,7 @@ Method Summary
      - Method and Description
    
    * - public **boolean**
-     - :ref:`isUpsert <io_realm_mongodb_mongo_options_UpdateOptions_isUpsert____>` ()
+     - :ref:`isUpsert <io_realm_mongodb_mongo_options_UpdateOptions_isUpsert__>` ()
        
        Returns true if a new document should be inserted if there are no matches to the query filter.
        
@@ -38,7 +38,7 @@ Method Summary
        
    
    * - public :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>`
-     - :ref:`upsert <io_realm_mongodb_mongo_options_UpdateOptions_upsert__boolean__>` (**boolean** upsert)
+     - :ref:`upsert <io_realm_mongodb_mongo_options_UpdateOptions_upsert_boolean_>` (**boolean** upsert)
        
        Set to true if a new document should be inserted if there are no matches to the query filter.
        
@@ -46,7 +46,7 @@ Method Summary
        
    
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
-     - :ref:`toString <io_realm_mongodb_mongo_options_UpdateOptions_toString____>` ()
+     - :ref:`toString <io_realm_mongodb_mongo_options_UpdateOptions_toString__>` ()
        
        
        
@@ -60,7 +60,7 @@ Method Detail
 isUpsert
 --------
 
-.. _io_realm_mongodb_mongo_options_UpdateOptions_isUpsert____:
+.. _io_realm_mongodb_mongo_options_UpdateOptions_isUpsert__:
 
 public **boolean** isUpsert ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ Returns true if a new document should be inserted if there are no matches to the
 upsert
 ------
 
-.. _io_realm_mongodb_mongo_options_UpdateOptions_upsert__boolean__:
+.. _io_realm_mongodb_mongo_options_UpdateOptions_upsert_boolean_:
 
 public :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>` upsert (**boolean** upsert)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -84,7 +84,7 @@ __________
 toString
 --------
 
-.. _io_realm_mongodb_mongo_options_UpdateOptions_toString____:
+.. _io_realm_mongodb_mongo_options_UpdateOptions_toString__:
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

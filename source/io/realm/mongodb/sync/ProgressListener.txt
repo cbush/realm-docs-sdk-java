@@ -21,7 +21,7 @@ Method Summary
      - Method and Description
    
    * - public **void**
-     - :ref:`onChange <io_realm_mongodb_sync_ProgressListener_onChange__Progress__>` (:ref:`Progress <io_realm_mongodb_sync_Progress>` progress)
+     - :ref:`onChange <io_realm_mongodb_sync_ProgressListener_onChange_Progress_>` (:ref:`Progress <io_realm_mongodb_sync_Progress>` progress)
        
        This method will be called periodically from the underlying Object Server Client responsible for uploading and downloading changes from the remote Object Server.
        
@@ -35,7 +35,7 @@ Method Detail
 onChange
 --------
 
-.. _io_realm_mongodb_sync_ProgressListener_onChange__Progress__:
+.. _io_realm_mongodb_sync_ProgressListener_onChange_Progress_:
 
 public **void** onChange (:ref:`Progress <io_realm_mongodb_sync_Progress>` progress)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

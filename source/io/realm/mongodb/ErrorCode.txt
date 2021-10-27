@@ -1155,7 +1155,7 @@ Method Summary
      - Method and Description
    
    * - public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>`
-     - :ref:`values <io_realm_mongodb_ErrorCode_values____>` ()
+     - :ref:`values <io_realm_mongodb_ErrorCode_values__>` ()
        
        
        
@@ -1163,7 +1163,7 @@ Method Summary
        
    
    * - public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>`
-     - :ref:`valueOf <io_realm_mongodb_ErrorCode_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
+     - :ref:`valueOf <io_realm_mongodb_ErrorCode_valueOf_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
@@ -1171,7 +1171,7 @@ Method Summary
        
    
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
-     - :ref:`toString <io_realm_mongodb_ErrorCode_toString____>` ()
+     - :ref:`toString <io_realm_mongodb_ErrorCode_toString__>` ()
        
        
        
@@ -1179,7 +1179,7 @@ Method Summary
        
    
    * - public **int**
-     - :ref:`intValue <io_realm_mongodb_ErrorCode_intValue____>` ()
+     - :ref:`intValue <io_realm_mongodb_ErrorCode_intValue__>` ()
        
        Returns the numerical value for this error code.
        
@@ -1187,7 +1187,7 @@ Method Summary
        
    
    * - public :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>`
-     - :ref:`getCategory <io_realm_mongodb_ErrorCode_getCategory____>` ()
+     - :ref:`getCategory <io_realm_mongodb_ErrorCode_getCategory__>` ()
        
        Returns the getCategory of the error.
        
@@ -1195,7 +1195,7 @@ Method Summary
        
    
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
-     - :ref:`getType <io_realm_mongodb_ErrorCode_getType____>` ()
+     - :ref:`getType <io_realm_mongodb_ErrorCode_getType__>` ()
        
        Returns the type of error.
        
@@ -1203,7 +1203,7 @@ Method Summary
        
    
    * - public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>`
-     - :ref:`fromNativeError <io_realm_mongodb_ErrorCode_fromNativeError__String__int__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ type, **int** errorCode)
+     - :ref:`fromNativeError <io_realm_mongodb_ErrorCode_fromNativeError_String__int_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ type, **int** errorCode)
        
        Converts a native error to the appropriate Java equivalent
        
@@ -2876,7 +2876,7 @@ Method Detail
 values
 ------
 
-.. _io_realm_mongodb_ErrorCode_values____:
+.. _io_realm_mongodb_ErrorCode_values__:
 
 public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` values ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2885,7 +2885,7 @@ public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` values ()
 valueOf
 -------
 
-.. _io_realm_mongodb_ErrorCode_valueOf__String__:
+.. _io_realm_mongodb_ErrorCode_valueOf_String_:
 
 public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2894,7 +2894,7 @@ public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` valueOf (`String <ht
 toString
 --------
 
-.. _io_realm_mongodb_ErrorCode_toString____:
+.. _io_realm_mongodb_ErrorCode_toString__:
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2903,7 +2903,7 @@ public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>
 intValue
 --------
 
-.. _io_realm_mongodb_ErrorCode_intValue____:
+.. _io_realm_mongodb_ErrorCode_intValue__:
 
 public **int** intValue ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2914,7 +2914,7 @@ Returns the numerical value for this error code. Note that an error is only uniq
 getCategory
 -----------
 
-.. _io_realm_mongodb_ErrorCode_getCategory____:
+.. _io_realm_mongodb_ErrorCode_getCategory__:
 
 public :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` getCategory ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2931,7 +2931,7 @@ RECOVERABLE: Temporary error. The session will automatically try to recover as s
 getType
 -------
 
-.. _io_realm_mongodb_ErrorCode_getType____:
+.. _io_realm_mongodb_ErrorCode_getType__:
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getType ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2942,7 +2942,7 @@ Returns the type of error. Note that an error is only uniquely identified by the
 fromNativeError
 ---------------
 
-.. _io_realm_mongodb_ErrorCode_fromNativeError__String__int__:
+.. _io_realm_mongodb_ErrorCode_fromNativeError_String__int_:
 
 public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` fromNativeError (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ type, **int** errorCode)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

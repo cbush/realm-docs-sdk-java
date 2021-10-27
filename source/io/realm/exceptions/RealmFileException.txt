@@ -46,7 +46,7 @@ Method Summary
      - Method and Description
    
    * - public :ref:`RealmFileException.Kind <io_realm_exceptions_RealmFileException_Kind>`
-     - :ref:`getKind <io_realm_exceptions_RealmFileException_getKind____>` ()
+     - :ref:`getKind <io_realm_exceptions_RealmFileException_getKind__>` ()
        
        Gets the **#kind (?)** of this exception.
        
@@ -56,7 +56,7 @@ Method Summary
        
    
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
-     - :ref:`toString <io_realm_exceptions_RealmFileException_toString____>` ()
+     - :ref:`toString <io_realm_exceptions_RealmFileException_toString__>` ()
        
        
        
@@ -70,7 +70,7 @@ Method Detail
 getKind
 -------
 
-.. _io_realm_exceptions_RealmFileException_getKind____:
+.. _io_realm_exceptions_RealmFileException_getKind__:
 
 public :ref:`RealmFileException.Kind <io_realm_exceptions_RealmFileException_Kind>` getKind ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -81,7 +81,7 @@ Gets the **#kind (?)** of this exception.
 toString
 --------
 
-.. _io_realm_exceptions_RealmFileException_toString____:
+.. _io_realm_exceptions_RealmFileException_toString__:
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

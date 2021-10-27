@@ -14,11 +14,11 @@ io.realm.RealmConfiguration
 
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
-A RealmConfiguration is used to setup a specific Realm instance.Instances of a RealmConfiguration can only created by using the :ref:`io.realm.RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` and calling its **io.realm.RealmConfiguration.Builder#build() (?)** method.
+A RealmConfiguration is used to setup a specific Realm instance.Instances of a RealmConfiguration can only created by using the :ref:`io.realm.RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` and calling its :ref:`io.realm.RealmConfiguration.Builder#build() <io_realm_RealmConfiguration_Builder_build__>` method.
 
 
 
-A commonly used RealmConfiguration can easily be accessed by first saving it as **Realm#setDefaultConfiguration(RealmConfiguration) (?)** and then using **io.realm.Realm#getDefaultInstance() (?)**.
+A commonly used RealmConfiguration can easily be accessed by first saving it as :ref:`Realm#setDefaultConfiguration(RealmConfiguration) <io_realm_Realm_setDefaultConfiguration_RealmConfiguration_>` and then using :ref:`io.realm.Realm#getDefaultInstance() <io_realm_Realm_getDefaultInstance__>`.
 
 
 
@@ -93,7 +93,7 @@ Method Summary
      - Method and Description
    
    * - public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__
-     - :ref:`getRealmDirectory <io_realm_RealmConfiguration_getRealmDirectory____>` ()
+     - :ref:`getRealmDirectory <io_realm_RealmConfiguration_getRealmDirectory__>` ()
        
        
        
@@ -101,7 +101,7 @@ Method Summary
        
    
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
-     - :ref:`getRealmFileName <io_realm_RealmConfiguration_getRealmFileName____>` ()
+     - :ref:`getRealmFileName <io_realm_RealmConfiguration_getRealmFileName__>` ()
        
        
        
@@ -109,7 +109,7 @@ Method Summary
        
    
    * - public **byte**
-     - :ref:`getEncryptionKey <io_realm_RealmConfiguration_getEncryptionKey____>` ()
+     - :ref:`getEncryptionKey <io_realm_RealmConfiguration_getEncryptionKey__>` ()
        
        
        
@@ -117,7 +117,7 @@ Method Summary
        
    
    * - public **long**
-     - :ref:`getSchemaVersion <io_realm_RealmConfiguration_getSchemaVersion____>` ()
+     - :ref:`getSchemaVersion <io_realm_RealmConfiguration_getSchemaVersion__>` ()
        
        
        
@@ -125,7 +125,7 @@ Method Summary
        
    
    * - public :ref:`RealmMigration <io_realm_RealmMigration>`
-     - :ref:`getMigration <io_realm_RealmConfiguration_getMigration____>` ()
+     - :ref:`getMigration <io_realm_RealmConfiguration_getMigration__>` ()
        
        
        
@@ -133,7 +133,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`shouldDeleteRealmIfMigrationNeeded <io_realm_RealmConfiguration_shouldDeleteRealmIfMigrationNeeded____>` ()
+     - :ref:`shouldDeleteRealmIfMigrationNeeded <io_realm_RealmConfiguration_shouldDeleteRealmIfMigrationNeeded__>` ()
        
        
        
@@ -141,7 +141,7 @@ Method Summary
        
    
    * - public **OsRealmConfig.Durability (?)**
-     - :ref:`getDurability <io_realm_RealmConfiguration_getDurability____>` ()
+     - :ref:`getDurability <io_realm_RealmConfiguration_getDurability__>` ()
        
        
        
@@ -149,7 +149,7 @@ Method Summary
        
    
    * - protected **RealmProxyMediator (?)**
-     - :ref:`getSchemaMediator <io_realm_RealmConfiguration_getSchemaMediator____>` ()
+     - :ref:`getSchemaMediator <io_realm_RealmConfiguration_getSchemaMediator__>` ()
        
        Returns the mediator instance of schema which is defined by this configuration.
        
@@ -157,7 +157,7 @@ Method Summary
        
    
    * - protected :ref:`Realm.Transaction <io_realm_Realm_Transaction>`
-     - :ref:`getInitialDataTransaction <io_realm_RealmConfiguration_getInitialDataTransaction____>` ()
+     - :ref:`getInitialDataTransaction <io_realm_RealmConfiguration_getInitialDataTransaction__>` ()
        
        Returns the transaction instance with initial data.
        
@@ -165,7 +165,7 @@ Method Summary
        
    
    * - public :ref:`CompactOnLaunchCallback <io_realm_CompactOnLaunchCallback>`
-     - :ref:`getCompactOnLaunchCallback <io_realm_RealmConfiguration_getCompactOnLaunchCallback____>` ()
+     - :ref:`getCompactOnLaunchCallback <io_realm_RealmConfiguration_getCompactOnLaunchCallback__>` ()
        
        Returns a callback to determine if the Realm file should be compacted before being returned to the user.
        
@@ -173,7 +173,7 @@ Method Summary
        
    
    * - public `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__
-     - :ref:`getRealmObjectClasses <io_realm_RealmConfiguration_getRealmObjectClasses____>` ()
+     - :ref:`getRealmObjectClasses <io_realm_RealmConfiguration_getRealmObjectClasses__>` ()
        
        Returns the unmodifiable `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ of model classes that make up the schema for this Realm.
        
@@ -183,7 +183,7 @@ Method Summary
        
    
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
-     - :ref:`getPath <io_realm_RealmConfiguration_getPath____>` ()
+     - :ref:`getPath <io_realm_RealmConfiguration_getPath__>` ()
        
        Returns the absolute path to where the Realm file will be saved.
        
@@ -191,7 +191,7 @@ Method Summary
        
    
    * - protected **boolean**
-     - :ref:`realmExists <io_realm_RealmConfiguration_realmExists____>` ()
+     - :ref:`realmExists <io_realm_RealmConfiguration_realmExists__>` ()
        
        Checks if the Realm file defined by this configuration already exists.
        
@@ -199,7 +199,7 @@ Method Summary
        
    
    * - public :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>`
-     - :ref:`getRxFactory <io_realm_RealmConfiguration_getRxFactory____>` ()
+     - :ref:`getRxFactory <io_realm_RealmConfiguration_getRxFactory__>` ()
        
        Returns the :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` that is used to create Rx Observables from Realm objects.
        
@@ -209,7 +209,7 @@ Method Summary
        
    
    * - public :ref:`FlowFactory <io_realm_coroutines_FlowFactory>`
-     - :ref:`getFlowFactory <io_realm_RealmConfiguration_getFlowFactory____>` ()
+     - :ref:`getFlowFactory <io_realm_RealmConfiguration_getFlowFactory__>` ()
        
        Returns the :ref:`FlowFactory <io_realm_coroutines_FlowFactory>` that is used to create Kotlin Flows from Realm objects.
        
@@ -219,7 +219,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`isReadOnly <io_realm_RealmConfiguration_isReadOnly____>` ()
+     - :ref:`isReadOnly <io_realm_RealmConfiguration_isReadOnly__>` ()
        
        Returns whether this Realm is read-only or not.
        
@@ -227,7 +227,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`isRecoveryConfiguration <io_realm_RealmConfiguration_isRecoveryConfiguration____>` ()
+     - :ref:`isRecoveryConfiguration <io_realm_RealmConfiguration_isRecoveryConfiguration__>` ()
        
        
        
@@ -235,7 +235,7 @@ Method Summary
        
    
    * - public **long**
-     - :ref:`getMaxNumberOfActiveVersions <io_realm_RealmConfiguration_getMaxNumberOfActiveVersions____>` ()
+     - :ref:`getMaxNumberOfActiveVersions <io_realm_RealmConfiguration_getMaxNumberOfActiveVersions__>` ()
        
        
        
@@ -243,7 +243,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`isAllowWritesOnUiThread <io_realm_RealmConfiguration_isAllowWritesOnUiThread____>` ()
+     - :ref:`isAllowWritesOnUiThread <io_realm_RealmConfiguration_isAllowWritesOnUiThread__>` ()
        
        Returns whether calls to **Realm#executeTransaction (?)** can be done on the UI thread.
        
@@ -253,7 +253,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`isAllowQueriesOnUiThread <io_realm_RealmConfiguration_isAllowQueriesOnUiThread____>` ()
+     - :ref:`isAllowQueriesOnUiThread <io_realm_RealmConfiguration_isAllowQueriesOnUiThread__>` ()
        
        Returns whether a :ref:`RealmQuery <io_realm_RealmQuery>` is allowed to be launched from the UI thread.
        
@@ -263,7 +263,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`equals <io_realm_RealmConfiguration_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
+     - :ref:`equals <io_realm_RealmConfiguration_equals_Object_>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
        
        
        
@@ -271,7 +271,7 @@ Method Summary
        
    
    * - public **int**
-     - :ref:`hashCode <io_realm_RealmConfiguration_hashCode____>` ()
+     - :ref:`hashCode <io_realm_RealmConfiguration_hashCode__>` ()
        
        
        
@@ -279,7 +279,7 @@ Method Summary
        
    
    * - protected static **RealmProxyMediator (?)**
-     - :ref:`createSchemaMediator <io_realm_RealmConfiguration_createSchemaMediator__Set_Object___Set_Class___extends_RealmModel____boolean__>` (`java.util.Set\<java.lang.Object> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ modules, `java.util.Set\<java.lang.Class\<? extends io.realm.RealmModel>> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ debugSchema, **boolean** excludeDebugSchema)
+     - :ref:`createSchemaMediator <io_realm_RealmConfiguration_createSchemaMediator_Set_Object___Set_Class___extends_RealmModel____boolean_>` (`java.util.Set\<java.lang.Object> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ modules, `java.util.Set\<java.lang.Class\<? extends io.realm.RealmModel>> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ debugSchema, **boolean** excludeDebugSchema)
        
        
        
@@ -287,7 +287,7 @@ Method Summary
        
    
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
-     - :ref:`toString <io_realm_RealmConfiguration_toString____>` ()
+     - :ref:`toString <io_realm_RealmConfiguration_toString__>` ()
        
        
        
@@ -295,7 +295,7 @@ Method Summary
        
    
    * - protected **boolean**
-     - :ref:`isSyncConfiguration <io_realm_RealmConfiguration_isSyncConfiguration____>` ()
+     - :ref:`isSyncConfiguration <io_realm_RealmConfiguration_isSyncConfiguration__>` ()
        
        
        
@@ -303,7 +303,7 @@ Method Summary
        
    
    * - protected static :ref:`RealmConfiguration <io_realm_RealmConfiguration>`
-     - :ref:`forRecovery <io_realm_RealmConfiguration_forRecovery__String__byte[]__RealmProxyMediator__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[]** encryptionKey, **RealmProxyMediator (?)** schemaMediator)
+     - :ref:`forRecovery <io_realm_RealmConfiguration_forRecovery_String__byte[]__RealmProxyMediator_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[]** encryptionKey, **RealmProxyMediator (?)** schemaMediator)
        
        
        
@@ -332,7 +332,7 @@ Method Detail
 getRealmDirectory
 -----------------
 
-.. _io_realm_RealmConfiguration_getRealmDirectory____:
+.. _io_realm_RealmConfiguration_getRealmDirectory__:
 
 public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__ getRealmDirectory ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -341,7 +341,7 @@ public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__ ge
 getRealmFileName
 ----------------
 
-.. _io_realm_RealmConfiguration_getRealmFileName____:
+.. _io_realm_RealmConfiguration_getRealmFileName__:
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getRealmFileName ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -350,7 +350,7 @@ public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>
 getEncryptionKey
 ----------------
 
-.. _io_realm_RealmConfiguration_getEncryptionKey____:
+.. _io_realm_RealmConfiguration_getEncryptionKey__:
 
 public **byte** getEncryptionKey ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -359,7 +359,7 @@ public **byte** getEncryptionKey ()
 getSchemaVersion
 ----------------
 
-.. _io_realm_RealmConfiguration_getSchemaVersion____:
+.. _io_realm_RealmConfiguration_getSchemaVersion__:
 
 public **long** getSchemaVersion ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -368,7 +368,7 @@ public **long** getSchemaVersion ()
 getMigration
 ------------
 
-.. _io_realm_RealmConfiguration_getMigration____:
+.. _io_realm_RealmConfiguration_getMigration__:
 
 public :ref:`RealmMigration <io_realm_RealmMigration>` getMigration ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -377,7 +377,7 @@ public :ref:`RealmMigration <io_realm_RealmMigration>` getMigration ()
 shouldDeleteRealmIfMigrationNeeded
 ----------------------------------
 
-.. _io_realm_RealmConfiguration_shouldDeleteRealmIfMigrationNeeded____:
+.. _io_realm_RealmConfiguration_shouldDeleteRealmIfMigrationNeeded__:
 
 public **boolean** shouldDeleteRealmIfMigrationNeeded ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -386,7 +386,7 @@ public **boolean** shouldDeleteRealmIfMigrationNeeded ()
 getDurability
 -------------
 
-.. _io_realm_RealmConfiguration_getDurability____:
+.. _io_realm_RealmConfiguration_getDurability__:
 
 public **OsRealmConfig.Durability (?)** getDurability ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -395,7 +395,7 @@ public **OsRealmConfig.Durability (?)** getDurability ()
 getSchemaMediator
 -----------------
 
-.. _io_realm_RealmConfiguration_getSchemaMediator____:
+.. _io_realm_RealmConfiguration_getSchemaMediator__:
 
 protected **RealmProxyMediator (?)** getSchemaMediator ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -404,7 +404,7 @@ Returns the mediator instance of schema which is defined by this configuration.
 getInitialDataTransaction
 -------------------------
 
-.. _io_realm_RealmConfiguration_getInitialDataTransaction____:
+.. _io_realm_RealmConfiguration_getInitialDataTransaction__:
 
 protected :ref:`Realm.Transaction <io_realm_Realm_Transaction>` getInitialDataTransaction ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -413,7 +413,7 @@ Returns the transaction instance with initial data.
 getCompactOnLaunchCallback
 --------------------------
 
-.. _io_realm_RealmConfiguration_getCompactOnLaunchCallback____:
+.. _io_realm_RealmConfiguration_getCompactOnLaunchCallback__:
 
 public :ref:`CompactOnLaunchCallback <io_realm_CompactOnLaunchCallback>` getCompactOnLaunchCallback ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -422,7 +422,7 @@ Returns a callback to determine if the Realm file should be compacted before bei
 getRealmObjectClasses
 ---------------------
 
-.. _io_realm_RealmConfiguration_getRealmObjectClasses____:
+.. _io_realm_RealmConfiguration_getRealmObjectClasses__:
 
 public `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ getRealmObjectClasses ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -433,7 +433,7 @@ Returns the unmodifiable `Set <https://docs.oracle.com/javase/7/docs/api/java/ut
 getPath
 -------
 
-.. _io_realm_RealmConfiguration_getPath____:
+.. _io_realm_RealmConfiguration_getPath__:
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getPath ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -442,7 +442,7 @@ Returns the absolute path to where the Realm file will be saved.
 realmExists
 -----------
 
-.. _io_realm_RealmConfiguration_realmExists____:
+.. _io_realm_RealmConfiguration_realmExists__:
 
 protected **boolean** realmExists ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -453,7 +453,7 @@ Checks if the Realm file defined by this configuration already exists.WARNING: T
 getRxFactory
 ------------
 
-.. _io_realm_RealmConfiguration_getRxFactory____:
+.. _io_realm_RealmConfiguration_getRxFactory__:
 
 public :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` getRxFactory ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -467,7 +467,7 @@ ______
 getFlowFactory
 --------------
 
-.. _io_realm_RealmConfiguration_getFlowFactory____:
+.. _io_realm_RealmConfiguration_getFlowFactory__:
 
 public :ref:`FlowFactory <io_realm_coroutines_FlowFactory>` getFlowFactory ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -481,7 +481,7 @@ ______
 isReadOnly
 ----------
 
-.. _io_realm_RealmConfiguration_isReadOnly____:
+.. _io_realm_RealmConfiguration_isReadOnly__:
 
 public **boolean** isReadOnly ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -492,7 +492,7 @@ Returns whether this Realm is read-only or not. Read-only Realms cannot be modif
 isRecoveryConfiguration
 -----------------------
 
-.. _io_realm_RealmConfiguration_isRecoveryConfiguration____:
+.. _io_realm_RealmConfiguration_isRecoveryConfiguration__:
 
 public **boolean** isRecoveryConfiguration ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -506,7 +506,7 @@ ________
 getMaxNumberOfActiveVersions
 ----------------------------
 
-.. _io_realm_RealmConfiguration_getMaxNumberOfActiveVersions____:
+.. _io_realm_RealmConfiguration_getMaxNumberOfActiveVersions__:
 
 public **long** getMaxNumberOfActiveVersions ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -515,14 +515,14 @@ public **long** getMaxNumberOfActiveVersions ()
 isAllowWritesOnUiThread
 -----------------------
 
-.. _io_realm_RealmConfiguration_isAllowWritesOnUiThread____:
+.. _io_realm_RealmConfiguration_isAllowWritesOnUiThread__:
 
 public **boolean** isAllowWritesOnUiThread ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns whether calls to **Realm#executeTransaction (?)** can be done on the UI thread.
 
-**Note: Realm does not allow blocking transactions to be run on the main thread unless users explicitly opt in with \*\*Builder#allowWritesOnUiThread(boolean) (?)\*\* or its Realm Sync builder counterpart.
+**Note: Realm does not allow blocking transactions to be run on the main thread unless users explicitly opt in with :ref:`Builder#allowWritesOnUiThread(boolean) <io_realm_RealmConfiguration_Builder_allowWritesOnUiThread_boolean_>` or its Realm Sync builder counterpart.
 
 **
 
@@ -530,14 +530,14 @@ Returns whether calls to **Realm#executeTransaction (?)** can be done on the UI 
 isAllowQueriesOnUiThread
 ------------------------
 
-.. _io_realm_RealmConfiguration_isAllowQueriesOnUiThread____:
+.. _io_realm_RealmConfiguration_isAllowQueriesOnUiThread__:
 
 public **boolean** isAllowQueriesOnUiThread ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns whether a :ref:`RealmQuery <io_realm_RealmQuery>` is allowed to be launched from the UI thread.
 
-By default Realm allows queries on the main thread. To disallow this users have to explicitly opt in with **Builder#allowQueriesOnUiThread(boolean) (?)** or its Realm Sync builder counterpart.
+By default Realm allows queries on the main thread. To disallow this users have to explicitly opt in with :ref:`Builder#allowQueriesOnUiThread(boolean) <io_realm_RealmConfiguration_Builder_allowQueriesOnUiThread_boolean_>` or its Realm Sync builder counterpart.
 
 
 
@@ -545,7 +545,7 @@ By default Realm allows queries on the main thread. To disallow this users have 
 equals
 ------
 
-.. _io_realm_RealmConfiguration_equals__Object__:
+.. _io_realm_RealmConfiguration_equals_Object_:
 
 public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -554,7 +554,7 @@ public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/ja
 hashCode
 --------
 
-.. _io_realm_RealmConfiguration_hashCode____:
+.. _io_realm_RealmConfiguration_hashCode__:
 
 public **int** hashCode ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -563,7 +563,7 @@ public **int** hashCode ()
 createSchemaMediator
 --------------------
 
-.. _io_realm_RealmConfiguration_createSchemaMediator__Set_Object___Set_Class___extends_RealmModel____boolean__:
+.. _io_realm_RealmConfiguration_createSchemaMediator_Set_Object___Set_Class___extends_RealmModel____boolean_:
 
 protected static **RealmProxyMediator (?)** createSchemaMediator (`java.util.Set\<java.lang.Object> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ modules, `java.util.Set\<java.lang.Class\<? extends io.realm.RealmModel>> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ debugSchema, **boolean** excludeDebugSchema)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -572,7 +572,7 @@ protected static **RealmProxyMediator (?)** createSchemaMediator (`java.util.Set
 toString
 --------
 
-.. _io_realm_RealmConfiguration_toString____:
+.. _io_realm_RealmConfiguration_toString__:
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -581,7 +581,7 @@ public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>
 isSyncConfiguration
 -------------------
 
-.. _io_realm_RealmConfiguration_isSyncConfiguration____:
+.. _io_realm_RealmConfiguration_isSyncConfiguration__:
 
 protected **boolean** isSyncConfiguration ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -590,7 +590,7 @@ protected **boolean** isSyncConfiguration ()
 forRecovery
 -----------
 
-.. _io_realm_RealmConfiguration_forRecovery__String__byte[]__RealmProxyMediator__:
+.. _io_realm_RealmConfiguration_forRecovery_String__byte[]__RealmProxyMediator_:
 
 protected static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[]** encryptionKey, **RealmProxyMediator (?)** schemaMediator)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

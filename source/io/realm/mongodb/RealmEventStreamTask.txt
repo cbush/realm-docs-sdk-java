@@ -27,7 +27,7 @@ Method Summary
      - Method and Description
    
    * - public :ref:`BaseChangeEvent <io_realm_mongodb_mongo_events_BaseChangeEvent>`
-     - :ref:`getNext <io_realm_mongodb_RealmEventStreamTask_getNext____>` ()
+     - :ref:`getNext <io_realm_mongodb_RealmEventStreamTask_getNext__>` ()
        
        Blocks the thread on which the call is made until the result of the operation arrives.
        
@@ -35,7 +35,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`isOpen <io_realm_mongodb_RealmEventStreamTask_isOpen____>` ()
+     - :ref:`isOpen <io_realm_mongodb_RealmEventStreamTask_isOpen__>` ()
        
        Whether or not the stream is currently open.
        
@@ -49,7 +49,7 @@ Method Detail
 getNext
 -------
 
-.. _io_realm_mongodb_RealmEventStreamTask_getNext____:
+.. _io_realm_mongodb_RealmEventStreamTask_getNext__:
 
 public :ref:`BaseChangeEvent <io_realm_mongodb_mongo_events_BaseChangeEvent>` getNext ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,7 +61,7 @@ ______
 isOpen
 ------
 
-.. _io_realm_mongodb_RealmEventStreamTask_isOpen____:
+.. _io_realm_mongodb_RealmEventStreamTask_isOpen__:
 
 public **boolean** isOpen ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

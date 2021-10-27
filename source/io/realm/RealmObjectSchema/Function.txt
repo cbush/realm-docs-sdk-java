@@ -21,7 +21,7 @@ Method Summary
      - Method and Description
    
    * - public **void**
-     - :ref:`apply <io_realm_RealmObjectSchema_Function_apply__DynamicRealmObject__>` (:ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` obj)
+     - :ref:`apply <io_realm_RealmObjectSchema_Function_apply_DynamicRealmObject_>` (:ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` obj)
        
        
        
@@ -35,7 +35,7 @@ Method Detail
 apply
 -----
 
-.. _io_realm_RealmObjectSchema_Function_apply__DynamicRealmObject__:
+.. _io_realm_RealmObjectSchema_Function_apply_DynamicRealmObject_:
 
 public **void** apply (:ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` obj)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

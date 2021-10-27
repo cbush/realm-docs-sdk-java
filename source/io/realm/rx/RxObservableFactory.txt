@@ -21,7 +21,7 @@ Method Summary
      - Method and Description
    
    * - public **<any> (?)**
-     - :ref:`from <io_realm_rx_RxObservableFactory_from__Realm__>` (:ref:`Realm <io_realm_Realm>` realm)
+     - :ref:`from <io_realm_rx_RxObservableFactory_from_Realm_>` (:ref:`Realm <io_realm_Realm>` realm)
        
        Creates a Flowable for a :ref:`Realm <io_realm_Realm>`.
        
@@ -31,7 +31,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`from <io_realm_rx_RxObservableFactory_from__DynamicRealm__>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
+     - :ref:`from <io_realm_rx_RxObservableFactory_from_DynamicRealm_>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
        
        Creates a Flowable for a :ref:`DynamicRealm <io_realm_DynamicRealm>`.
        
@@ -41,7 +41,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`from <io_realm_rx_RxObservableFactory_from__Realm__RealmResults_E___>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
+     - :ref:`from <io_realm_rx_RxObservableFactory_from_Realm__RealmResults_E__>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
        
        Creates a Flowable for a :ref:`RealmResults <io_realm_RealmResults>`.
        
@@ -51,7 +51,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`changesetsFrom <io_realm_rx_RxObservableFactory_changesetsFrom__Realm__RealmResults_E___>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
+     - :ref:`changesetsFrom <io_realm_rx_RxObservableFactory_changesetsFrom_Realm__RealmResults_E__>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
        
        Creates an Observable for a :ref:`RealmResults <io_realm_RealmResults>`.
        
@@ -61,7 +61,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`from <io_realm_rx_RxObservableFactory_from__DynamicRealm__RealmResults_E___>` <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
+     - :ref:`from <io_realm_rx_RxObservableFactory_from_DynamicRealm__RealmResults_E__>` <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
        
        Creates a Flowable for a :ref:`RealmResults <io_realm_RealmResults>`.
        
@@ -71,7 +71,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`changesetsFrom <io_realm_rx_RxObservableFactory_changesetsFrom__DynamicRealm__RealmResults_E___>` <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
+     - :ref:`changesetsFrom <io_realm_rx_RxObservableFactory_changesetsFrom_DynamicRealm__RealmResults_E__>` <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
        
        Creates an Observable for a :ref:`RealmResults <io_realm_RealmResults>`.
        
@@ -81,7 +81,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`from <io_realm_rx_RxObservableFactory_from__Realm__RealmList_E___>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
+     - :ref:`from <io_realm_rx_RxObservableFactory_from_Realm__RealmList_E__>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
        
        Creates an Observable for a :ref:`RealmList <io_realm_RealmList>`.
        
@@ -91,7 +91,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`changesetsFrom <io_realm_rx_RxObservableFactory_changesetsFrom__Realm__RealmList_E___>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
+     - :ref:`changesetsFrom <io_realm_rx_RxObservableFactory_changesetsFrom_Realm__RealmList_E__>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
        
        Creates an Observable for a :ref:`RealmList <io_realm_RealmList>`.
        
@@ -101,7 +101,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`from <io_realm_rx_RxObservableFactory_from__DynamicRealm__RealmList_E___>` <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
+     - :ref:`from <io_realm_rx_RxObservableFactory_from_DynamicRealm__RealmList_E__>` <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
        
        Creates a Flowable for a :ref:`RealmList <io_realm_RealmList>`.
        
@@ -111,7 +111,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`changesetsFrom <io_realm_rx_RxObservableFactory_changesetsFrom__DynamicRealm__RealmList_E___>` <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
+     - :ref:`changesetsFrom <io_realm_rx_RxObservableFactory_changesetsFrom_DynamicRealm__RealmList_E__>` <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
        
        Creates an Observable for a :ref:`RealmList <io_realm_RealmList>`.
        
@@ -121,7 +121,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`from <io_realm_rx_RxObservableFactory_from__Realm__E__>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, **E (?)** object)
+     - :ref:`from <io_realm_rx_RxObservableFactory_from_Realm__E_>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, **E (?)** object)
        
        Creates a Flowable for a :ref:`RealmObject <io_realm_RealmObject>`.
        
@@ -131,7 +131,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`changesetsFrom <io_realm_rx_RxObservableFactory_changesetsFrom__Realm__E__>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, **E (?)** object)
+     - :ref:`changesetsFrom <io_realm_rx_RxObservableFactory_changesetsFrom_Realm__E_>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, **E (?)** object)
        
        Creates an Observable for a :ref:`RealmObject <io_realm_RealmObject>`.
        
@@ -141,7 +141,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`from <io_realm_rx_RxObservableFactory_from__DynamicRealm__DynamicRealmObject__>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object)
+     - :ref:`from <io_realm_rx_RxObservableFactory_from_DynamicRealm__DynamicRealmObject_>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object)
        
        Creates a Flowable for a :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`.
        
@@ -151,7 +151,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`changesetsFrom <io_realm_rx_RxObservableFactory_changesetsFrom__DynamicRealm__DynamicRealmObject__>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object)
+     - :ref:`changesetsFrom <io_realm_rx_RxObservableFactory_changesetsFrom_DynamicRealm__DynamicRealmObject_>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object)
        
        Creates an Observable for a :ref:`RealmObject <io_realm_RealmObject>`.
        
@@ -161,7 +161,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`from <io_realm_rx_RxObservableFactory_from__Realm__RealmQuery_E___>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmQuery\<E> <io_realm_RealmQuery>` query)
+     - :ref:`from <io_realm_rx_RxObservableFactory_from_Realm__RealmQuery_E__>` <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmQuery\<E> <io_realm_RealmQuery>` query)
        
        Creates a Single from a :ref:`RealmQuery <io_realm_RealmQuery>`.
        
@@ -171,7 +171,7 @@ Method Summary
        
    
    * - public **<any> (?)**
-     - :ref:`from <io_realm_rx_RxObservableFactory_from__DynamicRealm__RealmQuery_E___>` <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmQuery\<E> <io_realm_RealmQuery>` query)
+     - :ref:`from <io_realm_rx_RxObservableFactory_from_DynamicRealm__RealmQuery_E__>` <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmQuery\<E> <io_realm_RealmQuery>` query)
        
        Creates a Single from a :ref:`RealmQuery <io_realm_RealmQuery>`.
        
@@ -187,7 +187,7 @@ Method Detail
 from
 ----
 
-.. _io_realm_rx_RxObservableFactory_from__Realm__:
+.. _io_realm_rx_RxObservableFactory_from_Realm_:
 
 public **<any> (?)** from (:ref:`Realm <io_realm_Realm>` realm)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -205,7 +205,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_from__DynamicRealm__:
+.. _io_realm_rx_RxObservableFactory_from_DynamicRealm_:
 
 public **<any> (?)** from (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -223,7 +223,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_from__Realm__RealmResults_E___:
+.. _io_realm_rx_RxObservableFactory_from_Realm__RealmResults_E__:
 
 public **<any> (?)** from <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -251,7 +251,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_from__DynamicRealm__RealmResults_E___:
+.. _io_realm_rx_RxObservableFactory_from_DynamicRealm__RealmResults_E__:
 
 public **<any> (?)** from <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -273,7 +273,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_from__Realm__RealmList_E___:
+.. _io_realm_rx_RxObservableFactory_from_Realm__RealmList_E__:
 
 public **<any> (?)** from <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -303,7 +303,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_from__DynamicRealm__RealmList_E___:
+.. _io_realm_rx_RxObservableFactory_from_DynamicRealm__RealmList_E__:
 
 public **<any> (?)** from <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -327,7 +327,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_from__Realm__E__:
+.. _io_realm_rx_RxObservableFactory_from_Realm__E_:
 
 public **<any> (?)** from <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, **E (?)** object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -353,7 +353,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_from__DynamicRealm__DynamicRealmObject__:
+.. _io_realm_rx_RxObservableFactory_from_DynamicRealm__DynamicRealmObject_:
 
 public **<any> (?)** from (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -373,7 +373,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_from__Realm__RealmQuery_E___:
+.. _io_realm_rx_RxObservableFactory_from_Realm__RealmQuery_E__:
 
 public **<any> (?)** from <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmQuery\<E> <io_realm_RealmQuery>` query)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -399,7 +399,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_from__DynamicRealm__RealmQuery_E___:
+.. _io_realm_rx_RxObservableFactory_from_DynamicRealm__RealmQuery_E__:
 
 public **<any> (?)** from <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmQuery\<E> <io_realm_RealmQuery>` query)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -422,7 +422,7 @@ __________
 changesetsFrom
 --------------
 
-.. _io_realm_rx_RxObservableFactory_changesetsFrom__Realm__RealmResults_E___:
+.. _io_realm_rx_RxObservableFactory_changesetsFrom_Realm__RealmResults_E__:
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -450,7 +450,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_changesetsFrom__DynamicRealm__RealmResults_E___:
+.. _io_realm_rx_RxObservableFactory_changesetsFrom_DynamicRealm__RealmResults_E__:
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -472,7 +472,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_changesetsFrom__Realm__RealmList_E___:
+.. _io_realm_rx_RxObservableFactory_changesetsFrom_Realm__RealmList_E__:
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -500,7 +500,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_changesetsFrom__DynamicRealm__RealmList_E___:
+.. _io_realm_rx_RxObservableFactory_changesetsFrom_DynamicRealm__RealmList_E__:
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -522,7 +522,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_changesetsFrom__Realm__E__:
+.. _io_realm_rx_RxObservableFactory_changesetsFrom_Realm__E_:
 
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, **E (?)** object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -548,7 +548,7 @@ __________
    
    
 
-.. _io_realm_rx_RxObservableFactory_changesetsFrom__DynamicRealm__DynamicRealmObject__:
+.. _io_realm_rx_RxObservableFactory_changesetsFrom_DynamicRealm__DynamicRealmObject_:
 
 public **<any> (?)** changesetsFrom (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

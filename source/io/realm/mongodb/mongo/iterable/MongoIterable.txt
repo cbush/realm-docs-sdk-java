@@ -55,7 +55,7 @@ Method Summary
      - Method and Description
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`iterator <io_realm_mongodb_mongo_iterable_MongoIterable_iterator____>` ()
+     - :ref:`iterator <io_realm_mongodb_mongo_iterable_MongoIterable_iterator__>` ()
        
        Returns a cursor of the operation represented by this iterable.
        
@@ -63,7 +63,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`first <io_realm_mongodb_mongo_iterable_MongoIterable_first____>` ()
+     - :ref:`first <io_realm_mongodb_mongo_iterable_MongoIterable_first__>` ()
        
        Helper to return the first item in the iterator or null.
        
@@ -92,7 +92,7 @@ Method Detail
 iterator
 --------
 
-.. _io_realm_mongodb_mongo_iterable_MongoIterable_iterator____:
+.. _io_realm_mongodb_mongo_iterable_MongoIterable_iterator__:
 
 public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` iterator ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -105,7 +105,7 @@ Returns a cursor of the operation represented by this iterable.The result is wra
 first
 -----
 
-.. _io_realm_mongodb_mongo_iterable_MongoIterable_first____:
+.. _io_realm_mongodb_mongo_iterable_MongoIterable_first__:
 
 public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` first ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

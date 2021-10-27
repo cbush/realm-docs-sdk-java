@@ -21,7 +21,7 @@ Method Summary
      - Method and Description
    
    * - public **boolean**
-     - :ref:`isDeleted <io_realm_ObjectChangeSet_isDeleted____>` ()
+     - :ref:`isDeleted <io_realm_ObjectChangeSet_isDeleted__>` ()
        
        
        
@@ -29,7 +29,7 @@ Method Summary
        
    
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
-     - :ref:`getChangedFields <io_realm_ObjectChangeSet_getChangedFields____>` ()
+     - :ref:`getChangedFields <io_realm_ObjectChangeSet_getChangedFields__>` ()
        
        
        
@@ -37,7 +37,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`isFieldChanged <io_realm_ObjectChangeSet_isFieldChanged__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+     - :ref:`isFieldChanged <io_realm_ObjectChangeSet_isFieldChanged_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Checks if a given field has been changed.
        
@@ -51,7 +51,7 @@ Method Detail
 isDeleted
 ---------
 
-.. _io_realm_ObjectChangeSet_isDeleted____:
+.. _io_realm_ObjectChangeSet_isDeleted__:
 
 public **boolean** isDeleted ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,7 +60,7 @@ public **boolean** isDeleted ()
 getChangedFields
 ----------------
 
-.. _io_realm_ObjectChangeSet_getChangedFields____:
+.. _io_realm_ObjectChangeSet_getChangedFields__:
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getChangedFields ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>
 isFieldChanged
 --------------
 
-.. _io_realm_ObjectChangeSet_isFieldChanged__String__:
+.. _io_realm_ObjectChangeSet_isFieldChanged_String_:
 
 public **boolean** isFieldChanged (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

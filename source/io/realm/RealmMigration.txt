@@ -44,7 +44,7 @@ To support migrations from any previous schemaVersion to the newest, the followi
 
  
 
-During development when RealmObject classes can change frequently, it is possible to use **io.realm.Realm#deleteRealm(RealmConfiguration) (?)**. This will delete the database file and eliminate the need for any migrations.
+During development when RealmObject classes can change frequently, it is possible to use :ref:`io.realm.Realm#deleteRealm(RealmConfiguration) <io_realm_Realm_deleteRealm_RealmConfiguration_>`. This will delete the database file and eliminate the need for any migrations.
 
 
 
@@ -59,7 +59,7 @@ Method Summary
      - Method and Description
    
    * - public **void**
-     - :ref:`migrate <io_realm_RealmMigration_migrate__DynamicRealm__long__long__>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, **long** oldVersion, **long** newVersion)
+     - :ref:`migrate <io_realm_RealmMigration_migrate_DynamicRealm__long__long_>` (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, **long** oldVersion, **long** newVersion)
        
        This method will be called if a migration is needed.
        
@@ -73,7 +73,7 @@ Method Detail
 migrate
 -------
 
-.. _io_realm_RealmMigration_migrate__DynamicRealm__long__long__:
+.. _io_realm_RealmMigration_migrate_DynamicRealm__long__long_:
 
 public **void** migrate (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, **long** oldVersion, **long** newVersion)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

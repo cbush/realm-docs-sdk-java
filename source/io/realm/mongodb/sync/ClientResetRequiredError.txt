@@ -25,7 +25,7 @@ Method Summary
      - Method and Description
    
    * - public **void**
-     - :ref:`executeClientReset <io_realm_mongodb_sync_ClientResetRequiredError_executeClientReset____>` ()
+     - :ref:`executeClientReset <io_realm_mongodb_sync_ClientResetRequiredError_executeClientReset__>` ()
        
        Calling this method will execute the Client Reset manually instead of waiting until next app restart.
        
@@ -33,7 +33,7 @@ Method Summary
        
    
    * - public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__
-     - :ref:`getBackupFile <io_realm_mongodb_sync_ClientResetRequiredError_getBackupFile____>` ()
+     - :ref:`getBackupFile <io_realm_mongodb_sync_ClientResetRequiredError_getBackupFile__>` ()
        
        Returns the location of the backed up Realm file.
        
@@ -41,7 +41,7 @@ Method Summary
        
    
    * - public :ref:`RealmConfiguration <io_realm_RealmConfiguration>`
-     - :ref:`getBackupRealmConfiguration <io_realm_mongodb_sync_ClientResetRequiredError_getBackupRealmConfiguration____>` ()
+     - :ref:`getBackupRealmConfiguration <io_realm_mongodb_sync_ClientResetRequiredError_getBackupRealmConfiguration__>` ()
        
        The configuration that can be used to open the backup Realm offline.
        
@@ -49,7 +49,7 @@ Method Summary
        
    
    * - public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__
-     - :ref:`getOriginalFile <io_realm_mongodb_sync_ClientResetRequiredError_getOriginalFile____>` ()
+     - :ref:`getOriginalFile <io_realm_mongodb_sync_ClientResetRequiredError_getOriginalFile__>` ()
        
        Returns the location of the original Realm file.
        
@@ -63,14 +63,14 @@ Method Detail
 executeClientReset
 ------------------
 
-.. _io_realm_mongodb_sync_ClientResetRequiredError_executeClientReset____:
+.. _io_realm_mongodb_sync_ClientResetRequiredError_executeClientReset__:
 
 public **void** executeClientReset ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Calling this method will execute the Client Reset manually instead of waiting until next app restart. This will only be possible if all instances of that Realm have been closed, otherwise a `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__ will be thrown.
 
-After this method returns, the backup file can be found in the location returned by **#getBackupFile() (?)**. The file at **#getOriginalFile() (?)** have been deleted, but will be recreated from scratch next time a Realm instance is opened.
+After this method returns, the backup file can be found in the location returned by :ref:`#getBackupFile() <io_realm_mongodb_sync_ClientResetRequiredError_getBackupFile__>`. The file at :ref:`#getOriginalFile() <io_realm_mongodb_sync_ClientResetRequiredError_getOriginalFile__>` have been deleted, but will be recreated from scratch next time a Realm instance is opened.
 
 
 
@@ -81,7 +81,7 @@ ______
 getBackupFile
 -------------
 
-.. _io_realm_mongodb_sync_ClientResetRequiredError_getBackupFile____:
+.. _io_realm_mongodb_sync_ClientResetRequiredError_getBackupFile__:
 
 public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__ getBackupFile ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -90,7 +90,7 @@ Returns the location of the backed up Realm file. The file will not be present u
 getBackupRealmConfiguration
 ---------------------------
 
-.. _io_realm_mongodb_sync_ClientResetRequiredError_getBackupRealmConfiguration____:
+.. _io_realm_mongodb_sync_ClientResetRequiredError_getBackupRealmConfiguration__:
 
 public :ref:`RealmConfiguration <io_realm_RealmConfiguration>` getBackupRealmConfiguration ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -101,7 +101,7 @@ The configuration that can be used to open the backup Realm offline. This config
 getOriginalFile
 ---------------
 
-.. _io_realm_mongodb_sync_ClientResetRequiredError_getOriginalFile____:
+.. _io_realm_mongodb_sync_ClientResetRequiredError_getOriginalFile__:
 
 public `File <https://docs.oracle.com/javase/7/docs/api/java/io/File.html>`__ getOriginalFile ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

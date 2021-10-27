@@ -34,7 +34,7 @@ Method Summary
      - Method and Description
    
    * - public **boolean**
-     - :ref:`hasNext <io_realm_mongodb_mongo_iterable_MongoCursor_hasNext____>` ()
+     - :ref:`hasNext <io_realm_mongodb_mongo_iterable_MongoCursor_hasNext__>` ()
        
        
        
@@ -42,7 +42,7 @@ Method Summary
        
    
    * - public **ResultT (?)**
-     - :ref:`next <io_realm_mongodb_mongo_iterable_MongoCursor_next____>` ()
+     - :ref:`next <io_realm_mongodb_mongo_iterable_MongoCursor_next__>` ()
        
        
        
@@ -50,7 +50,7 @@ Method Summary
        
    
    * - public **ResultT (?)**
-     - :ref:`tryNext <io_realm_mongodb_mongo_iterable_MongoCursor_tryNext____>` ()
+     - :ref:`tryNext <io_realm_mongodb_mongo_iterable_MongoCursor_tryNext__>` ()
        
        A special ``next()`` case that returns the next document if available or null.
        
@@ -60,7 +60,7 @@ Method Summary
        
    
    * - public **void**
-     - :ref:`close <io_realm_mongodb_mongo_iterable_MongoCursor_close____>` ()
+     - :ref:`close <io_realm_mongodb_mongo_iterable_MongoCursor_close__>` ()
        
        
        
@@ -74,7 +74,7 @@ Method Detail
 hasNext
 -------
 
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_hasNext____:
+.. _io_realm_mongodb_mongo_iterable_MongoCursor_hasNext__:
 
 public **boolean** hasNext ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -83,7 +83,7 @@ public **boolean** hasNext ()
 next
 ----
 
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_next____:
+.. _io_realm_mongodb_mongo_iterable_MongoCursor_next__:
 
 public **ResultT (?)** next ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -92,7 +92,7 @@ public **ResultT (?)** next ()
 tryNext
 -------
 
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_tryNext____:
+.. _io_realm_mongodb_mongo_iterable_MongoCursor_tryNext__:
 
 public **ResultT (?)** tryNext ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -103,7 +103,7 @@ A special ``next()`` case that returns the next document if available or null.
 close
 -----
 
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_close____:
+.. _io_realm_mongodb_mongo_iterable_MongoCursor_close__:
 
 public **void** close ()
 ~~~~~~~~~~~~~~~~~~~~~~~~

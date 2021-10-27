@@ -47,7 +47,7 @@ Method Summary
      - Method and Description
    
    * - public static :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>`
-     - :ref:`values <io_realm_mongodb_ErrorCode_Category_values____>` ()
+     - :ref:`values <io_realm_mongodb_ErrorCode_Category_values__>` ()
        
        
        
@@ -55,7 +55,7 @@ Method Summary
        
    
    * - public static :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>`
-     - :ref:`valueOf <io_realm_mongodb_ErrorCode_Category_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
+     - :ref:`valueOf <io_realm_mongodb_ErrorCode_Category_valueOf_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
@@ -90,7 +90,7 @@ Method Detail
 values
 ------
 
-.. _io_realm_mongodb_ErrorCode_Category_values____:
+.. _io_realm_mongodb_ErrorCode_Category_values__:
 
 public static :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` values ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -99,7 +99,7 @@ public static :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` va
 valueOf
 -------
 
-.. _io_realm_mongodb_ErrorCode_Category_valueOf__String__:
+.. _io_realm_mongodb_ErrorCode_Category_valueOf_String_:
 
 public static :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

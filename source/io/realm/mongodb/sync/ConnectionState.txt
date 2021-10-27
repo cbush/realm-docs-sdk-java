@@ -55,7 +55,7 @@ Method Summary
      - Method and Description
    
    * - public static :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>`
-     - :ref:`values <io_realm_mongodb_sync_ConnectionState_values____>` ()
+     - :ref:`values <io_realm_mongodb_sync_ConnectionState_values__>` ()
        
        
        
@@ -63,7 +63,7 @@ Method Summary
        
    
    * - public static :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>`
-     - :ref:`valueOf <io_realm_mongodb_sync_ConnectionState_valueOf__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
+     - :ref:`valueOf <io_realm_mongodb_sync_ConnectionState_valueOf_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
        
        
        
@@ -111,7 +111,7 @@ Method Detail
 values
 ------
 
-.. _io_realm_mongodb_sync_ConnectionState_values____:
+.. _io_realm_mongodb_sync_ConnectionState_values__:
 
 public static :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>` values ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -120,7 +120,7 @@ public static :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>` val
 valueOf
 -------
 
-.. _io_realm_mongodb_sync_ConnectionState_valueOf__String__:
+.. _io_realm_mongodb_sync_ConnectionState_valueOf_String_:
 
 public static :ref:`ConnectionState <io_realm_mongodb_sync_ConnectionState>` valueOf (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ name)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

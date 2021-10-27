@@ -29,9 +29,9 @@ Method Summary
      - Method and Description
    
    * - public **void**
-     - :ref:`onChange <io_realm_RealmObjectChangeListener_onChange__T__ObjectChangeSet__>` (**T (?)** t, :ref:`ObjectChangeSet <io_realm_ObjectChangeSet>` changeSet)
+     - :ref:`onChange <io_realm_RealmObjectChangeListener_onChange_T__ObjectChangeSet_>` (**T (?)** t, :ref:`ObjectChangeSet <io_realm_ObjectChangeSet>` changeSet)
        
-       When this gets called to return the results of an asynchronous query made by **RealmQuery#findFirstAsync() (?)**, ``changeSet`` will be ``null``.
+       When this gets called to return the results of an asynchronous query made by :ref:`RealmQuery#findFirstAsync() <io_realm_RealmQuery_findFirstAsync__>`, ``changeSet`` will be ``null``.
        
        
        
@@ -45,12 +45,12 @@ Method Detail
 onChange
 --------
 
-.. _io_realm_RealmObjectChangeListener_onChange__T__ObjectChangeSet__:
+.. _io_realm_RealmObjectChangeListener_onChange_T__ObjectChangeSet_:
 
 public **void** onChange (**T (?)** t, :ref:`ObjectChangeSet <io_realm_ObjectChangeSet>` changeSet)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When this gets called to return the results of an asynchronous query made by **RealmQuery#findFirstAsync() (?)**, ``changeSet`` will be ``null``.
+When this gets called to return the results of an asynchronous query made by :ref:`RealmQuery#findFirstAsync() <io_realm_RealmQuery_findFirstAsync__>`, ``changeSet`` will be ``null``.
 
 When this gets called because the object was deleted, ``changeSet.isDeleted()`` will return ``true`` and ``changeSet.getFieldChanges()`` will return ``null``.
 

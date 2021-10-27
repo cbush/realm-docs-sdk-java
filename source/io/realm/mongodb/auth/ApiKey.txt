@@ -16,7 +16,7 @@ io.realm.mongodb.auth.ApiKey
 
 Class representing an API key for a :ref:`User <io_realm_mongodb_User>`. An API can be used to represent the user when logging instead of using email and password.
 
-These keys are created or fetched through **ApiKeyAuth#create(String) (?)** or the various ``fetch``-methods.
+These keys are created or fetched through :ref:`ApiKeyAuth#create(String) <io_realm_mongodb_auth_ApiKeyAuth_create_String_>` or the various ``fetch``-methods.
 
 
 
@@ -35,7 +35,7 @@ Method Summary
      - Method and Description
    
    * - public **ObjectId (?)**
-     - :ref:`getId <io_realm_mongodb_auth_ApiKey_getId____>` ()
+     - :ref:`getId <io_realm_mongodb_auth_ApiKey_getId__>` ()
        
        Returns the unique identifier for this key.
        
@@ -43,7 +43,7 @@ Method Summary
        
    
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
-     - :ref:`getValue <io_realm_mongodb_auth_ApiKey_getValue____>` ()
+     - :ref:`getValue <io_realm_mongodb_auth_ApiKey_getValue__>` ()
        
        Returns this keys value.
        
@@ -51,7 +51,7 @@ Method Summary
        
    
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
-     - :ref:`getName <io_realm_mongodb_auth_ApiKey_getName____>` ()
+     - :ref:`getName <io_realm_mongodb_auth_ApiKey_getName__>` ()
        
        Returns the name of this key.
        
@@ -59,7 +59,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`isEnabled <io_realm_mongodb_auth_ApiKey_isEnabled____>` ()
+     - :ref:`isEnabled <io_realm_mongodb_auth_ApiKey_isEnabled__>` ()
        
        Returns whether or not this key is currently enabled.
        
@@ -67,7 +67,7 @@ Method Summary
        
    
    * - public **boolean**
-     - :ref:`equals <io_realm_mongodb_auth_ApiKey_equals__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+     - :ref:`equals <io_realm_mongodb_auth_ApiKey_equals_Object_>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
        
@@ -75,7 +75,7 @@ Method Summary
        
    
    * - public **int**
-     - :ref:`hashCode <io_realm_mongodb_auth_ApiKey_hashCode____>` ()
+     - :ref:`hashCode <io_realm_mongodb_auth_ApiKey_hashCode__>` ()
        
        
        
@@ -83,7 +83,7 @@ Method Summary
        
    
    * - public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__
-     - :ref:`toString <io_realm_mongodb_auth_ApiKey_toString____>` ()
+     - :ref:`toString <io_realm_mongodb_auth_ApiKey_toString__>` ()
        
        
        
@@ -97,7 +97,7 @@ Method Detail
 getId
 -----
 
-.. _io_realm_mongodb_auth_ApiKey_getId____:
+.. _io_realm_mongodb_auth_ApiKey_getId__:
 
 public **ObjectId (?)** getId ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,7 +106,7 @@ Returns the unique identifier for this key.
 getValue
 --------
 
-.. _io_realm_mongodb_auth_ApiKey_getValue____:
+.. _io_realm_mongodb_auth_ApiKey_getValue__:
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getValue ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,7 +115,7 @@ Returns this keys value. This value is only returned when the key is created. Af
 getName
 -------
 
-.. _io_realm_mongodb_auth_ApiKey_getName____:
+.. _io_realm_mongodb_auth_ApiKey_getName__:
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getName ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -124,7 +124,7 @@ Returns the name of this key.
 isEnabled
 ---------
 
-.. _io_realm_mongodb_auth_ApiKey_isEnabled____:
+.. _io_realm_mongodb_auth_ApiKey_isEnabled__:
 
 public **boolean** isEnabled ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -133,7 +133,7 @@ Returns whether or not this key is currently enabled.
 equals
 ------
 
-.. _io_realm_mongodb_auth_ApiKey_equals__Object__:
+.. _io_realm_mongodb_auth_ApiKey_equals_Object_:
 
 public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -142,7 +142,7 @@ public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/ja
 hashCode
 --------
 
-.. _io_realm_mongodb_auth_ApiKey_hashCode____:
+.. _io_realm_mongodb_auth_ApiKey_hashCode__:
 
 public **int** hashCode ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -151,7 +151,7 @@ public **int** hashCode ()
 toString
 --------
 
-.. _io_realm_mongodb_auth_ApiKey_toString____:
+.. _io_realm_mongodb_auth_ApiKey_toString__:
 
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ toString ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
