@@ -14,7 +14,7 @@ io.realm.mongodb.RealmResultTask<T>
 
 - :ref:`io.realm.RealmAsyncTask <io_realm_RealmAsyncTask>`
 
-The RealmResultTask is a specific version of :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`that provides a mechanism to work with asynchronous operations carried out against MongoDB Realm that yield a result.
+The RealmResultTask is a specific version of :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` that provides a mechanism to work with asynchronous operations carried out against MongoDB Realm that yield a result.
 
 This class offers both blocking (``get``) and non-blocking (``getAsync``) method calls.
 
@@ -71,7 +71,7 @@ Provides a way to subscribe to asynchronous operations via a callback, which han
 Parameters
 __________
 
-- ``callback - ``the :ref:`App.Callback <io_realm_mongodb_App_Callback>`designed to receive results.
+- ``callback - ``the :ref:`App.Callback <io_realm_mongodb_App_Callback>` designed to receive results.
    
    
    

@@ -2908,7 +2908,7 @@ intValue
 public **int** intValue ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the numerical value for this error code. Note that an error is only uniquely identified by the ``(type:value)``pair.
+Returns the numerical value for this error code. Note that an error is only uniquely identified by the ``(type:value)`` pair.
 
 
 getCategory
@@ -2921,7 +2921,7 @@ public :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` getCatego
 
 Returns the getCategory of the error.Errors come in 2 categories: FATAL, RECOVERABLE
 
-FATAL: The session cannot be recovered and needs to be re-created. A likely cause is that the User does not have access to this Realm. Check that the :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`is correct.
+FATAL: The session cannot be recovered and needs to be re-created. A likely cause is that the User does not have access to this Realm. Check that the :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` is correct.
 
 
 
@@ -2936,7 +2936,7 @@ getType
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getType ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the type of error. Note that an error is only uniquely identified by the ``(type:value)``pair.
+Returns the type of error. Note that an error is only uniquely identified by the ``(type:value)`` pair.
 
 
 fromNativeError

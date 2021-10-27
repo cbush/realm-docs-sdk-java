@@ -14,11 +14,11 @@ io.realm.RealmConfiguration
 
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
-A RealmConfiguration is used to setup a specific Realm instance.Instances of a RealmConfiguration can only created by using the :ref:`io.realm.RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`and calling its **io.realm.RealmConfiguration.Builder#build() (?)**method.
+A RealmConfiguration is used to setup a specific Realm instance.Instances of a RealmConfiguration can only created by using the :ref:`io.realm.RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` and calling its **io.realm.RealmConfiguration.Builder#build() (?)** method.
 
 
 
-A commonly used RealmConfiguration can easily be accessed by first saving it as **Realm#setDefaultConfiguration(RealmConfiguration) (?)**and then using **io.realm.Realm#getDefaultInstance() (?)**.
+A commonly used RealmConfiguration can easily be accessed by first saving it as **Realm#setDefaultConfiguration(RealmConfiguration) (?)** and then using **io.realm.Realm#getDefaultInstance() (?)**.
 
 
 
@@ -175,7 +175,7 @@ Method Summary
    * - public `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__
      - :ref:`getRealmObjectClasses <io_realm_RealmConfiguration_getRealmObjectClasses____>` ()
        
-       Returns the unmodifiable `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__of model classes that make up the schema for this Realm.
+       Returns the unmodifiable `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ of model classes that make up the schema for this Realm.
        
        
        
@@ -201,7 +201,7 @@ Method Summary
    * - public :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>`
      - :ref:`getRxFactory <io_realm_RealmConfiguration_getRxFactory____>` ()
        
-       Returns the :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>`that is used to create Rx Observables from Realm objects.
+       Returns the :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` that is used to create Rx Observables from Realm objects.
        
        
        
@@ -211,7 +211,7 @@ Method Summary
    * - public :ref:`FlowFactory <io_realm_coroutines_FlowFactory>`
      - :ref:`getFlowFactory <io_realm_RealmConfiguration_getFlowFactory____>` ()
        
-       Returns the :ref:`FlowFactory <io_realm_coroutines_FlowFactory>`that is used to create Kotlin Flows from Realm objects.
+       Returns the :ref:`FlowFactory <io_realm_coroutines_FlowFactory>` that is used to create Kotlin Flows from Realm objects.
        
        
        
@@ -245,7 +245,7 @@ Method Summary
    * - public **boolean**
      - :ref:`isAllowWritesOnUiThread <io_realm_RealmConfiguration_isAllowWritesOnUiThread____>` ()
        
-       Returns whether calls to **Realm#executeTransaction (?)**can be done on the UI thread.
+       Returns whether calls to **Realm#executeTransaction (?)** can be done on the UI thread.
        
        
        
@@ -255,7 +255,7 @@ Method Summary
    * - public **boolean**
      - :ref:`isAllowQueriesOnUiThread <io_realm_RealmConfiguration_isAllowQueriesOnUiThread____>` ()
        
-       Returns whether a :ref:`RealmQuery <io_realm_RealmQuery>`is allowed to be launched from the UI thread.
+       Returns whether a :ref:`RealmQuery <io_realm_RealmQuery>` is allowed to be launched from the UI thread.
        
        
        
@@ -427,7 +427,7 @@ getRealmObjectClasses
 public `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ getRealmObjectClasses ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the unmodifiable `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__of model classes that make up the schema for this Realm.
+Returns the unmodifiable `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ of model classes that make up the schema for this Realm.
 
 
 getPath
@@ -458,7 +458,7 @@ getRxFactory
 public :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` getRxFactory ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>`that is used to create Rx Observables from Realm objects.
+Returns the :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` that is used to create Rx Observables from Realm objects.
 
 
 Throws
@@ -472,7 +472,7 @@ getFlowFactory
 public :ref:`FlowFactory <io_realm_coroutines_FlowFactory>` getFlowFactory ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the :ref:`FlowFactory <io_realm_coroutines_FlowFactory>`that is used to create Kotlin Flows from Realm objects.
+Returns the :ref:`FlowFactory <io_realm_coroutines_FlowFactory>` that is used to create Kotlin Flows from Realm objects.
 
 
 Throws
@@ -486,7 +486,7 @@ isReadOnly
 public **boolean** isReadOnly ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns whether this Realm is read-only or not. Read-only Realms cannot be modified and will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__if **Realm#beginTransaction() (?)**is called on it.
+Returns whether this Realm is read-only or not. Read-only Realms cannot be modified and will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__ if **Realm#beginTransaction() (?)** is called on it.
 
 
 isRecoveryConfiguration
@@ -520,9 +520,9 @@ isAllowWritesOnUiThread
 public **boolean** isAllowWritesOnUiThread ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns whether calls to **Realm#executeTransaction (?)**can be done on the UI thread.
+Returns whether calls to **Realm#executeTransaction (?)** can be done on the UI thread.
 
-**Note: Realm does not allow blocking transactions to be run on the main thread unless users explicitly opt in with \*\*Builder#allowWritesOnUiThread(boolean) (?)\*\*or its Realm Sync builder counterpart.
+**Note: Realm does not allow blocking transactions to be run on the main thread unless users explicitly opt in with \*\*Builder#allowWritesOnUiThread(boolean) (?)\*\* or its Realm Sync builder counterpart.
 
 **
 
@@ -535,9 +535,9 @@ isAllowQueriesOnUiThread
 public **boolean** isAllowQueriesOnUiThread ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns whether a :ref:`RealmQuery <io_realm_RealmQuery>`is allowed to be launched from the UI thread.
+Returns whether a :ref:`RealmQuery <io_realm_RealmQuery>` is allowed to be launched from the UI thread.
 
-By default Realm allows queries on the main thread. To disallow this users have to explicitly opt in with **Builder#allowQueriesOnUiThread(boolean) (?)**or its Realm Sync builder counterpart.
+By default Realm allows queries on the main thread. To disallow this users have to explicitly opt in with **Builder#allowQueriesOnUiThread(boolean) (?)** or its Realm Sync builder counterpart.
 
 
 

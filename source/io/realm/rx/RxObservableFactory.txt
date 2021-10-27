@@ -200,7 +200,7 @@ Realm flowables are hot as Realms are automatically kept up to date.
 Parameters
 __________
 
-- ``realm - ``:ref:`Realm <io_realm_Realm>`to listen to changes for.
+- ``realm - ``:ref:`Realm <io_realm_Realm>` to listen to changes for.
    
    
    
@@ -218,7 +218,7 @@ DynamicRealm observables are hot as DynamicRealms are automatically kept up to d
 Parameters
 __________
 
-- ``realm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>`to listen to changes for.
+- ``realm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>` to listen to changes for.
    
    
    
@@ -242,11 +242,11 @@ _______________
 Parameters
 __________
 
-- ``results - ``:ref:`RealmResults <io_realm_RealmResults>`to listen to changes for.
+- ``results - ``:ref:`RealmResults <io_realm_RealmResults>` to listen to changes for.
    
    
    
-- ``realm - ``:ref:`Realm <io_realm_Realm>`instance results are coming from.
+- ``realm - ``:ref:`Realm <io_realm_Realm>` instance results are coming from.
    
    
    
@@ -264,11 +264,11 @@ Realm observables are hot as RealmResults are automatically kept up to date.
 Parameters
 __________
 
-- ``results - ``:ref:`RealmResults <io_realm_RealmResults>`to listen to changes for.
+- ``results - ``:ref:`RealmResults <io_realm_RealmResults>` to listen to changes for.
    
    
    
-- ``realm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>`instance results are coming from.
+- ``realm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>` instance results are coming from.
    
    
    
@@ -282,7 +282,7 @@ Creates an Observable for a :ref:`RealmList <io_realm_RealmList>`. It should emi
 
 RealmList observables are hot as RealmLists are automatically kept up to date.
 
-Note: :ref:`io.realm.RealmChangeListener <io_realm_RealmChangeListener>`is currently not supported on RealmLists.
+Note: :ref:`io.realm.RealmChangeListener <io_realm_RealmChangeListener>` is currently not supported on RealmLists.
 
 
 
@@ -298,7 +298,7 @@ __________
 
 - ``list - ``RealmObject to listen to changes for.
    
-- ``realm - ``:ref:`Realm <io_realm_Realm>`instance list is coming from.
+- ``realm - ``:ref:`Realm <io_realm_Realm>` instance list is coming from.
    
    
    
@@ -312,7 +312,7 @@ Creates a Flowable for a :ref:`RealmList <io_realm_RealmList>`. It should emit t
 
 RealmList observables are hot as RealmLists are automatically kept up to date.
 
-Note: :ref:`io.realm.RealmChangeListener <io_realm_RealmChangeListener>`is currently not supported on RealmLists.
+Note: :ref:`io.realm.RealmChangeListener <io_realm_RealmChangeListener>` is currently not supported on RealmLists.
 
 
 
@@ -322,7 +322,7 @@ __________
 
 - ``list - ``RealmList to listen to changes for.
    
-- ``realm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>`instance list is coming from.
+- ``realm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>` instance list is coming from.
    
    
    
@@ -348,7 +348,7 @@ __________
 
 - ``object - ``RealmObject to listen to changes for.
    
-- ``realm - ``:ref:`Realm <io_realm_Realm>`instance object is coming from.
+- ``realm - ``:ref:`Realm <io_realm_Realm>` instance object is coming from.
    
    
    
@@ -368,7 +368,7 @@ __________
 
 - ``object - ``DynamicRealmObject to listen to changes for.
    
-- ``realm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>`instance object is coming from.
+- ``realm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>` instance object is coming from.
    
    
    
@@ -394,7 +394,7 @@ __________
 
 - ``query - ``RealmQuery to emit.
    
-- ``realm - ``:ref:`Realm <io_realm_Realm>`instance query is coming from.
+- ``realm - ``:ref:`Realm <io_realm_Realm>` instance query is coming from.
    
    
    
@@ -414,7 +414,7 @@ __________
 
 - ``query - ``RealmObject to listen to changes for.
    
-- ``realm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>`instance query is coming from.
+- ``realm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>` instance query is coming from.
    
    
    
@@ -427,7 +427,7 @@ changesetsFrom
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Creates an Observable for a :ref:`RealmResults <io_realm_RealmResults>`. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults it should emit the RealmResults + the :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>`that describes the update.
+Creates an Observable for a :ref:`RealmResults <io_realm_RealmResults>`. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults it should emit the RealmResults + the :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefor be left to users.
 
@@ -441,11 +441,11 @@ _______________
 Parameters
 __________
 
-- ``results - ``:ref:`RealmResults <io_realm_RealmResults>`to listen to changes for.
+- ``results - ``:ref:`RealmResults <io_realm_RealmResults>` to listen to changes for.
    
    
    
-- ``realm - ``:ref:`Realm <io_realm_Realm>`instance results are coming from.
+- ``realm - ``:ref:`Realm <io_realm_Realm>` instance results are coming from.
    
    
    
@@ -455,7 +455,7 @@ __________
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmResults\<E> <io_realm_RealmResults>` results)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Creates an Observable for a :ref:`RealmResults <io_realm_RealmResults>`. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults it should emit the RealmResults + the :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>`that describes the update.
+Creates an Observable for a :ref:`RealmResults <io_realm_RealmResults>`. It should emit the initial RealmResult when subscribed to and on each subsequent update of the RealmResults it should emit the RealmResults + the :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefor be left to users.
 
@@ -463,11 +463,11 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 __________
 
-- ``results - ``:ref:`RealmResults <io_realm_RealmResults>`to listen to changes for.
+- ``results - ``:ref:`RealmResults <io_realm_RealmResults>` to listen to changes for.
    
    
    
-- ``realm - ``:ref:`Realm <io_realm_Realm>`instance results are coming from.
+- ``realm - ``:ref:`Realm <io_realm_Realm>` instance results are coming from.
    
    
    
@@ -477,7 +477,7 @@ __________
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Creates an Observable for a :ref:`RealmList <io_realm_RealmList>`. It should emit the initial RealmList when subscribed to and on each subsequent update of the RealmIst it should emit the RealmList + the :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>`that describes the update.
+Creates an Observable for a :ref:`RealmList <io_realm_RealmList>`. It should emit the initial RealmList when subscribed to and on each subsequent update of the RealmIst it should emit the RealmList + the :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefor be left to users.
 
@@ -491,11 +491,11 @@ _______________
 Parameters
 __________
 
-- ``list - ``:ref:`RealmList <io_realm_RealmList>`to listen to changes for.
+- ``list - ``:ref:`RealmList <io_realm_RealmList>` to listen to changes for.
    
    
    
-- ``realm - ``:ref:`Realm <io_realm_Realm>`instance list is coming from.
+- ``realm - ``:ref:`Realm <io_realm_Realm>` instance list is coming from.
    
    
    
@@ -505,7 +505,7 @@ __________
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Creates an Observable for a :ref:`RealmList <io_realm_RealmList>`. It should emit the initial RealmList when subscribed to and on each subsequent update of the RealmList it should emit the RealmList + the :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>`that describes the update.
+Creates an Observable for a :ref:`RealmList <io_realm_RealmList>`. It should emit the initial RealmList when subscribed to and on each subsequent update of the RealmList it should emit the RealmList + the :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefor be left to users.
 
@@ -513,11 +513,11 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 __________
 
-- ``list - ``:ref:`RealmList <io_realm_RealmList>`to listen to changes for.
+- ``list - ``:ref:`RealmList <io_realm_RealmList>` to listen to changes for.
    
    
    
-- ``realm - ``:ref:`Realm <io_realm_Realm>`instance list is coming from.
+- ``realm - ``:ref:`Realm <io_realm_Realm>` instance list is coming from.
    
    
    
@@ -527,7 +527,7 @@ __________
 public **<any> (?)** changesetsFrom <**E (?)** >(:ref:`Realm <io_realm_Realm>` realm, **E (?)** object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Creates an Observable for a :ref:`RealmObject <io_realm_RealmObject>`. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object + the :ref:`io.realm.ObjectChangeSet <io_realm_ObjectChangeSet>`that describes the update.
+Creates an Observable for a :ref:`RealmObject <io_realm_RealmObject>`. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object + the :ref:`io.realm.ObjectChangeSet <io_realm_ObjectChangeSet>` that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefore be left to the user.
 
@@ -543,7 +543,7 @@ __________
 
 - ``object - ``RealmObject to listen to changes for.
    
-- ``realm - ``:ref:`Realm <io_realm_Realm>`instance object is coming from.
+- ``realm - ``:ref:`Realm <io_realm_Realm>` instance object is coming from.
    
    
    
@@ -553,7 +553,7 @@ __________
 public **<any> (?)** changesetsFrom (:ref:`DynamicRealm <io_realm_DynamicRealm>` realm, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Creates an Observable for a :ref:`RealmObject <io_realm_RealmObject>`. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object + the :ref:`io.realm.ObjectChangeSet <io_realm_ObjectChangeSet>`that describes the update.
+Creates an Observable for a :ref:`RealmObject <io_realm_RealmObject>`. It should emit the initial object when subscribed to and on each subsequent update of the object it should emit the object + the :ref:`io.realm.ObjectChangeSet <io_realm_ObjectChangeSet>` that describes the update.
 
 Changeset observables do not support backpressure as a changeset depends on the state of the previous changeset. Handling backpressure should therefore be left to the user.
 
@@ -563,7 +563,7 @@ __________
 
 - ``object - ``RealmObject to listen to changes for.
    
-- ``realm - ``:ref:`Realm <io_realm_Realm>`instance object is coming from.
+- ``realm - ``:ref:`Realm <io_realm_Realm>` instance object is coming from.
    
    
    

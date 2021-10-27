@@ -27,7 +27,7 @@ Method Summary
    * - public **BsonDocument (?)**
      - :ref:`getUpdatedFields <io_realm_mongodb_mongo_events_UpdateDescription_getUpdatedFields____>` ()
        
-       Returns a **BsonDocument (?)**containing keys and values representing (respectively) the fields that have changed in the corresponding update and their new values.
+       Returns a **BsonDocument (?)** containing keys and values representing (respectively) the fields that have changed in the corresponding update and their new values.
        
        
        
@@ -37,7 +37,7 @@ Method Summary
    * - public `Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__
      - :ref:`getRemovedFields <io_realm_mongodb_mongo_events_UpdateDescription_getRemovedFields____>` ()
        
-       Returns a `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__containing the field names that have been removed in the corresponding update.
+       Returns a `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ containing the field names that have been removed in the corresponding update.
        
        
        
@@ -120,7 +120,7 @@ getUpdatedFields
 public **BsonDocument (?)** getUpdatedFields ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns a **BsonDocument (?)**containing keys and values representing (respectively) the fields that have changed in the corresponding update and their new values.
+Returns a **BsonDocument (?)** containing keys and values representing (respectively) the fields that have changed in the corresponding update and their new values.
 
 
 getRemovedFields
@@ -131,7 +131,7 @@ getRemovedFields
 public `Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ getRemovedFields ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns a `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__containing the field names that have been removed in the corresponding update.
+Returns a `List <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ containing the field names that have been removed in the corresponding update.
 
 
 toUpdateDocument

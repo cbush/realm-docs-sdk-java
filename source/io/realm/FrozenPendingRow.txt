@@ -14,7 +14,7 @@ io.realm.FrozenPendingRow
 
 - `java.lang.Enum <https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html>`__
 
-A PendingRow that has been frozen. This behaves in many ways similar to a deleted Row, but will report **#isLoaded() (?)**as ``as false``.
+A PendingRow that has been frozen. This behaves in many ways similar to a deleted Row, but will report **#isLoaded() (?)** as ``as false``.
 
 
 Enum Constant Summary

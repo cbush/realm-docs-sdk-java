@@ -14,9 +14,9 @@ io.realm.mongodb.User
 
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
-A *user* holds the user's meta data and tokens for accessing Realm App functionality.The user is used to configure Synchronized Realms and gives access to calling Realm App *Functions*through :ref:`Functions <io_realm_mongodb_functions_Functions>`and accessing remote Realm App 
+A *user* holds the user's meta data and tokens for accessing Realm App functionality.The user is used to configure Synchronized Realms and gives access to calling Realm App *Functions* through :ref:`Functions <io_realm_mongodb_functions_Functions>` and accessing remote Realm App 
 
-*Mongo Databases*through a :ref:`MongoClient <io_realm_mongodb_mongo_MongoClient>`.
+*Mongo Databases* through a :ref:`MongoClient <io_realm_mongodb_mongo_MongoClient>`.
 
 
 
@@ -102,7 +102,7 @@ Method Summary
    * - public :ref:`App <io_realm_mongodb_App>`
      - :ref:`getApp <io_realm_mongodb_User_getApp____>` ()
        
-       Returns the :ref:`App <io_realm_mongodb_App>`this user is associated with.
+       Returns the :ref:`App <io_realm_mongodb_App>` this user is associated with.
        
        
        
@@ -112,7 +112,7 @@ Method Summary
    * - public :ref:`User.State <io_realm_mongodb_User_State>`
      - :ref:`getState <io_realm_mongodb_User_getState____>` ()
        
-       Returns the :ref:`State <io_realm_mongodb_User_State>`the user is in.
+       Returns the :ref:`State <io_realm_mongodb_User_State>` the user is in.
        
        
        
@@ -210,7 +210,7 @@ Method Summary
    * - public synchronized :ref:`Push <io_realm_mongodb_push_Push>`
      - :ref:`getPush <io_realm_mongodb_User_getPush__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ serviceName)
        
-       Returns the :ref:`Push <io_realm_mongodb_push_Push>`instance for managing push notification registrations.
+       Returns the :ref:`Push <io_realm_mongodb_push_Push>` instance for managing push notification registrations.
        
        
        
@@ -220,7 +220,7 @@ Method Summary
    * - public synchronized :ref:`MongoClient <io_realm_mongodb_mongo_MongoClient>`
      - :ref:`getMongoClient <io_realm_mongodb_User_getMongoClient__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ serviceName)
        
-       Returns a :ref:`MongoClient <io_realm_mongodb_mongo_MongoClient>`instance for accessing documents in the database.
+       Returns a :ref:`MongoClient <io_realm_mongodb_mongo_MongoClient>` instance for accessing documents in the database.
        
        
        
@@ -323,7 +323,7 @@ getApp
 public :ref:`App <io_realm_mongodb_App>` getApp ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the :ref:`App <io_realm_mongodb_App>`this user is associated with.
+Returns the :ref:`App <io_realm_mongodb_App>` this user is associated with.
 
 
 getState
@@ -334,7 +334,7 @@ getState
 public :ref:`User.State <io_realm_mongodb_User_State>` getState ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the :ref:`State <io_realm_mongodb_User_State>`the user is in.
+Returns the :ref:`State <io_realm_mongodb_User_State>` the user is in.
 
 
 getCustomData
@@ -400,7 +400,7 @@ public :ref:`User <io_realm_mongodb_User>` linkCredentials (:ref:`Credentials <i
 
 Links the current user with a new user identity represented by the given credentials.Linking a user with more credentials, mean the user can login either of these credentials. It also makes it possible to "upgrade" an anonymous user by linking it with e.g. Email/Password credentials.
 
-
+ 
 
 .. code-block:: java
 
@@ -412,6 +412,7 @@ Links the current user with a new user identity represented by the given credent
     
 
 
+ 
 
 Note: It is not possible to link two existing users of MongoDB Realm. The provided credentials must not have been used by another user.
 
@@ -435,7 +436,7 @@ public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` linkCredentialsAsync (:re
 
 Links the current user with a new user identity represented by the given credentials.Linking a user with more credentials, mean the user can login either of these credentials. It also makes it possible to "upgrade" an anonymous user by linking it with e.g. Email/Password credentials.
 
-
+ 
 
 .. code-block:: java
 
@@ -447,6 +448,7 @@ Links the current user with a new user identity represented by the given credent
     
 
 
+ 
 
 Note: It is not possible to link two existing users of MongoDB Realm. The provided credentials must not have been used by another user.
 
@@ -470,11 +472,11 @@ logOut
 public **void** logOut ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Log the user out of the Realm App. This will unregister them on the device, stop any synchronization to and from the users' Realms, and those Realms will be deleted next time the app restarts. Therefor logging out should not be done until all changes to Realms have been uploaded to the server.Once the Realm App has confirmed the logout any registered :ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>`will be notified and user credentials will be deleted from this device.
+Log the user out of the Realm App. This will unregister them on the device, stop any synchronization to and from the users' Realms, and those Realms will be deleted next time the app restarts. Therefor logging out should not be done until all changes to Realms have been uploaded to the server.Once the Realm App has confirmed the logout any registered :ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` will be notified and user credentials will be deleted from this device.
 
 
 
-Logging out anonymous users will remove them immediately instead of marking them as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`. All other users will be marked as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`and will still be returned by **App#allUsers() (?)**. They can be removed completely by calling **App#removeUser(User (?)**()}.
+Logging out anonymous users will remove them immediately instead of marking them as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`. All other users will be marked as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>` and will still be returned by **App#allUsers() (?)**. They can be removed completely by calling **App#removeUser(User (?)** ()}.
 
 
 
@@ -490,11 +492,11 @@ logOutAsync
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` logOutAsync (:ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.User> <io_realm_mongodb_App_Callback>` callback)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Log the user out of the Realm App asynchronously. This will unregister them on the device, stop any synchronization to and from the users' Realms, and those Realms will be deleted next time the app restarts. Therefor logging out should not be done until all changes to Realms have been uploaded to the server.Once the Realm App has confirmed the logout any registered :ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>`will be notified and user credentials will be deleted from this device.
+Log the user out of the Realm App asynchronously. This will unregister them on the device, stop any synchronization to and from the users' Realms, and those Realms will be deleted next time the app restarts. Therefor logging out should not be done until all changes to Realms have been uploaded to the server.Once the Realm App has confirmed the logout any registered :ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` will be notified and user credentials will be deleted from this device.
 
 
 
-Logging out anonymous users will remove them immediately instead of marking them as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`. All other users will be marked as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`and will still be returned by **App#allUsers() (?)**. They can be removed completely by calling **App#removeUser(User) (?)**()}.
+Logging out anonymous users will remove them immediately instead of marking them as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`. All other users will be marked as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>` and will still be returned by **App#allUsers() (?)**. They can be removed completely by calling **App#removeUser(User) (?)** ()}.
 
 
 
@@ -561,7 +563,7 @@ getPush
 public synchronized :ref:`Push <io_realm_mongodb_push_Push>` getPush (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ serviceName)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the :ref:`Push <io_realm_mongodb_push_Push>`instance for managing push notification registrations.
+Returns the :ref:`Push <io_realm_mongodb_push_Push>` instance for managing push notification registrations.
 
 
 Parameters
@@ -578,7 +580,7 @@ getMongoClient
 public synchronized :ref:`MongoClient <io_realm_mongodb_mongo_MongoClient>` getMongoClient (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ serviceName)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns a :ref:`MongoClient <io_realm_mongodb_mongo_MongoClient>`instance for accessing documents in the database.
+Returns a :ref:`MongoClient <io_realm_mongodb_mongo_MongoClient>` instance for accessing documents in the database.
 
 
 Parameters

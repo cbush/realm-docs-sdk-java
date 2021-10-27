@@ -29,17 +29,17 @@ This enum defines the possible ways class and field names can be mapped from wha
    
    
 
-Depending on where the policy is applied, it will have slightly different semantics:- If applied to **RealmModule#classNamingPolicy (?)**all classes part of that module will be affected. If a class is part of multiple modules, the same naming policy must be applied to both modules, otherwise an error will be thrown.
+Depending on where the policy is applied, it will have slightly different semantics:- If applied to **RealmModule#classNamingPolicy (?)** all classes part of that module will be affected. If a class is part of multiple modules, the same naming policy must be applied to both modules, otherwise an error will be thrown.
    
    
    
    
-- If applied to **RealmModule#fieldNamingPolicy (?)**all persistable fields in all classes part of this module will be affected.
+- If applied to **RealmModule#fieldNamingPolicy (?)** all persistable fields in all classes part of this module will be affected.
    
    
    
    
-- If applied to **RealmClass#fieldNamingPolicy (?)**all fields in that class will be affected. This will override any field naming policy specified on a module.
+- If applied to **RealmClass#fieldNamingPolicy (?)** all fields in that class will be affected. This will override any field naming policy specified on a module.
    
    
    
@@ -47,7 +47,7 @@ Depending on where the policy is applied, it will have slightly different semant
 
 An example of this:
 
-
+ 
 
 .. code-block:: java
 
@@ -59,10 +59,11 @@ An example of this:
     
 
 
+ 
 
 Choosing an internal name that differs from the name used in the Java model classes has the following implications:
 
-- Queries on ``DynamicRealm``must use the internal name. Queries on normal ``Realm``instances must continue to use the name as it is defined in the Java class.
+- Queries on ``DynamicRealm`` must use the internal name. Queries on normal ``Realm`` instances must continue to use the name as it is defined in the Java class.
    
    
    
@@ -76,17 +77,17 @@ Choosing an internal name that differs from the name used in the Java model clas
 
 When automatically converting Java variable names, each variable name is normalized by splitting it into a list of words that are then joined using the rules of the target format. The following heuristics are used for determining what constitutes a "word".
 
-1. Anytime a ``_``or ``$``is encountered. Examples are "_FirstName", "_First_Name" and "$First$Name" which all becomes "First" and "Name".
+1. Anytime a ``_`` or ``$`` is encountered. Examples are "_FirstName", "_First_Name" and "$First$Name" which all becomes "First" and "Name".
    
    
    
    
-#. Anytime you switch from a lower case character to an upper case character as identified by `Character#isUpperCase(int) <https://docs.oracle.com/javase/7/docs/api/java/lang/Character/isUpperCase(int).html>`__and `Character#isLowerCase(int) <https://docs.oracle.com/javase/7/docs/api/java/lang/Character/isLowerCase(int).html>`__. Example is "FirstName" which becomes "First" and "Name".
+#. Anytime you switch from a lower case character to an upper case character as identified by `Character#isUpperCase(int) <https://docs.oracle.com/javase/7/docs/api/java/lang/Character/isUpperCase(int).html>`__ and `Character#isLowerCase(int) <https://docs.oracle.com/javase/7/docs/api/java/lang/Character/isLowerCase(int).html>`__. Example is "FirstName" which becomes "First" and "Name".
    
    
    
    
-#. Anytime you switch from more than one uppercase character to a lower case one. The last upper case letter is assumed to be part of the next word. This is identified by using `Character#isUpperCase(int) <https://docs.oracle.com/javase/7/docs/api/java/lang/Character/isUpperCase(int).html>`__and `Character#isLowerCase(int) <https://docs.oracle.com/javase/7/docs/api/java/lang/Character/isLowerCase(int).html>`__. Example is "FIRSTName" which becomes "FIRST" and "Name.
+#. Anytime you switch from more than one uppercase character to a lower case one. The last upper case letter is assumed to be part of the next word. This is identified by using `Character#isUpperCase(int) <https://docs.oracle.com/javase/7/docs/api/java/lang/Character/isUpperCase(int).html>`__ and `Character#isLowerCase(int) <https://docs.oracle.com/javase/7/docs/api/java/lang/Character/isLowerCase(int).html>`__. Example is "FIRSTName" which becomes "FIRST" and "Name.
    
    
    
@@ -106,7 +107,7 @@ This means that if you want to import data into Realm from JSON using these libr
 
 Using Moshi, it would look something like this:
 
-
+ 
 
 .. code-block:: java
 
@@ -119,6 +120,7 @@ Using Moshi, it would look something like this:
     
 
 
+ 
 
 
 Enum Constant Summary

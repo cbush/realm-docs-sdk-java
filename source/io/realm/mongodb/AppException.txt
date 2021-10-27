@@ -14,7 +14,7 @@ io.realm.mongodb.AppException
 
 - `java.lang.RuntimeException <https://docs.oracle.com/javase/7/docs/api/java/lang/RuntimeException.html>`__
 
-This class is a wrapper for all errors happening when communicating with a MongoDB Realm app. This include both exceptions and protocol errors. Only **#getErrorCode() (?)**is guaranteed to contain a value. If the error was caused by an underlying exception **#getErrorMessage() (?)**is ``null``and **#getException() (?)**is set, while if the error was a protocol error **#getErrorMessage() (?)**is set and **#getException() (?)**is null.
+This class is a wrapper for all errors happening when communicating with a MongoDB Realm app. This include both exceptions and protocol errors. Only **#getErrorCode() (?)** is guaranteed to contain a value. If the error was caused by an underlying exception **#getErrorMessage() (?)** is ``null`` and **#getException() (?)** is set, while if the error was a protocol error **#getErrorMessage() (?)** is set and **#getException() (?)** is null.
 
 
 Constructors
@@ -39,7 +39,7 @@ Method Summary
    * - public :ref:`ErrorCode <io_realm_mongodb_ErrorCode>`
      - :ref:`getErrorCode <io_realm_mongodb_AppException_getErrorCode____>` ()
        
-       Returns the :ref:`ErrorCode <io_realm_mongodb_ErrorCode>`identifying the type of error.
+       Returns the :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` identifying the type of error.
        
        
        
@@ -81,7 +81,7 @@ Method Summary
    * - public :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>`
      - :ref:`getCategory <io_realm_mongodb_AppException_getCategory____>` ()
        
-       Returns the :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>`category for this error.
+       Returns the :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` category for this error.
        
        
        
@@ -108,9 +108,9 @@ getErrorCode
 public :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` getErrorCode ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the :ref:`ErrorCode <io_realm_mongodb_ErrorCode>`identifying the type of error.
+Returns the :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` identifying the type of error.
 
-If :ref:`ErrorCode#UNKNOWN <io_realm_mongodb_ErrorCode_UNKNOWN>`is returned, it means that the error could not be mapped to any known errors. In that case **#getErrorType() (?)**and **#getErrorIntValue() (?)**will return the underlying error information which can better identify the type of error.
+If :ref:`ErrorCode#UNKNOWN <io_realm_mongodb_ErrorCode_UNKNOWN>` is returned, it means that the error could not be mapped to any known errors. In that case **#getErrorType() (?)** and **#getErrorIntValue() (?)** will return the underlying error information which can better identify the type of error.
 
 
 
@@ -166,7 +166,7 @@ getCategory
 public :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` getCategory ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>`category for this error. Errors that are :ref:`ErrorCode.Category#RECOVERABLE <io_realm_mongodb_ErrorCode_Category_RECOVERABLE>`mean that it is still possible for a given :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`to resume synchronization. :ref:`ErrorCode.Category#FATAL <io_realm_mongodb_ErrorCode_Category_FATAL>`errors means that session has stopped and cannot be recovered.
+Returns the :ref:`ErrorCode.Category <io_realm_mongodb_ErrorCode_Category>` category for this error. Errors that are :ref:`ErrorCode.Category#RECOVERABLE <io_realm_mongodb_ErrorCode_Category_RECOVERABLE>` mean that it is still possible for a given :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` to resume synchronization. :ref:`ErrorCode.Category#FATAL <io_realm_mongodb_ErrorCode_Category_FATAL>` errors means that session has stopped and cannot be recovered.
 
 
 toString

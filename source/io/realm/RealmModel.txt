@@ -14,7 +14,7 @@ Interface for marking classes as RealmObjects, it can be used instead of extendi
 
 All helper methods available to classes that extend RealmObject are instead available as static methods:
 
-
+ 
 
 .. code-block:: java
 
@@ -29,6 +29,7 @@ All helper methods available to classes that extend RealmObject are instead avai
     
 
 
+ 
 
 Note: Object implementing this interface needs also to be annotated with :ref:`RealmClass <io_realm_annotations_RealmClass>`, so the annotation processor can generate the underlining proxy class.
 

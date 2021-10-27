@@ -19,7 +19,7 @@ io.realm.mongodb.mongo.iterable.MongoCursor<ResultT>
 - `java.util.Iterator <https://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html>`__
 - `java.io.Closeable <https://docs.oracle.com/javase/7/docs/api/java/io/Closeable.html>`__
 
-The Mongo Cursor class is fundamentally an `Iterator <https://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html>`__containing an additional ``tryNext()``method for convenience.
+The Mongo Cursor class is fundamentally an `Iterator <https://docs.oracle.com/javase/7/docs/api/java/util/Iterator.html>`__ containing an additional ``tryNext()`` method for convenience.
 
 An application should ensure that a cursor is closed in all circumstances, e.g. using a try-with-resources statement.
 
@@ -52,7 +52,7 @@ Method Summary
    * - public **ResultT (?)**
      - :ref:`tryNext <io_realm_mongodb_mongo_iterable_MongoCursor_tryNext____>` ()
        
-       A special ``next()``case that returns the next document if available or null.
+       A special ``next()`` case that returns the next document if available or null.
        
        
        
@@ -97,7 +97,7 @@ tryNext
 public **ResultT (?)** tryNext ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A special ``next()``case that returns the next document if available or null.
+A special ``next()`` case that returns the next document if available or null.
 
 
 close

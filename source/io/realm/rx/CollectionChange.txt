@@ -14,9 +14,9 @@ io.realm.rx.CollectionChange<E extends io.realm.OrderedRealmCollection>
 
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
-Container wrapping the result of a :ref:`io.realm.OrderedRealmCollectionChangeListener <io_realm_OrderedRealmCollectionChangeListener>`being triggered.
+Container wrapping the result of a :ref:`io.realm.OrderedRealmCollectionChangeListener <io_realm_OrderedRealmCollectionChangeListener>` being triggered.
 
-This is used by **RealmResults#asChangesetObservable() (?)**} and **RealmList#asChangesetObservable() (?)**as RxJava is only capable of emitting one item, not multiple.
+This is used by **RealmResults#asChangesetObservable() (?)**} and **RealmList#asChangesetObservable() (?)** as RxJava is only capable of emitting one item, not multiple.
 
 
 
@@ -88,11 +88,11 @@ getChangeset
 public :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` getChangeset ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the changeset describing the update.This will be ``null``the first time the stream emits the collection as well as when a asynchronous query is loaded for the first time.
+Returns the changeset describing the update.This will be ``null`` the first time the stream emits the collection as well as when a asynchronous query is loaded for the first time.
 
 
 
-
+ 
 
 .. code-block:: java
 
@@ -108,6 +108,7 @@ Returns the changeset describing the update.This will be ``null``the first time 
     
 
 
+ 
 
 
 equals

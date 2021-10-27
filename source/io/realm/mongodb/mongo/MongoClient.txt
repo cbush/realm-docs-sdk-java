@@ -32,7 +32,7 @@ Method Summary
    * - public :ref:`MongoDatabase <io_realm_mongodb_mongo_MongoDatabase>`
      - :ref:`getDatabase <io_realm_mongodb_mongo_MongoClient_getDatabase__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ databaseName)
        
-       Gets a :ref:`MongoDatabase <io_realm_mongodb_mongo_MongoDatabase>`instance for the given database name.
+       Gets a :ref:`MongoDatabase <io_realm_mongodb_mongo_MongoDatabase>` instance for the given database name.
        
        
        
@@ -59,7 +59,7 @@ getDatabase
 public :ref:`MongoDatabase <io_realm_mongodb_mongo_MongoDatabase>` getDatabase (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ databaseName)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Gets a :ref:`MongoDatabase <io_realm_mongodb_mongo_MongoDatabase>`instance for the given database name.
+Gets a :ref:`MongoDatabase <io_realm_mongodb_mongo_MongoDatabase>` instance for the given database name.
 
 
 Parameters

@@ -14,7 +14,7 @@ io.realm.mongodb.RealmEventStreamAsyncTask<T>
 
 - :ref:`io.realm.RealmAsyncTask <io_realm_RealmAsyncTask>`
 
-The RealmEventStreamAsyncTask is a specific version of :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`that provides a non-blocking mechanism to work with asynchronous operations carried out against MongoDB Realm that yield stream results.
+The RealmEventStreamAsyncTask is a specific version of :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` that provides a non-blocking mechanism to work with asynchronous operations carried out against MongoDB Realm that yield stream results.
 
 
 Method Summary
@@ -58,7 +58,7 @@ Provides a way to subscribe to asynchronous operations via a callback, which han
 Parameters
 __________
 
-- ``callback - ``the :ref:`App.Callback <io_realm_mongodb_App_Callback>`designed to receive event results.
+- ``callback - ``the :ref:`App.Callback <io_realm_mongodb_App_Callback>` designed to receive event results.
    
    
    

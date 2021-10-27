@@ -16,7 +16,7 @@ io.realm.annotations.LinkingObjects
 
 Annotation for defining a reverse relationship from one class to another. This annotation can only be added to a field of the type ``RealmResults``.
 
-To expose reverse relationships for use, create a declaration as follows:
+ To expose reverse relationships for use, create a declaration as follows:
  
 
 .. code-block:: java
@@ -39,6 +39,7 @@ To expose reverse relationships for use, create a declaration as follows:
     
 
 
+ 
 
 In the above example \`Person\` is related to \`Dog\` through the field \`dog\`. This in turn means that an implicit reverse relationship exists between the class \`Dog\` and the class \`Person\`. This inverse relationship is made public and queryable by the \`RealmResults\` field annotated with \`@LinkingObject\`. This makes it possible to query properties of the dogs owner without having to manually maintain a "owner" field in the \`Dog\` class.Linking objects have the following properties:
 
@@ -99,7 +100,7 @@ Note that when the source of the reverse reference (\`dog\` in the case above) i
     }
     
 
-then the following code executes without error 
+ then the following code executes without error 
 
 .. code-block:: java
 
@@ -113,7 +114,7 @@ then the following code executes without error
 
 
 
-Querying inverse relationship is like querying any ``RealmResults``. This means that an inverse relationship cannot be ``null``but it can be empty (length is 0). It is possible to query fields in the source class. This is equivalent to link queries. Please read 
+Querying inverse relationship is like querying any ``RealmResults``. This means that an inverse relationship cannot be ``null`` but it can be empty (length is 0). It is possible to query fields in the source class. This is equivalent to link queries. Please read 
 
 `for more information <https://realm.io/docs/java/latest/#link-queries>`__.
 

@@ -44,7 +44,7 @@ Callback for errors on a session object. It is not allowed to throw an exception
 Parameters
 __________
 
-- ``session - ``:ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`this error happened on.
+- ``session - ``:ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` this error happened on.
    
    
    

@@ -14,9 +14,9 @@ io.realm.RealmCollection<E>
 
 - `java.util.Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__
 
-``RealmCollection``is the root of the collection hierarchy that Realm supports. It defines operations on data collections and the behavior that they will have in all implementations of ``RealmCollection``s.
+``RealmCollection`` is the root of the collection hierarchy that Realm supports. It defines operations on data collections and the behavior that they will have in all implementations of ``RealmCollection``s.
 
-Realm collections are "live" views to the underlying data. This means that they automatically will be kept up to date. As a consequence, using methods like `Collections#unmodifiableCollection(Collection) <https://docs.oracle.com/javase/7/docs/api/java/util/Collections/unmodifiableCollection(Collection).html>`__will not prevent a collection from being modified.
+Realm collections are "live" views to the underlying data. This means that they automatically will be kept up to date. As a consequence, using methods like `Collections#unmodifiableCollection(Collection) <https://docs.oracle.com/javase/7/docs/api/java/util/Collections/unmodifiableCollection(Collection).html>`__ will not prevent a collection from being modified.
 
 
 
@@ -115,7 +115,7 @@ Method Summary
    * - public **boolean**
      - :ref:`isValid <io_realm_RealmCollection_isValid____>` ()
        
-       Checks if the collection is still valid to use, i.e., the :ref:`io.realm.Realm <io_realm_Realm>`instance hasn't been closed.
+       Checks if the collection is still valid to use, i.e., the :ref:`io.realm.Realm <io_realm_Realm>` instance hasn't been closed.
        
        
        
@@ -133,7 +133,7 @@ Method Summary
    * - public **boolean**
      - :ref:`contains <io_realm_RealmCollection_contains__Object__>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
        
-       Tests whether this ``Collection``contains the specified object.
+       Tests whether this ``Collection`` contains the specified object.
        
        
        
@@ -309,7 +309,7 @@ isValid
 public **boolean** isValid ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Checks if the collection is still valid to use, i.e., the :ref:`io.realm.Realm <io_realm_Realm>`instance hasn't been closed. It will always return ``true``for an unmanaged collection.
+Checks if the collection is still valid to use, i.e., the :ref:`io.realm.Realm <io_realm_Realm>` instance hasn't been closed. It will always return ``true`` for an unmanaged collection.
 
 
 isManaged
@@ -333,7 +333,7 @@ contains
 public **boolean** contains (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Tests whether this ``Collection``contains the specified object. Returns ``true``if and only if at least one element ``elem``in this ``Collection``meets following requirement: ``(object==null ? elem==null : object.equals(elem))``.
+Tests whether this ``Collection`` contains the specified object. Returns ``true`` if and only if at least one element ``elem`` in this ``Collection`` meets following requirement: ``(object==null ? elem==null : object.equals(elem))``.
 
 
 Parameters

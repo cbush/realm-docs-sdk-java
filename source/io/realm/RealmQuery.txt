@@ -14,17 +14,17 @@ io.realm.RealmQuery<E>
 
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
-A RealmQuery encapsulates a query on a :ref:`io.realm.Realm <io_realm_Realm>`or a :ref:`io.realm.RealmResults <io_realm_RealmResults>`using the Builder pattern. The query is executed using either **#findAll() (?)**or **#findFirst() (?)**.
+A RealmQuery encapsulates a query on a :ref:`io.realm.Realm <io_realm_Realm>` or a :ref:`io.realm.RealmResults <io_realm_RealmResults>` using the Builder pattern. The query is executed using either **#findAll() (?)** or **#findFirst() (?)**.
 
 The input to many of the query functions take a field name as String. Note that this is not type safe. If a RealmObject class is refactored care has to be taken to not break any queries.
 
-A :ref:`io.realm.Realm <io_realm_Realm>`is unordered, which means that there is no guarantee that querying a Realm will return the objects in the order they where inserted. Use **#sort(String) (?)**(String)} and similar methods if a specific order is required.
+A :ref:`io.realm.Realm <io_realm_Realm>` is unordered, which means that there is no guarantee that querying a Realm will return the objects in the order they where inserted. Use **#sort(String) (?)** (String)} and similar methods if a specific order is required.
 
 
 
 A RealmQuery cannot be passed between different threads.
 
-Results are obtained quickly most of the times. However, launching heavy queries from the UI thread may result in a drop of frames or even ANRs. If you want to prevent these behaviors, you can instantiate a Realm using a :ref:`RealmConfiguration <io_realm_RealmConfiguration>`that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)**to ``false``. This way queries will be forced to be launched from a non-UI thread. Alternatively, you can also use **#findAllAsync() (?)**or **#findFirstAsync() (?)**.
+Results are obtained quickly most of the times. However, launching heavy queries from the UI thread may result in a drop of frames or even ANRs. If you want to prevent these behaviors, you can instantiate a Realm using a :ref:`RealmConfiguration <io_realm_RealmConfiguration>` that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)** to ``false``. This way queries will be forced to be launched from a non-UI thread. Alternatively, you can also use **#findAllAsync() (?)** or **#findFirstAsync() (?)**.
 
 
 
@@ -41,7 +41,7 @@ Method Summary
    * - public **boolean**
      - :ref:`isValid <io_realm_RealmQuery_isValid____>` ()
        
-       Checks if :ref:`io.realm.RealmQuery <io_realm_RealmQuery>`is still valid to use i.e., the :ref:`io.realm.Realm <io_realm_Realm>`instance hasn't been closed and any parent :ref:`io.realm.RealmResults <io_realm_RealmResults>`is still valid.
+       Checks if :ref:`io.realm.RealmQuery <io_realm_RealmQuery>` is still valid to use i.e., the :ref:`io.realm.Realm <io_realm_Realm>` instance hasn't been closed and any parent :ref:`io.realm.RealmResults <io_realm_RealmResults>` is still valid.
        
        
        
@@ -901,7 +901,7 @@ Method Summary
    * - public **RealmAny (?)**
      - :ref:`minRealmAny <io_realm_RealmQuery_minRealmAny__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
-       Finds the minimum value of a **RealmAny (?)**field.
+       Finds the minimum value of a **RealmAny (?)** field.
        
        
        
@@ -927,7 +927,7 @@ Method Summary
    * - public **RealmAny (?)**
      - :ref:`maxRealmAny <io_realm_RealmQuery_maxRealmAny__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
-       Finds the maximum value of a **RealmAny (?)**field.
+       Finds the maximum value of a **RealmAny (?)** field.
        
        
        
@@ -1033,7 +1033,7 @@ Method Summary
    * - public :ref:`Realm <io_realm_Realm>`
      - :ref:`getRealm <io_realm_RealmQuery_getRealm____>` ()
        
-       Returns the :ref:`Realm <io_realm_Realm>`instance to which this query belongs.
+       Returns the :ref:`Realm <io_realm_Realm>` instance to which this query belongs.
        
        
        
@@ -1067,7 +1067,7 @@ Method Summary
    * - public **E (?)**
      - :ref:`findFirstAsync <io_realm_RealmQuery_findFirstAsync____>` ()
        
-       Similar to **#findFirst() (?)**but runs asynchronously on a worker thread.
+       Similar to **#findFirst() (?)** but runs asynchronously on a worker thread.
        
        
        
@@ -1086,7 +1086,7 @@ isValid
 public **boolean** isValid ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Checks if :ref:`io.realm.RealmQuery <io_realm_RealmQuery>`is still valid to use i.e., the :ref:`io.realm.Realm <io_realm_Realm>`instance hasn't been closed and any parent :ref:`io.realm.RealmResults <io_realm_RealmResults>`is still valid.
+Checks if :ref:`io.realm.RealmQuery <io_realm_RealmQuery>` is still valid to use i.e., the :ref:`io.realm.Realm <io_realm_Realm>` instance hasn't been closed and any parent :ref:`io.realm.RealmResults <io_realm_RealmResults>` is still valid.
 
 
 isNull
@@ -1099,7 +1099,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` isNull (`String <https://docs.ora
 
 Tests if a field is ``null``. Only works for nullable fields.
 
-For link queries, if any part of the link path is ``null``the whole path is considered to be ``null``e.g., ``isNull("linkField.stringField")``will be considered to be ``null``if either ``linkField``or ``linkField.stringField``is ``null``.
+For link queries, if any part of the link path is ``null`` the whole path is considered to be ``null`` e.g., ``isNull("linkField.stringField")`` will be considered to be ``null`` if either ``linkField`` or ``linkField.stringField`` is ``null``.
 
 
 
@@ -1176,7 +1176,7 @@ __________
    
 - ``value - ``the value to compare with.
    
-- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>`only works for Latin-1 characters.
+- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>` only works for Latin-1 characters.
    
    
    
@@ -1197,7 +1197,7 @@ __________
    
 - ``value - ``the value to compare with.
    
-- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>`only works for Latin-1 characters.
+- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>` only works for Latin-1 characters.
    
    
    
@@ -1270,7 +1270,7 @@ __________
 
 - ``fieldName - ``the field to compare.
    
-- ``values - ``array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
+- ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
    
@@ -1289,11 +1289,11 @@ __________
 
 - ``fieldName - ``the field to compare.
    
-- ``values - ``array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
+- ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
    
-- ``casing - ``how casing is handled. :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>`works only for the Latin-1 characters.
+- ``casing - ``how casing is handled. :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>` works only for the Latin-1 characters.
    
    
    
@@ -1312,7 +1312,7 @@ __________
 
 - ``fieldName - ``the field to compare.
    
-- ``values - ``array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
+- ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
    
@@ -1331,7 +1331,7 @@ __________
 
 - ``fieldName - ``the field to compare.
    
-- ``values - ``array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
+- ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
    
@@ -1350,7 +1350,7 @@ __________
 
 - ``fieldName - ``the field to compare.
    
-- ``values - ``array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
+- ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
    
@@ -1369,7 +1369,7 @@ __________
 
 - ``fieldName - ``the field to compare.
    
-- ``values - ``array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
+- ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
    
@@ -1388,7 +1388,7 @@ __________
 
 - ``fieldName - ``the field to compare.
    
-- ``values - ``array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
+- ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
    
@@ -1407,7 +1407,7 @@ __________
 
 - ``fieldName - ``the field to compare.
    
-- ``values - ``array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
+- ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
    
@@ -1426,7 +1426,7 @@ __________
 
 - ``fieldName - ``the field to compare.
    
-- ``values - ``array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
+- ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
    
@@ -1445,7 +1445,7 @@ __________
 
 - ``fieldName - ``the field to compare.
    
-- ``values - ``array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
+- ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
    
@@ -1464,7 +1464,7 @@ __________
 
 - ``fieldName - ``the field to compare.
    
-- ``values - ``array of values to compare with. If ``null``or the empty array is provided the query will never match any results.
+- ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
    
    
    
@@ -1505,7 +1505,7 @@ __________
    
 - ``value - ``the value to compare with.
    
-- ``casing - ``how casing is handled. :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>`works only for the Latin-1 characters.
+- ``casing - ``how casing is handled. :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>` works only for the Latin-1 characters.
    
    
    
@@ -1526,7 +1526,7 @@ __________
    
 - ``value - ``the value to compare with.
    
-- ``casing - ``how casing is handled. :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>`works only for the Latin-1 characters.
+- ``casing - ``how casing is handled. :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>` works only for the Latin-1 characters.
    
    
    
@@ -2225,7 +2225,7 @@ __________
    
 - ``value - ``the substring.
    
-- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>`only works for Latin-1 characters.
+- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>` only works for Latin-1 characters.
    
    
    
@@ -2246,7 +2246,7 @@ __________
    
 - ``value - ``the substring.
    
-- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>`only works for Latin-1 characters.
+- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>` only works for Latin-1 characters.
    
    
    
@@ -2304,7 +2304,7 @@ __________
    
 - ``value - ``the substring.
    
-- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>`only works for Latin-1 characters.
+- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>` only works for Latin-1 characters.
    
    
    
@@ -2325,7 +2325,7 @@ __________
    
 - ``value - ``the substring.
    
-- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>`only works for Latin-1 characters.
+- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>` only works for Latin-1 characters.
    
    
    
@@ -2383,7 +2383,7 @@ __________
    
 - ``value - ``the substring.
    
-- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>`only works for Latin-1 characters.
+- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>` only works for Latin-1 characters.
    
    
    
@@ -2404,7 +2404,7 @@ __________
    
 - ``value - ``the substring.
    
-- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>`only works for Latin-1 characters.
+- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>` only works for Latin-1 characters.
    
    
    
@@ -2483,7 +2483,7 @@ __________
    
 - ``value - ``the wildcard string.
    
-- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>`only works for Latin-1 characters.
+- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>` only works for Latin-1 characters.
    
    
    
@@ -2511,7 +2511,7 @@ __________
    
 - ``value - ``the wildcard string.
    
-- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>`only works for Latin-1 characters.
+- ``casing - ``how to handle casing. Setting this to :ref:`Case#INSENSITIVE <io_realm_Case_INSENSITIVE>` only works for Latin-1 characters.
    
    
    
@@ -2998,7 +2998,7 @@ minRealmAny
 public **RealmAny (?)** minRealmAny (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Finds the minimum value of a **RealmAny (?)**field.
+Finds the minimum value of a **RealmAny (?)** field.
 
 
 Parameters
@@ -3054,7 +3054,7 @@ maxRealmAny
 public **RealmAny (?)** maxRealmAny (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Finds the maximum value of a **RealmAny (?)**field.
+Finds the maximum value of a **RealmAny (?)** field.
 
 
 Parameters
@@ -3086,7 +3086,7 @@ findAll
 public :ref:`RealmResults <io_realm_RealmResults>` findAll ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Finds all objects that fulfill the query conditions.Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so and therefore it is not allowed by default.**If you want to prevent these behaviors you can obtain a Realm using a :ref:`RealmConfiguration <io_realm_RealmConfiguration>`that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)**to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a :ref:`RealmException <io_realm_exceptions_RealmException>`. Alternatively, you can use **#findAllAsync() (?)**.
+Finds all objects that fulfill the query conditions.Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so and therefore it is not allowed by default.** If you want to prevent these behaviors you can obtain a Realm using a :ref:`RealmConfiguration <io_realm_RealmConfiguration>` that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)** to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a :ref:`RealmException <io_realm_exceptions_RealmException>`. Alternatively, you can use **#findAllAsync() (?)**.
 
 
 
@@ -3157,7 +3157,7 @@ ______
 public :ref:`RealmQuery <io_realm_RealmQuery>` sort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName1, :ref:`Sort <io_realm_Sort>` sortOrder1, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName2, :ref:`Sort <io_realm_Sort>` sortOrder2)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sorts the query result by the specific field names in the provided orders. ``fieldName2``is only used in case of equal values in ``fieldName1``.
+Sorts the query result by the specific field names in the provided orders. ``fieldName2`` is only used in case of equal values in ``fieldName1``.
 
 Sorting is currently limited to character sets in 'Latin Basic', 'Latin Supplement', 'Latin Extended A', 'Latin Extended B' (UTF-8 range 0-591). For other character sets, sorting will have no effect.
 
@@ -3224,7 +3224,7 @@ limit
 public :ref:`RealmQuery <io_realm_RealmQuery>` limit (**long** limit)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Limits the number of objects returned in case the query matched more objects.Note that when using this method in combination with **#sort(String) (?)**and **#distinct(String, String...) (?)**they will be executed in the order they where added which can affect the end result.
+Limits the number of objects returned in case the query matched more objects.Note that when using this method in combination with **#sort(String) (?)** and **#distinct(String, String...) (?)** they will be executed in the order they where added which can affect the end result.
 
 
 
@@ -3266,13 +3266,13 @@ rawPredicate
 public :ref:`RealmQuery <io_realm_RealmQuery>` rawPredicate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ predicate, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ arguments)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Create a text-based predicate using the Realm Query Language. This predicate can be combined with other raw or type safe predicates, it accepts Realm values as arguments.Class and property names used in the raw predicate can be either the names defined in the Realm Model classes or the internal names defined using the :ref:`io.realm.annotations.RealmClass <io_realm_annotations_RealmClass>`or :ref:`io.realm.annotations.RealmField <io_realm_annotations_RealmField>`annotations. If a class or property name contains spaces those must be escaped.
+Create a text-based predicate using the Realm Query Language. This predicate can be combined with other raw or type safe predicates, it accepts Realm values as arguments.Class and property names used in the raw predicate can be either the names defined in the Realm Model classes or the internal names defined using the :ref:`io.realm.annotations.RealmClass <io_realm_annotations_RealmClass>` or :ref:`io.realm.annotations.RealmField <io_realm_annotations_RealmField>` annotations. If a class or property name contains spaces those must be escaped.
 
 
 
 Arguments are defined in the string predicate as $argument_index, where $argument_index is a decimal integer that specifies the position of the argument in the argument list. The first argument is referenced by $0, the second by $1, etc.See `these docs <https://docs.mongodb.com/realm-sdks/js/latest/tutorial-query-language.html>`__ for a more detailed description of the Realm Query Language.
 
-Examples:
+ Examples:
  
 
 .. code-block:: java
@@ -3304,6 +3304,7 @@ Examples:
     
 
 
+ 
 
 
 Parameters
@@ -3325,9 +3326,9 @@ getRealm
 public :ref:`Realm <io_realm_Realm>` getRealm ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the :ref:`Realm <io_realm_Realm>`instance to which this query belongs.
+Returns the :ref:`Realm <io_realm_Realm>` instance to which this query belongs.
 
-Calling **Realm#close() (?)**on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the query.
+Calling **Realm#close() (?)** on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the query.
 
 
 
@@ -3361,7 +3362,7 @@ findFirst
 public **E (?)** findFirst ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Finds the first object that fulfills the query conditions.Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so, but it is allowed by default.**If you want to prevent these behaviors you can obtain a Realm using a :ref:`RealmConfiguration <io_realm_RealmConfiguration>`that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)**to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a :ref:`RealmException <io_realm_exceptions_RealmException>`. Alternatively, you can use **#findFirstAsync() (?)**.
+Finds the first object that fulfills the query conditions.Launching heavy queries from the UI thread may result in a drop of frames or even ANRs. **We do not recommend doing so, but it is allowed by default.** If you want to prevent these behaviors you can obtain a Realm using a :ref:`RealmConfiguration <io_realm_RealmConfiguration>` that explicitly sets **RealmConfiguration.Builder#allowQueriesOnUiThread(boolean) (?)** to ``false``. This way you will be forced to launch your queries from a non-UI thread, otherwise calls to this method will throw a :ref:`RealmException <io_realm_exceptions_RealmException>`. Alternatively, you can use **#findFirstAsync() (?)**.
 
 
 
@@ -3382,7 +3383,7 @@ findFirstAsync
 public **E (?)** findFirstAsync ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Similar to **#findFirst() (?)**but runs asynchronously on a worker thread. An listener should be registered to the returned :ref:`RealmObject <io_realm_RealmObject>`to get the notification when query completes. The registered listener will also be triggered if there are changes made to the queried :ref:`RealmObject <io_realm_RealmObject>`. If the :ref:`RealmObject <io_realm_RealmObject>`is deleted, the listener will be called one last time and then stop. The query will not be re-run.
+Similar to **#findFirst() (?)** but runs asynchronously on a worker thread. An listener should be registered to the returned :ref:`RealmObject <io_realm_RealmObject>` to get the notification when query completes. The registered listener will also be triggered if there are changes made to the queried :ref:`RealmObject <io_realm_RealmObject>`. If the :ref:`RealmObject <io_realm_RealmObject>` is deleted, the listener will be called one last time and then stop. The query will not be re-run.
 
 
 Throws

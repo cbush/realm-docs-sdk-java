@@ -10,7 +10,7 @@ io.realm.OrderedCollectionChangeSet
 
 .. _io_realm_OrderedCollectionChangeSet:
 
-This interface describes the changes made to a collection during the last update.:ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>`is passed to the :ref:`OrderedRealmCollectionChangeListener <io_realm_OrderedRealmCollectionChangeListener>`which is registered by **RealmResults#addChangeListener(OrderedRealmCollectionChangeListener) (?)**.
+This interface describes the changes made to a collection during the last update.:ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` is passed to the :ref:`OrderedRealmCollectionChangeListener <io_realm_OrderedRealmCollectionChangeListener>` which is registered by **RealmResults#addChangeListener(OrderedRealmCollectionChangeListener) (?)**.
 
 
 
@@ -120,7 +120,7 @@ getState
 public :ref:`OrderedCollectionChangeSet.State <io_realm_OrderedCollectionChangeSet_State>` getState ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the state represented by this change. See :ref:`State <io_realm_OrderedCollectionChangeSet_State>`for a description of the different states a changeset can be in.
+Returns the state represented by this change. See :ref:`State <io_realm_OrderedCollectionChangeSet_State>` for a description of the different states a changeset can be in.
 
 
 See Also

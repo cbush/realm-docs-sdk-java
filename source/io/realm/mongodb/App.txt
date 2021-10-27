@@ -77,7 +77,7 @@ To register a new user and/or login with an existing user do as shown below:
         User user = APP.login(Credentials.emailPassword(username, password))
     
 
-With an authorized user you can synchronize data between the local device and the remote Realm App by opening a Realm with a :ref:`io.realm.mongodb.sync.SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`as indicated below:
+With an authorized user you can synchronize data between the local device and the remote Realm App by opening a Realm with a :ref:`io.realm.mongodb.sync.SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` as indicated below:
 
 
 
@@ -183,7 +183,7 @@ Method Summary
    * - public `Map <https://docs.oracle.com/javase/7/docs/api/java/util/Map.html>`__
      - :ref:`allUsers <io_realm_mongodb_App_allUsers____>` ()
        
-       Returns all known users that are either :ref:`User.State#LOGGED_IN <io_realm_mongodb_User_State_LOGGED_IN>`or :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`.
+       Returns all known users that are either :ref:`User.State#LOGGED_IN <io_realm_mongodb_User_State_LOGGED_IN>` or :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`.
        
        
        
@@ -225,7 +225,7 @@ Method Summary
    * - public :ref:`EmailPasswordAuth <io_realm_mongodb_auth_EmailPasswordAuth>`
      - :ref:`getEmailPassword <io_realm_mongodb_App_getEmailPassword____>` ()
        
-       Returns a wrapper for interacting with functionality related to users either being created or logged in using the :ref:`Credentials.Provider#EMAIL_PASSWORD <io_realm_mongodb_Credentials_Provider_EMAIL_PASSWORD>`identity provider.
+       Returns a wrapper for interacting with functionality related to users either being created or logged in using the :ref:`Credentials.Provider#EMAIL_PASSWORD <io_realm_mongodb_Credentials_Provider_EMAIL_PASSWORD>` identity provider.
        
        
        
@@ -342,7 +342,7 @@ allUsers
 public `Map <https://docs.oracle.com/javase/7/docs/api/java/util/Map.html>`__ allUsers ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns all known users that are either :ref:`User.State#LOGGED_IN <io_realm_mongodb_User_State_LOGGED_IN>`or :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`.
+Returns all known users that are either :ref:`User.State#LOGGED_IN <io_realm_mongodb_User_State_LOGGED_IN>` or :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`.
 
 Only users that at some point logged into this device will be returned.
 
@@ -453,7 +453,7 @@ getEmailPassword
 public :ref:`EmailPasswordAuth <io_realm_mongodb_auth_EmailPasswordAuth>` getEmailPassword ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns a wrapper for interacting with functionality related to users either being created or logged in using the :ref:`Credentials.Provider#EMAIL_PASSWORD <io_realm_mongodb_Credentials_Provider_EMAIL_PASSWORD>`identity provider.
+Returns a wrapper for interacting with functionality related to users either being created or logged in using the :ref:`Credentials.Provider#EMAIL_PASSWORD <io_realm_mongodb_Credentials_Provider_EMAIL_PASSWORD>` identity provider.
 
 
 addAuthenticationListener

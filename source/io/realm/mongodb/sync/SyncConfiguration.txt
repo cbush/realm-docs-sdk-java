@@ -14,17 +14,17 @@ io.realm.mongodb.sync.SyncConfiguration
 
 - :ref:`io.realm.RealmConfiguration <io_realm_RealmConfiguration>`
 
-A :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`is used to setup a Realm Database that can be synchronized between devices using MongoDB Realm.
+A :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` is used to setup a Realm Database that can be synchronized between devices using MongoDB Realm.
 
-A valid :ref:`User <io_realm_mongodb_User>`is required to create a :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`. See :ref:`Credentials <io_realm_mongodb_Credentials>`and **App#loginAsync(Credentials, App.Callback) (?)**for more information on how to get a user object.
-
-
-
-A minimal :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`can be found below.
+A valid :ref:`User <io_realm_mongodb_User>` is required to create a :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`. See :ref:`Credentials <io_realm_mongodb_Credentials>` and **App#loginAsync(Credentials, App.Callback) (?)** for more information on how to get a user object.
 
 
 
+A minimal :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` can be found below.
 
+
+
+ 
 
 .. code-block:: java
 
@@ -36,6 +36,7 @@ A minimal :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`can 
     
 
 
+ 
 
 Synchronized Realms only support additive migrations which can be detected and performed automatically, so the following builder options are not accessible compared to a normal Realm:
 
@@ -50,7 +51,7 @@ Synchronized Realms only support additive migrations which can be detected and p
    
    
 
-Synchronized Realms are created by using **Realm#getInstance(RealmConfiguration) (?)**and **Realm#getDefaultInstance() (?)**like ordinary unsynchronized Realms.
+Synchronized Realms are created by using **Realm#getInstance(RealmConfiguration) (?)** and **Realm#getDefaultInstance() (?)** like ordinary unsynchronized Realms.
 
 
 Nested Class Summary
@@ -78,7 +79,7 @@ Method Summary
    * - public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>`
      - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__byte[]__Object_____>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[]** encryptionKey, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ modules)
        
-       Returns a :ref:`RealmConfiguration <io_realm_RealmConfiguration>`appropriate to open a read-only, non-synced Realm to recover any pending changes.
+       Returns a :ref:`RealmConfiguration <io_realm_RealmConfiguration>` appropriate to open a read-only, non-synced Realm to recover any pending changes.
        
        
        
@@ -120,7 +121,7 @@ Method Summary
    * - public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>`
      - :ref:`forRecovery <io_realm_mongodb_sync_SyncConfiguration_forRecovery__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath)
        
-       Returns a :ref:`RealmConfiguration <io_realm_RealmConfiguration>`appropriate to open a read-only, non-synced Realm to recover any pending changes.
+       Returns a :ref:`RealmConfiguration <io_realm_RealmConfiguration>` appropriate to open a read-only, non-synced Realm to recover any pending changes.
        
        
        
@@ -194,7 +195,7 @@ Method Summary
    * - public **boolean**
      - :ref:`shouldDeleteRealmOnLogout <io_realm_mongodb_sync_SyncConfiguration_shouldDeleteRealmOnLogout____>` ()
        
-       Returns ``true``if the Realm file must be deleted once the :ref:`User <io_realm_mongodb_User>`owning it logs out.
+       Returns ``true`` if the Realm file must be deleted once the :ref:`User <io_realm_mongodb_User>` owning it logs out.
        
        
        
@@ -204,7 +205,7 @@ Method Summary
    * - public **boolean**
      - :ref:`shouldWaitForInitialRemoteData <io_realm_mongodb_sync_SyncConfiguration_shouldWaitForInitialRemoteData____>` ()
        
-       Returns ``true``if the Realm will download all known changes from the remote server before being opened the first time.
+       Returns ``true`` if the Realm will download all known changes from the remote server before being opened the first time.
        
        
        
@@ -271,7 +272,7 @@ forRecovery
 public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[]** encryptionKey, `java.lang.Object[] <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ modules)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns a :ref:`RealmConfiguration <io_realm_RealmConfiguration>`appropriate to open a read-only, non-synced Realm to recover any pending changes. This is useful when trying to open a backup/recovery Realm (after a client reset).
+Returns a :ref:`RealmConfiguration <io_realm_RealmConfiguration>` appropriate to open a read-only, non-synced Realm to recover any pending changes. This is useful when trying to open a backup/recovery Realm (after a client reset).
 
 
 Parameters
@@ -289,7 +290,7 @@ __________
 public static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns a :ref:`RealmConfiguration <io_realm_RealmConfiguration>`appropriate to open a read-only, non-synced Realm to recover any pending changes. This is useful when trying to open a backup/recovery Realm (after a client reset). Note: This will use the default Realm module (composed of all :ref:`RealmModel <io_realm_RealmModel>`), and assume no encryption should be used as well.
+Returns a :ref:`RealmConfiguration <io_realm_RealmConfiguration>` appropriate to open a read-only, non-synced Realm to recover any pending changes. This is useful when trying to open a backup/recovery Realm (after a client reset). Note: This will use the default Realm module (composed of all :ref:`RealmModel <io_realm_RealmModel>`), and assume no encryption should be used as well.
 
 
 Parameters
@@ -437,7 +438,7 @@ shouldDeleteRealmOnLogout
 public **boolean** shouldDeleteRealmOnLogout ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns ``true``if the Realm file must be deleted once the :ref:`User <io_realm_mongodb_User>`owning it logs out.
+Returns ``true`` if the Realm file must be deleted once the :ref:`User <io_realm_mongodb_User>` owning it logs out.
 
 
 shouldWaitForInitialRemoteData
@@ -448,7 +449,7 @@ shouldWaitForInitialRemoteData
 public **boolean** shouldWaitForInitialRemoteData ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns ``true``if the Realm will download all known changes from the remote server before being opened the first time.
+Returns ``true`` if the Realm will download all known changes from the remote server before being opened the first time.
 
 
 getInitialRemoteDataTimeout
@@ -459,7 +460,7 @@ getInitialRemoteDataTimeout
 public **long** getInitialRemoteDataTimeout (`TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the timeout defined when downloading any initial data the first time the Realm is opened.This value is only applicable if **#shouldWaitForInitialRemoteData() (?)**returns ``true``.
+Returns the timeout defined when downloading any initial data the first time the Realm is opened.This value is only applicable if **#shouldWaitForInitialRemoteData() (?)** returns ``true``.
 
 
 

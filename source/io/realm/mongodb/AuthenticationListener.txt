@@ -52,7 +52,7 @@ A user was logged into the Object Server
 Parameters
 __________
 
-- ``user - ``:ref:`User <io_realm_mongodb_User>`that is now logged in.
+- ``user - ``:ref:`User <io_realm_mongodb_User>` that is now logged in.
    
    
    
@@ -69,7 +69,7 @@ A user was successfully logged out from the Object Server.
 Parameters
 __________
 
-- ``user - ``:ref:`User <io_realm_mongodb_User>`that was successfully logged out.
+- ``user - ``:ref:`User <io_realm_mongodb_User>` that was successfully logged out.
    
    
    

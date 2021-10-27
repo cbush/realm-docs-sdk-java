@@ -14,7 +14,7 @@ io.realm.RealmSchema
 
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
-Class for interacting with the Realm schema. This makes it possible to inspect, add, delete and change the classes in the Realm.**Realm#getSchema() (?)**returns an immutable ``RealmSchema``which can only be used for inspecting. Use **DynamicRealm#getSchema() (?)**to get a mutable schema.
+Class for interacting with the Realm schema. This makes it possible to inspect, add, delete and change the classes in the Realm.**Realm#getSchema() (?)** returns an immutable ``RealmSchema`` which can only be used for inspecting. Use **DynamicRealm#getSchema() (?)** to get a mutable schema.
 
 
 
@@ -33,7 +33,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`get <io_realm_RealmSchema_get__String__>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
        
-       Returns the :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`for a given class.
+       Returns the :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` for a given class.
        
        
        
@@ -118,7 +118,7 @@ get
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` get (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`for a given class. If this :ref:`RealmSchema <io_realm_RealmSchema>`is immutable, an immutable :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`will be returned. Otherwise, it returns an mutable :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`.
+Returns the :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` for a given class. If this :ref:`RealmSchema <io_realm_RealmSchema>` is immutable, an immutable :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` will be returned. Otherwise, it returns an mutable :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`.
 
 
 Parameters
@@ -135,7 +135,7 @@ getAll
 public abstract `Set <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ getAll ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`s for all RealmObject classes that can be saved in this Realm. If this :ref:`RealmSchema <io_realm_RealmSchema>`is immutable, an immutable :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`set will be returned. Otherwise, it returns an mutable :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`set.
+Returns the :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`s for all RealmObject classes that can be saved in this Realm. If this :ref:`RealmSchema <io_realm_RealmSchema>` is immutable, an immutable :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` set will be returned. Otherwise, it returns an mutable :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` set.
 
 
 create
@@ -172,11 +172,11 @@ __________
    
 - ``primaryKeyFieldName - ``name of the primary key field.
    
-- ``fieldType - ``type of field to add. Only ``byte``, ``short``, ``int``, ``long``and their boxed types or the ``String``is supported.
+- ``fieldType - ``type of field to add. Only ``byte``, ``short``, ``int``, ``long`` and their boxed types or the ``String`` is supported.
    
    
    
-- ``attributes - ``set of attributes for this field. This method implicitly adds :ref:`FieldAttribute#PRIMARY_KEY <io_realm_FieldAttribute_PRIMARY_KEY>`and :ref:`FieldAttribute#INDEXED <io_realm_FieldAttribute_INDEXED>`attributes to the field.
+- ``attributes - ``set of attributes for this field. This method implicitly adds :ref:`FieldAttribute#PRIMARY_KEY <io_realm_FieldAttribute_PRIMARY_KEY>` and :ref:`FieldAttribute#INDEXED <io_realm_FieldAttribute_INDEXED>` attributes to the field.
    
    
    

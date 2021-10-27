@@ -14,9 +14,9 @@ io.realm.rx.ObjectChange<E extends io.realm.RealmModel>
 
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
-Container wrapping the result of a :ref:`io.realm.RealmObjectChangeListener <io_realm_RealmObjectChangeListener>`being triggered.
+Container wrapping the result of a :ref:`io.realm.RealmObjectChangeListener <io_realm_RealmObjectChangeListener>` being triggered.
 
-This is used by **RealmObject#asChangesetObservable() (?)**and **RealmObject#asChangesetObservable(RealmModel) (?)**as RxJava is only capable of emitting one item, not multiple.
+This is used by **RealmObject#asChangesetObservable() (?)** and **RealmObject#asChangesetObservable(RealmModel) (?)** as RxJava is only capable of emitting one item, not multiple.
 
 
 
@@ -96,11 +96,11 @@ getChangeset
 public :ref:`ObjectChangeSet <io_realm_ObjectChangeSet>` getChangeset ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the changeset describing the update.This will be ``null``the first time the stream emits the object as well as when a asynchronous query is loaded for the first time.
+Returns the changeset describing the update.This will be ``null`` the first time the stream emits the object as well as when a asynchronous query is loaded for the first time.
 
 
 
-
+ 
 
 .. code-block:: java
 
@@ -116,6 +116,7 @@ Returns the changeset describing the update.This will be ``null``the first time 
     
 
 
+ 
 
 
 equals

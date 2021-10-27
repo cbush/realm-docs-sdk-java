@@ -68,9 +68,9 @@ executeClientReset
 public **void** executeClientReset ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Calling this method will execute the Client Reset manually instead of waiting until next app restart. This will only be possible if all instances of that Realm have been closed, otherwise a `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__will be thrown.
+Calling this method will execute the Client Reset manually instead of waiting until next app restart. This will only be possible if all instances of that Realm have been closed, otherwise a `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__ will be thrown.
 
-After this method returns, the backup file can be found in the location returned by **#getBackupFile() (?)**. The file at **#getOriginalFile() (?)**have been deleted, but will be recreated from scratch next time a Realm instance is opened.
+After this method returns, the backup file can be found in the location returned by **#getBackupFile() (?)**. The file at **#getOriginalFile() (?)** have been deleted, but will be recreated from scratch next time a Realm instance is opened.
 
 
 

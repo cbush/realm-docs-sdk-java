@@ -10,9 +10,9 @@ io.realm.RealmObjectChangeListener<T extends io.realm.RealmModel>
 
 .. _io_realm_RealmObjectChangeListener:
 
-``RealmObjectChangeListener``can be registered on a :ref:`RealmModel <io_realm_RealmModel>`or :ref:`RealmObject <io_realm_RealmObject>`to receive detailed notifications when an object changes.
+``RealmObjectChangeListener`` can be registered on a :ref:`RealmModel <io_realm_RealmModel>` or :ref:`RealmObject <io_realm_RealmObject>` to receive detailed notifications when an object changes.
 
-Realm instances on a thread without an **android.os.Looper (?)**cannot register a ``RealmObjectChangeListener``.
+Realm instances on a thread without an **android.os.Looper (?)** cannot register a ``RealmObjectChangeListener``.
 
 
 
@@ -31,7 +31,7 @@ Method Summary
    * - public **void**
      - :ref:`onChange <io_realm_RealmObjectChangeListener_onChange__T__ObjectChangeSet__>` (**T (?)** t, :ref:`ObjectChangeSet <io_realm_ObjectChangeSet>` changeSet)
        
-       When this gets called to return the results of an asynchronous query made by **RealmQuery#findFirstAsync() (?)**, ``changeSet``will be ``null``.
+       When this gets called to return the results of an asynchronous query made by **RealmQuery#findFirstAsync() (?)**, ``changeSet`` will be ``null``.
        
        
        
@@ -50,13 +50,13 @@ onChange
 public **void** onChange (**T (?)** t, :ref:`ObjectChangeSet <io_realm_ObjectChangeSet>` changeSet)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When this gets called to return the results of an asynchronous query made by **RealmQuery#findFirstAsync() (?)**, ``changeSet``will be ``null``.
+When this gets called to return the results of an asynchronous query made by **RealmQuery#findFirstAsync() (?)**, ``changeSet`` will be ``null``.
 
-When this gets called because the object was deleted, ``changeSet.isDeleted()``will return ``true``and ``changeSet.getFieldChanges()``will return ``null``.
+When this gets called because the object was deleted, ``changeSet.isDeleted()`` will return ``true`` and ``changeSet.getFieldChanges()`` will return ``null``.
 
 
 
-When this gets called because the object was modified, ``changeSet.isDeleted()``will return ``false``and ``changeSet.getFieldChanges()``will return the detailed information about the fields' changes.
+When this gets called because the object was modified, ``changeSet.isDeleted()`` will return ``false`` and ``changeSet.getFieldChanges()`` will return the detailed information about the fields' changes.
 
 
 
@@ -64,7 +64,7 @@ If a field points to another RealmObject this listener will only be triggered if
 
 If a field points to a RealmList, this listener will only be triggered if one or multiple objects are inserted, removed or moved within the List. Updating the objects in the RealmList will not trigger this listener.
 
-Changes to :ref:`LinkingObjects <io_realm_annotations_LinkingObjects>`annotated :ref:`RealmResults <io_realm_RealmResults>`fields will not be monitored, nor reported through this change listener.
+Changes to :ref:`LinkingObjects <io_realm_annotations_LinkingObjects>` annotated :ref:`RealmResults <io_realm_RealmResults>` fields will not be monitored, nor reported through this change listener.
 
 
 
@@ -72,7 +72,7 @@ Changes to :ref:`LinkingObjects <io_realm_annotations_LinkingObjects>`annotated 
 Parameters
 __________
 
-- ``t - ``the ``RealmObject``this listener is registered to.
+- ``t - ``the ``RealmObject`` this listener is registered to.
    
    
    

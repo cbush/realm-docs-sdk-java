@@ -22,7 +22,7 @@ Data written to the Realm after the local copy of the Realm diverged from the ba
 
 The client reset process can be initiated in one of two ways:
 
-1. Run **ClientResetRequiredError#executeClientReset() (?)**manually. All Realm instances must be closed before this method is called.
+1. Run **ClientResetRequiredError#executeClientReset() (?)** manually. All Realm instances must be closed before this method is called.
    
    
    
@@ -65,11 +65,11 @@ Callback that indicates a Client Reset has happened. This should be handled as q
 Parameters
 __________
 
-- ``session - ``:ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`this error happened on.
+- ``session - ``:ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` this error happened on.
    
    
    
-- ``error - ``:ref:`ClientResetRequiredError <io_realm_mongodb_sync_ClientResetRequiredError>`the specific Client Reset error.
+- ``error - ``:ref:`ClientResetRequiredError <io_realm_mongodb_sync_ClientResetRequiredError>` the specific Client Reset error.
    
    
    

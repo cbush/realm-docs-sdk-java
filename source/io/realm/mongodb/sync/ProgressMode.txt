@@ -33,7 +33,7 @@ Enum Constant Summary
        
    
    * - :ref:`INDEFINITELY <io_realm_mongodb_sync_ProgressMode_INDEFINITELY>`
-     - A :ref:`ProgressListener <io_realm_mongodb_sync_ProgressListener>`registered in this mode, will continue to report progress changes, even if changes are being added after the listener was registered.
+     - A :ref:`ProgressListener <io_realm_mongodb_sync_ProgressListener>` registered in this mode, will continue to report progress changes, even if changes are being added after the listener was registered.
        
        
        
