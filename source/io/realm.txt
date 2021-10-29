@@ -56,6 +56,8 @@
    RealmSchema <io/realm/RealmSchema>
    Sort <io/realm/Sort>
    
+
+
 | - :ref:`io.realm.Case <io_realm_Case>`
 - :ref:`io.realm.CompactOnLaunchCallback <io_realm_CompactOnLaunchCallback>`
 - :ref:`io.realm.DefaultCompactOnLaunchCallback <io_realm_DefaultCompactOnLaunchCallback>`

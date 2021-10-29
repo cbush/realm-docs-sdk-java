@@ -18,6 +18,8 @@
    RealmPrimaryKeyConstraintException <io/realm/exceptions/RealmPrimaryKeyConstraintException>
    RealmError <io/realm/exceptions/RealmError>
    
+
+
 | - :ref:`io.realm.exceptions.RealmFileException.Kind <io_realm_exceptions_RealmFileException_Kind>`
 - :ref:`io.realm.exceptions.DownloadingRealmInterruptedException <io_realm_exceptions_DownloadingRealmInterruptedException>`
 - :ref:`io.realm.exceptions.RealmException <io_realm_exceptions_RealmException>`
