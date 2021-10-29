@@ -46,7 +46,7 @@ Method Summary
        
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
-     - :ref:`encryptionKey <io_realm_RealmConfiguration_Builder_encryptionKey_byte[]_>` (**byte[]** key)
+     - :ref:`encryptionKey <io_realm_RealmConfiguration_Builder_encryptionKey_byte[]_>` (**⁠byte[]⁠** key)
        
        Sets the 64 byte key used to encrypt and decrypt the Realm file.
        
@@ -54,7 +54,7 @@ Method Summary
        
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
-     - :ref:`schemaVersion <io_realm_RealmConfiguration_Builder_schemaVersion_long_>` (**long** schemaVersion)
+     - :ref:`schemaVersion <io_realm_RealmConfiguration_Builder_schemaVersion_long_>` (**⁠long⁠** schemaVersion)
        
        Sets the schema version of the Realm.
        
@@ -170,7 +170,7 @@ Method Summary
        
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
-     - :ref:`maxNumberOfActiveVersions <io_realm_RealmConfiguration_Builder_maxNumberOfActiveVersions_long_>` (**long** number)
+     - :ref:`maxNumberOfActiveVersions <io_realm_RealmConfiguration_Builder_maxNumberOfActiveVersions_long_>` (**⁠long⁠** number)
        
        Sets the maximum number of live versions in the Realm file before an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__ is thrown when attempting to write more data.
        
@@ -180,9 +180,9 @@ Method Summary
        
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
-     - :ref:`allowWritesOnUiThread <io_realm_RealmConfiguration_Builder_allowWritesOnUiThread_boolean_>` (**boolean** allowWritesOnUiThread)
+     - :ref:`allowWritesOnUiThread <io_realm_RealmConfiguration_Builder_allowWritesOnUiThread_boolean_>` (**⁠boolean⁠** allowWritesOnUiThread)
        
-       Sets whether or not calls to **Realm#executeTransaction (?)** are allowed from the UI thread.
+       Sets whether or not calls to **⁠Realm#executeTransaction (?)⁠** are allowed from the UI thread.
        
        
        
@@ -190,7 +190,7 @@ Method Summary
        
    
    * - public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>`
-     - :ref:`allowQueriesOnUiThread <io_realm_RealmConfiguration_Builder_allowQueriesOnUiThread_boolean_>` (**boolean** allowQueriesOnUiThread)
+     - :ref:`allowQueriesOnUiThread <io_realm_RealmConfiguration_Builder_allowQueriesOnUiThread_boolean_>` (**⁠boolean⁠** allowQueriesOnUiThread)
        
        Sets whether or not a :ref:`RealmQuery <io_realm_RealmQuery>` can be launched from the UI thread.
        
@@ -245,8 +245,8 @@ encryptionKey
 
 .. _io_realm_RealmConfiguration_Builder_encryptionKey_byte[]_:
 
-public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` encryptionKey (**byte[]** key)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` encryptionKey (**⁠byte[]⁠** key)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the 64 byte key used to encrypt and decrypt the Realm file. Sets the io.realm.Realm#ENCRYPTION_KEY_LENGTH bytes key used to encrypt and decrypt the Realm file.
 
@@ -256,8 +256,8 @@ schemaVersion
 
 .. _io_realm_RealmConfiguration_Builder_schemaVersion_long_:
 
-public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` schemaVersion (**long** schemaVersion)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` schemaVersion (**⁠long⁠** schemaVersion)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the schema version of the Realm. This must be equal to or higher than the schema version of the existing Realm file, if any. If the schema version is higher than the already existing Realm, a migration is needed.If no migration code is provided, Realm will throw a :ref:`io.realm.exceptions.RealmMigrationNeededException <io_realm_exceptions_RealmMigrationNeededException>`.
 
@@ -294,7 +294,7 @@ This cannot be configured to have an asset file at the same time by calling :ref
 
 
 
-**WARNING!** This will result in loss of data.
+**⁠WARNING!⁠** This will result in loss of data.
 
 
 Throws
@@ -475,8 +475,8 @@ maxNumberOfActiveVersions
 
 .. _io_realm_RealmConfiguration_Builder_maxNumberOfActiveVersions_long_:
 
-public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` maxNumberOfActiveVersions (**long** number)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` maxNumberOfActiveVersions (**⁠long⁠** number)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the maximum number of live versions in the Realm file before an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__ is thrown when attempting to write more data.
 
@@ -501,12 +501,12 @@ allowWritesOnUiThread
 
 .. _io_realm_RealmConfiguration_Builder_allowWritesOnUiThread_boolean_:
 
-public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` allowWritesOnUiThread (**boolean** allowWritesOnUiThread)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` allowWritesOnUiThread (**⁠boolean⁠** allowWritesOnUiThread)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sets whether or not calls to **Realm#executeTransaction (?)** are allowed from the UI thread.
+Sets whether or not calls to **⁠Realm#executeTransaction (?)⁠** are allowed from the UI thread.
 
-**WARNING: Realm does not allow synchronous transactions to be run on the main thread unless users explicitly opt in with this method.** We recommend diverting calls to ``executeTransaction`` to non-UI threads or, alternatively, using **Realm#executeTransactionAsync (?)**.
+**⁠WARNING: Realm does not allow synchronous transactions to be run on the main thread unless users explicitly opt in with this method.⁠** We recommend diverting calls to ``executeTransaction`` to non-UI threads or, alternatively, using **⁠Realm#executeTransactionAsync (?)⁠**.
 
 
 
@@ -516,8 +516,8 @@ allowQueriesOnUiThread
 
 .. _io_realm_RealmConfiguration_Builder_allowQueriesOnUiThread_boolean_:
 
-public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` allowQueriesOnUiThread (**boolean** allowQueriesOnUiThread)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` allowQueriesOnUiThread (**⁠boolean⁠** allowQueriesOnUiThread)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets whether or not a :ref:`RealmQuery <io_realm_RealmQuery>` can be launched from the UI thread.
 

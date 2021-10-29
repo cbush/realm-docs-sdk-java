@@ -119,7 +119,7 @@ Method Summary
        
        
    
-   * - public **Document (?)**
+   * - public **⁠Document (?)⁠**
      - :ref:`getCustomData <io_realm_mongodb_User_getCustomData__>` ()
        
        Return the custom user data associated with the user in the Realm App.
@@ -127,7 +127,7 @@ Method Summary
        
        
    
-   * - public **Document (?)**
+   * - public **⁠Document (?)⁠**
      - :ref:`refreshCustomData <io_realm_mongodb_User_refreshCustomData__>` ()
        
        Re-fetch custom user data from the Realm App.
@@ -143,7 +143,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`isLoggedIn <io_realm_mongodb_User_isLoggedIn__>` ()
        
        Returns true if the user is currently logged in.
@@ -167,7 +167,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`logOut <io_realm_mongodb_User_logOut__>` ()
        
        Log the user out of the Realm App.
@@ -200,7 +200,7 @@ Method Summary
        
    
    * - public :ref:`Functions <io_realm_mongodb_functions_Functions>`
-     - :ref:`getFunctions <io_realm_mongodb_User_getFunctions_CodecRegistry_>` (**CodecRegistry (?)** codecRegistry)
+     - :ref:`getFunctions <io_realm_mongodb_User_getFunctions_CodecRegistry_>` (**⁠CodecRegistry (?)⁠** codecRegistry)
        
        Returns a *functions* manager for invoking Realm Functions with custom codec registry for encoding and decoding arguments and results.
        
@@ -227,7 +227,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`equals <io_realm_mongodb_User_equals_Object_>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        Two Users are considered equal if they have the same user identity and are associated with the same app.
@@ -235,7 +235,7 @@ Method Summary
        
        
    
-   * - public **int**
+   * - public **⁠int⁠**
      - :ref:`hashCode <io_realm_mongodb_User_hashCode__>` ()
        
        
@@ -342,8 +342,8 @@ getCustomData
 
 .. _io_realm_mongodb_User_getCustomData__:
 
-public **Document (?)** getCustomData ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠Document (?)⁠** getCustomData ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Return the custom user data associated with the user in the Realm App.The data is only refreshed when the user's access token is refreshed or when explicitly calling :ref:`#refreshCustomData() <io_realm_mongodb_User_refreshCustomData__>`.
 
@@ -355,8 +355,8 @@ refreshCustomData
 
 .. _io_realm_mongodb_User_refreshCustomData__:
 
-public **Document (?)** refreshCustomData ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠Document (?)⁠** refreshCustomData ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Re-fetch custom user data from the Realm App.
 Throws
@@ -386,8 +386,8 @@ isLoggedIn
 
 .. _io_realm_mongodb_User_isLoggedIn__:
 
-public **boolean** isLoggedIn ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** isLoggedIn ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns true if the user is currently logged in. Returns whether or not this user is still logged into the MongoDB Realm App.
 linkCredentials
@@ -469,14 +469,14 @@ logOut
 
 .. _io_realm_mongodb_User_logOut__:
 
-public **void** logOut ()
-~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** logOut ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Log the user out of the Realm App. This will unregister them on the device, stop any synchronization to and from the users' Realms, and those Realms will be deleted next time the app restarts. Therefor logging out should not be done until all changes to Realms have been uploaded to the server.Once the Realm App has confirmed the logout any registered :ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` will be notified and user credentials will be deleted from this device.
 
 
 
-Logging out anonymous users will remove them immediately instead of marking them as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`. All other users will be marked as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>` and will still be returned by :ref:`App#allUsers() <io_realm_mongodb_App_allUsers__>`. They can be removed completely by calling **App#removeUser(User (?)** ()}.
+Logging out anonymous users will remove them immediately instead of marking them as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`. All other users will be marked as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>` and will still be returned by :ref:`App#allUsers() <io_realm_mongodb_App_allUsers__>`. They can be removed completely by calling **⁠App#removeUser(User (?)⁠** ()}.
 
 
 
@@ -540,8 +540,8 @@ Functions
 
 .. _io_realm_mongodb_User_getFunctions_CodecRegistry_:
 
-public :ref:`Functions <io_realm_mongodb_functions_Functions>` getFunctions (**CodecRegistry (?)** codecRegistry)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`Functions <io_realm_mongodb_functions_Functions>` getFunctions (**⁠CodecRegistry (?)⁠** codecRegistry)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns a *functions* manager for invoking Realm Functions with custom codec registry for encoding and decoding arguments and results.
 Parameters
@@ -594,8 +594,8 @@ equals
 
 .. _io_realm_mongodb_User_equals_Object_:
 
-public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Two Users are considered equal if they have the same user identity and are associated with the same app.
 hashCode
@@ -603,8 +603,8 @@ hashCode
 
 .. _io_realm_mongodb_User_hashCode__:
 
-public **int** hashCode ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠int⁠** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

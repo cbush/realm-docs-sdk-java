@@ -20,7 +20,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`onSuccess <io_realm_DynamicRealm_Transaction_OnSuccess_onSuccess__>` ()
        
        
@@ -37,8 +37,8 @@ onSuccess
 
 .. _io_realm_DynamicRealm_Transaction_OnSuccess_onSuccess__:
 
-public **void** onSuccess ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** onSuccess ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

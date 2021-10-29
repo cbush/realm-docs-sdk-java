@@ -108,7 +108,7 @@ Method Summary
        
        
    
-   * - public **byte**
+   * - public **⁠byte⁠**
      - :ref:`getEncryptionKey <io_realm_RealmConfiguration_getEncryptionKey__>` ()
        
        
@@ -116,7 +116,7 @@ Method Summary
        
        
    
-   * - public **long**
+   * - public **⁠long⁠**
      - :ref:`getSchemaVersion <io_realm_RealmConfiguration_getSchemaVersion__>` ()
        
        
@@ -132,7 +132,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`shouldDeleteRealmIfMigrationNeeded <io_realm_RealmConfiguration_shouldDeleteRealmIfMigrationNeeded__>` ()
        
        
@@ -140,7 +140,7 @@ Method Summary
        
        
    
-   * - public **OsRealmConfig.Durability (?)**
+   * - public **⁠OsRealmConfig.Durability (?)⁠**
      - :ref:`getDurability <io_realm_RealmConfiguration_getDurability__>` ()
        
        
@@ -148,7 +148,7 @@ Method Summary
        
        
    
-   * - protected **RealmProxyMediator (?)**
+   * - protected **⁠RealmProxyMediator (?)⁠**
      - :ref:`getSchemaMediator <io_realm_RealmConfiguration_getSchemaMediator__>` ()
        
        Returns the mediator instance of schema which is defined by this configuration.
@@ -190,7 +190,7 @@ Method Summary
        
        
    
-   * - protected **boolean**
+   * - protected **⁠boolean⁠**
      - :ref:`realmExists <io_realm_RealmConfiguration_realmExists__>` ()
        
        Checks if the Realm file defined by this configuration already exists.
@@ -218,7 +218,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`isReadOnly <io_realm_RealmConfiguration_isReadOnly__>` ()
        
        Returns whether this Realm is read-only or not.
@@ -226,7 +226,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`isRecoveryConfiguration <io_realm_RealmConfiguration_isRecoveryConfiguration__>` ()
        
        
@@ -234,7 +234,7 @@ Method Summary
        
        
    
-   * - public **long**
+   * - public **⁠long⁠**
      - :ref:`getMaxNumberOfActiveVersions <io_realm_RealmConfiguration_getMaxNumberOfActiveVersions__>` ()
        
        
@@ -242,17 +242,17 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`isAllowWritesOnUiThread <io_realm_RealmConfiguration_isAllowWritesOnUiThread__>` ()
        
-       Returns whether calls to **Realm#executeTransaction (?)** can be done on the UI thread.
+       Returns whether calls to **⁠Realm#executeTransaction (?)⁠** can be done on the UI thread.
        
        
        
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`isAllowQueriesOnUiThread <io_realm_RealmConfiguration_isAllowQueriesOnUiThread__>` ()
        
        Returns whether a :ref:`RealmQuery <io_realm_RealmQuery>` is allowed to be launched from the UI thread.
@@ -262,7 +262,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`equals <io_realm_RealmConfiguration_equals_Object_>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
        
        
@@ -270,7 +270,7 @@ Method Summary
        
        
    
-   * - public **int**
+   * - public **⁠int⁠**
      - :ref:`hashCode <io_realm_RealmConfiguration_hashCode__>` ()
        
        
@@ -278,8 +278,8 @@ Method Summary
        
        
    
-   * - protected static **RealmProxyMediator (?)**
-     - :ref:`createSchemaMediator <io_realm_RealmConfiguration_createSchemaMediator_Set_Object___Set_Class___extends_RealmModel____boolean_>` (`java.util.Set\<java.lang.Object> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ modules, `java.util.Set\<java.lang.Class\<? extends io.realm.RealmModel>> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ debugSchema, **boolean** excludeDebugSchema)
+   * - protected static **⁠RealmProxyMediator (?)⁠**
+     - :ref:`createSchemaMediator <io_realm_RealmConfiguration_createSchemaMediator_Set_Object___Set_Class___extends_RealmModel____boolean_>` (`java.util.Set\<java.lang.Object> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ modules, `java.util.Set\<java.lang.Class\<? extends io.realm.RealmModel>> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ debugSchema, **⁠boolean⁠** excludeDebugSchema)
        
        
        
@@ -294,7 +294,7 @@ Method Summary
        
        
    
-   * - protected **boolean**
+   * - protected **⁠boolean⁠**
      - :ref:`isSyncConfiguration <io_realm_RealmConfiguration_isSyncConfiguration__>` ()
        
        
@@ -303,7 +303,7 @@ Method Summary
        
    
    * - protected static :ref:`RealmConfiguration <io_realm_RealmConfiguration>`
-     - :ref:`forRecovery <io_realm_RealmConfiguration_forRecovery_String__byte[]__RealmProxyMediator_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[]** encryptionKey, **RealmProxyMediator (?)** schemaMediator)
+     - :ref:`forRecovery <io_realm_RealmConfiguration_forRecovery_String__byte[]__RealmProxyMediator_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **⁠byte[]⁠** encryptionKey, **⁠RealmProxyMediator (?)⁠** schemaMediator)
        
        
        
@@ -352,8 +352,8 @@ getEncryptionKey
 
 .. _io_realm_RealmConfiguration_getEncryptionKey__:
 
-public **byte** getEncryptionKey ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠byte⁠** getEncryptionKey ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 getSchemaVersion
@@ -361,8 +361,8 @@ getSchemaVersion
 
 .. _io_realm_RealmConfiguration_getSchemaVersion__:
 
-public **long** getSchemaVersion ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠long⁠** getSchemaVersion ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 getMigration
@@ -379,8 +379,8 @@ shouldDeleteRealmIfMigrationNeeded
 
 .. _io_realm_RealmConfiguration_shouldDeleteRealmIfMigrationNeeded__:
 
-public **boolean** shouldDeleteRealmIfMigrationNeeded ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** shouldDeleteRealmIfMigrationNeeded ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 getDurability
@@ -388,8 +388,8 @@ getDurability
 
 .. _io_realm_RealmConfiguration_getDurability__:
 
-public **OsRealmConfig.Durability (?)** getDurability ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠OsRealmConfig.Durability (?)⁠** getDurability ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 getSchemaMediator
@@ -397,8 +397,8 @@ getSchemaMediator
 
 .. _io_realm_RealmConfiguration_getSchemaMediator__:
 
-protected **RealmProxyMediator (?)** getSchemaMediator ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+protected **⁠RealmProxyMediator (?)⁠** getSchemaMediator ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the mediator instance of schema which is defined by this configuration.
 getInitialDataTransaction
@@ -444,8 +444,8 @@ realmExists
 
 .. _io_realm_RealmConfiguration_realmExists__:
 
-protected **boolean** realmExists ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+protected **⁠boolean⁠** realmExists ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the Realm file defined by this configuration already exists.WARNING: This method is just a point-in-time check. Unless protected by external synchronization another thread or process might have created or deleted the Realm file right after this method has returned.
 
@@ -483,10 +483,10 @@ isReadOnly
 
 .. _io_realm_RealmConfiguration_isReadOnly__:
 
-public **boolean** isReadOnly ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** isReadOnly ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns whether this Realm is read-only or not. Read-only Realms cannot be modified and will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__ if **Realm#beginTransaction() (?)** is called on it.
+Returns whether this Realm is read-only or not. Read-only Realms cannot be modified and will throw an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__ if **⁠Realm#beginTransaction() (?)⁠** is called on it.
 
 
 isRecoveryConfiguration
@@ -494,8 +494,8 @@ isRecoveryConfiguration
 
 .. _io_realm_RealmConfiguration_isRecoveryConfiguration__:
 
-public **boolean** isRecoveryConfiguration ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** isRecoveryConfiguration ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 See Also
@@ -508,8 +508,8 @@ getMaxNumberOfActiveVersions
 
 .. _io_realm_RealmConfiguration_getMaxNumberOfActiveVersions__:
 
-public **long** getMaxNumberOfActiveVersions ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠long⁠** getMaxNumberOfActiveVersions ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 isAllowWritesOnUiThread
@@ -517,14 +517,14 @@ isAllowWritesOnUiThread
 
 .. _io_realm_RealmConfiguration_isAllowWritesOnUiThread__:
 
-public **boolean** isAllowWritesOnUiThread ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** isAllowWritesOnUiThread ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns whether calls to **Realm#executeTransaction (?)** can be done on the UI thread.
+Returns whether calls to **⁠Realm#executeTransaction (?)⁠** can be done on the UI thread.
 
-**Note: Realm does not allow blocking transactions to be run on the main thread unless users explicitly opt in with :ref:`Builder#allowWritesOnUiThread(boolean) <io_realm_RealmConfiguration_Builder_allowWritesOnUiThread_boolean_>` or its Realm Sync builder counterpart.
+**⁠Note: Realm does not allow blocking transactions to be run on the main thread unless users explicitly opt in with :ref:`Builder#allowWritesOnUiThread(boolean) <io_realm_RealmConfiguration_Builder_allowWritesOnUiThread_boolean_>` or its Realm Sync builder counterpart.
 
-**
+⁠**
 
 
 isAllowQueriesOnUiThread
@@ -532,8 +532,8 @@ isAllowQueriesOnUiThread
 
 .. _io_realm_RealmConfiguration_isAllowQueriesOnUiThread__:
 
-public **boolean** isAllowQueriesOnUiThread ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** isAllowQueriesOnUiThread ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns whether a :ref:`RealmQuery <io_realm_RealmQuery>` is allowed to be launched from the UI thread.
 
@@ -547,8 +547,8 @@ equals
 
 .. _io_realm_RealmConfiguration_equals_Object_:
 
-public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ obj)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 hashCode
@@ -556,8 +556,8 @@ hashCode
 
 .. _io_realm_RealmConfiguration_hashCode__:
 
-public **int** hashCode ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠int⁠** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 createSchemaMediator
@@ -565,8 +565,8 @@ createSchemaMediator
 
 .. _io_realm_RealmConfiguration_createSchemaMediator_Set_Object___Set_Class___extends_RealmModel____boolean_:
 
-protected static **RealmProxyMediator (?)** createSchemaMediator (`java.util.Set\<java.lang.Object> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ modules, `java.util.Set\<java.lang.Class\<? extends io.realm.RealmModel>> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ debugSchema, **boolean** excludeDebugSchema)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+protected static **⁠RealmProxyMediator (?)⁠** createSchemaMediator (`java.util.Set\<java.lang.Object> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ modules, `java.util.Set\<java.lang.Class\<? extends io.realm.RealmModel>> <https://docs.oracle.com/javase/7/docs/api/java/util/Set.html>`__ debugSchema, **⁠boolean⁠** excludeDebugSchema)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 toString
@@ -583,8 +583,8 @@ isSyncConfiguration
 
 .. _io_realm_RealmConfiguration_isSyncConfiguration__:
 
-protected **boolean** isSyncConfiguration ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+protected **⁠boolean⁠** isSyncConfiguration ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 forRecovery
@@ -592,8 +592,8 @@ forRecovery
 
 .. _io_realm_RealmConfiguration_forRecovery_String__byte[]__RealmProxyMediator_:
 
-protected static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **byte[]** encryptionKey, **RealmProxyMediator (?)** schemaMediator)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+protected static :ref:`RealmConfiguration <io_realm_RealmConfiguration>` forRecovery (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ canonicalPath, **⁠byte[]⁠** encryptionKey, **⁠RealmProxyMediator (?)⁠** schemaMediator)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

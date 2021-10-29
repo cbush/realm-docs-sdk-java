@@ -20,7 +20,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`onChange <io_realm_mongodb_sync_ProgressListener_onChange_Progress_>` (:ref:`Progress <io_realm_mongodb_sync_Progress>` progress)
        
        This method will be called periodically from the underlying Object Server Client responsible for uploading and downloading changes from the remote Object Server.
@@ -37,8 +37,8 @@ onChange
 
 .. _io_realm_mongodb_sync_ProgressListener_onChange_Progress_:
 
-public **void** onChange (:ref:`Progress <io_realm_mongodb_sync_Progress>` progress)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** onChange (:ref:`Progress <io_realm_mongodb_sync_Progress>` progress)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This method will be called periodically from the underlying Object Server Client responsible for uploading and downloading changes from the remote Object Server.This callback will *not* happen on the UI thread, but on the worker thread controlling the Object Server Client. Use ``Activity.runOnUiThread(Runnable)`` or similar to update any UI elements.
 

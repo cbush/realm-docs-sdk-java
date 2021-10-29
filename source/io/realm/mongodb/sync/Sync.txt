@@ -94,7 +94,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`reconnect <io_realm_mongodb_sync_Sync_reconnect__>` ()
        
        Realm will automatically detect when a device gets connectivity after being offline and resume syncing.
@@ -162,8 +162,8 @@ reconnect
 
 .. _io_realm_mongodb_sync_Sync_reconnect__:
 
-public **void** reconnect ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** reconnect ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Realm will automatically detect when a device gets connectivity after being offline and resume syncing.However, as some of these checks are performed using incremental backoff, this will in some cases not happen immediately.
 

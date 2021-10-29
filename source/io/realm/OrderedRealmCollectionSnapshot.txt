@@ -12,7 +12,7 @@ io.realm.OrderedRealmCollectionSnapshot<E>
 
 *Superclass:*
 
-- **io.realm.OrderedRealmCollectionImpl (?)**
+- **⁠io.realm.OrderedRealmCollectionImpl (?)⁠**
 
 An :ref:`OrderedRealmCollectionSnapshot <io_realm_OrderedRealmCollectionSnapshot>` is a special type of :ref:`OrderedRealmCollection <io_realm_OrderedRealmCollection>`. It can be created by calling :ref:`OrderedRealmCollection#createSnapshot() <io_realm_OrderedRealmCollection_createSnapshot__>`. Unlike :ref:`RealmResults <io_realm_RealmResults>` and :ref:`RealmList <io_realm_RealmList>`, its size and order of elements will never be changed after creation.
 
@@ -54,7 +54,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **int**
+   * - public **⁠int⁠**
      - :ref:`size <io_realm_OrderedRealmCollectionSnapshot_size__>` ()
        
        
@@ -114,7 +114,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`isLoaded <io_realm_OrderedRealmCollectionSnapshot_isLoaded__>` ()
        
        
@@ -124,7 +124,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`load <io_realm_OrderedRealmCollectionSnapshot_load__>` ()
        
        
@@ -152,15 +152,15 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`deleteFromRealm <io_realm_OrderedRealmCollectionSnapshot_deleteFromRealm_int_>` (**int** location)
+   * - public **⁠void⁠**
+     - :ref:`deleteFromRealm <io_realm_OrderedRealmCollectionSnapshot_deleteFromRealm_int_>` (**⁠int⁠** location)
        
        Deletes the object at the given index from the Realm.
        
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`deleteFirstFromRealm <io_realm_OrderedRealmCollectionSnapshot_deleteFirstFromRealm__>` ()
        
        Deletes the first object from the Realm.
@@ -168,7 +168,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`deleteLastFromRealm <io_realm_OrderedRealmCollectionSnapshot_deleteLastFromRealm__>` ()
        
        Deletes the last object from the Realm.
@@ -176,7 +176,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`deleteAllFromRealm <io_realm_OrderedRealmCollectionSnapshot_deleteAllFromRealm__>` ()
        
        This deletes all objects in the collection from the underlying Realm.
@@ -184,7 +184,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`isFrozen <io_realm_OrderedRealmCollectionSnapshot_isFrozen__>` ()
        
        
@@ -201,8 +201,8 @@ size
 
 .. _io_realm_OrderedRealmCollectionSnapshot_size__:
 
-public **int** size ()
-~~~~~~~~~~~~~~~~~~~~~~
+public **⁠int⁠** size ()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -273,8 +273,8 @@ isLoaded
 
 .. _io_realm_OrderedRealmCollectionSnapshot_isLoaded__:
 
-public **boolean** isLoaded ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** isLoaded ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -284,8 +284,8 @@ load
 
 .. _io_realm_OrderedRealmCollectionSnapshot_load__:
 
-public **boolean** load ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** load ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -315,8 +315,8 @@ deleteFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteFromRealm_int_:
 
-public **void** deleteFromRealm (**int** location)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** deleteFromRealm (**⁠int⁠** location)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the object at the given index from the Realm. The object at the given index will become invalid. Just returns if the object is invalid already.
 Parameters
@@ -333,8 +333,8 @@ deleteFirstFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteFirstFromRealm__:
 
-public **boolean** deleteFirstFromRealm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** deleteFirstFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the first object from the Realm. The first object will become invalid.
 Throws
@@ -345,8 +345,8 @@ deleteLastFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteLastFromRealm__:
 
-public **boolean** deleteLastFromRealm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** deleteLastFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the last object from the Realm. The last object will become invalid.
 Throws
@@ -357,8 +357,8 @@ deleteAllFromRealm
 
 .. _io_realm_OrderedRealmCollectionSnapshot_deleteAllFromRealm__:
 
-public **boolean** deleteAllFromRealm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** deleteAllFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This deletes all objects in the collection from the underlying Realm. All objects in the collection snapshot will become invalid.
 Throws
@@ -369,8 +369,8 @@ isFrozen
 
 .. _io_realm_OrderedRealmCollectionSnapshot_isFrozen__:
 
-public **boolean** isFrozen ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** isFrozen ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

@@ -24,7 +24,7 @@ Only Realm can create managed RealmLists. Managed RealmLists will automatically 
 
 
 
-Unmanaged RealmLists can be created by the user and can contain both managed and unmanaged RealmObjects. This is useful when dealing with JSON deserializers like GSON or other frameworks that inject values into a class. Unmanaged elements in this list can be added to a Realm using the **Realm#copyToRealm(Iterable, ImportFlag...) (?)** method.
+Unmanaged RealmLists can be created by the user and can contain both managed and unmanaged RealmObjects. This is useful when dealing with JSON deserializers like GSON or other frameworks that inject values into a class. Unmanaged elements in this list can be added to a Realm using the **⁠Realm#copyToRealm(Iterable, ImportFlag...) (?)⁠** method.
 
 
 
@@ -81,7 +81,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`isValid <io_realm_RealmList_isValid__>` ()
        
        
@@ -101,7 +101,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`isFrozen <io_realm_RealmList_isFrozen__>` ()
        
        
@@ -111,7 +111,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`isManaged <io_realm_RealmList_isManaged__>` ()
        
        
@@ -121,39 +121,39 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`add <io_realm_RealmList_add_int__E_>` (**int** location, **E (?)** element)
+   * - public **⁠void⁠**
+     - :ref:`add <io_realm_RealmList_add_int__E_>` (**⁠int⁠** location, **⁠E (?)⁠** element)
        
        Inserts the specified object into this List at the specified location.
        
        
        
    
-   * - public **boolean**
-     - :ref:`add <io_realm_RealmList_add_E_>` (**E (?)** object)
+   * - public **⁠boolean⁠**
+     - :ref:`add <io_realm_RealmList_add_E_>` (**⁠E (?)⁠** object)
        
        Adds the specified object at the end of this List.
        
        
        
    
-   * - public **E (?)**
-     - :ref:`set <io_realm_RealmList_set_int__E_>` (**int** location, **E (?)** object)
+   * - public **⁠E (?)⁠**
+     - :ref:`set <io_realm_RealmList_set_int__E_>` (**⁠int⁠** location, **⁠E (?)⁠** object)
        
        Replaces the element at the specified location in this list with the specified object.
        
        
        
    
-   * - public **void**
-     - :ref:`move <io_realm_RealmList_move_int__int_>` (**int** oldPos, **int** newPos)
+   * - public **⁠void⁠**
+     - :ref:`move <io_realm_RealmList_move_int__int_>` (**⁠int⁠** oldPos, **⁠int⁠** newPos)
        
        Moves an object from one position to another, while maintaining a fixed sized list.
        
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`clear <io_realm_RealmList_clear__>` ()
        
        Removes all elements from this list, leaving it empty.
@@ -161,15 +161,15 @@ Method Summary
        
        
    
-   * - public **E (?)**
-     - :ref:`remove <io_realm_RealmList_remove_int_>` (**int** location)
+   * - public **⁠E (?)⁠**
+     - :ref:`remove <io_realm_RealmList_remove_int_>` (**⁠int⁠** location)
        
        Removes the object at the specified location from this list.
        
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`remove <io_realm_RealmList_remove_Object_>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
        
        Removes one instance of the specified object from this ``Collection`` if one is contained.
@@ -179,7 +179,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`removeAll <io_realm_RealmList_removeAll_Collection____>` (`java.util.Collection\<?> <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ collection)
        
        Removes all occurrences in this ``Collection`` of each object in the specified ``Collection``.
@@ -189,7 +189,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`deleteFirstFromRealm <io_realm_RealmList_deleteFirstFromRealm__>` ()
        
        
@@ -199,7 +199,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`deleteLastFromRealm <io_realm_RealmList_deleteLastFromRealm__>` ()
        
        
@@ -209,15 +209,15 @@ Method Summary
        
        
    
-   * - public **E (?)**
-     - :ref:`get <io_realm_RealmList_get_int_>` (**int** location)
+   * - public **⁠E (?)⁠**
+     - :ref:`get <io_realm_RealmList_get_int_>` (**⁠int⁠** location)
        
        Returns the element at the specified location in this list.
        
        
        
    
-   * - public **E (?)**
+   * - public **⁠E (?)⁠**
      - :ref:`first <io_realm_RealmList_first__>` ()
        
        
@@ -227,8 +227,8 @@ Method Summary
        
        
    
-   * - public **E (?)**
-     - :ref:`first <io_realm_RealmList_first_E_>` (**E (?)** defaultValue)
+   * - public **⁠E (?)⁠**
+     - :ref:`first <io_realm_RealmList_first_E_>` (**⁠E (?)⁠** defaultValue)
        
        
        
@@ -237,7 +237,7 @@ Method Summary
        
        
    
-   * - public **E (?)**
+   * - public **⁠E (?)⁠**
      - :ref:`last <io_realm_RealmList_last__>` ()
        
        
@@ -247,8 +247,8 @@ Method Summary
        
        
    
-   * - public **E (?)**
-     - :ref:`last <io_realm_RealmList_last_E_>` (**E (?)** defaultValue)
+   * - public **⁠E (?)⁠**
+     - :ref:`last <io_realm_RealmList_last_E_>` (**⁠E (?)⁠** defaultValue)
        
        
        
@@ -297,8 +297,8 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`deleteFromRealm <io_realm_RealmList_deleteFromRealm_int_>` (**int** location)
+   * - public **⁠void⁠**
+     - :ref:`deleteFromRealm <io_realm_RealmList_deleteFromRealm_int_>` (**⁠int⁠** location)
        
        
        
@@ -307,7 +307,7 @@ Method Summary
        
        
    
-   * - public **int**
+   * - public **⁠int⁠**
      - :ref:`size <io_realm_RealmList_size__>` ()
        
        Returns the number of elements in this ``List``.
@@ -355,7 +355,7 @@ Method Summary
        
        
    
-   * - public **double**
+   * - public **⁠double⁠**
      - :ref:`average <io_realm_RealmList_average_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        
@@ -385,7 +385,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`deleteAllFromRealm <io_realm_RealmList_deleteAllFromRealm__>` ()
        
        
@@ -395,7 +395,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`isLoaded <io_realm_RealmList_isLoaded__>` ()
        
        
@@ -405,7 +405,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`load <io_realm_RealmList_load__>` ()
        
        
@@ -415,7 +415,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`contains <io_realm_RealmList_contains_Object_>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
        
        Returns ``true`` if the list contains the specified element when attached to a Realm.
@@ -446,7 +446,7 @@ Method Summary
        
    
    * - public `ListIterator <https://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html>`__
-     - :ref:`listIterator <io_realm_RealmList_listIterator_int_>` (**int** location)
+     - :ref:`listIterator <io_realm_RealmList_listIterator_int_>` (**⁠int⁠** location)
        
        
        
@@ -483,7 +483,7 @@ Method Summary
        
        
    
-   * - public **<any> (?)**
+   * - public **⁠<any> (?)⁠**
      - :ref:`asFlowable <io_realm_RealmList_asFlowable__>` ()
        
        Returns an Rx Flowable that monitors changes to this RealmList.
@@ -491,7 +491,7 @@ Method Summary
        
        
    
-   * - public **<any> (?)**
+   * - public **⁠<any> (?)⁠**
      - :ref:`asChangesetObservable <io_realm_RealmList_asChangesetObservable__>` ()
        
        Returns an Rx Observable that monitors changes to this RealmList.
@@ -499,7 +499,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`addChangeListener <io_realm_RealmList_addChangeListener_OrderedRealmCollectionChangeListener_RealmList_E___>` (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmList\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
        
        Adds a change listener to this :ref:`RealmList <io_realm_RealmList>`.
@@ -509,7 +509,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`removeChangeListener <io_realm_RealmList_removeChangeListener_OrderedRealmCollectionChangeListener_RealmList_E___>` (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmList\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
        
        Removes the specified change listener.
@@ -517,7 +517,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`addChangeListener <io_realm_RealmList_addChangeListener_RealmChangeListener_RealmList_E___>` (:ref:`io.realm.RealmChangeListener\<io.realm.RealmList\<E>> <io_realm_RealmChangeListener>` listener)
        
        Adds a change listener to this :ref:`RealmList <io_realm_RealmList>`.
@@ -527,7 +527,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`removeChangeListener <io_realm_RealmList_removeChangeListener_RealmChangeListener_RealmList_E___>` (:ref:`io.realm.RealmChangeListener\<io.realm.RealmList\<E>> <io_realm_RealmChangeListener>` listener)
        
        Removes the specified change listener.
@@ -535,7 +535,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`removeAllChangeListeners <io_realm_RealmList_removeAllChangeListeners__>` ()
        
        Removes all user-defined change listeners.
@@ -564,7 +564,7 @@ Field Detail
 ``baseRealm``
 -------------
 
-The **BaseRealm (?)** instance in which this list resides.
+The **⁠BaseRealm (?)⁠** instance in which this list resides.
 
 Warning: This field is only exposed for internal usage, and should not be used.
 
@@ -577,8 +577,8 @@ isValid
 
 .. _io_realm_RealmList_isValid__:
 
-public **boolean** isValid ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** isValid ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -599,8 +599,8 @@ isFrozen
 
 .. _io_realm_RealmList_isFrozen__:
 
-public **boolean** isFrozen ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** isFrozen ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -610,8 +610,8 @@ isManaged
 
 .. _io_realm_RealmList_isManaged__:
 
-public **boolean** isManaged ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** isManaged ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -621,15 +621,15 @@ add
 
 .. _io_realm_RealmList_add_int__E_:
 
-public **void** add (**int** location, **E (?)** element)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** add (**⁠int⁠** location, **⁠E (?)⁠** element)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Inserts the specified object into this List at the specified location. The object is inserted before any previous element at the specified location. If the location is equal to the size of this List, the object is added at the end.1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** afterwards.
+Inserts the specified object into this List at the specified location. The object is inserted before any previous element at the specified location. If the location is equal to the size of this List, the object is added at the end.1. **⁠Unmanaged RealmLists⁠**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **⁠Realm#copyToRealm(RealmModel, ImportFlag...) (?)⁠** afterwards.
    
    
    
    
-#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** or **Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** if it has a primary key.
+#. **⁠Managed RealmLists⁠**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **⁠Realm#copyToRealm(RealmModel, ImportFlag...) (?)⁠** or **⁠Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)⁠** if it has a primary key.
    
    
    
@@ -649,15 +649,15 @@ ______
 
 .. _io_realm_RealmList_add_E_:
 
-public **boolean** add (**E (?)** object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** add (**⁠E (?)⁠** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Adds the specified object at the end of this List.1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** afterwards.
+Adds the specified object at the end of this List.1. **⁠Unmanaged RealmLists⁠**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **⁠Realm#copyToRealm(RealmModel, ImportFlag...) (?)⁠** afterwards.
    
    
    
    
-#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** or **Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** if it has a primary key.
+#. **⁠Managed RealmLists⁠**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **⁠Realm#copyToRealm(RealmModel, ImportFlag...) (?)⁠** or **⁠Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)⁠** if it has a primary key.
    
    
    
@@ -678,15 +678,15 @@ set
 
 .. _io_realm_RealmList_set_int__E_:
 
-public **E (?)** set (**int** location, **E (?)** object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠E (?)⁠** set (**⁠int⁠** location, **⁠E (?)⁠** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Replaces the element at the specified location in this list with the specified object.1. **Unmanaged RealmLists**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** afterwards.
+Replaces the element at the specified location in this list with the specified object.1. **⁠Unmanaged RealmLists⁠**: It is possible to add both managed and unmanaged objects. If adding managed objects to an unmanaged RealmList they will not be copied to the Realm again if using **⁠Realm#copyToRealm(RealmModel, ImportFlag...) (?)⁠** afterwards.
    
    
    
    
-#. **Managed RealmLists**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)** or **Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** if it has a primary key.
+#. **⁠Managed RealmLists⁠**: It is possible to add unmanaged objects to a RealmList that is already managed. In that case the object will transparently be copied to Realm using **⁠Realm#copyToRealm(RealmModel, ImportFlag...) (?)⁠** or **⁠Realm#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)⁠** if it has a primary key.
    
    
    
@@ -709,8 +709,8 @@ move
 
 .. _io_realm_RealmList_move_int__int_:
 
-public **void** move (**int** oldPos, **int** newPos)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** move (**⁠int⁠** oldPos, **⁠int⁠** newPos)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Moves an object from one position to another, while maintaining a fixed sized list. RealmObjects will be shifted so no ``null`` values are introduced.
 
@@ -731,8 +731,8 @@ clear
 
 .. _io_realm_RealmList_clear__:
 
-public **void** clear ()
-~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** clear ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes all elements from this list, leaving it empty. This method doesn't remove the objects from the Realm.
 Throws
@@ -752,8 +752,8 @@ remove
 
 .. _io_realm_RealmList_remove_int_:
 
-public **E (?)** remove (**int** location)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠E (?)⁠** remove (**⁠int⁠** location)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes the object at the specified location from this list.
 Parameters
@@ -767,8 +767,8 @@ ______
 
 .. _io_realm_RealmList_remove_Object_:
 
-public **boolean** remove (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** remove (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes one instance of the specified object from this ``Collection`` if one is contained. This implementation iterates over this ``Collection`` and tests each element ``e`` returned by the iterator, whether ``e`` is equal to the given object. If ``object != null`` then this test is performed using ``object.equals(e)``, otherwise using ``object == null``. If an element equal to the given object is found, then the ``remove`` method is called on the iterator and ``true`` is returned, ``false`` otherwise. If the iterator does not support removing elements, an ``UnsupportedOperationException`` is thrown.
 
@@ -787,8 +787,8 @@ removeAll
 
 .. _io_realm_RealmList_removeAll_Collection____:
 
-public **boolean** removeAll (`java.util.Collection\<?> <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ collection)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** removeAll (`java.util.Collection\<?> <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ collection)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes all occurrences in this ``Collection`` of each object in the specified ``Collection``. After this method returns none of the elements in the passed ``Collection`` can be found in this ``Collection`` anymore.
 
@@ -811,8 +811,8 @@ deleteFirstFromRealm
 
 .. _io_realm_RealmList_deleteFirstFromRealm__:
 
-public **boolean** deleteFirstFromRealm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** deleteFirstFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -822,8 +822,8 @@ deleteLastFromRealm
 
 .. _io_realm_RealmList_deleteLastFromRealm__:
 
-public **boolean** deleteLastFromRealm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** deleteLastFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -833,8 +833,8 @@ get
 
 .. _io_realm_RealmList_get_int_:
 
-public **E (?)** get (**int** location)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠E (?)⁠** get (**⁠int⁠** location)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the element at the specified location in this list.
 Parameters
@@ -851,16 +851,16 @@ first
 
 .. _io_realm_RealmList_first__:
 
-public **E (?)** first ()
-~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠E (?)⁠** first ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
 
 .. _io_realm_RealmList_first_E_:
 
-public **E (?)** first (**E (?)** defaultValue)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠E (?)⁠** first (**⁠E (?)⁠** defaultValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -870,16 +870,16 @@ last
 
 .. _io_realm_RealmList_last__:
 
-public **E (?)** last ()
-~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠E (?)⁠** last ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
 
 .. _io_realm_RealmList_last_E_:
 
-public **E (?)** last (**E (?)** defaultValue)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠E (?)⁠** last (**⁠E (?)⁠** defaultValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -924,8 +924,8 @@ deleteFromRealm
 
 .. _io_realm_RealmList_deleteFromRealm_int_:
 
-public **void** deleteFromRealm (**int** location)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** deleteFromRealm (**⁠int⁠** location)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -935,8 +935,8 @@ size
 
 .. _io_realm_RealmList_size__:
 
-public **int** size ()
-~~~~~~~~~~~~~~~~~~~~~~
+public **⁠int⁠** size ()
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the number of elements in this ``List``.
 
@@ -999,8 +999,8 @@ average
 
 .. _io_realm_RealmList_average_String_:
 
-public **double** average (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠double⁠** average (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -1032,8 +1032,8 @@ deleteAllFromRealm
 
 .. _io_realm_RealmList_deleteAllFromRealm__:
 
-public **boolean** deleteAllFromRealm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** deleteAllFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -1043,8 +1043,8 @@ isLoaded
 
 .. _io_realm_RealmList_isLoaded__:
 
-public **boolean** isLoaded ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** isLoaded ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -1054,8 +1054,8 @@ load
 
 .. _io_realm_RealmList_load__:
 
-public **boolean** load ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** load ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -1065,8 +1065,8 @@ contains
 
 .. _io_realm_RealmList_contains_Object_:
 
-public **boolean** contains (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** contains (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns ``true`` if the list contains the specified element when attached to a Realm. This method will query the native Realm underlying storage engine to quickly find the specified element.
 
@@ -1105,8 +1105,8 @@ public `ListIterator <https://docs.oracle.com/javase/7/docs/api/java/util/ListIt
 
 .. _io_realm_RealmList_listIterator_int_:
 
-public `ListIterator <https://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html>`__ listIterator (**int** location)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public `ListIterator <https://docs.oracle.com/javase/7/docs/api/java/util/ListIterator.html>`__ listIterator (**⁠int⁠** location)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -1132,7 +1132,7 @@ public :ref:`Realm <io_realm_Realm>` getRealm ()
 
 Returns the :ref:`Realm <io_realm_Realm>` instance to which this collection belongs.
 
-Calling **Realm#close() (?)** on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the list.
+Calling **⁠Realm#close() (?)⁠** on the returned instance is discouraged as it is the same as calling it on the original Realm instance which may cause the Realm to fully close invalidating the list.
 
 
 
@@ -1154,8 +1154,8 @@ asFlowable
 
 .. _io_realm_RealmList_asFlowable__:
 
-public **<any> (?)** asFlowable ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠<any> (?)⁠** asFlowable ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns an Rx Flowable that monitors changes to this RealmList. It will emit the current RealmList when subscribed to. RealmList will continually be emitted as the RealmList is updated - ``onComplete`` will never be called.
 
@@ -1211,8 +1211,8 @@ asChangesetObservable
 
 .. _io_realm_RealmList_asChangesetObservable__:
 
-public **<any> (?)** asChangesetObservable ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠<any> (?)⁠** asChangesetObservable ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns an Rx Observable that monitors changes to this RealmList. It will emit the current RealmList when subscribed. For each update to the RealmList a pair consisting of the RealmList and the :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` will be sent. The changeset will be ``null`` the first time an RealmList is emitted.
 
@@ -1255,8 +1255,8 @@ addChangeListener
 
 .. _io_realm_RealmList_addChangeListener_OrderedRealmCollectionChangeListener_RealmList_E___:
 
-public **void** addChangeListener (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmList\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** addChangeListener (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmList\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a change listener to this :ref:`RealmList <io_realm_RealmList>`.
 
@@ -1300,8 +1300,8 @@ ______
 
 .. _io_realm_RealmList_addChangeListener_RealmChangeListener_RealmList_E___:
 
-public **void** addChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmList\<E>> <io_realm_RealmChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** addChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmList\<E>> <io_realm_RealmChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a change listener to this :ref:`RealmList <io_realm_RealmList>`.
 
@@ -1348,8 +1348,8 @@ removeChangeListener
 
 .. _io_realm_RealmList_removeChangeListener_OrderedRealmCollectionChangeListener_RealmList_E___:
 
-public **void** removeChangeListener (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmList\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** removeChangeListener (:ref:`io.realm.OrderedRealmCollectionChangeListener\<io.realm.RealmList\<E>> <io_realm_OrderedRealmCollectionChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes the specified change listener.
 Parameters
@@ -1368,8 +1368,8 @@ io.realm.RealmChangeListener
 
 .. _io_realm_RealmList_removeChangeListener_RealmChangeListener_RealmList_E___:
 
-public **void** removeChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmList\<E>> <io_realm_RealmChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** removeChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.RealmList\<E>> <io_realm_RealmChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes the specified change listener.
 Parameters
@@ -1391,8 +1391,8 @@ removeAllChangeListeners
 
 .. _io_realm_RealmList_removeAllChangeListeners__:
 
-public **void** removeAllChangeListeners ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** removeAllChangeListeners ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes all user-defined change listeners.
 Throws

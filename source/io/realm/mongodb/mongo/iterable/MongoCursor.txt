@@ -33,7 +33,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`hasNext <io_realm_mongodb_mongo_iterable_MongoCursor_hasNext__>` ()
        
        
@@ -41,7 +41,7 @@ Method Summary
        
        
    
-   * - public **ResultT (?)**
+   * - public **⁠ResultT (?)⁠**
      - :ref:`next <io_realm_mongodb_mongo_iterable_MongoCursor_next__>` ()
        
        
@@ -49,7 +49,7 @@ Method Summary
        
        
    
-   * - public **ResultT (?)**
+   * - public **⁠ResultT (?)⁠**
      - :ref:`tryNext <io_realm_mongodb_mongo_iterable_MongoCursor_tryNext__>` ()
        
        A special ``next()`` case that returns the next document if available or null.
@@ -59,7 +59,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`close <io_realm_mongodb_mongo_iterable_MongoCursor_close__>` ()
        
        
@@ -76,8 +76,8 @@ hasNext
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_hasNext__:
 
-public **boolean** hasNext ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** hasNext ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 next
@@ -85,8 +85,8 @@ next
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_next__:
 
-public **ResultT (?)** next ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠ResultT (?)⁠** next ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 tryNext
@@ -94,8 +94,8 @@ tryNext
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_tryNext__:
 
-public **ResultT (?)** tryNext ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠ResultT (?)⁠** tryNext ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A special ``next()`` case that returns the next document if available or null.
 
@@ -105,8 +105,8 @@ close
 
 .. _io_realm_mongodb_mongo_iterable_MongoCursor_close__:
 
-public **void** close ()
-~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** close ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

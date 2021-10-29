@@ -24,7 +24,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`executeClientReset <io_realm_mongodb_sync_ClientResetRequiredError_executeClientReset__>` ()
        
        Calling this method will execute the Client Reset manually instead of waiting until next app restart.
@@ -65,8 +65,8 @@ executeClientReset
 
 .. _io_realm_mongodb_sync_ClientResetRequiredError_executeClientReset__:
 
-public **void** executeClientReset ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** executeClientReset ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Calling this method will execute the Client Reset manually instead of waiting until next app restart. This will only be possible if all instances of that Realm have been closed, otherwise a `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__ will be thrown.
 

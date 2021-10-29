@@ -16,11 +16,11 @@ When registered against a ``Realm`` you'll get notified when a Realm instance ha
 
 
 
-Realm instances on a thread without an **android.os.Looper (?)** cannot register a RealmChangeListener.
+Realm instances on a thread without an **⁠android.os.Looper (?)⁠** cannot register a RealmChangeListener.
 
 
 
-All :ref:`io.realm.RealmObject <io_realm_RealmObject>` and :ref:`io.realm.RealmResults <io_realm_RealmResults>` will automatically contain their new values when the **#onChange(Object) (?)** method is called. Normally this means that it isn't necessary to query again for those objects, but just invalidate any UI elements that are using them. If there is a chance that a object has been been deleted, it can be verified by using :ref:`RealmObject#isValid() <io_realm_RealmObject_isValid__>`.
+All :ref:`io.realm.RealmObject <io_realm_RealmObject>` and :ref:`io.realm.RealmResults <io_realm_RealmResults>` will automatically contain their new values when the **⁠#onChange(Object) (?)⁠** method is called. Normally this means that it isn't necessary to query again for those objects, but just invalidate any UI elements that are using them. If there is a chance that a object has been been deleted, it can be verified by using :ref:`RealmObject#isValid() <io_realm_RealmObject_isValid__>`.
 
 
 
@@ -34,8 +34,8 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **void**
-     - :ref:`onChange <io_realm_RealmChangeListener_onChange_T_>` (**T (?)** t)
+   * - public **⁠void⁠**
+     - :ref:`onChange <io_realm_RealmChangeListener_onChange_T_>` (**⁠T (?)⁠** t)
        
        Called when a transaction is committed.
        
@@ -51,8 +51,8 @@ onChange
 
 .. _io_realm_RealmChangeListener_onChange_T_:
 
-public **void** onChange (**T (?)** t)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** onChange (**⁠T (?)⁠** t)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Called when a transaction is committed.
 

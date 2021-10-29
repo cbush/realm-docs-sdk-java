@@ -14,7 +14,7 @@ io.realm.mongodb.mongo.MongoCollection<DocumentT>
 
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
-The MongoCollection interface provides read and write access to documents.Use **MongoDatabase#getCollection (?)** to get a collection instance.
+The MongoCollection interface provides read and write access to documents.Use **⁠MongoDatabase#getCollection (?)⁠** to get a collection instance.
 
 
 
@@ -54,7 +54,7 @@ Method Summary
        
        
    
-   * - public **CodecRegistry (?)**
+   * - public **⁠CodecRegistry (?)⁠**
      - :ref:`getCodecRegistry <io_realm_mongodb_mongo_MongoCollection_getCodecRegistry__>` ()
        
        Gets the codec registry for the MongoCollection.
@@ -63,7 +63,7 @@ Method Summary
        
    
    * - public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>`
-     - :ref:`withDocumentClass <io_realm_mongodb_mongo_MongoCollection_withDocumentClass_Class_NewDocumentT__>` <**NewDocumentT (?)** >(`java.lang.Class\<NewDocumentT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz)
+     - :ref:`withDocumentClass <io_realm_mongodb_mongo_MongoCollection_withDocumentClass_Class_NewDocumentT__>` <**⁠NewDocumentT (?)⁠** >(`java.lang.Class\<NewDocumentT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz)
        
        Creates a new MongoCollection instance with a different default class to cast any documents returned from the database into.
        
@@ -71,7 +71,7 @@ Method Summary
        
    
    * - public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>`
-     - :ref:`withCodecRegistry <io_realm_mongodb_mongo_MongoCollection_withCodecRegistry_CodecRegistry_>` (**CodecRegistry (?)** codecRegistry)
+     - :ref:`withCodecRegistry <io_realm_mongodb_mongo_MongoCollection_withCodecRegistry_CodecRegistry_>` (**⁠CodecRegistry (?)⁠** codecRegistry)
        
        Creates a new MongoCollection instance with a different codec registry.
        
@@ -87,7 +87,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`count <io_realm_mongodb_mongo_MongoCollection_count_Bson_>` (**Bson (?)** filter)
+     - :ref:`count <io_realm_mongodb_mongo_MongoCollection_count_Bson_>` (**⁠Bson (?)⁠** filter)
        
        Counts the number of documents in the collection according to the given options.
        
@@ -95,7 +95,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`count <io_realm_mongodb_mongo_MongoCollection_count_Bson__CountOptions_>` (**Bson (?)** filter, :ref:`CountOptions <io_realm_mongodb_mongo_options_CountOptions>` options)
+     - :ref:`count <io_realm_mongodb_mongo_MongoCollection_count_Bson__CountOptions_>` (**⁠Bson (?)⁠** filter, :ref:`CountOptions <io_realm_mongodb_mongo_options_CountOptions>` options)
        
        Counts the number of documents in the collection according to the given options.
        
@@ -111,7 +111,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOne <io_realm_mongodb_mongo_MongoCollection_findOne_Class_ResultT__>` <**ResultT (?)** >(`java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+     - :ref:`findOne <io_realm_mongodb_mongo_MongoCollection_findOne_Class_ResultT__>` <**⁠ResultT (?)⁠** >(`java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
        
        Finds a document in the collection.
        
@@ -119,7 +119,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOne <io_realm_mongodb_mongo_MongoCollection_findOne_Bson_>` (**Bson (?)** filter)
+     - :ref:`findOne <io_realm_mongodb_mongo_MongoCollection_findOne_Bson_>` (**⁠Bson (?)⁠** filter)
        
        Finds a document in the collection.
        
@@ -127,7 +127,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOne <io_realm_mongodb_mongo_MongoCollection_findOne_Bson__Class_ResultT__>` <**ResultT (?)** >(**Bson (?)** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+     - :ref:`findOne <io_realm_mongodb_mongo_MongoCollection_findOne_Bson__Class_ResultT__>` <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
        
        Finds a document in the collection.
        
@@ -135,7 +135,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOne <io_realm_mongodb_mongo_MongoCollection_findOne_Bson__FindOptions_>` (**Bson (?)** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
+     - :ref:`findOne <io_realm_mongodb_mongo_MongoCollection_findOne_Bson__FindOptions_>` (**⁠Bson (?)⁠** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
        
        Finds a document in the collection.
        
@@ -143,7 +143,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOne <io_realm_mongodb_mongo_MongoCollection_findOne_Bson__FindOptions__Class_ResultT__>` <**ResultT (?)** >(**Bson (?)** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+     - :ref:`findOne <io_realm_mongodb_mongo_MongoCollection_findOne_Bson__FindOptions__Class_ResultT__>` <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
        
        Finds a document in the collection.
        
@@ -169,7 +169,7 @@ Method Summary
        
    
    * - public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>`
-     - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find_Class_ResultT__>` <**ResultT (?)** >(`java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+     - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find_Class_ResultT__>` <**⁠ResultT (?)⁠** >(`java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
        
        Finds all documents in the collection specifying an output class.
        
@@ -177,7 +177,7 @@ Method Summary
        
    
    * - public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>`
-     - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find_Class_ResultT___FindOptions_>` <**ResultT (?)** >(`java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
+     - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find_Class_ResultT___FindOptions_>` <**⁠ResultT (?)⁠** >(`java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
        
        Finds all documents in the collection specifying an output class and also using :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` to build the query.
        
@@ -187,7 +187,7 @@ Method Summary
        
    
    * - public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>`
-     - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find_Bson_>` (**Bson (?)** filter)
+     - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find_Bson_>` (**⁠Bson (?)⁠** filter)
        
        Finds all documents in the collection that match the given filter.
        
@@ -195,7 +195,7 @@ Method Summary
        
    
    * - public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>`
-     - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find_Bson__FindOptions_>` (**Bson (?)** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
+     - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find_Bson__FindOptions_>` (**⁠Bson (?)⁠** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
        
        Finds all documents in the collection that match the given filter using :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` to build the query.
        
@@ -205,7 +205,7 @@ Method Summary
        
    
    * - public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>`
-     - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find_Bson__Class_ResultT__>` <**ResultT (?)** >(**Bson (?)** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+     - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find_Bson__Class_ResultT__>` <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
        
        Finds all documents in the collection that match the given filter specifying an output class.
        
@@ -213,7 +213,7 @@ Method Summary
        
    
    * - public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>`
-     - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find_Bson__Class_ResultT___FindOptions_>` <**ResultT (?)** >(**Bson (?)** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
+     - :ref:`find <io_realm_mongodb_mongo_MongoCollection_find_Bson__Class_ResultT___FindOptions_>` <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
        
        Finds all documents in the collection that match the given filter specifying an output class and also using :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` to build the query.
        
@@ -231,7 +231,7 @@ Method Summary
        
    
    * - public :ref:`AggregateIterable <io_realm_mongodb_mongo_iterable_AggregateIterable>`
-     - :ref:`aggregate <io_realm_mongodb_mongo_MongoCollection_aggregate_List___extends_Bson___Class_ResultT__>` <**ResultT (?)** >(`java.util.List\<? extends Bson> <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ pipeline, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+     - :ref:`aggregate <io_realm_mongodb_mongo_MongoCollection_aggregate_List___extends_Bson___Class_ResultT__>` <**⁠ResultT (?)⁠** >(`java.util.List\<? extends Bson> <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ pipeline, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
        
        Aggregates documents according to the specified aggregation pipeline specifying an output class.
        
@@ -239,7 +239,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`insertOne <io_realm_mongodb_mongo_MongoCollection_insertOne_DocumentT_>` (**DocumentT (?)** document)
+     - :ref:`insertOne <io_realm_mongodb_mongo_MongoCollection_insertOne_DocumentT_>` (**⁠DocumentT (?)⁠** document)
        
        Inserts the provided document.
        
@@ -255,7 +255,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`deleteOne <io_realm_mongodb_mongo_MongoCollection_deleteOne_Bson_>` (**Bson (?)** filter)
+     - :ref:`deleteOne <io_realm_mongodb_mongo_MongoCollection_deleteOne_Bson_>` (**⁠Bson (?)⁠** filter)
        
        Removes at most one document from the collection that matches the given filter.
        
@@ -263,7 +263,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`deleteMany <io_realm_mongodb_mongo_MongoCollection_deleteMany_Bson_>` (**Bson (?)** filter)
+     - :ref:`deleteMany <io_realm_mongodb_mongo_MongoCollection_deleteMany_Bson_>` (**⁠Bson (?)⁠** filter)
        
        Removes all documents from the collection that match the given query filter.
        
@@ -271,7 +271,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`updateOne <io_realm_mongodb_mongo_MongoCollection_updateOne_Bson__Bson_>` (**Bson (?)** filter, **Bson (?)** update)
+     - :ref:`updateOne <io_realm_mongodb_mongo_MongoCollection_updateOne_Bson__Bson_>` (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update)
        
        Update a single document in the collection according to the specified arguments.
        
@@ -279,7 +279,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`updateOne <io_realm_mongodb_mongo_MongoCollection_updateOne_Bson__Bson__UpdateOptions_>` (**Bson (?)** filter, **Bson (?)** update, :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>` updateOptions)
+     - :ref:`updateOne <io_realm_mongodb_mongo_MongoCollection_updateOne_Bson__Bson__UpdateOptions_>` (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update, :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>` updateOptions)
        
        Update a single document in the collection according to the specified arguments.
        
@@ -287,7 +287,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`updateMany <io_realm_mongodb_mongo_MongoCollection_updateMany_Bson__Bson_>` (**Bson (?)** filter, **Bson (?)** update)
+     - :ref:`updateMany <io_realm_mongodb_mongo_MongoCollection_updateMany_Bson__Bson_>` (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update)
        
        Update all documents in the collection according to the specified arguments.
        
@@ -295,7 +295,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`updateMany <io_realm_mongodb_mongo_MongoCollection_updateMany_Bson__Bson__UpdateOptions_>` (**Bson (?)** filter, **Bson (?)** update, :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>` updateOptions)
+     - :ref:`updateMany <io_realm_mongodb_mongo_MongoCollection_updateMany_Bson__Bson__UpdateOptions_>` (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update, :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>` updateOptions)
        
        Update all documents in the collection according to the specified arguments.
        
@@ -303,7 +303,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOneAndUpdate <io_realm_mongodb_mongo_MongoCollection_findOneAndUpdate_Bson__Bson_>` (**Bson (?)** filter, **Bson (?)** update)
+     - :ref:`findOneAndUpdate <io_realm_mongodb_mongo_MongoCollection_findOneAndUpdate_Bson__Bson_>` (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update)
        
        Finds a document in the collection and performs the given update.
        
@@ -311,7 +311,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOneAndUpdate <io_realm_mongodb_mongo_MongoCollection_findOneAndUpdate_Bson__Bson__Class_ResultT__>` <**ResultT (?)** >(**Bson (?)** filter, **Bson (?)** update, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+     - :ref:`findOneAndUpdate <io_realm_mongodb_mongo_MongoCollection_findOneAndUpdate_Bson__Bson__Class_ResultT__>` <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
        
        Finds a document in the collection and performs the given update.
        
@@ -319,7 +319,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOneAndUpdate <io_realm_mongodb_mongo_MongoCollection_findOneAndUpdate_Bson__Bson__FindOneAndModifyOptions_>` (**Bson (?)** filter, **Bson (?)** update, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options)
+     - :ref:`findOneAndUpdate <io_realm_mongodb_mongo_MongoCollection_findOneAndUpdate_Bson__Bson__FindOneAndModifyOptions_>` (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options)
        
        Finds a document in the collection and performs the given update.
        
@@ -327,7 +327,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOneAndUpdate <io_realm_mongodb_mongo_MongoCollection_findOneAndUpdate_Bson__Bson__FindOneAndModifyOptions__Class_ResultT__>` <**ResultT (?)** >(**Bson (?)** filter, **Bson (?)** update, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+     - :ref:`findOneAndUpdate <io_realm_mongodb_mongo_MongoCollection_findOneAndUpdate_Bson__Bson__FindOneAndModifyOptions__Class_ResultT__>` <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
        
        Finds a document in the collection and performs the given update.
        
@@ -335,7 +335,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOneAndReplace <io_realm_mongodb_mongo_MongoCollection_findOneAndReplace_Bson__Bson_>` (**Bson (?)** filter, **Bson (?)** replacement)
+     - :ref:`findOneAndReplace <io_realm_mongodb_mongo_MongoCollection_findOneAndReplace_Bson__Bson_>` (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** replacement)
        
        Finds a document in the collection and replaces it with the given document.
        
@@ -343,7 +343,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOneAndReplace <io_realm_mongodb_mongo_MongoCollection_findOneAndReplace_Bson__Bson__Class_ResultT__>` <**ResultT (?)** >(**Bson (?)** filter, **Bson (?)** replacement, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+     - :ref:`findOneAndReplace <io_realm_mongodb_mongo_MongoCollection_findOneAndReplace_Bson__Bson__Class_ResultT__>` <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** replacement, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
        
        Finds a document in the collection and replaces it with the given document.
        
@@ -351,7 +351,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOneAndReplace <io_realm_mongodb_mongo_MongoCollection_findOneAndReplace_Bson__Bson__FindOneAndModifyOptions_>` (**Bson (?)** filter, **Bson (?)** replacement, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options)
+     - :ref:`findOneAndReplace <io_realm_mongodb_mongo_MongoCollection_findOneAndReplace_Bson__Bson__FindOneAndModifyOptions_>` (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** replacement, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options)
        
        Finds a document in the collection and replaces it with the given document.
        
@@ -359,7 +359,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOneAndReplace <io_realm_mongodb_mongo_MongoCollection_findOneAndReplace_Bson__Bson__FindOneAndModifyOptions__Class_ResultT__>` <**ResultT (?)** >(**Bson (?)** filter, **Bson (?)** replacement, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+     - :ref:`findOneAndReplace <io_realm_mongodb_mongo_MongoCollection_findOneAndReplace_Bson__Bson__FindOneAndModifyOptions__Class_ResultT__>` <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** replacement, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
        
        Finds a document in the collection and replaces it with the given document.
        
@@ -367,7 +367,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOneAndDelete <io_realm_mongodb_mongo_MongoCollection_findOneAndDelete_Bson_>` (**Bson (?)** filter)
+     - :ref:`findOneAndDelete <io_realm_mongodb_mongo_MongoCollection_findOneAndDelete_Bson_>` (**⁠Bson (?)⁠** filter)
        
        Finds a document in the collection and delete it.
        
@@ -375,7 +375,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOneAndDelete <io_realm_mongodb_mongo_MongoCollection_findOneAndDelete_Bson__Class_ResultT__>` <**ResultT (?)** >(**Bson (?)** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+     - :ref:`findOneAndDelete <io_realm_mongodb_mongo_MongoCollection_findOneAndDelete_Bson__Class_ResultT__>` <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
        
        Finds a document in the collection and delete it.
        
@@ -383,7 +383,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOneAndDelete <io_realm_mongodb_mongo_MongoCollection_findOneAndDelete_Bson__FindOneAndModifyOptions_>` (**Bson (?)** filter, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options)
+     - :ref:`findOneAndDelete <io_realm_mongodb_mongo_MongoCollection_findOneAndDelete_Bson__FindOneAndModifyOptions_>` (**⁠Bson (?)⁠** filter, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options)
        
        Finds a document in the collection and delete it.
        
@@ -391,7 +391,7 @@ Method Summary
        
    
    * - public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>`
-     - :ref:`findOneAndDelete <io_realm_mongodb_mongo_MongoCollection_findOneAndDelete_Bson__FindOneAndModifyOptions__Class_ResultT__>` <**ResultT (?)** >(**Bson (?)** filter, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+     - :ref:`findOneAndDelete <io_realm_mongodb_mongo_MongoCollection_findOneAndDelete_Bson__FindOneAndModifyOptions__Class_ResultT__>` <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
        
        Finds a document in the collection and delete it.
        
@@ -407,7 +407,7 @@ Method Summary
        
    
    * - public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>`
-     - :ref:`watch <io_realm_mongodb_mongo_MongoCollection_watch_BsonValue____>` (**BsonValue[] (?)** ids)
+     - :ref:`watch <io_realm_mongodb_mongo_MongoCollection_watch_BsonValue____>` (**⁠BsonValue[] (?)⁠** ids)
        
        Watches specified IDs in a collection.
        
@@ -415,7 +415,7 @@ Method Summary
        
    
    * - public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>`
-     - :ref:`watch <io_realm_mongodb_mongo_MongoCollection_watch_ObjectId____>` (**ObjectId[] (?)** ids)
+     - :ref:`watch <io_realm_mongodb_mongo_MongoCollection_watch_ObjectId____>` (**⁠ObjectId[] (?)⁠** ids)
        
        Watches specified IDs in a collection.
        
@@ -423,7 +423,7 @@ Method Summary
        
    
    * - public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>`
-     - :ref:`watchWithFilter <io_realm_mongodb_mongo_MongoCollection_watchWithFilter_Document_>` (**Document (?)** matchFilter)
+     - :ref:`watchWithFilter <io_realm_mongodb_mongo_MongoCollection_watchWithFilter_Document_>` (**⁠Document (?)⁠** matchFilter)
        
        Watches a collection.
        
@@ -431,7 +431,7 @@ Method Summary
        
    
    * - public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>`
-     - :ref:`watchWithFilter <io_realm_mongodb_mongo_MongoCollection_watchWithFilter_BsonDocument_>` (**BsonDocument (?)** matchFilter)
+     - :ref:`watchWithFilter <io_realm_mongodb_mongo_MongoCollection_watchWithFilter_BsonDocument_>` (**⁠BsonDocument (?)⁠** matchFilter)
        
        Watches a collection.
        
@@ -447,7 +447,7 @@ Method Summary
        
    
    * - public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>`
-     - :ref:`watchAsync <io_realm_mongodb_mongo_MongoCollection_watchAsync_BsonValue____>` (**BsonValue[] (?)** ids)
+     - :ref:`watchAsync <io_realm_mongodb_mongo_MongoCollection_watchAsync_BsonValue____>` (**⁠BsonValue[] (?)⁠** ids)
        
        Watches specified IDs in a collection asynchronously.
        
@@ -455,7 +455,7 @@ Method Summary
        
    
    * - public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>`
-     - :ref:`watchAsync <io_realm_mongodb_mongo_MongoCollection_watchAsync_ObjectId____>` (**ObjectId[] (?)** ids)
+     - :ref:`watchAsync <io_realm_mongodb_mongo_MongoCollection_watchAsync_ObjectId____>` (**⁠ObjectId[] (?)⁠** ids)
        
        Watches specified IDs in a collection asynchronously.
        
@@ -463,7 +463,7 @@ Method Summary
        
    
    * - public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>`
-     - :ref:`watchWithFilterAsync <io_realm_mongodb_mongo_MongoCollection_watchWithFilterAsync_Document_>` (**Document (?)** matchFilter)
+     - :ref:`watchWithFilterAsync <io_realm_mongodb_mongo_MongoCollection_watchWithFilterAsync_Document_>` (**⁠Document (?)⁠** matchFilter)
        
        Watches a collection asynchronously.
        
@@ -471,7 +471,7 @@ Method Summary
        
    
    * - public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>`
-     - :ref:`watchWithFilterAsync <io_realm_mongodb_mongo_MongoCollection_watchWithFilterAsync_BsonDocument_>` (**BsonDocument (?)** matchFilter)
+     - :ref:`watchWithFilterAsync <io_realm_mongodb_mongo_MongoCollection_watchWithFilterAsync_BsonDocument_>` (**⁠BsonDocument (?)⁠** matchFilter)
        
        Watches a collection asynchronously.
        
@@ -508,7 +508,7 @@ getDocumentClass
 public `Class <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ getDocumentClass ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Gets the class of documents stored in this collection.If you used the simple :ref:`MongoDatabase#getCollection(String) <io_realm_mongodb_mongo_MongoDatabase_getCollection_String_>` to get this collection, this is **org.bson.Document (?)**.
+Gets the class of documents stored in this collection.If you used the simple :ref:`MongoDatabase#getCollection(String) <io_realm_mongodb_mongo_MongoDatabase_getCollection_String_>` to get this collection, this is **⁠org.bson.Document (?)⁠**.
 
 
 
@@ -518,8 +518,8 @@ getCodecRegistry
 
 .. _io_realm_mongodb_mongo_MongoCollection_getCodecRegistry__:
 
-public **CodecRegistry (?)** getCodecRegistry ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠CodecRegistry (?)⁠** getCodecRegistry ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gets the codec registry for the MongoCollection.
 withDocumentClass
@@ -527,8 +527,8 @@ withDocumentClass
 
 .. _io_realm_mongodb_mongo_MongoCollection_withDocumentClass_Class_NewDocumentT__:
 
-public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>` withDocumentClass <**NewDocumentT (?)** >(`java.lang.Class\<NewDocumentT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>` withDocumentClass <**⁠NewDocumentT (?)⁠** >(`java.lang.Class\<NewDocumentT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ clazz)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a new MongoCollection instance with a different default class to cast any documents returned from the database into.
 Type Parameters
@@ -548,14 +548,14 @@ withCodecRegistry
 
 .. _io_realm_mongodb_mongo_MongoCollection_withCodecRegistry_CodecRegistry_:
 
-public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>` withCodecRegistry (**CodecRegistry (?)** codecRegistry)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>` withCodecRegistry (**⁠CodecRegistry (?)⁠** codecRegistry)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a new MongoCollection instance with a different codec registry.
 Parameters
 __________
 
-- ``codecRegistry - ``the new **CodecRegistry (?)** for the collection.
+- ``codecRegistry - ``the new **⁠CodecRegistry (?)⁠** for the collection.
    
    
    
@@ -571,8 +571,8 @@ public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` count ()
 Counts the number of documents in the collection.
 .. _io_realm_mongodb_mongo_MongoCollection_count_Bson_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` count (**Bson (?)** filter)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` count (**⁠Bson (?)⁠** filter)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Counts the number of documents in the collection according to the given options.
 Parameters
@@ -583,8 +583,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_count_Bson__CountOptions_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` count (**Bson (?)** filter, :ref:`CountOptions <io_realm_mongodb_mongo_options_CountOptions>` options)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` count (**⁠Bson (?)⁠** filter, :ref:`CountOptions <io_realm_mongodb_mongo_options_CountOptions>` options)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Counts the number of documents in the collection according to the given options.
 Parameters
@@ -606,8 +606,8 @@ public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOne ()
 Finds a document in the collection.
 .. _io_realm_mongodb_mongo_MongoCollection_findOne_Class_ResultT__:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOne <**ResultT (?)** >(`java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOne <**⁠ResultT (?)⁠** >(`java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection.
 Type Parameters
@@ -624,8 +624,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOne_Bson_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOne (**Bson (?)** filter)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOne (**⁠Bson (?)⁠** filter)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection.
 Parameters
@@ -636,8 +636,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOne_Bson__Class_ResultT__:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOne <**ResultT (?)** >(**Bson (?)** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOne <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection.
 Type Parameters
@@ -656,8 +656,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOne_Bson__FindOptions_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOne (**Bson (?)** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOne (**⁠Bson (?)⁠** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection.
 Parameters
@@ -672,8 +672,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOne_Bson__FindOptions__Class_ResultT__:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOne <**ResultT (?)** >(**Bson (?)** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOne <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection.
 Type Parameters
@@ -729,8 +729,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_find_Class_ResultT__:
 
-public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find <**ResultT (?)** >(`java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find <**⁠ResultT (?)⁠** >(`java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds all documents in the collection specifying an output class.All documents will be delivered in the form of a :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` from which individual elements can be extracted.
 
@@ -751,8 +751,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_find_Class_ResultT___FindOptions_:
 
-public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find <**ResultT (?)** >(`java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find <**⁠ResultT (?)⁠** >(`java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds all documents in the collection specifying an output class and also using :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` to build the query.
 
@@ -779,8 +779,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_find_Bson_:
 
-public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find (**Bson (?)** filter)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find (**⁠Bson (?)⁠** filter)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds all documents in the collection that match the given filter.All documents will be delivered in the form of a :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` from which individual elements can be extracted.
 
@@ -795,8 +795,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_find_Bson__FindOptions_:
 
-public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find (**Bson (?)** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find (**⁠Bson (?)⁠** filter, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds all documents in the collection that match the given filter using :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` to build the query.
 
@@ -817,8 +817,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_find_Bson__Class_ResultT__:
 
-public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find <**ResultT (?)** >(**Bson (?)** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds all documents in the collection that match the given filter specifying an output class.All documents will be delivered in the form of a :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` from which individual elements can be extracted.
 
@@ -841,8 +841,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_find_Bson__Class_ResultT___FindOptions_:
 
-public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find <**ResultT (?)** >(**Bson (?)** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`FindIterable <io_realm_mongodb_mongo_iterable_FindIterable>` find <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass, :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` options)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds all documents in the collection that match the given filter specifying an output class and also using :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` to build the query.
 
@@ -890,8 +890,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_aggregate_List___extends_Bson___Class_ResultT__:
 
-public :ref:`AggregateIterable <io_realm_mongodb_mongo_iterable_AggregateIterable>` aggregate <**ResultT (?)** >(`java.util.List\<? extends Bson> <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ pipeline, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`AggregateIterable <io_realm_mongodb_mongo_iterable_AggregateIterable>` aggregate <**⁠ResultT (?)⁠** >(`java.util.List\<? extends Bson> <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ pipeline, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Aggregates documents according to the specified aggregation pipeline specifying an output class.All documents will be delivered in the form of an :ref:`AggregateIterable <io_realm_mongodb_mongo_iterable_AggregateIterable>` from which individual elements can be extracted.
 
@@ -917,8 +917,8 @@ insertOne
 
 .. _io_realm_mongodb_mongo_MongoCollection_insertOne_DocumentT_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` insertOne (**DocumentT (?)** document)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` insertOne (**⁠DocumentT (?)⁠** document)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Inserts the provided document. If the document is missing an identifier, the client should generate one.
 Parameters
@@ -947,8 +947,8 @@ deleteOne
 
 .. _io_realm_mongodb_mongo_MongoCollection_deleteOne_Bson_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` deleteOne (**Bson (?)** filter)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` deleteOne (**⁠Bson (?)⁠** filter)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes at most one document from the collection that matches the given filter. If no documents match, the collection is not modified.
 Parameters
@@ -962,8 +962,8 @@ deleteMany
 
 .. _io_realm_mongodb_mongo_MongoCollection_deleteMany_Bson_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` deleteMany (**Bson (?)** filter)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` deleteMany (**⁠Bson (?)⁠** filter)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes all documents from the collection that match the given query filter. If no documents match, the collection is not modified.
 Parameters
@@ -977,8 +977,8 @@ updateOne
 
 .. _io_realm_mongodb_mongo_MongoCollection_updateOne_Bson__Bson_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` updateOne (**Bson (?)** filter, **Bson (?)** update)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` updateOne (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Update a single document in the collection according to the specified arguments.
 Parameters
@@ -991,8 +991,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_updateOne_Bson__Bson__UpdateOptions_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` updateOne (**Bson (?)** filter, **Bson (?)** update, :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>` updateOptions)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` updateOne (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update, :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>` updateOptions)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Update a single document in the collection according to the specified arguments.
 Parameters
@@ -1010,8 +1010,8 @@ updateMany
 
 .. _io_realm_mongodb_mongo_MongoCollection_updateMany_Bson__Bson_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` updateMany (**Bson (?)** filter, **Bson (?)** update)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` updateMany (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Update all documents in the collection according to the specified arguments.
 Parameters
@@ -1024,8 +1024,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_updateMany_Bson__Bson__UpdateOptions_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` updateMany (**Bson (?)** filter, **Bson (?)** update, :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>` updateOptions)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` updateMany (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update, :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>` updateOptions)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Update all documents in the collection according to the specified arguments.
 Parameters
@@ -1043,8 +1043,8 @@ findOneAndUpdate
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOneAndUpdate_Bson__Bson_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndUpdate (**Bson (?)** filter, **Bson (?)** update)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndUpdate (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection and performs the given update.
 Parameters
@@ -1057,8 +1057,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOneAndUpdate_Bson__Bson__Class_ResultT__:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndUpdate <**ResultT (?)** >(**Bson (?)** filter, **Bson (?)** update, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndUpdate <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection and performs the given update.
 Type Parameters
@@ -1079,8 +1079,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOneAndUpdate_Bson__Bson__FindOneAndModifyOptions_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndUpdate (**Bson (?)** filter, **Bson (?)** update, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndUpdate (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection and performs the given update.
 Parameters
@@ -1097,8 +1097,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOneAndUpdate_Bson__Bson__FindOneAndModifyOptions__Class_ResultT__:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndUpdate <**ResultT (?)** >(**Bson (?)** filter, **Bson (?)** update, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndUpdate <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** update, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection and performs the given update.
 Type Parameters
@@ -1126,8 +1126,8 @@ findOneAndReplace
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOneAndReplace_Bson__Bson_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndReplace (**Bson (?)** filter, **Bson (?)** replacement)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndReplace (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** replacement)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection and replaces it with the given document.
 Parameters
@@ -1140,8 +1140,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOneAndReplace_Bson__Bson__Class_ResultT__:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndReplace <**ResultT (?)** >(**Bson (?)** filter, **Bson (?)** replacement, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndReplace <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** replacement, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection and replaces it with the given document.
 Type Parameters
@@ -1162,8 +1162,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOneAndReplace_Bson__Bson__FindOneAndModifyOptions_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndReplace (**Bson (?)** filter, **Bson (?)** replacement, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndReplace (**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** replacement, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection and replaces it with the given document.
 Parameters
@@ -1180,8 +1180,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOneAndReplace_Bson__Bson__FindOneAndModifyOptions__Class_ResultT__:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndReplace <**ResultT (?)** >(**Bson (?)** filter, **Bson (?)** replacement, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndReplace <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, **⁠Bson (?)⁠** replacement, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection and replaces it with the given document.
 Type Parameters
@@ -1209,8 +1209,8 @@ findOneAndDelete
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOneAndDelete_Bson_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndDelete (**Bson (?)** filter)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndDelete (**⁠Bson (?)⁠** filter)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection and delete it.
 Parameters
@@ -1221,8 +1221,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOneAndDelete_Bson__Class_ResultT__:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndDelete <**ResultT (?)** >(**Bson (?)** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndDelete <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection and delete it.
 Type Parameters
@@ -1241,8 +1241,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOneAndDelete_Bson__FindOneAndModifyOptions_:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndDelete (**Bson (?)** filter, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndDelete (**⁠Bson (?)⁠** filter, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection and delete it.
 Parameters
@@ -1257,8 +1257,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_findOneAndDelete_Bson__FindOneAndModifyOptions__Class_ResultT__:
 
-public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndDelete <**ResultT (?)** >(**Bson (?)** filter, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmResultTask <io_realm_mongodb_RealmResultTask>` findOneAndDelete <**⁠ResultT (?)⁠** >(**⁠Bson (?)⁠** filter, :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndModifyOptions>` options, `java.lang.Class\<ResultT> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ resultClass)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finds a document in the collection and delete it.
 Type Parameters
@@ -1290,8 +1290,8 @@ public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>` watch
 Watches a collection. The resulting stream will be notified of all events on this collection that the active user is authorized to see based on the configured MongoDB Realm rules.
 .. _io_realm_mongodb_mongo_MongoCollection_watch_BsonValue____:
 
-public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>` watch (**BsonValue[] (?)** ids)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>` watch (**⁠BsonValue[] (?)⁠** ids)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Watches specified IDs in a collection.
 Parameters
@@ -1302,10 +1302,10 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_watch_ObjectId____:
 
-public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>` watch (**ObjectId[] (?)** ids)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>` watch (**⁠ObjectId[] (?)⁠** ids)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Watches specified IDs in a collection. This convenience overload supports the use case of non-**BsonValue (?)** instances of **ObjectId (?)** by wrapping them in **BsonObjectId (?)** instances for the user.
+Watches specified IDs in a collection. This convenience overload supports the use case of non-**⁠BsonValue (?)⁠** instances of **⁠ObjectId (?)⁠** by wrapping them in **⁠BsonObjectId (?)⁠** instances for the user.
 
 
 Parameters
@@ -1319,10 +1319,10 @@ watchWithFilter
 
 .. _io_realm_mongodb_mongo_MongoCollection_watchWithFilter_Document_:
 
-public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>` watchWithFilter (**Document (?)** matchFilter)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>` watchWithFilter (**⁠Document (?)⁠** matchFilter)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Watches a collection. The provided document will be used as a match expression filter on the change events coming from the stream. This convenience overload supports the use of non-**BsonDocument (?)** instances for the user.
+Watches a collection. The provided document will be used as a match expression filter on the change events coming from the stream. This convenience overload supports the use of non-**⁠BsonDocument (?)⁠** instances for the user.
 
 See `how to define a match filter <https://docs.mongodb.com/manual/reference/operator/aggregation/match/>`__.
 
@@ -1337,8 +1337,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_watchWithFilter_BsonDocument_:
 
-public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>` watchWithFilter (**BsonDocument (?)** matchFilter)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmEventStreamTask <io_realm_mongodb_RealmEventStreamTask>` watchWithFilter (**⁠BsonDocument (?)⁠** matchFilter)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Watches a collection. The provided BSON document will be used as a match expression filter on the change events coming from the stream.See `how to define a match filter <https://docs.mongodb.com/manual/reference/operator/aggregation/match/>`__.
 
@@ -1362,8 +1362,8 @@ public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTa
 Watches a collection asynchronously. The resulting stream will be notified of all events on this collection that the active user is authorized to see based on the configured MongoDB Realm rules.
 .. _io_realm_mongodb_mongo_MongoCollection_watchAsync_BsonValue____:
 
-public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>` watchAsync (**BsonValue[] (?)** ids)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>` watchAsync (**⁠BsonValue[] (?)⁠** ids)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Watches specified IDs in a collection asynchronously.
 Parameters
@@ -1374,10 +1374,10 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_watchAsync_ObjectId____:
 
-public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>` watchAsync (**ObjectId[] (?)** ids)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>` watchAsync (**⁠ObjectId[] (?)⁠** ids)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Watches specified IDs in a collection asynchronously. This convenience overload supports the use case of non-**BsonValue (?)** instances of **ObjectId (?)** by wrapping them in **BsonObjectId (?)** instances for the user.
+Watches specified IDs in a collection asynchronously. This convenience overload supports the use case of non-**⁠BsonValue (?)⁠** instances of **⁠ObjectId (?)⁠** by wrapping them in **⁠BsonObjectId (?)⁠** instances for the user.
 
 
 Parameters
@@ -1391,10 +1391,10 @@ watchWithFilterAsync
 
 .. _io_realm_mongodb_mongo_MongoCollection_watchWithFilterAsync_Document_:
 
-public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>` watchWithFilterAsync (**Document (?)** matchFilter)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>` watchWithFilterAsync (**⁠Document (?)⁠** matchFilter)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Watches a collection asynchronously. The provided document will be used as a match expression filter on the change events coming from the stream. This convenience overload supports the use of non-**BsonDocument (?)** instances for the user.
+Watches a collection asynchronously. The provided document will be used as a match expression filter on the change events coming from the stream. This convenience overload supports the use of non-**⁠BsonDocument (?)⁠** instances for the user.
 
 See `how to define a match filter <https://docs.mongodb.com/manual/reference/operator/aggregation/match/>`__.
 
@@ -1409,8 +1409,8 @@ __________
 
 .. _io_realm_mongodb_mongo_MongoCollection_watchWithFilterAsync_BsonDocument_:
 
-public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>` watchWithFilterAsync (**BsonDocument (?)** matchFilter)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmEventStreamAsyncTask <io_realm_mongodb_RealmEventStreamAsyncTask>` watchWithFilterAsync (**⁠BsonDocument (?)⁠** matchFilter)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Watches a collection asynchronously. The provided BSON document will be used as a match expression filter on the change events coming from the stream.See `how to define a match filter <https://docs.mongodb.com/manual/reference/operator/aggregation/match/>`__.
 

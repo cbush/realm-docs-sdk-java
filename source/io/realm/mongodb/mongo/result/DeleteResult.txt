@@ -29,7 +29,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **long**
+   * - public **⁠long⁠**
      - :ref:`getDeletedCount <io_realm_mongodb_mongo_result_DeleteResult_getDeletedCount__>` ()
        
        Gets the number of documents deleted.
@@ -46,8 +46,8 @@ getDeletedCount
 
 .. _io_realm_mongodb_mongo_result_DeleteResult_getDeletedCount__:
 
-public **long** getDeletedCount ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠long⁠** getDeletedCount ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Gets the number of documents deleted.
 

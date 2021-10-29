@@ -29,15 +29,15 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **E (?)**
-     - :ref:`get <io_realm_DynamicRealmObject_get_String_>` <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+   * - public **⁠E (?)⁠**
+     - :ref:`get <io_realm_DynamicRealmObject_get_String_>` <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the value for the given field.
        
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`getBoolean <io_realm_DynamicRealmObject_getBoolean_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the ``boolean`` value for a given field.
@@ -47,7 +47,7 @@ Method Summary
        
        
    
-   * - public **int**
+   * - public **⁠int⁠**
      - :ref:`getInt <io_realm_DynamicRealmObject_getInt_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the ``int`` value for a given field.
@@ -57,7 +57,7 @@ Method Summary
        
        
    
-   * - public **short**
+   * - public **⁠short⁠**
      - :ref:`getShort <io_realm_DynamicRealmObject_getShort_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the ``short`` value for a given field.
@@ -67,7 +67,7 @@ Method Summary
        
        
    
-   * - public **long**
+   * - public **⁠long⁠**
      - :ref:`getLong <io_realm_DynamicRealmObject_getLong_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the ``long`` value for a given field.
@@ -77,7 +77,7 @@ Method Summary
        
        
    
-   * - public **byte**
+   * - public **⁠byte⁠**
      - :ref:`getByte <io_realm_DynamicRealmObject_getByte_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the ``byte`` value for a given field.
@@ -87,7 +87,7 @@ Method Summary
        
        
    
-   * - public **float**
+   * - public **⁠float⁠**
      - :ref:`getFloat <io_realm_DynamicRealmObject_getFloat_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the ``float`` value for a given field.
@@ -97,7 +97,7 @@ Method Summary
        
        
    
-   * - public **double**
+   * - public **⁠double⁠**
      - :ref:`getDouble <io_realm_DynamicRealmObject_getDouble_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the ``double`` value for a given field.
@@ -107,7 +107,7 @@ Method Summary
        
        
    
-   * - public **byte**
+   * - public **⁠byte⁠**
      - :ref:`getBlob <io_realm_DynamicRealmObject_getBlob_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the ``byte[]`` value for a given field.
@@ -137,7 +137,7 @@ Method Summary
        
        
    
-   * - public **Decimal128 (?)**
+   * - public **⁠Decimal128 (?)⁠**
      - :ref:`getDecimal128 <io_realm_DynamicRealmObject_getDecimal128_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the ``Decimal128`` value for a given field.
@@ -147,7 +147,7 @@ Method Summary
        
        
    
-   * - public **ObjectId (?)**
+   * - public **⁠ObjectId (?)⁠**
      - :ref:`getObjectId <io_realm_DynamicRealmObject_getObjectId_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the ``ObjectId`` value for a given field.
@@ -157,7 +157,7 @@ Method Summary
        
        
    
-   * - public **RealmAny (?)**
+   * - public **⁠RealmAny (?)⁠**
      - :ref:`getRealmAny <io_realm_DynamicRealmObject_getRealmAny_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Returns the ``RealmAny`` value for a given field.
@@ -196,7 +196,7 @@ Method Summary
        
    
    * - public :ref:`RealmList <io_realm_RealmList>`
-     - :ref:`getList <io_realm_DynamicRealmObject_getList_String__Class_E__>` <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
+     - :ref:`getList <io_realm_DynamicRealmObject_getList_String__Class_E__>` <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
        
        Returns the :ref:`RealmList <io_realm_RealmList>` containing only primitive values.
        
@@ -205,47 +205,47 @@ Method Summary
        
        
    
-   * - public **<any> (?)**
+   * - public **⁠<any> (?)⁠**
      - :ref:`getDictionary <io_realm_DynamicRealmObject_getDictionary_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
-       Returns the **RealmDictionary (?)** of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
+       Returns the **⁠RealmDictionary (?)⁠** of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
        
        
        
        
        
    
-   * - public **<any> (?)**
-     - :ref:`getDictionary <io_realm_DynamicRealmObject_getDictionary_String__Class_E__>` <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
+   * - public **⁠<any> (?)⁠**
+     - :ref:`getDictionary <io_realm_DynamicRealmObject_getDictionary_String__Class_E__>` <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
        
-       Returns the **RealmDictionary (?)** containing only primitive values.
+       Returns the **⁠RealmDictionary (?)⁠** containing only primitive values.
        
        
        
        
        
    
-   * - public **<any> (?)**
+   * - public **⁠<any> (?)⁠**
      - :ref:`getRealmSet <io_realm_DynamicRealmObject_getRealmSet_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
-       Returns the **RealmSet (?)** of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
+       Returns the **⁠RealmSet (?)⁠** of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
        
        
        
        
        
    
-   * - public **<any> (?)**
-     - :ref:`getRealmSet <io_realm_DynamicRealmObject_getRealmSet_String__Class_E__>` <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
+   * - public **⁠<any> (?)⁠**
+     - :ref:`getRealmSet <io_realm_DynamicRealmObject_getRealmSet_String__Class_E__>` <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
        
-       Returns the **RealmSet (?)** containing only primitive values.
+       Returns the **⁠RealmSet (?)⁠** containing only primitive values.
        
        
        
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`isNull <io_realm_DynamicRealmObject_isNull_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Checks if the value of a given field is ``null``.
@@ -255,7 +255,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`hasField <io_realm_DynamicRealmObject_hasField_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Checks whether an object has the given field or not.
@@ -271,7 +271,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`set <io_realm_DynamicRealmObject_set_String__Object_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ value)
        
        Sets the value for the given field.
@@ -279,8 +279,8 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`setBoolean <io_realm_DynamicRealmObject_setBoolean_String__boolean_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean** value)
+   * - public **⁠void⁠**
+     - :ref:`setBoolean <io_realm_DynamicRealmObject_setBoolean_String__boolean_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠boolean⁠** value)
        
        Sets the ``boolean`` value of the given field.
        
@@ -289,8 +289,8 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`setShort <io_realm_DynamicRealmObject_setShort_String__short_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **short** value)
+   * - public **⁠void⁠**
+     - :ref:`setShort <io_realm_DynamicRealmObject_setShort_String__short_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠short⁠** value)
        
        Sets the ``short`` value of the given field.
        
@@ -299,8 +299,8 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`setInt <io_realm_DynamicRealmObject_setInt_String__int_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **int** value)
+   * - public **⁠void⁠**
+     - :ref:`setInt <io_realm_DynamicRealmObject_setInt_String__int_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠int⁠** value)
        
        Sets the ``int`` value of the given field.
        
@@ -309,8 +309,8 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`setLong <io_realm_DynamicRealmObject_setLong_String__long_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **long** value)
+   * - public **⁠void⁠**
+     - :ref:`setLong <io_realm_DynamicRealmObject_setLong_String__long_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠long⁠** value)
        
        Sets the ``long`` value of the given field.
        
@@ -319,8 +319,8 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`setByte <io_realm_DynamicRealmObject_setByte_String__byte_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **byte** value)
+   * - public **⁠void⁠**
+     - :ref:`setByte <io_realm_DynamicRealmObject_setByte_String__byte_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠byte⁠** value)
        
        Sets the ``byte`` value of the given field.
        
@@ -329,8 +329,8 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`setFloat <io_realm_DynamicRealmObject_setFloat_String__float_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **float** value)
+   * - public **⁠void⁠**
+     - :ref:`setFloat <io_realm_DynamicRealmObject_setFloat_String__float_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠float⁠** value)
        
        Sets the ``float`` value of the given field.
        
@@ -339,8 +339,8 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`setDouble <io_realm_DynamicRealmObject_setDouble_String__double_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **double** value)
+   * - public **⁠void⁠**
+     - :ref:`setDouble <io_realm_DynamicRealmObject_setDouble_String__double_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠double⁠** value)
        
        Sets the ``double`` value of the given field.
        
@@ -349,7 +349,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`setString <io_realm_DynamicRealmObject_setString_String__String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
        
        Sets the ``String`` value of the given field.
@@ -359,15 +359,15 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`setBlob <io_realm_DynamicRealmObject_setBlob_String__byte[]_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **byte[]** value)
+   * - public **⁠void⁠**
+     - :ref:`setBlob <io_realm_DynamicRealmObject_setBlob_String__byte[]_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠byte[]⁠** value)
        
        Sets the binary value of the given field.
        
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`setDate <io_realm_DynamicRealmObject_setDate_String__Date_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ value)
        
        Sets the ``Date`` value of the given field.
@@ -377,8 +377,8 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`setDecimal128 <io_realm_DynamicRealmObject_setDecimal128_String__Decimal128_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **Decimal128 (?)** value)
+   * - public **⁠void⁠**
+     - :ref:`setDecimal128 <io_realm_DynamicRealmObject_setDecimal128_String__Decimal128_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠Decimal128 (?)⁠** value)
        
        Sets the ``Decimal128`` value of the given field.
        
@@ -387,8 +387,8 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`setObjectId <io_realm_DynamicRealmObject_setObjectId_String__ObjectId_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **ObjectId (?)** value)
+   * - public **⁠void⁠**
+     - :ref:`setObjectId <io_realm_DynamicRealmObject_setObjectId_String__ObjectId_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠ObjectId (?)⁠** value)
        
        Sets the ``ObjectId`` value of the given field.
        
@@ -397,8 +397,8 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`setRealmAny <io_realm_DynamicRealmObject_setRealmAny_String__RealmAny_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
+   * - public **⁠void⁠**
+     - :ref:`setRealmAny <io_realm_DynamicRealmObject_setRealmAny_String__RealmAny_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠RealmAny (?)⁠** value)
        
        Sets the ``RealmAny`` value of the given field.
        
@@ -407,7 +407,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`setUUID <io_realm_DynamicRealmObject_setUUID_String__UUID_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `UUID <https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html>`__ value)
        
        Sets the ``UUID`` value of the given field.
@@ -417,7 +417,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`setObject <io_realm_DynamicRealmObject_setObject_String__DynamicRealmObject_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` value)
        
        Sets a reference to another object on the given field.
@@ -425,8 +425,8 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`setList <io_realm_DynamicRealmObject_setList_String__RealmList_E__>` <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
+   * - public **⁠void⁠**
+     - :ref:`setList <io_realm_DynamicRealmObject_setList_String__RealmList_E__>` <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
        
        Sets the reference to a :ref:`RealmList <io_realm_RealmList>` on the given field.
        
@@ -435,27 +435,27 @@ Method Summary
        
        
    
-   * - public **void**
-     - :ref:`setDictionary <io_realm_DynamicRealmObject_setDictionary_String___any__>` <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **<any> (?)** dictionary)
+   * - public **⁠void⁠**
+     - :ref:`setDictionary <io_realm_DynamicRealmObject_setDictionary_String___any__>` <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠<any> (?)⁠** dictionary)
        
-       Sets the reference to a **RealmDictionary (?)** on the given field.
-       
-       
-       
-       
-       
-   
-   * - public **void**
-     - :ref:`setRealmSet <io_realm_DynamicRealmObject_setRealmSet_String___any__>` <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **<any> (?)** set)
-       
-       Sets the reference to a **RealmSet (?)** on the given field.
+       Sets the reference to a **⁠RealmDictionary (?)⁠** on the given field.
        
        
        
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
+     - :ref:`setRealmSet <io_realm_DynamicRealmObject_setRealmSet_String___any__>` <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠<any> (?)⁠** set)
+       
+       Sets the reference to a **⁠RealmSet (?)⁠** on the given field.
+       
+       
+       
+       
+       
+   
+   * - public **⁠void⁠**
      - :ref:`setNull <io_realm_DynamicRealmObject_setNull_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Sets the value to ``null`` for the given field.
@@ -481,7 +481,7 @@ Method Summary
        
        
    
-   * - public **int**
+   * - public **⁠int⁠**
      - :ref:`hashCode <io_realm_DynamicRealmObject_hashCode__>` ()
        
        Returns a hash code value for the :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object.
@@ -491,7 +491,7 @@ Method Summary
        
        
    
-   * - public **boolean**
+   * - public **⁠boolean⁠**
      - :ref:`equals <io_realm_DynamicRealmObject_equals_Object_>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
@@ -527,7 +527,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`realm$injectObjectContext <io_realm_DynamicRealmObject_realm_injectObjectContext__>` ()
        
        
@@ -552,8 +552,8 @@ get
 
 .. _io_realm_DynamicRealmObject_get_String_:
 
-public **E (?)** get <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠E (?)⁠** get <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the value for the given field.
 Parameters
@@ -570,8 +570,8 @@ getBoolean
 
 .. _io_realm_DynamicRealmObject_getBoolean_String_:
 
-public **boolean** getBoolean (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** getBoolean (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the ``boolean`` value for a given field.
 
@@ -594,8 +594,8 @@ getInt
 
 .. _io_realm_DynamicRealmObject_getInt_String_:
 
-public **int** getInt (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠int⁠** getInt (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the ``int`` value for a given field.
 
@@ -618,8 +618,8 @@ getShort
 
 .. _io_realm_DynamicRealmObject_getShort_String_:
 
-public **short** getShort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠short⁠** getShort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the ``short`` value for a given field.
 
@@ -642,8 +642,8 @@ getLong
 
 .. _io_realm_DynamicRealmObject_getLong_String_:
 
-public **long** getLong (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠long⁠** getLong (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the ``long`` value for a given field.
 
@@ -666,8 +666,8 @@ getByte
 
 .. _io_realm_DynamicRealmObject_getByte_String_:
 
-public **byte** getByte (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠byte⁠** getByte (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the ``byte`` value for a given field.
 
@@ -690,8 +690,8 @@ getFloat
 
 .. _io_realm_DynamicRealmObject_getFloat_String_:
 
-public **float** getFloat (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠float⁠** getFloat (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the ``float`` value for a given field.
 
@@ -714,8 +714,8 @@ getDouble
 
 .. _io_realm_DynamicRealmObject_getDouble_String_:
 
-public **double** getDouble (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠double⁠** getDouble (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the ``double`` value for a given field.
 
@@ -738,8 +738,8 @@ getBlob
 
 .. _io_realm_DynamicRealmObject_getBlob_String_:
 
-public **byte** getBlob (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠byte⁠** getBlob (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the ``byte[]`` value for a given field.
 
@@ -798,8 +798,8 @@ getDecimal128
 
 .. _io_realm_DynamicRealmObject_getDecimal128_String_:
 
-public **Decimal128 (?)** getDecimal128 (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠Decimal128 (?)⁠** getDecimal128 (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the ``Decimal128`` value for a given field.
 
@@ -818,8 +818,8 @@ getObjectId
 
 .. _io_realm_DynamicRealmObject_getObjectId_String_:
 
-public **ObjectId (?)** getObjectId (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠ObjectId (?)⁠** getObjectId (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the ``ObjectId`` value for a given field.
 
@@ -838,8 +838,8 @@ getRealmAny
 
 .. _io_realm_DynamicRealmObject_getRealmAny_String_:
 
-public **RealmAny (?)** getRealmAny (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠RealmAny (?)⁠** getRealmAny (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the ``RealmAny`` value for a given field.
 
@@ -901,7 +901,7 @@ public :ref:`RealmList <io_realm_RealmList>` getList (`String <https://docs.orac
 
 Returns the :ref:`RealmList <io_realm_RealmList>` of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
 
-If the list contains primitive types, use **#getList(String, Class) (?)** instead.
+If the list contains primitive types, use **⁠#getList(String, Class) (?)⁠** instead.
 
 
 
@@ -917,8 +917,8 @@ ______
 
 .. _io_realm_DynamicRealmObject_getList_String__Class_E__:
 
-public :ref:`RealmList <io_realm_RealmList>` getList <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`RealmList <io_realm_RealmList>` getList <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns the :ref:`RealmList <io_realm_RealmList>` containing only primitive values.
 
@@ -943,12 +943,12 @@ getDictionary
 
 .. _io_realm_DynamicRealmObject_getDictionary_String_:
 
-public **<any> (?)** getDictionary (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠<any> (?)⁠** getDictionary (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **RealmDictionary (?)** of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
+Returns the **⁠RealmDictionary (?)⁠** of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
 
-If the dictionary contains primitive types, use **#getDictionary(String, Class) (?)** instead.
+If the dictionary contains primitive types, use **⁠#getDictionary(String, Class) (?)⁠** instead.
 
 
 
@@ -964,10 +964,10 @@ ______
 
 .. _io_realm_DynamicRealmObject_getDictionary_String__Class_E__:
 
-public **<any> (?)** getDictionary <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠<any> (?)⁠** getDictionary <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **RealmDictionary (?)** containing only primitive values.
+Returns the **⁠RealmDictionary (?)⁠** containing only primitive values.
 
 If the dictionary contains references to other Realm objects, use :ref:`#getDictionary(String) <io_realm_DynamicRealmObject_getDictionary_String_>` instead.
 
@@ -990,12 +990,12 @@ getRealmSet
 
 .. _io_realm_DynamicRealmObject_getRealmSet_String_:
 
-public **<any> (?)** getRealmSet (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠<any> (?)⁠** getRealmSet (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **RealmSet (?)** of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
+Returns the **⁠RealmSet (?)⁠** of :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s being linked from the given field.
 
-If the set contains primitive types, use **#getRealmSet(String, Class) (?)** instead.
+If the set contains primitive types, use **⁠#getRealmSet(String, Class) (?)⁠** instead.
 
 
 
@@ -1011,10 +1011,10 @@ ______
 
 .. _io_realm_DynamicRealmObject_getRealmSet_String__Class_E__:
 
-public **<any> (?)** getRealmSet <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠<any> (?)⁠** getRealmSet <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<E> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the **RealmSet (?)** containing only primitive values.
+Returns the **⁠RealmSet (?)⁠** containing only primitive values.
 
 If the set contains references to other Realm objects, use :ref:`#getRealmSet(String) <io_realm_DynamicRealmObject_getRealmSet_String_>` instead.
 
@@ -1037,8 +1037,8 @@ isNull
 
 .. _io_realm_DynamicRealmObject_isNull_String_:
 
-public **boolean** isNull (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** isNull (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the value of a given field is ``null``.
 
@@ -1057,8 +1057,8 @@ hasField
 
 .. _io_realm_DynamicRealmObject_hasField_String_:
 
-public **boolean** hasField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** hasField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks whether an object has the given field or not.
 Parameters
@@ -1081,8 +1081,8 @@ set
 
 .. _io_realm_DynamicRealmObject_set_String__Object_:
 
-public **void** set (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** set (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the value for the given field. This method will automatically try to convert numbers and booleans that are given as ``String`` to their appropriate type. For example ``"10"`` will be converted to ``10`` if the field type is ``int``.
 
@@ -1097,8 +1097,8 @@ setBoolean
 
 .. _io_realm_DynamicRealmObject_setBoolean_String__boolean_:
 
-public **void** setBoolean (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean** value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setBoolean (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠boolean⁠** value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the ``boolean`` value of the given field.
 
@@ -1119,8 +1119,8 @@ setShort
 
 .. _io_realm_DynamicRealmObject_setShort_String__short_:
 
-public **void** setShort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **short** value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setShort (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠short⁠** value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the ``short`` value of the given field.
 
@@ -1141,8 +1141,8 @@ setInt
 
 .. _io_realm_DynamicRealmObject_setInt_String__int_:
 
-public **void** setInt (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **int** value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setInt (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠int⁠** value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the ``int`` value of the given field.
 
@@ -1163,8 +1163,8 @@ setLong
 
 .. _io_realm_DynamicRealmObject_setLong_String__long_:
 
-public **void** setLong (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **long** value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setLong (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠long⁠** value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the ``long`` value of the given field.
 
@@ -1185,8 +1185,8 @@ setByte
 
 .. _io_realm_DynamicRealmObject_setByte_String__byte_:
 
-public **void** setByte (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **byte** value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setByte (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠byte⁠** value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the ``byte`` value of the given field.
 
@@ -1207,8 +1207,8 @@ setFloat
 
 .. _io_realm_DynamicRealmObject_setFloat_String__float_:
 
-public **void** setFloat (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **float** value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setFloat (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠float⁠** value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the ``float`` value of the given field.
 
@@ -1229,8 +1229,8 @@ setDouble
 
 .. _io_realm_DynamicRealmObject_setDouble_String__double_:
 
-public **void** setDouble (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **double** value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setDouble (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠double⁠** value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the ``double`` value of the given field.
 
@@ -1251,8 +1251,8 @@ setString
 
 .. _io_realm_DynamicRealmObject_setString_String__String_:
 
-public **void** setString (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setString (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the ``String`` value of the given field.
 
@@ -1273,8 +1273,8 @@ setBlob
 
 .. _io_realm_DynamicRealmObject_setBlob_String__byte[]_:
 
-public **void** setBlob (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **byte[]** value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setBlob (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠byte[]⁠** value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the binary value of the given field.
 Parameters
@@ -1293,8 +1293,8 @@ setDate
 
 .. _io_realm_DynamicRealmObject_setDate_String__Date_:
 
-public **void** setDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setDate (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the ``Date`` value of the given field.
 
@@ -1315,8 +1315,8 @@ setDecimal128
 
 .. _io_realm_DynamicRealmObject_setDecimal128_String__Decimal128_:
 
-public **void** setDecimal128 (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **Decimal128 (?)** value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setDecimal128 (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠Decimal128 (?)⁠** value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the ``Decimal128`` value of the given field.
 
@@ -1337,8 +1337,8 @@ setObjectId
 
 .. _io_realm_DynamicRealmObject_setObjectId_String__ObjectId_:
 
-public **void** setObjectId (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **ObjectId (?)** value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setObjectId (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠ObjectId (?)⁠** value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the ``ObjectId`` value of the given field.
 
@@ -1359,8 +1359,8 @@ setRealmAny
 
 .. _io_realm_DynamicRealmObject_setRealmAny_String__RealmAny_:
 
-public **void** setRealmAny (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setRealmAny (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠RealmAny (?)⁠** value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the ``RealmAny`` value of the given field.
 
@@ -1381,8 +1381,8 @@ setUUID
 
 .. _io_realm_DynamicRealmObject_setUUID_String__UUID_:
 
-public **void** setUUID (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `UUID <https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html>`__ value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setUUID (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `UUID <https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html>`__ value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the ``UUID`` value of the given field.
 
@@ -1403,8 +1403,8 @@ setObject
 
 .. _io_realm_DynamicRealmObject_setObject_String__DynamicRealmObject_:
 
-public **void** setObject (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setObject (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets a reference to another object on the given field.
 Parameters
@@ -1423,8 +1423,8 @@ setList
 
 .. _io_realm_DynamicRealmObject_setList_String__RealmList_E__:
 
-public **void** setList <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setList <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`io.realm.RealmList\<E> <io_realm_RealmList>` list)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the reference to a :ref:`RealmList <io_realm_RealmList>` on the given field.
 
@@ -1451,10 +1451,10 @@ setDictionary
 
 .. _io_realm_DynamicRealmObject_setDictionary_String___any__:
 
-public **void** setDictionary <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **<any> (?)** dictionary)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setDictionary <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠<any> (?)⁠** dictionary)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sets the reference to a **RealmDictionary (?)** on the given field.
+Sets the reference to a **⁠RealmDictionary (?)⁠** on the given field.
 
 This will copy all the elements in the dictionary into Realm, but any further changes to the dictionary will not be reflected in the Realm. Use :ref:`#getDictionary(String) <io_realm_DynamicRealmObject_getDictionary_String_>` in order to get a reference to the managed dictionary.
 
@@ -1479,10 +1479,10 @@ setRealmSet
 
 .. _io_realm_DynamicRealmObject_setRealmSet_String___any__:
 
-public **void** setRealmSet <**E (?)** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **<any> (?)** set)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setRealmSet <**⁠E (?)⁠** >(`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠<any> (?)⁠** set)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sets the reference to a **RealmSet (?)** on the given field.
+Sets the reference to a **⁠RealmSet (?)⁠** on the given field.
 
 This will copy all the elements in the set into Realm, but any further changes to the set will not be reflected in the Realm. Use :ref:`#getRealmSet(String) <io_realm_DynamicRealmObject_getRealmSet_String_>` in order to get a reference to the managed set.
 
@@ -1507,8 +1507,8 @@ setNull
 
 .. _io_realm_DynamicRealmObject_setNull_String_:
 
-public **void** setNull (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** setNull (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the value to ``null`` for the given field.
 
@@ -1547,12 +1547,12 @@ hashCode
 
 .. _io_realm_DynamicRealmObject_hashCode__:
 
-public **int** hashCode ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠int⁠** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns a hash code value for the :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` object.
 
-By the general contract of `Object#hashCode() <https://docs.oracle.com/javase/7/docs/api/java/lang/Object/hashCode().html>`__, any two objects for which **#equals (?)** returns ``true`` must return the same hash code value.
+By the general contract of `Object#hashCode() <https://docs.oracle.com/javase/7/docs/api/java/lang/Object/hashCode().html>`__, any two objects for which **⁠#equals (?)⁠** returns ``true`` must return the same hash code value.
 
 
 
@@ -1571,8 +1571,8 @@ equals
 
 .. _io_realm_DynamicRealmObject_equals_Object_:
 
-public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠boolean⁠** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 toString
@@ -1620,7 +1620,7 @@ public :ref:`DynamicRealm <io_realm_DynamicRealm>` getDynamicRealm ()
 
 Returns :ref:`DynamicRealm <io_realm_DynamicRealm>` instance where this :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` belongs.
 
-You **must not** call **DynamicRealm#close() (?)** against returned instance.
+You **⁠must not⁠** call **⁠DynamicRealm#close() (?)⁠** against returned instance.
 
 
 
@@ -1633,8 +1633,8 @@ realm$injectObjectContext
 
 .. _io_realm_DynamicRealmObject_realm_injectObjectContext__:
 
-public **void** realm$injectObjectContext ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** realm$injectObjectContext ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 realmGet$proxyState

@@ -29,7 +29,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`registerDevice <io_realm_mongodb_push_Push_registerDevice_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ registrationToken)
        
        Registers the given FCM registration token with the currently logged in user's device on MongoDB Realm.
@@ -45,7 +45,7 @@ Method Summary
        
        
    
-   * - public **void**
+   * - public **⁠void⁠**
      - :ref:`deregisterDevice <io_realm_mongodb_push_Push_deregisterDevice__>` ()
        
        Deregisters the FCM registration token bound to the currently logged in user's device on MongoDB Realm.
@@ -70,8 +70,8 @@ registerDevice
 
 .. _io_realm_mongodb_push_Push_registerDevice_String_:
 
-public **void** registerDevice (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ registrationToken)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** registerDevice (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ registrationToken)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Registers the given FCM registration token with the currently logged in user's device on MongoDB Realm.
 Parameters
@@ -102,8 +102,8 @@ deregisterDevice
 
 .. _io_realm_mongodb_push_Push_deregisterDevice__:
 
-public **void** deregisterDevice ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **⁠void⁠** deregisterDevice ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deregisters the FCM registration token bound to the currently logged in user's device on MongoDB Realm.
 deregisterDeviceAsync
