@@ -11,8 +11,10 @@ io.realm.mongodb.sync.SyncConfiguration
 .. _io_realm_mongodb_sync_SyncConfiguration:
 
 *Superclass:*
-
 - :ref:`io.realm.RealmConfiguration <io_realm_RealmConfiguration>`
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 A :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` is used to setup a Realm Database that can be synchronized between devices using MongoDB Realm.
 
@@ -39,6 +41,7 @@ A minimal :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` can
  
 
 Synchronized Realms only support additive migrations which can be detected and performed automatically, so the following builder options are not accessible compared to a normal Realm:
+
 
 - ``deleteRealmIfMigrationNeeded()``
    
@@ -278,6 +281,7 @@ Returns a :ref:`RealmConfiguration <io_realm_RealmConfiguration>` appropriate to
 Parameters
 __________
 
+
 - ``canonicalPath - ``the absolute path to the Realm file defined by this configuration.
    
 - ``encryptionKey - ``the key used to encrypt/decrypt the Realm file.
@@ -296,6 +300,7 @@ Returns a :ref:`RealmConfiguration <io_realm_RealmConfiguration>` appropriate to
 Parameters
 __________
 
+
 - ``canonicalPath - ``the absolute path to the Realm file defined by this configuration.
    
 
@@ -311,6 +316,7 @@ Returns a default configuration for the given user and partition value.
 Parameters
 __________
 
+
 - ``user - ``The user that will be used for accessing the Realm App.
    
 - ``partitionValue - ``The partition value identifying the remote Realm that will be synchronized.
@@ -324,6 +330,7 @@ public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`
 Returns a default configuration for the given user and partition value.
 Parameters
 __________
+
 
 - ``user - ``The user that will be used for accessing the Realm App.
    
@@ -339,6 +346,7 @@ Returns a default configuration for the given user and partition value.
 Parameters
 __________
 
+
 - ``user - ``The user that will be used for accessing the Realm App.
    
 - ``partitionValue - ``The partition value identifying the remote Realm that will be synchronized.
@@ -352,6 +360,7 @@ public static :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`
 Returns a default configuration for the given user and partition value.
 Parameters
 __________
+
 
 - ``user - ``The user that will be used for accessing the Realm App.
    

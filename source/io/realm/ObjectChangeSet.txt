@@ -10,6 +10,10 @@ io.realm.ObjectChangeSet
 
 .. _io_realm_ObjectChangeSet:
 
+*Superclass:*
+
+
+
 Information about the changes made to an object.
 Method Summary
 ==============
@@ -77,6 +81,7 @@ public **boolean** isFieldChanged (`String <https://docs.oracle.com/javase/7/doc
 Checks if a given field has been changed.
 Parameters
 __________
+
 
 - ``fieldName - ``to be checked if its value has been changed.
    

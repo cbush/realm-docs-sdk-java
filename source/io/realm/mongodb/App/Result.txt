@@ -11,8 +11,9 @@ io.realm.mongodb.App.Result<T>
 .. _io_realm_mongodb_App_Result:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 Result class representing the result of an async request from this app towards MongoDB Realm.
 Method Summary
@@ -113,6 +114,7 @@ Creates a successful request result with a return value.
 Parameters
 __________
 
+
 - ``result - ``the result value.
    
 
@@ -127,6 +129,7 @@ public static :ref:`App.Result <io_realm_mongodb_App_Result>` withError <**T (?)
 Creates a failed request result. The request failed for some reason, either because there was a network error or the Realm Object Server returned an error.
 Parameters
 __________
+
 
 - ``exception - ``error that occurred.
    

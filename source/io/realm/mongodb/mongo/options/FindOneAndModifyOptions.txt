@@ -11,12 +11,14 @@ io.realm.mongodb.mongo.options.FindOneAndModifyOptions
 .. _io_realm_mongodb_mongo_options_FindOneAndModifyOptions:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 The options to apply to a findOneAndUpdate, findOneAndReplace, or findOneAndDelete operation (also commonly referred to as findOneAndModify operations).
 Constructors
 ============
+
 
 - ``io.realm.mongodb.mongo.options.FindOneAndModifyOptions()``
 
@@ -126,6 +128,7 @@ Sets a document describing the fields to return for all matching documents.
 Parameters
 __________
 
+
 - ``projection - ``the project document, which may be null.
    
 
@@ -149,6 +152,7 @@ public :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndM
 Sets the sort criteria to apply to the query.
 Parameters
 __________
+
 
 - ``sort - ``the sort criteria, which may be null.
    
@@ -174,6 +178,7 @@ Set to true if a new document should be inserted if there are no matches to the 
 Parameters
 __________
 
+
 - ``upsert - ``true if a new document should be inserted if there are no matches to the query filter.
    
 
@@ -197,6 +202,7 @@ public :ref:`FindOneAndModifyOptions <io_realm_mongodb_mongo_options_FindOneAndM
 Set to true if findOneAndModify operations should return the new updated document. Set to false / leave blank to have these operation return the document before the update. Note: Only findOneAndUpdate and findOneAndReplace take this options findOneAndDelete will always return the old document
 Parameters
 __________
+
 
 - ``returnNewDocument - ``true if findOneAndModify operations should return the updated document
    

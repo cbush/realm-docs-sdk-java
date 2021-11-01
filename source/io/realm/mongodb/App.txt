@@ -11,10 +11,12 @@ io.realm.mongodb.App
 .. _io_realm_mongodb_App:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
+
+
 An *App* is the main client-side entry point for interacting with a *MongoDB Realm App*.The *App* can be used to:
+
 
 - Register uses and perform various user-related operations through authentication providers (:ref:`io.realm.mongodb.auth.ApiKeyAuth <io_realm_mongodb_auth_ApiKeyAuth>`, **EmailPasswordAuthImpl (?)**)
    
@@ -123,6 +125,7 @@ And access collections from the remote Realm App as shown here:
 
 Constructors
 ============
+
 
 - ``io.realm.mongodb.App(String)``
 - ``io.realm.mongodb.App(AppConfiguration)``
@@ -363,6 +366,7 @@ Switch current user.The current user is the user returned by :ref:`#currentUser(
 Parameters
 __________
 
+
 - ``user - ``the new current user.
    
 
@@ -380,6 +384,7 @@ public :ref:`User <io_realm_mongodb_User>` removeUser (:ref:`User <io_realm_mong
 Removes a users credentials from this device. If the user was currently logged in, they will be logged out as part of the process. This is only a local change and does not affect the user state on the server.
 Parameters
 __________
+
 
 - ``user - ``to remove
    
@@ -409,6 +414,7 @@ It is also possible to switch between which user is considered the current user 
 Parameters
 __________
 
+
 - ``credentials - ``the credentials representing the type of login.
    
 
@@ -436,6 +442,7 @@ It is also possible to switch between which user is considered the current user 
 
 Parameters
 __________
+
 
 - ``credentials - ``the credentials representing the type of login.
    
@@ -470,6 +477,7 @@ Sets a global authentication listener that will be notified about User events li
 Parameters
 __________
 
+
 - ``listener - ``listener to register.
    
 
@@ -487,6 +495,7 @@ public **void** removeAuthenticationListener (:ref:`AuthenticationListener <io_r
 Removes the provided global authentication listener.
 Parameters
 __________
+
 
 - ``listener - ``listener to remove.
    

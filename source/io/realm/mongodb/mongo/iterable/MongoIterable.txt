@@ -11,8 +11,9 @@ io.realm.mongodb.mongo.iterable.MongoIterable<ResultT>
 .. _io_realm_mongodb_mongo_iterable_MongoIterable:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 The MongoIterable is the results from an operation, such as a ``find()`` or an ``aggregate()`` query.
 

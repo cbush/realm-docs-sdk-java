@@ -10,6 +10,10 @@ io.realm.mongodb.sync.ConnectionListener
 
 .. _io_realm_mongodb_sync_ConnectionListener:
 
+*Superclass:*
+
+
+
 Interface used when reporting changes that happened to the connection used by the session.Multiple sessions might re-use the same connection. In that case, any connection change will be reported to all sessions.
 
 If a disconnect happened due to an error, that error will be reported to the sessions :ref:`SyncSession.ErrorHandler <io_realm_mongodb_sync_SyncSession_ErrorHandler>`.
@@ -49,6 +53,7 @@ public **void** onChange (:ref:`ConnectionState <io_realm_mongodb_sync_Connectio
 A change in the connection to the server was detected.
 Parameters
 __________
+
 
 - ``oldState - ``the state the connection transitioned from.
    

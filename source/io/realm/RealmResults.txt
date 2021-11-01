@@ -11,8 +11,12 @@ io.realm.RealmResults<E>
 .. _io_realm_RealmResults:
 
 *Superclass:*
-
 - **io.realm.OrderedRealmCollectionImpl (?)**
+- `java.util.AbstractList <https://docs.oracle.com/javase/7/docs/api/java/util/AbstractList.html>`__
+- `java.util.AbstractCollection <https://docs.oracle.com/javase/7/docs/api/java/util/AbstractCollection.html>`__
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 This class holds all the matches of a :ref:`RealmQuery <io_realm_RealmQuery>` for a given Realm. The objects are not copied from the Realm to the RealmResults list, but are just referenced from the RealmResult instead. This saves memory and increases speed.
 
@@ -408,6 +412,7 @@ Using the typed setters like :ref:`#setInt(String, int) <io_realm_RealmResults_s
 Parameters
 __________
 
+
 - ``fieldName - ``field to update
    
 - ``value - ``value to update with.
@@ -430,6 +435,7 @@ Sets the value to ``null`` for the given field in all of the objects in the coll
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field to update.
    
 
@@ -449,6 +455,7 @@ Sets the ``boolean`` value of the given field in all of the objects in the colle
 
 Parameters
 __________
+
 
 - ``fieldName - ``name of the field to update.
    
@@ -472,6 +479,7 @@ Sets the ``byte`` value of the given field in all of the objects in the collecti
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field to update.
    
 - ``value - ``new value for the field.
@@ -493,6 +501,7 @@ Sets the ``short`` value of the given field in all of the objects in the collect
 
 Parameters
 __________
+
 
 - ``fieldName - ``name of the field to update.
    
@@ -516,6 +525,7 @@ Sets the ``int`` value of the given field in all of the objects in the collectio
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field to update.
    
 - ``value - ``new value for the field.
@@ -537,6 +547,7 @@ Sets the ``long`` value of the given field in all of the objects in the collecti
 
 Parameters
 __________
+
 
 - ``fieldName - ``name of the field to update.
    
@@ -560,6 +571,7 @@ Sets the ``float`` value of the given field in all of the objects in the collect
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field to update.
    
 - ``value - ``new value for the field.
@@ -581,6 +593,7 @@ Sets the ``double`` value of the given field in all of the objects in the collec
 
 Parameters
 __________
+
 
 - ``fieldName - ``name of the field to update.
    
@@ -604,6 +617,7 @@ Sets the ``String`` value of the given field in all of the objects in the collec
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field to update.
    
 - ``value - ``new value for the field.
@@ -623,6 +637,7 @@ public **void** setBlob (`String <https://docs.oracle.com/javase/7/docs/api/java
 Sets the binary value of the given field in all of the objects in the collection.
 Parameters
 __________
+
 
 - ``fieldName - ``name of the field to update.
    
@@ -646,6 +661,7 @@ Sets the ``Date`` value of the given field in all of the objects in the collecti
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field to update.
    
 - ``value - ``new value for the field.
@@ -665,6 +681,7 @@ public **void** setObject (`String <https://docs.oracle.com/javase/7/docs/api/ja
 Sets a reference to another object on the given field in all of the objects in the collection.
 Parameters
 __________
+
 
 - ``fieldName - ``name of the field to update.
    
@@ -688,6 +705,7 @@ Sets the ``Decimal128`` value of the given field in all of the objects in the co
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field to update.
    
 - ``value - ``new value for the field.
@@ -709,6 +727,7 @@ Sets the ``ObjectId`` value of the given field in all of the objects in the coll
 
 Parameters
 __________
+
 
 - ``fieldName - ``name of the field to update.
    
@@ -732,6 +751,7 @@ Sets the ``UUID`` value of the given field in all of the objects in the collecti
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field to update.
    
 - ``value - ``new value for the field.
@@ -751,6 +771,7 @@ public **void** setList <**T (?)** >(`String <https://docs.oracle.com/javase/7/d
 Replaces the RealmList at the given field on all objects in this collection.
 Parameters
 __________
+
 
 - ``fieldName - ``name of the field to update.
    
@@ -824,6 +845,7 @@ Registering a change listener will not prevent the underlying RealmResults from 
 Parameters
 __________
 
+
 - ``listener - ``the change listener to be notified.
    
 
@@ -869,6 +891,7 @@ Registering a change listener will not prevent the underlying RealmResults from 
 Parameters
 __________
 
+
 - ``listener - ``the change listener to be notified.
    
 
@@ -904,6 +927,7 @@ Removes the specified change listener.
 Parameters
 __________
 
+
 - ``listener - ``the change listener to be removed.
    
 
@@ -923,6 +947,7 @@ public **void** removeChangeListener (:ref:`io.realm.OrderedRealmCollectionChang
 Removes the specified change listener.
 Parameters
 __________
+
 
 - ``listener - ``the change listener to be removed.
    

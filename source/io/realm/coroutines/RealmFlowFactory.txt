@@ -11,10 +11,12 @@ io.realm.coroutines.RealmFlowFactory
 .. _io_realm_coroutines_RealmFlowFactory:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
+
+
 *Implemented interfaces:*
+
 
 - :ref:`io.realm.coroutines.FlowFactory <io_realm_coroutines_FlowFactory>`
 
@@ -27,6 +29,7 @@ This class is used by default unless overridden in :ref:`io.realm.RealmConfigura
 
 Constructors
 ============
+
 
 - ``io.realm.coroutines.RealmFlowFactory(Boolean)``
 

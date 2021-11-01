@@ -11,14 +11,16 @@ io.realm.mongodb.AppConfiguration.Builder
 .. _io_realm_mongodb_AppConfiguration_Builder:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 Builder used to construct instances of a :ref:`AppConfiguration <io_realm_mongodb_AppConfiguration>` in a fluent manner.
 
 
 Constructors
 ============
+
 
 - ``io.realm.mongodb.AppConfiguration.Builder(String)``
 
@@ -165,6 +167,7 @@ Sets the encryption key used to encrypt user meta data only. Individual Realms n
 Parameters
 __________
 
+
 - ``key - ``a 64 byte encryption key.
    
 
@@ -185,6 +188,7 @@ Sets the base url for the MongoDB Realm Application. The default value is **#DEF
 Parameters
 __________
 
+
 - ``baseUrl - ``the base url for the MongoDB Realm application.
    
 
@@ -200,6 +204,7 @@ Sets the apps name. This is only used as part of debug headers sent when making 
 Parameters
 __________
 
+
 - ``appName - ``app name used to identify the application.
    
 
@@ -214,6 +219,7 @@ public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder
 Sets the apps version. This is only used as part of debug headers sent when making network requests at the MongoDB Realm application.
 Parameters
 __________
+
 
 - ``appVersion - ``app version used to identify the application.
    
@@ -231,6 +237,7 @@ Sets the default timeout used by network requests against the MongoDB Realm appl
 
 Parameters
 __________
+
 
 - ``time - ``the timeout value for network requests.
    
@@ -252,6 +259,7 @@ Sets the name of the HTTP header used to send authorization data in when making 
 
 Parameters
 __________
+
 
 - ``headerName - ``name of the header.
    
@@ -276,6 +284,7 @@ Adds an extra HTTP header to append to every request to a Realm Object Server.
 Parameters
 __________
 
+
 - ``headerName - ``the name of the header.
    
 - ``headerValue - ``the value of header.
@@ -295,6 +304,7 @@ public :ref:`AppConfiguration.Builder <io_realm_mongodb_AppConfiguration_Builder
 Adds extra HTTP headers to append to every request to a Realm Object Server.
 Parameters
 __________
+
 
 - ``headers - ``map of (headerName, headerValue) pairs.
    
@@ -318,6 +328,7 @@ Sets the default error handler used by Synced Realms when reporting errors with 
 Parameters
 __________
 
+
 - ``errorHandler - ``the default error handler.
    
 
@@ -337,6 +348,7 @@ Sets the default Client Reset handler used by Synced Realms when they report a C
 Parameters
 __________
 
+
 - ``handler - ``the default Client Reset handler.
    
 
@@ -355,6 +367,7 @@ Configures the root folder containing all files and Realms used when synchronizi
 
 Parameters
 __________
+
 
 - ``rootDir - ``where to store sync related files.
    
@@ -376,6 +389,7 @@ Will default to **#DEFAULT_BSON_CODEC_REGISTRY (?)** if not specified.
 
 Parameters
 __________
+
 
 - ``codecRegistry - ``The default codec registry for the App.
    
@@ -402,6 +416,7 @@ If left unspecified, it will default to obfuscating HTTP login requests.
 
 Parameters
 __________
+
 
 - ``httpLogObfuscator - ``the default HTTP log obfuscator for the app.
    

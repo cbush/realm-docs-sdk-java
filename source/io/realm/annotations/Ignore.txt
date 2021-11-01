@@ -10,7 +10,12 @@ io.realm.annotations.Ignore
 
 .. _io_realm_annotations_Ignore:
 
+*Superclass:*
+
+
+
 *Implemented interfaces:*
+
 
 - `java.lang.annotation.Annotation <https://docs.oracle.com/javase/7/docs/api/java/lang/annotation/Annotation.html>`__
 

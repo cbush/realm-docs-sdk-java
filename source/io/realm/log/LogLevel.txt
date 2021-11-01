@@ -11,14 +11,16 @@ io.realm.log.LogLevel
 .. _io_realm_log_LogLevel:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 The Log levels defined and used by Realm when logging events in the API.Realm uses the log levels defined by Log4J: https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/Level.html
 
 
 Constructors
 ============
+
 
 - ``io.realm.log.LogLevel()``
 

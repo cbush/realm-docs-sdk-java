@@ -11,14 +11,17 @@ io.realm.DynamicRealm.Callback
 .. _io_realm_DynamicRealm_Callback:
 
 *Superclass:*
-
 - **io.realm.BaseRealm.InstanceCallback (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 
 
 
 Constructors
 ============
+
 
 - ``io.realm.DynamicRealm.Callback()``
 

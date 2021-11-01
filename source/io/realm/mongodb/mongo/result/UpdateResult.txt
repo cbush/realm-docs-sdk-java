@@ -11,12 +11,14 @@ io.realm.mongodb.mongo.result.UpdateResult
 .. _io_realm_mongodb_mongo_result_UpdateResult:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 The result of an update operation.
 Constructors
 ============
+
 
 - ``io.realm.mongodb.mongo.result.UpdateResult(long, long, BsonValue)``
 

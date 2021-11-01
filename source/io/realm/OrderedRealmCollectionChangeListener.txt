@@ -10,6 +10,10 @@ io.realm.OrderedRealmCollectionChangeListener<T>
 
 .. _io_realm_OrderedRealmCollectionChangeListener:
 
+*Superclass:*
+
+
+
 :ref:`OrderedRealmCollectionChangeListener <io_realm_OrderedRealmCollectionChangeListener>` can be registered with a :ref:`RealmResults <io_realm_RealmResults>` to receive a notification with a :ref:`OrderedCollectionChangeSet <io_realm_OrderedCollectionChangeSet>` to describe the details of what have been changed in the collection since last time.
 
 Realm instances on a thread without an **android.os.Looper (?)** cannot register a :ref:`OrderedRealmCollectionChangeListener <io_realm_OrderedRealmCollectionChangeListener>`.
@@ -49,6 +53,7 @@ public **void** onChange (**T (?)** t, :ref:`OrderedCollectionChangeSet <io_real
 This will be called when the async query is finished the first time or the collection of objects has changed.
 Parameters
 __________
+
 
 - ``t - ``the collection this listener is registered to.
    

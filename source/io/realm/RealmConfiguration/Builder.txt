@@ -11,12 +11,14 @@ io.realm.RealmConfiguration.Builder
 .. _io_realm_RealmConfiguration_Builder:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 RealmConfiguration.Builder used to construct instances of a RealmConfiguration in a fluent manner.
 Constructors
 ============
+
 
 - ``io.realm.RealmConfiguration.Builder()``
 
@@ -234,6 +236,7 @@ Specifies the directory where the Realm file will be saved. The default value is
 Parameters
 __________
 
+
 - ``directory - ``the directory to save the Realm file in. Directory must be writable.
    
 
@@ -333,6 +336,7 @@ A reference to the default Realm module containing all Realm classes in the proj
 Parameters
 __________
 
+
 - ``baseModule - ``the first Realm module (required).
    
 - ``additionalModules - ``the additional Realm modules
@@ -369,6 +373,7 @@ Sets the :ref:`RxObservableFactory <io_realm_rx_RxObservableFactory>` used to cr
 Parameters
 __________
 
+
 - ``factory - ``factory to use.
    
 
@@ -386,6 +391,7 @@ Sets the :ref:`FlowFactory <io_realm_coroutines_FlowFactory>` used to create cor
 Parameters
 __________
 
+
 - ``factory - ``factory to use.
    
 
@@ -402,6 +408,7 @@ Sets the initial data in :ref:`io.realm.Realm <io_realm_Realm>`. This transactio
 
 Parameters
 __________
+
 
 - ``transaction - ``transaction to execute.
    
@@ -425,6 +432,7 @@ WARNING: This could potentially be a lengthy operation and should ideally be don
 
 Parameters
 __________
+
 
 - ``assetFile - ``path to the asset database file.
    
@@ -467,6 +475,7 @@ Sets this to determine if the Realm file should be compacted before returned to 
 Parameters
 __________
 
+
 - ``compactOnLaunch - ``a callback called when opening a Realm for the first time during the life of a process to determine if it should be compacted before being returned to the user. It is passed the total file size (data + free space) and the bytes used by data in the file.
    
 
@@ -487,6 +496,7 @@ Under normal circumstances this is not a problem, but if the number of active ve
 
 Parameters
 __________
+
 
 - ``number - ``the maximum number of active versions before an exception is thrown.
    

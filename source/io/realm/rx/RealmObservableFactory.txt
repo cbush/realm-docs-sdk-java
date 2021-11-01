@@ -11,16 +11,19 @@ io.realm.rx.RealmObservableFactory
 .. _io_realm_rx_RealmObservableFactory:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
+
+
 *Implemented interfaces:*
+
 
 - :ref:`io.realm.rx.RxObservableFactory <io_realm_rx_RxObservableFactory>`
 
 Factory class for creating Observables for RxJava (<=2.0.*).
 Constructors
 ============
+
 
 - ``io.realm.rx.RealmObservableFactory(boolean)``
 

@@ -11,8 +11,9 @@ io.realm.mongodb.User
 .. _io_realm_mongodb_User:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 A *user* holds the user's meta data and tokens for accessing Realm App functionality.The user is used to configure Synchronized Realms and gives access to calling Realm App *Functions* through :ref:`Functions <io_realm_mongodb_functions_Functions>` and accessing remote Realm App 
 
@@ -163,6 +164,22 @@ Method Summary
      - :ref:`linkCredentialsAsync <io_realm_mongodb_User_linkCredentialsAsync_Credentials__App_Callback_User__>` (:ref:`Credentials <io_realm_mongodb_Credentials>` credentials, :ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.User> <io_realm_mongodb_App_Callback>` callback)
        
        Links the current user with a new user identity represented by the given credentials.
+       
+       
+       
+   
+   * - public :ref:`User <io_realm_mongodb_User>`
+     - :ref:`remove <io_realm_mongodb_User_remove__>` ()
+       
+       Calling this will remove the user and any Realms the user has from the device.
+       
+       
+       
+   
+   * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
+     - :ref:`removeAsync <io_realm_mongodb_User_removeAsync_App_Callback_User__>` (:ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.User> <io_realm_mongodb_App_Callback>` callback)
+       
+       Calling this will asynchronously remove the user and any Realms the user has from the device.
        
        
        
@@ -375,6 +392,7 @@ Re-fetch custom user data from the Realm App asynchronously.This is the asynchro
 Parameters
 __________
 
+
 - ``callback - ``The callback that will receive the result or any errors from the request.
    
 
@@ -420,6 +438,7 @@ Note: It is not possible to link two existing users of MongoDB Realm. The provid
 Parameters
 __________
 
+
 - ``credentials - ``the credentials to link with the current user.
    
 
@@ -456,9 +475,41 @@ Note: It is not possible to link two existing users of MongoDB Realm. The provid
 Parameters
 __________
 
+
 - ``credentials - ``the credentials to link with the current user.
    
 - ``callback - ``callback when user identities has been linked or it failed. The callback will always happen on the same thread as this method is called on.
+   
+
+Throws
+______
+
+remove
+------
+
+.. _io_realm_mongodb_User_remove__:
+
+public :ref:`User <io_realm_mongodb_User>` remove ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Calling this will remove the user and any Realms the user has from the device. No data is removed from the server. If the user is logged in when calling this method, the user is logged out before any data is deleted.
+Throws
+______
+
+removeAsync
+-----------
+
+.. _io_realm_mongodb_User_removeAsync_App_Callback_User__:
+
+public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` removeAsync (:ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.User> <io_realm_mongodb_App_Callback>` callback)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Calling this will asynchronously remove the user and any Realms the user has from the device. No data is removed from the server. If the user is logged in when calling this method, the user is logged out before any data is deleted.
+Parameters
+__________
+
+
+- ``callback - ``callback when removing the user has completed or failed. The callback will always happen on the same thread as this method is called on.
    
 
 Throws
@@ -472,11 +523,17 @@ logOut
 public **void** logOut ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Log the user out of the Realm App. This will unregister them on the device, stop any synchronization to and from the users' Realms, and those Realms will be deleted next time the app restarts. Therefor logging out should not be done until all changes to Realms have been uploaded to the server.Once the Realm App has confirmed the logout any registered :ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` will be notified and user credentials will be deleted from this device.
+Log the user out of the Realm App. This will unregister them on the device and stop any synchronization to and from the users' Realms. Any Realms owned by the user will not be deleted from the device before :ref:`User#remove() <io_realm_mongodb_User_remove__>` is called.
+
+Once the Realm App has confirmed the logout any registered :ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` will be notified and user credentials will be deleted from this device.
 
 
 
-Logging out anonymous users will remove them immediately instead of marking them as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`. All other users will be marked as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>` and will still be returned by :ref:`App#allUsers() <io_realm_mongodb_App_allUsers__>`. They can be removed completely by calling **App#removeUser(User (?)** ()}.
+Logging out anonymous users will remove them immediately instead of marking them as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`.
+
+
+
+All other users will be marked as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>` and will still be returned by :ref:`App#allUsers() <io_realm_mongodb_App_allUsers__>`. They can be removed completely by calling :ref:`User#remove() <io_realm_mongodb_User_remove__>`.
 
 
 
@@ -492,17 +549,24 @@ logOutAsync
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` logOutAsync (:ref:`io.realm.mongodb.App.Callback\<io.realm.mongodb.User> <io_realm_mongodb_App_Callback>` callback)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Log the user out of the Realm App asynchronously. This will unregister them on the device, stop any synchronization to and from the users' Realms, and those Realms will be deleted next time the app restarts. Therefor logging out should not be done until all changes to Realms have been uploaded to the server.Once the Realm App has confirmed the logout any registered :ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` will be notified and user credentials will be deleted from this device.
+Log the user out of the Realm App asynchronously. This will unregister them on the device and stop any synchronization to and from the users' Realms. Any Realms owned by the user will not be deleted from the device before :ref:`User#remove() <io_realm_mongodb_User_remove__>` is called.
+
+Once the Realm App has confirmed the logout any registered :ref:`AuthenticationListener <io_realm_mongodb_AuthenticationListener>` will be notified and user credentials will be deleted from this device.
 
 
 
-Logging out anonymous users will remove them immediately instead of marking them as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`. All other users will be marked as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>` and will still be returned by :ref:`App#allUsers() <io_realm_mongodb_App_allUsers__>`. They can be removed completely by calling :ref:`App#removeUser(User) <io_realm_mongodb_App_removeUser_User_>` ()}.
+Logging out anonymous users will remove them immediately instead of marking them as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>`.
+
+
+
+All other users will be marked as :ref:`User.State#LOGGED_OUT <io_realm_mongodb_User_State_LOGGED_OUT>` and will still be returned by :ref:`App#allUsers() <io_realm_mongodb_App_allUsers__>`. They can be removed completely by calling :ref:`User#remove() <io_realm_mongodb_User_remove__>`.
 
 
 
 
 Parameters
 __________
+
 
 - ``callback - ``callback when logging out has completed or failed. The callback will always happen on the same thread as this method is called on.
    
@@ -547,6 +611,7 @@ Returns a *functions* manager for invoking Realm Functions with custom codec reg
 Parameters
 __________
 
+
 - ``codecRegistry - ``The codec registry to use for encoding and decoding arguments and results towards the remote Realm App.
    
 
@@ -569,6 +634,7 @@ Returns the :ref:`Push <io_realm_mongodb_push_Push>` instance for managing push 
 Parameters
 __________
 
+
 - ``serviceName - ``the service name used to connect to the server.
    
 
@@ -585,6 +651,7 @@ Returns a :ref:`MongoClient <io_realm_mongodb_mongo_MongoClient>` instance for a
 
 Parameters
 __________
+
 
 - ``serviceName - ``the service name used to connect to the server.
    

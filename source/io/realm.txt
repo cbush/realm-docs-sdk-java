@@ -58,7 +58,8 @@
    
 
 
-| - :ref:`io.realm.Case <io_realm_Case>`
+| 
+- :ref:`io.realm.Case <io_realm_Case>`
 - :ref:`io.realm.CompactOnLaunchCallback <io_realm_CompactOnLaunchCallback>`
 - :ref:`io.realm.DefaultCompactOnLaunchCallback <io_realm_DefaultCompactOnLaunchCallback>`
 - :ref:`io.realm.DynamicRealm <io_realm_DynamicRealm>`

@@ -11,8 +11,10 @@ io.realm.mongodb.ErrorCode
 .. _io_realm_mongodb_ErrorCode:
 
 *Superclass:*
-
 - `java.lang.Enum <https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html>`__
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 This class enumerate all potential errors related to using the Object Server or synchronizing data.
 Nested Class Summary
@@ -1079,6 +1081,12 @@ Enum Constant Summary
        
    
    * - :ref:`ACCOUNT_NAME_IN_USE <io_realm_mongodb_ErrorCode_ACCOUNT_NAME_IN_USE>`
+     - 
+       
+       
+       
+   
+   * - :ref:`INVALID_EMAIL_PASSWORD <io_realm_mongodb_ErrorCode_INVALID_EMAIL_PASSWORD>`
      - 
        
        
@@ -2780,6 +2788,15 @@ public static final :ref:`ErrorCode <io_realm_mongodb_ErrorCode>`
 
 
 
+.. _io_realm_mongodb_ErrorCode_INVALID_EMAIL_PASSWORD:
+
+``INVALID_EMAIL_PASSWORD``
+--------------------------
+
+public static final :ref:`ErrorCode <io_realm_mongodb_ErrorCode>`
+
+
+
 .. _io_realm_mongodb_ErrorCode_SERVICE_UNKNOWN:
 
 ``SERVICE_UNKNOWN``
@@ -2950,6 +2967,7 @@ public static :ref:`ErrorCode <io_realm_mongodb_ErrorCode>` fromNativeError (`St
 Converts a native error to the appropriate Java equivalent
 Parameters
 __________
+
 
 - ``type - ``type of error. This is normally the C++ category.
    

@@ -11,12 +11,14 @@ io.realm.mongodb.mongo.options.CountOptions
 .. _io_realm_mongodb_mongo_options_CountOptions:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 The options for a count operation.
 Constructors
 ============
+
 
 - ``io.realm.mongodb.mongo.options.CountOptions()``
 
@@ -77,6 +79,7 @@ public :ref:`CountOptions <io_realm_mongodb_mongo_options_CountOptions>` limit (
 Sets the limit to apply.
 Parameters
 __________
+
 
 - ``limit - ``the limit
    

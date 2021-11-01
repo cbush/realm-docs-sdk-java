@@ -11,8 +11,9 @@ io.realm.rx.CollectionChange<E extends io.realm.OrderedRealmCollection>
 .. _io_realm_rx_CollectionChange:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 Container wrapping the result of a :ref:`io.realm.OrderedRealmCollectionChangeListener <io_realm_OrderedRealmCollectionChangeListener>` being triggered.
 
@@ -23,6 +24,7 @@ This is used by :ref:`RealmResults#asChangesetObservable() <io_realm_RealmResult
 
 Constructors
 ============
+
 
 - ``io.realm.rx.CollectionChange(E, OrderedCollectionChangeSet)``
 

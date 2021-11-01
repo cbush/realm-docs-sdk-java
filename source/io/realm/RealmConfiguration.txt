@@ -11,8 +11,9 @@ io.realm.RealmConfiguration
 .. _io_realm_RealmConfiguration:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 A RealmConfiguration is used to setup a specific Realm instance.Instances of a RealmConfiguration can only created by using the :ref:`io.realm.RealmConfiguration.Builder <io_realm_RealmConfiguration_Builder>` and calling its :ref:`io.realm.RealmConfiguration.Builder#build() <io_realm_RealmConfiguration_Builder_build__>` method.
 
@@ -30,6 +31,7 @@ A minimal configuration can be created using:
 
 This will create a RealmConfiguration with the following properties.
 
+
 - Realm file is called "default.realm"
    
    
@@ -43,6 +45,7 @@ This will create a RealmConfiguration with the following properties.
 
 Constructors
 ============
+
 
 - ``io.realm.RealmConfiguration(File, String, byte[], long, RealmMigration, boolean, OsRealmConfig.Durability, RealmProxyMediator, RxObservableFactory, FlowFactory, Realm.Transaction, boolean, CompactOnLaunchCallback, boolean, long, boolean, boolean)``
 

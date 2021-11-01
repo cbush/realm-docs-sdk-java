@@ -11,8 +11,9 @@ io.realm.mongodb.UserProfile
 .. _io_realm_mongodb_UserProfile:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 
 Method Summary

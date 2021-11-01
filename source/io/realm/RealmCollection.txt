@@ -10,9 +10,15 @@ io.realm.RealmCollection<E>
 
 .. _io_realm_RealmCollection:
 
+*Superclass:*
+
+
+
 *Implemented interfaces:*
 
+
 - `java.util.Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__
+- `java.lang.Iterable <https://docs.oracle.com/javase/7/docs/api/java/lang/Iterable.html>`__
 
 ``RealmCollection`` is the root of the collection hierarchy that Realm supports. It defines operations on data collections and the behavior that they will have in all implementations of ``RealmCollection``s.
 
@@ -175,6 +181,7 @@ Finds the minimum value of a field.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to look for a minimum on. Only number fields are supported.
    
 
@@ -192,6 +199,7 @@ public `Number <https://docs.oracle.com/javase/7/docs/api/java/lang/Number.html>
 Finds the maximum value of a field.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to look for a maximum on. Only number fields are supported.
    
@@ -211,6 +219,7 @@ Calculates the sum of a given field.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to sum. Only number fields are supported.
    
 
@@ -228,6 +237,7 @@ public **double** average (`String <https://docs.oracle.com/javase/7/docs/api/ja
 Returns the average of a given field.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to calculate average on. Only number fields are supported.
    
@@ -247,6 +257,7 @@ Finds the maximum date.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to look for the maximum date. If fieldName is not of Date type, an exception is thrown.
    
 
@@ -264,6 +275,7 @@ public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ 
 Finds the minimum date.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to look for the minimum date. If fieldName is not of Date type, an exception is thrown.
    
@@ -338,6 +350,7 @@ Tests whether this ``Collection`` contains the specified object. Returns ``true`
 
 Parameters
 __________
+
 
 - ``object - ``the object to search for.
    

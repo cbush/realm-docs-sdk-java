@@ -27,7 +27,8 @@
    
 
 
-| - :ref:`io.realm.mongodb.sync.ConnectionListener <io_realm_mongodb_sync_ConnectionListener>`
+| 
+- :ref:`io.realm.mongodb.sync.ConnectionListener <io_realm_mongodb_sync_ConnectionListener>`
 - :ref:`io.realm.mongodb.sync.ConnectionState <io_realm_mongodb_sync_ConnectionState>`
 - :ref:`io.realm.mongodb.sync.Progress <io_realm_mongodb_sync_Progress>`
 - :ref:`io.realm.mongodb.sync.ProgressListener <io_realm_mongodb_sync_ProgressListener>`

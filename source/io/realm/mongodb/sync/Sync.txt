@@ -11,8 +11,9 @@ io.realm.mongodb.sync.Sync
 .. _io_realm_mongodb_sync_Sync:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 A *sync* manager handling synchronization of local Realms with remote Realm Apps.The primary role of this is to access the :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` for a synchronized Realm. After opening the synchronized Realm you can access the :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` and perform synchronization related operations as shown below:
 
@@ -39,6 +40,7 @@ A *sync* manager handling synchronization of local Realms with remote Realm Apps
 
 Constructors
 ============
+
 
 - ``io.realm.mongodb.sync.Sync(App, long)``
 
@@ -120,6 +122,7 @@ Gets a cached :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` for the giv
 Parameters
 __________
 
+
 - ``syncConfiguration - ``configuration object for the synchronized Realm.
    
 
@@ -150,6 +153,7 @@ Gets any cached :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` for the g
 
 Parameters
 __________
+
 
 - ``syncConfiguration - ``configuration object for the synchronized Realm.
    

@@ -11,14 +11,17 @@ io.realm.MutableRealmInteger
 .. _io_realm_MutableRealmInteger:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
+
+
 *Implemented interfaces:*
+
 
 - `java.lang.Comparable <https://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html>`__
 
 A ``MutableRealmInteger`` is a mutable, `Long <https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html>`__-like numeric quantity. It behaves almost exactly as a reference to a `Long <https://docs.oracle.com/javase/7/docs/api/java/lang/Long.html>`__. More specifically:
+
 
 - A ``MutableRealmInteger`` may have the value ``null``.
    
@@ -256,6 +259,7 @@ Creates a new, unmanaged ``MutableRealmInteger`` with the specified initial valu
 Parameters
 __________
 
+
 - ``value - ``initial value.
    
 
@@ -270,6 +274,7 @@ Creates a new, unmanaged ``MutableRealmInteger`` with the specified initial valu
 Parameters
 __________
 
+
 - ``value - ``initial value.
    
 
@@ -283,6 +288,7 @@ Creates a new, unmanaged ``MutableRealmInteger`` with the specified initial valu
 
 Parameters
 __________
+
 
 - ``value - ``initial value: parsed by `Long#parseLong <https://docs.oracle.com/javase/7/docs/api/java/lang/Long/parseLong.html>`__.
    
@@ -325,6 +331,7 @@ Sets the ``MutableRealmInteger`` value. Calling ``set`` forcibly sets the ``Muta
 Parameters
 __________
 
+
 - ``newValue - ``new value.
    
 
@@ -338,6 +345,7 @@ Sets the ``MutableRealmInteger`` value. Calling **#set (?)** forcibly sets the `
 
 Parameters
 __________
+
 
 - ``newValue - ``new value.
    
@@ -355,6 +363,7 @@ Increments the ``MutableRealmInteger``, adding the value of the argument. Increm
 
 Parameters
 __________
+
 
 - ``inc - ``quantity to be added to the ``MutableRealmInteger``.
    
@@ -374,6 +383,7 @@ Decrements the ``MutableRealmInteger``, subtracting the value of the argument. I
 
 Parameters
 __________
+
 
 - ``dec - ``quantity to be subtracted from the ``MutableRealmInteger``.
    
@@ -403,6 +413,7 @@ public final **int** compareTo (:ref:`MutableRealmInteger <io_realm_MutableRealm
 Parameters
 __________
 
+
 - ``o - ``the compare target
    
 
@@ -430,6 +441,7 @@ Two ``MutableRealmInteger``s are ``.equals`` if and only if their ``longValues``
 
 Parameters
 __________
+
 
 - ``o - ``compare target
    

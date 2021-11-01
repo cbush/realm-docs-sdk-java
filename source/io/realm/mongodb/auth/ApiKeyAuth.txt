@@ -11,12 +11,14 @@ io.realm.mongodb.auth.ApiKeyAuth
 .. _io_realm_mongodb_auth_ApiKeyAuth:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 This class exposes functionality for a user to manage API keys under their control.
 Constructors
 ============
+
 
 - ``io.realm.mongodb.auth.ApiKeyAuth(User)``
 
@@ -221,6 +223,7 @@ The key is enabled when created. It can be disabled by calling :ref:`#disable(Ob
 Parameters
 __________
 
+
 - ``name - ``the name of the key
    
 
@@ -245,6 +248,7 @@ The key is enabled when created. It can be disabled by calling :ref:`#disable(Ob
 Parameters
 __________
 
+
 - ``name - ``the name of the key
    
 - ``callback - ``callback when key creation has completed or failed. The callback will always happen on the same thread as this method is called on.
@@ -265,6 +269,7 @@ Fetches a specific user API key associated with the user.
 Parameters
 __________
 
+
 - ``id - ``the id of the key to fetch.
    
 
@@ -282,6 +287,7 @@ public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` fetchAsync (**ObjectId (?
 Fetches a specific user API key associated with the user.
 Parameters
 __________
+
 
 - ``id - ``the id of the key to fetch.
    
@@ -312,6 +318,7 @@ Fetches all API keys associated with the user.
 Parameters
 __________
 
+
 - ``callback - ``callback used when the keys were fetched or the call failed. The callback will always happen on the same thread as this method was called on.
    
 
@@ -330,6 +337,7 @@ Deletes a specific API key created by the user.
 Parameters
 __________
 
+
 - ``id - ``the id of the key to delete.
    
 
@@ -347,6 +355,7 @@ public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` deleteAsync (**ObjectId (
 Deletes a specific API key created by the user.
 Parameters
 __________
+
 
 - ``id - ``the id of the key to delete.
    
@@ -368,6 +377,7 @@ Disables a specific API key created by the user.
 Parameters
 __________
 
+
 - ``id - ``the id of the key to disable.
    
 
@@ -385,6 +395,7 @@ public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` disableAsync (**ObjectId 
 Disables a specific API key created by the user.
 Parameters
 __________
+
 
 - ``id - ``the id of the key to disable.
    
@@ -406,6 +417,7 @@ Enables a specific API key created by the user.
 Parameters
 __________
 
+
 - ``id - ``the id of the key to enable.
    
 
@@ -423,6 +435,7 @@ public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` enableAsync (**ObjectId (
 Enables a specific API key created by the user.
 Parameters
 __________
+
 
 - ``id - ``the id of the key to enable.
    

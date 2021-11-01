@@ -11,12 +11,14 @@ io.realm.mongodb.mongo.options.InsertManyResult
 .. _io_realm_mongodb_mongo_options_InsertManyResult:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 The result of an insert many operation.
 Constructors
 ============
+
 
 - ``io.realm.mongodb.mongo.options.InsertManyResult(Map<Long, BsonValue>)``
 

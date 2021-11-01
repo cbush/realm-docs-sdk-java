@@ -10,6 +10,10 @@ io.realm.mongodb.AuthenticationListener
 
 .. _io_realm_mongodb_AuthenticationListener:
 
+*Superclass:*
+
+
+
 Interface describing events related to Users and their authentication
 Method Summary
 ==============
@@ -52,6 +56,7 @@ A user was logged into the Object Server
 Parameters
 __________
 
+
 - ``user - ``:ref:`User <io_realm_mongodb_User>` that is now logged in.
    
    
@@ -68,6 +73,7 @@ public **void** loggedOut (:ref:`User <io_realm_mongodb_User>` user)
 A user was successfully logged out from the Object Server.
 Parameters
 __________
+
 
 - ``user - ``:ref:`User <io_realm_mongodb_User>` that was successfully logged out.
    

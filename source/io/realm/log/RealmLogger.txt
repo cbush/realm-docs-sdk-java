@@ -10,6 +10,10 @@ io.realm.log.RealmLogger
 
 .. _io_realm_log_RealmLogger:
 
+*Superclass:*
+
+
+
 Interface for custom loggers that can be registered at :ref:`RealmLog#add(RealmLogger) <io_realm_log_RealmLog_add_RealmLogger_>`. The different log levels are described in :ref:`LogLevel <io_realm_log_LogLevel>`.
 
 
@@ -45,6 +49,7 @@ public **void** log (**int** level, `String <https://docs.oracle.com/javase/7/do
 Handles a log event.
 Parameters
 __________
+
 
 - ``level - ``for this log event. It can only be a value between :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>` and :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>`
    

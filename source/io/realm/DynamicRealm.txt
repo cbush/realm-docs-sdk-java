@@ -11,8 +11,10 @@ io.realm.DynamicRealm
 .. _io_realm_DynamicRealm:
 
 *Superclass:*
-
 - **io.realm.BaseRealm (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 DynamicRealm is a dynamic variant of :ref:`io.realm.Realm <io_realm_Realm>`. This means that all access to data and/or queries are done using string based class names instead of class type references.
 
@@ -261,6 +263,7 @@ The creation of the first Realm instance per :ref:`RealmConfiguration <io_realm_
 Parameters
 __________
 
+
 - ``configuration - ``:ref:`RealmConfiguration <io_realm_RealmConfiguration>` used to open the Realm.
    
    
@@ -287,6 +290,7 @@ public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` createObject (`St
 Instantiates and adds a new object to the Realm.
 Parameters
 __________
+
 
 - ``className - ``the class name of the object to create.
    
@@ -319,6 +323,7 @@ Instantiates and adds a new embedded object to the Realm.This method should only
 Parameters
 __________
 
+
 - ``className - ``the class name of the object to create.
    
 - ``parentObject - ``The parent object which should hold a reference to the embedded object. If the parent property is a list the embedded object will be added to the end of that list.
@@ -345,6 +350,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` where (`String <https://docs.orac
 Returns a RealmQuery, which can be used to query the provided class.
 Parameters
 __________
+
 
 - ``className - ``the class of the object which is to be queried.
    
@@ -375,6 +381,7 @@ Realm instances are cached per thread. For that reason it is important to rememb
 Parameters
 __________
 
+
 - ``listener - ``the change listener.
    
 
@@ -403,6 +410,7 @@ public **void** removeChangeListener (:ref:`io.realm.RealmChangeListener\<io.rea
 Removes the specified change listener.
 Parameters
 __________
+
 
 - ``listener - ``the change listener to be removed.
    
@@ -444,6 +452,7 @@ Deletes all objects of the specified class from the Realm.
 Parameters
 __________
 
+
 - ``className - ``the class for which all objects should be removed.
    
 
@@ -468,6 +477,7 @@ Calling this method from the UI thread will throw a :ref:`RealmException <io_rea
 Parameters
 __________
 
+
 - ``transaction - ``:ref:`Transaction <io_realm_DynamicRealm_Transaction>` to execute.
    
    
@@ -490,6 +500,7 @@ Similar to **#executeTransaction(Transaction) (?)** but runs asynchronously on a
 Parameters
 __________
 
+
 - ``transaction - ``:ref:`Transaction <io_realm_DynamicRealm_Transaction>` to execute.
    
    
@@ -508,6 +519,7 @@ Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an On
 
 Parameters
 __________
+
 
 - ``transaction - ``:ref:`Transaction <io_realm_DynamicRealm_Transaction>` to execute.
    
@@ -530,6 +542,7 @@ Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an On
 Parameters
 __________
 
+
 - ``transaction - ``:ref:`Transaction <io_realm_DynamicRealm_Transaction>` to execute.
    
    
@@ -550,6 +563,7 @@ Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an On
 
 Parameters
 __________
+
 
 - ``transaction - ``:ref:`Transaction <io_realm_DynamicRealm_Transaction>` to execute.
    

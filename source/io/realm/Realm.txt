@@ -11,8 +11,10 @@ io.realm.Realm
 .. _io_realm_Realm:
 
 *Superclass:*
-
 - **io.realm.BaseRealm (?)**
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 The Realm class is the storage and transactional manager of your object persistent store. It is in charge of creating instances of your RealmObjects. Objects within a Realm can be queried and read at any time. Creating, modifying, and deleting objects must be done while inside a transaction. See **#executeTransaction(Transaction) (?)**
 
@@ -722,6 +724,7 @@ Remember to register it in the ``AndroidManifest.xml`` file:
 Parameters
 __________
 
+
 - ``context - ``the Application Context.
    
 
@@ -783,6 +786,7 @@ Remember to register it in the ``AndroidManifest.xml`` file:
 Parameters
 __________
 
+
 - ``context - ``the Application Context.
    
 - ``userAgent - ``optional user defined string that will be sent to the Realm Object Server as part of a ``User-Agent`` header when a session is established. This setting will not be used by non-synchronized Realms.
@@ -826,6 +830,7 @@ Realm static constructor that returns the Realm instance defined by provided :re
 Parameters
 __________
 
+
 - ``configuration - ``:ref:`RealmConfiguration <io_realm_RealmConfiguration>` used to open the Realm
    
    
@@ -852,6 +857,7 @@ The creation of the first Realm instance per :ref:`RealmConfiguration <io_realm_
 
 Parameters
 __________
+
 
 - ``configuration - ``:ref:`RealmConfiguration <io_realm_RealmConfiguration>` used to open the Realm.
    
@@ -881,6 +887,7 @@ Sets the :ref:`io.realm.RealmConfiguration <io_realm_RealmConfiguration>` used w
 
 Parameters
 __________
+
 
 - ``configuration - ``the :ref:`io.realm.RealmConfiguration <io_realm_RealmConfiguration>` to use as the default configuration.
    
@@ -935,6 +942,7 @@ This method currently does not support value list field.
 Parameters
 __________
 
+
 - ``clazz - ``type of Realm objects to create.
    
 - ``json - ``an array where each JSONObject must map to the specified class.
@@ -964,6 +972,7 @@ This method currently does not support value list field.
 
 Parameters
 __________
+
 
 - ``clazz - ``type of Realm objects to create.
    
@@ -996,6 +1005,7 @@ This method currently does not support value list field.
 
 Parameters
 __________
+
 
 - ``clazz - ``type of Realm objects created.
    
@@ -1030,6 +1040,7 @@ This method currently does not support value list field.
 Parameters
 __________
 
+
 - ``clazz - ``type of :ref:`io.realm.RealmObject <io_realm_RealmObject>` to create or update. It must have a primary key defined.
    
    
@@ -1063,6 +1074,7 @@ This method currently does not support value list field.
 
 Parameters
 __________
+
 
 - ``clazz - ``type of :ref:`io.realm.RealmObject <io_realm_RealmObject>` to create or update. It must have a primary key defined.
    
@@ -1099,6 +1111,7 @@ This method currently does not support value list field.
 
 Parameters
 __________
+
 
 - ``clazz - ``type of :ref:`io.realm.RealmObject <io_realm_RealmObject>` to create or update. It must have a primary key defined.
    
@@ -1137,6 +1150,7 @@ This method currently does not support value list field.
 Parameters
 __________
 
+
 - ``clazz - ``type of Realm object to create.
    
 - ``json - ``the JSONObject with object data.
@@ -1168,6 +1182,7 @@ This method currently does not support value list field.
 
 Parameters
 __________
+
 
 - ``clazz - ``type of Realm object to create.
    
@@ -1201,6 +1216,7 @@ This method currently does not support value list field.
 Parameters
 __________
 
+
 - ``clazz - ``type of Realm object to create.
    
 - ``inputStream - ``the JSON object data as a InputStream.
@@ -1233,6 +1249,7 @@ This method currently does not support value list field.
 
 Parameters
 __________
+
 
 - ``clazz - ``Type of :ref:`io.realm.RealmObject <io_realm_RealmObject>` to create or update. It must have a primary key defined.
    
@@ -1270,6 +1287,7 @@ This method currently does not support value list field.
 Parameters
 __________
 
+
 - ``clazz - ``type of :ref:`io.realm.RealmObject <io_realm_RealmObject>` to create or update. It must have a primary key defined.
    
    
@@ -1305,6 +1323,7 @@ This method currently does not support value list field.
 
 Parameters
 __________
+
 
 - ``clazz - ``type of :ref:`io.realm.RealmObject <io_realm_RealmObject>` to create or update. It must have a primary key defined.
    
@@ -1345,6 +1364,7 @@ Instantiates and adds a new object to the Realm.This method is only available fo
 Parameters
 __________
 
+
 - ``clazz - ``the Class of the object to create.
    
 
@@ -1369,6 +1389,7 @@ Instantiates and adds a new object to the Realm with the primary key value alrea
 Parameters
 __________
 
+
 - ``clazz - ``the Class of the object to create.
    
 - ``primaryKeyValue - ``value for the primary key field.
@@ -1390,6 +1411,7 @@ Instantiates and adds a new embedded object to the Realm.This method should only
 
 Parameters
 __________
+
 
 - ``clazz - ``the Class of the object to create. It must be marked with ``\@RealmClass(embedded = true)``.
    
@@ -1422,6 +1444,7 @@ Copies a RealmObject to the Realm instance and returns the copy. Any further cha
 Parameters
 __________
 
+
 - ``object - ``the :ref:`io.realm.RealmObject <io_realm_RealmObject>` to copy to the Realm.
    
    
@@ -1442,6 +1465,7 @@ Copies a collection of RealmObjects to the Realm instance and returns their copy
 
 Parameters
 __________
+
 
 - ``objects - ``the RealmObjects to copy to the Realm.
    
@@ -1466,6 +1490,7 @@ Please note, copying an object will copy all field values. Any unset field in th
 
 Parameters
 __________
+
 
 - ``object - ``:ref:`io.realm.RealmObject <io_realm_RealmObject>` to copy or update.
    
@@ -1495,6 +1520,7 @@ Please note, copying an object will copy all field values. Any unset field in th
 Parameters
 __________
 
+
 - ``objects - ``a list of objects to update or copy into Realm.
    
 - ``flags - ``any flag that modifies the behaviour of inserting the data into the Realm.
@@ -1520,6 +1546,7 @@ Inserts a list of an unmanaged RealmObjects. This is generally faster than **#co
 
 Please note:
 
+
 - We don't check if the provided objects are already managed or not, so inserting a managed object might duplicate it. Duplication will only happen if the object doesn't have a primary key. Objects with primary keys will never get duplicated.
    
    
@@ -1540,6 +1567,7 @@ If you want the managed :ref:`RealmObject <io_realm_RealmObject>` returned, use 
 Parameters
 __________
 
+
 - ``objects - ``RealmObjects to insert.
    
 
@@ -1554,6 +1582,7 @@ public **void** insert (:ref:`RealmModel <io_realm_RealmModel>` object)
 Inserts an unmanaged RealmObject. This is generally faster than **#copyToRealm(RealmModel, ImportFlag...) (?)** since it doesn't return the inserted elements, and performs minimum allocations and checks. After being inserted any changes to the original object will not be persisted.
 
 Please note:
+
 
 - We don't check if the provided objects are already managed or not, so inserting a managed object might duplicate it. Duplication will only happen if the object doesn't have a primary key. Objects with primary keys will never get duplicated.
    
@@ -1574,6 +1603,7 @@ If you want the managed :ref:`RealmObject <io_realm_RealmObject>` returned, use 
 
 Parameters
 __________
+
 
 - ``object - ``RealmObjects to insert.
    
@@ -1593,6 +1623,7 @@ Inserts or updates a list of unmanaged RealmObjects. This is generally faster th
 
 Please note:
 
+
 - We don't check if the provided objects are already managed or not, so inserting a managed object might duplicate it. Duplication will only happen if the object doesn't have a primary key. Objects with primary keys will never get duplicated.
    
    
@@ -1613,6 +1644,7 @@ If you want the managed :ref:`RealmObject <io_realm_RealmObject>` returned, use 
 Parameters
 __________
 
+
 - ``objects - ``RealmObjects to insert.
    
 
@@ -1627,6 +1659,7 @@ public **void** insertOrUpdate (:ref:`RealmModel <io_realm_RealmModel>` object)
 Inserts or updates an unmanaged RealmObject. This is generally faster than **#copyToRealmOrUpdate(RealmModel, ImportFlag...) (?)** since it doesn't return the inserted elements, and performs minimum allocations and checks. After being inserted any changes to the original object will not be persisted.
 
 Please note:
+
 
 - We don't check if the provided objects are already managed or not, so inserting a managed object might duplicate it. Duplication will only happen if the object doesn't have a primary key. Objects with primary keys will never get duplicated.
    
@@ -1647,6 +1680,7 @@ If you want the managed :ref:`RealmObject <io_realm_RealmObject>` returned, use 
 
 Parameters
 __________
+
 
 - ``object - ``RealmObjects to insert.
    
@@ -1672,11 +1706,13 @@ Makes an unmanaged in-memory copy of already persisted RealmObjects. This is a d
 Type Parameters
 _______________
 
+
 - ``E - ``type of object.
    
 
 Parameters
 __________
+
 
 - ``realmObjects - ``RealmObjects to copy.
    
@@ -1704,11 +1740,13 @@ Makes an unmanaged in-memory copy of already persisted RealmObjects. This is a d
 Type Parameters
 _______________
 
+
 - ``E - ``type of object.
    
 
 Parameters
 __________
+
 
 - ``realmObjects - ``RealmObjects to copy.
    
@@ -1742,11 +1780,13 @@ The copied object(s) are all detached from Realm and they will no longer be auto
 Type Parameters
 _______________
 
+
 - ``E - ``type of object.
    
 
 Parameters
 __________
+
 
 - ``realmObject - ``:ref:`RealmObject <io_realm_RealmObject>` to copy.
    
@@ -1778,11 +1818,13 @@ The copied object(s) are all detached from Realm and they will no longer be auto
 Type Parameters
 _______________
 
+
 - ``E - ``type of object.
    
 
 Parameters
 __________
+
 
 - ``realmObject - ``:ref:`RealmObject <io_realm_RealmObject>` to copy.
    
@@ -1813,6 +1855,7 @@ Returns a typed RealmQuery, which can be used to query for specific objects of t
 Parameters
 __________
 
+
 - ``clazz - ``the class of the object which is to be queried for.
    
 
@@ -1838,6 +1881,7 @@ Realm instances are per thread singletons and cached, so listeners should be rem
 
 Parameters
 __________
+
 
 - ``listener - ``the change listener.
    
@@ -1865,6 +1909,7 @@ public **void** removeChangeListener (:ref:`io.realm.RealmChangeListener\<io.rea
 Removes the specified change listener.
 Parameters
 __________
+
 
 - ``listener - ``the change listener to be removed.
    
@@ -1912,6 +1957,7 @@ Calling this method from the UI thread will throw a :ref:`RealmException <io_rea
 Parameters
 __________
 
+
 - ``transaction - ``the :ref:`io.realm.Realm.Transaction <io_realm_Realm_Transaction>` to execute.
    
    
@@ -1934,6 +1980,7 @@ Similar to **#executeTransaction(Transaction) (?)** but runs asynchronously on a
 Parameters
 __________
 
+
 - ``transaction - ``:ref:`io.realm.Realm.Transaction <io_realm_Realm_Transaction>` to execute.
    
    
@@ -1952,6 +1999,7 @@ Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an On
 
 Parameters
 __________
+
 
 - ``transaction - ``:ref:`io.realm.Realm.Transaction <io_realm_Realm_Transaction>` to execute.
    
@@ -1974,6 +2022,7 @@ Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an On
 Parameters
 __________
 
+
 - ``transaction - ``:ref:`io.realm.Realm.Transaction <io_realm_Realm_Transaction>` to execute.
    
    
@@ -1994,6 +2043,7 @@ Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an On
 
 Parameters
 __________
+
 
 - ``transaction - ``:ref:`io.realm.Realm.Transaction <io_realm_Realm_Transaction>` to execute.
    
@@ -2019,6 +2069,7 @@ Deletes all objects of the specified class from the Realm.
 Parameters
 __________
 
+
 - ``clazz - ``the class which objects should be removed.
    
 
@@ -2037,6 +2088,7 @@ Manually triggers the migration associated with a given RealmConfiguration. If R
 Parameters
 __________
 
+
 - ``configuration - ``:ref:`RealmConfiguration <io_realm_RealmConfiguration>`
    
    
@@ -2053,6 +2105,7 @@ public static **void** migrateRealm (:ref:`RealmConfiguration <io_realm_RealmCon
 Manually triggers a migration on a RealmMigration.
 Parameters
 __________
+
 
 - ``configuration - ``the:ref:`RealmConfiguration <io_realm_RealmConfiguration>`.
    
@@ -2086,6 +2139,7 @@ WARNING: For synchronized Realm, there is a chance that an internal Realm instan
 Parameters
 __________
 
+
 - ``configuration - ``a :ref:`RealmConfiguration <io_realm_RealmConfiguration>`.
    
    
@@ -2112,6 +2166,7 @@ Compacts a Realm file. A Realm file usually contain free/unused space. This meth
 
 Parameters
 __________
+
 
 - ``configuration - ``a :ref:`RealmConfiguration <io_realm_RealmConfiguration>` pointing to a Realm file.
    
@@ -2158,6 +2213,7 @@ Returns the current number of open Realm instances across all threads in current
 Parameters
 __________
 
+
 - ``configuration - ``the :ref:`io.realm.RealmConfiguration <io_realm_RealmConfiguration>` for the Realm.
    
    
@@ -2174,6 +2230,7 @@ public static **int** getLocalInstanceCount (:ref:`RealmConfiguration <io_realm_
 Returns the current number of open Realm instances on the thread calling this method. This include both dynamic and normal Realms.
 Parameters
 __________
+
 
 - ``configuration - ``the :ref:`io.realm.RealmConfiguration <io_realm_RealmConfiguration>` for the Realm.
    

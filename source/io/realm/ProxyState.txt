@@ -11,14 +11,16 @@ io.realm.ProxyState<E extends io.realm.RealmModel>
 .. _io_realm_ProxyState:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 This implements ``RealmObjectProxy`` interface, to eliminate copying logic between :ref:`RealmObject <io_realm_RealmObject>` and :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`.
 
 
 Constructors
 ============
+
 
 - ``io.realm.ProxyState()``
 - ``io.realm.ProxyState(E)``
@@ -327,6 +329,7 @@ public **void** checkValidObject (:ref:`RealmModel <io_realm_RealmModel>` value)
 Check that object is a valid and managed object by this Realm. Used by proxy classes to verify input.
 Parameters
 __________
+
 
 - ``value - ``model object
    

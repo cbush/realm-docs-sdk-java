@@ -11,8 +11,9 @@ io.realm.mongodb.sync.SyncSession
 .. _io_realm_mongodb_sync_SyncSession:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 A session controls how data is synchronized between a single Realm on the device and the server Realm on the Realm Object Server.A Session is created by opening a Realm instance using a :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`. Once a session has been created, it will continue to exist until the app is closed or all threads using this :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` closes their respective :ref:`Realm <io_realm_Realm>`s.
 
@@ -309,6 +310,7 @@ Adds a progress listener tracking changes that need to be downloaded from the Re
 Parameters
 __________
 
+
 - ``mode - ``type of mode used. See :ref:`ProgressMode <io_realm_mongodb_sync_ProgressMode>` for more information.
    
    
@@ -332,6 +334,7 @@ Adds a progress listener tracking changes that need to be uploaded from the devi
 Parameters
 __________
 
+
 - ``mode - ``type of mode used. See :ref:`ProgressMode <io_realm_mongodb_sync_ProgressMode>` for more information.
    
    
@@ -351,6 +354,7 @@ Removes a progress listener. If the listener wasn't registered, this method will
 Parameters
 __________
 
+
 - ``listener - ``listener to remove.
    
 
@@ -367,6 +371,7 @@ Adds a listener tracking changes to the connection backing this session. See :re
 
 Parameters
 __________
+
 
 - ``listener - ``the listener to register.
    
@@ -392,6 +397,7 @@ Removes a previously registered :ref:`ConnectionListener <io_realm_mongodb_sync_
 
 Parameters
 __________
+
 
 - ``listener - ``listener to remove
    

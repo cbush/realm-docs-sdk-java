@@ -11,8 +11,9 @@ io.realm.RealmObjectSchema
 .. _io_realm_RealmObjectSchema:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 Class for interacting with the schema for a given RealmObject class. This makes it possible to inspect, add, delete or change the fields for given class.If this :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` is retrieved from an immutable :ref:`RealmSchema <io_realm_RealmSchema>`, this :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` will be immutable as well.
 
@@ -317,7 +318,8 @@ getClassName
 public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ getClassName ()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns the name of the RealmObject class being represented by this schema.- When using a normal :ref:`Realm <io_realm_Realm>` this name is the same as the :ref:`RealmObject <io_realm_RealmObject>` class.
+Returns the name of the RealmObject class being represented by this schema.
+- When using a normal :ref:`Realm <io_realm_Realm>` this name is the same as the :ref:`RealmObject <io_realm_RealmObject>` class.
    
    
    
@@ -343,6 +345,7 @@ public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setClassNa
 Sets a new name for this RealmObject class. This is equivalent to renaming it.
 Parameters
 __________
+
 
 - ``className - ``the new name for this class.
    
@@ -373,6 +376,7 @@ To add fields that reference other RealmObjects or RealmLists use :ref:`#addReal
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field to add.
    
 - ``fieldType - ``type of field to add. See :ref:`RealmObject <io_realm_RealmObject>` for the full list.
@@ -399,6 +403,7 @@ Adds a new field that references another :ref:`RealmObject <io_realm_RealmObject
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field to add.
    
 - ``objectSchema - ``schema for the Realm type being referenced.
@@ -424,6 +429,7 @@ If the list contains primitive types, use **#addRealmListField(String, Class) (?
 
 Parameters
 __________
+
 
 - ``fieldName - ``name of the field to add.
    
@@ -466,6 +472,7 @@ If the list contains references to other Realm classes, use :ref:`#addRealmListF
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field to add.
    
 - ``primitiveType - ``simple type of elements in the array.
@@ -491,6 +498,7 @@ If the dictionary contains primitive types, use **#addRealmDictionaryField(Strin
 
 Parameters
 __________
+
 
 - ``fieldName - ``name of the field to add.
    
@@ -533,6 +541,7 @@ If the list contains references to other Realm classes, use :ref:`#addRealmDicti
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field to add.
    
 - ``primitiveType - ``simple type of elements in the array.
@@ -558,6 +567,7 @@ If the set contains primitive types, use **#addRealmSetField(String, Class) (?)*
 
 Parameters
 __________
+
 
 - ``fieldName - ``name of the field to add.
    
@@ -600,6 +610,7 @@ If the list contains references to other Realm classes, use :ref:`#addRealmSetFi
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field to add.
    
 - ``primitiveType - ``simple type of elements in the array.
@@ -620,6 +631,7 @@ Removes a field from the class.
 Parameters
 __________
 
+
 - ``fieldName - ``field name to remove.
    
 
@@ -637,6 +649,7 @@ public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` renameFiel
 Renames a field from one name to another.
 Parameters
 __________
+
 
 - ``currentFieldName - ``field name to rename.
    
@@ -658,6 +671,7 @@ Tests if the class has field defined with the given name.
 Parameters
 __________
 
+
 - ``fieldName - ``field name to test.
    
 
@@ -674,6 +688,7 @@ Adds an index to a given field. This is the equivalent of adding the :ref:`io.re
 
 Parameters
 __________
+
 
 - ``fieldName - ``field to add index to.
    
@@ -692,6 +707,7 @@ public **boolean** hasIndex (`String <https://docs.oracle.com/javase/7/docs/api/
 Checks if a given field has an index defined.
 Parameters
 __________
+
 
 - ``fieldName - ``existing field name to check.
    
@@ -718,6 +734,7 @@ Removes an index from a given field. This is the same as removing the ``@Index``
 Parameters
 __________
 
+
 - ``fieldName - ``field to remove index from.
    
 
@@ -737,6 +754,7 @@ Adds a primary key to a given field. This is the same as adding the :ref:`io.rea
 
 Parameters
 __________
+
 
 - ``fieldName - ``field to set as primary key.
    
@@ -776,6 +794,7 @@ If the type of designated field is a list of values (not :ref:`RealmObject <io_r
 Parameters
 __________
 
+
 - ``fieldName - ``name of field in the class.
    
 - ``required - ````true`` if field should be required, ``false`` otherwise.
@@ -809,6 +828,7 @@ If the type of designated field is a list of values (not :ref:`RealmObject <io_r
 Parameters
 __________
 
+
 - ``fieldName - ``name of field in the class.
    
 - ``nullable - ````true`` if field should be nullable, ``false`` otherwise.
@@ -832,6 +852,7 @@ Checks if a given field is required i.e., it is not allowed to contain ``null`` 
 
 Parameters
 __________
+
 
 - ``fieldName - ``field to check.
    
@@ -858,6 +879,7 @@ Checks if a given field is nullable i.e., it is allowed to contain ``null`` valu
 Parameters
 __________
 
+
 - ``fieldName - ``field to check.
    
 
@@ -880,6 +902,7 @@ public **boolean** isPrimaryKey (`String <https://docs.oracle.com/javase/7/docs/
 Checks if a given field is the primary key field.
 Parameters
 __________
+
 
 - ``fieldName - ``field to check.
    
@@ -943,6 +966,7 @@ There is no guarantees in which order the objects are returned.
 Parameters
 __________
 
+
 - ``function - ``transformation function.
    
 
@@ -960,6 +984,7 @@ public :ref:`RealmFieldType <io_realm_RealmFieldType>` getFieldType (`String <ht
 Returns the type used by the underlying storage engine to represent this field.
 Parameters
 __________
+
 
 - ``fieldName - ``name of the target field.
    
@@ -984,6 +1009,7 @@ public **void** setEmbedded (**boolean** embedded)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Converts the class to be embedded or not.A class can only be marked as embedded if the following invariants are satisfied:
+
 
 - The class is not allowed to have a primary key defined.
    

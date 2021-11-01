@@ -11,14 +11,16 @@ io.realm.log.RealmLog
 .. _io_realm_log_RealmLog:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 Global logger used by all Realm components. Custom loggers can be added by registering classes implementing :ref:`RealmLogger <io_realm_log_RealmLogger>`.
 
 
 Constructors
 ============
+
 
 - ``io.realm.log.RealmLog()``
 
@@ -279,6 +281,7 @@ Adds a logger implementation that will be notified on log events.
 Parameters
 __________
 
+
 - ``logger - ``the reference to a :ref:`RealmLogger <io_realm_log_RealmLogger>` implementation.
    
    
@@ -297,6 +300,7 @@ Sets the current :ref:`LogLevel <io_realm_log_LogLevel>`. Setting this will affe
 
 Parameters
 __________
+
 
 - ``level - ``see :ref:`LogLevel <io_realm_log_LogLevel>`.
    
@@ -357,6 +361,7 @@ Logs a :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>` exception.
 Parameters
 __________
 
+
 - ``throwable - ``exception to log.
    
 
@@ -370,6 +375,7 @@ Logs a :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>` event.
 
 Parameters
 __________
+
 
 - ``message - ``message to log.
    
@@ -388,6 +394,7 @@ Logs a :ref:`LogLevel#TRACE <io_realm_log_LogLevel_TRACE>` event.
 
 Parameters
 __________
+
 
 - ``throwable - ``optional exception to log.
    
@@ -412,6 +419,7 @@ Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>` exception.
 Parameters
 __________
 
+
 - ``throwable - ``exception to log.
    
 
@@ -425,6 +433,7 @@ Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>` event.
 
 Parameters
 __________
+
 
 - ``message - ``message to log.
    
@@ -443,6 +452,7 @@ Logs a :ref:`LogLevel#DEBUG <io_realm_log_LogLevel_DEBUG>` event.
 
 Parameters
 __________
+
 
 - ``throwable - ``optional exception to log.
    
@@ -467,6 +477,7 @@ Logs an :ref:`LogLevel#INFO <io_realm_log_LogLevel_INFO>` exception.
 Parameters
 __________
 
+
 - ``throwable - ``exception to log.
    
 
@@ -480,6 +491,7 @@ Logs an :ref:`LogLevel#INFO <io_realm_log_LogLevel_INFO>` event.
 
 Parameters
 __________
+
 
 - ``message - ``message to log.
    
@@ -498,6 +510,7 @@ Logs an :ref:`LogLevel#INFO <io_realm_log_LogLevel_INFO>` event.
 
 Parameters
 __________
+
 
 - ``throwable - ``optional exception to log.
    
@@ -522,6 +535,7 @@ Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>` exception.
 Parameters
 __________
 
+
 - ``throwable - ``exception to log.
    
 
@@ -535,6 +549,7 @@ Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>` event.
 
 Parameters
 __________
+
 
 - ``message - ``message to log.
    
@@ -553,6 +568,7 @@ Logs a :ref:`LogLevel#WARN <io_realm_log_LogLevel_WARN>` event.
 
 Parameters
 __________
+
 
 - ``throwable - ``optional exception to log.
    
@@ -577,6 +593,7 @@ Logs an :ref:`LogLevel#ERROR <io_realm_log_LogLevel_ERROR>` exception.
 Parameters
 __________
 
+
 - ``throwable - ``exception to log.
    
 
@@ -590,6 +607,7 @@ Logs an :ref:`LogLevel#ERROR <io_realm_log_LogLevel_ERROR>` event.
 
 Parameters
 __________
+
 
 - ``message - ``message to log.
    
@@ -608,6 +626,7 @@ Logs an :ref:`LogLevel#ERROR <io_realm_log_LogLevel_ERROR>` event.
 
 Parameters
 __________
+
 
 - ``throwable - ``optional exception to log.
    
@@ -632,6 +651,7 @@ Logs a :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>` exception.
 Parameters
 __________
 
+
 - ``throwable - ``exception to log.
    
 
@@ -645,6 +665,7 @@ Logs an :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>` event.
 
 Parameters
 __________
+
 
 - ``message - ``message to log.
    
@@ -663,6 +684,7 @@ Logs a :ref:`LogLevel#FATAL <io_realm_log_LogLevel_FATAL>` event.
 
 Parameters
 __________
+
 
 - ``throwable - ``optional exception to log.
    

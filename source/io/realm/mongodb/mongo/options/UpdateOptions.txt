@@ -11,12 +11,14 @@ io.realm.mongodb.mongo.options.UpdateOptions
 .. _io_realm_mongodb_mongo_options_UpdateOptions:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 The options to apply when updating documents.
 Constructors
 ============
+
 
 - ``io.realm.mongodb.mongo.options.UpdateOptions()``
 
@@ -77,6 +79,7 @@ public :ref:`UpdateOptions <io_realm_mongodb_mongo_options_UpdateOptions>` upser
 Set to true if a new document should be inserted if there are no matches to the query filter.
 Parameters
 __________
+
 
 - ``upsert - ``true if a new document should be inserted if there are no matches to the query filter.
    

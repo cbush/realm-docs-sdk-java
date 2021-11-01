@@ -11,12 +11,14 @@ io.realm.mongodb.log.obfuscator.HttpLogObfuscator
 .. _io_realm_mongodb_log_obfuscator_HttpLogObfuscator:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 The HttpLogObfuscator keeps sensitive information from being displayed in Logcat.
 Constructors
 ============
+
 
 - ``io.realm.mongodb.log.obfuscator.HttpLogObfuscator(String, Map<String, RegexPatternObfuscator>)``
 
@@ -68,6 +70,7 @@ public `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>
 Obfuscates a logcat entry or not depending on whether the request being sent matches the specified feature. If it doesn't, the logcat entry will be returned unmodified.
 Parameters
 __________
+
 
 - ``urlSegments - ``the URL segments of the request to be sent.
    

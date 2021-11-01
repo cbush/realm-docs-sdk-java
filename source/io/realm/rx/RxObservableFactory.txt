@@ -10,6 +10,10 @@ io.realm.rx.RxObservableFactory
 
 .. _io_realm_rx_RxObservableFactory:
 
+*Superclass:*
+
+
+
 Factory interface for creating Rx Observables for Realm classes.
 Method Summary
 ==============
@@ -200,6 +204,7 @@ Realm flowables are hot as Realms are automatically kept up to date.
 Parameters
 __________
 
+
 - ``realm - ``:ref:`Realm <io_realm_Realm>` to listen to changes for.
    
    
@@ -217,6 +222,7 @@ DynamicRealm observables are hot as DynamicRealms are automatically kept up to d
 
 Parameters
 __________
+
 
 - ``realm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>` to listen to changes for.
    
@@ -236,11 +242,13 @@ RealmResults observables are hot as RealmResults are automatically kept up to da
 Type Parameters
 _______________
 
+
 - ``E - ``type of RealmObject
    
 
 Parameters
 __________
+
 
 - ``results - ``:ref:`RealmResults <io_realm_RealmResults>` to listen to changes for.
    
@@ -263,6 +271,7 @@ Realm observables are hot as RealmResults are automatically kept up to date.
 
 Parameters
 __________
+
 
 - ``results - ``:ref:`RealmResults <io_realm_RealmResults>` to listen to changes for.
    
@@ -290,11 +299,13 @@ Note: :ref:`io.realm.RealmChangeListener <io_realm_RealmChangeListener>` is curr
 Type Parameters
 _______________
 
+
 - ``E - ``type of query target
    
 
 Parameters
 __________
+
 
 - ``list - ``RealmObject to listen to changes for.
    
@@ -320,6 +331,7 @@ Note: :ref:`io.realm.RealmChangeListener <io_realm_RealmChangeListener>` is curr
 Parameters
 __________
 
+
 - ``list - ``RealmList to listen to changes for.
    
 - ``realm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>` instance list is coming from.
@@ -340,11 +352,13 @@ RealmObject observables are hot as RealmObjects are automatically kept up to dat
 Type Parameters
 _______________
 
+
 - ``E - ``type of query target
    
 
 Parameters
 __________
+
 
 - ``object - ``RealmObject to listen to changes for.
    
@@ -366,6 +380,7 @@ DynamicRealmObject observables are hot as DynamicRealmObjects automatically are 
 Parameters
 __________
 
+
 - ``object - ``DynamicRealmObject to listen to changes for.
    
 - ``realm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>` instance object is coming from.
@@ -386,11 +401,13 @@ A RealmQuery observable is cold.
 Type Parameters
 _______________
 
+
 - ``E - ``type of query target
    
 
 Parameters
 __________
+
 
 - ``query - ``RealmQuery to emit.
    
@@ -411,6 +428,7 @@ A RealmQuery observable is cold.
 
 Parameters
 __________
+
 
 - ``query - ``RealmObject to listen to changes for.
    
@@ -435,11 +453,13 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Type Parameters
 _______________
 
+
 - ``E - ``type of RealmObject
    
 
 Parameters
 __________
+
 
 - ``results - ``:ref:`RealmResults <io_realm_RealmResults>` to listen to changes for.
    
@@ -463,6 +483,7 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 __________
 
+
 - ``results - ``:ref:`RealmResults <io_realm_RealmResults>` to listen to changes for.
    
    
@@ -485,11 +506,13 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Type Parameters
 _______________
 
+
 - ``E - ``type of RealmObject
    
 
 Parameters
 __________
+
 
 - ``list - ``:ref:`RealmList <io_realm_RealmList>` to listen to changes for.
    
@@ -513,6 +536,7 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 __________
 
+
 - ``list - ``:ref:`RealmList <io_realm_RealmList>` to listen to changes for.
    
    
@@ -535,11 +559,13 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Type Parameters
 _______________
 
+
 - ``E - ``type of RealmObject
    
 
 Parameters
 __________
+
 
 - ``object - ``RealmObject to listen to changes for.
    
@@ -560,6 +586,7 @@ Changeset observables do not support backpressure as a changeset depends on the 
 
 Parameters
 __________
+
 
 - ``object - ``RealmObject to listen to changes for.
    

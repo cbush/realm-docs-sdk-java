@@ -10,7 +10,12 @@ io.realm.annotations.LinkingObjects
 
 .. _io_realm_annotations_LinkingObjects:
 
+*Superclass:*
+
+
+
 *Implemented interfaces:*
+
 
 - `java.lang.annotation.Annotation <https://docs.oracle.com/javase/7/docs/api/java/lang/annotation/Annotation.html>`__
 
@@ -43,6 +48,7 @@ Annotation for defining a reverse relationship from one class to another. This a
 
 In the above example \`Person\` is related to \`Dog\` through the field \`dog\`. This in turn means that an implicit reverse relationship exists between the class \`Dog\` and the class \`Person\`. This inverse relationship is made public and queryable by the \`RealmResults\` field annotated with \`@LinkingObject\`. This makes it possible to query properties of the dogs owner without having to manually maintain a "owner" field in the \`Dog\` class.Linking objects have the following properties:
 
+
 - The link is maintained by Realm and only works for managed objects.
    
    
@@ -66,6 +72,7 @@ In the above example \`Person\` is related to \`Dog\` through the field \`dog\`.
    
 
 In addition, they have the following restrictions:
+
 
 - @Ignore takes precedence. A @LinkingObjects annotation on @Ignore field will be ignored.
    

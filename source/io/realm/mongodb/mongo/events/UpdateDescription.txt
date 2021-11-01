@@ -11,8 +11,9 @@ io.realm.mongodb.mongo.events.UpdateDescription
 .. _io_realm_mongodb_mongo_events_UpdateDescription:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 Indicates which fields have been modified in a given update operation.
 Method Summary
@@ -164,6 +165,7 @@ Converts an update description BSON document from a MongoDB Change Event into an
 Parameters
 __________
 
+
 - ``document - ``the
    
 
@@ -178,6 +180,7 @@ public :ref:`UpdateDescription <io_realm_mongodb_mongo_events_UpdateDescription>
 Unilaterally merge an update description into this update description.
 Parameters
 __________
+
 
 - ``otherDescription - ``the update description to merge into this
    
@@ -195,6 +198,7 @@ Find the diff between two documents.NOTE: This does not do a full diff on [BsonA
 
 Parameters
 __________
+
 
 - ``beforeDocument - ``original document
    

@@ -11,8 +11,9 @@ io.realm.RealmSchema
 .. _io_realm_RealmSchema:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 Class for interacting with the Realm schema. This makes it possible to inspect, add, delete and change the classes in the Realm.:ref:`Realm#getSchema() <io_realm_Realm_getSchema__>` returns an immutable ``RealmSchema`` which can only be used for inspecting. Use :ref:`DynamicRealm#getSchema() <io_realm_DynamicRealm_getSchema__>` to get a mutable schema.
 
@@ -124,6 +125,7 @@ Returns the :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` for a given cl
 Parameters
 __________
 
+
 - ``className - ``name of the class
    
 
@@ -150,6 +152,7 @@ Adds a new class to the Realm.
 Parameters
 __________
 
+
 - ``className - ``name of the class.
    
 
@@ -167,6 +170,7 @@ public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` createWith
 Adds a new class to the Realm with a primary key field defined.
 Parameters
 __________
+
 
 - ``className - ``name of the class.
    
@@ -198,6 +202,7 @@ Removes a class from the Realm. All data will be removed. Removing a class while
 Parameters
 __________
 
+
 - ``className - ``name of the class to remove.
    
 
@@ -215,6 +220,7 @@ public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` rename (`S
 Renames a class already in the Realm.
 Parameters
 __________
+
 
 - ``oldClassName - ``old class name.
    
@@ -235,6 +241,7 @@ public **boolean** contains (`String <https://docs.oracle.com/javase/7/docs/api/
 Checks if a given class already exists in the schema.
 Parameters
 __________
+
 
 - ``className - ``class name to check.
    

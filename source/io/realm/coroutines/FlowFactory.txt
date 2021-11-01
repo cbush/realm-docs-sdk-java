@@ -10,6 +10,10 @@ io.realm.coroutines.FlowFactory
 
 .. _io_realm_coroutines_FlowFactory:
 
+*Superclass:*
+
+
+
 Factory interface for creating Kotlin **Flow (?)**s for Realm classes.
 
 
@@ -180,6 +184,7 @@ Creates a **Flow (?)** for a :ref:`Realm <io_realm_Realm>`. It should emit the i
 Parameters
 __________
 
+
 - ``realm - ``:ref:`Realm <io_realm_Realm>` instance being observed for changes to be emitted by the flow.
    
    
@@ -195,6 +200,7 @@ Creates a **Flow (?)** for a :ref:`DynamicRealm <io_realm_DynamicRealm>`. It sho
 
 Parameters
 __________
+
 
 - ``dynamicRealm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>` instance being observed for changes to be emitted by the flow.
    
@@ -212,11 +218,13 @@ Creates a **Flow (?)** for a :ref:`RealmResults <io_realm_RealmResults>`. It sho
 Type Parameters
 _______________
 
+
 - ``T - ``type of RealmObject.
    
 
 Parameters
 __________
+
 
 - ``results - ``:ref:`RealmResults <io_realm_RealmResults>` instance being observed for changes to be emitted by the flow.
    
@@ -238,11 +246,13 @@ Creates a **Flow (?)** for a :ref:`RealmResults <io_realm_RealmResults>`. It sho
 Type Parameters
 _______________
 
+
 - ``T - ``type of RealmObject.
    
 
 Parameters
 __________
+
 
 - ``results - ``:ref:`RealmResults <io_realm_RealmResults>` instance being observed for changes to be emitted by the flow.
    
@@ -268,11 +278,13 @@ Note: :ref:`io.realm.RealmChangeListener <io_realm_RealmChangeListener>` is curr
 Type Parameters
 _______________
 
+
 - ``T - ``type of RealmObject
    
 
 Parameters
 __________
+
 
 - ``realmList - ``:ref:`RealmList <io_realm_RealmList>` instance being observed for changes to be emitted by the flow.
    
@@ -298,11 +310,13 @@ Note: :ref:`io.realm.RealmChangeListener <io_realm_RealmChangeListener>` is curr
 Type Parameters
 _______________
 
+
 - ``T - ``type of RealmObject
    
 
 Parameters
 __________
+
 
 - ``realmList - ``:ref:`RealmList <io_realm_RealmList>` instance being observed for changes to be emitted by the flow.
    
@@ -324,11 +338,13 @@ Creates a **Flow (?)** for a :ref:`RealmObject <io_realm_RealmObject>`. It shoul
 Type Parameters
 _______________
 
+
 - ``T - ``type of query target
    
 
 Parameters
 __________
+
 
 - ``realmObject - ``:ref:`RealmObject <io_realm_RealmObject>` instance being observed for changes to be emitted by the flow.
    
@@ -349,6 +365,7 @@ Creates a **Flow (?)** for a :ref:`DynamicRealmObject <io_realm_DynamicRealmObje
 
 Parameters
 __________
+
 
 - ``dynamicRealm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>` instance from where the object is coming.
    
@@ -375,6 +392,7 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 __________
 
+
 - ``realm - ``:ref:`Realm <io_realm_Realm>` instance from where the object is coming.
    
    
@@ -396,6 +414,7 @@ Changeset observables do not support backpressure as a changeset depends on the 
 
 Parameters
 __________
+
 
 - ``dynamicRealm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>` instance from where the object is coming.
    
@@ -419,6 +438,7 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 __________
 
+
 - ``realm - ``:ref:`Realm <io_realm_Realm>` instance from where the object is coming.
    
    
@@ -440,6 +460,7 @@ Changeset observables do not support backpressure as a changeset depends on the 
 
 Parameters
 __________
+
 
 - ``dynamicRealm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>` instance from where the object is coming.
    
@@ -463,6 +484,7 @@ Changeset observables do not support backpressure as a changeset depends on the 
 Parameters
 __________
 
+
 - ``realm - ``:ref:`Realm <io_realm_Realm>` instance from where the object is coming.
    
    
@@ -484,6 +506,7 @@ Changeset observables do not support backpressure as a changeset depends on the 
 
 Parameters
 __________
+
 
 - ``dynamicRealm - ``:ref:`DynamicRealm <io_realm_DynamicRealm>` instance from where the object is coming.
    

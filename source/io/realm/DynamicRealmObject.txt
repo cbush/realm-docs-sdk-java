@@ -11,12 +11,15 @@ io.realm.DynamicRealmObject
 .. _io_realm_DynamicRealmObject:
 
 *Superclass:*
-
 - :ref:`io.realm.RealmObject <io_realm_RealmObject>`
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 Class that wraps a normal RealmObject in order to allow dynamic access instead of a typed interface. Using a DynamicRealmObject is slower than using the regular RealmObject class.
 Constructors
 ============
+
 
 - ``io.realm.DynamicRealmObject(RealmModel)``
 
@@ -559,6 +562,7 @@ Returns the value for the given field.
 Parameters
 __________
 
+
 - ``fieldName - ``name of the field.
    
 
@@ -582,6 +586,7 @@ If the field is nullable, use :ref:`#isNull(String) <io_realm_DynamicRealmObject
 
 Parameters
 __________
+
 
 - ``fieldName - ``the name of the field.
    
@@ -607,6 +612,7 @@ If the field is nullable, use :ref:`#isNull(String) <io_realm_DynamicRealmObject
 Parameters
 __________
 
+
 - ``fieldName - ``the name of the field.
    
 
@@ -630,6 +636,7 @@ If the field is nullable, use :ref:`#isNull(String) <io_realm_DynamicRealmObject
 
 Parameters
 __________
+
 
 - ``fieldName - ``the name of the field.
    
@@ -655,6 +662,7 @@ If the field is nullable, use :ref:`#isNull(String) <io_realm_DynamicRealmObject
 Parameters
 __________
 
+
 - ``fieldName - ``the name of the field.
    
 
@@ -678,6 +686,7 @@ If the field is nullable, use :ref:`#isNull(String) <io_realm_DynamicRealmObject
 
 Parameters
 __________
+
 
 - ``fieldName - ``the name of the field.
    
@@ -703,6 +712,7 @@ If the field is nullable, use :ref:`#isNull(String) <io_realm_DynamicRealmObject
 Parameters
 __________
 
+
 - ``fieldName - ``the name of the field.
    
 
@@ -727,6 +737,7 @@ If the field is nullable, use :ref:`#isNull(String) <io_realm_DynamicRealmObject
 Parameters
 __________
 
+
 - ``fieldName - ``the name of the field.
    
 
@@ -746,6 +757,7 @@ Returns the ``byte[]`` value for a given field.
 
 Parameters
 __________
+
 
 - ``fieldName - ``the name of the field.
    
@@ -767,6 +779,7 @@ Returns the ``String`` value for a given field.
 Parameters
 __________
 
+
 - ``fieldName - ``the name of the field.
    
 
@@ -786,6 +799,7 @@ Returns the ``Date`` value for a given field.
 
 Parameters
 __________
+
 
 - ``fieldName - ``the name of the field.
    
@@ -807,6 +821,7 @@ Returns the ``Decimal128`` value for a given field.
 Parameters
 __________
 
+
 - ``fieldName - ``the name of the field.
    
 
@@ -826,6 +841,7 @@ Returns the ``ObjectId`` value for a given field.
 
 Parameters
 __________
+
 
 - ``fieldName - ``the name of the field.
    
@@ -847,6 +863,7 @@ Returns the ``RealmAny`` value for a given field.
 Parameters
 __________
 
+
 - ``fieldName - ``the name of the field.
    
 
@@ -867,6 +884,7 @@ Returns the ``UUID`` value for a given field.
 Parameters
 __________
 
+
 - ``fieldName - ``the name of the field.
    
 
@@ -884,6 +902,7 @@ public :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>` getObject (`Strin
 Returns the object being linked to from this field.
 Parameters
 __________
+
 
 - ``fieldName - ``the name of the field.
    
@@ -909,6 +928,7 @@ If the list contains primitive types, use **#getList(String, Class) (?)** instea
 Parameters
 __________
 
+
 - ``fieldName - ``the name of the field.
    
 
@@ -929,6 +949,7 @@ If the list contains references to other Realm objects, use :ref:`#getList(Strin
 
 Parameters
 __________
+
 
 - ``fieldName - ``the name of the field.
    
@@ -956,6 +977,7 @@ If the dictionary contains primitive types, use **#getDictionary(String, Class) 
 Parameters
 __________
 
+
 - ``fieldName - ``the name of the field.
    
 
@@ -976,6 +998,7 @@ If the dictionary contains references to other Realm objects, use :ref:`#getDict
 
 Parameters
 __________
+
 
 - ``fieldName - ``the name of the field.
    
@@ -1003,6 +1026,7 @@ If the set contains primitive types, use **#getRealmSet(String, Class) (?)** ins
 Parameters
 __________
 
+
 - ``fieldName - ``the name of the field.
    
 
@@ -1023,6 +1047,7 @@ If the set contains references to other Realm objects, use :ref:`#getRealmSet(St
 
 Parameters
 __________
+
 
 - ``fieldName - ``the name of the field.
    
@@ -1046,6 +1071,7 @@ Checks if the value of a given field is ``null``.
 Parameters
 __________
 
+
 - ``fieldName - ``the name of the field.
    
 
@@ -1063,6 +1089,7 @@ public **boolean** hasField (`String <https://docs.oracle.com/javase/7/docs/api/
 Checks whether an object has the given field or not.
 Parameters
 __________
+
 
 - ``fieldName - ``field name to check.
    
@@ -1106,6 +1133,7 @@ Sets the ``boolean`` value of the given field.
 Parameters
 __________
 
+
 - ``fieldName - ``field name to update.
    
 - ``value - ``value to insert.
@@ -1127,6 +1155,7 @@ Sets the ``short`` value of the given field.
 
 Parameters
 __________
+
 
 - ``fieldName - ``field name.
    
@@ -1150,6 +1179,7 @@ Sets the ``int`` value of the given field.
 Parameters
 __________
 
+
 - ``fieldName - ``field name to update.
    
 - ``value - ``value to insert.
@@ -1171,6 +1201,7 @@ Sets the ``long`` value of the given field.
 
 Parameters
 __________
+
 
 - ``fieldName - ``field name.
    
@@ -1194,6 +1225,7 @@ Sets the ``byte`` value of the given field.
 Parameters
 __________
 
+
 - ``fieldName - ``field name.
    
 - ``value - ``value to insert.
@@ -1215,6 +1247,7 @@ Sets the ``float`` value of the given field.
 
 Parameters
 __________
+
 
 - ``fieldName - ``field name.
    
@@ -1238,6 +1271,7 @@ Sets the ``double`` value of the given field.
 Parameters
 __________
 
+
 - ``fieldName - ``field name.
    
 - ``value - ``value to insert.
@@ -1260,6 +1294,7 @@ Sets the ``String`` value of the given field.
 Parameters
 __________
 
+
 - ``fieldName - ``field name.
    
 - ``value - ``value to insert.
@@ -1279,6 +1314,7 @@ public **void** setBlob (`String <https://docs.oracle.com/javase/7/docs/api/java
 Sets the binary value of the given field.
 Parameters
 __________
+
 
 - ``fieldName - ``field name.
    
@@ -1302,6 +1338,7 @@ Sets the ``Date`` value of the given field.
 Parameters
 __________
 
+
 - ``fieldName - ``field name.
    
 - ``value - ``value to insert.
@@ -1323,6 +1360,7 @@ Sets the ``Decimal128`` value of the given field.
 
 Parameters
 __________
+
 
 - ``fieldName - ``field name.
    
@@ -1346,6 +1384,7 @@ Sets the ``ObjectId`` value of the given field.
 Parameters
 __________
 
+
 - ``fieldName - ``field name.
    
 - ``value - ``value to insert.
@@ -1367,6 +1406,7 @@ Sets the ``RealmAny`` value of the given field.
 
 Parameters
 __________
+
 
 - ``fieldName - ``field name.
    
@@ -1390,6 +1430,7 @@ Sets the ``UUID`` value of the given field.
 Parameters
 __________
 
+
 - ``fieldName - ``field name.
    
 - ``value - ``value to insert.
@@ -1409,6 +1450,7 @@ public **void** setObject (`String <https://docs.oracle.com/javase/7/docs/api/ja
 Sets a reference to another object on the given field.
 Parameters
 __________
+
 
 - ``fieldName - ``field name.
    
@@ -1435,6 +1477,7 @@ This will copy all the elements in the list into Realm, but any further changes 
 
 Parameters
 __________
+
 
 - ``fieldName - ``field name.
    
@@ -1464,6 +1507,7 @@ This will copy all the elements in the dictionary into Realm, but any further ch
 Parameters
 __________
 
+
 - ``fieldName - ``field name.
    
 - ``dictionary - ``dictionary of objects. Must either be primitive types or :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s.
@@ -1492,6 +1536,7 @@ This will copy all the elements in the set into Realm, but any further changes t
 Parameters
 __________
 
+
 - ``fieldName - ``field name.
    
 - ``set - ``set of objects. Must either be primitive types or :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`s.
@@ -1515,6 +1560,7 @@ Sets the value to ``null`` for the given field.
 
 Parameters
 __________
+
 
 - ``fieldName - ``field name.
    
@@ -1599,6 +1645,7 @@ An entry is added for each reference, e.g. if the same reference is in a list mu
 
 Parameters
 __________
+
 
 - ``srcClassName - ``name of the class returned objects belong to.
    

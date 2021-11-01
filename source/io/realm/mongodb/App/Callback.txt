@@ -10,6 +10,10 @@ io.realm.mongodb.App.Callback<T>
 
 .. _io_realm_mongodb_App_Callback:
 
+*Superclass:*
+
+
+
 Callback for async methods available to the :ref:`App <io_realm_mongodb_App>`.
 
 
@@ -45,6 +49,7 @@ public **void** onResult (:ref:`io.realm.mongodb.App.Result\<T> <io_realm_mongod
 Returns the result of the request when available.
 Parameters
 __________
+
 
 - ``result - ``the request response.
    

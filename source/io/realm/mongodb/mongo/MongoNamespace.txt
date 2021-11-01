@@ -11,12 +11,14 @@ io.realm.mongodb.mongo.MongoNamespace
 .. _io_realm_mongodb_mongo_MongoNamespace:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 A MongoDB namespace, which includes a database name and collection name.
 Constructors
 ============
+
 
 - ``io.realm.mongodb.mongo.MongoNamespace(String)``
 - ``io.realm.mongodb.mongo.MongoNamespace(String, String)``
@@ -140,6 +142,7 @@ Check the validity of the given database name. A valid database name is non-null
 Parameters
 __________
 
+
 - ``databaseName - ``the database name
    
 
@@ -157,6 +160,7 @@ public static **void** checkCollectionNameValidity (`String <https://docs.oracle
 Check the validity of the given collection name. A valid collection name is non-null and non-empty. The server may impose additional restrictions on collection names.
 Parameters
 __________
+
 
 - ``collectionName - ``the collection name
    

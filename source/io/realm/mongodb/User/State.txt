@@ -11,8 +11,10 @@ io.realm.mongodb.User.State
 .. _io_realm_mongodb_User_State:
 
 *Superclass:*
-
 - `java.lang.Enum <https://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html>`__
+- `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 The user's potential states.
 Enum Constant Summary

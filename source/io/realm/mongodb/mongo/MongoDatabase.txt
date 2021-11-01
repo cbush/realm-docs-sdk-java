@@ -11,8 +11,9 @@ io.realm.mongodb.mongo.MongoDatabase
 .. _io_realm_mongodb_mongo_MongoDatabase:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 The RemoteMongoDatabase provides access to its **Document (?)** :ref:`MongoCollection <io_realm_mongodb_mongo_MongoCollection>`s.
 
@@ -75,6 +76,7 @@ Gets a collection.
 Parameters
 __________
 
+
 - ``collectionName - ``the name of the collection to return
    
 
@@ -87,6 +89,7 @@ Gets a collection, with a specific default document class.
 Type Parameters
 _______________
 
+
 - ``DocumentT - ``the type of the class to use instead of ``Document``.
    
    
@@ -94,6 +97,7 @@ _______________
 
 Parameters
 __________
+
 
 - ``collectionName - ``the name of the collection to return
    

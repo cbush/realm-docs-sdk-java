@@ -11,8 +11,9 @@ io.realm.RealmQuery<E>
 .. _io_realm_RealmQuery:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 A RealmQuery encapsulates a query on a :ref:`io.realm.Realm <io_realm_Realm>` or a :ref:`io.realm.RealmResults <io_realm_RealmResults>` using the Builder pattern. The query is executed using either :ref:`#findAll() <io_realm_RealmQuery_findAll__>` or :ref:`#findFirst() <io_realm_RealmQuery_findFirst__>`.
 
@@ -615,7 +616,8 @@ Method Summary
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`like <io_realm_RealmQuery_like_String__String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
        
-       Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
+       Condition that the value of field matches with the specified substring, with wildcards:
+       - '*' matches [0, n] unicode chars
           
           
        - '?' matches a single unicode char.
@@ -630,7 +632,8 @@ Method Summary
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`like <io_realm_RealmQuery_like_String__RealmAny_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
        
-       Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
+       Condition that the value of field matches with the specified substring, with wildcards:
+       - '*' matches [0, n] unicode chars
           
           
        - '?' matches a single unicode char.
@@ -645,7 +648,8 @@ Method Summary
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`like <io_realm_RealmQuery_like_String__String__Case_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value, :ref:`Case <io_realm_Case>` casing)
        
-       Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
+       Condition that the value of field matches with the specified substring, with wildcards:
+       - '*' matches [0, n] unicode chars
           
           
        - '?' matches a single unicode char.
@@ -660,7 +664,8 @@ Method Summary
    * - public :ref:`RealmQuery <io_realm_RealmQuery>`
      - :ref:`like <io_realm_RealmQuery_like_String__RealmAny__Case_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
        
-       Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
+       Condition that the value of field matches with the specified substring, with wildcards:
+       - '*' matches [0, n] unicode chars
           
           
        - '?' matches a single unicode char.
@@ -1107,6 +1112,7 @@ For link queries, if any part of the link path is ``null`` the whole path is con
 Parameters
 __________
 
+
 - ``fieldName - ``the field name.
    
 
@@ -1132,6 +1138,7 @@ Tests if a field is not ``null``. Only works for nullable fields.
 Parameters
 __________
 
+
 - ``fieldName - ``the field name.
    
 
@@ -1155,6 +1162,7 @@ Equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1171,6 +1179,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (`String <https://docs.or
 Equal-to comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1193,6 +1202,7 @@ Equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1214,6 +1224,7 @@ Equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1231,6 +1242,7 @@ Equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1247,6 +1259,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` equalTo (`String <https://docs.or
 Equal-to comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1268,6 +1281,7 @@ In comparison. This allows you to test if objects match any value in an array of
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
@@ -1286,6 +1300,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.
 In comparison. This allows you to test if objects match any value in an array of values.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1310,6 +1325,7 @@ In comparison. This allows you to test if objects match any value in an array of
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
@@ -1328,6 +1344,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.
 In comparison. This allows you to test if objects match any value in an array of values.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1348,6 +1365,7 @@ In comparison. This allows you to test if objects match any value in an array of
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
@@ -1366,6 +1384,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.
 In comparison. This allows you to test if objects match any value in an array of values.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1386,6 +1405,7 @@ In comparison. This allows you to test if objects match any value in an array of
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
@@ -1404,6 +1424,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.
 In comparison. This allows you to test if objects match any value in an array of values.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1424,6 +1445,7 @@ In comparison. This allows you to test if objects match any value in an array of
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
@@ -1443,6 +1465,7 @@ In comparison. This allows you to test if objects match any value in an array of
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``values - ``array of values to compare with. If ``null`` or the empty array is provided the query will never match any results.
@@ -1461,6 +1484,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` in (`String <https://docs.oracle.
 In comparison. This allows you to test if objects match any value in an array of values.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1484,6 +1508,7 @@ Not-equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1500,6 +1525,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (`String <https://docs
 Not-equal-to comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1522,6 +1548,7 @@ Not-equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1543,6 +1570,7 @@ Not-equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1560,6 +1588,7 @@ Not-equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1576,6 +1605,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` notEqualTo (`String <https://docs
 Not-equal-to comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1597,6 +1627,7 @@ Greater-than comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1613,6 +1644,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (`String <https://doc
 Greater-than comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1631,6 +1663,7 @@ Greater-than comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1647,6 +1680,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (`String <https://doc
 Greater-than comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1665,6 +1699,7 @@ Greater-than comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1681,6 +1716,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (`String <https://doc
 Greater-than comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1699,6 +1735,7 @@ Greater-than comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1715,6 +1752,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThan (`String <https://doc
 Greater-than comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1736,6 +1774,7 @@ Greater-than-or-equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1752,6 +1791,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (`String <ht
 Greater-than-or-equal-to comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1770,6 +1810,7 @@ Greater-than-or-equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1786,6 +1827,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (`String <ht
 Greater-than-or-equal-to comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1804,6 +1846,7 @@ Greater-than-or-equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1820,6 +1863,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (`String <ht
 Greater-than-or-equal-to comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1838,6 +1882,7 @@ Greater-than-or-equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1854,6 +1899,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` greaterThanOrEqualTo (`String <ht
 Greater-than-or-equal-to comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1875,6 +1921,7 @@ Less-than comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1891,6 +1938,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` lessThan (`String <https://docs.o
 Less-than comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1909,6 +1957,7 @@ Less-than comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1926,6 +1975,7 @@ Less-than comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1942,6 +1992,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` lessThan (`String <https://docs.o
 Less-than comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1963,6 +2014,7 @@ Less-than-or-equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -1979,6 +2031,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` lessThanOrEqualTo (`String <https
 Less-than-or-equal-to comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -1997,6 +2050,7 @@ Less-than-or-equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -2014,6 +2068,7 @@ Less-than-or-equal-to comparison.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to compare with.
@@ -2030,6 +2085,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` lessThanOrEqualTo (`String <https
 Less-than-or-equal-to comparison.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2051,6 +2107,7 @@ Between condition.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``from - ``lowest value (inclusive).
@@ -2069,6 +2126,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` between (`String <https://docs.or
 Between condition.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2089,6 +2147,7 @@ Between condition.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``from - ``lowest value (inclusive).
@@ -2107,6 +2166,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` between (`String <https://docs.or
 Between condition.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2127,6 +2187,7 @@ Between condition.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``from - ``lowest value (inclusive).
@@ -2146,6 +2207,7 @@ Between condition.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``from - ``lowest value (inclusive).
@@ -2164,6 +2226,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` between (`String <https://docs.or
 Between condition.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2187,6 +2250,7 @@ Condition that value of field contains the specified substring.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the substring.
@@ -2204,6 +2268,7 @@ Condition that value of field contains the specified substring.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the substring.
@@ -2220,6 +2285,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` contains (`String <https://docs.o
 Condition that value of field contains the specified substring.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2241,6 +2307,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` contains (`String <https://docs.o
 Condition that value of field contains the specified substring.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2266,6 +2333,7 @@ Condition that the value of field begins with the specified string.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the string.
@@ -2283,6 +2351,7 @@ Condition that the value of field begins with the specified string.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the string.
@@ -2299,6 +2368,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` beginsWith (`String <https://docs
 Condition that the value of field begins with the specified substring.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2320,6 +2390,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` beginsWith (`String <https://docs
 Condition that the value of field begins with the specified substring.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2345,6 +2416,7 @@ Condition that the value of field ends with the specified string.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the string.
@@ -2362,6 +2434,7 @@ Condition that the value of field ends with the specified string.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the string.
@@ -2378,6 +2451,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` endsWith (`String <https://docs.o
 Condition that the value of field ends with the specified substring.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2400,6 +2474,7 @@ Condition that the value of field ends with the specified substring.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the substring.
@@ -2420,7 +2495,8 @@ like
 public :ref:`RealmQuery <io_realm_RealmQuery>` like (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
+Condition that the value of field matches with the specified substring, with wildcards:
+- '*' matches [0, n] unicode chars
    
    
 - '?' matches a single unicode char.
@@ -2430,6 +2506,7 @@ Condition that the value of field matches with the specified substring, with wil
 
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2444,7 +2521,8 @@ ______
 public :ref:`RealmQuery <io_realm_RealmQuery>` like (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
+Condition that the value of field matches with the specified substring, with wildcards:
+- '*' matches [0, n] unicode chars
    
    
 - '?' matches a single unicode char.
@@ -2454,6 +2532,7 @@ Condition that the value of field matches with the specified substring, with wil
 
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2468,7 +2547,8 @@ ______
 public :ref:`RealmQuery <io_realm_RealmQuery>` like (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ value, :ref:`Case <io_realm_Case>` casing)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
+Condition that the value of field matches with the specified substring, with wildcards:
+- '*' matches [0, n] unicode chars
    
    
 - '?' matches a single unicode char.
@@ -2478,6 +2558,7 @@ Condition that the value of field matches with the specified substring, with wil
 
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2496,7 +2577,8 @@ ______
 public :ref:`RealmQuery <io_realm_RealmQuery>` like (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **RealmAny (?)** value, :ref:`Case <io_realm_Case>` casing)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Condition that the value of field matches with the specified substring, with wildcards:- '*' matches [0, n] unicode chars
+Condition that the value of field matches with the specified substring, with wildcards:
+- '*' matches [0, n] unicode chars
    
    
 - '?' matches a single unicode char.
@@ -2506,6 +2588,7 @@ Condition that the value of field matches with the specified substring, with wil
 
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2590,6 +2673,7 @@ Condition that finds values that are considered "empty" i.e., an empty list, the
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 
@@ -2608,6 +2692,7 @@ Condition that finds values that are considered "Not-empty" i.e., a list, a stri
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 
@@ -2625,6 +2710,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` containsKey (`String <https://doc
 Condition that value, if a dictionary field, contains the specified key.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2646,6 +2732,7 @@ Condition that value, if a dictionary field, contains the specified value.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to search for.
@@ -2662,6 +2749,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://d
 Condition that value, if a dictionary field, contains the specified value.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2680,6 +2768,7 @@ Condition that value, if a dictionary field, contains the specified value.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to search for.
@@ -2696,6 +2785,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://d
 Condition that value, if a dictionary field, contains the specified value.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2714,6 +2804,7 @@ Condition that value, if a dictionary field, contains the specified value.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to search for.
@@ -2730,6 +2821,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://d
 Condition that value, if a dictionary field, contains the specified value.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2748,6 +2840,7 @@ Condition that value, if a dictionary field, contains the specified value.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to search for.
@@ -2764,6 +2857,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://d
 Condition that value, if a dictionary field, contains the specified value.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2782,6 +2876,7 @@ Condition that value, if a dictionary field, contains the specified value.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to search for.
@@ -2798,6 +2893,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://d
 Condition that value, if a dictionary field, contains the specified value.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2816,6 +2912,7 @@ Condition that value, if a dictionary field, contains the specified value.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to search for.
@@ -2833,6 +2930,7 @@ Condition that value, if a dictionary field, contains the specified value.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``value - ``the value to search for.
@@ -2849,6 +2947,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` containsValue (`String <https://d
 Condition that value, if a dictionary field, contains the specified value.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to compare.
    
@@ -2870,6 +2969,7 @@ Condition that value, if a dictionary field, contains the specified entry.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to compare.
    
 - ``entry - ``the entry to search for.
@@ -2890,6 +2990,7 @@ Calculates the sum of a given field.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to sum. Only number and RealmAny fields are supported.
    
 
@@ -2908,6 +3009,7 @@ Returns the average of a given field. Does not support dotted field notation.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to calculate average on. Only number fields are supported.
    
 
@@ -2925,6 +3027,7 @@ public **Decimal128 (?)** averageDecimal128 (`String <https://docs.oracle.com/ja
 Returns the average of a given field. Does not support dotted field notation.
 Parameters
 __________
+
 
 - ``fieldName - ``the field to calculate average on. Only Decimal128 fields is supported. For other number types consider using :ref:`#average(String) <io_realm_RealmQuery_average_String_>`.
    
@@ -2946,6 +3049,7 @@ Returns the average of a given field. Does not support dotted field notation.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to calculate average on. Only RealmAny fields are supported. For other types consider using :ref:`#average(String) <io_realm_RealmQuery_average_String_>`.
    
    
@@ -2966,6 +3070,7 @@ Finds the minimum value of a field.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to look for a minimum on. Only number fields are supported.
    
 
@@ -2983,6 +3088,7 @@ public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ 
 Finds the minimum value of a field.
 Parameters
 __________
+
 
 - ``fieldName - ``the field name
    
@@ -3004,6 +3110,7 @@ Finds the minimum value of a **RealmAny (?)** field.
 Parameters
 __________
 
+
 - ``fieldName - ``the field containing a RealmAny value.
    
 
@@ -3022,6 +3129,7 @@ Finds the maximum value of a field.
 Parameters
 __________
 
+
 - ``fieldName - ``the field to look for a maximum on. Only number fields are supported.
    
 
@@ -3039,6 +3147,7 @@ public `Date <https://docs.oracle.com/javase/7/docs/api/java/util/Date.html>`__ 
 Finds the maximum value of a field.
 Parameters
 __________
+
 
 - ``fieldName - ``the field name.
    
@@ -3059,6 +3168,7 @@ Finds the maximum value of a **RealmAny (?)** field.
 
 Parameters
 __________
+
 
 - ``fieldName - ``the field containing a RealmAny value.
    
@@ -3127,6 +3237,7 @@ Sorts the query result by the specific field name in ascending order.Sorting is 
 Parameters
 __________
 
+
 - ``fieldName - ``the field name to sort by.
    
 
@@ -3143,6 +3254,7 @@ Sorts the query result by the specified field name and order.Sorting is currentl
 
 Parameters
 __________
+
 
 - ``fieldName - ``the field name to sort by.
    
@@ -3164,6 +3276,7 @@ Sorting is currently limited to character sets in 'Latin Basic', 'Latin Suppleme
 
 Parameters
 __________
+
 
 - ``fieldName1 - ``first field name
    
@@ -3188,6 +3301,7 @@ Sorts the query result by the specific field names in the provided orders. Later
 Parameters
 __________
 
+
 - ``fieldNames - ``an array of field names to sort by.
    
 - ``sortOrders - ``how to sort the field names.
@@ -3207,6 +3321,7 @@ public :ref:`RealmQuery <io_realm_RealmQuery>` distinct (`String <https://docs.o
 Selects a distinct set of objects of a specific class. When multiple distinct fields are given, all unique combinations of values in the fields will be returned. In case of multiple matches, it is undefined which object is returned. Unless the result is sorted, then the first object will be returned.
 Parameters
 __________
+
 
 - ``firstFieldName - ``first field name to use when finding distinct objects.
    
@@ -3231,6 +3346,7 @@ Limits the number of objects returned in case the query matched more objects.Not
 
 Parameters
 __________
+
 
 - ``limit - ``a limit that is ``≥ 1``.
    
@@ -3309,6 +3425,7 @@ Arguments are defined in the string predicate as $argument_index, where $argumen
 
 Parameters
 __________
+
 
 - ``predicate - ``a Realm Query Language predicate.
    

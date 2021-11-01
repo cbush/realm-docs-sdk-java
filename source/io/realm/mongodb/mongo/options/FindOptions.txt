@@ -11,12 +11,14 @@ io.realm.mongodb.mongo.options.FindOptions
 .. _io_realm_mongodb_mongo_options_FindOptions:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 The options to apply to a find operation (also commonly referred to as a query).
 Constructors
 ============
+
 
 - ``io.realm.mongodb.mongo.options.FindOptions()``
 
@@ -110,6 +112,7 @@ Sets the limit to apply.
 Parameters
 __________
 
+
 - ``limit - ``the limit, which may be null
    
 
@@ -134,6 +137,7 @@ Sets a document describing the fields to return for all matching documents.
 Parameters
 __________
 
+
 - ``projection - ``the project document, which may be null.
    
 
@@ -157,6 +161,7 @@ public :ref:`FindOptions <io_realm_mongodb_mongo_options_FindOptions>` sort (**B
 Sets the sort criteria to apply to the query.
 Parameters
 __________
+
 
 - ``sort - ``the sort criteria, which may be null.
    

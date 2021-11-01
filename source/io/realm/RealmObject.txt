@@ -11,16 +11,19 @@ io.realm.RealmObject
 .. _io_realm_RealmObject:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
 
+
+
 *Implemented interfaces:*
+
 
 - :ref:`io.realm.RealmModel <io_realm_RealmModel>`
 
 In Realm you define your RealmObject classes by sub-classing RealmObject and adding fields to be persisted. You then create your objects within a Realm, and use your custom subclasses instead of using the RealmObject class directly.An annotation processor will create a proxy class for your RealmObject subclass.
 
 The following field data types are supported:
+
 
 - boolean/Boolean
    
@@ -85,6 +88,7 @@ A RealmObject cannot be passed between different threads.
 
 Constructors
 ============
+
 
 - ``io.realm.RealmObject()``
 
@@ -428,6 +432,7 @@ Checks if the RealmObject is still valid to use i.e., the RealmObject hasn't bee
 Parameters
 __________
 
+
 - ``object - ``RealmObject to check validity for.
    
 
@@ -598,6 +603,7 @@ Synchronous RealmObjects are by definition blocking hence this method will alway
 Parameters
 __________
 
+
 - ``object - ``RealmObject to check.
    
 
@@ -674,6 +680,7 @@ You **must not** call **Realm#close() (?)** against returned instance.
 Parameters
 __________
 
+
 - ``model - ``an :ref:`RealmModel <io_realm_RealmModel>` instance other than :ref:`DynamicRealmObject <io_realm_DynamicRealmObject>`.
    
    
@@ -707,6 +714,7 @@ Makes an asynchronous query blocking. This will also trigger any registered list
 
 Parameters
 __________
+
 
 - ``object - ``RealmObject to force load.
    
@@ -751,6 +759,7 @@ Adds a change listener to this RealmObject to get detailed information about cha
 Parameters
 __________
 
+
 - ``listener - ``the change listener to be notified.
    
 
@@ -794,6 +803,7 @@ Adds a change listener to this RealmObject that will be triggered if any value f
 Parameters
 __________
 
+
 - ``listener - ``the change listener to be notified.
    
 
@@ -836,6 +846,7 @@ Adds a change listener to a RealmObject to get detailed information about the ch
 
 Parameters
 __________
+
 
 - ``object - ``RealmObject to add listener to.
    
@@ -882,6 +893,7 @@ Adds a change listener to a RealmObject that will be triggered if any value fiel
 Parameters
 __________
 
+
 - ``object - ``RealmObject to add listener to.
    
 - ``listener - ``the change listener to be notified.
@@ -902,6 +914,7 @@ Removes a previously registered listener.
 Parameters
 __________
 
+
 - ``listener - ``the instance to be removed.
    
 
@@ -917,6 +930,7 @@ Removes a previously registered listener.
 Parameters
 __________
 
+
 - ``listener - ``the instance to be removed.
    
 
@@ -931,6 +945,7 @@ public static **void** removeChangeListener <**E (?)** >(**E (?)** object, :ref:
 Removes a previously registered listener on the given RealmObject.
 Parameters
 __________
+
 
 - ``object - ``RealmObject to remove listener from.
    
@@ -948,6 +963,7 @@ public static **void** removeChangeListener <**E (?)** >(**E (?)** object, :ref:
 Removes a previously registered listener on the given RealmObject.
 Parameters
 __________
+
 
 - ``object - ``RealmObject to remove listener from.
    
@@ -974,6 +990,7 @@ public static **void** removeAllChangeListeners <**E (?)** >(**E (?)** object)
 Removes all registered listeners from the given RealmObject.
 Parameters
 __________
+
 
 - ``object - ``RealmObject to remove all listeners from.
    
@@ -1037,6 +1054,7 @@ If you would like the ``asFlowable()`` to stop emitting items you can instruct R
 
 Type Parameters
 _______________
+
 
 - ``E - ``RealmObject class that is being observed. Must be this class or its super types.
    
@@ -1102,6 +1120,7 @@ If you would like the ``asFlowable()`` to stop emitting items you can instruct R
 
 Parameters
 __________
+
 
 - ``object - ``RealmObject class that is being observed. Must be this class or its super types.
    
@@ -1193,6 +1212,7 @@ Realm Observables always emit items from the thread holding the live Realm. This
 
 Parameters
 __________
+
 
 - ``object - ``RealmObject class that is being observed. Must be this class or its super types.
    

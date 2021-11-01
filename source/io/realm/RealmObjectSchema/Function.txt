@@ -10,6 +10,10 @@ io.realm.RealmObjectSchema.Function
 
 .. _io_realm_RealmObjectSchema_Function:
 
+*Superclass:*
+
+
+
 Function interface, used when traversing all objects of the current class and apply a function on each.
 Method Summary
 ==============

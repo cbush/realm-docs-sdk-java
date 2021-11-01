@@ -11,8 +11,9 @@ io.realm.rx.ObjectChange<E extends io.realm.RealmModel>
 .. _io_realm_rx_ObjectChange:
 
 *Superclass:*
-
 - `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__
+
+
 
 Container wrapping the result of a :ref:`io.realm.RealmObjectChangeListener <io_realm_RealmObjectChangeListener>` being triggered.
 
@@ -23,6 +24,7 @@ This is used by :ref:`RealmObject#asChangesetObservable() <io_realm_RealmObject_
 
 Constructors
 ============
+
 
 - ``io.realm.rx.ObjectChange(E, ObjectChangeSet)``
 
