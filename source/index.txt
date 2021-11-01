@@ -41,7 +41,7 @@ Quick start
    
    
 - **:ref:`io.realm.RealmObject <io_realm_RealmObject>`**
-   | The super class of all objects (models) that are to be stored in Realm. A Java object must extend :ref:`io.realm.RealmObject <io_realm_RealmObject>`*RealmObject*. `Read more <https://docs.mongodb.com/realm/sdk/android/fundamentals/object-models-and-schemas/>`__.
+   | The super class of all objects (models) that are to be stored in Realm. A Java object must extend :ref:`io.realm.RealmObject <io_realm_RealmObject>` in order to be considered a *RealmObject*. `Read more <https://docs.mongodb.com/realm/sdk/android/fundamentals/object-models-and-schemas/>`__.
    
    
 - **:ref:`io.realm.RealmList <io_realm_RealmList>`**
@@ -49,7 +49,7 @@ Quick start
    
    
 - **:ref:`io.realm.RealmQuery <io_realm_RealmQuery>`**
-   | An object that encapsulates a query as defined through Realms fluent query interface. Queries are executed using either the **io.realm.RealmQuery.findAll (?)**An object that encapsulates a query as defined through Realms fluent query interface. Queries are executed using either the **io.realm.RealmQuery.findAll (?)****io.realm.RealmQuery.findFirst (?)**`Read more <https://docs.mongodb.com/realm/sdk/android/fundamentals/live-queries/>`__.
+   | An object that encapsulates a query as defined through Realms fluent query interface. Queries are executed using either the **io.realm.RealmQuery.findAll (?)**, **io.realm.RealmQuery.findFirst (?)** or their variants. `Read more <https://docs.mongodb.com/realm/sdk/android/fundamentals/live-queries/>`__.
    
    
 - **:ref:`io.realm.RealmResults <io_realm_RealmResults>`**
