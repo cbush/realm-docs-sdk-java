@@ -97,7 +97,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public final **⁠void⁠**
+   * - public final **void**
      - :ref:`deleteFromRealm <io_realm_RealmObject_deleteFromRealm__>` ()
        
        Deletes the object from the Realm it is currently associated to.
@@ -105,15 +105,15 @@ Method Summary
        
        
    
-   * - public static **⁠void⁠**
-     - :ref:`deleteFromRealm <io_realm_RealmObject_deleteFromRealm_E_>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
+   * - public static **void**
+     - :ref:`deleteFromRealm <io_realm_RealmObject_deleteFromRealm_E_>` <**E (?)** >(**E (?)** object)
        
        Deletes the object from the Realm it is currently associated with.
        
        
        
    
-   * - public final **⁠boolean⁠**
+   * - public final **boolean**
      - :ref:`isValid <io_realm_RealmObject_isValid__>` ()
        
        Checks if the RealmObject is still valid to use i.e., the RealmObject hasn't been deleted nor has the :ref:`io.realm.Realm <io_realm_Realm>` been closed.
@@ -123,8 +123,8 @@ Method Summary
        
        
    
-   * - public static **⁠boolean⁠**
-     - :ref:`isValid <io_realm_RealmObject_isValid_E_>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
+   * - public static **boolean**
+     - :ref:`isValid <io_realm_RealmObject_isValid_E_>` <**E (?)** >(**E (?)** object)
        
        Checks if the RealmObject is still valid to use i.e., the RealmObject hasn't been deleted nor has the :ref:`io.realm.Realm <io_realm_Realm>` been closed.
        
@@ -133,7 +133,7 @@ Method Summary
        
        
    
-   * - public final **⁠boolean⁠**
+   * - public final **boolean**
      - :ref:`isFrozen <io_realm_RealmObject_isFrozen__>` ()
        
        Returns whether or not this RealmObject is frozen.
@@ -141,31 +141,31 @@ Method Summary
        
        
    
-   * - public final **⁠E (?)⁠**
-     - :ref:`freeze <io_realm_RealmObject_freeze__>` <**⁠E (?)⁠** >()
+   * - public final **E (?)**
+     - :ref:`freeze <io_realm_RealmObject_freeze__>` <**E (?)** >()
        
        Returns a frozen snapshot of this object.
        
        
        
    
-   * - public static **⁠boolean⁠**
-     - :ref:`isFrozen <io_realm_RealmObject_isFrozen_E_>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
+   * - public static **boolean**
+     - :ref:`isFrozen <io_realm_RealmObject_isFrozen_E_>` <**E (?)** >(**E (?)** object)
        
        Returns whether or not this RealmObject is frozen.
        
        
        
    
-   * - public static **⁠E (?)⁠**
-     - :ref:`freeze <io_realm_RealmObject_freeze_E_>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
+   * - public static **E (?)**
+     - :ref:`freeze <io_realm_RealmObject_freeze_E_>` <**E (?)** >(**E (?)** object)
        
        Returns a frozen snapshot of this object.
        
        
        
    
-   * - public final **⁠boolean⁠**
+   * - public final **boolean**
      - :ref:`isLoaded <io_realm_RealmObject_isLoaded__>` ()
        
        Checks if the query used to find this RealmObject has completed.
@@ -173,15 +173,15 @@ Method Summary
        
        
    
-   * - public static **⁠boolean⁠**
-     - :ref:`isLoaded <io_realm_RealmObject_isLoaded_E_>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
+   * - public static **boolean**
+     - :ref:`isLoaded <io_realm_RealmObject_isLoaded_E_>` <**E (?)** >(**E (?)** object)
        
        Checks if the query used to find this RealmObject has completed.
        
        
        
    
-   * - public **⁠boolean⁠**
+   * - public **boolean**
      - :ref:`isManaged <io_realm_RealmObject_isManaged__>` ()
        
        Checks if this object is managed by Realm.
@@ -189,8 +189,8 @@ Method Summary
        
        
    
-   * - public static **⁠boolean⁠**
-     - :ref:`isManaged <io_realm_RealmObject_isManaged_E_>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
+   * - public static **boolean**
+     - :ref:`isManaged <io_realm_RealmObject_isManaged_E_>` <**E (?)** >(**E (?)** object)
        
        Checks if this object is managed by Realm.
        
@@ -217,7 +217,7 @@ Method Summary
        
        
    
-   * - public final **⁠boolean⁠**
+   * - public final **boolean**
      - :ref:`load <io_realm_RealmObject_load__>` ()
        
        Makes an asynchronous query blocking.
@@ -225,47 +225,47 @@ Method Summary
        
        
    
-   * - public static **⁠boolean⁠**
-     - :ref:`load <io_realm_RealmObject_load_E_>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
+   * - public static **boolean**
+     - :ref:`load <io_realm_RealmObject_load_E_>` <**E (?)** >(**E (?)** object)
        
        Makes an asynchronous query blocking.
        
        
        
    
-   * - public final **⁠void⁠**
-     - :ref:`addChangeListener <io_realm_RealmObject_addChangeListener_RealmObjectChangeListener_E__>` <**⁠E (?)⁠** >(:ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
+   * - public final **void**
+     - :ref:`addChangeListener <io_realm_RealmObject_addChangeListener_RealmObjectChangeListener_E__>` <**E (?)** >(:ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
        
        Adds a change listener to this RealmObject to get detailed information about changes.
        
        
        
    
-   * - public final **⁠void⁠**
-     - :ref:`addChangeListener <io_realm_RealmObject_addChangeListener_RealmChangeListener_E__>` <**⁠E (?)⁠** >(:ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
+   * - public final **void**
+     - :ref:`addChangeListener <io_realm_RealmObject_addChangeListener_RealmChangeListener_E__>` <**E (?)** >(:ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
        
        Adds a change listener to this RealmObject that will be triggered if any value field or referenced RealmObject field is changed, or the RealmList field itself is changed.
        
        
        
    
-   * - public static **⁠void⁠**
-     - :ref:`addChangeListener <io_realm_RealmObject_addChangeListener_E__RealmObjectChangeListener_E__>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object, :ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
+   * - public static **void**
+     - :ref:`addChangeListener <io_realm_RealmObject_addChangeListener_E__RealmObjectChangeListener_E__>` <**E (?)** >(**E (?)** object, :ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
        
        Adds a change listener to a RealmObject to get detailed information about the changes.
        
        
        
    
-   * - public static **⁠void⁠**
-     - :ref:`addChangeListener <io_realm_RealmObject_addChangeListener_E__RealmChangeListener_E__>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object, :ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
+   * - public static **void**
+     - :ref:`addChangeListener <io_realm_RealmObject_addChangeListener_E__RealmChangeListener_E__>` <**E (?)** >(**E (?)** object, :ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
        
        Adds a change listener to a RealmObject that will be triggered if any value field or referenced RealmObject field is changed, or the RealmList field itself is changed.
        
        
        
    
-   * - public final **⁠void⁠**
+   * - public final **void**
      - :ref:`removeChangeListener <io_realm_RealmObject_removeChangeListener_RealmObjectChangeListener_>` (:ref:`io.realm.RealmObjectChangeListener <io_realm_RealmObjectChangeListener>` listener)
        
        Removes a previously registered listener.
@@ -273,7 +273,7 @@ Method Summary
        
        
    
-   * - public final **⁠void⁠**
+   * - public final **void**
      - :ref:`removeChangeListener <io_realm_RealmObject_removeChangeListener_RealmChangeListener_>` (:ref:`io.realm.RealmChangeListener <io_realm_RealmChangeListener>` listener)
        
        Removes a previously registered listener.
@@ -281,23 +281,23 @@ Method Summary
        
        
    
-   * - public static **⁠void⁠**
-     - :ref:`removeChangeListener <io_realm_RealmObject_removeChangeListener_E__RealmObjectChangeListener_>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object, :ref:`io.realm.RealmObjectChangeListener <io_realm_RealmObjectChangeListener>` listener)
+   * - public static **void**
+     - :ref:`removeChangeListener <io_realm_RealmObject_removeChangeListener_E__RealmObjectChangeListener_>` <**E (?)** >(**E (?)** object, :ref:`io.realm.RealmObjectChangeListener <io_realm_RealmObjectChangeListener>` listener)
        
        Removes a previously registered listener on the given RealmObject.
        
        
        
    
-   * - public static **⁠void⁠**
-     - :ref:`removeChangeListener <io_realm_RealmObject_removeChangeListener_E__RealmChangeListener_E__>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object, :ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
+   * - public static **void**
+     - :ref:`removeChangeListener <io_realm_RealmObject_removeChangeListener_E__RealmChangeListener_E__>` <**E (?)** >(**E (?)** object, :ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
        
        Removes a previously registered listener on the given RealmObject.
        
        
        
    
-   * - public final **⁠void⁠**
+   * - public final **void**
      - :ref:`removeAllChangeListeners <io_realm_RealmObject_removeAllChangeListeners__>` ()
        
        Removes all registered listeners.
@@ -305,40 +305,40 @@ Method Summary
        
        
    
-   * - public static **⁠void⁠**
-     - :ref:`removeAllChangeListeners <io_realm_RealmObject_removeAllChangeListeners_E_>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
+   * - public static **void**
+     - :ref:`removeAllChangeListeners <io_realm_RealmObject_removeAllChangeListeners_E_>` <**E (?)** >(**E (?)** object)
        
        Removes all registered listeners from the given RealmObject.
        
        
        
    
-   * - public final **⁠<any> (?)⁠**
-     - :ref:`asFlowable <io_realm_RealmObject_asFlowable__>` <**⁠E (?)⁠** >()
+   * - public final **<any> (?)**
+     - :ref:`asFlowable <io_realm_RealmObject_asFlowable__>` <**E (?)** >()
        
        Returns an RxJava Flowable that monitors changes to this RealmObject.
        
        
        
    
-   * - public final **⁠<any> (?)⁠**
-     - :ref:`asChangesetObservable <io_realm_RealmObject_asChangesetObservable__>` <**⁠E (?)⁠** >()
+   * - public final **<any> (?)**
+     - :ref:`asChangesetObservable <io_realm_RealmObject_asChangesetObservable__>` <**E (?)** >()
        
        Returns an Rx Observable that monitors changes to this RealmObject.
        
        
        
    
-   * - public static **⁠<any> (?)⁠**
-     - :ref:`asFlowable <io_realm_RealmObject_asFlowable_E_>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
+   * - public static **<any> (?)**
+     - :ref:`asFlowable <io_realm_RealmObject_asFlowable_E_>` <**E (?)** >(**E (?)** object)
        
        Returns an RxJava Flowable that monitors changes to this RealmObject.
        
        
        
    
-   * - public static **⁠<any> (?)⁠**
-     - :ref:`asChangesetObservable <io_realm_RealmObject_asChangesetObservable_E_>` <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
+   * - public static **<any> (?)**
+     - :ref:`asChangesetObservable <io_realm_RealmObject_asChangesetObservable_E_>` <**E (?)** >(**E (?)** object)
        
        Returns an Rx Observable that monitors changes to this RealmObject.
        
@@ -354,8 +354,8 @@ deleteFromRealm
 
 .. _io_realm_RealmObject_deleteFromRealm__:
 
-public final **⁠void⁠** deleteFromRealm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final **void** deleteFromRealm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the object from the Realm it is currently associated to.After this method is called the object will be invalid and any operation (read or write) performed on it will fail with an IllegalStateException.
 
@@ -370,8 +370,8 @@ ________
 
 .. _io_realm_RealmObject_deleteFromRealm_E_:
 
-public static **⁠void⁠** deleteFromRealm <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **void** deleteFromRealm <**E (?)** >(**E (?)** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes the object from the Realm it is currently associated with.After this method is called the object will be invalid and any operation (read or write) performed on it will fail with an IllegalStateException.
 
@@ -389,8 +389,8 @@ isValid
 
 .. _io_realm_RealmObject_isValid__:
 
-public final **⁠boolean⁠** isValid ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final **boolean** isValid ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the RealmObject is still valid to use i.e., the RealmObject hasn't been deleted nor has the :ref:`io.realm.Realm <io_realm_Realm>` been closed. It will always return ``true`` for unmanaged objects.
 
@@ -419,8 +419,8 @@ ________
 
 .. _io_realm_RealmObject_isValid_E_:
 
-public static **⁠boolean⁠** isValid <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **boolean** isValid <**E (?)** >(**E (?)** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the RealmObject is still valid to use i.e., the RealmObject hasn't been deleted nor has the :ref:`io.realm.Realm <io_realm_Realm>` been closed. It will always return ``true`` for unmanaged objects.
 
@@ -436,8 +436,8 @@ isFrozen
 
 .. _io_realm_RealmObject_isFrozen__:
 
-public final **⁠boolean⁠** isFrozen ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final **boolean** isFrozen ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns whether or not this RealmObject is frozen.
 See Also
@@ -447,8 +447,8 @@ ________
 
 .. _io_realm_RealmObject_isFrozen_E_:
 
-public static **⁠boolean⁠** isFrozen <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **boolean** isFrozen <**E (?)** >(**E (?)** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns whether or not this RealmObject is frozen.
 See Also
@@ -461,8 +461,8 @@ freeze
 
 .. _io_realm_RealmObject_freeze__:
 
-public final **⁠E (?)⁠** freeze <**⁠E (?)⁠** >()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final **E (?)** freeze <**E (?)** >()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns a frozen snapshot of this object. The frozen copy can be read and queried from any thread without throwing an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__.
 
@@ -482,8 +482,8 @@ ______
 
 .. _io_realm_RealmObject_freeze_E_:
 
-public static **⁠E (?)⁠** freeze <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **E (?)** freeze <**E (?)** >(**E (?)** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns a frozen snapshot of this object. The frozen copy can be read and queried from any thread without throwing an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__.
 
@@ -506,8 +506,8 @@ isLoaded
 
 .. _io_realm_RealmObject_isLoaded__:
 
-public final **⁠boolean⁠** isLoaded ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final **boolean** isLoaded ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the query used to find this RealmObject has completed.Async methods like :ref:`RealmQuery#findFirstAsync() <io_realm_RealmQuery_findFirstAsync__>` return an :ref:`RealmObject <io_realm_RealmObject>` that represents the future result of the :ref:`RealmQuery <io_realm_RealmQuery>`. It can be considered similar to a `java.util.concurrent.Future <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Future.html>`__ in this regard.
 
@@ -554,8 +554,8 @@ ________
 
 .. _io_realm_RealmObject_isLoaded_E_:
 
-public static **⁠boolean⁠** isLoaded <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **boolean** isLoaded <**E (?)** >(**E (?)** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the query used to find this RealmObject has completed.Async methods like :ref:`RealmQuery#findFirstAsync() <io_realm_RealmQuery_findFirstAsync__>` return an :ref:`RealmObject <io_realm_RealmObject>` that represents the future result of the :ref:`RealmQuery <io_realm_RealmQuery>`. It can be considered similar to a `java.util.concurrent.Future <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Future.html>`__ in this regard.
 
@@ -611,32 +611,32 @@ isManaged
 
 .. _io_realm_RealmObject_isManaged__:
 
-public **⁠boolean⁠** isManaged ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isManaged ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Checks if this object is managed by Realm. A managed object is just a wrapper around the data in the underlying Realm file. On Looper threads, a managed object will be live-updated so it always points to the latest data. It is possible to register a change listener using **⁠#addChangeListener(RealmChangeListener) (?)⁠** to be notified when changes happen. Managed objects are thread confined so that they cannot be accessed from other threads than the one that created them.
+Checks if this object is managed by Realm. A managed object is just a wrapper around the data in the underlying Realm file. On Looper threads, a managed object will be live-updated so it always points to the latest data. It is possible to register a change listener using **#addChangeListener(RealmChangeListener) (?)** to be notified when changes happen. Managed objects are thread confined so that they cannot be accessed from other threads than the one that created them.
 
 If this method returns ``false``, the object is unmanaged. An unmanaged object is just a normal Java object, so it can be parsed freely across threads, but the data in the object is not connected to the underlying Realm, so it will not be live updated.
 
 
 
-It is possible to create a managed object from an unmanaged object by using **⁠Realm#copyToRealm(RealmModel, ImportFlag...) (?)⁠**. An unmanaged object can be created from a managed object by using **⁠Realm#copyFromRealm(RealmModel) (?)⁠**.
+It is possible to create a managed object from an unmanaged object by using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)**. An unmanaged object can be created from a managed object by using **Realm#copyFromRealm(RealmModel) (?)**.
 
 
 
 
 .. _io_realm_RealmObject_isManaged_E_:
 
-public static **⁠boolean⁠** isManaged <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **boolean** isManaged <**E (?)** >(**E (?)** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Checks if this object is managed by Realm. A managed object is just a wrapper around the data in the underlying Realm file. On Looper threads, a managed object will be live-updated so it always points to the latest data. It is possible to register a change listener using **⁠#addChangeListener(RealmModel, RealmChangeListener) (?)⁠** to be notified when changes happen. Managed objects are thread confined so that they cannot be accessed from other threads than the one that created them.
+Checks if this object is managed by Realm. A managed object is just a wrapper around the data in the underlying Realm file. On Looper threads, a managed object will be live-updated so it always points to the latest data. It is possible to register a change listener using **#addChangeListener(RealmModel, RealmChangeListener) (?)** to be notified when changes happen. Managed objects are thread confined so that they cannot be accessed from other threads than the one that created them.
 
 If this method returns ``false``, the object is unmanaged. An unmanaged object is just a normal Java object, so it can be parsed freely across threads, but the data in the object is not connected to the underlying Realm, so it will not be live updated.
 
 
 
-It is possible to create a managed object from an unmanaged object by using **⁠Realm#copyToRealm(RealmModel, ImportFlag...) (?)⁠**. An unmanaged object can be created from a managed object by using **⁠Realm#copyFromRealm(RealmModel) (?)⁠**.
+It is possible to create a managed object from an unmanaged object by using **Realm#copyToRealm(RealmModel, ImportFlag...) (?)**. An unmanaged object can be created from a managed object by using **Realm#copyFromRealm(RealmModel) (?)**.
 
 
 
@@ -651,7 +651,7 @@ public :ref:`Realm <io_realm_Realm>` getRealm ()
 
 Returns :ref:`Realm <io_realm_Realm>` instance where this :ref:`RealmObject <io_realm_RealmObject>` belongs.
 
-You **⁠must not⁠** call **⁠Realm#close() (?)⁠** against returned instance.
+You **must not** call **Realm#close() (?)** against returned instance.
 
 
 
@@ -666,7 +666,7 @@ public static :ref:`Realm <io_realm_Realm>` getRealm (:ref:`RealmModel <io_realm
 
 returns :ref:`Realm <io_realm_Realm>` instance where the ``model`` belongs.
 
-You **⁠must not⁠** call **⁠Realm#close() (?)⁠** against returned instance.
+You **must not** call **Realm#close() (?)** against returned instance.
 
 
 
@@ -687,8 +687,8 @@ load
 
 .. _io_realm_RealmObject_load__:
 
-public final **⁠boolean⁠** load ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final **boolean** load ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Makes an asynchronous query blocking. This will also trigger any registered listeners.Note: This will return ``true`` if called for an unmanaged object (created outside of Realm).
 
@@ -697,8 +697,8 @@ Makes an asynchronous query blocking. This will also trigger any registered list
 
 .. _io_realm_RealmObject_load_E_:
 
-public static **⁠boolean⁠** load <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **boolean** load <**E (?)** >(**E (?)** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Makes an asynchronous query blocking. This will also trigger any registered listeners.Note: This will return ``true`` if called for an unmanaged object (created outside of Realm).
 
@@ -716,8 +716,8 @@ addChangeListener
 
 .. _io_realm_RealmObject_addChangeListener_RealmObjectChangeListener_E__:
 
-public final **⁠void⁠** addChangeListener <**⁠E (?)⁠** >(:ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final **void** addChangeListener <**E (?)** >(:ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a change listener to this RealmObject to get detailed information about changes. The listener will be triggered if any value field or referenced RealmObject field is changed, or the RealmList field itself is changed.Registering a change listener will not prevent the underlying RealmObject from being garbage collected. If the RealmObject is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
@@ -759,8 +759,8 @@ ______
 
 .. _io_realm_RealmObject_addChangeListener_RealmChangeListener_E__:
 
-public final **⁠void⁠** addChangeListener <**⁠E (?)⁠** >(:ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final **void** addChangeListener <**E (?)** >(:ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a change listener to this RealmObject that will be triggered if any value field or referenced RealmObject field is changed, or the RealmList field itself is changed.Registering a change listener will not prevent the underlying RealmObject from being garbage collected. If the RealmObject is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
@@ -802,8 +802,8 @@ ______
 
 .. _io_realm_RealmObject_addChangeListener_E__RealmObjectChangeListener_E__:
 
-public static **⁠void⁠** addChangeListener <**⁠E (?)⁠** >(**⁠E (?)⁠** object, :ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **void** addChangeListener <**E (?)** >(**E (?)** object, :ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a change listener to a RealmObject to get detailed information about the changes. The listener will be triggered if any value field or referenced RealmObject field is changed, or the RealmList field itself is changed.Registering a change listener will not prevent the underlying RealmObject from being garbage collected. If the RealmObject is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
@@ -847,8 +847,8 @@ ______
 
 .. _io_realm_RealmObject_addChangeListener_E__RealmChangeListener_E__:
 
-public static **⁠void⁠** addChangeListener <**⁠E (?)⁠** >(**⁠E (?)⁠** object, :ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **void** addChangeListener <**E (?)** >(**E (?)** object, :ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a change listener to a RealmObject that will be triggered if any value field or referenced RealmObject field is changed, or the RealmList field itself is changed.Registering a change listener will not prevent the underlying RealmObject from being garbage collected. If the RealmObject is garbage collected, the change listener will stop being triggered. To avoid this, keep a strong reference for as long as appropriate e.g. in a class variable.
 
@@ -895,8 +895,8 @@ removeChangeListener
 
 .. _io_realm_RealmObject_removeChangeListener_RealmObjectChangeListener_:
 
-public final **⁠void⁠** removeChangeListener (:ref:`io.realm.RealmObjectChangeListener <io_realm_RealmObjectChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final **void** removeChangeListener (:ref:`io.realm.RealmObjectChangeListener <io_realm_RealmObjectChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes a previously registered listener.
 Parameters
@@ -910,8 +910,8 @@ ______
 
 .. _io_realm_RealmObject_removeChangeListener_RealmChangeListener_:
 
-public final **⁠void⁠** removeChangeListener (:ref:`io.realm.RealmChangeListener <io_realm_RealmChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final **void** removeChangeListener (:ref:`io.realm.RealmChangeListener <io_realm_RealmChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes a previously registered listener.
 Parameters
@@ -925,8 +925,8 @@ ______
 
 .. _io_realm_RealmObject_removeChangeListener_E__RealmObjectChangeListener_:
 
-public static **⁠void⁠** removeChangeListener <**⁠E (?)⁠** >(**⁠E (?)⁠** object, :ref:`io.realm.RealmObjectChangeListener <io_realm_RealmObjectChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **void** removeChangeListener <**E (?)** >(**E (?)** object, :ref:`io.realm.RealmObjectChangeListener <io_realm_RealmObjectChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes a previously registered listener on the given RealmObject.
 Parameters
@@ -942,8 +942,8 @@ ______
 
 .. _io_realm_RealmObject_removeChangeListener_E__RealmChangeListener_E__:
 
-public static **⁠void⁠** removeChangeListener <**⁠E (?)⁠** >(**⁠E (?)⁠** object, :ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **void** removeChangeListener <**E (?)** >(**E (?)** object, :ref:`io.realm.RealmChangeListener\<E> <io_realm_RealmChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes a previously registered listener on the given RealmObject.
 Parameters
@@ -962,14 +962,14 @@ removeAllChangeListeners
 
 .. _io_realm_RealmObject_removeAllChangeListeners__:
 
-public final **⁠void⁠** removeAllChangeListeners ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final **void** removeAllChangeListeners ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes all registered listeners.
 .. _io_realm_RealmObject_removeAllChangeListeners_E_:
 
-public static **⁠void⁠** removeAllChangeListeners <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **void** removeAllChangeListeners <**E (?)** >(**E (?)** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes all registered listeners from the given RealmObject.
 Parameters
@@ -986,8 +986,8 @@ asFlowable
 
 .. _io_realm_RealmObject_asFlowable__:
 
-public final **⁠<any> (?)⁠** asFlowable <**⁠E (?)⁠** >()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final **<any> (?)** asFlowable <**E (?)** >()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns an RxJava Flowable that monitors changes to this RealmObject. It will emit the current object when subscribed to. Object updates will continually be emitted as the RealmObject is updated - ``onComplete`` will never be called.
 
@@ -1051,8 +1051,8 @@ ________
 
 .. _io_realm_RealmObject_asFlowable_E_:
 
-public static **⁠<any> (?)⁠** asFlowable <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **<any> (?)** asFlowable <**E (?)** >(**E (?)** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns an RxJava Flowable that monitors changes to this RealmObject. It will emit the current object when subscribed to. Object updates will continuously be emitted as the RealmObject is updated - ``onComplete`` will never be called.
 
@@ -1119,8 +1119,8 @@ asChangesetObservable
 
 .. _io_realm_RealmObject_asChangesetObservable__:
 
-public final **⁠<any> (?)⁠** asChangesetObservable <**⁠E (?)⁠** >()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public final **<any> (?)** asChangesetObservable <**E (?)** >()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns an Rx Observable that monitors changes to this RealmObject. It will emit the current RealmObject when subscribed to. For each update to the RealmObject a pair consisting of the RealmObject and the :ref:`ObjectChangeSet <io_realm_ObjectChangeSet>` will be sent. The changeset will be ``null`` the first time the RealmObject is emitted.
 
@@ -1160,8 +1160,8 @@ ________
 
 .. _io_realm_RealmObject_asChangesetObservable_E_:
 
-public static **⁠<any> (?)⁠** asChangesetObservable <**⁠E (?)⁠** >(**⁠E (?)⁠** object)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **<any> (?)** asChangesetObservable <**E (?)** >(**E (?)** object)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Returns an Rx Observable that monitors changes to this RealmObject. It will emit the current RealmObject when subscribed to. For each update to the RealmObject a pair consisting of the RealmObject and the :ref:`ObjectChangeSet <io_realm_ObjectChangeSet>` will be sent. The changeset will be ``null`` the first time the RealmObject is emitted.
 

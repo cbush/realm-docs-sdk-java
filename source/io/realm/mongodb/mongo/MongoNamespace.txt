@@ -47,7 +47,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public static **⁠void⁠**
+   * - public static **void**
      - :ref:`checkDatabaseNameValidity <io_realm_mongodb_mongo_MongoNamespace_checkDatabaseNameValidity_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ databaseName)
        
        Check the validity of the given database name.
@@ -55,7 +55,7 @@ Method Summary
        
        
    
-   * - public static **⁠void⁠**
+   * - public static **void**
      - :ref:`checkCollectionNameValidity <io_realm_mongodb_mongo_MongoNamespace_checkCollectionNameValidity_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ collectionName)
        
        Check the validity of the given collection name.
@@ -87,7 +87,7 @@ Method Summary
        
        
    
-   * - public **⁠boolean⁠**
+   * - public **boolean**
      - :ref:`equals <io_realm_mongodb_mongo_MongoNamespace_equals_Object_>` (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
        
        
@@ -105,7 +105,7 @@ Method Summary
        
        
    
-   * - public **⁠int⁠**
+   * - public **int**
      - :ref:`hashCode <io_realm_mongodb_mongo_MongoNamespace_hashCode__>` ()
        
        
@@ -131,8 +131,8 @@ checkDatabaseNameValidity
 
 .. _io_realm_mongodb_mongo_MongoNamespace_checkDatabaseNameValidity_String_:
 
-public static **⁠void⁠** checkDatabaseNameValidity (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ databaseName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **void** checkDatabaseNameValidity (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ databaseName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Check the validity of the given database name. A valid database name is non-null, non-empty, and does not contain any of the following characters: ``'\0', '/', '\\', ' ', '"', '.'``. The server may impose additional restrictions on database names.
 
@@ -151,8 +151,8 @@ checkCollectionNameValidity
 
 .. _io_realm_mongodb_mongo_MongoNamespace_checkCollectionNameValidity_String_:
 
-public static **⁠void⁠** checkCollectionNameValidity (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ collectionName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public static **void** checkCollectionNameValidity (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ collectionName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Check the validity of the given collection name. A valid collection name is non-null and non-empty. The server may impose additional restrictions on collection names.
 Parameters
@@ -196,8 +196,8 @@ equals
 
 .. _io_realm_mongodb_mongo_MongoNamespace_equals_Object_:
 
-public **⁠boolean⁠** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** equals (`Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ o)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 toString
@@ -216,8 +216,8 @@ hashCode
 
 .. _io_realm_mongodb_mongo_MongoNamespace_hashCode__:
 
-public **⁠int⁠** hashCode ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **int** hashCode ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

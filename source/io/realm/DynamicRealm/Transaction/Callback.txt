@@ -29,7 +29,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`onSuccess <io_realm_DynamicRealm_Transaction_Callback_onSuccess__>` ()
        
        
@@ -37,7 +37,7 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`onError <io_realm_DynamicRealm_Transaction_Callback_onError_Exception_>` (`Exception <https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html>`__ ignore)
        
        
@@ -54,8 +54,8 @@ onSuccess
 
 .. _io_realm_DynamicRealm_Transaction_Callback_onSuccess__:
 
-public **⁠void⁠** onSuccess ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** onSuccess ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 onError
@@ -63,8 +63,8 @@ onError
 
 .. _io_realm_DynamicRealm_Transaction_Callback_onError_Exception_:
 
-public **⁠void⁠** onError (`Exception <https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html>`__ ignore)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** onError (`Exception <https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html>`__ ignore)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 

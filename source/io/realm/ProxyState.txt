@@ -32,7 +32,7 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - public **⁠BaseRealm (?)⁠**
+   * - public **BaseRealm (?)**
      - :ref:`getRealm$realm <io_realm_ProxyState_getRealm_realm__>` ()
        
        
@@ -40,15 +40,15 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
-     - :ref:`setRealm$realm <io_realm_ProxyState_setRealm_realm_BaseRealm_>` (**⁠BaseRealm (?)⁠** realm)
+   * - public **void**
+     - :ref:`setRealm$realm <io_realm_ProxyState_setRealm_realm_BaseRealm_>` (**BaseRealm (?)** realm)
        
        
        
        
        
    
-   * - public **⁠Row (?)⁠**
+   * - public **Row (?)**
      - :ref:`getRow$realm <io_realm_ProxyState_getRow_realm__>` ()
        
        
@@ -56,15 +56,15 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
-     - :ref:`setRow$realm <io_realm_ProxyState_setRow_realm_Row_>` (**⁠Row (?)⁠** row)
+   * - public **void**
+     - :ref:`setRow$realm <io_realm_ProxyState_setRow_realm_Row_>` (**Row (?)** row)
        
        
        
        
        
    
-   * - public **⁠boolean⁠**
+   * - public **boolean**
      - :ref:`getAcceptDefaultValue$realm <io_realm_ProxyState_getAcceptDefaultValue_realm__>` ()
        
        
@@ -72,8 +72,8 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
-     - :ref:`setAcceptDefaultValue$realm <io_realm_ProxyState_setAcceptDefaultValue_realm_boolean_>` (**⁠boolean⁠** acceptDefaultValue)
+   * - public **void**
+     - :ref:`setAcceptDefaultValue$realm <io_realm_ProxyState_setAcceptDefaultValue_realm_boolean_>` (**boolean** acceptDefaultValue)
        
        
        
@@ -88,7 +88,7 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`setExcludeFields$realm <io_realm_ProxyState_setExcludeFields_realm_List_String__>` (`java.util.List\<java.lang.String> <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ excludeFields)
        
        
@@ -96,7 +96,7 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`addChangeListener <io_realm_ProxyState_addChangeListener_RealmObjectChangeListener_E__>` (:ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
        
        
@@ -104,7 +104,7 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`removeChangeListener <io_realm_ProxyState_removeChangeListener_RealmObjectChangeListener_E__>` (:ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
        
        
@@ -112,7 +112,7 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`removeAllChangeListeners <io_realm_ProxyState_removeAllChangeListeners__>` ()
        
        
@@ -120,7 +120,7 @@ Method Summary
        
        
    
-   * - public **⁠boolean⁠**
+   * - public **boolean**
      - :ref:`isUnderConstruction <io_realm_ProxyState_isUnderConstruction__>` ()
        
        
@@ -128,7 +128,7 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`setConstructionFinished <io_realm_ProxyState_setConstructionFinished__>` ()
        
        
@@ -136,7 +136,7 @@ Method Summary
        
        
    
-   * - public **⁠boolean⁠**
+   * - public **boolean**
      - :ref:`isLoaded <io_realm_ProxyState_isLoaded__>` ()
        
        
@@ -144,7 +144,7 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`load <io_realm_ProxyState_load__>` ()
        
        
@@ -152,15 +152,15 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
-     - :ref:`onQueryFinished <io_realm_ProxyState_onQueryFinished_Row_>` (**⁠Row (?)⁠** row)
+   * - public **void**
+     - :ref:`onQueryFinished <io_realm_ProxyState_onQueryFinished_Row_>` (**Row (?)** row)
        
        
        
        
        
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`checkValidObject <io_realm_ProxyState_checkValidObject_RealmModel_>` (:ref:`RealmModel <io_realm_RealmModel>` value)
        
        Check that object is a valid and managed object by this Realm.
@@ -177,8 +177,8 @@ getRealm$realm
 
 .. _io_realm_ProxyState_getRealm_realm__:
 
-public **⁠BaseRealm (?)⁠** getRealm$realm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **BaseRealm (?)** getRealm$realm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 setRealm$realm
@@ -186,8 +186,8 @@ setRealm$realm
 
 .. _io_realm_ProxyState_setRealm_realm_BaseRealm_:
 
-public **⁠void⁠** setRealm$realm (**⁠BaseRealm (?)⁠** realm)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** setRealm$realm (**BaseRealm (?)** realm)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 getRow$realm
@@ -195,8 +195,8 @@ getRow$realm
 
 .. _io_realm_ProxyState_getRow_realm__:
 
-public **⁠Row (?)⁠** getRow$realm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **Row (?)** getRow$realm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 setRow$realm
@@ -204,8 +204,8 @@ setRow$realm
 
 .. _io_realm_ProxyState_setRow_realm_Row_:
 
-public **⁠void⁠** setRow$realm (**⁠Row (?)⁠** row)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** setRow$realm (**Row (?)** row)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 getAcceptDefaultValue$realm
@@ -213,8 +213,8 @@ getAcceptDefaultValue$realm
 
 .. _io_realm_ProxyState_getAcceptDefaultValue_realm__:
 
-public **⁠boolean⁠** getAcceptDefaultValue$realm ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** getAcceptDefaultValue$realm ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 setAcceptDefaultValue$realm
@@ -222,8 +222,8 @@ setAcceptDefaultValue$realm
 
 .. _io_realm_ProxyState_setAcceptDefaultValue_realm_boolean_:
 
-public **⁠void⁠** setAcceptDefaultValue$realm (**⁠boolean⁠** acceptDefaultValue)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** setAcceptDefaultValue$realm (**boolean** acceptDefaultValue)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 getExcludeFields$realm
@@ -240,8 +240,8 @@ setExcludeFields$realm
 
 .. _io_realm_ProxyState_setExcludeFields_realm_List_String__:
 
-public **⁠void⁠** setExcludeFields$realm (`java.util.List\<java.lang.String> <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ excludeFields)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** setExcludeFields$realm (`java.util.List\<java.lang.String> <https://docs.oracle.com/javase/7/docs/api/java/util/List.html>`__ excludeFields)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 addChangeListener
@@ -249,8 +249,8 @@ addChangeListener
 
 .. _io_realm_ProxyState_addChangeListener_RealmObjectChangeListener_E__:
 
-public **⁠void⁠** addChangeListener (:ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** addChangeListener (:ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 removeChangeListener
@@ -258,8 +258,8 @@ removeChangeListener
 
 .. _io_realm_ProxyState_removeChangeListener_RealmObjectChangeListener_E__:
 
-public **⁠void⁠** removeChangeListener (:ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** removeChangeListener (:ref:`io.realm.RealmObjectChangeListener\<E> <io_realm_RealmObjectChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 removeAllChangeListeners
@@ -267,8 +267,8 @@ removeAllChangeListeners
 
 .. _io_realm_ProxyState_removeAllChangeListeners__:
 
-public **⁠void⁠** removeAllChangeListeners ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** removeAllChangeListeners ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 isUnderConstruction
@@ -276,8 +276,8 @@ isUnderConstruction
 
 .. _io_realm_ProxyState_isUnderConstruction__:
 
-public **⁠boolean⁠** isUnderConstruction ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isUnderConstruction ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 setConstructionFinished
@@ -285,8 +285,8 @@ setConstructionFinished
 
 .. _io_realm_ProxyState_setConstructionFinished__:
 
-public **⁠void⁠** setConstructionFinished ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** setConstructionFinished ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 isLoaded
@@ -294,8 +294,8 @@ isLoaded
 
 .. _io_realm_ProxyState_isLoaded__:
 
-public **⁠boolean⁠** isLoaded ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isLoaded ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 load
@@ -303,8 +303,8 @@ load
 
 .. _io_realm_ProxyState_load__:
 
-public **⁠void⁠** load ()
-~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** load ()
+~~~~~~~~~~~~~~~~~~~~~~~
 
 
 onQueryFinished
@@ -312,8 +312,8 @@ onQueryFinished
 
 .. _io_realm_ProxyState_onQueryFinished_Row_:
 
-public **⁠void⁠** onQueryFinished (**⁠Row (?)⁠** row)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** onQueryFinished (**Row (?)** row)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 checkValidObject
@@ -321,8 +321,8 @@ checkValidObject
 
 .. _io_realm_ProxyState_checkValidObject_RealmModel_:
 
-public **⁠void⁠** checkValidObject (:ref:`RealmModel <io_realm_RealmModel>` value)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** checkValidObject (:ref:`RealmModel <io_realm_RealmModel>` value)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Check that object is a valid and managed object by this Realm. Used by proxy classes to verify input.
 Parameters

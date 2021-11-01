@@ -98,7 +98,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`addRealmDictionaryField <io_realm_RealmObjectSchema_addRealmDictionaryField_String__RealmObjectSchema_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
        
-       Adds a new field that contains a **⁠RealmDictionary (?)⁠** with references to other Realm model classes.
+       Adds a new field that contains a **RealmDictionary (?)** with references to other Realm model classes.
        
        
        
@@ -108,7 +108,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`addRealmDictionaryField <io_realm_RealmObjectSchema_addRealmDictionaryField_String__Class____>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<?> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
        
-       Adds a new field that references a **⁠RealmDictionary (?)⁠** with primitive values.
+       Adds a new field that references a **RealmDictionary (?)** with primitive values.
        
        
        
@@ -118,7 +118,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`addRealmSetField <io_realm_RealmObjectSchema_addRealmSetField_String__RealmObjectSchema_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
        
-       Adds a new field that contains a **⁠RealmSet (?)⁠** with references to other Realm model classes.
+       Adds a new field that contains a **RealmSet (?)** with references to other Realm model classes.
        
        
        
@@ -128,7 +128,7 @@ Method Summary
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
      - :ref:`addRealmSetField <io_realm_RealmObjectSchema_addRealmSetField_String__Class____>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<?> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
        
-       Adds a new field that references a **⁠RealmSet (?)⁠** with primitive values.
+       Adds a new field that references a **RealmSet (?)** with primitive values.
        
        
        
@@ -151,7 +151,7 @@ Method Summary
        
        
    
-   * - public **⁠boolean⁠**
+   * - public **boolean**
      - :ref:`hasField <io_realm_RealmObjectSchema_hasField_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Tests if the class has field defined with the given name.
@@ -167,7 +167,7 @@ Method Summary
        
        
    
-   * - public **⁠boolean⁠**
+   * - public **boolean**
      - :ref:`hasIndex <io_realm_RealmObjectSchema_hasIndex_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Checks if a given field has an index defined.
@@ -200,7 +200,7 @@ Method Summary
        
    
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
-     - :ref:`setRequired <io_realm_RealmObjectSchema_setRequired_String__boolean_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠boolean⁠** required)
+     - :ref:`setRequired <io_realm_RealmObjectSchema_setRequired_String__boolean_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean** required)
        
        Sets a field to be required i.e., it is not allowed to hold ``null`` values.
        
@@ -210,7 +210,7 @@ Method Summary
        
    
    * - public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>`
-     - :ref:`setNullable <io_realm_RealmObjectSchema_setNullable_String__boolean_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠boolean⁠** nullable)
+     - :ref:`setNullable <io_realm_RealmObjectSchema_setNullable_String__boolean_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean** nullable)
        
        Sets a field to be nullable i.e., it should be able to hold ``null`` values.
        
@@ -219,7 +219,7 @@ Method Summary
        
        
    
-   * - public **⁠boolean⁠**
+   * - public **boolean**
      - :ref:`isRequired <io_realm_RealmObjectSchema_isRequired_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Checks if a given field is required i.e., it is not allowed to contain ``null`` values.
@@ -229,7 +229,7 @@ Method Summary
        
        
    
-   * - public **⁠boolean⁠**
+   * - public **boolean**
      - :ref:`isNullable <io_realm_RealmObjectSchema_isNullable_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Checks if a given field is nullable i.e., it is allowed to contain ``null`` values.
@@ -239,7 +239,7 @@ Method Summary
        
        
    
-   * - public **⁠boolean⁠**
+   * - public **boolean**
      - :ref:`isPrimaryKey <io_realm_RealmObjectSchema_isPrimaryKey_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
        
        Checks if a given field is the primary key field.
@@ -247,7 +247,7 @@ Method Summary
        
        
    
-   * - public **⁠boolean⁠**
+   * - public **boolean**
      - :ref:`hasPrimaryKey <io_realm_RealmObjectSchema_hasPrimaryKey__>` ()
        
        Checks if the class has a primary key defined.
@@ -287,7 +287,7 @@ Method Summary
        
        
    
-   * - public **⁠boolean⁠**
+   * - public **boolean**
      - :ref:`isEmbedded <io_realm_RealmObjectSchema_isEmbedded__>` ()
        
        Returns ``true`` if objects of this type are considered "embedded".
@@ -297,8 +297,8 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
-     - :ref:`setEmbedded <io_realm_RealmObjectSchema_setEmbedded_boolean_>` (**⁠boolean⁠** embedded)
+   * - public **void**
+     - :ref:`setEmbedded <io_realm_RealmObjectSchema_setEmbedded_boolean_>` (**boolean** embedded)
        
        Converts the class to be embedded or not.
        
@@ -417,7 +417,7 @@ public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmLi
 
 Adds a new field that contains a :ref:`RealmList <io_realm_RealmList>` with references to other Realm model classes.
 
-If the list contains primitive types, use **⁠#addRealmListField(String, Class) (?)⁠** instead.
+If the list contains primitive types, use **#addRealmListField(String, Class) (?)** instead.
 
 
 
@@ -482,9 +482,9 @@ addRealmDictionaryField
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmDictionaryField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Adds a new field that contains a **⁠RealmDictionary (?)⁠** with references to other Realm model classes.
+Adds a new field that contains a **RealmDictionary (?)** with references to other Realm model classes.
 
-If the dictionary contains primitive types, use **⁠#addRealmDictionaryField(String, Class) (?)⁠** instead.
+If the dictionary contains primitive types, use **#addRealmDictionaryField(String, Class) (?)** instead.
 
 
 
@@ -505,7 +505,7 @@ ______
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmDictionaryField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<?> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Adds a new field that references a **⁠RealmDictionary (?)⁠** with primitive values. See :ref:`RealmObject <io_realm_RealmObject>` for the list of supported types.
+Adds a new field that references a **RealmDictionary (?)** with primitive values. See :ref:`RealmObject <io_realm_RealmObject>` for the list of supported types.
 
 Nullability of elements are defined by using the correct class e.g., ``Integer.class`` instead of ``int.class``. Alternatively :ref:`#setRequired(String, boolean) <io_realm_RealmObjectSchema_setRequired_String__boolean_>` can be used.
 
@@ -549,9 +549,9 @@ addRealmSetField
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmSetField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` objectSchema)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Adds a new field that contains a **⁠RealmSet (?)⁠** with references to other Realm model classes.
+Adds a new field that contains a **RealmSet (?)** with references to other Realm model classes.
 
-If the set contains primitive types, use **⁠#addRealmSetField(String, Class) (?)⁠** instead.
+If the set contains primitive types, use **#addRealmSetField(String, Class) (?)** instead.
 
 
 
@@ -572,7 +572,7 @@ ______
 public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` addRealmSetField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, `java.lang.Class\<?> <https://docs.oracle.com/javase/7/docs/api/java/lang/Class.html>`__ primitiveType)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Adds a new field that references a **⁠RealmSet (?)⁠** with primitive values. See :ref:`RealmObject <io_realm_RealmObject>` for the list of supported types.
+Adds a new field that references a **RealmSet (?)** with primitive values. See :ref:`RealmObject <io_realm_RealmObject>` for the list of supported types.
 
 Nullability of elements are defined by using the correct class e.g., ``Integer.class`` instead of ``int.class``. Alternatively :ref:`#setRequired(String, boolean) <io_realm_RealmObjectSchema_setRequired_String__boolean_>` can be used.
 
@@ -651,8 +651,8 @@ hasField
 
 .. _io_realm_RealmObjectSchema_hasField_String_:
 
-public **⁠boolean⁠** hasField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** hasField (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Tests if the class has field defined with the given name.
 Parameters
@@ -686,8 +686,8 @@ hasIndex
 
 .. _io_realm_RealmObjectSchema_hasIndex_String_:
 
-public **⁠boolean⁠** hasIndex (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** hasIndex (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given field has an index defined.
 Parameters
@@ -763,8 +763,8 @@ setRequired
 
 .. _io_realm_RealmObjectSchema_setRequired_String__boolean_:
 
-public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setRequired (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠boolean⁠** required)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setRequired (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean** required)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets a field to be required i.e., it is not allowed to hold ``null`` values. This is equivalent to switching between boxed types and their primitive variant e.g., ``Integer`` to ``int``.
 
@@ -796,8 +796,8 @@ setNullable
 
 .. _io_realm_RealmObjectSchema_setNullable_String__boolean_:
 
-public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setNullable (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **⁠boolean⁠** nullable)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public abstract :ref:`RealmObjectSchema <io_realm_RealmObjectSchema>` setNullable (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName, **boolean** nullable)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets a field to be nullable i.e., it should be able to hold ``null`` values. This is equivalent to switching between primitive types and their boxed variant e.g., ``int`` to ``Integer``.
 
@@ -824,8 +824,8 @@ isRequired
 
 .. _io_realm_RealmObjectSchema_isRequired_String_:
 
-public **⁠boolean⁠** isRequired (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isRequired (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given field is required i.e., it is not allowed to contain ``null`` values.
 
@@ -849,8 +849,8 @@ isNullable
 
 .. _io_realm_RealmObjectSchema_isNullable_String_:
 
-public **⁠boolean⁠** isNullable (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isNullable (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given field is nullable i.e., it is allowed to contain ``null`` values.
 
@@ -874,8 +874,8 @@ isPrimaryKey
 
 .. _io_realm_RealmObjectSchema_isPrimaryKey_String_:
 
-public **⁠boolean⁠** isPrimaryKey (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isPrimaryKey (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ fieldName)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if a given field is the primary key field.
 Parameters
@@ -897,8 +897,8 @@ hasPrimaryKey
 
 .. _io_realm_RealmObjectSchema_hasPrimaryKey__:
 
-public **⁠boolean⁠** hasPrimaryKey ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** hasPrimaryKey ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Checks if the class has a primary key defined.
 See Also
@@ -969,10 +969,10 @@ isEmbedded
 
 .. _io_realm_RealmObjectSchema_isEmbedded__:
 
-public **⁠boolean⁠** isEmbedded ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isEmbedded ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns ``true`` if objects of this type are considered "embedded". See **⁠RealmClass#embedded() (?)⁠** for further details.
+Returns ``true`` if objects of this type are considered "embedded". See **RealmClass#embedded() (?)** for further details.
 
 
 setEmbedded
@@ -980,8 +980,8 @@ setEmbedded
 
 .. _io_realm_RealmObjectSchema_setEmbedded_boolean_:
 
-public **⁠void⁠** setEmbedded (**⁠boolean⁠** embedded)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** setEmbedded (**boolean** embedded)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Converts the class to be embedded or not.A class can only be marked as embedded if the following invariants are satisfied:
 

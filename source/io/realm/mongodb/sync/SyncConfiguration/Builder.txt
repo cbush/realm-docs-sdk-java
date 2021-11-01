@@ -31,7 +31,7 @@ Method Summary
      - Method and Description
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
-     - :ref:`encryptionKey <io_realm_mongodb_sync_SyncConfiguration_Builder_encryptionKey_byte[]_>` (**⁠byte[]⁠** key)
+     - :ref:`encryptionKey <io_realm_mongodb_sync_SyncConfiguration_Builder_encryptionKey_byte[]_>` (**byte[]** key)
        
        Sets the io.realm.Realm#ENCRYPTION_KEY_LENGTH bytes key used to encrypt and decrypt the Realm file.
        
@@ -41,7 +41,7 @@ Method Summary
        
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
-     - :ref:`schemaVersion <io_realm_mongodb_sync_SyncConfiguration_Builder_schemaVersion_long_>` (**⁠long⁠** schemaVersion)
+     - :ref:`schemaVersion <io_realm_mongodb_sync_SyncConfiguration_Builder_schemaVersion_long_>` (**long** schemaVersion)
        
        Sets the schema version of the Realm.
        
@@ -139,7 +139,7 @@ Method Summary
        
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
-     - :ref:`waitForInitialRemoteData <io_realm_mongodb_sync_SyncConfiguration_Builder_waitForInitialRemoteData_long__TimeUnit_>` (**⁠long⁠** timeout, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
+     - :ref:`waitForInitialRemoteData <io_realm_mongodb_sync_SyncConfiguration_Builder_waitForInitialRemoteData_long__TimeUnit_>` (**long** timeout, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
        
        Setting this will cause the Realm to download all known changes from the server the first time a Realm is opened.
        
@@ -181,7 +181,7 @@ Method Summary
        
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
-     - :ref:`maxNumberOfActiveVersions <io_realm_mongodb_sync_SyncConfiguration_Builder_maxNumberOfActiveVersions_long_>` (**⁠long⁠** number)
+     - :ref:`maxNumberOfActiveVersions <io_realm_mongodb_sync_SyncConfiguration_Builder_maxNumberOfActiveVersions_long_>` (**long** number)
        
        Sets the maximum number of live versions in the Realm file before an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__ is thrown when attempting to write more data.
        
@@ -191,9 +191,9 @@ Method Summary
        
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
-     - :ref:`allowWritesOnUiThread <io_realm_mongodb_sync_SyncConfiguration_Builder_allowWritesOnUiThread_boolean_>` (**⁠boolean⁠** allowWritesOnUiThread)
+     - :ref:`allowWritesOnUiThread <io_realm_mongodb_sync_SyncConfiguration_Builder_allowWritesOnUiThread_boolean_>` (**boolean** allowWritesOnUiThread)
        
-       Sets whether or not calls to **⁠Realm#executeTransaction (?)⁠** are allowed from the UI thread.
+       Sets whether or not calls to **Realm#executeTransaction (?)** are allowed from the UI thread.
        
        
        
@@ -201,7 +201,7 @@ Method Summary
        
    
    * - public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>`
-     - :ref:`allowQueriesOnUiThread <io_realm_mongodb_sync_SyncConfiguration_Builder_allowQueriesOnUiThread_boolean_>` (**⁠boolean⁠** allowQueriesOnUiThread)
+     - :ref:`allowQueriesOnUiThread <io_realm_mongodb_sync_SyncConfiguration_Builder_allowQueriesOnUiThread_boolean_>` (**boolean** allowQueriesOnUiThread)
        
        Sets whether or not ``RealmQueries`` are allowed from the UI thread.
        
@@ -227,8 +227,8 @@ encryptionKey
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_encryptionKey_byte[]_:
 
-public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` encryptionKey (**⁠byte[]⁠** key)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` encryptionKey (**byte[]** key)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the io.realm.Realm#ENCRYPTION_KEY_LENGTH bytes key used to encrypt and decrypt the Realm file.
 
@@ -247,10 +247,10 @@ schemaVersion
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_schemaVersion_long_:
 
-public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` schemaVersion (**⁠long⁠** schemaVersion)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` schemaVersion (**long** schemaVersion)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sets the schema version of the Realm.Synced Realms only support additive schema changes which can be applied without requiring a manual migration. The schema version will only be used as an indication to the underlying storage layer to remove or add indexes. These will be recalculated if the provided schema version differ from the version in the Realm file. **⁠WARNING:⁠** There is no guarantee that the value inserted here is the same returned by **⁠Realm#getVersion() (?)⁠**. Due to the nature of synced Realms, the value can both be higher and lower.
+Sets the schema version of the Realm.Synced Realms only support additive schema changes which can be applied without requiring a manual migration. The schema version will only be used as an indication to the underlying storage layer to remove or add indexes. These will be recalculated if the provided schema version differ from the version in the Realm file. **WARNING:** There is no guarantee that the value inserted here is the same returned by **Realm#getVersion() (?)**. Due to the nature of synced Realms, the value can both be higher and lower.
 
 
 
@@ -391,7 +391,7 @@ initialData
 public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` initialData (:ref:`Realm.Transaction <io_realm_Realm_Transaction>` transaction)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sets the initial data in :ref:`io.realm.Realm <io_realm_Realm>`. This transaction will be executed only the first time the Realm file is opened (created) or while migrating the data if **⁠RealmConfiguration.Builder#deleteRealmIfMigrationNeeded() (?)⁠** is set.
+Sets the initial data in :ref:`io.realm.Realm <io_realm_Realm>`. This transaction will be executed only the first time the Realm file is opened (created) or while migrating the data if **RealmConfiguration.Builder#deleteRealmIfMigrationNeeded() (?)** is set.
 
 
 Parameters
@@ -467,8 +467,8 @@ This check is only enforced the first time a Realm is created. If you otherwise 
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_waitForInitialRemoteData_long__TimeUnit_:
 
-public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` waitForInitialRemoteData (**⁠long⁠** timeout, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` waitForInitialRemoteData (**long** timeout, `TimeUnit <https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/TimeUnit.html>`__ unit)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Setting this will cause the Realm to download all known changes from the server the first time a Realm is opened. The Realm will not open until all the data has been downloaded. This means that if a device is offline the Realm will not open.Since downloading all changes can be an lengthy operation that might block the UI thread, Realms with this setting enabled should only be opened on background threads or with :ref:`Realm#getInstanceAsync(RealmConfiguration, Realm.Callback) <io_realm_Realm_getInstanceAsync_RealmConfiguration__Realm_Callback_>` on the UI thread.
 
@@ -552,8 +552,8 @@ maxNumberOfActiveVersions
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_maxNumberOfActiveVersions_long_:
 
-public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` maxNumberOfActiveVersions (**⁠long⁠** number)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` maxNumberOfActiveVersions (**long** number)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets the maximum number of live versions in the Realm file before an `IllegalStateException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html>`__ is thrown when attempting to write more data.
 
@@ -580,12 +580,12 @@ allowWritesOnUiThread
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_allowWritesOnUiThread_boolean_:
 
-public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` allowWritesOnUiThread (**⁠boolean⁠** allowWritesOnUiThread)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` allowWritesOnUiThread (**boolean** allowWritesOnUiThread)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sets whether or not calls to **⁠Realm#executeTransaction (?)⁠** are allowed from the UI thread.
+Sets whether or not calls to **Realm#executeTransaction (?)** are allowed from the UI thread.
 
-**⁠WARNING: Realm does not allow synchronous transactions to be run on the main thread unless users explicitly opt in with this method.⁠** We recommend diverting calls to ``executeTransaction`` to non-UI threads or, alternatively, using **⁠Realm#executeTransactionAsync (?)⁠**.
+**WARNING: Realm does not allow synchronous transactions to be run on the main thread unless users explicitly opt in with this method.** We recommend diverting calls to ``executeTransaction`` to non-UI threads or, alternatively, using **Realm#executeTransactionAsync (?)**.
 
 
 
@@ -595,8 +595,8 @@ allowQueriesOnUiThread
 
 .. _io_realm_mongodb_sync_SyncConfiguration_Builder_allowQueriesOnUiThread_boolean_:
 
-public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` allowQueriesOnUiThread (**⁠boolean⁠** allowQueriesOnUiThread)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public :ref:`SyncConfiguration.Builder <io_realm_mongodb_sync_SyncConfiguration_Builder>` allowQueriesOnUiThread (**boolean** allowQueriesOnUiThread)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sets whether or not ``RealmQueries`` are allowed from the UI thread.
 

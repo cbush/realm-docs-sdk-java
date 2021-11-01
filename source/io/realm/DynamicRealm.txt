@@ -12,7 +12,7 @@ io.realm.DynamicRealm
 
 *Superclass:*
 
-- **⁠io.realm.BaseRealm (?)⁠**
+- **io.realm.BaseRealm (?)**
 
 DynamicRealm is a dynamic variant of :ref:`io.realm.Realm <io_realm_Realm>`. This means that all access to data and/or queries are done using string based class names instead of class type references.
 
@@ -106,7 +106,7 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`addChangeListener <io_realm_DynamicRealm_addChangeListener_RealmChangeListener_DynamicRealm__>` (:ref:`io.realm.RealmChangeListener\<io.realm.DynamicRealm> <io_realm_RealmChangeListener>` listener)
        
        Adds a change listener to the Realm.
@@ -114,7 +114,7 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`removeChangeListener <io_realm_DynamicRealm_removeChangeListener_RealmChangeListener_DynamicRealm__>` (:ref:`io.realm.RealmChangeListener\<io.realm.DynamicRealm> <io_realm_RealmChangeListener>` listener)
        
        Removes the specified change listener.
@@ -122,7 +122,7 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`removeAllChangeListeners <io_realm_DynamicRealm_removeAllChangeListeners__>` ()
        
        Removes all user-defined change listeners.
@@ -130,7 +130,7 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`delete <io_realm_DynamicRealm_delete_String_>` (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
        
        Deletes all objects of the specified class from the Realm.
@@ -138,7 +138,7 @@ Method Summary
        
        
    
-   * - public **⁠void⁠**
+   * - public **void**
      - :ref:`executeTransaction <io_realm_DynamicRealm_executeTransaction_DynamicRealm_Transaction_>` (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction)
        
        Executes a given transaction on the DynamicRealm.
@@ -149,7 +149,7 @@ Method Summary
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
      - :ref:`executeTransactionAsync <io_realm_DynamicRealm_executeTransactionAsync_DynamicRealm_Transaction_>` (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction)
        
-       Similar to **⁠#executeTransaction(Transaction) (?)⁠** but runs asynchronously on a worker thread.
+       Similar to **#executeTransaction(Transaction) (?)** but runs asynchronously on a worker thread.
        
        
        
@@ -159,7 +159,7 @@ Method Summary
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
      - :ref:`executeTransactionAsync <io_realm_DynamicRealm_executeTransactionAsync_DynamicRealm_Transaction__DynamicRealm_Transaction_OnSuccess_>` (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction, :ref:`DynamicRealm.Transaction.OnSuccess <io_realm_DynamicRealm_Transaction_OnSuccess>` onSuccess)
        
-       Similar to **⁠#executeTransactionAsync(Transaction) (?)⁠**, but also accepts an OnSuccess callback.
+       Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an OnSuccess callback.
        
        
        
@@ -169,7 +169,7 @@ Method Summary
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
      - :ref:`executeTransactionAsync <io_realm_DynamicRealm_executeTransactionAsync_DynamicRealm_Transaction__DynamicRealm_Transaction_OnError_>` (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction, :ref:`DynamicRealm.Transaction.OnError <io_realm_DynamicRealm_Transaction_OnError>` onError)
        
-       Similar to **⁠#executeTransactionAsync(Transaction) (?)⁠**, but also accepts an OnError callback.
+       Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an OnError callback.
        
        
        
@@ -179,14 +179,14 @@ Method Summary
    * - public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>`
      - :ref:`executeTransactionAsync <io_realm_DynamicRealm_executeTransactionAsync_DynamicRealm_Transaction__DynamicRealm_Transaction_OnSuccess__DynamicRealm_Transaction_OnError_>` (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction, :ref:`DynamicRealm.Transaction.OnSuccess <io_realm_DynamicRealm_Transaction_OnSuccess>` onSuccess, :ref:`DynamicRealm.Transaction.OnError <io_realm_DynamicRealm_Transaction_OnError>` onError)
        
-       Similar to **⁠#executeTransactionAsync(Transaction) (?)⁠**, but also accepts an OnSuccess and OnError callbacks.
+       Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an OnSuccess and OnError callbacks.
        
        
        
        
        
    
-   * - public **⁠<any> (?)⁠**
+   * - public **<any> (?)**
      - :ref:`asFlowable <io_realm_DynamicRealm_asFlowable__>` ()
        
        
@@ -196,7 +196,7 @@ Method Summary
        
        
    
-   * - public **⁠boolean⁠**
+   * - public **boolean**
      - :ref:`isEmpty <io_realm_DynamicRealm_isEmpty__>` ()
        
        
@@ -362,12 +362,12 @@ addChangeListener
 
 .. _io_realm_DynamicRealm_addChangeListener_RealmChangeListener_DynamicRealm__:
 
-public **⁠void⁠** addChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.DynamicRealm> <io_realm_RealmChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** addChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.DynamicRealm> <io_realm_RealmChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Adds a change listener to the Realm.The listeners will be executed when changes are committed by this or another thread.
 
-Realm instances are cached per thread. For that reason it is important to remember to remove listeners again either using **⁠#removeChangeListener(RealmChangeListener) (?)⁠** or :ref:`#removeAllChangeListeners() <io_realm_DynamicRealm_removeAllChangeListeners__>`. Not doing so can cause memory leaks.
+Realm instances are cached per thread. For that reason it is important to remember to remove listeners again either using **#removeChangeListener(RealmChangeListener) (?)** or :ref:`#removeAllChangeListeners() <io_realm_DynamicRealm_removeAllChangeListeners__>`. Not doing so can cause memory leaks.
 
 
 
@@ -397,8 +397,8 @@ removeChangeListener
 
 .. _io_realm_DynamicRealm_removeChangeListener_RealmChangeListener_DynamicRealm__:
 
-public **⁠void⁠** removeChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.DynamicRealm> <io_realm_RealmChangeListener>` listener)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** removeChangeListener (:ref:`io.realm.RealmChangeListener\<io.realm.DynamicRealm> <io_realm_RealmChangeListener>` listener)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes the specified change listener.
 Parameters
@@ -420,8 +420,8 @@ removeAllChangeListeners
 
 .. _io_realm_DynamicRealm_removeAllChangeListeners__:
 
-public **⁠void⁠** removeAllChangeListeners ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** removeAllChangeListeners ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Removes all user-defined change listeners.
 Throws
@@ -437,8 +437,8 @@ delete
 
 .. _io_realm_DynamicRealm_delete_String_:
 
-public **⁠void⁠** delete (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** delete (`String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ className)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Deletes all objects of the specified class from the Realm.
 Parameters
@@ -455,12 +455,12 @@ executeTransaction
 
 .. _io_realm_DynamicRealm_executeTransaction_DynamicRealm_Transaction_:
 
-public **⁠void⁠** executeTransaction (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **void** executeTransaction (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Executes a given transaction on the DynamicRealm. **⁠#beginTransaction() (?)⁠** and **⁠#commitTransaction() (?)⁠** will be called automatically. If any exception is thrown during the transaction **⁠#cancelTransaction() (?)⁠** will be called instead of **⁠#commitTransaction() (?)⁠**.
+Executes a given transaction on the DynamicRealm. **#beginTransaction() (?)** and **#commitTransaction() (?)** will be called automatically. If any exception is thrown during the transaction **#cancelTransaction() (?)** will be called instead of **#commitTransaction() (?)**.
 
-Calling this method from the UI thread will throw a :ref:`RealmException <io_realm_exceptions_RealmException>`. Doing so may result in a drop of frames or even ANRs. We recommend calling this method from a non-UI thread or using **⁠#executeTransactionAsync(Transaction) (?)⁠** instead.
+Calling this method from the UI thread will throw a :ref:`RealmException <io_realm_exceptions_RealmException>`. Doing so may result in a drop of frames or even ANRs. We recommend calling this method from a non-UI thread or using **#executeTransactionAsync(Transaction) (?)** instead.
 
 
 
@@ -484,7 +484,7 @@ executeTransactionAsync
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` executeTransactionAsync (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Similar to **⁠#executeTransaction(Transaction) (?)⁠** but runs asynchronously on a worker thread.
+Similar to **#executeTransaction(Transaction) (?)** but runs asynchronously on a worker thread.
 
 
 Parameters
@@ -503,7 +503,7 @@ ______
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` executeTransactionAsync (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction, :ref:`DynamicRealm.Transaction.OnSuccess <io_realm_DynamicRealm_Transaction_OnSuccess>` onSuccess)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Similar to **⁠#executeTransactionAsync(Transaction) (?)⁠**, but also accepts an OnSuccess callback.
+Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an OnSuccess callback.
 
 
 Parameters
@@ -524,7 +524,7 @@ ______
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` executeTransactionAsync (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction, :ref:`DynamicRealm.Transaction.OnError <io_realm_DynamicRealm_Transaction_OnError>` onError)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Similar to **⁠#executeTransactionAsync(Transaction) (?)⁠**, but also accepts an OnError callback.
+Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an OnError callback.
 
 
 Parameters
@@ -545,7 +545,7 @@ ______
 public :ref:`RealmAsyncTask <io_realm_RealmAsyncTask>` executeTransactionAsync (:ref:`DynamicRealm.Transaction <io_realm_DynamicRealm_Transaction>` transaction, :ref:`DynamicRealm.Transaction.OnSuccess <io_realm_DynamicRealm_Transaction_OnSuccess>` onSuccess, :ref:`DynamicRealm.Transaction.OnError <io_realm_DynamicRealm_Transaction_OnError>` onError)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Similar to **⁠#executeTransactionAsync(Transaction) (?)⁠**, but also accepts an OnSuccess and OnError callbacks.
+Similar to **#executeTransactionAsync(Transaction) (?)**, but also accepts an OnSuccess and OnError callbacks.
 
 
 Parameters
@@ -568,8 +568,8 @@ asFlowable
 
 .. _io_realm_DynamicRealm_asFlowable__:
 
-public **⁠<any> (?)⁠** asFlowable ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **<any> (?)** asFlowable ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -579,8 +579,8 @@ isEmpty
 
 .. _io_realm_DynamicRealm_isEmpty__:
 
-public **⁠boolean⁠** isEmpty ()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+public **boolean** isEmpty ()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
