@@ -1,0 +1,1452 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+
+
+Class OsObjectSchemaInfo.Builder
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder:
+
+
+
+io.realm.internal
+=================
+
+
+ | `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ 
+ | 		io.realm.internal.OsObjectSchemaInfo.Builder
+
+
+
+
+**Enclosing class:**
+
+:ref:`OsObjectSchemaInfo <io_realm_internal_OsObjectSchemaInfo>` 
+
+
+
+
+
+
+Constructors
+============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Constructor and Description
+   
+   * - | :ref:`Builder <io_realm_internal_OsObjectSchemaInfo_Builder>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalClassName, 
+       |  **boolean** embedded, 
+       |  **int** persistedPropertyCapacity, 
+       |  **int** computedPropertyCapacity
+       | )
+       
+       
+       Creates an empty builder for ``OsObjectSchemaInfo`` .
+       
+       
+       
+       
+       
+   
+   * - | :ref:`Builder <io_realm_internal_OsObjectSchemaInfo_Builder>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  publicClassName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalClassName, 
+       |  **boolean** embedded, 
+       |  **int** persistedPropertyCapacity, 
+       |  **int** computedPropertyCapacity
+       | )
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+Method Summary
+==============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Method and Description
+   
+   * - public :ref:`OsObjectSchemaInfo.Builder <io_realm_internal_OsObjectSchemaInfo_Builder>` 
+     - | :ref:`addComputedLinkProperty <io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  name, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  sourceClass, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  sourceClassName
+       | )
+       
+       
+       Adds a computed link property to this ``OsObjectSchemaInfo`` .
+       
+       
+       
+       
+       
+   
+   * - public :ref:`OsObjectSchemaInfo.Builder <io_realm_internal_OsObjectSchemaInfo_Builder>` 
+     - | :ref:`addPersistedLinkProperty <io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  publicName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalName, 
+       |  :ref:`RealmFieldType <io_realm_RealmFieldType>`  type, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  linkedClassName
+       | )
+       
+       
+       Adds a persisted link property to this ``OsObjectSchemaInfo`` .
+       
+       
+       
+       
+       
+   
+   * - public :ref:`OsObjectSchemaInfo.Builder <io_realm_internal_OsObjectSchemaInfo_Builder>` 
+     - | :ref:`addPersistedMapProperty <io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  publicName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalName, 
+       |  :ref:`RealmFieldType <io_realm_RealmFieldType>`  type, 
+       |  **boolean** isRequired
+       | )
+       
+       
+       Adds a persisted map property to this builder.
+       
+       
+       
+   
+   * - public :ref:`OsObjectSchemaInfo.Builder <io_realm_internal_OsObjectSchemaInfo_Builder>` 
+     - | :ref:`addPersistedProperty <io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  publicName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalName, 
+       |  :ref:`RealmFieldType <io_realm_RealmFieldType>`  type, 
+       |  **boolean** isPrimaryKey, 
+       |  **boolean** isIndexed, 
+       |  **boolean** isRequired
+       | )
+       
+       
+       Adds a persisted non-link, non value list property to this builder.
+       
+       
+       
+   
+   * - public :ref:`OsObjectSchemaInfo.Builder <io_realm_internal_OsObjectSchemaInfo_Builder>` 
+     - | :ref:`addPersistedSetProperty <io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  publicName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalName, 
+       |  :ref:`RealmFieldType <io_realm_RealmFieldType>`  type, 
+       |  **boolean** isRequired
+       | )
+       
+       
+       TODO: UNIFY THIS AND THE TWO ABOVE Adds a persisted set property to this builder.
+       
+       
+       
+   
+   * - public :ref:`OsObjectSchemaInfo.Builder <io_realm_internal_OsObjectSchemaInfo_Builder>` 
+     - | :ref:`addPersistedValueListProperty <io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  publicName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalName, 
+       |  :ref:`RealmFieldType <io_realm_RealmFieldType>`  type, 
+       |  **boolean** isRequired
+       | )
+       
+       
+       Adds a persisted value list property to this builder.
+       
+       
+       
+   
+   * - public :ref:`OsObjectSchemaInfo <io_realm_internal_OsObjectSchemaInfo>` 
+     - | :ref:`build <io_realm_internal_OsObjectSchemaInfo_Builder_build>` ()
+       | 
+       
+       
+       Creates :ref:`OsObjectSchemaInfo <io_realm_internal_OsObjectSchemaInfo>`  object from this builder.
+       
+       
+       
+       
+       
+   
+   
+
+
+Inherited Methods
+=================
+
+
+
+- Methods inherited from class `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ : ``getClass`` , ``hashCode`` , ``equals`` , ``clone`` , ``toString`` , ``notify`` , ``notifyAll`` , ``wait`` , ``wait`` , ``wait`` , ``finalize`` 
+
+
+
+
+Constructor Detail
+==================
+
+.. _Builder:
+
+.. _Builder__:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder__:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public :ref:`Builder <io_realm_internal_OsObjectSchemaInfo_Builder>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalClassName, 
+       |  **boolean** embedded, 
+       |  **int** persistedPropertyCapacity, 
+       |  **int** computedPropertyCapacity
+       | )
+       
+       
+       
+   
+   * - Creates an empty builder for ``OsObjectSchemaInfo`` . This constructor is intended to be used by the validation of schema, object schemas and properties through the object store.
+       
+       
+       
+       
+       
+       
+       **Parameters**
+       
+       - ``internalClassName`` - name of the class
+          
+          
+          
+       
+       
+       
+       
+       
+   
+   
+
+
+.. _Builder:
+
+.. _Builder__:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder__:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public :ref:`Builder <io_realm_internal_OsObjectSchemaInfo_Builder>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  publicClassName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalClassName, 
+       |  **boolean** embedded, 
+       |  **int** persistedPropertyCapacity, 
+       |  **int** computedPropertyCapacity
+       | )
+       
+       
+       
+   
+   * - 
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+
+
+Method Detail
+=============
+
+.. _addComputedLinkProperty:
+
+.. _addComputedLinkProperty__:
+
+.. _Builder_addComputedLinkProperty:
+
+.. _Builder_addComputedLinkProperty__:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty__:
+
+
+
+addComputedLinkProperty
+-----------------------
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String_java_lang_String_java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String__java_lang_String__java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String_java_lang_String_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String__java_lang_String__String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String_String_java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String__String__java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String_String_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String__String__String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_String_java_lang_String_java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_String__java_lang_String__java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_String_java_lang_String_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_String__java_lang_String__String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_String_String_java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_String__String__java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_String_String_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty_String__String__String_:
+
+.. _addComputedLinkProperty_java_lang_String_java_lang_String_java_lang_String_:
+
+.. _addComputedLinkProperty_java_lang_String__java_lang_String__java_lang_String_:
+
+.. _addComputedLinkProperty_java_lang_String_java_lang_String_String_:
+
+.. _addComputedLinkProperty_java_lang_String__java_lang_String__String_:
+
+.. _addComputedLinkProperty_java_lang_String_String_java_lang_String_:
+
+.. _addComputedLinkProperty_java_lang_String__String__java_lang_String_:
+
+.. _addComputedLinkProperty_java_lang_String_String_String_:
+
+.. _addComputedLinkProperty_java_lang_String__String__String_:
+
+.. _addComputedLinkProperty_String_java_lang_String_java_lang_String_:
+
+.. _addComputedLinkProperty_String__java_lang_String__java_lang_String_:
+
+.. _addComputedLinkProperty_String_java_lang_String_String_:
+
+.. _addComputedLinkProperty_String__java_lang_String__String_:
+
+.. _addComputedLinkProperty_String_String_java_lang_String_:
+
+.. _addComputedLinkProperty_String__String__java_lang_String_:
+
+.. _addComputedLinkProperty_String_String_String_:
+
+.. _addComputedLinkProperty_String__String__String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String_java_lang_String_java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String__java_lang_String__java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String_java_lang_String_String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String__java_lang_String__String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String_String_java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String__String__java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String_String_String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_java_lang_String__String__String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_String_java_lang_String_java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_String__java_lang_String__java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_String_java_lang_String_String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_String__java_lang_String__String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_String_String_java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_String__String__java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_String_String_String_:
+
+.. _OsObjectSchemaInfo_Builder_addComputedLinkProperty_String__String__String_:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public :ref:`OsObjectSchemaInfo.Builder <io_realm_internal_OsObjectSchemaInfo_Builder>`  :ref:`addComputedLinkProperty <io_realm_internal_OsObjectSchemaInfo_Builder_addComputedLinkProperty>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  name, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  sourceClass, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  sourceClassName
+       | )
+       
+       
+       
+   
+   * - Adds a computed link property to this ``OsObjectSchemaInfo`` . A computed link property doesn't store information in the Realm file's schema. This property type will always be :ref:`RealmFieldType.LINKING_OBJECTS <io_realm_RealmFieldType_LINKING_OBJECTS>` .
+       
+       
+       
+       
+       
+       
+       **Parameters**
+       
+       - ``name`` - the name of the property .
+          
+          
+          
+       - ``sourceClass`` - The class name of the the class linking to this class, ie. the source class.
+          
+          
+          
+       - ``sourceClassName`` - The field name in the source class that links to this class.
+          
+          
+          
+       
+       
+       
+       
+       **Returns**
+       
+       this ``OsObjectSchemaInfo.Builder`` .
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+.. _addPersistedLinkProperty:
+
+.. _addPersistedLinkProperty__:
+
+.. _Builder_addPersistedLinkProperty:
+
+.. _Builder_addPersistedLinkProperty__:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty__:
+
+
+
+addPersistedLinkProperty
+------------------------
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_java_lang_String_RealmFieldType_java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__java_lang_String__RealmFieldType__java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_java_lang_String_RealmFieldType_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__java_lang_String__RealmFieldType__String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_String_io_realm_RealmFieldType_java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__String__io_realm_RealmFieldType__java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_String_io_realm_RealmFieldType_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__String__io_realm_RealmFieldType__String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_String_RealmFieldType_java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__String__RealmFieldType__java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_String_RealmFieldType_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__String__RealmFieldType__String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_java_lang_String_io_realm_RealmFieldType_java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__java_lang_String__io_realm_RealmFieldType__java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_java_lang_String_io_realm_RealmFieldType_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__java_lang_String__io_realm_RealmFieldType__String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_java_lang_String_RealmFieldType_java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__java_lang_String__RealmFieldType__java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_java_lang_String_RealmFieldType_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__java_lang_String__RealmFieldType__String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_String_io_realm_RealmFieldType_java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__String__io_realm_RealmFieldType__java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_String_io_realm_RealmFieldType_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__String__io_realm_RealmFieldType__String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_String_RealmFieldType_java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__String__RealmFieldType__java_lang_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_String_RealmFieldType_String_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__String__RealmFieldType__String_:
+
+.. _addPersistedLinkProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_java_lang_String_:
+
+.. _addPersistedLinkProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__java_lang_String_:
+
+.. _addPersistedLinkProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_String_:
+
+.. _addPersistedLinkProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__String_:
+
+.. _addPersistedLinkProperty_java_lang_String_java_lang_String_RealmFieldType_java_lang_String_:
+
+.. _addPersistedLinkProperty_java_lang_String__java_lang_String__RealmFieldType__java_lang_String_:
+
+.. _addPersistedLinkProperty_java_lang_String_java_lang_String_RealmFieldType_String_:
+
+.. _addPersistedLinkProperty_java_lang_String__java_lang_String__RealmFieldType__String_:
+
+.. _addPersistedLinkProperty_java_lang_String_String_io_realm_RealmFieldType_java_lang_String_:
+
+.. _addPersistedLinkProperty_java_lang_String__String__io_realm_RealmFieldType__java_lang_String_:
+
+.. _addPersistedLinkProperty_java_lang_String_String_io_realm_RealmFieldType_String_:
+
+.. _addPersistedLinkProperty_java_lang_String__String__io_realm_RealmFieldType__String_:
+
+.. _addPersistedLinkProperty_java_lang_String_String_RealmFieldType_java_lang_String_:
+
+.. _addPersistedLinkProperty_java_lang_String__String__RealmFieldType__java_lang_String_:
+
+.. _addPersistedLinkProperty_java_lang_String_String_RealmFieldType_String_:
+
+.. _addPersistedLinkProperty_java_lang_String__String__RealmFieldType__String_:
+
+.. _addPersistedLinkProperty_String_java_lang_String_io_realm_RealmFieldType_java_lang_String_:
+
+.. _addPersistedLinkProperty_String__java_lang_String__io_realm_RealmFieldType__java_lang_String_:
+
+.. _addPersistedLinkProperty_String_java_lang_String_io_realm_RealmFieldType_String_:
+
+.. _addPersistedLinkProperty_String__java_lang_String__io_realm_RealmFieldType__String_:
+
+.. _addPersistedLinkProperty_String_java_lang_String_RealmFieldType_java_lang_String_:
+
+.. _addPersistedLinkProperty_String__java_lang_String__RealmFieldType__java_lang_String_:
+
+.. _addPersistedLinkProperty_String_java_lang_String_RealmFieldType_String_:
+
+.. _addPersistedLinkProperty_String__java_lang_String__RealmFieldType__String_:
+
+.. _addPersistedLinkProperty_String_String_io_realm_RealmFieldType_java_lang_String_:
+
+.. _addPersistedLinkProperty_String__String__io_realm_RealmFieldType__java_lang_String_:
+
+.. _addPersistedLinkProperty_String_String_io_realm_RealmFieldType_String_:
+
+.. _addPersistedLinkProperty_String__String__io_realm_RealmFieldType__String_:
+
+.. _addPersistedLinkProperty_String_String_RealmFieldType_java_lang_String_:
+
+.. _addPersistedLinkProperty_String__String__RealmFieldType__java_lang_String_:
+
+.. _addPersistedLinkProperty_String_String_RealmFieldType_String_:
+
+.. _addPersistedLinkProperty_String__String__RealmFieldType__String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_java_lang_String_RealmFieldType_java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__java_lang_String__RealmFieldType__java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_java_lang_String_RealmFieldType_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__java_lang_String__RealmFieldType__String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_String_io_realm_RealmFieldType_java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__String__io_realm_RealmFieldType__java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_String_io_realm_RealmFieldType_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__String__io_realm_RealmFieldType__String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_String_RealmFieldType_java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__String__RealmFieldType__java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String_String_RealmFieldType_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_java_lang_String__String__RealmFieldType__String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_java_lang_String_io_realm_RealmFieldType_java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__java_lang_String__io_realm_RealmFieldType__java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_java_lang_String_io_realm_RealmFieldType_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__java_lang_String__io_realm_RealmFieldType__String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_java_lang_String_RealmFieldType_java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__java_lang_String__RealmFieldType__java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_java_lang_String_RealmFieldType_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__java_lang_String__RealmFieldType__String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_String_io_realm_RealmFieldType_java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__String__io_realm_RealmFieldType__java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_String_io_realm_RealmFieldType_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__String__io_realm_RealmFieldType__String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_String_RealmFieldType_java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__String__RealmFieldType__java_lang_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String_String_RealmFieldType_String_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedLinkProperty_String__String__RealmFieldType__String_:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public :ref:`OsObjectSchemaInfo.Builder <io_realm_internal_OsObjectSchemaInfo_Builder>`  :ref:`addPersistedLinkProperty <io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedLinkProperty>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  publicName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalName, 
+       |  :ref:`RealmFieldType <io_realm_RealmFieldType>`  type, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  linkedClassName
+       | )
+       
+       
+       
+   
+   * - Adds a persisted link property to this ``OsObjectSchemaInfo`` . A persisted link property will be stored in the Realm file's schema.
+       
+       
+       
+       
+       
+       
+       **Parameters**
+       
+       - ``publicName`` - the name of the property as defined in the Java/Kotlin model class.
+          
+          
+          
+       - ``internalName`` - the internal name of the property if different from the public name, otherwise "".
+          
+          
+          
+       - ``type`` - the type of the link property. Can only be :ref:`RealmFieldType.OBJECT <io_realm_RealmFieldType_OBJECT>`  or :ref:`RealmFieldType.LIST <io_realm_RealmFieldType_LIST>` .
+          
+          
+          
+          
+          
+       
+       
+       
+       
+       **Returns**
+       
+       this ``OsObjectSchemaInfo.Builder`` .
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+.. _addPersistedMapProperty:
+
+.. _addPersistedMapProperty__:
+
+.. _Builder_addPersistedMapProperty:
+
+.. _Builder_addPersistedMapProperty__:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty__:
+
+
+
+addPersistedMapProperty
+-----------------------
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String_String_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String__String__RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_String_String_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty_String__String__RealmFieldType__boolean_:
+
+.. _addPersistedMapProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _addPersistedMapProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _addPersistedMapProperty_java_lang_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _addPersistedMapProperty_java_lang_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _addPersistedMapProperty_java_lang_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _addPersistedMapProperty_java_lang_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _addPersistedMapProperty_java_lang_String_String_RealmFieldType_boolean_:
+
+.. _addPersistedMapProperty_java_lang_String__String__RealmFieldType__boolean_:
+
+.. _addPersistedMapProperty_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _addPersistedMapProperty_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _addPersistedMapProperty_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _addPersistedMapProperty_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _addPersistedMapProperty_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _addPersistedMapProperty_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _addPersistedMapProperty_String_String_RealmFieldType_boolean_:
+
+.. _addPersistedMapProperty_String__String__RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String_String_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_java_lang_String__String__RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_String_String_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedMapProperty_String__String__RealmFieldType__boolean_:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public :ref:`OsObjectSchemaInfo.Builder <io_realm_internal_OsObjectSchemaInfo_Builder>`  :ref:`addPersistedMapProperty <io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedMapProperty>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  publicName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalName, 
+       |  :ref:`RealmFieldType <io_realm_RealmFieldType>`  type, 
+       |  **boolean** isRequired
+       | )
+       
+       
+       
+   
+   * - Adds a persisted map property to this builder.
+       
+       
+       
+       
+       **Parameters**
+       
+       - ``publicName`` - the name of the property as defined in the Java/Kotlin model class.
+          
+          
+          
+       - ``internalName`` - the internal name of the property if different from the public name, otherwise "".
+          
+          
+          
+       - ``type`` - the type of the property. It must be one of value list type.
+          
+          
+          
+       - ``isRequired`` - set to true if this property is not nullable.
+          
+          
+          
+       
+       
+       
+       
+       **Returns**
+       
+       this ``OsObjectSchemaInfo`` .
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+.. _addPersistedProperty:
+
+.. _addPersistedProperty__:
+
+.. _Builder_addPersistedProperty:
+
+.. _Builder_addPersistedProperty__:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty__:
+
+
+
+addPersistedProperty
+--------------------
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_boolean_boolean_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__boolean__boolean__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String_java_lang_String_RealmFieldType_boolean_boolean_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String__java_lang_String__RealmFieldType__boolean__boolean__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String_String_io_realm_RealmFieldType_boolean_boolean_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String__String__io_realm_RealmFieldType__boolean__boolean__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String_String_RealmFieldType_boolean_boolean_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String__String__RealmFieldType__boolean__boolean__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_String_java_lang_String_io_realm_RealmFieldType_boolean_boolean_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_String__java_lang_String__io_realm_RealmFieldType__boolean__boolean__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_String_java_lang_String_RealmFieldType_boolean_boolean_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_String__java_lang_String__RealmFieldType__boolean__boolean__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_String_String_io_realm_RealmFieldType_boolean_boolean_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_String__String__io_realm_RealmFieldType__boolean__boolean__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_String_String_RealmFieldType_boolean_boolean_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty_String__String__RealmFieldType__boolean__boolean__boolean_:
+
+.. _addPersistedProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_boolean_boolean_boolean_:
+
+.. _addPersistedProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__boolean__boolean__boolean_:
+
+.. _addPersistedProperty_java_lang_String_java_lang_String_RealmFieldType_boolean_boolean_boolean_:
+
+.. _addPersistedProperty_java_lang_String__java_lang_String__RealmFieldType__boolean__boolean__boolean_:
+
+.. _addPersistedProperty_java_lang_String_String_io_realm_RealmFieldType_boolean_boolean_boolean_:
+
+.. _addPersistedProperty_java_lang_String__String__io_realm_RealmFieldType__boolean__boolean__boolean_:
+
+.. _addPersistedProperty_java_lang_String_String_RealmFieldType_boolean_boolean_boolean_:
+
+.. _addPersistedProperty_java_lang_String__String__RealmFieldType__boolean__boolean__boolean_:
+
+.. _addPersistedProperty_String_java_lang_String_io_realm_RealmFieldType_boolean_boolean_boolean_:
+
+.. _addPersistedProperty_String__java_lang_String__io_realm_RealmFieldType__boolean__boolean__boolean_:
+
+.. _addPersistedProperty_String_java_lang_String_RealmFieldType_boolean_boolean_boolean_:
+
+.. _addPersistedProperty_String__java_lang_String__RealmFieldType__boolean__boolean__boolean_:
+
+.. _addPersistedProperty_String_String_io_realm_RealmFieldType_boolean_boolean_boolean_:
+
+.. _addPersistedProperty_String__String__io_realm_RealmFieldType__boolean__boolean__boolean_:
+
+.. _addPersistedProperty_String_String_RealmFieldType_boolean_boolean_boolean_:
+
+.. _addPersistedProperty_String__String__RealmFieldType__boolean__boolean__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_boolean_boolean_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__boolean__boolean__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String_java_lang_String_RealmFieldType_boolean_boolean_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String__java_lang_String__RealmFieldType__boolean__boolean__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String_String_io_realm_RealmFieldType_boolean_boolean_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String__String__io_realm_RealmFieldType__boolean__boolean__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String_String_RealmFieldType_boolean_boolean_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_java_lang_String__String__RealmFieldType__boolean__boolean__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_String_java_lang_String_io_realm_RealmFieldType_boolean_boolean_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_String__java_lang_String__io_realm_RealmFieldType__boolean__boolean__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_String_java_lang_String_RealmFieldType_boolean_boolean_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_String__java_lang_String__RealmFieldType__boolean__boolean__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_String_String_io_realm_RealmFieldType_boolean_boolean_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_String__String__io_realm_RealmFieldType__boolean__boolean__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_String_String_RealmFieldType_boolean_boolean_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedProperty_String__String__RealmFieldType__boolean__boolean__boolean_:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public :ref:`OsObjectSchemaInfo.Builder <io_realm_internal_OsObjectSchemaInfo_Builder>`  :ref:`addPersistedProperty <io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedProperty>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  publicName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalName, 
+       |  :ref:`RealmFieldType <io_realm_RealmFieldType>`  type, 
+       |  **boolean** isPrimaryKey, 
+       |  **boolean** isIndexed, 
+       |  **boolean** isRequired
+       | )
+       
+       
+       
+   
+   * - Adds a persisted non-link, non value list property to this builder.
+       
+       
+       
+       
+       **Parameters**
+       
+       - ``publicName`` - the name of the property as defined in the Java/Kotlin model class.
+          
+          
+          
+       - ``internalName`` - the internal name of the property if different from the public name, otherwise "".
+          
+          
+          
+       - ``type`` - the type of the property.
+          
+          
+          
+       - ``isPrimaryKey`` - set to true if this property is the primary key.
+          
+          
+          
+       - ``isIndexed`` - set to true if this property needs an index.
+          
+          
+          
+       - ``isRequired`` - set to true if this property is not nullable.
+          
+          
+          
+       
+       
+       
+       
+       **Returns**
+       
+       this ``OsObjectSchemaInfo`` .
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+.. _addPersistedSetProperty:
+
+.. _addPersistedSetProperty__:
+
+.. _Builder_addPersistedSetProperty:
+
+.. _Builder_addPersistedSetProperty__:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty__:
+
+
+
+addPersistedSetProperty
+-----------------------
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String_String_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String__String__RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_String_String_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty_String__String__RealmFieldType__boolean_:
+
+.. _addPersistedSetProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _addPersistedSetProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _addPersistedSetProperty_java_lang_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _addPersistedSetProperty_java_lang_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _addPersistedSetProperty_java_lang_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _addPersistedSetProperty_java_lang_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _addPersistedSetProperty_java_lang_String_String_RealmFieldType_boolean_:
+
+.. _addPersistedSetProperty_java_lang_String__String__RealmFieldType__boolean_:
+
+.. _addPersistedSetProperty_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _addPersistedSetProperty_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _addPersistedSetProperty_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _addPersistedSetProperty_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _addPersistedSetProperty_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _addPersistedSetProperty_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _addPersistedSetProperty_String_String_RealmFieldType_boolean_:
+
+.. _addPersistedSetProperty_String__String__RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String_String_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_java_lang_String__String__RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_String_String_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedSetProperty_String__String__RealmFieldType__boolean_:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public :ref:`OsObjectSchemaInfo.Builder <io_realm_internal_OsObjectSchemaInfo_Builder>`  :ref:`addPersistedSetProperty <io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedSetProperty>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  publicName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalName, 
+       |  :ref:`RealmFieldType <io_realm_RealmFieldType>`  type, 
+       |  **boolean** isRequired
+       | )
+       
+       
+       
+   
+   * - TODO: UNIFY THIS AND THE TWO ABOVE Adds a persisted set property to this builder.
+       
+       
+       
+       
+       **Parameters**
+       
+       - ``publicName`` - the name of the property as defined in the Java/Kotlin model class.
+          
+          
+          
+       - ``internalName`` - the internal name of the property if different from the public name, otherwise "".
+          
+          
+          
+       - ``type`` - the type of the property. It must be one of value list type.
+          
+          
+          
+       - ``isRequired`` - set to true if this property is not nullable.
+          
+          
+          
+       
+       
+       
+       
+       **Returns**
+       
+       this ``OsObjectSchemaInfo`` .
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+.. _addPersistedValueListProperty:
+
+.. _addPersistedValueListProperty__:
+
+.. _Builder_addPersistedValueListProperty:
+
+.. _Builder_addPersistedValueListProperty__:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty__:
+
+
+
+addPersistedValueListProperty
+-----------------------------
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String_String_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String__String__RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String_String_RealmFieldType_boolean_:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String__String__RealmFieldType__boolean_:
+
+.. _addPersistedValueListProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _addPersistedValueListProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _addPersistedValueListProperty_java_lang_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _addPersistedValueListProperty_java_lang_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _addPersistedValueListProperty_java_lang_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _addPersistedValueListProperty_java_lang_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _addPersistedValueListProperty_java_lang_String_String_RealmFieldType_boolean_:
+
+.. _addPersistedValueListProperty_java_lang_String__String__RealmFieldType__boolean_:
+
+.. _addPersistedValueListProperty_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _addPersistedValueListProperty_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _addPersistedValueListProperty_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _addPersistedValueListProperty_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _addPersistedValueListProperty_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _addPersistedValueListProperty_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _addPersistedValueListProperty_String_String_RealmFieldType_boolean_:
+
+.. _addPersistedValueListProperty_String__String__RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String_String_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_java_lang_String__String__RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String_java_lang_String_io_realm_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String__java_lang_String__io_realm_RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String_java_lang_String_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String__java_lang_String__RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String_String_io_realm_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String__String__io_realm_RealmFieldType__boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String_String_RealmFieldType_boolean_:
+
+.. _OsObjectSchemaInfo_Builder_addPersistedValueListProperty_String__String__RealmFieldType__boolean_:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public :ref:`OsObjectSchemaInfo.Builder <io_realm_internal_OsObjectSchemaInfo_Builder>`  :ref:`addPersistedValueListProperty <io_realm_internal_OsObjectSchemaInfo_Builder_addPersistedValueListProperty>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  publicName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  internalName, 
+       |  :ref:`RealmFieldType <io_realm_RealmFieldType>`  type, 
+       |  **boolean** isRequired
+       | )
+       
+       
+       
+   
+   * - Adds a persisted value list property to this builder.
+       
+       
+       
+       
+       **Parameters**
+       
+       - ``publicName`` - the name of the property as defined in the Java/Kotlin model class.
+          
+          
+          
+       - ``internalName`` - the internal name of the property if different from the public name, otherwise "".
+          
+          
+          
+       - ``type`` - the type of the property. It must be one of value list type.
+          
+          
+          
+       - ``isRequired`` - set to true if this property is not nullable.
+          
+          
+          
+       
+       
+       
+       
+       **Returns**
+       
+       this ``OsObjectSchemaInfo`` .
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+.. _build:
+
+.. _build__:
+
+.. _Builder_build:
+
+.. _Builder_build__:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_build:
+
+.. _io_realm_internal_OsObjectSchemaInfo_Builder_build__:
+
+
+
+build
+-----
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public :ref:`OsObjectSchemaInfo <io_realm_internal_OsObjectSchemaInfo>`  :ref:`build <io_realm_internal_OsObjectSchemaInfo_Builder_build>` ()
+       | 
+       
+       
+       
+   
+   * - Creates :ref:`OsObjectSchemaInfo <io_realm_internal_OsObjectSchemaInfo>`  object from this builder. After calling, this ``Builder``  becomes invalid. All the property pointers will be freed.
+       
+       
+       
+       
+       
+       
+       
+       
+       **Returns**
+       
+       a newly created :ref:`OsObjectSchemaInfo <io_realm_internal_OsObjectSchemaInfo>` .
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+

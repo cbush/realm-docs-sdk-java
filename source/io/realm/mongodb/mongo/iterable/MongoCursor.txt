@@ -17,9 +17,12 @@ Class MongoCursor
 io.realm.mongodb.mongo.iterable
 ===============================
 
-`java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ 
 
-*Implemented interfaces:*
+ | `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ 
+ | 		io.realm.mongodb.mongo.iterable.MongoCursor
+
+
+**Implemented interfaces:**
 
 
 
@@ -44,42 +47,42 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - 
-       public **boolean**
-     - 
-       :ref:`hasNext <io_realm_mongodb_mongo_iterable_MongoCursor_hasNext__>`  ()
+   * - public **void**
+     - | :ref:`close <io_realm_mongodb_mongo_iterable_MongoCursor_close>` ()
+       | 
        
-       
-       
-       
-       
-   
-   * - 
-       public **ResultT (?)**
-     - 
-       :ref:`next <io_realm_mongodb_mongo_iterable_MongoCursor_next__>`  ()
        
        
        
        
        
    
-   * - 
-       public **ResultT (?)**
-     - 
-       :ref:`tryNext <io_realm_mongodb_mongo_iterable_MongoCursor_tryNext__>`  ()
+   * - public **boolean**
+     - | :ref:`hasNext <io_realm_mongodb_mongo_iterable_MongoCursor_hasNext>` ()
+       | 
+       
+       
+       
+       
+       
+       
+   
+   * - public **ResultT (?)**
+     - | :ref:`next <io_realm_mongodb_mongo_iterable_MongoCursor_next>` ()
+       | 
+       
+       
+       
+       
+       
+       
+   
+   * - public **ResultT (?)**
+     - | :ref:`tryNext <io_realm_mongodb_mongo_iterable_MongoCursor_tryNext>` ()
+       | 
+       
        
        A special ``next()``  case that returns the next document if available or null.
-       
-       
-       
-       
-       
-   
-   * - 
-       public **void**
-     - 
-       :ref:`close <io_realm_mongodb_mongo_iterable_MongoCursor_close__>`  ()
        
        
        
@@ -94,11 +97,7 @@ Inherited Methods
 
 
 
-- Methods inherited from interface `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ : 
-   
-   ``getClass`` , ``hashCode`` , ``equals`` , ``clone`` , ``toString`` , ``notify`` , ``notifyAll`` , ``wait`` , ``wait`` , ``wait`` , ``finalize`` 
-   
-   
+- Methods inherited from class `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ : ``getClass`` , ``hashCode`` , ``equals`` , ``clone`` , ``toString`` , ``notify`` , ``notifyAll`` , ``wait`` , ``wait`` , ``wait`` , ``finalize`` 
 
 
 
@@ -106,21 +105,73 @@ Inherited Methods
 Method Detail
 =============
 
+.. _close:
+
+.. _close__:
+
+.. _MongoCursor_close:
+
+.. _MongoCursor_close__:
+
+.. _io_realm_mongodb_mongo_iterable_MongoCursor_close:
+
+.. _io_realm_mongodb_mongo_iterable_MongoCursor_close__:
+
+
+
+close
+-----
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public **void** :ref:`close <io_realm_mongodb_mongo_iterable_MongoCursor_close>` ()
+       | 
+       
+       
+       
+   
+   * - 
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+.. _hasNext:
+
+.. _hasNext__:
+
+.. _MongoCursor_hasNext:
+
+.. _MongoCursor_hasNext__:
+
+.. _io_realm_mongodb_mongo_iterable_MongoCursor_hasNext:
+
+.. _io_realm_mongodb_mongo_iterable_MongoCursor_hasNext__:
+
 
 
 hasNext
 -------
 
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_hasNext__:
-
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_hasNext__:
-
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_hasNext__:
-
 .. list-table::
    :header-rows: 1
    
-   * -    public **boolean** hasNext ()
+   * - | public **boolean** :ref:`hasNext <io_realm_mongodb_mongo_iterable_MongoCursor_hasNext>` ()
+       | 
+       
+       
+       
    
    * - 
        
@@ -136,21 +187,33 @@ hasNext
        
    
    
+
+
+.. _next:
+
+.. _next__:
+
+.. _MongoCursor_next:
+
+.. _MongoCursor_next__:
+
+.. _io_realm_mongodb_mongo_iterable_MongoCursor_next:
+
+.. _io_realm_mongodb_mongo_iterable_MongoCursor_next__:
+
 
 
 next
 ----
 
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_next__:
-
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_next__:
-
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_next__:
-
 .. list-table::
    :header-rows: 1
    
-   * -    public **ResultT (?)** next ()
+   * - | public **ResultT (?)** :ref:`next <io_realm_mongodb_mongo_iterable_MongoCursor_next>` ()
+       | 
+       
+       
+       
    
    * - 
        
@@ -168,19 +231,31 @@ next
    
 
 
+.. _tryNext:
+
+.. _tryNext__:
+
+.. _MongoCursor_tryNext:
+
+.. _MongoCursor_tryNext__:
+
+.. _io_realm_mongodb_mongo_iterable_MongoCursor_tryNext:
+
+.. _io_realm_mongodb_mongo_iterable_MongoCursor_tryNext__:
+
+
+
 tryNext
 -------
-
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_tryNext__:
-
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_tryNext__:
-
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_tryNext__:
 
 .. list-table::
    :header-rows: 1
    
-   * -    public **ResultT (?)** tryNext ()
+   * - | public **ResultT (?)** :ref:`tryNext <io_realm_mongodb_mongo_iterable_MongoCursor_tryNext>` ()
+       | 
+       
+       
+       
    
    * - A special ``next()``  case that returns the next document if available or null.
        
@@ -191,32 +266,9 @@ tryNext
        
        
        
+       **Returns**
        
-       
-       
-       
-       
-   
-   
-
-
-close
------
-
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_close__:
-
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_close__:
-
-.. _io_realm_mongodb_mongo_iterable_MongoCursor_close__:
-
-.. list-table::
-   :header-rows: 1
-   
-   * -    public **void** close ()
-   
-   * - 
-       
-       
+       A ``Task``  containing the next document if available or null.
        
        
        
@@ -228,4 +280,6 @@ close
        
    
    
+
+
 

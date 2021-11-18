@@ -1,0 +1,122 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+
+
+Interface ObservableMap
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _io_realm_internal_ObservableMap:
+
+
+
+io.realm.internal
+=================
+
+
+
+
+Nested Class Summary
+====================
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Class and Description
+   
+   * - ``public static`` 
+     - :ref:`ObservableMap.MapObserverPair <io_realm_internal_ObservableMap_MapObserverPair>` 
+       
+   
+   * - ``public static`` 
+     - :ref:`ObservableMap.RealmChangeListenerWrapper <io_realm_internal_ObservableMap_RealmChangeListenerWrapper>` 
+       
+   
+   * - ``public static`` 
+     - :ref:`ObservableMap.Callback <io_realm_internal_ObservableMap_Callback>` 
+       
+   
+   
+
+
+Method Summary
+==============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Method and Description
+   
+   * - public **void**
+     - | :ref:`notifyChangeListeners <io_realm_internal_ObservableMap_notifyChangeListeners>` (
+       |  **long** nativeChangeSetPtr
+       | )
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+Method Detail
+=============
+
+.. _notifyChangeListeners:
+
+.. _notifyChangeListeners__:
+
+.. _ObservableMap_notifyChangeListeners:
+
+.. _ObservableMap_notifyChangeListeners__:
+
+.. _io_realm_internal_ObservableMap_notifyChangeListeners:
+
+.. _io_realm_internal_ObservableMap_notifyChangeListeners__:
+
+
+
+notifyChangeListeners
+---------------------
+
+.. _io_realm_internal_ObservableMap_notifyChangeListeners_long_:
+
+.. _notifyChangeListeners_long_:
+
+.. _ObservableMap_notifyChangeListeners_long_:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public **void** :ref:`notifyChangeListeners <io_realm_internal_ObservableMap_notifyChangeListeners>` (
+       |  **long** nativeChangeSetPtr
+       | )
+       
+       
+       
+   
+   * - 
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+

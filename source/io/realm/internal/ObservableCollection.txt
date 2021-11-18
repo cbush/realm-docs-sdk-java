@@ -1,0 +1,122 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+
+
+Interface ObservableCollection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _io_realm_internal_ObservableCollection:
+
+
+
+io.realm.internal
+=================
+
+
+
+
+Nested Class Summary
+====================
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Class and Description
+   
+   * - ``public static`` 
+     - :ref:`ObservableCollection.CollectionObserverPair <io_realm_internal_ObservableCollection_CollectionObserverPair>` 
+       
+   
+   * - ``public static`` 
+     - :ref:`ObservableCollection.RealmChangeListenerWrapper <io_realm_internal_ObservableCollection_RealmChangeListenerWrapper>` 
+       
+   
+   * - ``public static`` 
+     - :ref:`ObservableCollection.Callback <io_realm_internal_ObservableCollection_Callback>` 
+       
+   
+   
+
+
+Method Summary
+==============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Method and Description
+   
+   * - public **void**
+     - | :ref:`notifyChangeListeners <io_realm_internal_ObservableCollection_notifyChangeListeners>` (
+       |  **long** nativeChangeSetPtr
+       | )
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+Method Detail
+=============
+
+.. _notifyChangeListeners:
+
+.. _notifyChangeListeners__:
+
+.. _ObservableCollection_notifyChangeListeners:
+
+.. _ObservableCollection_notifyChangeListeners__:
+
+.. _io_realm_internal_ObservableCollection_notifyChangeListeners:
+
+.. _io_realm_internal_ObservableCollection_notifyChangeListeners__:
+
+
+
+notifyChangeListeners
+---------------------
+
+.. _io_realm_internal_ObservableCollection_notifyChangeListeners_long_:
+
+.. _notifyChangeListeners_long_:
+
+.. _ObservableCollection_notifyChangeListeners_long_:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public **void** :ref:`notifyChangeListeners <io_realm_internal_ObservableCollection_notifyChangeListeners>` (
+       |  **long** nativeChangeSetPtr
+       | )
+       
+       
+       
+   
+   * - 
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+

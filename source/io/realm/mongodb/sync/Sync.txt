@@ -17,7 +17,10 @@ Class Sync
 io.realm.mongodb.sync
 =====================
 
-`java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ 
+
+ | `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ 
+ | 		io.realm.mongodb.sync.Sync
+
 
 A *sync* manager handling synchronization of local Realms with remote Realm Apps.The primary role of this is to access the :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  for a synchronized Realm. After opening the synchronized Realm you can access the :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  and perform synchronization related operations as shown below:
 
@@ -62,16 +65,6 @@ A *sync* manager handling synchronization of local Realms with remote Realm Apps
 
 
 
-Constructors
-============
-
-
-
-- ``io.realm.mongodb.sync.Sync(App, long)`` 
-
-
-
-
 Nested Class Summary
 ====================
 
@@ -82,7 +75,8 @@ Nested Class Summary
      - Class and Description
    
    * - ``public static`` 
-     - ``io.realm.mongodb.sync.Sync.Debug`` 
+     - :ref:`Sync.Debug <io_realm_mongodb_sync_Sync_Debug>` 
+       
    
    
 
@@ -96,22 +90,10 @@ Method Summary
    * - Modifier and Type
      - Method and Description
    
-   * - 
-       public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` 
-     - 
-       :ref:`getSession <io_realm_mongodb_sync_Sync_getSession_SyncConfiguration_>`  (:ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  syncConfiguration)
+   * - public synchronized `Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ 
+     - | :ref:`getAllSessions <io_realm_mongodb_sync_Sync_getAllSessions>` ()
+       | 
        
-       Gets a cached :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  for the given :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  or throw if no one exists yet.
-       
-       
-       
-       
-       
-   
-   * - 
-       public synchronized `Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__ 
-     - 
-       :ref:`getAllSessions <io_realm_mongodb_sync_Sync_getAllSessions__>`  ()
        
        Gets a collection of all the cached :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` .
        
@@ -120,10 +102,11 @@ Method Summary
        
        
    
-   * - 
-       public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` 
-     - 
-       :ref:`getOrCreateSession <io_realm_mongodb_sync_Sync_getOrCreateSession_SyncConfiguration_>`  (:ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  syncConfiguration)
+   * - public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` 
+     - | :ref:`getOrCreateSession <io_realm_mongodb_sync_Sync_getOrCreateSession>` (
+       |  :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  syncConfiguration
+       | )
+       
        
        Gets any cached :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  for the given :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  or create a new one if no one exists.
        
@@ -132,10 +115,23 @@ Method Summary
        
        
    
-   * - 
-       public **void**
-     - 
-       :ref:`reconnect <io_realm_mongodb_sync_Sync_reconnect__>`  ()
+   * - public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` 
+     - | :ref:`getSession <io_realm_mongodb_sync_Sync_getSession>` (
+       |  :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  syncConfiguration
+       | )
+       
+       
+       Gets a cached :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  for the given :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  or throw if no one exists yet.
+       
+       
+       
+       
+       
+   
+   * - public **void**
+     - | :ref:`reconnect <io_realm_mongodb_sync_Sync_reconnect>` ()
+       | 
+       
        
        Realm will automatically detect when a device gets connectivity after being offline and resume syncing.
        
@@ -150,11 +146,7 @@ Inherited Methods
 
 
 
-- Methods inherited from interface `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ : 
-   
-   ``getClass`` , ``hashCode`` , ``equals`` , ``clone`` , ``toString`` , ``notify`` , ``notifyAll`` , ``wait`` , ``wait`` , ``wait`` , ``finalize`` 
-   
-   
+- Methods inherited from class `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ : ``getClass`` , ``hashCode`` , ``equals`` , ``clone`` , ``toString`` , ``notify`` , ``notifyAll`` , ``wait`` , ``wait`` , ``wait`` , ``finalize`` 
 
 
 
@@ -162,21 +154,177 @@ Inherited Methods
 Method Detail
 =============
 
+.. _getAllSessions:
+
+.. _getAllSessions__:
+
+.. _Sync_getAllSessions:
+
+.. _Sync_getAllSessions__:
+
+.. _io_realm_mongodb_sync_Sync_getAllSessions:
+
+.. _io_realm_mongodb_sync_Sync_getAllSessions__:
+
+
+
+getAllSessions
+--------------
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public synchronized `Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__  :ref:`getAllSessions <io_realm_mongodb_sync_Sync_getAllSessions>` ()
+       | 
+       
+       
+       
+   
+   * - Gets a collection of all the cached :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` .
+       
+       
+       
+       
+       
+       
+       
+       
+       **Returns**
+       
+       a collection of :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` .
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+.. _getOrCreateSession:
+
+.. _getOrCreateSession__:
+
+.. _Sync_getOrCreateSession:
+
+.. _Sync_getOrCreateSession__:
+
+.. _io_realm_mongodb_sync_Sync_getOrCreateSession:
+
+.. _io_realm_mongodb_sync_Sync_getOrCreateSession__:
+
+
+
+getOrCreateSession
+------------------
+
+.. _io_realm_mongodb_sync_Sync_getOrCreateSession_io_realm_mongodb_sync_SyncConfiguration_:
+
+.. _io_realm_mongodb_sync_Sync_getOrCreateSession_SyncConfiguration_:
+
+.. _getOrCreateSession_io_realm_mongodb_sync_SyncConfiguration_:
+
+.. _getOrCreateSession_SyncConfiguration_:
+
+.. _Sync_getOrCreateSession_io_realm_mongodb_sync_SyncConfiguration_:
+
+.. _Sync_getOrCreateSession_SyncConfiguration_:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  :ref:`getOrCreateSession <io_realm_mongodb_sync_Sync_getOrCreateSession>` (
+       |  :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  syncConfiguration
+       | )
+       
+       
+       
+   
+   * - Gets any cached :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  for the given :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  or create a new one if no one exists. Note: This is mainly for internal usage, consider using :ref:`getSession(SyncConfiguration) <io_realm_mongodb_sync_Sync_getSession_SyncConfiguration_>`  instead.
+       
+       
+       
+       
+       
+       
+       **Parameters**
+       
+       - ``syncConfiguration`` - configuration object for the synchronized Realm.
+          
+          
+          
+       
+       
+       
+       
+       **Returns**
+       
+       the :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  for the specified Realm.
+       
+       
+       
+       
+       
+       
+       **Throws**
+       
+       - `IllegalArgumentException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html>`__  - if syncConfiguration is ``null`` .
+          
+          
+          
+          
+          
+       
+       
+       
+       
+       
+   
+   
+
+
+.. _getSession:
+
+.. _getSession__:
+
+.. _Sync_getSession:
+
+.. _Sync_getSession__:
+
+.. _io_realm_mongodb_sync_Sync_getSession:
+
+.. _io_realm_mongodb_sync_Sync_getSession__:
+
 
 
 getSession
 ----------
 
-.. _io_realm_mongodb_sync_Sync_getSession_SyncConfiguration_:
+.. _io_realm_mongodb_sync_Sync_getSession_io_realm_mongodb_sync_SyncConfiguration_:
 
 .. _io_realm_mongodb_sync_Sync_getSession_SyncConfiguration_:
 
-.. _io_realm_mongodb_sync_Sync_getSession_SyncConfiguration_:
+.. _getSession_io_realm_mongodb_sync_SyncConfiguration_:
+
+.. _getSession_SyncConfiguration_:
+
+.. _Sync_getSession_io_realm_mongodb_sync_SyncConfiguration_:
+
+.. _Sync_getSession_SyncConfiguration_:
 
 .. list-table::
    :header-rows: 1
    
-   * -    public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  getSession (:ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  syncConfiguration)
+   * - | public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  :ref:`getSession <io_realm_mongodb_sync_Sync_getSession>` (
+       |  :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  syncConfiguration
+       | )
+       
+       
+       
    
    * - Gets a cached :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  for the given :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  or throw if no one exists yet. A session should exist after you open a Realm with a :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>` .
        
@@ -191,6 +339,13 @@ getSession
           
           
           
+       
+       
+       
+       
+       **Returns**
+       
+       the :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  for the specified Realm.
        
        
        
@@ -220,101 +375,31 @@ getSession
    
 
 
-getAllSessions
---------------
+.. _reconnect:
 
-.. _io_realm_mongodb_sync_Sync_getAllSessions__:
+.. _reconnect__:
 
-.. _io_realm_mongodb_sync_Sync_getAllSessions__:
+.. _Sync_reconnect:
 
-.. _io_realm_mongodb_sync_Sync_getAllSessions__:
+.. _Sync_reconnect__:
 
-.. list-table::
-   :header-rows: 1
-   
-   * -    public synchronized `Collection <https://docs.oracle.com/javase/7/docs/api/java/util/Collection.html>`__  getAllSessions ()
-   
-   * - Gets a collection of all the cached :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>` .
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-   
-   
+.. _io_realm_mongodb_sync_Sync_reconnect:
 
+.. _io_realm_mongodb_sync_Sync_reconnect__:
 
-getOrCreateSession
-------------------
-
-.. _io_realm_mongodb_sync_Sync_getOrCreateSession_SyncConfiguration_:
-
-.. _io_realm_mongodb_sync_Sync_getOrCreateSession_SyncConfiguration_:
-
-.. _io_realm_mongodb_sync_Sync_getOrCreateSession_SyncConfiguration_:
-
-.. list-table::
-   :header-rows: 1
-   
-   * -    public synchronized :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  getOrCreateSession (:ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  syncConfiguration)
-   
-   * - Gets any cached :ref:`SyncSession <io_realm_mongodb_sync_SyncSession>`  for the given :ref:`SyncConfiguration <io_realm_mongodb_sync_SyncConfiguration>`  or create a new one if no one exists. Note: This is mainly for internal usage, consider using :ref:`getSession(SyncConfiguration) <io_realm_mongodb_sync_Sync_getSession_SyncConfiguration_>`  instead.
-       
-       
-       
-       
-       
-       
-       **Parameters**
-       
-       - ``syncConfiguration`` - configuration object for the synchronized Realm.
-          
-          
-          
-       
-       
-       
-       
-       
-       
-       **Throws**
-       
-       - `IllegalArgumentException <https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html>`__  - if syncConfiguration is ``null`` .
-          
-          
-          
-          
-          
-       
-       
-       
-       
-       
-   
-   
 
 
 reconnect
 ---------
 
-.. _io_realm_mongodb_sync_Sync_reconnect__:
-
-.. _io_realm_mongodb_sync_Sync_reconnect__:
-
-.. _io_realm_mongodb_sync_Sync_reconnect__:
-
 .. list-table::
    :header-rows: 1
    
-   * -    public **void** reconnect ()
+   * - | public **void** :ref:`reconnect <io_realm_mongodb_sync_Sync_reconnect>` ()
+       | 
+       
+       
+       
    
    * - Realm will automatically detect when a device gets connectivity after being offline and resume syncing.However, as some of these checks are performed using incremental backoff, this will in some cases not happen immediately.
        
@@ -334,4 +419,6 @@ reconnect
        
    
    
+
+
 

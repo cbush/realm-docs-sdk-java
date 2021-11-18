@@ -1,0 +1,385 @@
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+
+
+Class StreamNetworkTransport
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _io_realm_internal_network_StreamNetworkTransport:
+
+
+
+io.realm.internal.network
+=========================
+
+
+ | `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ 
+ | 		io.realm.internal.network.StreamNetworkTransport
+
+
+StreamNetworkTransport provides an interface to the Realm remote streaming functions. Such functions are package protected and this class offers a portable way to access them.
+
+
+Constructors
+============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Constructor and Description
+   
+   * - | :ref:`StreamNetworkTransport <io_realm_internal_network_StreamNetworkTransport>` (
+       |  :ref:`OsApp <io_realm_internal_objectstore_OsApp>`  app, 
+       |  :ref:`OsSyncUser <io_realm_internal_objectstore_OsSyncUser>`  user
+       | )
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+Method Summary
+==============
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Modifier and Type
+     - Method and Description
+   
+   * - public :ref:`OsJavaNetworkTransport.Request <io_realm_internal_objectstore_OsJavaNetworkTransport_Request>` 
+     - | :ref:`makeStreamingRequest <io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  functionName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  arguments, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  serviceName
+       | )
+       
+       
+       Creates a request for a streaming function
+       
+       
+       
+   
+   * - public :ref:`OsJavaNetworkTransport.Response <io_realm_internal_objectstore_OsJavaNetworkTransport_Response>` 
+     - | :ref:`sendRequest <io_realm_internal_network_StreamNetworkTransport_sendRequest>` (
+       |  :ref:`OsJavaNetworkTransport.Request <io_realm_internal_objectstore_OsJavaNetworkTransport_Request>`  request
+       | )
+       
+       
+       Executes a given request
+       
+       
+       
+   
+   
+
+
+Inherited Methods
+=================
+
+
+
+- Methods inherited from class `java.lang.Object <https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html>`__ : ``getClass`` , ``hashCode`` , ``equals`` , ``clone`` , ``toString`` , ``notify`` , ``notifyAll`` , ``wait`` , ``wait`` , ``wait`` , ``finalize`` 
+
+
+
+
+Constructor Detail
+==================
+
+.. _StreamNetworkTransport:
+
+.. _StreamNetworkTransport__:
+
+.. _io_realm_internal_network_StreamNetworkTransport:
+
+.. _io_realm_internal_network_StreamNetworkTransport__:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public :ref:`StreamNetworkTransport <io_realm_internal_network_StreamNetworkTransport>` (
+       |  :ref:`OsApp <io_realm_internal_objectstore_OsApp>`  app, 
+       |  :ref:`OsSyncUser <io_realm_internal_objectstore_OsSyncUser>`  user
+       | )
+       
+       
+       
+   
+   * - 
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+
+
+Method Detail
+=============
+
+.. _makeStreamingRequest:
+
+.. _makeStreamingRequest__:
+
+.. _StreamNetworkTransport_makeStreamingRequest:
+
+.. _StreamNetworkTransport_makeStreamingRequest__:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest__:
+
+
+
+makeStreamingRequest
+--------------------
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_java_lang_String_java_lang_String_java_lang_String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_java_lang_String__java_lang_String__java_lang_String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_java_lang_String_java_lang_String_String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_java_lang_String__java_lang_String__String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_java_lang_String_String_java_lang_String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_java_lang_String__String__java_lang_String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_java_lang_String_String_String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_java_lang_String__String__String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_String_java_lang_String_java_lang_String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_String__java_lang_String__java_lang_String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_String_java_lang_String_String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_String__java_lang_String__String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_String_String_java_lang_String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_String__String__java_lang_String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_String_String_String_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest_String__String__String_:
+
+.. _makeStreamingRequest_java_lang_String_java_lang_String_java_lang_String_:
+
+.. _makeStreamingRequest_java_lang_String__java_lang_String__java_lang_String_:
+
+.. _makeStreamingRequest_java_lang_String_java_lang_String_String_:
+
+.. _makeStreamingRequest_java_lang_String__java_lang_String__String_:
+
+.. _makeStreamingRequest_java_lang_String_String_java_lang_String_:
+
+.. _makeStreamingRequest_java_lang_String__String__java_lang_String_:
+
+.. _makeStreamingRequest_java_lang_String_String_String_:
+
+.. _makeStreamingRequest_java_lang_String__String__String_:
+
+.. _makeStreamingRequest_String_java_lang_String_java_lang_String_:
+
+.. _makeStreamingRequest_String__java_lang_String__java_lang_String_:
+
+.. _makeStreamingRequest_String_java_lang_String_String_:
+
+.. _makeStreamingRequest_String__java_lang_String__String_:
+
+.. _makeStreamingRequest_String_String_java_lang_String_:
+
+.. _makeStreamingRequest_String__String__java_lang_String_:
+
+.. _makeStreamingRequest_String_String_String_:
+
+.. _makeStreamingRequest_String__String__String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_java_lang_String_java_lang_String_java_lang_String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_java_lang_String__java_lang_String__java_lang_String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_java_lang_String_java_lang_String_String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_java_lang_String__java_lang_String__String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_java_lang_String_String_java_lang_String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_java_lang_String__String__java_lang_String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_java_lang_String_String_String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_java_lang_String__String__String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_String_java_lang_String_java_lang_String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_String__java_lang_String__java_lang_String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_String_java_lang_String_String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_String__java_lang_String__String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_String_String_java_lang_String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_String__String__java_lang_String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_String_String_String_:
+
+.. _StreamNetworkTransport_makeStreamingRequest_String__String__String_:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public :ref:`OsJavaNetworkTransport.Request <io_realm_internal_objectstore_OsJavaNetworkTransport_Request>`  :ref:`makeStreamingRequest <io_realm_internal_network_StreamNetworkTransport_makeStreamingRequest>` (
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  functionName, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  arguments, 
+       |  `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__  serviceName
+       | )
+       
+       
+       
+   
+   * - Creates a request for a streaming function
+       
+       
+       
+       
+       **Parameters**
+       
+       - ``functionName`` - name of the function
+          
+          
+          
+       - ``arguments`` - function arguments encoded as a `String <https://docs.oracle.com/javase/7/docs/api/java/lang/String.html>`__ 
+          
+          
+          
+          
+          
+       - ``serviceName`` - service that will handle the function
+          
+          
+          
+       
+       
+       
+       
+       **Returns**
+       
+       :ref:`io.realm.internal.objectstore.OsJavaNetworkTransport.Request <io_realm_internal_objectstore_OsJavaNetworkTransport_Request>` 
+       
+       
+       
+       
+       
+       
+       
+       
+       
+   
+   
+
+
+.. _sendRequest:
+
+.. _sendRequest__:
+
+.. _StreamNetworkTransport_sendRequest:
+
+.. _StreamNetworkTransport_sendRequest__:
+
+.. _io_realm_internal_network_StreamNetworkTransport_sendRequest:
+
+.. _io_realm_internal_network_StreamNetworkTransport_sendRequest__:
+
+
+
+sendRequest
+-----------
+
+.. _io_realm_internal_network_StreamNetworkTransport_sendRequest_io_realm_internal_objectstore_OsJavaNetworkTransport_Request_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_sendRequest_Request_:
+
+.. _io_realm_internal_network_StreamNetworkTransport_sendRequest_OsJavaNetworkTransport_Request_:
+
+.. _sendRequest_io_realm_internal_objectstore_OsJavaNetworkTransport_Request_:
+
+.. _sendRequest_Request_:
+
+.. _sendRequest_OsJavaNetworkTransport_Request_:
+
+.. _StreamNetworkTransport_sendRequest_io_realm_internal_objectstore_OsJavaNetworkTransport_Request_:
+
+.. _StreamNetworkTransport_sendRequest_Request_:
+
+.. _StreamNetworkTransport_sendRequest_OsJavaNetworkTransport_Request_:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - | public :ref:`OsJavaNetworkTransport.Response <io_realm_internal_objectstore_OsJavaNetworkTransport_Response>`  :ref:`sendRequest <io_realm_internal_network_StreamNetworkTransport_sendRequest>` (
+       |  :ref:`OsJavaNetworkTransport.Request <io_realm_internal_objectstore_OsJavaNetworkTransport_Request>`  request
+       | )
+       
+       
+       
+   
+   * - Executes a given request
+       
+       
+       
+       
+       **Parameters**
+       
+       - ``request`` - to execute
+          
+          
+          
+       
+       
+       
+       
+       **Returns**
+       
+       :ref:`io.realm.internal.objectstore.OsJavaNetworkTransport.Response <io_realm_internal_objectstore_OsJavaNetworkTransport_Response>` 
+       
+       
+       
+       
+       
+       
+       **Throws**
+       
+       - `IOException <https://docs.oracle.com/javase/7/docs/api/java/io/IOException.html>`__  - 
+          
+          
+          
+       
+       
+       
+       
+       
+   
+   
+
+
+
